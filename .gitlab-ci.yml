@@ -1,25 +1,16 @@
-# GitLab Pages build for the OpenG2P "versions" repo.
+# GitLab Pages for the OpenG2P "versions" repo.
 #
-# Renders the change-log markdown (pushed here by every repo's `changelog` job)
-# into a clean hosted site — the GitLab equivalent of GitHub Pages. Add this file
-# + the Gemfile to the ROOT of the `openg2p/versions` project.
+# Builds the change-log static site with build.sh (marked -> HTML, no Jekyll, no
+# GitHub-coupled themes) and publishes it. Site URL after the first success:
+# https://<group>.gitlab.io/<project>/  e.g. https://openg2p.gitlab.io/versions/
 #
-# Uses the `github-pages` gem so rendering matches GitHub Pages exactly (same
-# Jekyll, themes incl. jekyll-theme-primer, and plugins). The changelog job
-# writes _config.yml (theme: jekyll-theme-primer) + index.md + <repo>/ folders;
-# Jekyll turns them into the site.
-#
-# Site URL after the first successful build: https://<group>.gitlab.io/<project>/
-# e.g. https://openg2p.gitlab.io/versions/
+# The change-log markdown is written here by every repo's CI `changelog` job.
 
 pages:
   stage: deploy
-  image: ruby:3.3
-  before_script:
-    - bundle install
+  image: node:20-alpine
   script:
-    # baseurl = the project path, so links/assets resolve under /versions/.
-    - bundle exec jekyll build -d public --baseurl "/${CI_PROJECT_NAME}"
+    - sh build.sh
   artifacts:
     paths:
       - public
