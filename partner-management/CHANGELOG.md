@@ -4,36 +4,39 @@ _Published automatically._
 
 | Version | Date | Type |
 | --- | --- | --- |
-| [`0.0.0-develop.12`](#v-0-0-0-develop-12) | 2026-07-17 | develop |
+| [`0.0.0-develop.13`](#v-0-0-0-develop-13) | 2026-07-17 | develop |
 
-<a id="v-0-0-0-develop-12"></a>
+<a id="v-0-0-0-develop-13"></a>
 
-## partner-management — Unreleased (0.0.0-develop.12, 2026-07-17)
+## partner-management — Unreleased (0.0.0-develop.13, 2026-07-17)
 
-_commit `0951fe0` · baseline: release the start · previous build 0.0.0-develop.11_
-<!-- build:0.0.0-develop.12 revision:0951fe0f018011035818ec4b8b9d9a495a5c68e2 -->
+_commit `2085c3d` · baseline: release the start · previous build 0.0.0-develop.12_
+<!-- build:0.0.0-develop.13 revision:2085c3d1c815126e7e0e5b153a29513962f71506 -->
 
 ### Summary
 
 _All changes since release the start:_
 
-- [G2P-5335](https://openg2p.atlassian.net/browse/G2P-5335): Switched CI from GitHub Actions to GitLab for build and publish processes.
-- [G2P-5335](https://openg2p.atlassian.net/browse/G2P-5335): Implemented a new CI configuration in `.gitlab-ci.yml`.
-- [G2P-5261](https://openg2p.atlassian.net/browse/G2P-5261): Added auditing functionality to enhance tracking and compliance.
-- [G2P-5261](https://openg2p.atlassian.net/browse/G2P-5261): Corrected the default audit manager URL for improved accuracy.
-- [G2P-5261](https://openg2p.atlassian.net/browse/G2P-5261): Added `questions.yaml` for better configuration management.
-- [G2P-5261](https://openg2p.atlassian.net/browse/G2P-5261): Scoped workflows more effectively to streamline processes.
-- [G2P-5261](https://openg2p.atlassian.net/browse/G2P-5261): Made minor UI changes for improved user experience.
-- [G2P-5261](https://openg2p.atlassian.net/browse/G2P-5261): Fixed issues related to sanity tests on the bridge for better reliability.
-- [G2P-5261](https://openg2p.atlassian.net/browse/G2P-5261): Implemented changes for automatic tests running from the bridge.
-- [G2P-5261](https://openg2p.atlassian.net/browse/G2P-5261): Initial version of the project is now a work in progress.
+- [G2P-5335](https://openg2p.atlassian.net/browse/G2P-5335) Switched CI from GitHub Actions to GitLab CI, implementing a new build and publish pipeline.  
+- [G2P-5348](https://openg2p.atlassian.net/browse/G2P-5348) Corrected Docker image sourcing to ensure Dockers are now pulled from the correct repository instead of Docker Hub.  
+- [G2P-5261](https://openg2p.atlassian.net/browse/G2P-5261) Added auditing functionality to enhance monitoring and compliance.  
+- [G2P-5261](https://openg2p.atlassian.net/browse/G2P-5261) Improved workflow scoping for better organization and clarity in processes.  
+- [G2P-5261](https://openg2p.atlassian.net/browse/G2P-5261) Fixed issues related to sanity tests running from the bridge.  
+- [G2P-5261](https://openg2p.atlassian.net/browse/G2P-5261) Implemented changes for automatic tests to run from the bridge.  
+- [G2P-5261](https://openg2p.atlassian.net/browse/G2P-5261) Updated the default audit manager URL for accuracy.  
+- [G2P-5261](https://openg2p.atlassian.net/browse/G2P-5261) Added questions.yaml for configuration purposes.  
+- [G2P-5261](https://openg2p.atlassian.net/browse/G2P-5261) Made minor UI changes to improve user experience.  
+- Minor edit to test build and push pipeline on GitLab.  
+- Initial version of the project marked as WIP.  
+- Initial commit to establish the project repository.  
 
-### New in this build (since 0.0.0-develop.11)
+### New in this build (since 0.0.0-develop.12)
 
-- Minor edit to test build and push pipeline on Gitlab ([`0951fe0`](https://gitlab.com/openg2p/partner-management/-/commit/0951fe0f018011035818ec4b8b9d9a495a5c68e2))
+- [G2P-5348](https://openg2p.atlassian.net/browse/G2P-5348) Dockers were being picked from Docker Hub. Corrected. ([`2085c3d`](https://gitlab.com/openg2p/partner-management/-/commit/2085c3d1c815126e7e0e5b153a29513962f71506))
 
 ### Since last release (the start)
 
+- [G2P-5348](https://openg2p.atlassian.net/browse/G2P-5348) Dockers were being picked from Docker Hub. Corrected. ([`2085c3d`](https://gitlab.com/openg2p/partner-management/-/commit/2085c3d1c815126e7e0e5b153a29513962f71506))
 - Minor edit to test build and push pipeline on Gitlab ([`0951fe0`](https://gitlab.com/openg2p/partner-management/-/commit/0951fe0f018011035818ec4b8b9d9a495a5c68e2))
 - [G2P-5335](https://openg2p.atlassian.net/browse/G2P-5335) Switch CI to GitLab (.gitlab-ci.yml); drop GitHub Actions build/publish ([`7cae5ea`](https://gitlab.com/openg2p/partner-management/-/commit/7cae5ead0b6ffba592676467331ee1722894dfd4))
 - [G2P-5335](https://openg2p.atlassian.net/browse/G2P-5335) New CI implemented. ([`5d68968`](https://gitlab.com/openg2p/partner-management/-/commit/5d68968984ff2f37e119e2fce7390719f7c68af4))
