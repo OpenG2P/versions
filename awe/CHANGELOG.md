@@ -5,6 +5,7 @@ _Published automatically._
 | Version | Date | Type |
 | --- | --- | --- |
 | [`1.1.0`](#v-1-1-0) | 2026-07-17 | release |
+| [`0.0.0-develop.67`](#v-0-0-0-develop-67) | 2026-07-17 | develop |
 
 # Releases
 
@@ -34,4 +35,21 @@ _commit `eb178cd` · changes since release v1.0.0_
 - chore: auto-generate OpenAPI spec [skip ci] ([`2208256`](https://gitlab.com/openg2p/awe/-/commit/2208256f50113df1f707385651ec6857adb9485c))
 - [G2P-5232](https://openg2p.atlassian.net/browse/G2P-5232) Add assignee_name field to ApprovalTask model and update related logic ([`04cda7b`](https://gitlab.com/openg2p/awe/-/commit/04cda7b97caa0c682d3245c86966d1bf219762b8))
 - [G2P-5147](https://openg2p.atlassian.net/browse/G2P-5147) Add Keycloak user management endpoints and UI integration in awe ([`169c313`](https://gitlab.com/openg2p/awe/-/commit/169c3137d97f6dd2598e7e3985ee9f1ba2bf1abe))
+
+<a id="v-0-0-0-develop-67"></a>
+
+## awe — Unreleased (0.0.0-develop.67, 2026-07-17)
+
+_commit `201996b` · baseline: release 1.1.0_
+<!-- build:0.0.0-develop.67 revision:201996b6919f3e74def2b6bac25cf5306c5f2e3c -->
+
+### Summary
+
+_All changes since release 1.1.0:_
+
+- Added support for multiple token issuers, allowing tokens minted via the public Keycloak hostname to validate alongside in-cluster tokens, resolving the 'Invalid issuer' error on registry-forwarded user tokens.
+
+### Since last release (1.1.0)
+
+- [G2P-5378](https://openg2p.atlassian.net/browse/G2P-5378) AWE: accept multiple token issuers (issuer + additional_issuers) so tokens minted via the public Keycloak hostname validate alongside in-cluster ones; fixes 'Invalid issuer' on registry-forwarded user tokens ([`201996b`](https://gitlab.com/openg2p/awe/-/commit/201996b6919f3e74def2b6bac25cf5306c5f2e3c))
 
