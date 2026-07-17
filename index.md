@@ -6,5 +6,6 @@ Version history and change logs, one page per repository. See the
 for how these are produced.
 
 - [audit-manager](./audit-manager/CHANGELOG)
+- [awe](./awe/CHANGELOG)
 - [consent-manager](./consent-manager/CHANGELOG)
 - [partner-management](./partner-management/CHANGELOG)
