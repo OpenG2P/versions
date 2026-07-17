@@ -8,4 +8,5 @@ for how these are produced.
 - [audit-manager](./audit-manager/CHANGELOG)
 - [awe](./awe/CHANGELOG)
 - [consent-manager](./consent-manager/CHANGELOG)
+- [master-data-service](./master-data-service/CHANGELOG)
 - [partner-management](./partner-management/CHANGELOG)
