@@ -6,3 +6,4 @@ Version history and change logs, one page per repository. See the
 for how these are produced.
 
 - [consent-manager](./consent-manager/CHANGELOG)
+- [partner-management](./partner-management/CHANGELOG)
