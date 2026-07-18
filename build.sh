@@ -22,17 +22,21 @@ npm install -g marked@12 >/dev/null 2>&1
 CSS='<style>
 :root{
   --ink:#061327; --yellow:#F5BB1A; --orange:#F07B1A;
-  --line:#e6e9ee; --lightgrey:#F6F6F6; --link:#2A477A; --muted:#5b6472;
+  --line:#e6e9ee; --lightgrey:#F6F6F6; --link:#0E63C9; --muted:#5b6472;
 }
 *{box-sizing:border-box}
 body{font-family:Roboto,-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif;
   color:var(--ink);background:#fff;margin:0;line-height:1.62;-webkit-font-smoothing:antialiased}
 .wrap{max-width:1040px;margin:0 auto;padding:0 32px}
-header.site{display:flex;align-items:center;gap:20px;padding:22px 0 16px;border-bottom:3px solid var(--yellow)}
-header.site a.brand{display:inline-flex;align-items:center;text-decoration:none}
-header.site img{display:block;height:34px;width:auto}
-header.site .site-title{margin-left:auto;color:var(--muted);font-weight:600;font-size:14px;letter-spacing:.02em}
-header.site .site-title a{color:var(--muted)}
+header.site{display:grid;grid-template-columns:1fr auto 1fr;align-items:center;gap:16px;padding:22px 0 18px;border-bottom:3px solid var(--yellow)}
+header.site a.brand{display:inline-flex;align-items:center;text-decoration:none;justify-self:start}
+header.site img{display:block;height:36px;width:auto}
+header.site .site-title{grid-column:2;text-align:center;color:var(--ink);font-weight:700;font-size:25px;letter-spacing:.01em}
+@media (max-width:680px){
+  header.site{grid-template-columns:1fr;justify-items:center}
+  header.site a.brand{justify-self:center}
+  header.site .site-title{grid-column:1;font-size:20px}
+}
 main{padding:8px 0 8px}
 h1{font-size:1.95em;margin:.7em 0 .35em;font-weight:700}
 h1,h2{padding-bottom:.28em;border-bottom:1px solid var(--line)}
