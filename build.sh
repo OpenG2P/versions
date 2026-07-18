@@ -32,10 +32,12 @@ header.site{display:grid;grid-template-columns:1fr auto 1fr;align-items:center;g
 header.site a.brand{display:inline-flex;align-items:center;text-decoration:none;justify-self:start}
 header.site img{display:block;height:36px;width:auto}
 header.site .site-title{grid-column:2;text-align:center;color:var(--ink);font-weight:700;font-size:25px;letter-spacing:.01em}
+header.site a.home{grid-column:3;justify-self:end;font-weight:600;font-size:15px;white-space:nowrap}
 @media (max-width:680px){
-  header.site{grid-template-columns:1fr;justify-items:center}
+  header.site{grid-template-columns:1fr;justify-items:center;gap:8px}
   header.site a.brand{justify-self:center}
   header.site .site-title{grid-column:1;font-size:20px}
+  header.site a.home{grid-column:1;justify-self:center}
 }
 main{padding:8px 0 8px}
 h1{font-size:1.95em;margin:.7em 0 .35em;font-weight:700}
@@ -89,7 +91,7 @@ while IFS= read -r md; do
     printf '%s' "$fav"
     printf '%s' "$CSS"
     printf '%s' "</head><body><div class=\"wrap\">"
-    printf '%s' "<header class=\"site\"><a class=\"brand\" href=\"${root}index.html\"><img src=\"${root}openg2p-logo.png\" alt=\"OpenG2P\"></a><span class=\"site-title\">Versions &amp; Change&nbsp;logs</span></header>"
+    printf '%s' "<header class=\"site\"><a class=\"brand\" href=\"${root}index.html\"><img src=\"${root}openg2p-logo.png\" alt=\"OpenG2P\"></a><span class=\"site-title\">Versions &amp; Change&nbsp;logs</span><a class=\"home\" href=\"${root}index.html\">Home</a></header>"
     printf '%s' "<main>"
     cat /tmp/body.html
     printf '%s' "</main>"
