@@ -63,7 +63,7 @@ footer.site-foot .fine{margin-top:8px;font-size:12px;color:#9aa3af}
 footer.site-foot a{color:var(--link)}
 </style>'
 
-FAVICON='<link rel="icon" type="image/png" href="ROOTopeng2p-logo.png">'
+FAVICON='<link rel="icon" type="image/svg+xml" href="ROOTfavicon.svg">'
 
 # List every markdown file (skip build output / vcs / node_modules).
 find . -type f -name '*.md' \
@@ -91,11 +91,11 @@ while IFS= read -r md; do
     printf '%s' "$fav"
     printf '%s' "$CSS"
     printf '%s' "</head><body><div class=\"wrap\">"
-    printf '%s' "<header class=\"site\"><a class=\"brand\" href=\"${root}index.html\"><img src=\"${root}openg2p-logo.png\" alt=\"OpenG2P\"></a><span class=\"site-title\">Versions &amp; Change&nbsp;logs</span><a class=\"home\" href=\"${root}index.html\">Home</a></header>"
+    printf '%s' "<header class=\"site\"><a class=\"brand\" href=\"https://openg2p.org\"><img src=\"${root}openg2p-logo.png\" alt=\"OpenG2P\"></a><span class=\"site-title\">Versions &amp; Change&nbsp;logs</span><a class=\"home\" href=\"${root}index.html\">Home</a></header>"
     printf '%s' "<main>"
     cat /tmp/body.html
     printf '%s' "</main>"
-    printf '%s' "<footer class=\"site-foot\"><div>Version history &amp; change logs for <a href=\"https://openg2p.org\">OpenG2P</a> repositories, generated automatically by CI.</div><div class=\"fine\">&copy; ${YEAR} OpenG2P. All rights reserved.</div></footer>"
+    printf '%s' "<footer class=\"site-foot\"><div>Version history &amp; change logs for <a href=\"https://gitlab.com/openg2p\">OpenG2P repositories</a>, generated automatically by CI.</div><div class=\"fine\">&copy; ${YEAR} OpenG2P. All rights reserved.</div></footer>"
     printf '%s' "</div></body></html>"
   } > "$out"
   echo "built $out"
