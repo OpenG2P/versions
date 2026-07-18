@@ -6,36 +6,37 @@ _Published automatically._
 
 | Version | Date | Type |
 | --- | --- | --- |
-| [`1.1.0-rc.98`](#v-1-1-0-rc-98) | 2026-07-18 | release candidate |
+| [`1.1.0`](#v-1-1-0) | 2026-07-18 | release |
 | [`0.0.0-develop.98`](#v-0-0-0-develop-98) | 2026-07-18 | develop |
 
-# Release candidates (in progress)
+# Releases
 
-<a id="v-1-1-0-rc-98"></a>
+<a id="v-1-1-0"></a>
 
-## g2p-bridge/g2p-bridge 1.1.0-rc.98 — 2026-07-18
+## g2p-bridge/g2p-bridge 1.1.0 — 2026-07-18
 
-_commit `60b33be` · baseline: release v1.0.0_
-<!-- build:1.1.0-rc.98 revision:60b33bea497c51647d1d016f5a10364d13b080f9 ts:1784373563 -->
+<!-- build:1.1.0 revision:60b33bea497c51647d1d016f5a10364d13b080f9 ts:1784373563 -->
+
+_commit `60b33be` · changes since release v1.0.0_
+
+### Release notes
+
+Security feature: signature verification enabled; Keymanager removed; passes sanity test
 
 ### Summary
 
-_All changes since release v1.0.0:_
-
 - Keymanager removed; signing now uses local crypto instead of Keymanager.
 - Major changes for using local crypto rather than Keymanager, with most updates in fastapi common.
-- CI switched to GitLab; GitHub Actions build/publish has been dropped.
-- New CI implemented for improved build processes.
-- Integration with partner management service established.
-- Bug in sanity testing fixed, along with multiple bug fixes in sanity tests.
-- Sanity test hook corrected to ensure proper functionality.
+- CI switched to GitLab, dropping GitHub Actions for build and publish processes.
+- New CI implementation introduced.
+- Integration with partner management service completed.
+- Bug fixes in sanity tests, including multiple corrections and a fix attempt for failed tests.
 - Docker build fixed to resolve previous issues.
-- API walkthrough corrected for accuracy.
-- Defaults updated and test cases adjusted for recent changes.
+- API walkthrough corrected for improved clarity.
 - Names adjusted as partner management is now installed via commons-services.
-- Cleanups performed for better code quality.
+- Defaults updated and test cases revised to reflect recent changes.
 
-### Since last release (v1.0.0)
+### Changes
 
 - [G2P-5335](https://openg2p.atlassian.net/browse/G2P-5335) Switch CI to GitLab (.gitlab-ci.yml); drop GitHub Actions build/publish ([`60b33be`](https://gitlab.com/openg2p/g2p-bridge/g2p-bridge/-/commit/60b33bea497c51647d1d016f5a10364d13b080f9))
 - [G2P-5335](https://openg2p.atlassian.net/browse/G2P-5335) New CI implemented. ([`781a1af`](https://gitlab.com/openg2p/g2p-bridge/g2p-bridge/-/commit/781a1af4ffd17da58a638f886ad3e974076fab04))
