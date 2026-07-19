@@ -1,4 +1,4 @@
-# g2p-bridge/g2p-bridge changelog
+# g2p-bridge/g2p-bridge
 
 _Published automatically._
 
@@ -6,6 +6,7 @@ _Published automatically._
 
 | Version | Date | Type |
 | --- | --- | --- |
+| [`0.0.0-develop.100`](#v-0-0-0-develop-100) | 2026-07-19 | develop |
 | [`0.0.0-develop.99`](#v-0-0-0-develop-99) | 2026-07-19 | develop |
 | [`1.1.0`](#v-1-1-0) | 2026-07-18 | release |
 | [`0.0.0-develop.98`](#v-0-0-0-develop-98) | 2026-07-18 | develop |
@@ -59,6 +60,31 @@ Security feature: signature verification enabled; Keymanager removed; passes san
 - [G2P-5209](https://openg2p.atlassian.net/browse/G2P-5209) Major changes for using local crypto rather than Keymanager. Most changes in fastapi common. ([`dd8ed19`](https://gitlab.com/openg2p/g2p-bridge/g2p-bridge/-/commit/dd8ed19c2caf4d8f4506eac5b21e0049c79e2c3c))
 
 # Develop builds
+
+<a id="v-0-0-0-develop-100"></a>
+
+## g2p-bridge/g2p-bridge — develop 0.0.0-develop.100 (2026-07-19)
+
+_commit `b49ba73` · baseline: release 1.1.0 · previous build 0.0.0-develop.99_
+<!-- build:0.0.0-develop.100 revision:b49ba7355f406b0a426ed85a7c61d7d92b80e209 ts:1784427876 -->
+
+### Summary
+
+_All changes since release 1.1.0:_
+
+- Major refactor: Moved connectors to a new repository, `g2p-bridge-connectors`, with Celery now pulling them by git reference.
+- Fixed mapper initialization order for the FA connector to ensure proper functionality.
+- Removed 97 files related to various extensions, including configuration files and documentation, streamlining the codebase.
+- Updated dependency manifests for multiple extensions, including `agency-allocator`, `bank-connectors`, `geo-resolver`, `mapper-connectors`, and `notification-connectors`.
+
+### New in this build (since 0.0.0-develop.99)
+
+- [G2P-5374](https://openg2p.atlassian.net/browse/G2P-5374) Bump connectors: fix mapper init order so FA ([`b49ba73`](https://gitlab.com/openg2p/g2p-bridge/g2p-bridge/-/commit/b49ba7355f406b0a426ed85a7c61d7d92b80e209))
+
+### Since last release (1.1.0)
+
+- [G2P-5374](https://openg2p.atlassian.net/browse/G2P-5374) Bump connectors: fix mapper init order so FA ([`b49ba73`](https://gitlab.com/openg2p/g2p-bridge/g2p-bridge/-/commit/b49ba7355f406b0a426ed85a7c61d7d92b80e209))
+- [G2P-5374](https://openg2p.atlassian.net/browse/G2P-5374) Move connectors to g2p-bridge-connectors; Celery image pulls them by git ref. ([`46330ab`](https://gitlab.com/openg2p/g2p-bridge/g2p-bridge/-/commit/46330abec1a0238a4ccaced036d7650665c4606c))
 
 <a id="v-0-0-0-develop-99"></a>
 
