@@ -6,6 +6,7 @@ _Published automatically._
 
 | Version | Date | Type |
 | --- | --- | --- |
+| [`0.0.0-develop.99`](#v-0-0-0-develop-99) | 2026-07-19 | develop |
 | [`1.1.0`](#v-1-1-0) | 2026-07-18 | release |
 | [`0.0.0-develop.98`](#v-0-0-0-develop-98) | 2026-07-18 | develop |
 
@@ -58,6 +59,26 @@ Security feature: signature verification enabled; Keymanager removed; passes san
 - [G2P-5209](https://openg2p.atlassian.net/browse/G2P-5209) Major changes for using local crypto rather than Keymanager. Most changes in fastapi common. ([`dd8ed19`](https://gitlab.com/openg2p/g2p-bridge/g2p-bridge/-/commit/dd8ed19c2caf4d8f4506eac5b21e0049c79e2c3c))
 
 # Develop builds
+
+<a id="v-0-0-0-develop-99"></a>
+
+## g2p-bridge/g2p-bridge — develop 0.0.0-develop.99 (2026-07-19)
+
+_commit `46330ab` · baseline: release 1.1.0 · previous build 0.0.0-develop.98_
+<!-- build:0.0.0-develop.99 revision:46330abec1a0238a4ccaced036d7650665c4606c ts:1784423985 -->
+
+### Summary
+
+_All changes since release 1.1.0:_
+
+- Major refactor: Connectors have been moved to the new `g2p-bridge-connectors` repository, with the Celery image now pulling them by git reference.
+- Removed 97 files related to extensions, including configuration files and documentation, streamlining the project structure.
+- Updated dependency manifests for multiple extensions, including `agency-allocator`, `bank-connectors`, `geo-resolver`, `mapper-connectors`, and `notification-connectors`.
+- Significant reduction in codebase size with 2714 deletions, indicating a major cleanup and optimization effort.
+
+### Since last release (1.1.0)
+
+- [G2P-5374](https://openg2p.atlassian.net/browse/G2P-5374) Move connectors to g2p-bridge-connectors; Celery image pulls them by git ref. ([`46330ab`](https://gitlab.com/openg2p/g2p-bridge/g2p-bridge/-/commit/46330abec1a0238a4ccaced036d7650665c4606c))
 
 <a id="v-0-0-0-develop-98"></a>
 
