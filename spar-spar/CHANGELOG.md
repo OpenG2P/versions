@@ -6,33 +6,36 @@ _Published automatically._
 
 | Version | Date | Type |
 | --- | --- | --- |
-| [`1.1.0-rc.33`](#v-1-1-0-rc-33) | 2026-07-19 | release candidate |
+| [`1.1.0`](#v-1-1-0) | 2026-07-19 | release |
 | [`0.0.0-develop.33`](#v-0-0-0-develop-33) | 2026-07-19 | develop |
 | [`0.0.0-develop.32`](#v-0-0-0-develop-32) | 2026-07-18 | develop |
 
-# Release candidates (in progress)
+# Releases
 
-<a id="v-1-1-0-rc-33"></a>
+<a id="v-1-1-0"></a>
 
-## spar/spar 1.1.0-rc.33 — 2026-07-19
+## spar/spar 1.1.0 — 2026-07-19
 
-_commit `1a71557` · baseline: release v1.0.0_
-<!-- build:1.1.0-rc.33 revision:1a7155798e6de6f6abe6bfe109aa5902cc0e660d ts:1784433074 -->
+<!-- build:1.1.0 revision:1a7155798e6de6f6abe6bfe109aa5902cc0e660d ts:1784433074 -->
+
+_commit `1a71557` · changes since release v1.0.0_
+
+### Release notes
+
+Pegging a stable version; Major structural changes; move to Gitlab
 
 ### Summary
-
-_All changes since release v1.0.0:_
 
 - Removed the legacy Keymanager crypto backend from SPAR, including configuration, Keycloak initialization dependency, chart, and uninstall script.
 - Signing now uses local key verification instead of Keymanager.
 - Switched CI from GitHub Actions to GitLab for build and publish processes.
 - Integrated with the partner management service, adjusting names as PM is now installed via commons-services.
-- Implemented a new CI configuration aligning with organizational conventions.
-- Bumped develop build ordinal past retired run-number versions to maintain versioning integrity.
-- Fixed a Keycloak error to improve functionality.
-- Cleaned up code and configurations for better maintainability.
+- Implemented a new CI configuration and aligned build-publish.yml boilerplate with organizational conventions.
+- Fixed a Keycloak error and performed various cleanups.
+- Automatic version bumping for the develop branch has been introduced.
+- Bumped develop build ordinal past retired run-number versions.
 
-### Since last release (v1.0.0)
+### Changes
 
 - [G2P-5209](https://openg2p.atlassian.net/browse/G2P-5209) Remove legacy Keymanager crypto backend from SPAR (config, keycloak-init dep, chart, uninstall script) ([`1a71557`](https://gitlab.com/openg2p/spar/spar/-/commit/1a7155798e6de6f6abe6bfe109aa5902cc0e660d))
 - [G2P-5335](https://openg2p.atlassian.net/browse/G2P-5335) Switch CI to GitLab (.gitlab-ci.yml); drop GitHub Actions build/publish ([`db754ff`](https://gitlab.com/openg2p/spar/spar/-/commit/db754ff2f1e05cc1a77c28a7274dbb890f777dc3))
