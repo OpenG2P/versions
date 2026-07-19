@@ -1,3 +1,4 @@
 name=g2p-bridge/g2p-bridge
+kind=service
 repo=https://gitlab.com/openg2p/g2p-bridge/g2p-bridge
 images=https://gitlab.com/openg2p/g2p-bridge/g2p-bridge/container_registry
