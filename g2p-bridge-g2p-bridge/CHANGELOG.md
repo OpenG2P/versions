@@ -6,10 +6,10 @@ _Published automatically._
 
 | Version | Date | Type |
 | --- | --- | --- |
+| [`0.0.0-develop.105`](#v-0-0-0-develop-105) | 2026-07-20 | develop |
 | [`1.2.0`](#v-1-2-0) | 2026-07-19 | release |
 | [`0.0.0-develop.101`](#v-0-0-0-develop-101) | 2026-07-19 | develop |
 | [`0.0.0-develop.100`](#v-0-0-0-develop-100) | 2026-07-19 | develop |
-| [`0.0.0-develop.99`](#v-0-0-0-develop-99) | 2026-07-19 | develop |
 | [`1.1.0`](#v-1-1-0) | 2026-07-18 | release |
 
 # Releases
@@ -92,6 +92,31 @@ Security feature: signature verification enabled; Keymanager removed; passes san
 
 # Develop builds
 
+<a id="v-0-0-0-develop-105"></a>
+
+## g2p-bridge/g2p-bridge — develop 0.0.0-develop.105 (2026-07-20)
+
+_commit `4bcae93` · baseline: release 1.2.0 · previous build 0.0.0-develop.101_
+<!-- build:0.0.0-develop.105 revision:4bcae93fcd9b7c82f280f189c8f52441ff07e36b ts:1784523323 -->
+
+### Summary
+
+_All changes since release 1.2.0:_
+
+- CI/CD overhaul: Removed GitHub workflows in favor of GitLab, leading to a significant reduction in code with 179 deletions across 4 files, including the removal of core-test, example-bank-test, and pre-commit workflows. 
+- Version management: Reverted versions for the develop branch to align with the updated CI/CD strategy.
+
+### New in this build (since 0.0.0-develop.101)
+
+- Github workflows removed, as they are not required on Gitlab. Versions reverted for develop branch. ([`4bcae93`](https://gitlab.com/openg2p/g2p-bridge/g2p-bridge/-/commit/4bcae93fcd9b7c82f280f189c8f52441ff07e36b))
+- Pinning down fast api version for creating a frozen version. ([`e812f7c`](https://gitlab.com/openg2p/g2p-bridge/g2p-bridge/-/commit/e812f7cdc817eea83c1ba5e229b0f049ffd7cb22))
+- Changed up fastapi version to 'develop' for consistency across builds. ([`233dd85`](https://gitlab.com/openg2p/g2p-bridge/g2p-bridge/-/commit/233dd856e0b975566afe5c65eb46c352f993081e))
+- [G2P-5374](https://openg2p.atlassian.net/browse/G2P-5374) Point SPAR build dep to gitlab spar@develop (core/models); was github openg2p-spar@2.0 ([`db6a44b`](https://gitlab.com/openg2p/g2p-bridge/g2p-bridge/-/commit/db6a44b8c9f61634b15de00821d5a6af10b68059))
+
+### Since last release (1.2.0)
+
+- Github workflows removed, as they are not required on Gitlab. Versions reverted for develop branch. ([`4bcae93`](https://gitlab.com/openg2p/g2p-bridge/g2p-bridge/-/commit/4bcae93fcd9b7c82f280f189c8f52441ff07e36b))
+
 <a id="v-0-0-0-develop-101"></a>
 
 ## g2p-bridge/g2p-bridge — develop 0.0.0-develop.101 (2026-07-19)
@@ -140,26 +165,6 @@ _All changes since release 1.1.0:_
 ### Since last release (1.1.0)
 
 - [G2P-5374](https://openg2p.atlassian.net/browse/G2P-5374) Bump connectors: fix mapper init order so FA ([`b49ba73`](https://gitlab.com/openg2p/g2p-bridge/g2p-bridge/-/commit/b49ba7355f406b0a426ed85a7c61d7d92b80e209))
-- [G2P-5374](https://openg2p.atlassian.net/browse/G2P-5374) Move connectors to g2p-bridge-connectors; Celery image pulls them by git ref. ([`46330ab`](https://gitlab.com/openg2p/g2p-bridge/g2p-bridge/-/commit/46330abec1a0238a4ccaced036d7650665c4606c))
-
-<a id="v-0-0-0-develop-99"></a>
-
-## g2p-bridge/g2p-bridge — develop 0.0.0-develop.99 (2026-07-19)
-
-_commit `46330ab` · baseline: release 1.1.0 · previous build 0.0.0-develop.98_
-<!-- build:0.0.0-develop.99 revision:46330abec1a0238a4ccaced036d7650665c4606c ts:1784423985 -->
-
-### Summary
-
-_All changes since release 1.1.0:_
-
-- Major refactor: Connectors have been moved to the new `g2p-bridge-connectors` repository, with the Celery image now pulling them by git reference.
-- Removed 97 files related to extensions, including configuration files and documentation, streamlining the project structure.
-- Updated dependency manifests for multiple extensions, including `agency-allocator`, `bank-connectors`, `geo-resolver`, `mapper-connectors`, and `notification-connectors`.
-- Significant reduction in codebase size with 2714 deletions, indicating a major cleanup and optimization effort.
-
-### Since last release (1.1.0)
-
 - [G2P-5374](https://openg2p.atlassian.net/browse/G2P-5374) Move connectors to g2p-bridge-connectors; Celery image pulls them by git ref. ([`46330ab`](https://gitlab.com/openg2p/g2p-bridge/g2p-bridge/-/commit/46330abec1a0238a4ccaced036d7650665c4606c))
 
 ---
