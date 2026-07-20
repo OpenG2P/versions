@@ -20,6 +20,7 @@ Registry** (linked at the top of each repository's page below). See the
 - **[id-generator](./id-generator/CHANGELOG)** · [repository ↗](https://gitlab.com/openg2p/id-generator)
 - **[master-data-service](./master-data-service/CHANGELOG)**
 - **[partner-management](./partner-management/CHANGELOG)**
+- **[pbms/pbms](./pbms-pbms/CHANGELOG)** · [repository ↗](https://gitlab.com/openg2p/pbms/pbms)
 - **[spar/spar](./spar-spar/CHANGELOG)** · [repository ↗](https://gitlab.com/openg2p/spar/spar)
 
 ### Libraries

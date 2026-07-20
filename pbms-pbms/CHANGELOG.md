@@ -1,0 +1,48 @@
+# pbms/pbms
+
+_Published automatically._
+
+**Repository:** [gitlab.com/openg2p/pbms/pbms](https://gitlab.com/openg2p/pbms/pbms) · **Container images:** [Container Registry](https://gitlab.com/openg2p/pbms/pbms/container_registry)
+
+| Version | Date | Type |
+| --- | --- | --- |
+| [`0.0.0-develop.8`](#v-0-0-0-develop-8) | 2026-07-20 | develop |
+
+# Develop builds
+
+<a id="v-0-0-0-develop-8"></a>
+
+## pbms/pbms — develop 0.0.0-develop.8 (2026-07-20)
+
+_commit `9129bbd` · baseline: release the start_
+<!-- build:0.0.0-develop.8 revision:9129bbd4fb4f73fa37af929a44a7124071d845f3 ts:1784522864 -->
+
+### Summary
+
+_All changes since release the start:_
+
+- **Major:** CI overhaul: switched to GitLab CI, removing GitHub Actions, and adopting a central build-publish process for multiple images and charts.
+- Dependency updates: dropped pin on odoo-commons in the Dockerfile, and updated versions for Postgres-init chart and other components.
+- Ongoing consolidation efforts: multiple commits focused on streamlining the codebase.
+- Documentation added: created a new README.md for improved project clarity.
+
+### Since last release (the start)
+
+- [G2P-5335](https://openg2p.atlassian.net/browse/G2P-5335) Switch CI to GitLab (.gitlab-ci.yml); drop GitHub Actions build/publish ([`9129bbd`](https://gitlab.com/openg2p/pbms/pbms/-/commit/9129bbd4fb4f73fa37af929a44a7124071d845f3))
+- [G2P-5335](https://openg2p.atlassian.net/browse/G2P-5335) Drop odoo-commons pin on the core image (Dockerfile clones by ref name, not SHA) ([`0e54e65`](https://gitlab.com/openg2p/pbms/pbms/-/commit/0e54e65238d79f8d1fbd7bf0bd8c43b381874188))
+- [G2P-5335](https://openg2p.atlassian.net/browse/G2P-5335) Adopt central build-publish CI (5 images + openg2p-pbms chart + changelog); remove old docker/helm workflows. Pull g2p-bridge models from GitLab develop (was the GitHub mirror) ([`5248e61`](https://gitlab.com/openg2p/pbms/pbms/-/commit/5248e61241476d0d93bdc50de48d86b30677082c))
+- [G2P-3614](https://openg2p.atlassian.net/browse/G2P-3614) versions updated. ([`565993f`](https://gitlab.com/openg2p/pbms/pbms/-/commit/565993fd5e86ed5a9f2754ac86127354d50c98fd))
+- [G2P-3614](https://openg2p.atlassian.net/browse/G2P-3614) Postgres-init chart version updated. ([`82c20f6`](https://gitlab.com/openg2p/pbms/pbms/-/commit/82c20f68361ef60e305b2b58ef7cd56b3ef9fedd))
+- [G2P-3614](https://openg2p.atlassian.net/browse/G2P-3614) Consolidation. WIP. ([`36b2fee`](https://gitlab.com/openg2p/pbms/pbms/-/commit/36b2feeef878f2d33b1a7e8c1fbae3abf145671f))
+- [G2P-3614](https://openg2p.atlassian.net/browse/G2P-3614) Consolidation. WIP. ([`7fe8455`](https://gitlab.com/openg2p/pbms/pbms/-/commit/7fe8455c55dc4cccf46eafd9c4d09c06569ca9be))
+- Create README.md ([`29cd29e`](https://gitlab.com/openg2p/pbms/pbms/-/commit/29cd29e674f88b583e73cdf9742d95306de31f5e))
+
+---
+
+> **What's shown here.** This catalogue lists **every stable release**, plus
+> the **latest 3 develop builds** and the **latest 3 release
+> candidates** per release line. Older develop builds and release candidates
+> are pruned as they are superseded, and a release's candidates are removed
+> once it ships. Those versions still exist in the container and Helm
+> registries — they are simply not listed here. This page is generated
+> automatically from commit history; do not edit it by hand.

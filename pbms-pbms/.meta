@@ -1,0 +1,4 @@
+name=pbms/pbms
+kind=service
+repo=https://gitlab.com/openg2p/pbms/pbms
+images=https://gitlab.com/openg2p/pbms/pbms/container_registry
