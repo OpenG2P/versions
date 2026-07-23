@@ -1,0 +1,4 @@
+name=master-data-service
+kind=service
+repo=https://gitlab.com/openg2p/master-data-service
+images=https://gitlab.com/openg2p/master-data-service/container_registry
