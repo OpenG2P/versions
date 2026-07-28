@@ -6,10 +6,22 @@ _Published automatically._
 
 | Version | Date | Type |
 | --- | --- | --- |
+| [`0.0.0-develop.30`](#v-0-0-0-develop-30) | 2026-07-28 | develop |
 | [`0.0.0-develop.29`](#v-0-0-0-develop-29) | 2026-07-28 | develop |
 | [`0.0.0-develop.27`](#v-0-0-0-develop-27) | 2026-07-23 | develop |
 
 # Develop builds
+
+<a id="v-0-0-0-develop-30"></a>
+
+## master-data-service — develop 0.0.0-develop.30 (2026-07-28)
+
+_commit `05620b1` · changes since 0.0.0-develop.29_
+<!-- build:0.0.0-develop.30 revision:05620b125edef8fede35e77f6f21063c5fd2bc4e ts:1785239243 -->
+
+### Changes since 0.0.0-develop.29
+
+- [G2P-4804](https://openg2p.atlassian.net/browse/G2P-4804) Add db-seed image for country-pack geo seeding. ([`05620b1`](https://gitlab.com/openg2p/master-data-service/-/commit/05620b125edef8fede35e77f6f21063c5fd2bc4e))
 
 <a id="v-0-0-0-develop-29"></a>
 
