@@ -6,11 +6,23 @@ _Published automatically._
 
 | Version | Date | Type |
 | --- | --- | --- |
+| [`0.0.0-develop.31`](#v-0-0-0-develop-31) | 2026-07-29 | develop |
 | [`0.0.0-develop.30`](#v-0-0-0-develop-30) | 2026-07-28 | develop |
 | [`0.0.0-develop.29`](#v-0-0-0-develop-29) | 2026-07-28 | develop |
 | [`0.0.0-develop.27`](#v-0-0-0-develop-27) | 2026-07-23 | develop |
 
 # Develop builds
+
+<a id="v-0-0-0-develop-31"></a>
+
+## master-data-service — develop 0.0.0-develop.31 (2026-07-29)
+
+_commit `5474754` · changes since 0.0.0-develop.30_
+<!-- build:0.0.0-develop.31 revision:5474754ff138a7924a63bc9e2dd2b933d027a22f ts:1785290640 -->
+
+### Changes since 0.0.0-develop.30
+
+- [G2P-4804](https://openg2p.atlassian.net/browse/G2P-4804) Build the geo db-seed image in CI and publish to the GitLab registry. ([`5474754`](https://gitlab.com/openg2p/master-data-service/-/commit/5474754ff138a7924a63bc9e2dd2b933d027a22f))
 
 <a id="v-0-0-0-develop-30"></a>
 
