@@ -6,12 +6,24 @@ _Published automatically._
 
 | Version | Date | Type |
 | --- | --- | --- |
+| [`0.0.0-develop.32`](#v-0-0-0-develop-32) | 2026-07-30 | develop |
 | [`0.0.0-develop.31`](#v-0-0-0-develop-31) | 2026-07-29 | develop |
 | [`0.0.0-develop.30`](#v-0-0-0-develop-30) | 2026-07-28 | develop |
 | [`0.0.0-develop.29`](#v-0-0-0-develop-29) | 2026-07-28 | develop |
 | [`0.0.0-develop.27`](#v-0-0-0-develop-27) | 2026-07-23 | develop |
 
 # Develop builds
+
+<a id="v-0-0-0-develop-32"></a>
+
+## master-data-service — develop 0.0.0-develop.32 (2026-07-30)
+
+_commit `576ffe0` · changes since 0.0.0-develop.31_
+<!-- build:0.0.0-develop.32 revision:576ffe074d1f8b6ed15f7e795fb862e2cc5a99de ts:1785382386 -->
+
+### Changes since 0.0.0-develop.31
+
+- [G2P-4804](https://openg2p.atlassian.net/browse/G2P-4804) Default geoSeed to the fictitious Kamuntu pack (XKM) so a fresh install never puts invented figures against a real country, with real packs one value away. Point packRoot at openg2p-data/packs after the reorg, prefer the pack manifest's explicit `version`, and log licence/synthetic provenance at seed time. ([`576ffe0`](https://gitlab.com/openg2p/master-data-service/-/commit/576ffe074d1f8b6ed15f7e795fb862e2cc5a99de))
 
 <a id="v-0-0-0-develop-31"></a>
 
