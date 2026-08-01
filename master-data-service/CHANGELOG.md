@@ -6,6 +6,7 @@ _Published automatically._
 
 | Version | Date | Type |
 | --- | --- | --- |
+| [`0.0.0-develop.36`](#v-0-0-0-develop-36) | 2026-08-01 | develop |
 | [`0.0.0-develop.35`](#v-0-0-0-develop-35) | 2026-08-01 | develop |
 | [`0.0.0-develop.34`](#v-0-0-0-develop-34) | 2026-08-01 | develop |
 | [`0.0.0-develop.32`](#v-0-0-0-develop-32) | 2026-07-30 | develop |
@@ -15,6 +16,17 @@ _Published automatically._
 | [`0.0.0-develop.27`](#v-0-0-0-develop-27) | 2026-07-23 | develop |
 
 # Develop builds
+
+<a id="v-0-0-0-develop-36"></a>
+
+## master-data-service — develop 0.0.0-develop.36 (2026-08-01)
+
+_commit `ebb8bb5` · changes since 0.0.0-develop.35_
+<!-- build:0.0.0-develop.36 revision:ebb8bb50042d370fd70970a7a82be987b862d508 ts:1785558178 -->
+
+### Changes since 0.0.0-develop.35
+
+- [G2P-4804](https://openg2p.atlassian.net/browse/G2P-4804) Add an Ethiopia overlay for the master-data chart. Kept separate from values.yaml so the chart keeps defaulting to the fictitious Kamuntu pack: an install nobody configured must not attach invented figures to a real country's name, and turning codelists and samples on by default would change what an existing deployment gets on upgrade. ([`ebb8bb5`](https://gitlab.com/openg2p/master-data-service/-/commit/ebb8bb50042d370fd70970a7a82be987b862d508))
 
 <a id="v-0-0-0-develop-35"></a>
 
