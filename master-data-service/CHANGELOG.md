@@ -6,6 +6,7 @@ _Published automatically._
 
 | Version | Date | Type |
 | --- | --- | --- |
+| [`0.0.0-develop.38`](#v-0-0-0-develop-38) | 2026-08-02 | develop |
 | [`0.0.0-develop.37`](#v-0-0-0-develop-37) | 2026-08-01 | develop |
 | [`0.0.0-develop.36`](#v-0-0-0-develop-36) | 2026-08-01 | develop |
 | [`0.0.0-develop.35`](#v-0-0-0-develop-35) | 2026-08-01 | develop |
@@ -17,6 +18,17 @@ _Published automatically._
 | [`0.0.0-develop.27`](#v-0-0-0-develop-27) | 2026-07-23 | develop |
 
 # Develop builds
+
+<a id="v-0-0-0-develop-38"></a>
+
+## master-data-service — develop 0.0.0-develop.38 (2026-08-02)
+
+_commit `e319189` · changes since 0.0.0-develop.37_
+<!-- build:0.0.0-develop.38 revision:e319189f19fab97a0855c3e2165f9e78ccff4efb ts:1785674332 -->
+
+### Changes since 0.0.0-develop.37
+
+- [G2P-4804](https://openg2p.atlassian.net/browse/G2P-4804) Surface the country pack in questions.yaml. None of the geo-seed options were in the Rancher form, so the one place a deployment declares its country was reachable only by hand-editing values — an installer had no way to know the choice existed, and every install silently took the fictitious default. ([`e319189`](https://gitlab.com/openg2p/master-data-service/-/commit/e319189f19fab97a0855c3e2165f9e78ccff4efb))
 
 <a id="v-0-0-0-develop-37"></a>
 
