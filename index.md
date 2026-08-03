@@ -17,6 +17,7 @@ Registry** (linked at the top of each repository's page below). See the
 - **[awe](./awe/CHANGELOG)**
 - **[consent-manager](./consent-manager/CHANGELOG)**
 - **[g2p-bridge/g2p-bridge](./g2p-bridge-g2p-bridge/CHANGELOG)** · [repository ↗](https://gitlab.com/openg2p/g2p-bridge/g2p-bridge)
+- **[g2p-insights](./g2p-insights/CHANGELOG)** · [repository ↗](https://gitlab.com/openg2p/g2p-insights)
 - **[id-generator](./id-generator/CHANGELOG)** · [repository ↗](https://gitlab.com/openg2p/id-generator)
 - **[master-data-service](./master-data-service/CHANGELOG)** · [repository ↗](https://gitlab.com/openg2p/master-data-service)
 - **[partner-management](./partner-management/CHANGELOG)**
