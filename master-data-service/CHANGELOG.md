@@ -6,6 +6,7 @@ _Published automatically._
 
 | Version | Date | Type |
 | --- | --- | --- |
+| [`0.0.0-develop.40`](#v-0-0-0-develop-40) | 2026-08-03 | develop |
 | [`0.0.0-develop.39`](#v-0-0-0-develop-39) | 2026-08-03 | develop |
 | [`0.0.0-develop.38`](#v-0-0-0-develop-38) | 2026-08-02 | develop |
 | [`0.0.0-develop.37`](#v-0-0-0-develop-37) | 2026-08-01 | develop |
@@ -15,9 +16,19 @@ _Published automatically._
 | [`0.0.0-develop.32`](#v-0-0-0-develop-32) | 2026-07-30 | develop |
 | [`0.0.0-develop.31`](#v-0-0-0-develop-31) | 2026-07-29 | develop |
 | [`0.0.0-develop.30`](#v-0-0-0-develop-30) | 2026-07-28 | develop |
-| [`0.0.0-develop.29`](#v-0-0-0-develop-29) | 2026-07-28 | develop |
 
 # Develop builds
+
+<a id="v-0-0-0-develop-40"></a>
+
+## master-data-service — develop 0.0.0-develop.40 (2026-08-03)
+
+_commit `a31a52b` · changes since 0.0.0-develop.39_
+<!-- build:0.0.0-develop.40 revision:a31a52beab36324e77efd5dd96c74fc89c1f6c06 ts:1785722945 -->
+
+### Changes since 0.0.0-develop.39
+
+- [G2P-4804](https://openg2p.atlassian.net/browse/G2P-4804) Wait on the last table the migration creates, not the first. g2p_geo_levels is created before g2p_attributes and the sample tables, so gating on it proved only that the migration had started — wide enough for the loader to finish geo and then die on g2p_sample_households, which is the failure the guard exists to prevent. Waiting on g2p_sample_households proves the whole migration finished, since the creates are sequential and awaited. Also bounds the pg_isready loop, which could otherwise hang the init container indefinitely against an unreachable database. ([`a31a52b`](https://gitlab.com/openg2p/master-data-service/-/commit/a31a52beab36324e77efd5dd96c74fc89c1f6c06))
 
 <a id="v-0-0-0-develop-39"></a>
 
@@ -125,23 +136,6 @@ _commit `05620b1` · changes since 0.0.0-develop.29_
 ### Changes since 0.0.0-develop.29
 
 - [G2P-4804](https://openg2p.atlassian.net/browse/G2P-4804) Add db-seed image for country-pack geo seeding. ([`05620b1`](https://gitlab.com/openg2p/master-data-service/-/commit/05620b125edef8fede35e77f6f21063c5fd2bc4e))
-
-<a id="v-0-0-0-develop-29"></a>
-
-## master-data-service — develop 0.0.0-develop.29 (2026-07-28)
-
-_commit `2369c61` · changes since 0.0.0-develop.27_
-<!-- build:0.0.0-develop.29 revision:2369c615e71280ea67dcbefc7788979a3ffd0cb2 ts:1785237680 -->
-
-### Summary
-
-- New feature: introduced geoSeed job for seeding MDS geography using country packs, enhancing data management capabilities. 
-- Enhancements to MDS chart: added country-pack selection functionality to improve user experience and data accuracy.
-
-### Changes since 0.0.0-develop.27
-
-- [G2P-4804](https://openg2p.atlassian.net/browse/G2P-4804) Add geoSeed job and country-pack selection to the MDS chart. ([`2369c61`](https://gitlab.com/openg2p/master-data-service/-/commit/2369c615e71280ea67dcbefc7788979a3ffd0cb2))
-- Seed MDS geography from a country pack. ([`83d4e0a`](https://gitlab.com/openg2p/master-data-service/-/commit/83d4e0af3a615b230792b4149191dd82dc807f2d))
 
 ---
 
