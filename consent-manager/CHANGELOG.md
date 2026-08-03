@@ -1,12 +1,26 @@
-# consent-manager changelog
+# consent-manager
 
 _Published automatically._
 
+**Repository:** [gitlab.com/openg2p/consent-manager](https://gitlab.com/openg2p/consent-manager) · **Container images:** [Container Registry](https://gitlab.com/openg2p/consent-manager/container_registry)
+
 | Version | Date | Type |
 | --- | --- | --- |
+| [`0.0.0-develop.50`](#v-0-0-0-develop-50) | 2026-08-03 | develop |
 | [`0.0.0-develop.49`](#v-0-0-0-develop-49) | 2026-07-18 | develop |
 
 # Develop builds
+
+<a id="v-0-0-0-develop-50"></a>
+
+## consent-manager — develop 0.0.0-develop.50 (2026-08-03)
+
+_commit `a9f7c06` · changes since 0.0.0-develop.49_
+<!-- build:0.0.0-develop.50 revision:a9f7c0684d3c0eb3286da61d81ed6f3343c6915b ts:1785719104 -->
+
+### Changes since 0.0.0-develop.49
+
+- Fix duplicate SANITY_VERIFY_TLS env in the cm-sanity Job (emitted both inline and via the shared pmSeedEnv helper), which made server-side apply reject the Job with "duplicate entries for key" and fail the release ([`a9f7c06`](https://gitlab.com/openg2p/consent-manager/-/commit/a9f7c0684d3c0eb3286da61d81ed6f3343c6915b))
 
 <a id="v-0-0-0-develop-49"></a>
 
@@ -86,7 +100,7 @@ _All changes since release the start:_
 ---
 
 > **What's shown here.** This catalogue lists **every stable release**, plus
-> the **latest 3 develop builds** and the **latest 3 release
+> the **latest 10 develop builds** and the **latest 10 release
 > candidates** per release line. Older develop builds and release candidates
 > are pruned as they are superseded, and a release's candidates are removed
 > once it ships. Those versions still exist in the container and Helm

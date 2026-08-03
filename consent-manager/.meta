@@ -1,0 +1,4 @@
+name=consent-manager
+kind=service
+repo=https://gitlab.com/openg2p/consent-manager
+images=https://gitlab.com/openg2p/consent-manager/container_registry
