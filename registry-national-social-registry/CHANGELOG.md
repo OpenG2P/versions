@@ -6,8 +6,22 @@ _Published automatically._
 
 | Version | Date | Type |
 | --- | --- | --- |
+| [`1.1.0-rc.221`](#v-1-1-0-rc-221) | 2026-08-04 | release candidate |
 | [`0.0.0-develop.220`](#v-0-0-0-develop-220) | 2026-08-04 | develop |
 | [`0.0.0-develop.219`](#v-0-0-0-develop-219) | 2026-08-04 | develop |
+
+# Release candidates (in progress)
+
+<a id="v-1-1-0-rc-221"></a>
+
+## registry/national-social-registry 1.1.0-rc.221 — 2026-08-04
+
+_commit `1d9641f` · changes since 0.0.0-develop.220_
+<!-- build:1.1.0-rc.221 revision:1d9641f266790bf8e09c6a2e9a1b5e77ef3f4c5e ts:1785829717 -->
+
+### Changes since 0.0.0-develop.220
+
+- Cleanup of dashboards as well. ([`1d9641f`](https://gitlab.com/openg2p/registry/national-social-registry/-/commit/1d9641f266790bf8e09c6a2e9a1b5e77ef3f4c5e))
 
 # Develop builds
 
