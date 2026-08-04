@@ -1,0 +1,4 @@
+name=registry/registry-platform
+kind=service
+repo=https://gitlab.com/openg2p/registry/registry-platform
+images=https://gitlab.com/openg2p/registry/registry-platform/container_registry
