@@ -6,9 +6,21 @@ _Published automatically._
 
 | Version | Date | Type |
 | --- | --- | --- |
+| [`0.0.0-develop.141`](#v-0-0-0-develop-141) | 2026-08-04 | develop |
 | [`0.0.0-develop.140`](#v-0-0-0-develop-140) | 2026-08-04 | develop |
 
 # Develop builds
+
+<a id="v-0-0-0-develop-141"></a>
+
+## registry/farmer-registry — develop 0.0.0-develop.141 (2026-08-04)
+
+_commit `ae32039` · changes since 0.0.0-develop.140_
+<!-- build:0.0.0-develop.141 revision:ae32039b18158b8ade948311e02681bc6442dadd ts:1785820307 -->
+
+### Changes since 0.0.0-develop.140
+
+- questions.yaml copied during CI ([`ae32039`](https://gitlab.com/openg2p/registry/farmer-registry/-/commit/ae32039b18158b8ade948311e02681bc6442dadd))
 
 <a id="v-0-0-0-develop-140"></a>
 
