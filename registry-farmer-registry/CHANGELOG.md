@@ -6,10 +6,22 @@ _Published automatically._
 
 | Version | Date | Type |
 | --- | --- | --- |
+| [`0.0.0-develop.142`](#v-0-0-0-develop-142) | 2026-08-04 | develop |
 | [`0.0.0-develop.141`](#v-0-0-0-develop-141) | 2026-08-04 | develop |
 | [`0.0.0-develop.140`](#v-0-0-0-develop-140) | 2026-08-04 | develop |
 
 # Develop builds
+
+<a id="v-0-0-0-develop-142"></a>
+
+## registry/farmer-registry — develop 0.0.0-develop.142 (2026-08-04)
+
+_commit `30672a4` · changes since 0.0.0-develop.141_
+<!-- build:0.0.0-develop.142 revision:30672a410c1fc942b9bdd1e4b544ab337e507436 ts:1785831582 -->
+
+### Changes since 0.0.0-develop.141
+
+- [G2P-2804](https://openg2p.atlassian.net/browse/G2P-2804) Analytics: add FR reporting layer (fr_rpt_farmer, fr_rpt_land, fr_rpt_geo_levels) — area normalised to hectares, crops/livestock/inputs rolled off the land grain ([`30672a4`](https://gitlab.com/openg2p/registry/farmer-registry/-/commit/30672a410c1fc942b9bdd1e4b544ab337e507436))
 
 <a id="v-0-0-0-develop-141"></a>
 
