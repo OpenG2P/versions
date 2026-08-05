@@ -6,10 +6,22 @@ _Published automatically._
 
 | Version | Date | Type |
 | --- | --- | --- |
+| [`0.0.0-develop.346`](#v-0-0-0-develop-346) | 2026-08-05 | develop |
 | [`0.0.0-develop.345`](#v-0-0-0-develop-345) | 2026-08-04 | develop |
 | [`0.0.0-develop.343`](#v-0-0-0-develop-343) | 2026-08-04 | develop |
 
 # Develop builds
+
+<a id="v-0-0-0-develop-346"></a>
+
+## registry/registry-platform — develop 0.0.0-develop.346 (2026-08-05)
+
+_commit `ab38f08` · changes since 0.0.0-develop.345_
+<!-- build:0.0.0-develop.346 revision:ab38f087fff9b48a928843a029b015822a7df606 ts:1785892510 -->
+
+### Changes since 0.0.0-develop.345
+
+- [G2P-4804](https://openg2p.atlassian.net/browse/G2P-4804) DB-seed: move the farmer-shaped sample loaders out of the platform image — load_sample_data.py/upload_images.py write farmer-extension tables and read farmer seed JSON, so they belong to the variant; the entrypoint keeps the hook and errors clearly without one ([`ab38f08`](https://gitlab.com/openg2p/registry/registry-platform/-/commit/ab38f087fff9b48a928843a029b015822a7df606))
 
 <a id="v-0-0-0-develop-345"></a>
 
