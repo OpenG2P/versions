@@ -6,6 +6,7 @@ _Published automatically._
 
 | Version | Date | Type |
 | --- | --- | --- |
+| [`0.0.0-develop.378`](#v-0-0-0-develop-378) | 2026-08-06 | develop |
 | [`1.2.0-rc.378`](#v-1-2-0-rc-378) | 2026-08-06 | release candidate |
 | [`1.2.0-rc.374`](#v-1-2-0-rc-374) | 2026-08-06 | release candidate |
 | [`0.0.0-develop.374`](#v-0-0-0-develop-374) | 2026-08-06 | develop |
@@ -67,6 +68,25 @@ _commit `bf59097` · changes since 0.0.0-develop.353_
 - G2P-[G2P-5389](https://openg2p.atlassian.net/browse/G2P-5389) improve error handling ([`40c729f`](https://gitlab.com/openg2p/registry/registry-platform/-/commit/40c729feb6b8f2b5fe697527fd5dd1ef378ece61))
 
 # Develop builds
+
+<a id="v-0-0-0-develop-378"></a>
+
+## registry/registry-platform — develop 0.0.0-develop.378 (2026-08-06)
+
+_commit `b0eca4d` · changes since 0.0.0-develop.374_
+<!-- build:0.0.0-develop.378 revision:b0eca4d20214b20ad38fc8adb9fa1018dd9e9b24 ts:1786012597 -->
+
+### Summary
+
+- Partner management overhaul: Repointed to commons-services, aligning PM-seed authentication with the g2p-bridge pmSeedClientId pattern, and enhanced consent management and partner management functionalities.
+- New functionality: Introduced a consent helper in the partner API to streamline consent-related operations.
+- Dependency update: Modified dependency manifests in the partner API to reflect the latest requirements.
+
+### Changes since 0.0.0-develop.374
+
+- Reapply "[G2P-5222](https://openg2p.atlassian.net/browse/G2P-5222) Repoint Partner Management to commons-services and align PM-seed auth to the g2p-bridge pmSeedClientId pattern." ([`a5ade5e`](https://gitlab.com/openg2p/registry/registry-platform/-/commit/a5ade5e1fc966262a9188e4f05a8c22dbe2f20b2))
+- Reapply "[G2P-5222](https://openg2p.atlassian.net/browse/G2P-5222) Consent and partner management related." ([`63f2385`](https://gitlab.com/openg2p/registry/registry-platform/-/commit/63f2385601b71e657458eb23767d0807584bfc4b))
+- Reapply "[G2P-5222](https://openg2p.atlassian.net/browse/G2P-5222) Enhancements for consent management, partner management and WJS support." ([`c6b51a0`](https://gitlab.com/openg2p/registry/registry-platform/-/commit/c6b51a040e0f3d1b43f73f284da1aadb3166b264))
 
 <a id="v-0-0-0-develop-374"></a>
 
