@@ -6,12 +6,24 @@ _Published automatically._
 
 | Version | Date | Type |
 | --- | --- | --- |
+| [`0.0.0-develop.145`](#v-0-0-0-develop-145) | 2026-08-06 | develop |
 | [`0.0.0-develop.144`](#v-0-0-0-develop-144) | 2026-08-05 | develop |
 | [`0.0.0-develop.142`](#v-0-0-0-develop-142) | 2026-08-04 | develop |
 | [`0.0.0-develop.141`](#v-0-0-0-develop-141) | 2026-08-04 | develop |
 | [`0.0.0-develop.140`](#v-0-0-0-develop-140) | 2026-08-04 | develop |
 
 # Develop builds
+
+<a id="v-0-0-0-develop-145"></a>
+
+## registry/farmer-registry — develop 0.0.0-develop.145 (2026-08-06)
+
+_commit `f19c12d` · changes since 0.0.0-develop.144_
+<!-- build:0.0.0-develop.145 revision:f19c12dd57340798ff7de921c17ebb179eb4fc3a ts:1785977474 -->
+
+### Changes since 0.0.0-develop.144
+
+- Bumped up RP version to 0.0.0-develop.346 ([`f19c12d`](https://gitlab.com/openg2p/registry/farmer-registry/-/commit/f19c12dd57340798ff7de921c17ebb179eb4fc3a))
 
 <a id="v-0-0-0-develop-144"></a>
 
