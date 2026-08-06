@@ -7,24 +7,29 @@ _Published automatically._
 | Version | Date | Type |
 | --- | --- | --- |
 | [`0.0.0-develop.199`](#v-0-0-0-develop-199) | 2026-08-06 | develop |
-| [`2.2.1-rc.187`](#v-2-2-1-rc-187) | 2026-08-06 | release candidate |
+| [`2.2.1`](#v-2-2-1) | 2026-08-06 | release |
 | [`0.0.0-develop.198`](#v-0-0-0-develop-198) | 2026-08-04 | develop |
 
-# Release candidates (in progress)
+# Releases
 
-<a id="v-2-2-1-rc-187"></a>
+<a id="v-2-2-1"></a>
 
-## commons 2.2.1-rc.187 — 2026-08-06
+## commons 2.2.1 — 2026-08-06
 
-_commit `310bf24` · changes since 2.2.0_
-<!-- build:2.2.1-rc.187 revision:310bf240b836a50aac0757736e12d75df18b9b6e ts:1785994111 -->
+<!-- build:2.2.1 revision:310bf240b836a50aac0757736e12d75df18b9b6e ts:1785994111 -->
+
+_commit `310bf24` · changes since release 2.2.0_
+
+### Release notes
+
+Creating new Tag 2.2.1
 
 ### Summary
 
-- **Major:** CI overhaul: transitioned from GitHub Actions to GitLab CI for build and publish processes.
-- Configuration updates: added MinIO settings to `values.yaml`, including secret references and read-only user creation.
+- **Major:** CI transition to GitLab, replacing GitHub Actions for build and publish processes.
+- MinIO integration: added configuration to `values.yaml`, including secret references and read-only user setup.
 
-### Changes since 2.2.0
+### Changes
 
 - [G2P-5451](https://openg2p.atlassian.net/browse/G2P-5451) Add MinIO configuration to values.yaml, including existing secret reference and read-only user creation ([`7f68072`](https://gitlab.com/openg2p/commons/-/commit/7f68072ad6599bb8c95c3f992fcf11a244ed0ebe))
 - [G2P-5335](https://openg2p.atlassian.net/browse/G2P-5335) Switch CI to GitLab (.gitlab-ci.yml); drop GitHub Actions build/publish ([`0988f9b`](https://gitlab.com/openg2p/commons/-/commit/0988f9b3c5af0b70f362e672975d99e25646b27e))
