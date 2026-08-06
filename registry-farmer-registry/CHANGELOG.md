@@ -6,6 +6,7 @@ _Published automatically._
 
 | Version | Date | Type |
 | --- | --- | --- |
+| [`0.0.0-develop.153`](#v-0-0-0-develop-153) | 2026-08-06 | develop |
 | [`0.0.0-develop.151`](#v-0-0-0-develop-151) | 2026-08-06 | develop |
 | [`0.0.0-develop.150`](#v-0-0-0-develop-150) | 2026-08-06 | develop |
 | [`0.0.0-develop.148`](#v-0-0-0-develop-148) | 2026-08-06 | develop |
@@ -17,6 +18,17 @@ _Published automatically._
 | [`0.0.0-develop.140`](#v-0-0-0-develop-140) | 2026-08-04 | develop |
 
 # Develop builds
+
+<a id="v-0-0-0-develop-153"></a>
+
+## registry/farmer-registry — develop 0.0.0-develop.153 (2026-08-06)
+
+_commit `3d55dcd` · changes since 0.0.0-develop.151_
+<!-- build:0.0.0-develop.153 revision:3d55dcdd76b52fe46426156eaf72e24f26a5888c ts:1786009141 -->
+
+### Changes since 0.0.0-develop.151
+
+- [G2P-5402](https://openg2p.atlassian.net/browse/G2P-5402) fix: correct ui configuration for multiple sections and add dedicated parent lookup sections for crop intake and crop register ([`2f172d4`](https://gitlab.com/openg2p/registry/farmer-registry/-/commit/2f172d4848fecc02c08f9c5a9e83edb76888ba53))
 
 <a id="v-0-0-0-develop-151"></a>
 
