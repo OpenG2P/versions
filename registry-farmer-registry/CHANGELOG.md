@@ -7,6 +7,7 @@ _Published automatically._
 | Version | Date | Type |
 | --- | --- | --- |
 | [`0.0.0-develop.153`](#v-0-0-0-develop-153) | 2026-08-06 | develop |
+| [`1.3.0-rc.151`](#v-1-3-0-rc-151) | 2026-08-06 | release candidate |
 | [`0.0.0-develop.151`](#v-0-0-0-develop-151) | 2026-08-06 | develop |
 | [`0.0.0-develop.150`](#v-0-0-0-develop-150) | 2026-08-06 | develop |
 | [`0.0.0-develop.148`](#v-0-0-0-develop-148) | 2026-08-06 | develop |
@@ -16,6 +17,21 @@ _Published automatically._
 | [`0.0.0-develop.142`](#v-0-0-0-develop-142) | 2026-08-04 | develop |
 | [`0.0.0-develop.141`](#v-0-0-0-develop-141) | 2026-08-04 | develop |
 | [`0.0.0-develop.140`](#v-0-0-0-develop-140) | 2026-08-04 | develop |
+
+# Release candidates
+
+<a id="v-1-3-0-rc-151"></a>
+
+## registry/farmer-registry 1.3.0-rc.151 — 2026-08-06
+
+_commit `d39deba` · changes since 0.0.0-develop.151_
+<!-- build:1.3.0-rc.151 revision:d39deba138813845cc34ea701b885ed763833836 ts:1786007784 -->
+
+**Chart:** [openg2p-farmer-registry 1.3.0-rc.151](https://gitlab.com/api/v4/projects/openg2p%2Fcharts/packages/helm/stable/charts/openg2p-farmer-registry-1.3.0-rc.151.tgz)
+
+### Changes since 0.0.0-develop.151
+
+_No new commits since 0.0.0-develop.151._
 
 # Develop builds
 
@@ -165,8 +181,9 @@ _commit `5cae5e3` · changes since 1.2.0_
 
 > **What's shown here.** This catalogue lists **every stable release**, plus
 > the **latest 20 develop builds** and the **latest 10 release
-> candidates** per release line. Older develop builds and release candidates
-> are pruned as they are superseded, and a release's candidates are removed
-> once it ships. Those versions still exist in the container and Helm
+> candidates** per release line -- candidates are KEPT after their release
+> ships, as the audit trail of the release run. Older develop builds and
+> release candidates are pruned as they are superseded. Those versions
+> still exist in the container and Helm
 > registries — they are simply not listed here. This page is generated
 > automatically from commit history; do not edit it by hand.
