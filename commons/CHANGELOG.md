@@ -6,6 +6,7 @@ _Published automatically._
 
 | Version | Date | Type |
 | --- | --- | --- |
+| [`0.0.0-develop.199`](#v-0-0-0-develop-199) | 2026-08-06 | develop |
 | [`2.2.1-rc.187`](#v-2-2-1-rc-187) | 2026-08-06 | release candidate |
 | [`0.0.0-develop.198`](#v-0-0-0-develop-198) | 2026-08-04 | develop |
 
@@ -29,6 +30,17 @@ _commit `310bf24` · changes since 2.2.0_
 - [G2P-5335](https://openg2p.atlassian.net/browse/G2P-5335) Switch CI to GitLab (.gitlab-ci.yml); drop GitHub Actions build/publish ([`0988f9b`](https://gitlab.com/openg2p/commons/-/commit/0988f9b3c5af0b70f362e672975d99e25646b27e))
 
 # Develop builds
+
+<a id="v-0-0-0-develop-199"></a>
+
+## commons — develop 0.0.0-develop.199 (2026-08-06)
+
+_commit `53f78f2` · changes since 0.0.0-develop.198_
+<!-- build:0.0.0-develop.199 revision:53f78f2a6050d361055ad476f49a5d2edbbc1afc ts:1786009812 -->
+
+### Changes since 0.0.0-develop.198
+
+- [G2P-5348](https://openg2p.atlassian.net/browse/G2P-5348) CI: refuse to run in forks (namespace guard) ([`53f78f2`](https://gitlab.com/openg2p/commons/-/commit/53f78f2a6050d361055ad476f49a5d2edbbc1afc))
 
 <a id="v-0-0-0-develop-198"></a>
 
