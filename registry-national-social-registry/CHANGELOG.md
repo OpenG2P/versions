@@ -6,6 +6,7 @@ _Published automatically._
 
 | Version | Date | Type |
 | --- | --- | --- |
+| [`0.0.0-develop.226`](#v-0-0-0-develop-226) | 2026-08-06 | develop |
 | [`0.0.0-develop.224`](#v-0-0-0-develop-224) | 2026-08-06 | develop |
 | [`1.1.0`](#v-1-1-0) | 2026-08-04 | release |
 | [`0.0.0-develop.221`](#v-0-0-0-develop-221) | 2026-08-04 | develop |
@@ -87,6 +88,24 @@ Intermediate stable version; several changes related to reading data from MDS; c
 - NSR-xxxx Added a scalable sample-data generator for NSR (docker/db-seed/generate_bulk_sample.py) that loads ~1M individuals / 250k households plus vulnerability, livelihoods, housing-services, programme and score records. Complements the hand-written 500-row fixture in load_sample_data.py, which cannot scale. Geography is read from the deployment's own MDS hierarchy so nothing is tied to a country, level naming or depth; attribute marginals come from a committed distributions.json extracted (counts only, no PII) from a real 20M-row registry. Column lists are introspected per table so the loader tolerates schema drift, poverty correlates with deprivation and enrolment so targeting dashboards have signal, --purge makes a load reversible, and bulk-seed-job.yaml runs it in-cluster because a load this size does not survive kubectl port-forward. ([`bbd255f`](https://gitlab.com/openg2p/registry/national-social-registry/-/commit/bbd255ff47f3bdc4103019a734fca972d26c4d0a))
 
 # Develop builds
+
+<a id="v-0-0-0-develop-226"></a>
+
+## registry/national-social-registry — develop 0.0.0-develop.226 (2026-08-06)
+
+_commit `ffc0017` · changes since 0.0.0-develop.224_
+<!-- build:0.0.0-develop.226 revision:ffc00171103cd373132c5fcabc10ea866fc0c029 ts:1786005932 -->
+
+### Summary
+
+- Database migration updates: modified SQL scripts for approval policy, approval stage, and approver rule to enhance data integrity and conflict handling.
+- Bug fix: resolved AWE seed aborting issue due to shared-DB policy_key clashes by implementing untargeted ON CONFLICT DO NOTHING and adding foreign key orphan filters.
+- Registry management improvement: ensured fallback to the registry's own Superset connection name during uninstallation to prevent orphaned dashboards and datasets in shared Superset instances.
+
+### Changes since 0.0.0-develop.224
+
+- [G2P-5378](https://openg2p.atlassian.net/browse/G2P-5378) Fix AWE seed aborting on shared-DB policy_key clash: untargeted ON CONFLICT DO NOTHING (uq_policy_key_version was unguarded by the id-targeted clause) plus FK-orphan filters on stages/rules, so a policy another registry already owns no longer takes the whole batch — and the farmer policy — down with it ([`ffc0017`](https://gitlab.com/openg2p/registry/national-social-registry/-/commit/ffc00171103cd373132c5fcabc10ea866fc0c029))
+- [G2P-4804](https://openg2p.atlassian.net/browse/G2P-4804) Fall back to this registry's own Superset connection name when the release is gone. The name was only ever read from `helm get values`, so uninstalling from Rancher — or running helm uninstall first — skipped the dashboard cleanup with a quiet warning and left the dashboards, charts, datasets and connection in the shared Superset, where the next install adopted them by UUID. ([`9b5f4cf`](https://gitlab.com/openg2p/registry/national-social-registry/-/commit/9b5f4cf52f44e3b3ac9580ac9dac894b4bfc913f))
 
 <a id="v-0-0-0-develop-224"></a>
 
