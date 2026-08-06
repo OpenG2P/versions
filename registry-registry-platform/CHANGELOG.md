@@ -6,11 +6,35 @@ _Published automatically._
 
 | Version | Date | Type |
 | --- | --- | --- |
+| [`0.0.0-develop.353`](#v-0-0-0-develop-353) | 2026-08-06 | develop |
 | [`0.0.0-develop.346`](#v-0-0-0-develop-346) | 2026-08-05 | develop |
 | [`0.0.0-develop.345`](#v-0-0-0-develop-345) | 2026-08-04 | develop |
 | [`0.0.0-develop.343`](#v-0-0-0-develop-343) | 2026-08-04 | develop |
 
 # Develop builds
+
+<a id="v-0-0-0-develop-353"></a>
+
+## registry/registry-platform — develop 0.0.0-develop.353 (2026-08-06)
+
+_commit `b203acd` · changes since 0.0.0-develop.346_
+<!-- build:0.0.0-develop.353 revision:b203acd4ceeb48f52b6f1ffd56e2153d52591c99 ts:1785996427 -->
+
+### Summary
+
+- **Major:** Removal of the data policies feature and all associated components across the API and UI, resulting in significant codebase reduction (3572 deletions).
+- Refactoring: Cleaned up service methods by removing unused request parameters and debug print statements, and updated hierarchy path building.
+- Fixes: Corrected import paths for data policy request helpers to ensure proper functionality post-removal.
+- General cleanup: A total of 57 files were modified, with a focus on streamlining the codebase and enhancing maintainability.
+
+### Changes since 0.0.0-develop.346
+
+- Remove data policies feature and related components ([`71309a2`](https://gitlab.com/openg2p/registry/registry-platform/-/commit/71309a23899cdf56be97ddf7bcebda6efc0b43af))
+- Refactor: remove unused request parameters from service methods ([`daa4521`](https://gitlab.com/openg2p/registry/registry-platform/-/commit/daa4521aa15f9374bd16070c351a847bf7ee6825))
+- Refactor: update hierarchy path building and remove debug print statements ([`36584d1`](https://gitlab.com/openg2p/registry/registry-platform/-/commit/36584d1b5f124b62db13cb084efa540b98ba3dd6))
+- Fix: update import paths for data policy request helper ([`b087344`](https://gitlab.com/openg2p/registry/registry-platform/-/commit/b087344a1b2225a11a74427b2e83cad4ea5dbbaa))
+- Fix: update import paths for data policy request helper ([`4c7c7c9`](https://gitlab.com/openg2p/registry/registry-platform/-/commit/4c7c7c9db4d10e1556369f9412106ff623e2bd9e))
+- Refactor data policy handling across services ([`c61a9db`](https://gitlab.com/openg2p/registry/registry-platform/-/commit/c61a9dbdba1ea0726d458cef2f7fc2ae9ab6e4bb))
 
 <a id="v-0-0-0-develop-346"></a>
 
