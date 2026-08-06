@@ -6,6 +6,7 @@ _Published automatically._
 
 | Version | Date | Type |
 | --- | --- | --- |
+| [`1.2.0-rc.378`](#v-1-2-0-rc-378) | 2026-08-06 | release candidate |
 | [`1.2.0-rc.374`](#v-1-2-0-rc-374) | 2026-08-06 | release candidate |
 | [`0.0.0-develop.374`](#v-0-0-0-develop-374) | 2026-08-06 | develop |
 | [`0.0.0-develop.353`](#v-0-0-0-develop-353) | 2026-08-06 | develop |
@@ -14,6 +15,26 @@ _Published automatically._
 | [`0.0.0-develop.343`](#v-0-0-0-develop-343) | 2026-08-04 | develop |
 
 # Release candidates (in progress)
+
+<a id="v-1-2-0-rc-378"></a>
+
+## registry/registry-platform 1.2.0-rc.378 — 2026-08-06
+
+_commit `e2b44ae` · changes since 1.2.0-rc.374_
+<!-- build:1.2.0-rc.378 revision:e2b44ae05d75f39c5d8a5c4a3e9f3a862a698575 ts:1786012495 -->
+
+### Summary
+
+- **Major:** Repointed Partner Management to commons-services and aligned PM-seed authentication with the g2p-bridge pmSeedClientId pattern, enhancing integration and consistency.
+- Enhancements to consent management and partner management, including support for WJS, improving overall functionality.
+- New helper file added for consent management, streamlining related operations within the partner API.
+- Updated dependency manifests in the partner API, ensuring compatibility and access to the latest features.
+
+### Changes since 1.2.0-rc.374
+
+- Reapply "[G2P-5222](https://openg2p.atlassian.net/browse/G2P-5222) Repoint Partner Management to commons-services and align PM-seed auth to the g2p-bridge pmSeedClientId pattern." ([`ff1f9c8`](https://gitlab.com/openg2p/registry/registry-platform/-/commit/ff1f9c8fe8e61e5717cf65e2f1363f8f51df7da0))
+- Reapply "[G2P-5222](https://openg2p.atlassian.net/browse/G2P-5222) Consent and partner management related." ([`e378ecb`](https://gitlab.com/openg2p/registry/registry-platform/-/commit/e378ecbac8108749766d0ae0fc5fed197e517a4e))
+- Reapply "[G2P-5222](https://openg2p.atlassian.net/browse/G2P-5222) Enhancements for consent management, partner management and WJS support." ([`eabfb80`](https://gitlab.com/openg2p/registry/registry-platform/-/commit/eabfb8096865dca361b8a4f48d8d9d4551bc86d1))
 
 <a id="v-1-2-0-rc-374"></a>
 
