@@ -6,6 +6,7 @@ _Published automatically._
 
 | Version | Date | Type |
 | --- | --- | --- |
+| [`0.0.0-develop.151`](#v-0-0-0-develop-151) | 2026-08-06 | develop |
 | [`0.0.0-develop.150`](#v-0-0-0-develop-150) | 2026-08-06 | develop |
 | [`0.0.0-develop.148`](#v-0-0-0-develop-148) | 2026-08-06 | develop |
 | [`0.0.0-develop.146`](#v-0-0-0-develop-146) | 2026-08-06 | develop |
@@ -16,6 +17,17 @@ _Published automatically._
 | [`0.0.0-develop.140`](#v-0-0-0-develop-140) | 2026-08-04 | develop |
 
 # Develop builds
+
+<a id="v-0-0-0-develop-151"></a>
+
+## registry/farmer-registry — develop 0.0.0-develop.151 (2026-08-06)
+
+_commit `d39deba` · changes since 0.0.0-develop.150_
+<!-- build:0.0.0-develop.151 revision:d39deba138813845cc34ea701b885ed763833836 ts:1786007784 -->
+
+### Changes since 0.0.0-develop.150
+
+- [G2P-5378](https://openg2p.atlassian.net/browse/G2P-5378) Fix bulk-sample id collisions: sub-table functional ids were uuid[:8], which collides by the birthday bound (100k farmers died at ~39k crops on ix_g2p_register_crops_functional_record_id) — use sequential counters like the farmer ids already do ([`d39deba`](https://gitlab.com/openg2p/registry/farmer-registry/-/commit/d39deba138813845cc34ea701b885ed763833836))
 
 <a id="v-0-0-0-develop-150"></a>
 
