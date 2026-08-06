@@ -6,6 +6,7 @@ _Published automatically._
 
 | Version | Date | Type |
 | --- | --- | --- |
+| [`0.0.0-develop.224`](#v-0-0-0-develop-224) | 2026-08-06 | develop |
 | [`1.1.0`](#v-1-1-0) | 2026-08-04 | release |
 | [`0.0.0-develop.221`](#v-0-0-0-develop-221) | 2026-08-04 | develop |
 | [`0.0.0-develop.220`](#v-0-0-0-develop-220) | 2026-08-04 | develop |
@@ -86,6 +87,24 @@ Intermediate stable version; several changes related to reading data from MDS; c
 - NSR-xxxx Added a scalable sample-data generator for NSR (docker/db-seed/generate_bulk_sample.py) that loads ~1M individuals / 250k households plus vulnerability, livelihoods, housing-services, programme and score records. Complements the hand-written 500-row fixture in load_sample_data.py, which cannot scale. Geography is read from the deployment's own MDS hierarchy so nothing is tied to a country, level naming or depth; attribute marginals come from a committed distributions.json extracted (counts only, no PII) from a real 20M-row registry. Column lists are introspected per table so the loader tolerates schema drift, poverty correlates with deprivation and enrolment so targeting dashboards have signal, --purge makes a load reversible, and bulk-seed-job.yaml runs it in-cluster because a load this size does not survive kubectl port-forward. ([`bbd255f`](https://gitlab.com/openg2p/registry/national-social-registry/-/commit/bbd255ff47f3bdc4103019a734fca972d26c4d0a))
 
 # Develop builds
+
+<a id="v-0-0-0-develop-224"></a>
+
+## registry/national-social-registry — develop 0.0.0-develop.224 (2026-08-06)
+
+_commit `7815d1f` · changes since 0.0.0-develop.221_
+<!-- build:0.0.0-develop.224 revision:7815d1f14372bd83d75ccc20a27ec0c566b2393e ts:1785996439 -->
+
+### Summary
+
+- Dashboard handling: skip import when Superset is absent to prevent installation failure, and drop the unreferenced import-dashboards-job.yaml in favor of the chart's hook Job.
+- Maps page fix: updated to point at the `registry` source after the Evidence source was renamed, resolving build issues.
+
+### Changes since 0.0.0-develop.221
+
+- [G2P-4804](https://openg2p.atlassian.net/browse/G2P-4804) Skip the dashboard import when Superset is absent instead of failing the install. Superset is a separate release and analytics is optional, but the gate exited 1 after waiting, so a registry installed without a reporting stack failed outright. The gate is checked in the init container AND the main one, because an init container exiting 0 does not stop the pod; set analytics.dashboards.superset.required=true where a silent skip would be worse. ([`7815d1f`](https://gitlab.com/openg2p/registry/national-social-registry/-/commit/7815d1f14372bd83d75ccc20a27ec0c566b2393e))
+- [G2P-4804](https://openg2p.atlassian.net/browse/G2P-4804) Point the maps page at the `registry` source. It still queried nsr.*, which stopped resolving when the Evidence source was renamed, so the page would not have built. ([`a1a513b`](https://gitlab.com/openg2p/registry/national-social-registry/-/commit/a1a513b6ed4cc8a426df3b0025914a7007315117))
+- G2P-XXXX Dashboards: drop the standalone import-dashboards-job.yaml — unreferenced, superseded by the chart's hook Job, and three fixes behind it ([`5ccc675`](https://gitlab.com/openg2p/registry/national-social-registry/-/commit/5ccc675d8263c6953d41990a32933d15c707389a))
 
 <a id="v-0-0-0-develop-221"></a>
 
