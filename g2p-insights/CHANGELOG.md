@@ -6,6 +6,7 @@ _Published automatically._
 
 | Version | Date | Type |
 | --- | --- | --- |
+| [`0.0.0-develop.62`](#v-0-0-0-develop-62) | 2026-08-07 | develop |
 | [`0.0.0-develop.61`](#v-0-0-0-develop-61) | 2026-08-07 | develop |
 | [`0.0.0-develop.60`](#v-0-0-0-develop-60) | 2026-08-07 | develop |
 | [`0.0.0-develop.59`](#v-0-0-0-develop-59) | 2026-08-07 | develop |
@@ -18,6 +19,19 @@ _Published automatically._
 | [`0.0.0-develop.46`](#v-0-0-0-develop-46) | 2026-08-03 | develop |
 
 # Develop builds
+
+<a id="v-0-0-0-develop-62"></a>
+
+## g2p-insights — develop 0.0.0-develop.62 (2026-08-07)
+
+_commit `a2bfd62` · changes since 0.0.0-develop.61_
+<!-- build:0.0.0-develop.62 revision:a2bfd6270ef38a974d9bccde4a93d21acbd7331b ts:1786085269 -->
+
+**Chart:** [openg2p-insights 0.0.0-develop.62](https://gitlab.com/api/v4/projects/openg2p%2Fcharts/packages/helm/stable/charts/openg2p-insights-0.0.0-develop.62.tgz)
+
+### Changes since 0.0.0-develop.61
+
+- [G2P-4804](https://openg2p.atlassian.net/browse/G2P-4804) Keep the iframe tabs alive, collapse the filter rail, and stop the maps build falling back to reference content. Routing unmounted the Superset and Evidence iframes on every tab switch, so each return re-authenticated, re-rendered and re-downloaded, losing whatever filter or drill-down was set; both now render outside Routes and only toggle visibility. The maps build with no content ConfigMap was building the reference registry's queries against another registry's database — a full, themed site with every panel empty — and now skips with a message naming the setting. ([`a2bfd62`](https://gitlab.com/openg2p/g2p-insights/-/commit/a2bfd6270ef38a974d9bccde4a93d21acbd7331b))
 
 <a id="v-0-0-0-develop-61"></a>
 
