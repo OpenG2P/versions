@@ -6,6 +6,7 @@ _Published automatically._
 
 | Version | Date | Type |
 | --- | --- | --- |
+| [`0.0.0-develop.379`](#v-0-0-0-develop-379) | 2026-08-07 | develop |
 | [`1.2.0-rc.380`](#v-1-2-0-rc-380) | 2026-08-07 | release candidate |
 | [`0.0.0-develop.378`](#v-0-0-0-develop-378) | 2026-08-06 | develop |
 | [`1.2.0-rc.378`](#v-1-2-0-rc-378) | 2026-08-06 | release candidate |
@@ -82,6 +83,19 @@ _commit `bf59097` · changes since 0.0.0-develop.353_
 - G2P-[G2P-5389](https://openg2p.atlassian.net/browse/G2P-5389) improve error handling ([`40c729f`](https://gitlab.com/openg2p/registry/registry-platform/-/commit/40c729feb6b8f2b5fe697527fd5dd1ef378ece61))
 
 # Develop builds
+
+<a id="v-0-0-0-develop-379"></a>
+
+## registry/registry-platform — develop 0.0.0-develop.379 (2026-08-07)
+
+_commit `d23682b` · changes since 0.0.0-develop.378_
+<!-- build:0.0.0-develop.379 revision:d23682b28ab7a009da724e871190277c9a3229b4 ts:1786100775 -->
+
+**Chart:** [openg2p-registry 0.0.0-develop.379](https://gitlab.com/api/v4/projects/openg2p%2Fcharts/packages/helm/stable/charts/openg2p-registry-0.0.0-develop.379.tgz)
+
+### Changes since 0.0.0-develop.378
+
+- [G2P-5335](https://openg2p.atlassian.net/browse/G2P-5335) Enable BUILD_CACHE for registry-platform builds ([`d23682b`](https://gitlab.com/openg2p/registry/registry-platform/-/commit/d23682b28ab7a009da724e871190277c9a3229b4))
 
 <a id="v-0-0-0-develop-378"></a>
 
