@@ -6,6 +6,7 @@ _Published automatically._
 
 | Version | Date | Type |
 | --- | --- | --- |
+| [`0.0.0-develop.154`](#v-0-0-0-develop-154) | 2026-08-07 | develop |
 | [`0.0.0-develop.153`](#v-0-0-0-develop-153) | 2026-08-06 | develop |
 | [`1.3.0`](#v-1-3-0) | 2026-08-06 | release |
 | [`1.3.0-rc.151`](#v-1-3-0-rc-151) | 2026-08-06 | release candidate |
@@ -80,6 +81,19 @@ _commit `d39deba` · changes since 0.0.0-develop.151_
 _No new commits since 0.0.0-develop.151._
 
 # Develop builds
+
+<a id="v-0-0-0-develop-154"></a>
+
+## registry/farmer-registry — develop 0.0.0-develop.154 (2026-08-07)
+
+_commit `8f93c33` · changes since 0.0.0-develop.153_
+<!-- build:0.0.0-develop.154 revision:8f93c337cbc07bcef9de94f12633572297c92e9f ts:1786095224 -->
+
+**Chart:** [openg2p-farmer-registry 0.0.0-develop.154](https://gitlab.com/api/v4/projects/openg2p%2Fcharts/packages/helm/stable/charts/openg2p-farmer-registry-0.0.0-develop.154.tgz)
+
+### Changes since 0.0.0-develop.153
+
+- [G2P-4804](https://openg2p.atlassian.net/browse/G2P-4804) Refresh the reporting views on a schedule, instead of relying on Insights to do it. They are materialized, so they held whatever the install produced and every farmer registered afterwards was invisible with no error anywhere; a CronJob now rebuilds them in dependency order resolved from pg_depend, on analytics.reportingViews.refreshSchedule. ([`8f93c33`](https://gitlab.com/openg2p/registry/farmer-registry/-/commit/8f93c337cbc07bcef9de94f12633572297c92e9f))
 
 <a id="v-0-0-0-develop-153"></a>
 
