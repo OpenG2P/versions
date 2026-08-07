@@ -6,6 +6,7 @@ _Published automatically._
 
 | Version | Date | Type |
 | --- | --- | --- |
+| [`0.0.0-develop.228`](#v-0-0-0-develop-228) | 2026-08-07 | develop |
 | [`0.0.0-develop.226`](#v-0-0-0-develop-226) | 2026-08-06 | develop |
 | [`0.0.0-develop.224`](#v-0-0-0-develop-224) | 2026-08-06 | develop |
 | [`1.1.0`](#v-1-1-0) | 2026-08-04 | release |
@@ -88,6 +89,25 @@ Intermediate stable version; several changes related to reading data from MDS; c
 - NSR-xxxx Added a scalable sample-data generator for NSR (docker/db-seed/generate_bulk_sample.py) that loads ~1M individuals / 250k households plus vulnerability, livelihoods, housing-services, programme and score records. Complements the hand-written 500-row fixture in load_sample_data.py, which cannot scale. Geography is read from the deployment's own MDS hierarchy so nothing is tied to a country, level naming or depth; attribute marginals come from a committed distributions.json extracted (counts only, no PII) from a real 20M-row registry. Column lists are introspected per table so the loader tolerates schema drift, poverty correlates with deprivation and enrolment so targeting dashboards have signal, --purge makes a load reversible, and bulk-seed-job.yaml runs it in-cluster because a load this size does not survive kubectl port-forward. ([`bbd255f`](https://gitlab.com/openg2p/registry/national-social-registry/-/commit/bbd255ff47f3bdc4103019a734fca972d26c4d0a))
 
 # Develop builds
+
+<a id="v-0-0-0-develop-228"></a>
+
+## registry/national-social-registry — develop 0.0.0-develop.228 (2026-08-07)
+
+_commit `9dbd065` · changes since 0.0.0-develop.226_
+<!-- build:0.0.0-develop.228 revision:9dbd06564961e071e5c1e8b0b5b4473abc9c5af5 ts:1786095238 -->
+
+**Chart:** [openg2p-nsr 0.0.0-develop.228](https://gitlab.com/api/v4/projects/openg2p%2Fcharts/packages/helm/stable/charts/openg2p-nsr-0.0.0-develop.228.tgz)
+
+### Summary
+
+- Reporting enhancement: Implemented a scheduled refresh for reporting views using a CronJob, ensuring all households are visible and data is accurately rebuilt in dependency order.
+- UI improvements: Removed inline maps `<style>` as the platform now injects the shared theme at build time, streamlining the styling process.
+
+### Changes since 0.0.0-develop.226
+
+- [G2P-4804](https://openg2p.atlassian.net/browse/G2P-4804) Refresh the reporting views on a schedule, instead of relying on Insights to do it. They are materialized, so they held whatever the install produced and every household registered afterwards was invisible with no error anywhere; a CronJob now rebuilds them in dependency order resolved from pg_depend, on analytics.reportingViews.refreshSchedule. ([`9dbd065`](https://gitlab.com/openg2p/registry/national-social-registry/-/commit/9dbd06564961e071e5c1e8b0b5b4473abc9c5af5))
+- [G2P-4804](https://openg2p.atlassian.net/browse/G2P-4804) Drop the inline maps <style>; the platform injects the shared theme at build time. ([`623c313`](https://gitlab.com/openg2p/registry/national-social-registry/-/commit/623c3132d1a31a34f56916482dd9f4663a936b40))
 
 <a id="v-0-0-0-develop-226"></a>
 
@@ -215,8 +235,9 @@ _commit `b83e8d0` · changes since 1.0.1_
 
 > **What's shown here.** This catalogue lists **every stable release**, plus
 > the **latest 20 develop builds** and the **latest 10 release
-> candidates** per release line. Older develop builds and release candidates
-> are pruned as they are superseded, and a release's candidates are removed
-> once it ships. Those versions still exist in the container and Helm
+> candidates** per release line -- candidates are KEPT after their release
+> ships, as the audit trail of the release run. Older develop builds and
+> release candidates are pruned as they are superseded. Those versions
+> still exist in the container and Helm
 > registries — they are simply not listed here. This page is generated
 > automatically from commit history; do not edit it by hand.
