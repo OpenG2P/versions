@@ -6,6 +6,7 @@ _Published automatically._
 
 | Version | Date | Type |
 | --- | --- | --- |
+| [`0.0.0-develop.200`](#v-0-0-0-develop-200) | 2026-08-07 | develop |
 | [`0.0.0-develop.199`](#v-0-0-0-develop-199) | 2026-08-06 | develop |
 | [`2.2.1`](#v-2-2-1) | 2026-08-06 | release |
 | [`0.0.0-develop.198`](#v-0-0-0-develop-198) | 2026-08-04 | develop |
@@ -35,6 +36,17 @@ Creating new Tag 2.2.1
 - [G2P-5335](https://openg2p.atlassian.net/browse/G2P-5335) Switch CI to GitLab (.gitlab-ci.yml); drop GitHub Actions build/publish ([`0988f9b`](https://gitlab.com/openg2p/commons/-/commit/0988f9b3c5af0b70f362e672975d99e25646b27e))
 
 # Develop builds
+
+<a id="v-0-0-0-develop-200"></a>
+
+## commons — develop 0.0.0-develop.200 (2026-08-07)
+
+_commit `95dd6fb` · changes since 0.0.0-develop.199_
+<!-- build:0.0.0-develop.200 revision:95dd6fb73644da82b38e34662261fb1718463e72 ts:1786082259 -->
+
+### Changes since 0.0.0-develop.199
+
+- [G2P-4804](https://openg2p.atlassian.net/browse/G2P-4804) Enable EMBEDDED_SUPERSET. Insights loads /embedded/<uuid> in an iframe, a route Superset only registers with this flag — without it the embedded UUID and guest token are both issued successfully and only the iframe 404s, which reads as a broken client rather than a missing feature flag. ([`95dd6fb`](https://gitlab.com/openg2p/commons/-/commit/95dd6fb73644da82b38e34662261fb1718463e72))
 
 <a id="v-0-0-0-develop-199"></a>
 
@@ -82,8 +94,9 @@ _commit `b5b90d8` · changes since 2.2.0_
 
 > **What's shown here.** This catalogue lists **every stable release**, plus
 > the **latest 20 develop builds** and the **latest 10 release
-> candidates** per release line. Older develop builds and release candidates
-> are pruned as they are superseded, and a release's candidates are removed
-> once it ships. Those versions still exist in the container and Helm
+> candidates** per release line -- candidates are KEPT after their release
+> ships, as the audit trail of the release run. Older develop builds and
+> release candidates are pruned as they are superseded. Those versions
+> still exist in the container and Helm
 > registries — they are simply not listed here. This page is generated
 > automatically from commit history; do not edit it by hand.
