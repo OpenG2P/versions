@@ -6,6 +6,7 @@ _Published automatically._
 
 | Version | Date | Type |
 | --- | --- | --- |
+| [`0.0.0-develop.56`](#v-0-0-0-develop-56) | 2026-08-07 | develop |
 | [`0.0.0-develop.55`](#v-0-0-0-develop-55) | 2026-08-06 | develop |
 | [`0.0.0-develop.53`](#v-0-0-0-develop-53) | 2026-08-06 | develop |
 | [`0.0.0-develop.50`](#v-0-0-0-develop-50) | 2026-08-03 | develop |
@@ -14,6 +15,19 @@ _Published automatically._
 | [`0.0.0-develop.46`](#v-0-0-0-develop-46) | 2026-08-03 | develop |
 
 # Develop builds
+
+<a id="v-0-0-0-develop-56"></a>
+
+## g2p-insights — develop 0.0.0-develop.56 (2026-08-07)
+
+_commit `b22a27e` · changes since 0.0.0-develop.55_
+<!-- build:0.0.0-develop.56 revision:b22a27eb241e74a3c9b4cf467ab5b25d25aa5b05 ts:1786066849 -->
+
+**Chart:** [openg2p-insights 0.0.0-develop.56](https://gitlab.com/api/v4/projects/openg2p%2Fcharts/packages/helm/stable/charts/openg2p-insights-0.0.0-develop.56.tgz)
+
+### Changes since 0.0.0-develop.55
+
+- [G2P-4804](https://openg2p.atlassian.net/browse/G2P-4804) Take the map boundaries from Master Data at build-job time, not from the image. COUNTRY_PACK is a build arg defaulting to XKM, but the country is chosen at install time in Master Data, so a stock image drew Kamuntu over Ethiopian data — and since the choropleth joins on P-code that renders an EMPTY map with nothing in any log. Master Data already records a boundary URL on every geo row; sync_pack.py --from-master-data now reads it, with the object-store credentials the bucket needs, and falls back to the baked pack if unreachable. ([`b22a27e`](https://gitlab.com/openg2p/g2p-insights/-/commit/b22a27eb241e74a3c9b4cf467ab5b25d25aa5b05))
 
 <a id="v-0-0-0-develop-55"></a>
 
@@ -160,8 +174,9 @@ _commit `a8e9273` · changes since the start_
 
 > **What's shown here.** This catalogue lists **every stable release**, plus
 > the **latest 20 develop builds** and the **latest 10 release
-> candidates** per release line. Older develop builds and release candidates
-> are pruned as they are superseded, and a release's candidates are removed
-> once it ships. Those versions still exist in the container and Helm
+> candidates** per release line -- candidates are KEPT after their release
+> ships, as the audit trail of the release run. Older develop builds and
+> release candidates are pruned as they are superseded. Those versions
+> still exist in the container and Helm
 > registries — they are simply not listed here. This page is generated
 > automatically from commit history; do not edit it by hand.
