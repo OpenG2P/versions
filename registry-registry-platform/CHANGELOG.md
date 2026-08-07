@@ -6,6 +6,7 @@ _Published automatically._
 
 | Version | Date | Type |
 | --- | --- | --- |
+| [`1.2.0-rc.381`](#v-1-2-0-rc-381) | 2026-08-07 | release candidate |
 | [`0.0.0-develop.379`](#v-0-0-0-develop-379) | 2026-08-07 | develop |
 | [`1.2.0-rc.380`](#v-1-2-0-rc-380) | 2026-08-07 | release candidate |
 | [`0.0.0-develop.378`](#v-0-0-0-develop-378) | 2026-08-06 | develop |
@@ -18,6 +19,19 @@ _Published automatically._
 | [`0.0.0-develop.343`](#v-0-0-0-develop-343) | 2026-08-04 | develop |
 
 # Release candidates
+
+<a id="v-1-2-0-rc-381"></a>
+
+## registry/registry-platform 1.2.0-rc.381 — 2026-08-07
+
+_commit `4bbd6f7` · changes since 1.2.0-rc.380_
+<!-- build:1.2.0-rc.381 revision:4bbd6f79d5fffdde52b4e2f42feed380a18a4e14 ts:1786103120 -->
+
+**Chart:** [openg2p-registry 1.2.0-rc.381](https://gitlab.com/api/v4/projects/openg2p%2Fcharts/packages/helm/stable/charts/openg2p-registry-1.2.0-rc.381.tgz)
+
+### Changes since 1.2.0-rc.380
+
+- [G2P-5492](https://openg2p.atlassian.net/browse/G2P-5492) feat(cr): add validation to enforce single section active crs for a record ([`4bbd6f7`](https://gitlab.com/openg2p/registry/registry-platform/-/commit/4bbd6f79d5fffdde52b4e2f42feed380a18a4e14))
 
 <a id="v-1-2-0-rc-380"></a>
 
