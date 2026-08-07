@@ -6,6 +6,7 @@ _Published automatically._
 
 | Version | Date | Type |
 | --- | --- | --- |
+| [`1.2.0-rc.380`](#v-1-2-0-rc-380) | 2026-08-07 | release candidate |
 | [`0.0.0-develop.378`](#v-0-0-0-develop-378) | 2026-08-06 | develop |
 | [`1.2.0-rc.378`](#v-1-2-0-rc-378) | 2026-08-06 | release candidate |
 | [`1.2.0-rc.374`](#v-1-2-0-rc-374) | 2026-08-06 | release candidate |
@@ -15,7 +16,20 @@ _Published automatically._
 | [`0.0.0-develop.345`](#v-0-0-0-develop-345) | 2026-08-04 | develop |
 | [`0.0.0-develop.343`](#v-0-0-0-develop-343) | 2026-08-04 | develop |
 
-# Release candidates (in progress)
+# Release candidates
+
+<a id="v-1-2-0-rc-380"></a>
+
+## registry/registry-platform 1.2.0-rc.380 — 2026-08-07
+
+_commit `0cc8ad4` · changes since 1.2.0-rc.378_
+<!-- build:1.2.0-rc.380 revision:0cc8ad40379860bf6928e0528f4367c87fe4c614 ts:1786097032 -->
+
+**Chart:** [openg2p-registry 1.2.0-rc.380](https://gitlab.com/api/v4/projects/openg2p%2Fcharts/packages/helm/stable/charts/openg2p-registry-1.2.0-rc.380.tgz)
+
+### Changes since 1.2.0-rc.378
+
+- [G2P-5489](https://openg2p.atlassian.net/browse/G2P-5489) Remove redundant sharp install and chown layers from Dockerfile ([`34eb393`](https://gitlab.com/openg2p/registry/registry-platform/-/commit/34eb39345707ba11e4bd63f5ce236eda6659fea0))
 
 <a id="v-1-2-0-rc-378"></a>
 
@@ -336,8 +350,9 @@ _commit `39e4c2c` · changes since v1.0.0_
 
 > **What's shown here.** This catalogue lists **every stable release**, plus
 > the **latest 20 develop builds** and the **latest 10 release
-> candidates** per release line. Older develop builds and release candidates
-> are pruned as they are superseded, and a release's candidates are removed
-> once it ships. Those versions still exist in the container and Helm
+> candidates** per release line -- candidates are KEPT after their release
+> ships, as the audit trail of the release run. Older develop builds and
+> release candidates are pruned as they are superseded. Those versions
+> still exist in the container and Helm
 > registries — they are simply not listed here. This page is generated
 > automatically from commit history; do not edit it by hand.
