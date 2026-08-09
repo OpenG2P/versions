@@ -6,6 +6,7 @@ _Published automatically._
 
 | Version | Date | Type |
 | --- | --- | --- |
+| [`0.0.0-develop.201`](#v-0-0-0-develop-201) | 2026-08-09 | develop |
 | [`0.0.0-develop.200`](#v-0-0-0-develop-200) | 2026-08-07 | develop |
 | [`0.0.0-develop.199`](#v-0-0-0-develop-199) | 2026-08-06 | develop |
 | [`2.2.1`](#v-2-2-1) | 2026-08-06 | release |
@@ -36,6 +37,17 @@ Creating new Tag 2.2.1
 - [G2P-5335](https://openg2p.atlassian.net/browse/G2P-5335) Switch CI to GitLab (.gitlab-ci.yml); drop GitHub Actions build/publish ([`0988f9b`](https://gitlab.com/openg2p/commons/-/commit/0988f9b3c5af0b70f362e672975d99e25646b27e))
 
 # Develop builds
+
+<a id="v-0-0-0-develop-201"></a>
+
+## commons — develop 0.0.0-develop.201 (2026-08-09)
+
+_commit `2cabc9c` · changes since 0.0.0-develop.200_
+<!-- build:0.0.0-develop.201 revision:2cabc9c5aba91fa5b18ec9fbff2506d5bd44bc6f ts:1786255114 -->
+
+### Changes since 0.0.0-develop.200
+
+- [G2P-4804](https://openg2p.atlassian.net/browse/G2P-4804) Make the country pack a free-text field with short form guidance. The two-value enum let an environment pick only ETH or XKM, so a country adding its own pack to openg2p-data could not select it; the Rancher description now says where to find the directory name and the provenance notes move to values.yaml. ([`2cabc9c`](https://gitlab.com/openg2p/commons/-/commit/2cabc9c5aba91fa5b18ec9fbff2506d5bd44bc6f))
 
 <a id="v-0-0-0-develop-200"></a>
 
