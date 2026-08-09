@@ -6,6 +6,7 @@ _Published automatically._
 
 | Version | Date | Type |
 | --- | --- | --- |
+| [`0.0.0-develop.70`](#v-0-0-0-develop-70) | 2026-08-09 | develop |
 | [`0.0.0-develop.69`](#v-0-0-0-develop-69) | 2026-08-08 | develop |
 | [`0.0.0-develop.66`](#v-0-0-0-develop-66) | 2026-08-07 | develop |
 | [`0.0.0-develop.62`](#v-0-0-0-develop-62) | 2026-08-07 | develop |
@@ -21,6 +22,19 @@ _Published automatically._
 | [`0.0.0-develop.46`](#v-0-0-0-develop-46) | 2026-08-03 | develop |
 
 # Develop builds
+
+<a id="v-0-0-0-develop-70"></a>
+
+## g2p-insights — develop 0.0.0-develop.70 (2026-08-09)
+
+_commit `a454f67` · changes since 0.0.0-develop.69_
+<!-- build:0.0.0-develop.70 revision:a454f675a74dbddeb7405bbcdf7e0f11ecf7797e ts:1786255078 -->
+
+**Chart:** [openg2p-insights 0.0.0-develop.70](https://gitlab.com/api/v4/projects/openg2p%2Fcharts/packages/helm/stable/charts/openg2p-insights-0.0.0-develop.70.tgz)
+
+### Changes since 0.0.0-develop.69
+
+- [G2P-4804](https://openg2p.atlassian.net/browse/G2P-4804) Make the country pack a free-text field with short form guidance. The two-value enum let an environment pick only ETH or XKM, so a country adding its own pack to openg2p-data could not select it; the Rancher description now says where to find the directory name and the provenance notes move to values.yaml. ([`a454f67`](https://gitlab.com/openg2p/g2p-insights/-/commit/a454f675a74dbddeb7405bbcdf7e0f11ecf7797e))
 
 <a id="v-0-0-0-develop-69"></a>
 
