@@ -6,6 +6,7 @@ _Published automatically._
 
 | Version | Date | Type |
 | --- | --- | --- |
+| [`0.0.0-develop.231`](#v-0-0-0-develop-231) | 2026-08-09 | develop |
 | [`0.0.0-develop.228`](#v-0-0-0-develop-228) | 2026-08-07 | develop |
 | [`0.0.0-develop.226`](#v-0-0-0-develop-226) | 2026-08-06 | develop |
 | [`0.0.0-develop.224`](#v-0-0-0-develop-224) | 2026-08-06 | develop |
@@ -89,6 +90,27 @@ Intermediate stable version; several changes related to reading data from MDS; c
 - NSR-xxxx Added a scalable sample-data generator for NSR (docker/db-seed/generate_bulk_sample.py) that loads ~1M individuals / 250k households plus vulnerability, livelihoods, housing-services, programme and score records. Complements the hand-written 500-row fixture in load_sample_data.py, which cannot scale. Geography is read from the deployment's own MDS hierarchy so nothing is tied to a country, level naming or depth; attribute marginals come from a committed distributions.json extracted (counts only, no PII) from a real 20M-row registry. Column lists are introspected per table so the loader tolerates schema drift, poverty correlates with deprivation and enrolment so targeting dashboards have signal, --purge makes a load reversible, and bulk-seed-job.yaml runs it in-cluster because a load this size does not survive kubectl port-forward. ([`bbd255f`](https://gitlab.com/openg2p/registry/national-social-registry/-/commit/bbd255ff47f3bdc4103019a734fca972d26c4d0a))
 
 # Develop builds
+
+<a id="v-0-0-0-develop-231"></a>
+
+## registry/national-social-registry — develop 0.0.0-develop.231 (2026-08-09)
+
+_commit `2fc8b9e` · changes since 0.0.0-develop.228_
+<!-- build:0.0.0-develop.231 revision:2fc8b9e729b180734ab5fb2fec379e4c519dfa38 ts:1786242825 -->
+
+**Chart:** [openg2p-nsr 0.0.0-develop.231](https://gitlab.com/api/v4/projects/openg2p%2Fcharts/packages/helm/stable/charts/openg2p-nsr-0.0.0-develop.231.tgz)
+
+### Summary
+
+- Reporting enhancements: Updated the reporting layer to match the Farmer Registry, introducing materialized views for vulnerability, livelihood, and housing data, significantly improving data access with 259k, 166k, and 62k rows respectively. Added a devOverlay switch for testing without publishing.
+- Data structure improvements: Integrated mechanical reporting views from the platform generator, expanding the entity tree in reporting.yaml and adding fourteen new tables, including those for vulnerability and livelihood data that previously lacked reporting views. 
+- Version update: Bumped the RP version to 0.0.0-develop.383.
+
+### Changes since 0.0.0-develop.228
+
+- Bumped up RP version to 0.0.0-develop.383 ([`2fc8b9e`](https://gitlab.com/openg2p/registry/national-social-registry/-/commit/2fc8b9e729b180734ab5fb2fec379e4c519dfa38))
+- [G2P-4804](https://openg2p.atlassian.net/browse/G2P-4804) Bring the reporting layer to parity with the Farmer Registry. Materializes the vulnerability, livelihood and housing views — 259k, 166k and 62k rows, each joining a materialized parent on every read — inherits the individual's sex and age band onto its five child views so those questions need no join, and adds the devOverlay switch for testing the platform generator without publishing an image. ([`69bc95f`](https://gitlab.com/openg2p/registry/national-social-registry/-/commit/69bc95f0622ee52cdf1fa642a98959c548b59dc8))
+- [G2P-4804](https://openg2p.atlassian.net/browse/G2P-4804) Take the mechanical reporting views from the platform generator. reporting.yaml declares the entity tree and names household/individual as hand-written; the generator adds fourteen more, including the vulnerability and livelihood tables holding 259k and 166k rows that had no reporting view at all. ([`fb74480`](https://gitlab.com/openg2p/registry/national-social-registry/-/commit/fb74480a887842a87242109e9c1abe5b0e6c79a0))
 
 <a id="v-0-0-0-develop-228"></a>
 
