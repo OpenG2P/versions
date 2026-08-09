@@ -6,6 +6,7 @@ _Published automatically._
 
 | Version | Date | Type |
 | --- | --- | --- |
+| [`0.0.0-develop.159`](#v-0-0-0-develop-159) | 2026-08-09 | develop |
 | [`0.0.0-develop.154`](#v-0-0-0-develop-154) | 2026-08-07 | develop |
 | [`0.0.0-develop.153`](#v-0-0-0-develop-153) | 2026-08-06 | develop |
 | [`1.3.0`](#v-1-3-0) | 2026-08-06 | release |
@@ -81,6 +82,29 @@ _commit `d39deba` · changes since 0.0.0-develop.151_
 _No new commits since 0.0.0-develop.151._
 
 # Develop builds
+
+<a id="v-0-0-0-develop-159"></a>
+
+## registry/farmer-registry — develop 0.0.0-develop.159 (2026-08-09)
+
+_commit `ec8828c` · changes since 0.0.0-develop.154_
+<!-- build:0.0.0-develop.159 revision:ec8828c439ff33ac65bfb502bdb3bad5358c14d1 ts:1786242862 -->
+
+**Chart:** [openg2p-farmer-registry 0.0.0-develop.159](https://gitlab.com/api/v4/projects/openg2p%2Fcharts/packages/helm/stable/charts/openg2p-farmer-registry-0.0.0-develop.159.tgz)
+
+### Summary
+
+- **Major:** Enhanced data integrity: scores are now declared against both farmers and households, preventing data loss from naming conflicts.
+- Reporting improvements: generated `fr_rpt_crop` from declarations, ensuring consistency with previous definitions while adding missing geo pcodes and workflow columns; introduced mechanical reporting views that expand the entity tree with additional data points.
+- Policy alignment: defined household member age bands to match farmer reporting, resolving discrepancies in age data across charts.
+
+### Changes since 0.0.0-develop.154
+
+- Bumped up RP version to 0.0.0-develop.383 ([`ec8828c`](https://gitlab.com/openg2p/registry/farmer-registry/-/commit/ec8828c439ff33ac65bfb502bdb3bad5358c14d1))
+- [G2P-4804](https://openg2p.atlassian.net/browse/G2P-4804) Declare score against both farmer and household. A single install carries both — the bulk generator attaches scores to farmers and the sample loader to households, 5,671 and 6 on a reference install — so naming one parent silently stripped the id and the geography from every row of the other. ([`40556c9`](https://gitlab.com/openg2p/registry/farmer-registry/-/commit/40556c9a6b4ea4f0791f3a2e30a8fbaa428c85ef))
+- [G2P-4804](https://openg2p.atlassian.net/browse/G2P-4804) Generate fr_rpt_crop from declarations instead of hand-written SQL. Verified byte-identical to the previous definition across all seventeen shared columns and 757 rows before the SQL was removed; it keeps its materialization and indexes, and additionally carries the geo pcodes and workflow columns the hand-written version omitted. ([`699b3a2`](https://gitlab.com/openg2p/registry/farmer-registry/-/commit/699b3a283105c25a82b7c87608afb18a1d28a61f))
+- [G2P-4804](https://openg2p.atlassian.net/browse/G2P-4804) Declare the household member age bands, matching fr_rpt_farmer's edges. The generator derives an age wherever it withholds a birth date, but where the bands fall is policy, and defining them twice with different edges is how two charts come to disagree about how many people are under 25. ([`6daa47a`](https://gitlab.com/openg2p/registry/farmer-registry/-/commit/6daa47af0c0b0abd14b6b4b701db197ac6fd2839))
+- [G2P-4804](https://openg2p.atlassian.net/browse/G2P-4804) Take the mechanical reporting views from the platform generator. reporting.yaml declares the entity tree, names farmer/land/crop as hand-written and marks the cooperative name columns as organisations rather than people; the generated ten add livestock, inputs, membership, scores, households, members, change requests, record history and geo_levels, which used to be derived from registered rows and so was empty on a production install. ([`11e3b8b`](https://gitlab.com/openg2p/registry/farmer-registry/-/commit/11e3b8beb7368af5e1dbf8bb6810c6ef08238a18))
 
 <a id="v-0-0-0-develop-154"></a>
 
