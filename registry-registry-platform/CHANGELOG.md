@@ -6,6 +6,7 @@ _Published automatically._
 
 | Version | Date | Type |
 | --- | --- | --- |
+| [`1.2.0-rc.384`](#v-1-2-0-rc-384) | 2026-08-10 | release candidate |
 | [`0.0.0-develop.383`](#v-0-0-0-develop-383) | 2026-08-09 | develop |
 | [`1.2.0-rc.381`](#v-1-2-0-rc-381) | 2026-08-07 | release candidate |
 | [`0.0.0-develop.379`](#v-0-0-0-develop-379) | 2026-08-07 | develop |
@@ -20,6 +21,32 @@ _Published automatically._
 | [`0.0.0-develop.343`](#v-0-0-0-develop-343) | 2026-08-04 | develop |
 
 # Release candidates
+
+<a id="v-1-2-0-rc-384"></a>
+
+## registry/registry-platform 1.2.0-rc.384 — 2026-08-10
+
+_commit `129dae1` · changes since 0.0.0-develop.374_
+<!-- build:1.2.0-rc.384 revision:129dae1695398c120577c4145a9c9431e1545308 ts:1786352962 -->
+
+**Chart:** [openg2p-registry 1.2.0-rc.384](https://gitlab.com/api/v4/projects/openg2p%2Fcharts/packages/helm/stable/charts/openg2p-registry-1.2.0-rc.384.tgz)
+
+### Summary
+
+- Performance optimization: streamlined policy condition handling in G2PIntakeFormDataService and G2PRegisterService to eliminate unnecessary await calls.
+- IAM integration: added IAM admin user to Keycloak for enhanced access management.
+- Dockerfile cleanup: removed redundant sharp installation and chown layers to improve build efficiency.
+- Partner and consent management: reapplied enhancements and realigned configurations to improve integration with commons-services and the g2p-bridge pmSeedClientId pattern.
+
+### Changes since 0.0.0-develop.374
+
+- Optimize policy condition handling in G2PIntakeFormDataService to avoid unnecessary await ([`a76dbaa`](https://gitlab.com/openg2p/registry/registry-platform/-/commit/a76dbaa68d9f0a35dfd8e13992a8d8e65c4d6bba))
+- Refactor policy condition handling in G2PRegisterService to avoid unnecessary await ([`4552894`](https://gitlab.com/openg2p/registry/registry-platform/-/commit/45528947f52b9b3be91a29ff5485283a11f784d3))
+- [G2P-5495](https://openg2p.atlassian.net/browse/G2P-5495) Add IAM admin user to keycloak-init ([`816cfdf`](https://gitlab.com/openg2p/registry/registry-platform/-/commit/816cfdf8d4963b49b2f2bb9f2ae6bf0e738b7202))
+- [G2P-5489](https://openg2p.atlassian.net/browse/G2P-5489) Remove redundant sharp install and chown layers from Dockerfile ([`34eb393`](https://gitlab.com/openg2p/registry/registry-platform/-/commit/34eb39345707ba11e4bd63f5ce236eda6659fea0))
+- Reapply "[G2P-5222](https://openg2p.atlassian.net/browse/G2P-5222) Repoint Partner Management to commons-services and align PM-seed auth to the g2p-bridge pmSeedClientId pattern." ([`ff1f9c8`](https://gitlab.com/openg2p/registry/registry-platform/-/commit/ff1f9c8fe8e61e5717cf65e2f1363f8f51df7da0))
+- Reapply "[G2P-5222](https://openg2p.atlassian.net/browse/G2P-5222) Consent and partner management related." ([`e378ecb`](https://gitlab.com/openg2p/registry/registry-platform/-/commit/e378ecbac8108749766d0ae0fc5fed197e517a4e))
+- Reapply "[G2P-5222](https://openg2p.atlassian.net/browse/G2P-5222) Enhancements for consent management, partner management and WJS support." ([`eabfb80`](https://gitlab.com/openg2p/registry/registry-platform/-/commit/eabfb8096865dca361b8a4f48d8d9d4551bc86d1))
 
 <a id="v-1-2-0-rc-381"></a>
 
