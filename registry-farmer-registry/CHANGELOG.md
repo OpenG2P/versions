@@ -6,6 +6,7 @@ _Published automatically._
 
 | Version | Date | Type |
 | --- | --- | --- |
+| [`0.0.0-develop.161`](#v-0-0-0-develop-161) | 2026-08-10 | develop |
 | [`0.0.0-develop.159`](#v-0-0-0-develop-159) | 2026-08-09 | develop |
 | [`0.0.0-develop.154`](#v-0-0-0-develop-154) | 2026-08-07 | develop |
 | [`0.0.0-develop.153`](#v-0-0-0-develop-153) | 2026-08-06 | develop |
@@ -82,6 +83,19 @@ _commit `d39deba` · changes since 0.0.0-develop.151_
 _No new commits since 0.0.0-develop.151._
 
 # Develop builds
+
+<a id="v-0-0-0-develop-161"></a>
+
+## registry/farmer-registry — develop 0.0.0-develop.161 (2026-08-10)
+
+_commit `f8ee93c` · changes since 0.0.0-develop.159_
+<!-- build:0.0.0-develop.161 revision:f8ee93c268f93f166d8d605491488a8c57b2300a ts:1786350857 -->
+
+**Chart:** [openg2p-farmer-registry 0.0.0-develop.161](https://gitlab.com/api/v4/projects/openg2p%2Fcharts/packages/helm/stable/charts/openg2p-farmer-registry-0.0.0-develop.161.tgz)
+
+### Changes since 0.0.0-develop.159
+
+- [G2P-5402](https://openg2p.atlassian.net/browse/G2P-5402) update: modify SQL insert statements for g2p_register_sections and registry_languages ([`b2cda40`](https://gitlab.com/openg2p/registry/farmer-registry/-/commit/b2cda40ae3ff83f6b189a43fd8c160bed6dda398))
 
 <a id="v-0-0-0-develop-159"></a>
 
