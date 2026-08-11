@@ -6,6 +6,7 @@ _Published automatically._
 
 | Version | Date | Type |
 | --- | --- | --- |
+| [`0.0.0-develop.163`](#v-0-0-0-develop-163) | 2026-08-11 | develop |
 | [`0.0.0-develop.161`](#v-0-0-0-develop-161) | 2026-08-10 | develop |
 | [`0.0.0-develop.159`](#v-0-0-0-develop-159) | 2026-08-09 | develop |
 | [`0.0.0-develop.154`](#v-0-0-0-develop-154) | 2026-08-07 | develop |
@@ -83,6 +84,19 @@ _commit `d39deba` · changes since 0.0.0-develop.151_
 _No new commits since 0.0.0-develop.151._
 
 # Develop builds
+
+<a id="v-0-0-0-develop-163"></a>
+
+## registry/farmer-registry — develop 0.0.0-develop.163 (2026-08-11)
+
+_commit `0ba140d` · changes since 0.0.0-develop.161_
+<!-- build:0.0.0-develop.163 revision:0ba140d519d364f55ab28b0ce8b95f25ab7c50d4 ts:1786445658 -->
+
+**Chart:** [openg2p-farmer-registry 0.0.0-develop.163](https://gitlab.com/api/v4/projects/openg2p%2Fcharts/packages/helm/stable/charts/openg2p-farmer-registry-0.0.0-develop.163.tgz)
+
+### Changes since 0.0.0-develop.161
+
+- Add seed manifest generation and remove obsolete performance templates ([`bee2c80`](https://gitlab.com/openg2p/registry/farmer-registry/-/commit/bee2c80bda0d7c178d97c2c177c5db7250ea12ab))
 
 <a id="v-0-0-0-develop-161"></a>
 
