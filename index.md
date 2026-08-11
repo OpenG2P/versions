@@ -14,7 +14,7 @@ Registry** (linked at the top of each repository's page below). See the
 ### Services
 
 - **[audit-manager](./audit-manager/CHANGELOG)**
-- **[awe](./awe/CHANGELOG)**
+- **[awe](./awe/CHANGELOG)** · [repository ↗](https://gitlab.com/openg2p/awe)
 - **[commons](./commons/CHANGELOG)** · [repository ↗](https://gitlab.com/openg2p/commons)
 - **[consent-manager](./consent-manager/CHANGELOG)** · [repository ↗](https://gitlab.com/openg2p/consent-manager)
 - **[g2p-bridge/g2p-bridge](./g2p-bridge-g2p-bridge/CHANGELOG)** · [repository ↗](https://gitlab.com/openg2p/g2p-bridge/g2p-bridge)
