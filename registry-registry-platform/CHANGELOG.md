@@ -6,6 +6,7 @@ _Published automatically._
 
 | Version | Date | Type |
 | --- | --- | --- |
+| [`1.2.0-rc.387`](#v-1-2-0-rc-387) | 2026-08-13 | release candidate |
 | [`1.2.0-rc.384`](#v-1-2-0-rc-384) | 2026-08-10 | release candidate |
 | [`0.0.0-develop.383`](#v-0-0-0-develop-383) | 2026-08-09 | develop |
 | [`1.2.0-rc.381`](#v-1-2-0-rc-381) | 2026-08-07 | release candidate |
@@ -21,6 +22,25 @@ _Published automatically._
 | [`0.0.0-develop.343`](#v-0-0-0-develop-343) | 2026-08-04 | develop |
 
 # Release candidates
+
+<a id="v-1-2-0-rc-387"></a>
+
+## registry/registry-platform 1.2.0-rc.387 — 2026-08-13
+
+_commit `e601367` · changes since 1.2.0-rc.384_
+<!-- build:1.2.0-rc.387 revision:e601367a1cf206f8a2fd58b7fe82f420bd2f7764 ts:1786602457 -->
+
+**Chart:** [openg2p-registry 1.2.0-rc.387](https://gitlab.com/api/v4/projects/openg2p%2Fcharts/packages/helm/stable/charts/openg2p-registry-1.2.0-rc.387.tgz)
+
+### Summary
+
+- New feature: introduced `G2PChangeRequestSectionPayloadService` for enhanced change request processing and added validation to ensure only one active change request section per record.
+- Testing improvements: added unit tests for the new change request section payload service, enhancing overall test coverage.
+
+### Changes since 1.2.0-rc.384
+
+- [G2P-5497](https://openg2p.atlassian.net/browse/G2P-5497) feat(cr): add G2PChangeRequestSectionPayloadService and integrate validation in change request processing ([`bc7091c`](https://gitlab.com/openg2p/registry/registry-platform/-/commit/bc7091c2a36f62ef80c449d77816b66507aea54f))
+- [G2P-5492](https://openg2p.atlassian.net/browse/G2P-5492) feat(cr): add validation to enforce single section active crs for a record ([`3d14b54`](https://gitlab.com/openg2p/registry/registry-platform/-/commit/3d14b54b27741b7f2989936139a175103d090fe1))
 
 <a id="v-1-2-0-rc-384"></a>
 
