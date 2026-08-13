@@ -1,0 +1,4 @@
+name=registry/disability-registry
+kind=service
+repo=https://gitlab.com/openg2p/registry/disability-registry
+images=https://gitlab.com/openg2p/registry/disability-registry/container_registry

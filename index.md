@@ -23,6 +23,7 @@ Registry** (linked at the top of each repository's page below). See the
 - **[master-data-service](./master-data-service/CHANGELOG)** · [repository ↗](https://gitlab.com/openg2p/master-data-service)
 - **[partner-management](./partner-management/CHANGELOG)**
 - **[pbms/pbms](./pbms-pbms/CHANGELOG)** · [repository ↗](https://gitlab.com/openg2p/pbms/pbms)
+- **[registry/disability-registry](./registry-disability-registry/CHANGELOG)** · [repository ↗](https://gitlab.com/openg2p/registry/disability-registry)
 - **[registry/farmer-registry](./registry-farmer-registry/CHANGELOG)** · [repository ↗](https://gitlab.com/openg2p/registry/farmer-registry)
 - **[registry/national-social-registry](./registry-national-social-registry/CHANGELOG)** · [repository ↗](https://gitlab.com/openg2p/registry/national-social-registry)
 - **[registry/registry-platform](./registry-registry-platform/CHANGELOG)** · [repository ↗](https://gitlab.com/openg2p/registry/registry-platform)
