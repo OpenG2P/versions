@@ -6,6 +6,7 @@ _Published automatically._
 
 | Version | Date | Type |
 | --- | --- | --- |
+| [`1.2.0-rc.393`](#v-1-2-0-rc-393) | 2026-08-14 | release candidate |
 | [`1.2.0-rc.391`](#v-1-2-0-rc-391) | 2026-08-14 | release candidate |
 | [`1.2.0-rc.389`](#v-1-2-0-rc-389) | 2026-08-14 | release candidate |
 | [`0.0.0-develop.384`](#v-0-0-0-develop-384) | 2026-08-14 | develop |
@@ -25,6 +26,19 @@ _Published automatically._
 | [`0.0.0-develop.343`](#v-0-0-0-develop-343) | 2026-08-04 | develop |
 
 # Release candidates
+
+<a id="v-1-2-0-rc-393"></a>
+
+## registry/registry-platform 1.2.0-rc.393 — 2026-08-14
+
+_commit `6020cb0` · changes since 1.2.0-rc.391_
+<!-- build:1.2.0-rc.393 revision:6020cb08062d4f4b7ecf3e137aba300e404df32e ts:1786692549 -->
+
+**Chart:** [openg2p-registry 1.2.0-rc.393](https://gitlab.com/api/v4/projects/openg2p%2Fcharts/packages/helm/stable/charts/openg2p-registry-1.2.0-rc.393.tgz)
+
+### Changes since 1.2.0-rc.391
+
+- [G2P-5493](https://openg2p.atlassian.net/browse/G2P-5493) refactor change request handling and remove unused staff-portal-ui folder ([`34d861b`](https://gitlab.com/openg2p/registry/registry-platform/-/commit/34d861b53e08918c8b30a2ac5edf72ee1d0e2162))
 
 <a id="v-1-2-0-rc-391"></a>
 
