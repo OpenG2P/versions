@@ -6,6 +6,7 @@ _Published automatically._
 
 | Version | Date | Type |
 | --- | --- | --- |
+| [`0.0.0-develop.384`](#v-0-0-0-develop-384) | 2026-08-14 | develop |
 | [`1.2.0-rc.387`](#v-1-2-0-rc-387) | 2026-08-13 | release candidate |
 | [`1.2.0-rc.384`](#v-1-2-0-rc-384) | 2026-08-10 | release candidate |
 | [`0.0.0-develop.383`](#v-0-0-0-develop-383) | 2026-08-09 | develop |
@@ -145,6 +146,19 @@ _commit `bf59097` · changes since 0.0.0-develop.353_
 - G2P-[G2P-5389](https://openg2p.atlassian.net/browse/G2P-5389) improve error handling ([`40c729f`](https://gitlab.com/openg2p/registry/registry-platform/-/commit/40c729feb6b8f2b5fe697527fd5dd1ef378ece61))
 
 # Develop builds
+
+<a id="v-0-0-0-develop-384"></a>
+
+## registry/registry-platform — develop 0.0.0-develop.384 (2026-08-14)
+
+_commit `5a51c9e` · changes since 0.0.0-develop.383_
+<!-- build:0.0.0-develop.384 revision:5a51c9e032fe68c393782156e8fda1ae555a9c78 ts:1786672977 -->
+
+**Chart:** [openg2p-registry 0.0.0-develop.384](https://gitlab.com/api/v4/projects/openg2p%2Fcharts/packages/helm/stable/charts/openg2p-registry-0.0.0-develop.384.tgz)
+
+### Changes since 0.0.0-develop.383
+
+- [G2P-5518](https://openg2p.atlassian.net/browse/G2P-5518) Remove dead staff-api imports from registry-core controller services. get_data_policies and get_data_policy_mnemonics were imported in four files and never called, but registry-core ships in every image while only staff-api installs openg2p_registry_staff_api — so partner-api and any non-staff image crashed at import. Also correct the ID-types note in questions.yaml. ([`5a51c9e`](https://gitlab.com/openg2p/registry/registry-platform/-/commit/5a51c9e032fe68c393782156e8fda1ae555a9c78))
 
 <a id="v-0-0-0-develop-383"></a>
 
