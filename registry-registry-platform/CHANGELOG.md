@@ -6,6 +6,7 @@ _Published automatically._
 
 | Version | Date | Type |
 | --- | --- | --- |
+| [`1.2.0-rc.391`](#v-1-2-0-rc-391) | 2026-08-14 | release candidate |
 | [`1.2.0-rc.389`](#v-1-2-0-rc-389) | 2026-08-14 | release candidate |
 | [`0.0.0-develop.384`](#v-0-0-0-develop-384) | 2026-08-14 | develop |
 | [`1.2.0-rc.387`](#v-1-2-0-rc-387) | 2026-08-13 | release candidate |
@@ -24,6 +25,19 @@ _Published automatically._
 | [`0.0.0-develop.343`](#v-0-0-0-develop-343) | 2026-08-04 | develop |
 
 # Release candidates
+
+<a id="v-1-2-0-rc-391"></a>
+
+## registry/registry-platform 1.2.0-rc.391 — 2026-08-14
+
+_commit `9d10448` · changes since 1.2.0-rc.389_
+<!-- build:1.2.0-rc.391 revision:9d1044817c1be37d1fb503ee3dd4acd48085263a ts:1786681006 -->
+
+**Chart:** [openg2p-registry 1.2.0-rc.391](https://gitlab.com/api/v4/projects/openg2p%2Fcharts/packages/helm/stable/charts/openg2p-registry-1.2.0-rc.391.tgz)
+
+### Changes since 1.2.0-rc.389
+
+- [G2P-5500](https://openg2p.atlassian.net/browse/G2P-5500) Enhance G2PIntakeFormDataService to validate only surviving records during intake form processing. Introduced a new method to filter out records marked for deletion before validation, ensuring data integrity in the upsert operation. ([`08ea139`](https://gitlab.com/openg2p/registry/registry-platform/-/commit/08ea13972db6ed1a633cd0d497beda7e3e980f21))
 
 <a id="v-1-2-0-rc-389"></a>
 
