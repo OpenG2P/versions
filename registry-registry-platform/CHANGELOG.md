@@ -6,6 +6,7 @@ _Published automatically._
 
 | Version | Date | Type |
 | --- | --- | --- |
+| [`1.2.0-rc.396`](#v-1-2-0-rc-396) | 2026-08-14 | release candidate |
 | [`1.2.0-rc.393`](#v-1-2-0-rc-393) | 2026-08-14 | release candidate |
 | [`1.2.0-rc.391`](#v-1-2-0-rc-391) | 2026-08-14 | release candidate |
 | [`1.2.0-rc.389`](#v-1-2-0-rc-389) | 2026-08-14 | release candidate |
@@ -26,6 +27,19 @@ _Published automatically._
 | [`0.0.0-develop.343`](#v-0-0-0-develop-343) | 2026-08-04 | develop |
 
 # Release candidates
+
+<a id="v-1-2-0-rc-396"></a>
+
+## registry/registry-platform 1.2.0-rc.396 — 2026-08-14
+
+_commit `de4ce53` · changes since 1.2.0-rc.393_
+<!-- build:1.2.0-rc.396 revision:de4ce533b916ab67104dbda1b6a432155b73bacf ts:1786692907 -->
+
+**Chart:** [openg2p-registry 1.2.0-rc.396](https://gitlab.com/api/v4/projects/openg2p%2Fcharts/packages/helm/stable/charts/openg2p-registry-1.2.0-rc.396.tgz)
+
+### Changes since 1.2.0-rc.393
+
+- [G2P-5369](https://openg2p.atlassian.net/browse/G2P-5369): Enhance GeoHierarchy functionality and validation ([`a533082`](https://gitlab.com/openg2p/registry/registry-platform/-/commit/a53308284603cf91b473cbf8d365c630a78ed923))
 
 <a id="v-1-2-0-rc-393"></a>
 
