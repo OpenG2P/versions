@@ -6,9 +6,23 @@ _Published automatically._
 
 | Version | Date | Type |
 | --- | --- | --- |
+| [`0.0.0-develop.4`](#v-0-0-0-develop-4) | 2026-08-15 | develop |
 | [`0.0.0-develop.3`](#v-0-0-0-develop-3) | 2026-08-13 | develop |
 
 # Develop builds
+
+<a id="v-0-0-0-develop-4"></a>
+
+## registry/disability-registry — develop 0.0.0-develop.4 (2026-08-15)
+
+_commit `975b783` · changes since 0.0.0-develop.3_
+<!-- build:0.0.0-develop.4 revision:975b783a217a6def41a56f8d482eab6788b630ea ts:1786787156 -->
+
+**Chart:** [openg2p-disability-registry 0.0.0-develop.4](https://gitlab.com/api/v4/projects/openg2p%2Fcharts/packages/helm/stable/charts/openg2p-disability-registry-0.0.0-develop.4.tgz)
+
+### Changes since 0.0.0-develop.3
+
+- Bumped up RP version to 0.0.0-develop.384 ([`975b783`](https://gitlab.com/openg2p/registry/disability-registry/-/commit/975b783a217a6def41a56f8d482eab6788b630ea))
 
 <a id="v-0-0-0-develop-3"></a>
 
