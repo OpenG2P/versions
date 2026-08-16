@@ -6,6 +6,7 @@ _Published automatically._
 
 | Version | Date | Type |
 | --- | --- | --- |
+| [`0.0.0-develop.70`](#v-0-0-0-develop-70) | 2026-08-16 | develop |
 | [`0.0.0-develop.69`](#v-0-0-0-develop-69) | 2026-08-11 | develop |
 | [`1.1.0`](#v-1-1-0) | 2026-07-17 | release |
 | [`1.1.0-rc.66`](#v-1-1-0-rc-66) | 2026-07-17 | release candidate |
@@ -72,6 +73,19 @@ _All changes since release v1.0.0:_
 - [G2P-5147](https://openg2p.atlassian.net/browse/G2P-5147) Add Keycloak user management endpoints and UI integration in awe ([`169c313`](https://gitlab.com/openg2p/awe/-/commit/169c3137d97f6dd2598e7e3985ee9f1ba2bf1abe))
 
 # Develop builds
+
+<a id="v-0-0-0-develop-70"></a>
+
+## awe — develop 0.0.0-develop.70 (2026-08-16)
+
+_commit `dce3f9c` · changes since 0.0.0-develop.69_
+<!-- build:0.0.0-develop.70 revision:dce3f9c036b3dbf8d4a1ad4f81fa2ccd0e7aafc5 ts:1786852644 -->
+
+**Chart:** [openg2p-awe 0.0.0-develop.70](https://gitlab.com/api/v4/projects/openg2p%2Fcharts/packages/helm/stable/charts/openg2p-awe-0.0.0-develop.70.tgz)
+
+### Changes since 0.0.0-develop.69
+
+- [G2P-5521](https://openg2p.atlassian.net/browse/G2P-5521) Option to view policy added. ([`dce3f9c`](https://gitlab.com/openg2p/awe/-/commit/dce3f9c036b3dbf8d4a1ad4f81fa2ccd0e7aafc5))
 
 <a id="v-0-0-0-develop-69"></a>
 
