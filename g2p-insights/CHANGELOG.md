@@ -6,6 +6,7 @@ _Published automatically._
 
 | Version | Date | Type |
 | --- | --- | --- |
+| [`0.0.0-develop.72`](#v-0-0-0-develop-72) | 2026-08-18 | develop |
 | [`0.0.0-develop.71`](#v-0-0-0-develop-71) | 2026-08-11 | develop |
 | [`0.0.0-develop.70`](#v-0-0-0-develop-70) | 2026-08-09 | develop |
 | [`0.0.0-develop.69`](#v-0-0-0-develop-69) | 2026-08-08 | develop |
@@ -23,6 +24,19 @@ _Published automatically._
 | [`0.0.0-develop.46`](#v-0-0-0-develop-46) | 2026-08-03 | develop |
 
 # Develop builds
+
+<a id="v-0-0-0-develop-72"></a>
+
+## g2p-insights — develop 0.0.0-develop.72 (2026-08-18)
+
+_commit `751fc2c` · changes since 0.0.0-develop.71_
+<!-- build:0.0.0-develop.72 revision:751fc2c55223b520dee379cf6810d4a8edc43a05 ts:1787020949 -->
+
+**Chart:** [openg2p-insights 0.0.0-develop.72](https://gitlab.com/api/v4/projects/openg2p%2Fcharts/packages/helm/stable/charts/openg2p-insights-0.0.0-develop.72.tgz)
+
+### Changes since 0.0.0-develop.71
+
+- [G2P-4804](https://openg2p.atlassian.net/browse/G2P-4804) Run the schema migration after install, not before it. postgres-init renders as an ordinary Job rather than a hook, and Helm completes every pre-install hook before applying ordinary resources — so the migration ran against a database that did not exist yet, and its pg_isready wait passed because that asks whether the server is up without authenticating, turning a missing database into "password authentication failed for user insights_user". ([`751fc2c`](https://gitlab.com/openg2p/g2p-insights/-/commit/751fc2c55223b520dee379cf6810d4a8edc43a05))
 
 <a id="v-0-0-0-develop-71"></a>
 
