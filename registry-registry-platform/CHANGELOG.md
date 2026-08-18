@@ -6,6 +6,7 @@ _Published automatically._
 
 | Version | Date | Type |
 | --- | --- | --- |
+| [`1.2.0-rc.397`](#v-1-2-0-rc-397) | 2026-08-18 | release candidate |
 | [`1.2.0-rc.396`](#v-1-2-0-rc-396) | 2026-08-14 | release candidate |
 | [`1.2.0-rc.393`](#v-1-2-0-rc-393) | 2026-08-14 | release candidate |
 | [`1.2.0-rc.391`](#v-1-2-0-rc-391) | 2026-08-14 | release candidate |
@@ -19,7 +20,6 @@ _Published automatically._
 | [`1.2.0-rc.380`](#v-1-2-0-rc-380) | 2026-08-07 | release candidate |
 | [`0.0.0-develop.378`](#v-0-0-0-develop-378) | 2026-08-06 | develop |
 | [`1.2.0-rc.378`](#v-1-2-0-rc-378) | 2026-08-06 | release candidate |
-| [`1.2.0-rc.374`](#v-1-2-0-rc-374) | 2026-08-06 | release candidate |
 | [`0.0.0-develop.374`](#v-0-0-0-develop-374) | 2026-08-06 | develop |
 | [`0.0.0-develop.353`](#v-0-0-0-develop-353) | 2026-08-06 | develop |
 | [`0.0.0-develop.346`](#v-0-0-0-develop-346) | 2026-08-05 | develop |
@@ -27,6 +27,19 @@ _Published automatically._
 | [`0.0.0-develop.343`](#v-0-0-0-develop-343) | 2026-08-04 | develop |
 
 # Release candidates
+
+<a id="v-1-2-0-rc-397"></a>
+
+## registry/registry-platform 1.2.0-rc.397 — 2026-08-18
+
+_commit `0524935` · changes since 1.2.0-rc.396_
+<!-- build:1.2.0-rc.397 revision:052493500f69964f1b646186eb1c36ba5e2d3151 ts:1787053503 -->
+
+**Chart:** [openg2p-registry 1.2.0-rc.397](https://gitlab.com/api/v4/projects/openg2p%2Fcharts/packages/helm/stable/charts/openg2p-registry-1.2.0-rc.397.tgz)
+
+### Changes since 1.2.0-rc.396
+
+- [G2P-5538](https://openg2p.atlassian.net/browse/G2P-5538) Refactored registry code list handling and API endpoints by removing attribute seeding, deleting related SQL/defaults, linking local ui-widgets, updating geo-level API routes, and optimizing attribute-value pagination defaults. ([`0524935`](https://gitlab.com/openg2p/registry/registry-platform/-/commit/052493500f69964f1b646186eb1c36ba5e2d3151))
 
 <a id="v-1-2-0-rc-396"></a>
 
@@ -170,36 +183,6 @@ _commit `e2b44ae` · changes since 1.2.0-rc.374_
 - Reapply "[G2P-5222](https://openg2p.atlassian.net/browse/G2P-5222) Repoint Partner Management to commons-services and align PM-seed auth to the g2p-bridge pmSeedClientId pattern." ([`ff1f9c8`](https://gitlab.com/openg2p/registry/registry-platform/-/commit/ff1f9c8fe8e61e5717cf65e2f1363f8f51df7da0))
 - Reapply "[G2P-5222](https://openg2p.atlassian.net/browse/G2P-5222) Consent and partner management related." ([`e378ecb`](https://gitlab.com/openg2p/registry/registry-platform/-/commit/e378ecbac8108749766d0ae0fc5fed197e517a4e))
 - Reapply "[G2P-5222](https://openg2p.atlassian.net/browse/G2P-5222) Enhancements for consent management, partner management and WJS support." ([`eabfb80`](https://gitlab.com/openg2p/registry/registry-platform/-/commit/eabfb8096865dca361b8a4f48d8d9d4551bc86d1))
-
-<a id="v-1-2-0-rc-374"></a>
-
-## registry/registry-platform 1.2.0-rc.374 — 2026-08-06
-
-_commit `bf59097` · changes since 0.0.0-develop.353_
-<!-- build:1.2.0-rc.374 revision:bf590976e1a19296dbf35fe797cb22b3ed34a408 ts:1786000316 -->
-
-### Summary
-
-- **Major:** Reverted multiple enhancements related to consent and partner management, including changes to partner management alignment and consent helper functionality.
-- Feature enhancements: Improved intake form processing with subject internal record ID resolution, added a new parent lookup widget, and enhanced intake form components for better submission context.
-- UI improvements: Enhanced MinIO configuration for read access, improved localization, and refined panel toggle navigation; fixed SelectWidget to preserve boolean values.
-- Dependency updates: Upgraded ui-wdget version and modified dependency manifests for both API and UI components.
-- Error handling improvements: Enhanced overall error handling mechanisms across the application.
-
-### Changes since 0.0.0-develop.353
-
-- [G2P-5466](https://openg2p.atlassian.net/browse/G2P-5466) Implement subject internal record ID resolution in intake form processing ([`ba5d9f0`](https://gitlab.com/openg2p/registry/registry-platform/-/commit/ba5d9f0973f350293c8a114890605dc3ca39cf3d))
-- [G2P-5478](https://openg2p.atlassian.net/browse/G2P-5478) fix(vc-configuration): update service with pagination and additional parameters ([`36d59d5`](https://gitlab.com/openg2p/registry/registry-platform/-/commit/36d59d5cf62b1c8b0daf5675210c8ff2bf8ea10d))
-- [G2P-5451](https://openg2p.atlassian.net/browse/G2P-5451) feat(document): enhance MinIO configuration for read access in environment files and core components ([`5c15f30`](https://gitlab.com/openg2p/registry/registry-platform/-/commit/5c15f3031b04dc3b645271b4aaa9caebec187694))
-- [G2P-5402](https://openg2p.atlassian.net/browse/G2P-5402): improve localization and panel toggle navigation ([`7dbaaad`](https://gitlab.com/openg2p/registry/registry-platform/-/commit/7dbaaada4af5af4d37d7cc893c57cf4e8e821972))
-- ui-wdget version upgraded ([`dab5529`](https://gitlab.com/openg2p/registry/registry-platform/-/commit/dab5529e3b3fbe2677e4044dde245635451a0439))
-- Revert "[G2P-5222](https://openg2p.atlassian.net/browse/G2P-5222) Enhancements for consent management, partner management and WJS support." ([`7b60b8a`](https://gitlab.com/openg2p/registry/registry-platform/-/commit/7b60b8a6c494e48483edad37975b4aaa1e9b3775))
-- Revert "[G2P-5222](https://openg2p.atlassian.net/browse/G2P-5222) Consent and partner management related." ([`5b12f1b`](https://gitlab.com/openg2p/registry/registry-platform/-/commit/5b12f1b45efc998d257f047a4a2684ad43f343f5))
-- Revert "[G2P-5222](https://openg2p.atlassian.net/browse/G2P-5222) Repoint Partner Management to commons-services and align PM-seed auth to the g2p-bridge pmSeedClientId pattern." ([`b12884d`](https://gitlab.com/openg2p/registry/registry-platform/-/commit/b12884d133ba9348575c63cfcffb8ff26f594ef9))
-- [G2P-5429](https://openg2p.atlassian.net/browse/G2P-5429) feat(IntakeForm): enhance intake form components with submission and registration context ([`f20eed8`](https://gitlab.com/openg2p/registry/registry-platform/-/commit/f20eed896514f51bb85da3cf73d93b37ebabe080))
-- [G2P-5429](https://openg2p.atlassian.net/browse/G2P-5429) feat(ParentLookupWidget): add new parent lookup widget and update related components ([`fd4681f`](https://gitlab.com/openg2p/registry/registry-platform/-/commit/fd4681fc8e706b3270c49cd2420dadc8c33898ec))
-- [G2P-5408](https://openg2p.atlassian.net/browse/G2P-5408) Fix SelectWidget to preserve boolean values for select options ([`fa7b925`](https://gitlab.com/openg2p/registry/registry-platform/-/commit/fa7b9254baf81aa0fc0a8f71e04a0bbc3318a437))
-- G2P-[G2P-5389](https://openg2p.atlassian.net/browse/G2P-5389) improve error handling ([`40c729f`](https://gitlab.com/openg2p/registry/registry-platform/-/commit/40c729feb6b8f2b5fe697527fd5dd1ef378ece61))
 
 # Develop builds
 
