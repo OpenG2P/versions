@@ -6,6 +6,7 @@ _Published automatically._
 
 | Version | Date | Type |
 | --- | --- | --- |
+| [`0.0.0-develop.233`](#v-0-0-0-develop-233) | 2026-08-19 | develop |
 | [`0.0.0-develop.231`](#v-0-0-0-develop-231) | 2026-08-09 | develop |
 | [`0.0.0-develop.228`](#v-0-0-0-develop-228) | 2026-08-07 | develop |
 | [`0.0.0-develop.226`](#v-0-0-0-develop-226) | 2026-08-06 | develop |
@@ -90,6 +91,19 @@ Intermediate stable version; several changes related to reading data from MDS; c
 - NSR-xxxx Added a scalable sample-data generator for NSR (docker/db-seed/generate_bulk_sample.py) that loads ~1M individuals / 250k households plus vulnerability, livelihoods, housing-services, programme and score records. Complements the hand-written 500-row fixture in load_sample_data.py, which cannot scale. Geography is read from the deployment's own MDS hierarchy so nothing is tied to a country, level naming or depth; attribute marginals come from a committed distributions.json extracted (counts only, no PII) from a real 20M-row registry. Column lists are introspected per table so the loader tolerates schema drift, poverty correlates with deprivation and enrolment so targeting dashboards have signal, --purge makes a load reversible, and bulk-seed-job.yaml runs it in-cluster because a load this size does not survive kubectl port-forward. ([`bbd255f`](https://gitlab.com/openg2p/registry/national-social-registry/-/commit/bbd255ff47f3bdc4103019a734fca972d26c4d0a))
 
 # Develop builds
+
+<a id="v-0-0-0-develop-233"></a>
+
+## registry/national-social-registry — develop 0.0.0-develop.233 (2026-08-19)
+
+_commit `97842c5` · changes since 0.0.0-develop.231_
+<!-- build:0.0.0-develop.233 revision:97842c57af7b4ae49c62ccbdcb42675148a3808e ts:1787121222 -->
+
+**Chart:** [openg2p-nsr 0.0.0-develop.233](https://gitlab.com/api/v4/projects/openg2p%2Fcharts/packages/helm/stable/charts/openg2p-nsr-0.0.0-develop.233.tgz)
+
+### Changes
+
+- [G2P-5524](https://openg2p.atlassian.net/browse/G2P-5524) Remove G2PRegisterDomainFactory and related files. The factory class and its dependencies have been eliminated to streamline the initialization process in the app. ([`6019eb0`](https://gitlab.com/openg2p/registry/national-social-registry/-/commit/6019eb0c1f3e284cf41d73e050917506d6ca54f3))
 
 <a id="v-0-0-0-develop-231"></a>
 
