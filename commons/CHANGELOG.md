@@ -6,6 +6,7 @@ _Published automatically._
 
 | Version | Date | Type |
 | --- | --- | --- |
+| [`0.0.0-develop.203`](#v-0-0-0-develop-203) | 2026-08-19 | develop |
 | [`0.0.0-develop.202`](#v-0-0-0-develop-202) | 2026-08-14 | develop |
 | [`0.0.0-develop.201`](#v-0-0-0-develop-201) | 2026-08-09 | develop |
 | [`0.0.0-develop.200`](#v-0-0-0-develop-200) | 2026-08-07 | develop |
@@ -38,6 +39,17 @@ Creating new Tag 2.2.1
 - [G2P-5335](https://openg2p.atlassian.net/browse/G2P-5335) Switch CI to GitLab (.gitlab-ci.yml); drop GitHub Actions build/publish ([`0988f9b`](https://gitlab.com/openg2p/commons/-/commit/0988f9b3c5af0b70f362e672975d99e25646b27e))
 
 # Develop builds
+
+<a id="v-0-0-0-develop-203"></a>
+
+## commons — develop 0.0.0-develop.203 (2026-08-19)
+
+_commit `9850037` · changes since 0.0.0-develop.202_
+<!-- build:0.0.0-develop.203 revision:985003774f36a2041ff2f9af465f03c5236d19b3 ts:1787100806 -->
+
+### Changes since 0.0.0-develop.202
+
+- Bumped up AWE version to 0.0.0-develop.70 ([`9850037`](https://gitlab.com/openg2p/commons/-/commit/985003774f36a2041ff2f9af465f03c5236d19b3))
 
 <a id="v-0-0-0-develop-202"></a>
 
