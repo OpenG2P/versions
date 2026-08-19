@@ -6,12 +6,26 @@ _Published automatically._
 
 | Version | Date | Type |
 | --- | --- | --- |
+| [`0.0.0-develop.9`](#v-0-0-0-develop-9) | 2026-08-19 | develop |
 | [`0.0.0-develop.7`](#v-0-0-0-develop-7) | 2026-08-19 | develop |
 | [`0.0.0-develop.6`](#v-0-0-0-develop-6) | 2026-08-16 | develop |
 | [`0.0.0-develop.4`](#v-0-0-0-develop-4) | 2026-08-15 | develop |
 | [`0.0.0-develop.3`](#v-0-0-0-develop-3) | 2026-08-13 | develop |
 
 # Develop builds
+
+<a id="v-0-0-0-develop-9"></a>
+
+## registry/disability-registry — develop 0.0.0-develop.9 (2026-08-19)
+
+_commit `ef4b780` · changes since 0.0.0-develop.7_
+<!-- build:0.0.0-develop.9 revision:ef4b7801c9129bccfb916a64732cb711458ad1df ts:1787121237 -->
+
+**Chart:** [openg2p-disability-registry 0.0.0-develop.9](https://gitlab.com/api/v4/projects/openg2p%2Fcharts/packages/helm/stable/charts/openg2p-disability-registry-0.0.0-develop.9.tgz)
+
+### Changes
+
+- [G2P-5524](https://openg2p.atlassian.net/browse/G2P-5524) Remove unused factory classes and related imports from the disability extension ([`4574067`](https://gitlab.com/openg2p/registry/disability-registry/-/commit/45740672d519d167afdac081125b5574913d3973))
 
 <a id="v-0-0-0-develop-7"></a>
 
