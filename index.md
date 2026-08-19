@@ -28,6 +28,7 @@ Registry** (linked at the top of each repository's page below). See the
 - **[registry/national-social-registry](./registry-national-social-registry/CHANGELOG)** · [repository ↗](https://gitlab.com/openg2p/registry/national-social-registry)
 - **[registry/registry-platform](./registry-registry-platform/CHANGELOG)** · [repository ↗](https://gitlab.com/openg2p/registry/registry-platform)
 - **[spar/spar](./spar-spar/CHANGELOG)** · [repository ↗](https://gitlab.com/openg2p/spar/spar)
+- **[verifiable-credentials](./verifiable-credentials/CHANGELOG)** · [repository ↗](https://gitlab.com/openg2p/verifiable-credentials)
 
 ### Libraries
 

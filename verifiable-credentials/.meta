@@ -1,0 +1,4 @@
+name=verifiable-credentials
+kind=service
+repo=https://gitlab.com/openg2p/verifiable-credentials
+images=https://gitlab.com/openg2p/verifiable-credentials/container_registry
