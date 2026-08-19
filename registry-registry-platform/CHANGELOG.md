@@ -6,6 +6,7 @@ _Published automatically._
 
 | Version | Date | Type |
 | --- | --- | --- |
+| [`1.2.0-rc.399`](#v-1-2-0-rc-399) | 2026-08-19 | release candidate |
 | [`1.2.0-rc.397`](#v-1-2-0-rc-397) | 2026-08-18 | release candidate |
 | [`1.2.0-rc.396`](#v-1-2-0-rc-396) | 2026-08-14 | release candidate |
 | [`1.2.0-rc.393`](#v-1-2-0-rc-393) | 2026-08-14 | release candidate |
@@ -19,7 +20,6 @@ _Published automatically._
 | [`0.0.0-develop.379`](#v-0-0-0-develop-379) | 2026-08-07 | develop |
 | [`1.2.0-rc.380`](#v-1-2-0-rc-380) | 2026-08-07 | release candidate |
 | [`0.0.0-develop.378`](#v-0-0-0-develop-378) | 2026-08-06 | develop |
-| [`1.2.0-rc.378`](#v-1-2-0-rc-378) | 2026-08-06 | release candidate |
 | [`0.0.0-develop.374`](#v-0-0-0-develop-374) | 2026-08-06 | develop |
 | [`0.0.0-develop.353`](#v-0-0-0-develop-353) | 2026-08-06 | develop |
 | [`0.0.0-develop.346`](#v-0-0-0-develop-346) | 2026-08-05 | develop |
@@ -27,6 +27,19 @@ _Published automatically._
 | [`0.0.0-develop.343`](#v-0-0-0-develop-343) | 2026-08-04 | develop |
 
 # Release candidates
+
+<a id="v-1-2-0-rc-399"></a>
+
+## registry/registry-platform 1.2.0-rc.399 — 2026-08-19
+
+_commit `cf61f52` · changes since 1.2.0-rc.397_
+<!-- build:1.2.0-rc.399 revision:cf61f52be64fe41362e0c9862013e7b6b32ab3f6 ts:1787121259 -->
+
+**Chart:** [openg2p-registry 1.2.0-rc.399](https://gitlab.com/api/v4/projects/openg2p%2Fcharts/packages/helm/stable/charts/openg2p-registry-1.2.0-rc.399.tgz)
+
+### Changes
+
+- [G2P-4786](https://openg2p.atlassian.net/browse/G2P-4786) refactor: move G2PRegisterDomainFactory and G2PIdGeneratorFactory to core interfaces, removing dependencies from extensions ([`929a1f3`](https://gitlab.com/openg2p/registry/registry-platform/-/commit/929a1f38b5f3eda56905fe4caa886bc0d50b9370))
 
 <a id="v-1-2-0-rc-397"></a>
 
@@ -163,26 +176,6 @@ _commit `0cc8ad4` · changes since 1.2.0-rc.378_
 ### Changes since 1.2.0-rc.378
 
 - [G2P-5489](https://openg2p.atlassian.net/browse/G2P-5489) Remove redundant sharp install and chown layers from Dockerfile ([`34eb393`](https://gitlab.com/openg2p/registry/registry-platform/-/commit/34eb39345707ba11e4bd63f5ce236eda6659fea0))
-
-<a id="v-1-2-0-rc-378"></a>
-
-## registry/registry-platform 1.2.0-rc.378 — 2026-08-06
-
-_commit `e2b44ae` · changes since 1.2.0-rc.374_
-<!-- build:1.2.0-rc.378 revision:e2b44ae05d75f39c5d8a5c4a3e9f3a862a698575 ts:1786012495 -->
-
-### Summary
-
-- **Major:** Repointed Partner Management to commons-services and aligned PM-seed authentication with the g2p-bridge pmSeedClientId pattern, enhancing integration and consistency.
-- Enhancements to consent management and partner management, including support for WJS, improving overall functionality.
-- New helper file added for consent management, streamlining related operations within the partner API.
-- Updated dependency manifests in the partner API, ensuring compatibility and access to the latest features.
-
-### Changes since 1.2.0-rc.374
-
-- Reapply "[G2P-5222](https://openg2p.atlassian.net/browse/G2P-5222) Repoint Partner Management to commons-services and align PM-seed auth to the g2p-bridge pmSeedClientId pattern." ([`ff1f9c8`](https://gitlab.com/openg2p/registry/registry-platform/-/commit/ff1f9c8fe8e61e5717cf65e2f1363f8f51df7da0))
-- Reapply "[G2P-5222](https://openg2p.atlassian.net/browse/G2P-5222) Consent and partner management related." ([`e378ecb`](https://gitlab.com/openg2p/registry/registry-platform/-/commit/e378ecbac8108749766d0ae0fc5fed197e517a4e))
-- Reapply "[G2P-5222](https://openg2p.atlassian.net/browse/G2P-5222) Enhancements for consent management, partner management and WJS support." ([`eabfb80`](https://gitlab.com/openg2p/registry/registry-platform/-/commit/eabfb8096865dca361b8a4f48d8d9d4551bc86d1))
 
 # Develop builds
 
