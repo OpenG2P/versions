@@ -6,6 +6,7 @@ _Published automatically._
 
 | Version | Date | Type |
 | --- | --- | --- |
+| [`1.2.1-rc.142`](#v-1-2-1-rc-142) | 2026-08-19 | release candidate |
 | [`1.2.1-rc.139`](#v-1-2-1-rc-139) | 2026-08-14 | release candidate |
 | [`0.0.0-develop.168`](#v-0-0-0-develop-168) | 2026-08-14 | develop |
 | [`0.0.0-develop.166`](#v-0-0-0-develop-166) | 2026-08-14 | develop |
@@ -85,6 +86,25 @@ _commit `d39deba` · changes since 0.0.0-develop.151_
 ### Changes since 0.0.0-develop.151
 
 _No new commits since 0.0.0-develop.151._
+
+<a id="v-1-2-1-rc-142"></a>
+
+## registry/farmer-registry 1.2.1-rc.142 — 2026-08-19
+
+_commit `0b5014f` · changes since 1.2.1-rc.139_
+<!-- build:1.2.1-rc.142 revision:0b5014f127e0b079592a7fb05963e2dd317e91ea ts:1787121281 -->
+
+**Chart:** [openg2p-farmer-registry 1.2.1-rc.142](https://gitlab.com/api/v4/projects/openg2p%2Fcharts/packages/helm/stable/charts/openg2p-farmer-registry-1.2.1-rc.142.tgz)
+
+### Summary
+
+- **Major:** Data model update: changed `land_size` field type from string to float in the land model and schema.
+- Domain registration optimization: removed `G2PRegisterDomainFactory` and related files to streamline the domain registration process, resulting in significant codebase reduction.
+
+### Changes
+
+- [G2P-5480](https://openg2p.atlassian.net/browse/G2P-5480) Change land_size field type from string to float in land model and schema ([`161821a`](https://gitlab.com/openg2p/registry/farmer-registry/-/commit/161821a2b04d18095df90277d5f7404b1994cca0))
+- [G2P-5524](https://openg2p.atlassian.net/browse/G2P-5524) refactor: remove G2PRegisterDomainFactory and related files to streamline domain registration process ([`ef21f34`](https://gitlab.com/openg2p/registry/farmer-registry/-/commit/ef21f346f57e7a358f18b5109cc8fcaf1649ebc4))
 
 <a id="v-1-2-1-rc-139"></a>
 
