@@ -6,12 +6,26 @@ _Published automatically._
 
 | Version | Date | Type |
 | --- | --- | --- |
+| [`0.0.0-develop.88`](#v-0-0-0-develop-88) | 2026-08-20 | develop |
 | [`0.0.0-develop.86`](#v-0-0-0-develop-86) | 2026-08-20 | develop |
 | [`0.0.0-develop.84`](#v-0-0-0-develop-84) | 2026-08-20 | develop |
 | [`0.0.0-develop.82`](#v-0-0-0-develop-82) | 2026-08-20 | develop |
 | [`0.0.0-develop.81`](#v-0-0-0-develop-81) | 2026-08-20 | develop |
 
 # Develop builds
+
+<a id="v-0-0-0-develop-88"></a>
+
+## iam — develop 0.0.0-develop.88 (2026-08-20)
+
+_commit `5b238d1` · changes since 0.0.0-develop.86_
+<!-- build:0.0.0-develop.88 revision:5b238d11ad5539c93fd7be712337a6c494dc1ad4 ts:1787231959 -->
+
+**Chart:** [openg2p-iam-service 0.0.0-develop.88](https://gitlab.com/api/v4/projects/openg2p%2Fcharts/packages/helm/stable/charts/openg2p-iam-service-0.0.0-develop.88.tgz)
+
+### Changes
+
+- [G2P-5335](https://openg2p.atlassian.net/browse/G2P-5335) Add iam-staff-ui to the build/publish pipeline and pin its chart image tag ([`d7fdd9c`](https://gitlab.com/openg2p/iam/-/commit/d7fdd9c233643770a9f132d96649ec0ee76f5248))
 
 <a id="v-0-0-0-develop-86"></a>
 
