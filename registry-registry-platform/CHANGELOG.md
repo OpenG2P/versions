@@ -6,6 +6,7 @@ _Published automatically._
 
 | Version | Date | Type |
 | --- | --- | --- |
+| [`1.2.0-rc.407`](#v-1-2-0-rc-407) | 2026-08-20 | release candidate |
 | [`1.2.0-rc.402`](#v-1-2-0-rc-402) | 2026-08-20 | release candidate |
 | [`0.0.0-develop.389`](#v-0-0-0-develop-389) | 2026-08-20 | develop |
 | [`0.0.0-develop.388`](#v-0-0-0-develop-388) | 2026-08-20 | develop |
@@ -20,7 +21,6 @@ _Published automatically._
 | [`1.2.0-rc.387`](#v-1-2-0-rc-387) | 2026-08-13 | release candidate |
 | [`1.2.0-rc.384`](#v-1-2-0-rc-384) | 2026-08-10 | release candidate |
 | [`0.0.0-develop.383`](#v-0-0-0-develop-383) | 2026-08-09 | develop |
-| [`1.2.0-rc.381`](#v-1-2-0-rc-381) | 2026-08-07 | release candidate |
 | [`0.0.0-develop.379`](#v-0-0-0-develop-379) | 2026-08-07 | develop |
 | [`0.0.0-develop.378`](#v-0-0-0-develop-378) | 2026-08-06 | develop |
 | [`0.0.0-develop.374`](#v-0-0-0-develop-374) | 2026-08-06 | develop |
@@ -30,6 +30,29 @@ _Published automatically._
 | [`0.0.0-develop.343`](#v-0-0-0-develop-343) | 2026-08-04 | develop |
 
 # Release candidates
+
+<a id="v-1-2-0-rc-407"></a>
+
+## registry/registry-platform 1.2.0-rc.407 — 2026-08-20
+
+_commit `1e7a4a2` · changes since 1.2.0-rc.402_
+<!-- build:1.2.0-rc.407 revision:1e7a4a22a8d067efdb5ee59f2cda613420dc8103 ts:1787222831 -->
+
+**Chart:** [openg2p-registry 1.2.0-rc.407](https://gitlab.com/api/v4/projects/openg2p%2Fcharts/packages/helm/stable/charts/openg2p-registry-1.2.0-rc.407.tgz)
+
+### Summary
+
+- **Major:** Removal of attributes configuration and related components from the staff UI, including layout, pages, modals, and API routes, with sidebar options updated accordingly.
+- UI enhancements: Added record table view functionality for record lists and refactored the intake form and task UI, along with the change request UI.
+- Significant codebase changes: 111 files modified, with 2571 lines added and 2885 lines removed, indicating a substantial overhaul of the UI and API components.
+- New components introduced: Added multiple shared entity list components, including CompactCard, DataTable, and StackedCard, enhancing the UI's modularity and functionality.
+
+### Changes
+
+- [G2P-5402](https://openg2p.atlassian.net/browse/G2P-5402): add record table view functionality for record list ([`66734c1`](https://gitlab.com/openg2p/registry/registry-platform/-/commit/66734c1ce865055c4b1e018dea1415b8ee35fb73))
+- [G2P-5546](https://openg2p.atlassian.net/browse/G2P-5546) refactor intake form and task ui ([`c6c852d`](https://gitlab.com/openg2p/registry/registry-platform/-/commit/c6c852d9e356a65fb60510cade8e0b5d1f4aef0c))
+- [G2P-5545](https://openg2p.atlassian.net/browse/G2P-5545): refactor change request ui ([`df686ef`](https://gitlab.com/openg2p/registry/registry-platform/-/commit/df686ef2cf1cd85b5097e01c58d50f4d602e5f5a))
+- [G2P-5457](https://openg2p.atlassian.net/browse/G2P-5457) Remove attributes configuration and related components from staff UI, including layout, pages, modals, and API routes. Update sidebar options to exclude attributes section. ([`650b158`](https://gitlab.com/openg2p/registry/registry-platform/-/commit/650b158f2f9c46ca6cb399bd0e3a7d5fed179c75))
 
 <a id="v-1-2-0-rc-402"></a>
 
@@ -172,19 +195,6 @@ _commit `129dae1` · changes since 0.0.0-develop.374_
 - Reapply "[G2P-5222](https://openg2p.atlassian.net/browse/G2P-5222) Repoint Partner Management to commons-services and align PM-seed auth to the g2p-bridge pmSeedClientId pattern." ([`ff1f9c8`](https://gitlab.com/openg2p/registry/registry-platform/-/commit/ff1f9c8fe8e61e5717cf65e2f1363f8f51df7da0))
 - Reapply "[G2P-5222](https://openg2p.atlassian.net/browse/G2P-5222) Consent and partner management related." ([`e378ecb`](https://gitlab.com/openg2p/registry/registry-platform/-/commit/e378ecbac8108749766d0ae0fc5fed197e517a4e))
 - Reapply "[G2P-5222](https://openg2p.atlassian.net/browse/G2P-5222) Enhancements for consent management, partner management and WJS support." ([`eabfb80`](https://gitlab.com/openg2p/registry/registry-platform/-/commit/eabfb8096865dca361b8a4f48d8d9d4551bc86d1))
-
-<a id="v-1-2-0-rc-381"></a>
-
-## registry/registry-platform 1.2.0-rc.381 — 2026-08-07
-
-_commit `4bbd6f7` · changes since 1.2.0-rc.380_
-<!-- build:1.2.0-rc.381 revision:4bbd6f79d5fffdde52b4e2f42feed380a18a4e14 ts:1786103120 -->
-
-**Chart:** [openg2p-registry 1.2.0-rc.381](https://gitlab.com/api/v4/projects/openg2p%2Fcharts/packages/helm/stable/charts/openg2p-registry-1.2.0-rc.381.tgz)
-
-### Changes since 1.2.0-rc.380
-
-- [G2P-5492](https://openg2p.atlassian.net/browse/G2P-5492) feat(cr): add validation to enforce single section active crs for a record ([`4bbd6f7`](https://gitlab.com/openg2p/registry/registry-platform/-/commit/4bbd6f79d5fffdde52b4e2f42feed380a18a4e14))
 
 # Develop builds
 
