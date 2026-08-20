@@ -6,6 +6,7 @@ _Published automatically._
 
 | Version | Date | Type |
 | --- | --- | --- |
+| [`0.0.0-develop.205`](#v-0-0-0-develop-205) | 2026-08-20 | develop |
 | [`0.0.0-develop.204`](#v-0-0-0-develop-204) | 2026-08-20 | develop |
 | [`0.0.0-develop.203`](#v-0-0-0-develop-203) | 2026-08-19 | develop |
 | [`0.0.0-develop.202`](#v-0-0-0-develop-202) | 2026-08-14 | develop |
@@ -40,6 +41,17 @@ Creating new Tag 2.2.1
 - [G2P-5335](https://openg2p.atlassian.net/browse/G2P-5335) Switch CI to GitLab (.gitlab-ci.yml); drop GitHub Actions build/publish ([`0988f9b`](https://gitlab.com/openg2p/commons/-/commit/0988f9b3c5af0b70f362e672975d99e25646b27e))
 
 # Develop builds
+
+<a id="v-0-0-0-develop-205"></a>
+
+## commons — develop 0.0.0-develop.205 (2026-08-20)
+
+_commit `2515d20` · changes since 0.0.0-develop.204_
+<!-- build:0.0.0-develop.205 revision:2515d20da59deafcf282ce79a9e539f4c6f2e887 ts:1787223518 -->
+
+### Changes
+
+- [G2P-4929](https://openg2p.atlassian.net/browse/G2P-4929) Add agent portal API overrides so its Keycloak URL and redirect resolve ([`2515d20`](https://gitlab.com/openg2p/commons/-/commit/2515d20da59deafcf282ce79a9e539f4c6f2e887))
 
 <a id="v-0-0-0-develop-204"></a>
 
