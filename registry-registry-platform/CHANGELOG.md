@@ -6,6 +6,7 @@ _Published automatically._
 
 | Version | Date | Type |
 | --- | --- | --- |
+| [`0.0.0-develop.388`](#v-0-0-0-develop-388) | 2026-08-20 | develop |
 | [`0.0.0-develop.387`](#v-0-0-0-develop-387) | 2026-08-20 | develop |
 | [`1.2.0-rc.399`](#v-1-2-0-rc-399) | 2026-08-19 | release candidate |
 | [`1.2.0-rc.397`](#v-1-2-0-rc-397) | 2026-08-18 | release candidate |
@@ -179,6 +180,19 @@ _commit `0cc8ad4` · changes since 1.2.0-rc.378_
 - [G2P-5489](https://openg2p.atlassian.net/browse/G2P-5489) Remove redundant sharp install and chown layers from Dockerfile ([`34eb393`](https://gitlab.com/openg2p/registry/registry-platform/-/commit/34eb39345707ba11e4bd63f5ce236eda6659fea0))
 
 # Develop builds
+
+<a id="v-0-0-0-develop-388"></a>
+
+## registry/registry-platform — develop 0.0.0-develop.388 (2026-08-20)
+
+_commit `12f3b99` · changes since 0.0.0-develop.387_
+<!-- build:0.0.0-develop.388 revision:12f3b99826f263a96e2f54e203264716da42fd2e ts:1787213367 -->
+
+**Chart:** [openg2p-registry 0.0.0-develop.388](https://gitlab.com/api/v4/projects/openg2p%2Fcharts/packages/helm/stable/charts/openg2p-registry-0.0.0-develop.388.tgz)
+
+### Changes
+
+- [G2P-4929](https://openg2p.atlassian.net/browse/G2P-4929) Surface the Certify base URL and proof audience in the install form ([`12f3b99`](https://gitlab.com/openg2p/registry/registry-platform/-/commit/12f3b99826f263a96e2f54e203264716da42fd2e))
 
 <a id="v-0-0-0-develop-387"></a>
 
