@@ -6,6 +6,7 @@ _Published automatically._
 
 | Version | Date | Type |
 | --- | --- | --- |
+| [`1.2.1-rc.144`](#v-1-2-1-rc-144) | 2026-08-20 | release candidate |
 | [`0.0.0-develop.173`](#v-0-0-0-develop-173) | 2026-08-20 | develop |
 | [`0.0.0-develop.171`](#v-0-0-0-develop-171) | 2026-08-20 | develop |
 | [`0.0.0-develop.170`](#v-0-0-0-develop-170) | 2026-08-20 | develop |
@@ -89,6 +90,19 @@ _commit `d39deba` · changes since 0.0.0-develop.151_
 ### Changes since 0.0.0-develop.151
 
 _No new commits since 0.0.0-develop.151._
+
+<a id="v-1-2-1-rc-144"></a>
+
+## registry/farmer-registry 1.2.1-rc.144 — 2026-08-20
+
+_commit `19d6b89` · changes since 1.2.1-rc.142_
+<!-- build:1.2.1-rc.144 revision:19d6b89cf52c62ecf9ebcc93540961f95ce578a8 ts:1787222397 -->
+
+**Chart:** [openg2p-farmer-registry 1.2.1-rc.144](https://gitlab.com/api/v4/projects/openg2p%2Fcharts/packages/helm/stable/charts/openg2p-farmer-registry-1.2.1-rc.144.tgz)
+
+### Changes
+
+- [G2P-5402](https://openg2p.atlassian.net/browse/G2P-5402): update SQL insert statements for crops, livestocks, and farminputs sections ([`6c6dff7`](https://gitlab.com/openg2p/registry/farmer-registry/-/commit/6c6dff730553ca98dba1aa14482b267540936604))
 
 <a id="v-1-2-1-rc-142"></a>
 
