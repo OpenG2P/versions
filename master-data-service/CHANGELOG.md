@@ -6,6 +6,7 @@ _Published automatically._
 
 | Version | Date | Type |
 | --- | --- | --- |
+| [`1.1.0-rc.51`](#v-1-1-0-rc-51) | 2026-08-20 | release candidate |
 | [`1.1.0-rc.49`](#v-1-1-0-rc-49) | 2026-08-20 | release candidate |
 | [`0.0.0-develop.40`](#v-0-0-0-develop-40) | 2026-08-03 | develop |
 | [`0.0.0-develop.39`](#v-0-0-0-develop-39) | 2026-08-03 | develop |
@@ -19,6 +20,19 @@ _Published automatically._
 | [`0.0.0-develop.30`](#v-0-0-0-develop-30) | 2026-07-28 | develop |
 
 # Release candidates
+
+<a id="v-1-1-0-rc-51"></a>
+
+## master-data-service 1.1.0-rc.51 — 2026-08-20
+
+_commit `f6ce705` · changes since 1.1.0-rc.49_
+<!-- build:1.1.0-rc.51 revision:f6ce705bfb39e2d9a6de740caf63f3a1c51fe7ad ts:1787222768 -->
+
+**Chart:** [openg2p-master-data 1.1.0-rc.51](https://gitlab.com/api/v4/projects/openg2p%2Fcharts/packages/helm/stable/charts/openg2p-master-data-1.1.0-rc.51.tgz)
+
+### Changes
+
+- [G2P-5456](https://openg2p.atlassian.net/browse/G2P-5456) feat(master-data-ui): add configuration for Master Data UI deployment ([`86144ee`](https://gitlab.com/openg2p/master-data-service/-/commit/86144ee891938e0d97537e471e0aa00536345320))
 
 <a id="v-1-1-0-rc-49"></a>
 
