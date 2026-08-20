@@ -6,10 +6,24 @@ _Published automatically._
 
 | Version | Date | Type |
 | --- | --- | --- |
+| [`0.0.0-develop.84`](#v-0-0-0-develop-84) | 2026-08-20 | develop |
 | [`0.0.0-develop.82`](#v-0-0-0-develop-82) | 2026-08-20 | develop |
 | [`0.0.0-develop.81`](#v-0-0-0-develop-81) | 2026-08-20 | develop |
 
 # Develop builds
+
+<a id="v-0-0-0-develop-84"></a>
+
+## iam — develop 0.0.0-develop.84 (2026-08-20)
+
+_commit `8d66ad4` · changes since 0.0.0-develop.82_
+<!-- build:0.0.0-develop.84 revision:8d66ad446c9f8430359bc9e9c18e1006d7cdd52e ts:1787222223 -->
+
+**Chart:** [openg2p-iam-service 0.0.0-develop.84](https://gitlab.com/api/v4/projects/openg2p%2Fcharts/packages/helm/stable/charts/openg2p-iam-service-0.0.0-develop.84.tgz)
+
+### Changes
+
+- [G2P-5552](https://openg2p.atlassian.net/browse/G2P-5552) Remove registry API URL from env and add API URL to staff portal application ([`69495bf`](https://gitlab.com/openg2p/iam/-/commit/69495bf53b3fb5b2ef72d4ecf3772017c6d8d3d2))
 
 <a id="v-0-0-0-develop-82"></a>
 
