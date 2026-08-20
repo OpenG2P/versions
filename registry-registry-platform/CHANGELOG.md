@@ -6,6 +6,7 @@ _Published automatically._
 
 | Version | Date | Type |
 | --- | --- | --- |
+| [`1.2.0-rc.402`](#v-1-2-0-rc-402) | 2026-08-20 | release candidate |
 | [`0.0.0-develop.389`](#v-0-0-0-develop-389) | 2026-08-20 | develop |
 | [`0.0.0-develop.388`](#v-0-0-0-develop-388) | 2026-08-20 | develop |
 | [`0.0.0-develop.387`](#v-0-0-0-develop-387) | 2026-08-20 | develop |
@@ -21,7 +22,6 @@ _Published automatically._
 | [`0.0.0-develop.383`](#v-0-0-0-develop-383) | 2026-08-09 | develop |
 | [`1.2.0-rc.381`](#v-1-2-0-rc-381) | 2026-08-07 | release candidate |
 | [`0.0.0-develop.379`](#v-0-0-0-develop-379) | 2026-08-07 | develop |
-| [`1.2.0-rc.380`](#v-1-2-0-rc-380) | 2026-08-07 | release candidate |
 | [`0.0.0-develop.378`](#v-0-0-0-develop-378) | 2026-08-06 | develop |
 | [`0.0.0-develop.374`](#v-0-0-0-develop-374) | 2026-08-06 | develop |
 | [`0.0.0-develop.353`](#v-0-0-0-develop-353) | 2026-08-06 | develop |
@@ -30,6 +30,25 @@ _Published automatically._
 | [`0.0.0-develop.343`](#v-0-0-0-develop-343) | 2026-08-04 | develop |
 
 # Release candidates
+
+<a id="v-1-2-0-rc-402"></a>
+
+## registry/registry-platform 1.2.0-rc.402 — 2026-08-20
+
+_commit `0cfb813` · changes since 1.2.0-rc.399_
+<!-- build:1.2.0-rc.402 revision:0cfb81321103be6a09da273cb51fa0c9a13bc919 ts:1787221025 -->
+
+**Chart:** [openg2p-registry 1.2.0-rc.402](https://gitlab.com/api/v4/projects/openg2p%2Fcharts/packages/helm/stable/charts/openg2p-registry-1.2.0-rc.402.tgz)
+
+### Summary
+
+- Change API enhancements: updated `sor_by` convention for change request searches and added unit tests for parsing sort parameters; included `register_mnemonic` and `tab_label` in change request data.
+- Testing improvements: added new test files for change request data fields and search sort functionality, enhancing overall test coverage.
+
+### Changes
+
+- [G2P-5553](https://openg2p.atlassian.net/browse/G2P-5553) feat(change-api): update sor_by convention for change request searches and add unit tests for parsing sort parameters ([`0ac64f6`](https://gitlab.com/openg2p/registry/registry-platform/-/commit/0ac64f68b2bffad3c7152043d6e5885ae71cb1c8))
+- [G2P-5541](https://openg2p.atlassian.net/browse/G2P-5541) fix(change-api): add register_mnemonic and tab_label in change request data ([`183b842`](https://gitlab.com/openg2p/registry/registry-platform/-/commit/183b8429a115e10d76d05c73e0eac03e161502ef))
 
 <a id="v-1-2-0-rc-399"></a>
 
@@ -166,19 +185,6 @@ _commit `4bbd6f7` · changes since 1.2.0-rc.380_
 ### Changes since 1.2.0-rc.380
 
 - [G2P-5492](https://openg2p.atlassian.net/browse/G2P-5492) feat(cr): add validation to enforce single section active crs for a record ([`4bbd6f7`](https://gitlab.com/openg2p/registry/registry-platform/-/commit/4bbd6f79d5fffdde52b4e2f42feed380a18a4e14))
-
-<a id="v-1-2-0-rc-380"></a>
-
-## registry/registry-platform 1.2.0-rc.380 — 2026-08-07
-
-_commit `0cc8ad4` · changes since 1.2.0-rc.378_
-<!-- build:1.2.0-rc.380 revision:0cc8ad40379860bf6928e0528f4367c87fe4c614 ts:1786097032 -->
-
-**Chart:** [openg2p-registry 1.2.0-rc.380](https://gitlab.com/api/v4/projects/openg2p%2Fcharts/packages/helm/stable/charts/openg2p-registry-1.2.0-rc.380.tgz)
-
-### Changes since 1.2.0-rc.378
-
-- [G2P-5489](https://openg2p.atlassian.net/browse/G2P-5489) Remove redundant sharp install and chown layers from Dockerfile ([`34eb393`](https://gitlab.com/openg2p/registry/registry-platform/-/commit/34eb39345707ba11e4bd63f5ce236eda6659fea0))
 
 # Develop builds
 
