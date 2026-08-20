@@ -1,0 +1,4 @@
+name=iam
+kind=service
+repo=https://gitlab.com/openg2p/iam
+images=https://gitlab.com/openg2p/iam/container_registry
