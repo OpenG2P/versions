@@ -6,6 +6,7 @@ _Published automatically._
 
 | Version | Date | Type |
 | --- | --- | --- |
+| [`0.0.0-develop.389`](#v-0-0-0-develop-389) | 2026-08-20 | develop |
 | [`0.0.0-develop.388`](#v-0-0-0-develop-388) | 2026-08-20 | develop |
 | [`0.0.0-develop.387`](#v-0-0-0-develop-387) | 2026-08-20 | develop |
 | [`1.2.0-rc.399`](#v-1-2-0-rc-399) | 2026-08-19 | release candidate |
@@ -180,6 +181,19 @@ _commit `0cc8ad4` · changes since 1.2.0-rc.378_
 - [G2P-5489](https://openg2p.atlassian.net/browse/G2P-5489) Remove redundant sharp install and chown layers from Dockerfile ([`34eb393`](https://gitlab.com/openg2p/registry/registry-platform/-/commit/34eb39345707ba11e4bd63f5ce236eda6659fea0))
 
 # Develop builds
+
+<a id="v-0-0-0-develop-389"></a>
+
+## registry/registry-platform — develop 0.0.0-develop.389 (2026-08-20)
+
+_commit `7055e57` · changes since 0.0.0-develop.388_
+<!-- build:0.0.0-develop.389 revision:7055e578d71eb89a14b359088f53a03a8e8344c6 ts:1787215823 -->
+
+**Chart:** [openg2p-registry 0.0.0-develop.389](https://gitlab.com/api/v4/projects/openg2p%2Fcharts/packages/helm/stable/charts/openg2p-registry-0.0.0-develop.389.tgz)
+
+### Changes
+
+- [G2P-4929](https://openg2p.atlassian.net/browse/G2P-4929) Fix mangled show_if conditions and surface the VC master switch ([`7055e57`](https://gitlab.com/openg2p/registry/registry-platform/-/commit/7055e578d71eb89a14b359088f53a03a8e8344c6))
 
 <a id="v-0-0-0-develop-388"></a>
 
