@@ -6,6 +6,7 @@ _Published automatically._
 
 | Version | Date | Type |
 | --- | --- | --- |
+| [`0.0.0-develop.173`](#v-0-0-0-develop-173) | 2026-08-20 | develop |
 | [`0.0.0-develop.171`](#v-0-0-0-develop-171) | 2026-08-20 | develop |
 | [`0.0.0-develop.170`](#v-0-0-0-develop-170) | 2026-08-20 | develop |
 | [`1.2.1-rc.142`](#v-1-2-1-rc-142) | 2026-08-19 | release candidate |
@@ -132,6 +133,25 @@ _commit `cda0496` · changes since 1.2.0_
 - [G2P-5335](https://openg2p.atlassian.net/browse/G2P-5335) Switch CI to GitLab (.gitlab-ci.yml); drop GitHub Actions build/publish ([`1062700`](https://gitlab.com/openg2p/registry/farmer-registry/-/commit/1062700737b8129d66fcc363c7d3809863d0cefb))
 
 # Develop builds
+
+<a id="v-0-0-0-develop-173"></a>
+
+## registry/farmer-registry — develop 0.0.0-develop.173 (2026-08-20)
+
+_commit `1b1a77b` · changes since 0.0.0-develop.171_
+<!-- build:0.0.0-develop.173 revision:1b1a77b3e9612b95e9f5f79247c733b42cd81c61 ts:1787217291 -->
+
+**Chart:** [openg2p-farmer-registry 0.0.0-develop.173](https://gitlab.com/api/v4/projects/openg2p%2Fcharts/packages/helm/stable/charts/openg2p-farmer-registry-0.0.0-develop.173.tgz)
+
+### Summary
+
+- **Major:** Enabled the agent portal by default, enhancing accessibility for users.
+- Bumped RP version to 0.0.0-develop.389, indicating ongoing development and updates.
+
+### Changes
+
+- Bumped up RP version to 0.0.0-develop.389 ([`1b1a77b`](https://gitlab.com/openg2p/registry/farmer-registry/-/commit/1b1a77b3e9612b95e9f5f79247c733b42cd81c61))
+- [G2P-4929](https://openg2p.atlassian.net/browse/G2P-4929) Enable the agent portal by default ([`ca4d6ee`](https://gitlab.com/openg2p/registry/farmer-registry/-/commit/ca4d6ee1061b1cc59874c5edf0b33f04b1882c42))
 
 <a id="v-0-0-0-develop-171"></a>
 
