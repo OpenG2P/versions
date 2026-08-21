@@ -6,6 +6,7 @@ _Published automatically._
 
 | Version | Date | Type |
 | --- | --- | --- |
+| [`0.0.0-develop.390`](#v-0-0-0-develop-390) | 2026-08-21 | develop |
 | [`1.2.0-rc.408`](#v-1-2-0-rc-408) | 2026-08-20 | release candidate |
 | [`1.2.0-rc.407`](#v-1-2-0-rc-407) | 2026-08-20 | release candidate |
 | [`1.2.0-rc.402`](#v-1-2-0-rc-402) | 2026-08-20 | release candidate |
@@ -184,6 +185,19 @@ _commit `e601367` · changes since 1.2.0-rc.384_
 - [G2P-5492](https://openg2p.atlassian.net/browse/G2P-5492) feat(cr): add validation to enforce single section active crs for a record ([`3d14b54`](https://gitlab.com/openg2p/registry/registry-platform/-/commit/3d14b54b27741b7f2989936139a175103d090fe1))
 
 # Develop builds
+
+<a id="v-0-0-0-develop-390"></a>
+
+## registry/registry-platform — develop 0.0.0-develop.390 (2026-08-21)
+
+_commit `22f62e7` · changes since 0.0.0-develop.389_
+<!-- build:0.0.0-develop.390 revision:22f62e76542c3510e4be6dc238fd6bb4c71588ec ts:1787273161 -->
+
+**Chart:** [openg2p-registry 0.0.0-develop.390](https://gitlab.com/api/v4/projects/openg2p%2Fcharts/packages/helm/stable/charts/openg2p-registry-0.0.0-develop.390.tgz)
+
+### Changes
+
+- [G2P-4929](https://openg2p.atlassian.net/browse/G2P-4929) Make the agent portal card volume optional so a missing ConfigMap cannot block startup ([`22f62e7`](https://gitlab.com/openg2p/registry/registry-platform/-/commit/22f62e76542c3510e4be6dc238fd6bb4c71588ec))
 
 <a id="v-0-0-0-develop-389"></a>
 
