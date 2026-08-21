@@ -6,6 +6,7 @@ _Published automatically._
 
 | Version | Date | Type |
 | --- | --- | --- |
+| [`0.0.0-develop.207`](#v-0-0-0-develop-207) | 2026-08-21 | develop |
 | [`0.0.0-develop.206`](#v-0-0-0-develop-206) | 2026-08-21 | develop |
 | [`0.0.0-develop.205`](#v-0-0-0-develop-205) | 2026-08-20 | develop |
 | [`0.0.0-develop.204`](#v-0-0-0-develop-204) | 2026-08-20 | develop |
@@ -42,6 +43,17 @@ Creating new Tag 2.2.1
 - [G2P-5335](https://openg2p.atlassian.net/browse/G2P-5335) Switch CI to GitLab (.gitlab-ci.yml); drop GitHub Actions build/publish ([`0988f9b`](https://gitlab.com/openg2p/commons/-/commit/0988f9b3c5af0b70f362e672975d99e25646b27e))
 
 # Develop builds
+
+<a id="v-0-0-0-develop-207"></a>
+
+## commons — develop 0.0.0-develop.207 (2026-08-21)
+
+_commit `1653fdb` · changes since 0.0.0-develop.206_
+<!-- build:0.0.0-develop.207 revision:1653fdb1a3acb423062ce0976f6efe10d052aaa9 ts:1787293936 -->
+
+### Changes
+
+- [G2P-4929](https://openg2p.atlassian.net/browse/G2P-4929) Ship Inji Certify with commons-services, enabled by default ([`1653fdb`](https://gitlab.com/openg2p/commons/-/commit/1653fdb1a3acb423062ce0976f6efe10d052aaa9))
 
 <a id="v-0-0-0-develop-206"></a>
 
