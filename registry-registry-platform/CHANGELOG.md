@@ -6,6 +6,7 @@ _Published automatically._
 
 | Version | Date | Type |
 | --- | --- | --- |
+| [`1.2.0-rc.411`](#v-1-2-0-rc-411) | 2026-08-21 | release candidate |
 | [`0.0.0-develop.392`](#v-0-0-0-develop-392) | 2026-08-21 | develop |
 | [`1.2.0-rc.410`](#v-1-2-0-rc-410) | 2026-08-21 | release candidate |
 | [`0.0.0-develop.391`](#v-0-0-0-develop-391) | 2026-08-21 | develop |
@@ -21,7 +22,6 @@ _Published automatically._
 | [`1.2.0-rc.396`](#v-1-2-0-rc-396) | 2026-08-14 | release candidate |
 | [`1.2.0-rc.393`](#v-1-2-0-rc-393) | 2026-08-14 | release candidate |
 | [`1.2.0-rc.391`](#v-1-2-0-rc-391) | 2026-08-14 | release candidate |
-| [`1.2.0-rc.389`](#v-1-2-0-rc-389) | 2026-08-14 | release candidate |
 | [`0.0.0-develop.384`](#v-0-0-0-develop-384) | 2026-08-14 | develop |
 | [`0.0.0-develop.383`](#v-0-0-0-develop-383) | 2026-08-09 | develop |
 | [`0.0.0-develop.379`](#v-0-0-0-develop-379) | 2026-08-07 | develop |
@@ -33,6 +33,19 @@ _Published automatically._
 | [`0.0.0-develop.343`](#v-0-0-0-develop-343) | 2026-08-04 | develop |
 
 # Release candidates
+
+<a id="v-1-2-0-rc-411"></a>
+
+## registry/registry-platform 1.2.0-rc.411 — 2026-08-21
+
+_commit `f95c4fd` · changes since 1.2.0-rc.410_
+<!-- build:1.2.0-rc.411 revision:f95c4fd2f121f3e0cd0c2a9a3fbc9a10b97f525a ts:1787294279 -->
+
+**Chart:** [openg2p-registry 1.2.0-rc.411](https://gitlab.com/api/v4/projects/openg2p%2Fcharts/packages/helm/stable/charts/openg2p-registry-1.2.0-rc.411.tgz)
+
+### Changes
+
+- Published widget version 1.1.6-dev.6 and updated the ui for the same ([`f95c4fd`](https://gitlab.com/openg2p/registry/registry-platform/-/commit/f95c4fd2f121f3e0cd0c2a9a3fbc9a10b97f525a))
 
 <a id="v-1-2-0-rc-410"></a>
 
@@ -166,19 +179,6 @@ _commit `9d10448` · changes since 1.2.0-rc.389_
 ### Changes since 1.2.0-rc.389
 
 - [G2P-5500](https://openg2p.atlassian.net/browse/G2P-5500) Enhance G2PIntakeFormDataService to validate only surviving records during intake form processing. Introduced a new method to filter out records marked for deletion before validation, ensuring data integrity in the upsert operation. ([`08ea139`](https://gitlab.com/openg2p/registry/registry-platform/-/commit/08ea13972db6ed1a633cd0d497beda7e3e980f21))
-
-<a id="v-1-2-0-rc-389"></a>
-
-## registry/registry-platform 1.2.0-rc.389 — 2026-08-14
-
-_commit `3e0e2b2` · changes since 1.2.0-rc.387_
-<!-- build:1.2.0-rc.389 revision:3e0e2b28c6614806c243474bd5c895ce497197af ts:1786680992 -->
-
-**Chart:** [openg2p-registry 1.2.0-rc.389](https://gitlab.com/api/v4/projects/openg2p%2Fcharts/packages/helm/stable/charts/openg2p-registry-1.2.0-rc.389.tgz)
-
-### Changes since 1.2.0-rc.387
-
-- [G2P-5516](https://openg2p.atlassian.net/browse/G2P-5516) refactor: G2PGeo model and schema to use float type for latitude, longitude, and altitude fields ([`7d05211`](https://gitlab.com/openg2p/registry/registry-platform/-/commit/7d05211c359e88992b446a4ff028c2a9b0343be5))
 
 # Develop builds
 
