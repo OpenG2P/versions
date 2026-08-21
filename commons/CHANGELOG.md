@@ -6,6 +6,7 @@ _Published automatically._
 
 | Version | Date | Type |
 | --- | --- | --- |
+| [`0.0.0-develop.209`](#v-0-0-0-develop-209) | 2026-08-21 | develop |
 | [`0.0.0-develop.207`](#v-0-0-0-develop-207) | 2026-08-21 | develop |
 | [`0.0.0-develop.206`](#v-0-0-0-develop-206) | 2026-08-21 | develop |
 | [`0.0.0-develop.205`](#v-0-0-0-develop-205) | 2026-08-20 | develop |
@@ -43,6 +44,17 @@ Creating new Tag 2.2.1
 - [G2P-5335](https://openg2p.atlassian.net/browse/G2P-5335) Switch CI to GitLab (.gitlab-ci.yml); drop GitHub Actions build/publish ([`0988f9b`](https://gitlab.com/openg2p/commons/-/commit/0988f9b3c5af0b70f362e672975d99e25646b27e))
 
 # Develop builds
+
+<a id="v-0-0-0-develop-209"></a>
+
+## commons — develop 0.0.0-develop.209 (2026-08-21)
+
+_commit `8082046` · changes since 0.0.0-develop.207_
+<!-- build:0.0.0-develop.209 revision:8082046bc21c8cb5a2b1379f57a7105f17a640aa ts:1787321448 -->
+
+### Changes
+
+- Bump openg2p-master-data to 1.1.0-rc.55 and openg2p-iam-service to 1.4.0-rc.90 ([`8832184`](https://gitlab.com/openg2p/commons/-/commit/8832184f8053e10de50da41c1fa1c09b19e08ce2))
 
 <a id="v-0-0-0-develop-207"></a>
 
