@@ -6,6 +6,7 @@ _Published automatically._
 
 | Version | Date | Type |
 | --- | --- | --- |
+| [`0.0.0-develop.392`](#v-0-0-0-develop-392) | 2026-08-21 | develop |
 | [`1.2.0-rc.410`](#v-1-2-0-rc-410) | 2026-08-21 | release candidate |
 | [`0.0.0-develop.391`](#v-0-0-0-develop-391) | 2026-08-21 | develop |
 | [`0.0.0-develop.390`](#v-0-0-0-develop-390) | 2026-08-21 | develop |
@@ -180,6 +181,19 @@ _commit `3e0e2b2` · changes since 1.2.0-rc.387_
 - [G2P-5516](https://openg2p.atlassian.net/browse/G2P-5516) refactor: G2PGeo model and schema to use float type for latitude, longitude, and altitude fields ([`7d05211`](https://gitlab.com/openg2p/registry/registry-platform/-/commit/7d05211c359e88992b446a4ff028c2a9b0343be5))
 
 # Develop builds
+
+<a id="v-0-0-0-develop-392"></a>
+
+## registry/registry-platform — develop 0.0.0-develop.392 (2026-08-21)
+
+_commit `f59189d` · changes since 0.0.0-develop.391_
+<!-- build:0.0.0-develop.392 revision:f59189d8ab845936152b210834afccbd6824b22a ts:1787294219 -->
+
+**Chart:** [openg2p-registry 0.0.0-develop.392](https://gitlab.com/api/v4/projects/openg2p%2Fcharts/packages/helm/stable/charts/openg2p-registry-0.0.0-develop.392.tgz)
+
+### Changes
+
+- [G2P-4929](https://openg2p.atlassian.net/browse/G2P-4929) Derive the Certify audience from a hostname instead of a hardcoded URL ([`f59189d`](https://gitlab.com/openg2p/registry/registry-platform/-/commit/f59189d8ab845936152b210834afccbd6824b22a))
 
 <a id="v-0-0-0-develop-391"></a>
 
