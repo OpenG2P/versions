@@ -6,6 +6,7 @@ _Published automatically._
 
 | Version | Date | Type |
 | --- | --- | --- |
+| [`1.2.0-rc.410`](#v-1-2-0-rc-410) | 2026-08-21 | release candidate |
 | [`0.0.0-develop.391`](#v-0-0-0-develop-391) | 2026-08-21 | develop |
 | [`0.0.0-develop.390`](#v-0-0-0-develop-390) | 2026-08-21 | develop |
 | [`1.2.0-rc.408`](#v-1-2-0-rc-408) | 2026-08-20 | release candidate |
@@ -21,7 +22,6 @@ _Published automatically._
 | [`1.2.0-rc.391`](#v-1-2-0-rc-391) | 2026-08-14 | release candidate |
 | [`1.2.0-rc.389`](#v-1-2-0-rc-389) | 2026-08-14 | release candidate |
 | [`0.0.0-develop.384`](#v-0-0-0-develop-384) | 2026-08-14 | develop |
-| [`1.2.0-rc.387`](#v-1-2-0-rc-387) | 2026-08-13 | release candidate |
 | [`0.0.0-develop.383`](#v-0-0-0-develop-383) | 2026-08-09 | develop |
 | [`0.0.0-develop.379`](#v-0-0-0-develop-379) | 2026-08-07 | develop |
 | [`0.0.0-develop.378`](#v-0-0-0-develop-378) | 2026-08-06 | develop |
@@ -32,6 +32,19 @@ _Published automatically._
 | [`0.0.0-develop.343`](#v-0-0-0-develop-343) | 2026-08-04 | develop |
 
 # Release candidates
+
+<a id="v-1-2-0-rc-410"></a>
+
+## registry/registry-platform 1.2.0-rc.410 — 2026-08-21
+
+_commit `a312a3e` · changes since 1.2.0-rc.408_
+<!-- build:1.2.0-rc.410 revision:a312a3e6d7685b2e01b7a7dace01422b5885954c ts:1787292563 -->
+
+**Chart:** [openg2p-registry 1.2.0-rc.410](https://gitlab.com/api/v4/projects/openg2p%2Fcharts/packages/helm/stable/charts/openg2p-registry-1.2.0-rc.410.tgz)
+
+### Changes
+
+- [G2P-5457](https://openg2p.atlassian.net/browse/G2P-5457) refactor: include all records with modified and new rows in diffTableRows ([`e7d2668`](https://gitlab.com/openg2p/registry/registry-platform/-/commit/e7d2668c4c979a6a9c8c8735df13d0dd4aed098b))
 
 <a id="v-1-2-0-rc-408"></a>
 
@@ -165,25 +178,6 @@ _commit `3e0e2b2` · changes since 1.2.0-rc.387_
 ### Changes since 1.2.0-rc.387
 
 - [G2P-5516](https://openg2p.atlassian.net/browse/G2P-5516) refactor: G2PGeo model and schema to use float type for latitude, longitude, and altitude fields ([`7d05211`](https://gitlab.com/openg2p/registry/registry-platform/-/commit/7d05211c359e88992b446a4ff028c2a9b0343be5))
-
-<a id="v-1-2-0-rc-387"></a>
-
-## registry/registry-platform 1.2.0-rc.387 — 2026-08-13
-
-_commit `e601367` · changes since 1.2.0-rc.384_
-<!-- build:1.2.0-rc.387 revision:e601367a1cf206f8a2fd58b7fe82f420bd2f7764 ts:1786602457 -->
-
-**Chart:** [openg2p-registry 1.2.0-rc.387](https://gitlab.com/api/v4/projects/openg2p%2Fcharts/packages/helm/stable/charts/openg2p-registry-1.2.0-rc.387.tgz)
-
-### Summary
-
-- New feature: introduced `G2PChangeRequestSectionPayloadService` for enhanced change request processing and added validation to ensure only one active change request section per record.
-- Testing improvements: added unit tests for the new change request section payload service, enhancing overall test coverage.
-
-### Changes since 1.2.0-rc.384
-
-- [G2P-5497](https://openg2p.atlassian.net/browse/G2P-5497) feat(cr): add G2PChangeRequestSectionPayloadService and integrate validation in change request processing ([`bc7091c`](https://gitlab.com/openg2p/registry/registry-platform/-/commit/bc7091c2a36f62ef80c449d77816b66507aea54f))
-- [G2P-5492](https://openg2p.atlassian.net/browse/G2P-5492) feat(cr): add validation to enforce single section active crs for a record ([`3d14b54`](https://gitlab.com/openg2p/registry/registry-platform/-/commit/3d14b54b27741b7f2989936139a175103d090fe1))
 
 # Develop builds
 
