@@ -6,6 +6,7 @@ _Published automatically._
 
 | Version | Date | Type |
 | --- | --- | --- |
+| [`0.0.0-develop.176`](#v-0-0-0-develop-176) | 2026-08-21 | develop |
 | [`1.2.1-rc.144`](#v-1-2-1-rc-144) | 2026-08-20 | release candidate |
 | [`0.0.0-develop.173`](#v-0-0-0-develop-173) | 2026-08-20 | develop |
 | [`0.0.0-develop.171`](#v-0-0-0-develop-171) | 2026-08-20 | develop |
@@ -147,6 +148,27 @@ _commit `cda0496` · changes since 1.2.0_
 - [G2P-5335](https://openg2p.atlassian.net/browse/G2P-5335) Switch CI to GitLab (.gitlab-ci.yml); drop GitHub Actions build/publish ([`1062700`](https://gitlab.com/openg2p/registry/farmer-registry/-/commit/1062700737b8129d66fcc363c7d3809863d0cefb))
 
 # Develop builds
+
+<a id="v-0-0-0-develop-176"></a>
+
+## registry/farmer-registry — develop 0.0.0-develop.176 (2026-08-21)
+
+_commit `1762516` · changes since 0.0.0-develop.173_
+<!-- build:0.0.0-develop.176 revision:1762516054f3fc491d42cb2e885819f4f99dddf7 ts:1787276497 -->
+
+**Chart:** [openg2p-farmer-registry 0.0.0-develop.176](https://gitlab.com/api/v4/projects/openg2p%2Fcharts/packages/helm/stable/charts/openg2p-farmer-registry-0.0.0-develop.176.tgz)
+
+### Summary
+
+- **Major:** Updated RP version to 0.0.0-develop.391, marking a significant development milestone.
+- Data handling enhancement: Seeded the pack's real birth date for sample farmers, improving accuracy while maintaining fallback for older packs.
+- Deployment improvement: Automated creation of the VC card ConfigMap during agent portal deployment, streamlining setup processes.
+
+### Changes
+
+- Bumped up RP version to 0.0.0-develop.391 ([`1762516`](https://gitlab.com/openg2p/registry/farmer-registry/-/commit/1762516054f3fc491d42cb2e885819f4f99dddf7))
+- [G2P-5554](https://openg2p.atlassian.net/browse/G2P-5554) Seed the pack's real birth date instead of inventing 1 January. The pack carried only a year, so every sample farmer in the country shared a birthday; older packs still fall back, since a date column cannot hold a year. ([`a74feca`](https://gitlab.com/openg2p/registry/farmer-registry/-/commit/a74fecacc096f7a06ff97c70dc951e2545ec7540))
+- [G2P-4929](https://openg2p.atlassian.net/browse/G2P-4929) Create the VC card ConfigMap whenever the agent portal is deployed ([`94abb14`](https://gitlab.com/openg2p/registry/farmer-registry/-/commit/94abb142887918217bf503ad12eabe3e0555d1d7))
 
 <a id="v-0-0-0-develop-173"></a>
 
