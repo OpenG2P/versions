@@ -6,6 +6,7 @@ _Published automatically._
 
 | Version | Date | Type |
 | --- | --- | --- |
+| [`0.0.0-develop.46`](#v-0-0-0-develop-46) | 2026-08-21 | develop |
 | [`1.1.0-rc.51`](#v-1-1-0-rc-51) | 2026-08-20 | release candidate |
 | [`1.1.0-rc.49`](#v-1-1-0-rc-49) | 2026-08-20 | release candidate |
 | [`0.0.0-develop.40`](#v-0-0-0-develop-40) | 2026-08-03 | develop |
@@ -61,6 +62,30 @@ _commit `03ffe82` · changes since 0.0.0-develop.40_
 - [G2P-5456](https://openg2p.atlassian.net/browse/G2P-5456): initialize master-data-ui project with Next.js setup ([`876a1f4`](https://gitlab.com/openg2p/master-data-service/-/commit/876a1f434b8ef207f39b826002b6dbcb47623baa))
 
 # Develop builds
+
+<a id="v-0-0-0-develop-46"></a>
+
+## master-data-service — develop 0.0.0-develop.46 (2026-08-21)
+
+_commit `4f29f7a` · changes since 0.0.0-develop.40_
+<!-- build:0.0.0-develop.46 revision:4f29f7af99ef270f51386a709ff4032ae474aeab ts:1787276348 -->
+
+**Chart:** [openg2p-master-data 0.0.0-develop.46](https://gitlab.com/api/v4/projects/openg2p%2Fcharts/packages/helm/stable/charts/openg2p-master-data-0.0.0-develop.46.tgz)
+
+### Summary
+
+- **Major:** New master-data-ui project initialized with Next.js, including essential configuration files and localization support.
+- Feature enhancements: Added geo management capabilities with new dialogs, reference data management, and attribute/geo level management.
+- Database schema update: Introduced `birth_date` column to the sample individuals table, with a seed job to handle pre-existing environments.
+- Dependency updates: Updated package manifests for master-data-ui, reflecting new dependencies and configurations.
+
+### Changes
+
+- [G2P-5554](https://openg2p.atlassian.net/browse/G2P-5554) Carry the pack's birth_date through to the sample individuals table. The API builds these tables with create_all, which never adds a column to an existing one, so the seed job adds the column itself before inserting rather than failing on an environment seeded before this field existed. ([`4f29f7a`](https://gitlab.com/openg2p/master-data-service/-/commit/4f29f7af99ef270f51386a709ff4032ae474aeab))
+- [G2P-5458](https://openg2p.atlassian.net/browse/G2P-5458) feat: add attribute and geo level management ([`6bad7a4`](https://gitlab.com/openg2p/master-data-service/-/commit/6bad7a4ce930de29f4da8e416f224f896d23ef89))
+- [G2P-5456](https://openg2p.atlassian.net/browse/G2P-5456) feat: enhance geo management with new dialogs and localization updates ([`1e95c1a`](https://gitlab.com/openg2p/master-data-service/-/commit/1e95c1a9b16943ea1e1b31fd20e97d0b6bfb9664))
+- [G2P-5456](https://openg2p.atlassian.net/browse/G2P-5456) feat(master-data-ui): add geo locations and reference data management ([`275bf51`](https://gitlab.com/openg2p/master-data-service/-/commit/275bf51a08c07871b47f4a4e2f804a68ab9d4406))
+- [G2P-5456](https://openg2p.atlassian.net/browse/G2P-5456): initialize master-data-ui project with Next.js setup ([`876a1f4`](https://gitlab.com/openg2p/master-data-service/-/commit/876a1f434b8ef207f39b826002b6dbcb47623baa))
 
 <a id="v-0-0-0-develop-40"></a>
 
