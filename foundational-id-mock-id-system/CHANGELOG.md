@@ -6,9 +6,23 @@ _Published automatically._
 
 | Version | Date | Type |
 | --- | --- | --- |
+| [`0.0.0-develop.3`](#v-0-0-0-develop-3) | 2026-08-21 | develop |
 | [`0.0.0-develop.2`](#v-0-0-0-develop-2) | 2026-08-21 | develop |
 
 # Develop builds
+
+<a id="v-0-0-0-develop-3"></a>
+
+## foundational-id/mock-id-system — develop 0.0.0-develop.3 (2026-08-21)
+
+_commit `788bf2b` · changes since 0.0.0-develop.2_
+<!-- build:0.0.0-develop.3 revision:788bf2bd387f4b8eb10ddc1943ec1c0c9cfad181 ts:1787287027 -->
+
+**Chart:** [mock-identity-system 0.0.0-develop.3](https://gitlab.com/api/v4/projects/openg2p%2Fcharts/packages/helm/stable/charts/mock-identity-system-0.0.0-develop.3.tgz)
+
+### Changes
+
+- [G2P-4929](https://openg2p.atlassian.net/browse/G2P-4929) Seed mock identities from master data so registry records can authenticate ([`788bf2b`](https://gitlab.com/openg2p/foundational-id/mock-id-system/-/commit/788bf2bd387f4b8eb10ddc1943ec1c0c9cfad181))
 
 <a id="v-0-0-0-develop-2"></a>
 
