@@ -1,0 +1,4 @@
+name=foundational-id/mock-id-system
+kind=service
+repo=https://gitlab.com/openg2p/foundational-id/mock-id-system
+images=https://gitlab.com/openg2p/foundational-id/mock-id-system/container_registry

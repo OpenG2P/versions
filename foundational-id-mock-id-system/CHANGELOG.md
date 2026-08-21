@@ -1,0 +1,41 @@
+# foundational-id/mock-id-system
+
+_Published automatically._
+
+**Repository:** [gitlab.com/openg2p/foundational-id/mock-id-system](https://gitlab.com/openg2p/foundational-id/mock-id-system) · **Container images:** [Container Registry](https://gitlab.com/openg2p/foundational-id/mock-id-system/container_registry)
+
+| Version | Date | Type |
+| --- | --- | --- |
+| [`0.0.0-develop.2`](#v-0-0-0-develop-2) | 2026-08-21 | develop |
+
+# Develop builds
+
+<a id="v-0-0-0-develop-2"></a>
+
+## foundational-id/mock-id-system — develop 0.0.0-develop.2 (2026-08-21)
+
+_commit `7a7b3b3` · changes since the start_
+<!-- build:0.0.0-develop.2 revision:7a7b3b3c66e86f510bd106ee7438821492efcc7a ts:1787277517 -->
+
+**Chart:** [mock-identity-system 0.0.0-develop.2](https://gitlab.com/api/v4/projects/openg2p%2Fcharts/packages/helm/stable/charts/mock-identity-system-0.0.0-develop.2.tgz)
+
+### Summary
+
+- New feature: onboarded the mock-identity-system chart to the central pipeline, maintaining upstream images unchanged. 
+- Initial setup: completed the initial commit for the mock-identity-system.
+
+### Changes
+
+- [G2P-5335](https://openg2p.atlassian.net/browse/G2P-5335) Onboard mock-identity-system chart to the central pipeline (chart-only, upstream images untouched) ([`7a7b3b3`](https://gitlab.com/openg2p/foundational-id/mock-id-system/-/commit/7a7b3b3c66e86f510bd106ee7438821492efcc7a))
+- Initial commit ([`f8bb227`](https://gitlab.com/openg2p/foundational-id/mock-id-system/-/commit/f8bb227c1135e5a56922bfa2f33a51c40bfebdf3))
+
+---
+
+> **What's shown here.** This catalogue lists **every stable release**, plus
+> the **latest 20 develop builds** and the **latest 10 release
+> candidates** per release line -- candidates are KEPT after their release
+> ships, as the audit trail of the release run. Older develop builds and
+> release candidates are pruned as they are superseded. Those versions
+> still exist in the container and Helm
+> registries — they are simply not listed here. This page is generated
+> automatically from commit history; do not edit it by hand.

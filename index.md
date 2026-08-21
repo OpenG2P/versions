@@ -17,6 +17,7 @@ Registry** (linked at the top of each repository's page below). See the
 - **[awe](./awe/CHANGELOG)** · [repository ↗](https://gitlab.com/openg2p/awe)
 - **[commons](./commons/CHANGELOG)** · [repository ↗](https://gitlab.com/openg2p/commons)
 - **[consent-manager](./consent-manager/CHANGELOG)** · [repository ↗](https://gitlab.com/openg2p/consent-manager)
+- **[foundational-id/mock-id-system](./foundational-id-mock-id-system/CHANGELOG)** · [repository ↗](https://gitlab.com/openg2p/foundational-id/mock-id-system)
 - **[g2p-bridge/g2p-bridge](./g2p-bridge-g2p-bridge/CHANGELOG)** · [repository ↗](https://gitlab.com/openg2p/g2p-bridge/g2p-bridge)
 - **[g2p-insights](./g2p-insights/CHANGELOG)** · [repository ↗](https://gitlab.com/openg2p/g2p-insights)
 - **[iam](./iam/CHANGELOG)** · [repository ↗](https://gitlab.com/openg2p/iam)
