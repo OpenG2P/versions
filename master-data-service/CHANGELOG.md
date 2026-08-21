@@ -6,6 +6,7 @@ _Published automatically._
 
 | Version | Date | Type |
 | --- | --- | --- |
+| [`0.0.0-develop.47`](#v-0-0-0-develop-47) | 2026-08-21 | develop |
 | [`1.1.0-rc.55`](#v-1-1-0-rc-55) | 2026-08-21 | release candidate |
 | [`0.0.0-develop.46`](#v-0-0-0-develop-46) | 2026-08-21 | develop |
 | [`1.1.0-rc.51`](#v-1-1-0-rc-51) | 2026-08-20 | release candidate |
@@ -82,6 +83,19 @@ _commit `03ffe82` · changes since 0.0.0-develop.40_
 - [G2P-5456](https://openg2p.atlassian.net/browse/G2P-5456): initialize master-data-ui project with Next.js setup ([`876a1f4`](https://gitlab.com/openg2p/master-data-service/-/commit/876a1f434b8ef207f39b826002b6dbcb47623baa))
 
 # Develop builds
+
+<a id="v-0-0-0-develop-47"></a>
+
+## master-data-service — develop 0.0.0-develop.47 (2026-08-21)
+
+_commit `fe9ce25` · changes since 0.0.0-develop.46_
+<!-- build:0.0.0-develop.47 revision:fe9ce25ea14949d869a2e81723bc86aa8b193248 ts:1787307348 -->
+
+**Chart:** [openg2p-master-data 0.0.0-develop.47](https://gitlab.com/api/v4/projects/openg2p%2Fcharts/packages/helm/stable/charts/openg2p-master-data-0.0.0-develop.47.tgz)
+
+### Changes
+
+- [G2P-4929](https://openg2p.atlassian.net/browse/G2P-4929) Normalise national IDs when loading a country pack ([`fe9ce25`](https://gitlab.com/openg2p/master-data-service/-/commit/fe9ce25ea14949d869a2e81723bc86aa8b193248))
 
 <a id="v-0-0-0-develop-46"></a>
 
