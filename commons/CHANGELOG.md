@@ -6,6 +6,7 @@ _Published automatically._
 
 | Version | Date | Type |
 | --- | --- | --- |
+| [`0.0.0-develop.206`](#v-0-0-0-develop-206) | 2026-08-21 | develop |
 | [`0.0.0-develop.205`](#v-0-0-0-develop-205) | 2026-08-20 | develop |
 | [`0.0.0-develop.204`](#v-0-0-0-develop-204) | 2026-08-20 | develop |
 | [`0.0.0-develop.203`](#v-0-0-0-develop-203) | 2026-08-19 | develop |
@@ -41,6 +42,17 @@ Creating new Tag 2.2.1
 - [G2P-5335](https://openg2p.atlassian.net/browse/G2P-5335) Switch CI to GitLab (.gitlab-ci.yml); drop GitHub Actions build/publish ([`0988f9b`](https://gitlab.com/openg2p/commons/-/commit/0988f9b3c5af0b70f362e672975d99e25646b27e))
 
 # Develop builds
+
+<a id="v-0-0-0-develop-206"></a>
+
+## commons — develop 0.0.0-develop.206 (2026-08-21)
+
+_commit `460d8e4` · changes since 0.0.0-develop.205_
+<!-- build:0.0.0-develop.206 revision:460d8e43e9ab293283c659eb22ad99fe65e34327 ts:1787287508 -->
+
+### Changes
+
+- Versions of MDS, Mock ID, IAM bumped up. ([`460d8e4`](https://gitlab.com/openg2p/commons/-/commit/460d8e43e9ab293283c659eb22ad99fe65e34327))
 
 <a id="v-0-0-0-develop-205"></a>
 
