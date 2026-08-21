@@ -6,6 +6,7 @@ _Published automatically._
 
 | Version | Date | Type |
 | --- | --- | --- |
+| [`1.2.1-rc.154`](#v-1-2-1-rc-154) | 2026-08-21 | release candidate |
 | [`0.0.0-develop.177`](#v-0-0-0-develop-177) | 2026-08-21 | develop |
 | [`0.0.0-develop.176`](#v-0-0-0-develop-176) | 2026-08-21 | develop |
 | [`1.2.1-rc.144`](#v-1-2-1-rc-144) | 2026-08-20 | release candidate |
@@ -91,6 +92,33 @@ _commit `d39deba` · changes since 0.0.0-develop.151_
 ### Changes since 0.0.0-develop.151
 
 _No new commits since 0.0.0-develop.151._
+
+<a id="v-1-2-1-rc-154"></a>
+
+## registry/farmer-registry 1.2.1-rc.154 — 2026-08-21
+
+_commit `00f26e1` · changes since 1.2.1-rc.144_
+<!-- build:1.2.1-rc.154 revision:00f26e15208d5d6346053b621e5a4a70eae33b35 ts:1787303681 -->
+
+**Chart:** [openg2p-farmer-registry 1.2.1-rc.154](https://gitlab.com/api/v4/projects/openg2p%2Fcharts/packages/helm/stable/charts/openg2p-farmer-registry-1.2.1-rc.154.tgz)
+
+### Summary
+
+- **Major:** Updated Dockerfiles and Chart.yaml to version 1.2.0-rc.419 and switched to GitLab registry paths.
+- Data management enhancements: Added seeding functionality for data insertion via intake form and introduced a script for uploading farmer data and images to MinIO.
+- Schema updates: Implemented changes in UI schema and domain translation.
+- Functional ID generation: Enabled generation for farmer and household entities.
+- Cleanup: Removed obsolete SQL files related to attributes.
+
+### Changes
+
+- [G2P-5572](https://openg2p.atlassian.net/browse/G2P-5572) Update Dockerfiles and Chart.yaml to use GitLab registry paths ([`212e9e1`](https://gitlab.com/openg2p/registry/farmer-registry/-/commit/212e9e18e588fc59ba7971ab5fbdea4168d21761))
+- [G2P-5572](https://openg2p.atlassian.net/browse/G2P-5572) Update Dockerfiles and Chart.yaml to version 1.2.0-rc.419 ([`7db5915`](https://gitlab.com/openg2p/registry/farmer-registry/-/commit/7db5915d453697b102133539c5643b2bbe0303be))
+- [G2P-5572](https://openg2p.atlassian.net/browse/G2P-5572) Add seeding to insert data via intake form ([`8dd6d6a`](https://gitlab.com/openg2p/registry/farmer-registry/-/commit/8dd6d6acbcd37be76cd024d1295b2b3f4f09da7c))
+- Change in Ui schema and domain translation ([`75f1c68`](https://gitlab.com/openg2p/registry/farmer-registry/-/commit/75f1c685deccc29c8b3d137164ffe35e644c1302))
+- [G2P-5543](https://openg2p.atlassian.net/browse/G2P-5543) Add script to upload farmer data and images to MinIO ([`81610dd`](https://gitlab.com/openg2p/registry/farmer-registry/-/commit/81610dd3ffad426f1b9d59a4ee012b8aeffa3ecf))
+- [G2P-5538](https://openg2p.atlassian.net/browse/G2P-5538) Enable functional_id generation for farmer and household ([`99cf568`](https://gitlab.com/openg2p/registry/farmer-registry/-/commit/99cf5686d7e32376143ce9b34c9ad1e65ddaf4a5))
+- [G2P-5538](https://openg2p.atlassian.net/browse/G2P-5538) Delete attribute sql files ([`ddb078f`](https://gitlab.com/openg2p/registry/farmer-registry/-/commit/ddb078f07fb67d41bf746da66c87857f37f6e614))
 
 <a id="v-1-2-1-rc-144"></a>
 
