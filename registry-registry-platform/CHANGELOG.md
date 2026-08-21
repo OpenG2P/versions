@@ -6,6 +6,7 @@ _Published automatically._
 
 | Version | Date | Type |
 | --- | --- | --- |
+| [`1.2.0-rc.419`](#v-1-2-0-rc-419) | 2026-08-21 | release candidate |
 | [`1.2.0-rc.411`](#v-1-2-0-rc-411) | 2026-08-21 | release candidate |
 | [`0.0.0-develop.392`](#v-0-0-0-develop-392) | 2026-08-21 | develop |
 | [`1.2.0-rc.410`](#v-1-2-0-rc-410) | 2026-08-21 | release candidate |
@@ -21,7 +22,6 @@ _Published automatically._
 | [`1.2.0-rc.397`](#v-1-2-0-rc-397) | 2026-08-18 | release candidate |
 | [`1.2.0-rc.396`](#v-1-2-0-rc-396) | 2026-08-14 | release candidate |
 | [`1.2.0-rc.393`](#v-1-2-0-rc-393) | 2026-08-14 | release candidate |
-| [`1.2.0-rc.391`](#v-1-2-0-rc-391) | 2026-08-14 | release candidate |
 | [`0.0.0-develop.384`](#v-0-0-0-develop-384) | 2026-08-14 | develop |
 | [`0.0.0-develop.383`](#v-0-0-0-develop-383) | 2026-08-09 | develop |
 | [`0.0.0-develop.379`](#v-0-0-0-develop-379) | 2026-08-07 | develop |
@@ -33,6 +33,29 @@ _Published automatically._
 | [`0.0.0-develop.343`](#v-0-0-0-develop-343) | 2026-08-04 | develop |
 
 # Release candidates
+
+<a id="v-1-2-0-rc-419"></a>
+
+## registry/registry-platform 1.2.0-rc.419 — 2026-08-21
+
+_commit `67ec038` · changes since 1.2.0-rc.411_
+<!-- build:1.2.0-rc.419 revision:67ec038e21114ac2c7e44c4a4bb90fb8659cd118 ts:1787301550 -->
+
+**Chart:** [openg2p-registry 1.2.0-rc.419](https://gitlab.com/api/v4/projects/openg2p%2Fcharts/packages/helm/stable/charts/openg2p-registry-1.2.0-rc.419.tgz)
+
+### Summary
+
+- **Major:** Updated IAM service repository reference from GitHub to GitLab and incremented IAM_CORE_REF to version 1.4, along with version number updates to 1.2.0 across multiple APIs.
+- Enhanced IAM registration: added APP_API_URL environment variable and refactored data policy request helper, improving db-seed job configuration.
+- Refactored UI components: removed functional id and tab id from useBreadcrumb, and implemented G2PIntakeRegisterSectionMapService with updates to related services and improved UI version history handling.
+
+### Changes
+
+- [G2P-5572](https://openg2p.atlassian.net/browse/G2P-5572) Update IAM service repository reference from GitHub to GitLab ([`c2a1198`](https://gitlab.com/openg2p/registry/registry-platform/-/commit/c2a1198696cb9e72dfb7e7e4f834ae7f97cf2a99))
+- [G2P-5572](https://openg2p.atlassian.net/browse/G2P-5572) Update IAM_CORE_REF to version 1.4 and increment version numbers to 1.2.0 across multiple APIs; refactor data policy request helper and enhance db-seed job configuration. ([`66b2eac`](https://gitlab.com/openg2p/registry/registry-platform/-/commit/66b2eac2547aac03b7d2a86b0902df507ee2526d))
+- Refactor useBreadcrumb: remove functional id and tab id ([`0495193`](https://gitlab.com/openg2p/registry/registry-platform/-/commit/04951937ca7e37283b7cbcfaa70b7373dfc4f48a))
+- [G2P-5552](https://openg2p.atlassian.net/browse/G2P-5552) Add APP_API_URL environment variable for IAM registration job ([`d77fd84`](https://gitlab.com/openg2p/registry/registry-platform/-/commit/d77fd84fa9989ecc5cda2160f4bdc9b5aa71c26c))
+- [G2P-5544](https://openg2p.atlassian.net/browse/G2P-5544) Implement G2PIntakeRegisterSectionMapService, update related services/components, and improve UI version history handling. ([`1f2ab43`](https://gitlab.com/openg2p/registry/registry-platform/-/commit/1f2ab43ea9141e37d8daad210d7565edff588173))
 
 <a id="v-1-2-0-rc-411"></a>
 
@@ -166,19 +189,6 @@ _commit `6020cb0` · changes since 1.2.0-rc.391_
 ### Changes since 1.2.0-rc.391
 
 - [G2P-5493](https://openg2p.atlassian.net/browse/G2P-5493) refactor change request handling and remove unused staff-portal-ui folder ([`34d861b`](https://gitlab.com/openg2p/registry/registry-platform/-/commit/34d861b53e08918c8b30a2ac5edf72ee1d0e2162))
-
-<a id="v-1-2-0-rc-391"></a>
-
-## registry/registry-platform 1.2.0-rc.391 — 2026-08-14
-
-_commit `9d10448` · changes since 1.2.0-rc.389_
-<!-- build:1.2.0-rc.391 revision:9d1044817c1be37d1fb503ee3dd4acd48085263a ts:1786681006 -->
-
-**Chart:** [openg2p-registry 1.2.0-rc.391](https://gitlab.com/api/v4/projects/openg2p%2Fcharts/packages/helm/stable/charts/openg2p-registry-1.2.0-rc.391.tgz)
-
-### Changes since 1.2.0-rc.389
-
-- [G2P-5500](https://openg2p.atlassian.net/browse/G2P-5500) Enhance G2PIntakeFormDataService to validate only surviving records during intake form processing. Introduced a new method to filter out records marked for deletion before validation, ensuring data integrity in the upsert operation. ([`08ea139`](https://gitlab.com/openg2p/registry/registry-platform/-/commit/08ea13972db6ed1a633cd0d497beda7e3e980f21))
 
 # Develop builds
 
