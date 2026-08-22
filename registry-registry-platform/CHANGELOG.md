@@ -6,6 +6,7 @@ _Published automatically._
 
 | Version | Date | Type |
 | --- | --- | --- |
+| [`0.0.0-develop.404`](#v-0-0-0-develop-404) | 2026-08-22 | develop |
 | [`0.0.0-develop.403`](#v-0-0-0-develop-403) | 2026-08-22 | develop |
 | [`0.0.0-develop.402`](#v-0-0-0-develop-402) | 2026-08-22 | develop |
 | [`1.2.0-rc.419`](#v-1-2-0-rc-419) | 2026-08-21 | release candidate |
@@ -193,6 +194,19 @@ _commit `6020cb0` · changes since 1.2.0-rc.391_
 - [G2P-5493](https://openg2p.atlassian.net/browse/G2P-5493) refactor change request handling and remove unused staff-portal-ui folder ([`34d861b`](https://gitlab.com/openg2p/registry/registry-platform/-/commit/34d861b53e08918c8b30a2ac5edf72ee1d0e2162))
 
 # Develop builds
+
+<a id="v-0-0-0-develop-404"></a>
+
+## registry/registry-platform — develop 0.0.0-develop.404 (2026-08-22)
+
+_commit `1e269ad` · changes since 0.0.0-develop.403_
+<!-- build:0.0.0-develop.404 revision:1e269ad1b31ad37306b3cc393294aba976f4358a ts:1787395282 -->
+
+**Chart:** [openg2p-registry 0.0.0-develop.404](https://gitlab.com/api/v4/projects/openg2p%2Fcharts/packages/helm/stable/charts/openg2p-registry-0.0.0-develop.404.tgz)
+
+### Changes
+
+- [G2P-4929](https://openg2p.atlassian.net/browse/G2P-4929) Point master data DB credentials at the renamed secret ([`1e269ad`](https://gitlab.com/openg2p/registry/registry-platform/-/commit/1e269ad1b31ad37306b3cc393294aba976f4358a))
 
 <a id="v-0-0-0-develop-403"></a>
 
