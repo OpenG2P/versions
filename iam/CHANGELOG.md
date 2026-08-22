@@ -7,6 +7,7 @@ _Published automatically._
 | Version | Date | Type |
 | --- | --- | --- |
 | [`1.4.0-rc.90`](#v-1-4-0-rc-90) | 2026-08-21 | release candidate |
+| [`0.0.0-develop.90`](#v-0-0-0-develop-90) | 2026-08-22 | develop |
 | [`1.4.0-rc.88`](#v-1-4-0-rc-88) | 2026-08-21 | release candidate |
 | [`0.0.0-develop.88`](#v-0-0-0-develop-88) | 2026-08-20 | develop |
 | [`0.0.0-develop.86`](#v-0-0-0-develop-86) | 2026-08-20 | develop |
@@ -43,6 +44,19 @@ _commit `5b238d1` · changes since 0.0.0-develop.88_
 _No new commits since 0.0.0-develop.88._
 
 # Develop builds
+
+<a id="v-0-0-0-develop-90"></a>
+
+## iam — develop 0.0.0-develop.90 (2026-08-22)
+
+_commit `b7ea48a` · changes since 0.0.0-develop.88_
+<!-- build:0.0.0-develop.90 revision:b7ea48a38cdefa8cfbb9015df74a7848cbab41ce ts:1787300625 -->
+
+**Chart:** [openg2p-iam-service 0.0.0-develop.90](https://gitlab.com/api/v4/projects/openg2p%2Fcharts/packages/helm/stable/charts/openg2p-iam-service-0.0.0-develop.90.tgz)
+
+### Changes
+
+- [G2P-5572](https://openg2p.atlassian.net/browse/G2P-5572) Bump version to 1.4.0 and update image tags in values.yaml ([`1eb3a25`](https://gitlab.com/openg2p/iam/-/commit/1eb3a250b00aefbec03aaadf96e2516f4bc07756))
 
 <a id="v-0-0-0-develop-88"></a>
 
