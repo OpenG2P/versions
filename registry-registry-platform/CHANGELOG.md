@@ -6,6 +6,7 @@ _Published automatically._
 
 | Version | Date | Type |
 | --- | --- | --- |
+| [`0.0.0-develop.403`](#v-0-0-0-develop-403) | 2026-08-22 | develop |
 | [`0.0.0-develop.402`](#v-0-0-0-develop-402) | 2026-08-22 | develop |
 | [`1.2.0-rc.419`](#v-1-2-0-rc-419) | 2026-08-21 | release candidate |
 | [`1.2.0-rc.411`](#v-1-2-0-rc-411) | 2026-08-21 | release candidate |
@@ -192,6 +193,19 @@ _commit `6020cb0` · changes since 1.2.0-rc.391_
 - [G2P-5493](https://openg2p.atlassian.net/browse/G2P-5493) refactor change request handling and remove unused staff-portal-ui folder ([`34d861b`](https://gitlab.com/openg2p/registry/registry-platform/-/commit/34d861b53e08918c8b30a2ac5edf72ee1d0e2162))
 
 # Develop builds
+
+<a id="v-0-0-0-develop-403"></a>
+
+## registry/registry-platform — develop 0.0.0-develop.403 (2026-08-22)
+
+_commit `4a98d83` · changes since 0.0.0-develop.402_
+<!-- build:0.0.0-develop.403 revision:4a98d83b3a01bc7d71c69fdc68e69647239ec476 ts:1787374571 -->
+
+**Chart:** [openg2p-registry 0.0.0-develop.403](https://gitlab.com/api/v4/projects/openg2p%2Fcharts/packages/helm/stable/charts/openg2p-registry-0.0.0-develop.403.tgz)
+
+### Changes
+
+- [G2P-4929](https://openg2p.atlassian.net/browse/G2P-4929) Use an image that actually provides openssl for keypair generation ([`4a98d83`](https://gitlab.com/openg2p/registry/registry-platform/-/commit/4a98d83b3a01bc7d71c69fdc68e69647239ec476))
 
 <a id="v-0-0-0-develop-402"></a>
 
