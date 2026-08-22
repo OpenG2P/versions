@@ -6,12 +6,26 @@ _Published automatically._
 
 | Version | Date | Type |
 | --- | --- | --- |
+| [`0.0.0-develop.12`](#v-0-0-0-develop-12) | 2026-08-22 | develop |
 | [`0.0.0-develop.11`](#v-0-0-0-develop-11) | 2026-08-22 | develop |
 | [`0.0.0-develop.10`](#v-0-0-0-develop-10) | 2026-08-20 | develop |
 | [`0.0.0-develop.9`](#v-0-0-0-develop-9) | 2026-08-20 | develop |
 | [`0.0.0-develop.8`](#v-0-0-0-develop-8) | 2026-08-19 | develop |
 
 # Develop builds
+
+<a id="v-0-0-0-develop-12"></a>
+
+## verifiable-credentials — develop 0.0.0-develop.12 (2026-08-22)
+
+_commit `3e9d762` · changes since 0.0.0-develop.11_
+<!-- build:0.0.0-develop.12 revision:3e9d7629b5a158fa5030e1a9f18a00b91cac5d7c ts:1787374544 -->
+
+**Chart:** [openg2p-inji-certify 0.0.0-develop.12](https://gitlab.com/api/v4/projects/openg2p%2Fcharts/packages/helm/stable/charts/openg2p-inji-certify-0.0.0-develop.12.tgz)
+
+### Changes
+
+- [G2P-4929](https://openg2p.atlassian.net/browse/G2P-4929) Replace unavailable images and scope the keystore-backup permission to its own ServiceAccount ([`3e9d762`](https://gitlab.com/openg2p/verifiable-credentials/-/commit/3e9d7629b5a158fa5030e1a9f18a00b91cac5d7c))
 
 <a id="v-0-0-0-develop-11"></a>
 
