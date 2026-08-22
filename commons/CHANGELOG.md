@@ -6,6 +6,7 @@ _Published automatically._
 
 | Version | Date | Type |
 | --- | --- | --- |
+| [`0.0.0-develop.210`](#v-0-0-0-develop-210) | 2026-08-22 | develop |
 | [`0.0.0-develop.209`](#v-0-0-0-develop-209) | 2026-08-21 | develop |
 | [`0.0.0-develop.207`](#v-0-0-0-develop-207) | 2026-08-21 | develop |
 | [`0.0.0-develop.206`](#v-0-0-0-develop-206) | 2026-08-21 | develop |
@@ -44,6 +45,17 @@ Creating new Tag 2.2.1
 - [G2P-5335](https://openg2p.atlassian.net/browse/G2P-5335) Switch CI to GitLab (.gitlab-ci.yml); drop GitHub Actions build/publish ([`0988f9b`](https://gitlab.com/openg2p/commons/-/commit/0988f9b3c5af0b70f362e672975d99e25646b27e))
 
 # Develop builds
+
+<a id="v-0-0-0-develop-210"></a>
+
+## commons — develop 0.0.0-develop.210 (2026-08-22)
+
+_commit `9fad89d` · changes since 0.0.0-develop.209_
+<!-- build:0.0.0-develop.210 revision:9fad89dd4dcef322cd12cf598dd625b4f7c99656 ts:1787361567 -->
+
+### Changes
+
+- Add --reset-keymanager to the commons-services uninstall: esignet and mock-identity run PKCS11, so their key material sits in softhsm while their key_alias rows sit in base-owned DBs that the uninstall deliberately keeps, and resetting softhsm alone leaves the aliases pointing at HSM keys that no longer exist so both fail at keymanager init on reinstall; the flag truncates just key_alias+key_store so keys regenerate, leaving application data intact ([`9fad89d`](https://gitlab.com/openg2p/commons/-/commit/9fad89dd4dcef322cd12cf598dd625b4f7c99656))
 
 <a id="v-0-0-0-develop-209"></a>
 
