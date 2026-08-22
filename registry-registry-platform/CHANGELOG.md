@@ -6,6 +6,7 @@ _Published automatically._
 
 | Version | Date | Type |
 | --- | --- | --- |
+| [`0.0.0-develop.402`](#v-0-0-0-develop-402) | 2026-08-22 | develop |
 | [`1.2.0-rc.419`](#v-1-2-0-rc-419) | 2026-08-21 | release candidate |
 | [`1.2.0-rc.411`](#v-1-2-0-rc-411) | 2026-08-21 | release candidate |
 | [`0.0.0-develop.392`](#v-0-0-0-develop-392) | 2026-08-21 | develop |
@@ -191,6 +192,36 @@ _commit `6020cb0` · changes since 1.2.0-rc.391_
 - [G2P-5493](https://openg2p.atlassian.net/browse/G2P-5493) refactor change request handling and remove unused staff-portal-ui folder ([`34d861b`](https://gitlab.com/openg2p/registry/registry-platform/-/commit/34d861b53e08918c8b30a2ac5edf72ee1d0e2162))
 
 # Develop builds
+
+<a id="v-0-0-0-develop-402"></a>
+
+## registry/registry-platform — develop 0.0.0-develop.402 (2026-08-22)
+
+_commit `0b1e48d` · changes since 0.0.0-develop.392_
+<!-- build:0.0.0-develop.402 revision:0b1e48dfb82e93a9bc7c300f10fb4fcbbf626989 ts:1787363335 -->
+
+**Chart:** [openg2p-registry 0.0.0-develop.402](https://gitlab.com/api/v4/projects/openg2p%2Fcharts/packages/helm/stable/charts/openg2p-registry-0.0.0-develop.402.tgz)
+
+### Summary
+
+- **Major:** Bootstrap of the beneficiary-authentication setup and default issuer DID for clean VC issuance installation.
+- Agent enhancements: Each registry now has its own Keycloak client, and a dedicated Keycloak realm with a unique hostname for the agent UI.
+- Security improvements: Audit of agent portal actions to reject unresolved credential template placeholders.
+- Fixes: Resolved issues with registrant authentication, agent UI API routing, and token fallback, ensuring proper session sharing and unblocking of the agent portal.
+- Credential handling: Unwrapped the credential envelope and corrected the Certify proof audience.
+
+### Changes
+
+- [G2P-4929](https://openg2p.atlassian.net/browse/G2P-4929) Bootstrap the beneficiary-authentication setup from the chart ([`0b1e48d`](https://gitlab.com/openg2p/registry/registry-platform/-/commit/0b1e48dfb82e93a9bc7c300f10fb4fcbbf626989))
+- [G2P-4929](https://openg2p.atlassian.net/browse/G2P-4929) Default the issuer DID so a registry with VC issuance installs cleanly ([`625036c`](https://gitlab.com/openg2p/registry/registry-platform/-/commit/625036ca73d7fac5788afe92322b3a4cd31a978d))
+- [G2P-4929](https://openg2p.atlassian.net/browse/G2P-4929) Give each registry its own agent Keycloak clients ([`c383a49`](https://gitlab.com/openg2p/registry/registry-platform/-/commit/c383a491645a36655db7ba2cd0ea608d4d648d73))
+- [G2P-4929](https://openg2p.atlassian.net/browse/G2P-4929) Audit agent portal actions and reject unresolved credential template placeholders ([`fa0e22b`](https://gitlab.com/openg2p/registry/registry-platform/-/commit/fa0e22bfc9dbe3c3b386c20f7679392c184c1713))
+- [G2P-4929](https://openg2p.atlassian.net/browse/G2P-4929) Unwrap the credential envelope and fix the Certify proof audience ([`581952c`](https://gitlab.com/openg2p/registry/registry-platform/-/commit/581952ccdea751fe0808dd9d3e54d5b6f88d91c8))
+- [G2P-4929](https://openg2p.atlassian.net/browse/G2P-4929) Fix registrant authentication, agent UI API routing and token fallback ([`da26791`](https://gitlab.com/openg2p/registry/registry-platform/-/commit/da26791645233b16ee3327618cadc4133197e3ae))
+- [G2P-4929](https://openg2p.atlassian.net/browse/G2P-4929) Fix registrant authentication and route the agent UI to its API ([`3bbf8a8`](https://gitlab.com/openg2p/registry/registry-platform/-/commit/3bbf8a867680498bccc60b056589f29ea83580e4))
+- [G2P-4929](https://openg2p.atlassian.net/browse/G2P-4929) Fix registrant authentication: resolve the register model, share the session store, unblock the agent portal ([`f9f8e63`](https://gitlab.com/openg2p/registry/registry-platform/-/commit/f9f8e63fe30a7ecbf8707f64ab0f848c1f272227))
+- [G2P-4929](https://openg2p.atlassian.net/browse/G2P-4929) Create the agent Keycloak realm and give the agent UI its own hostname ([`61f85b1`](https://gitlab.com/openg2p/registry/registry-platform/-/commit/61f85b1f9196f14578759b7822f12c25b7516a34))
+- [G2P-4929](https://openg2p.atlassian.net/browse/G2P-4929) Serve the agent UI on nginx's port instead of the Next.js port ([`b5cad3c`](https://gitlab.com/openg2p/registry/registry-platform/-/commit/b5cad3c6971145be7ecdae78017f14d5021975ff))
 
 <a id="v-0-0-0-develop-392"></a>
 
