@@ -6,6 +6,7 @@ _Published automatically._
 
 | Version | Date | Type |
 | --- | --- | --- |
+| [`0.0.0-develop.182`](#v-0-0-0-develop-182) | 2026-08-22 | develop |
 | [`1.2.1-rc.154`](#v-1-2-1-rc-154) | 2026-08-21 | release candidate |
 | [`0.0.0-develop.177`](#v-0-0-0-develop-177) | 2026-08-21 | develop |
 | [`0.0.0-develop.176`](#v-0-0-0-develop-176) | 2026-08-21 | develop |
@@ -31,7 +32,6 @@ _Published automatically._
 | [`0.0.0-develop.145`](#v-0-0-0-develop-145) | 2026-08-06 | develop |
 | [`0.0.0-develop.144`](#v-0-0-0-develop-144) | 2026-08-05 | develop |
 | [`0.0.0-develop.142`](#v-0-0-0-develop-142) | 2026-08-04 | develop |
-| [`0.0.0-develop.141`](#v-0-0-0-develop-141) | 2026-08-04 | develop |
 
 # Releases
 
@@ -176,6 +176,30 @@ _commit `cda0496` · changes since 1.2.0_
 - [G2P-5335](https://openg2p.atlassian.net/browse/G2P-5335) Switch CI to GitLab (.gitlab-ci.yml); drop GitHub Actions build/publish ([`1062700`](https://gitlab.com/openg2p/registry/farmer-registry/-/commit/1062700737b8129d66fcc363c7d3809863d0cefb))
 
 # Develop builds
+
+<a id="v-0-0-0-develop-182"></a>
+
+## registry/farmer-registry — develop 0.0.0-develop.182 (2026-08-22)
+
+_commit `ffb2c75` · changes since 0.0.0-develop.177_
+<!-- build:0.0.0-develop.182 revision:ffb2c759bf707fd02b6f760f9839eab21e8f653c ts:1787373547 -->
+
+**Chart:** [openg2p-farmer-registry 0.0.0-develop.182](https://gitlab.com/api/v4/projects/openg2p%2Fcharts/packages/helm/stable/charts/openg2p-farmer-registry-0.0.0-develop.182.tgz)
+
+### Summary
+
+- **Major:** Introduced claim-169 QR configuration requiring registrant authentication, enhancing security for claims.
+- VC issuance is now enabled by default, streamlining the process for users.
+- Normalised foundational ID and corrected full name spacing in both the VC view and farmer VC view for improved clarity and consistency.
+- Updated RP version to 0.0.0-develop.402, reflecting ongoing development progress.
+
+### Changes
+
+- Bumped up RP version to 0.0.0-develop.402 ([`ffb2c75`](https://gitlab.com/openg2p/registry/farmer-registry/-/commit/ffb2c759bf707fd02b6f760f9839eab21e8f653c))
+- [G2P-4929](https://openg2p.atlassian.net/browse/G2P-4929) Ship the claim-169 QR config and require registrant authentication ([`acecdce`](https://gitlab.com/openg2p/registry/farmer-registry/-/commit/acecdcedc1261127d012eaca9a5268feaa849e58))
+- [G2P-4929](https://openg2p.atlassian.net/browse/G2P-4929) Enable VC issuance by default ([`7484b69`](https://gitlab.com/openg2p/registry/farmer-registry/-/commit/7484b69721348a1dc415d9a9e1a28b74ee4edd1f))
+- [G2P-4929](https://openg2p.atlassian.net/browse/G2P-4929) Normalise foundational ID and fix full name spacing in the VC view ([`f6d4c53`](https://gitlab.com/openg2p/registry/farmer-registry/-/commit/f6d4c53dea0db69353e9493117ec1b431bc32c13))
+- [G2P-4929](https://openg2p.atlassian.net/browse/G2P-4929) Fix full name spacing in the farmer VC view ([`fbf66e2`](https://gitlab.com/openg2p/registry/farmer-registry/-/commit/fbf66e28522d5981bf82a0ad99478f7846682f42))
 
 <a id="v-0-0-0-develop-177"></a>
 
@@ -462,17 +486,6 @@ _commit `30672a4` · changes since 0.0.0-develop.141_
 ### Changes since 0.0.0-develop.141
 
 - [G2P-2804](https://openg2p.atlassian.net/browse/G2P-2804) Analytics: add FR reporting layer (fr_rpt_farmer, fr_rpt_land, fr_rpt_geo_levels) — area normalised to hectares, crops/livestock/inputs rolled off the land grain ([`30672a4`](https://gitlab.com/openg2p/registry/farmer-registry/-/commit/30672a410c1fc942b9bdd1e4b544ab337e507436))
-
-<a id="v-0-0-0-develop-141"></a>
-
-## registry/farmer-registry — develop 0.0.0-develop.141 (2026-08-04)
-
-_commit `ae32039` · changes since 0.0.0-develop.140_
-<!-- build:0.0.0-develop.141 revision:ae32039b18158b8ade948311e02681bc6442dadd ts:1785820307 -->
-
-### Changes since 0.0.0-develop.140
-
-- questions.yaml copied during CI ([`ae32039`](https://gitlab.com/openg2p/registry/farmer-registry/-/commit/ae32039b18158b8ade948311e02681bc6442dadd))
 
 ---
 
