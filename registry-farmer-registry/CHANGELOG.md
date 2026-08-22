@@ -6,6 +6,7 @@ _Published automatically._
 
 | Version | Date | Type |
 | --- | --- | --- |
+| [`0.0.0-develop.183`](#v-0-0-0-develop-183) | 2026-08-22 | develop |
 | [`0.0.0-develop.182`](#v-0-0-0-develop-182) | 2026-08-22 | develop |
 | [`1.2.1-rc.154`](#v-1-2-1-rc-154) | 2026-08-21 | release candidate |
 | [`0.0.0-develop.177`](#v-0-0-0-develop-177) | 2026-08-21 | develop |
@@ -31,7 +32,6 @@ _Published automatically._
 | [`0.0.0-develop.146`](#v-0-0-0-develop-146) | 2026-08-06 | develop |
 | [`0.0.0-develop.145`](#v-0-0-0-develop-145) | 2026-08-06 | develop |
 | [`0.0.0-develop.144`](#v-0-0-0-develop-144) | 2026-08-05 | develop |
-| [`0.0.0-develop.142`](#v-0-0-0-develop-142) | 2026-08-04 | develop |
 
 # Releases
 
@@ -176,6 +176,19 @@ _commit `cda0496` · changes since 1.2.0_
 - [G2P-5335](https://openg2p.atlassian.net/browse/G2P-5335) Switch CI to GitLab (.gitlab-ci.yml); drop GitHub Actions build/publish ([`1062700`](https://gitlab.com/openg2p/registry/farmer-registry/-/commit/1062700737b8129d66fcc363c7d3809863d0cefb))
 
 # Develop builds
+
+<a id="v-0-0-0-develop-183"></a>
+
+## registry/farmer-registry — develop 0.0.0-develop.183 (2026-08-22)
+
+_commit `9c608d9` · changes since 0.0.0-develop.182_
+<!-- build:0.0.0-develop.183 revision:9c608d91cdce3713f79c40220fd738c2d3426f60 ts:1787381122 -->
+
+**Chart:** [openg2p-farmer-registry 0.0.0-develop.183](https://gitlab.com/api/v4/projects/openg2p%2Fcharts/packages/helm/stable/charts/openg2p-farmer-registry-0.0.0-develop.183.tgz)
+
+### Changes
+
+- Bumped up RP version to 0.0.0-develop.403 ([`9c608d9`](https://gitlab.com/openg2p/registry/farmer-registry/-/commit/9c608d91cdce3713f79c40220fd738c2d3426f60))
 
 <a id="v-0-0-0-develop-182"></a>
 
@@ -475,17 +488,6 @@ _commit `003ac5d` · changes since 0.0.0-develop.142_
 
 - [G2P-4804](https://openg2p.atlassian.net/browse/G2P-4804) DB-seed: take ownership of load_sample_data.py and upload_images.py from the platform image ([`003ac5d`](https://gitlab.com/openg2p/registry/farmer-registry/-/commit/003ac5de37ee21bb695b23bc492248c0b68d5f6a))
 - [G2P-4804](https://openg2p.atlassian.net/browse/G2P-4804) Analytics: add FR reporting views, bulk sample generator, Superset bundle (5 dashboards/45 charts) and the analytics Jobs; declare the DB globals the wrapper's own templates need ([`932aa5a`](https://gitlab.com/openg2p/registry/farmer-registry/-/commit/932aa5a4ddf7b9c9a0ebb4b30096ad67c22758df))
-
-<a id="v-0-0-0-develop-142"></a>
-
-## registry/farmer-registry — develop 0.0.0-develop.142 (2026-08-04)
-
-_commit `30672a4` · changes since 0.0.0-develop.141_
-<!-- build:0.0.0-develop.142 revision:30672a410c1fc942b9bdd1e4b544ab337e507436 ts:1785831582 -->
-
-### Changes since 0.0.0-develop.141
-
-- [G2P-2804](https://openg2p.atlassian.net/browse/G2P-2804) Analytics: add FR reporting layer (fr_rpt_farmer, fr_rpt_land, fr_rpt_geo_levels) — area normalised to hectares, crops/livestock/inputs rolled off the land grain ([`30672a4`](https://gitlab.com/openg2p/registry/farmer-registry/-/commit/30672a410c1fc942b9bdd1e4b544ab337e507436))
 
 ---
 
