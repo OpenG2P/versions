@@ -6,6 +6,7 @@ _Published automatically._
 
 | Version | Date | Type |
 | --- | --- | --- |
+| [`0.0.0-develop.13`](#v-0-0-0-develop-13) | 2026-08-22 | develop |
 | [`0.0.0-develop.12`](#v-0-0-0-develop-12) | 2026-08-22 | develop |
 | [`0.0.0-develop.11`](#v-0-0-0-develop-11) | 2026-08-22 | develop |
 | [`0.0.0-develop.10`](#v-0-0-0-develop-10) | 2026-08-20 | develop |
@@ -13,6 +14,19 @@ _Published automatically._
 | [`0.0.0-develop.8`](#v-0-0-0-develop-8) | 2026-08-19 | develop |
 
 # Develop builds
+
+<a id="v-0-0-0-develop-13"></a>
+
+## verifiable-credentials — develop 0.0.0-develop.13 (2026-08-22)
+
+_commit `60d98a8` · changes since 0.0.0-develop.12_
+<!-- build:0.0.0-develop.13 revision:60d98a8d3ae6fe83e3fd1326a5ce6ca6fc967731 ts:1787381018 -->
+
+**Chart:** [openg2p-inji-certify 0.0.0-develop.13](https://gitlab.com/api/v4/projects/openg2p%2Fcharts/packages/helm/stable/charts/openg2p-inji-certify-0.0.0-develop.13.tgz)
+
+### Changes
+
+- [G2P-4929](https://openg2p.atlassian.net/browse/G2P-4929) Create the Certify schema from an init container instead of a post-install hook ([`60d98a8`](https://gitlab.com/openg2p/verifiable-credentials/-/commit/60d98a8d3ae6fe83e3fd1326a5ce6ca6fc967731))
 
 <a id="v-0-0-0-develop-12"></a>
 
