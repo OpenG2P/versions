@@ -6,6 +6,7 @@ _Published automatically._
 
 | Version | Date | Type |
 | --- | --- | --- |
+| [`0.0.0-develop.59`](#v-0-0-0-develop-59) | 2026-08-22 | develop |
 | [`0.0.0-develop.58`](#v-0-0-0-develop-58) | 2026-08-22 | develop |
 | [`0.0.0-develop.47`](#v-0-0-0-develop-47) | 2026-08-21 | develop |
 | [`1.1.0-rc.55`](#v-1-1-0-rc-55) | 2026-08-21 | release candidate |
@@ -84,6 +85,19 @@ _commit `03ffe82` · changes since 0.0.0-develop.40_
 - [G2P-5456](https://openg2p.atlassian.net/browse/G2P-5456): initialize master-data-ui project with Next.js setup ([`876a1f4`](https://gitlab.com/openg2p/master-data-service/-/commit/876a1f434b8ef207f39b826002b6dbcb47623baa))
 
 # Develop builds
+
+<a id="v-0-0-0-develop-59"></a>
+
+## master-data-service — develop 0.0.0-develop.59 (2026-08-22)
+
+_commit `4de586a` · changes since 0.0.0-develop.58_
+<!-- build:0.0.0-develop.59 revision:4de586a941563743442d88e0892d57b7da15a089 ts:1787403641 -->
+
+**Chart:** [openg2p-master-data 0.0.0-develop.59](https://gitlab.com/api/v4/projects/openg2p%2Fcharts/packages/helm/stable/charts/openg2p-master-data-0.0.0-develop.59.tgz)
+
+### Changes
+
+- Fix for clashing pod selector. ([`4de586a`](https://gitlab.com/openg2p/master-data-service/-/commit/4de586a941563743442d88e0892d57b7da15a089))
 
 <a id="v-0-0-0-develop-58"></a>
 
