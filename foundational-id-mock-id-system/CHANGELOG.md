@@ -6,12 +6,26 @@ _Published automatically._
 
 | Version | Date | Type |
 | --- | --- | --- |
+| [`0.0.0-develop.6`](#v-0-0-0-develop-6) | 2026-08-23 | develop |
 | [`0.0.0-develop.5`](#v-0-0-0-develop-5) | 2026-08-21 | develop |
 | [`0.0.0-develop.4`](#v-0-0-0-develop-4) | 2026-08-21 | develop |
 | [`0.0.0-develop.3`](#v-0-0-0-develop-3) | 2026-08-21 | develop |
 | [`0.0.0-develop.2`](#v-0-0-0-develop-2) | 2026-08-21 | develop |
 
 # Develop builds
+
+<a id="v-0-0-0-develop-6"></a>
+
+## foundational-id/mock-id-system — develop 0.0.0-develop.6 (2026-08-23)
+
+_commit `7420326` · changes since 0.0.0-develop.5_
+<!-- build:0.0.0-develop.6 revision:7420326d640e73551c9b5e3256f068bab960889b ts:1787447887 -->
+
+**Chart:** [mock-identity-system 0.0.0-develop.6](https://gitlab.com/api/v4/projects/openg2p%2Fcharts/packages/helm/stable/charts/mock-identity-system-0.0.0-develop.6.tgz)
+
+### Changes
+
+- [G2P-4929](https://openg2p.atlassian.net/browse/G2P-4929) Point the identity seed at the renamed master data secret ([`7420326`](https://gitlab.com/openg2p/foundational-id/mock-id-system/-/commit/7420326d640e73551c9b5e3256f068bab960889b))
 
 <a id="v-0-0-0-develop-5"></a>
 
