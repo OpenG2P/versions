@@ -6,6 +6,7 @@ _Published automatically._
 
 | Version | Date | Type |
 | --- | --- | --- |
+| [`0.0.0-develop.409`](#v-0-0-0-develop-409) | 2026-08-23 | develop |
 | [`0.0.0-develop.408`](#v-0-0-0-develop-408) | 2026-08-23 | develop |
 | [`0.0.0-develop.407`](#v-0-0-0-develop-407) | 2026-08-23 | develop |
 | [`0.0.0-develop.406`](#v-0-0-0-develop-406) | 2026-08-23 | develop |
@@ -35,7 +36,6 @@ _Published automatically._
 | [`0.0.0-develop.374`](#v-0-0-0-develop-374) | 2026-08-06 | develop |
 | [`0.0.0-develop.353`](#v-0-0-0-develop-353) | 2026-08-06 | develop |
 | [`0.0.0-develop.346`](#v-0-0-0-develop-346) | 2026-08-05 | develop |
-| [`0.0.0-develop.345`](#v-0-0-0-develop-345) | 2026-08-04 | develop |
 
 # Release candidates
 
@@ -196,6 +196,19 @@ _commit `6020cb0` · changes since 1.2.0-rc.391_
 - [G2P-5493](https://openg2p.atlassian.net/browse/G2P-5493) refactor change request handling and remove unused staff-portal-ui folder ([`34d861b`](https://gitlab.com/openg2p/registry/registry-platform/-/commit/34d861b53e08918c8b30a2ac5edf72ee1d0e2162))
 
 # Develop builds
+
+<a id="v-0-0-0-develop-409"></a>
+
+## registry/registry-platform — develop 0.0.0-develop.409 (2026-08-23)
+
+_commit `cbbec9c` · changes since 0.0.0-develop.408_
+<!-- build:0.0.0-develop.409 revision:cbbec9c34ab229b59bc0c7278e08f4cc39a49cce ts:1787466489 -->
+
+**Chart:** [openg2p-registry 0.0.0-develop.409](https://gitlab.com/api/v4/projects/openg2p%2Fcharts/packages/helm/stable/charts/openg2p-registry-0.0.0-develop.409.tgz)
+
+### Changes
+
+- [G2P-4929](https://openg2p.atlassian.net/browse/G2P-4929) Fail the credential-config job when Certify registration does not succeed ([`cbbec9c`](https://gitlab.com/openg2p/registry/registry-platform/-/commit/cbbec9c34ab229b59bc0c7278e08f4cc39a49cce))
 
 <a id="v-0-0-0-develop-408"></a>
 
@@ -514,24 +527,6 @@ _commit `ab38f08` · changes since 0.0.0-develop.345_
 ### Changes since 0.0.0-develop.345
 
 - [G2P-4804](https://openg2p.atlassian.net/browse/G2P-4804) DB-seed: move the farmer-shaped sample loaders out of the platform image — load_sample_data.py/upload_images.py write farmer-extension tables and read farmer seed JSON, so they belong to the variant; the entrypoint keeps the hook and errors clearly without one ([`ab38f08`](https://gitlab.com/openg2p/registry/registry-platform/-/commit/ab38f087fff9b48a928843a029b015822a7df606))
-
-<a id="v-0-0-0-develop-345"></a>
-
-## registry/registry-platform — develop 0.0.0-develop.345 (2026-08-04)
-
-_commit `2759d58` · changes since 0.0.0-develop.343_
-<!-- build:0.0.0-develop.345 revision:2759d587c57b8325a82873cebb8fa6c65b1aecda ts:1785842393 -->
-
-### Summary
-
-- Testing enhancements: smoke suite now runs by default, and Sanity questions expanded from 4 to 11.
-- Migration improvements: chart-inherit-questions migrated from GitHub caller to maintain Rancher form in wrapper charts.
-- Fixture updates: removed farmer naming from platform's fixtures for clarity.
-
-### Changes since 0.0.0-develop.343
-
-- [G2P-4804](https://openg2p.atlassian.net/browse/G2P-4804) Sanity: run the smoke suite by default (questions.yaml already said so) and drop the farmer naming from the platform's fixtures; expand the Sanity questions from 4 to 11 ([`2759d58`](https://gitlab.com/openg2p/registry/registry-platform/-/commit/2759d587c57b8325a82873cebb8fa6c65b1aecda))
-- [G2P-5335](https://openg2p.atlassian.net/browse/G2P-5335) Migrate: carry chart-inherit-questions across from the GitHub caller, so wrapper charts keep their Rancher form ([`95ca561`](https://gitlab.com/openg2p/registry/registry-platform/-/commit/95ca561599df62d3b8c754d109a29da03d5a8e71))
 
 ---
 
