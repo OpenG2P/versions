@@ -22,6 +22,7 @@ Registry** (linked at the top of each repository's page below). See the
 - **[g2p-insights](./g2p-insights/CHANGELOG)** · [repository ↗](https://gitlab.com/openg2p/g2p-insights)
 - **[iam](./iam/CHANGELOG)** · [repository ↗](https://gitlab.com/openg2p/iam)
 - **[id-generator](./id-generator/CHANGELOG)** · [repository ↗](https://gitlab.com/openg2p/id-generator)
+- **[keycloak/keycloak-init](./keycloak-keycloak-init/CHANGELOG)** · [repository ↗](https://gitlab.com/openg2p/keycloak/keycloak-init)
 - **[master-data-service](./master-data-service/CHANGELOG)** · [repository ↗](https://gitlab.com/openg2p/master-data-service)
 - **[partner-management](./partner-management/CHANGELOG)**
 - **[pbms/pbms](./pbms-pbms/CHANGELOG)** · [repository ↗](https://gitlab.com/openg2p/pbms/pbms)
