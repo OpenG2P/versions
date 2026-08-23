@@ -6,6 +6,7 @@ _Published automatically._
 
 | Version | Date | Type |
 | --- | --- | --- |
+| [`0.0.0-develop.92`](#v-0-0-0-develop-92) | 2026-08-23 | develop |
 | [`0.0.0-develop.91`](#v-0-0-0-develop-91) | 2026-08-23 | develop |
 | [`1.4.0-rc.90`](#v-1-4-0-rc-90) | 2026-08-21 | release candidate |
 | [`0.0.0-develop.90`](#v-0-0-0-develop-90) | 2026-08-22 | develop |
@@ -45,6 +46,19 @@ _commit `5b238d1` · changes since 0.0.0-develop.88_
 _No new commits since 0.0.0-develop.88._
 
 # Develop builds
+
+<a id="v-0-0-0-develop-92"></a>
+
+## iam — develop 0.0.0-develop.92 (2026-08-23)
+
+_commit `29983b7` · changes since 0.0.0-develop.91_
+<!-- build:0.0.0-develop.92 revision:29983b7ccd0e6a9d4ab68ca61e642e13efc129ad ts:1787461007 -->
+
+**Chart:** [openg2p-iam-service 0.0.0-develop.92](https://gitlab.com/api/v4/projects/openg2p%2Fcharts/packages/helm/stable/charts/openg2p-iam-service-0.0.0-develop.92.tgz)
+
+### Changes
+
+- [G2P-4929](https://openg2p.atlassian.net/browse/G2P-4929) Apply black formatting at the repo's 110-column line length ([`29983b7`](https://gitlab.com/openg2p/iam/-/commit/29983b7ccd0e6a9d4ab68ca61e642e13efc129ad))
 
 <a id="v-0-0-0-develop-91"></a>
 
