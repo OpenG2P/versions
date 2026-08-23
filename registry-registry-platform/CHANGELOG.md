@@ -6,6 +6,7 @@ _Published automatically._
 
 | Version | Date | Type |
 | --- | --- | --- |
+| [`0.0.0-develop.407`](#v-0-0-0-develop-407) | 2026-08-23 | develop |
 | [`0.0.0-develop.406`](#v-0-0-0-develop-406) | 2026-08-23 | develop |
 | [`0.0.0-develop.404`](#v-0-0-0-develop-404) | 2026-08-22 | develop |
 | [`0.0.0-develop.403`](#v-0-0-0-develop-403) | 2026-08-22 | develop |
@@ -195,6 +196,19 @@ _commit `6020cb0` · changes since 1.2.0-rc.391_
 - [G2P-5493](https://openg2p.atlassian.net/browse/G2P-5493) refactor change request handling and remove unused staff-portal-ui folder ([`34d861b`](https://gitlab.com/openg2p/registry/registry-platform/-/commit/34d861b53e08918c8b30a2ac5edf72ee1d0e2162))
 
 # Develop builds
+
+<a id="v-0-0-0-develop-407"></a>
+
+## registry/registry-platform — develop 0.0.0-develop.407 (2026-08-23)
+
+_commit `32e978e` · changes since 0.0.0-develop.406_
+<!-- build:0.0.0-develop.407 revision:32e978e0713fa6d9b58229664ecb78b68ed1ad4c ts:1787449553 -->
+
+**Chart:** [openg2p-registry 0.0.0-develop.407](https://gitlab.com/api/v4/projects/openg2p%2Fcharts/packages/helm/stable/charts/openg2p-registry-0.0.0-develop.407.tgz)
+
+### Changes
+
+- [G2P-4929](https://openg2p.atlassian.net/browse/G2P-4929) Feed the provider-row SQL through stdin so psql interpolates the key ([`32e978e`](https://gitlab.com/openg2p/registry/registry-platform/-/commit/32e978e0713fa6d9b58229664ecb78b68ed1ad4c))
 
 <a id="v-0-0-0-develop-406"></a>
 
