@@ -6,6 +6,7 @@ _Published automatically._
 
 | Version | Date | Type |
 | --- | --- | --- |
+| [`0.0.0-develop.187`](#v-0-0-0-develop-187) | 2026-08-23 | develop |
 | [`0.0.0-develop.186`](#v-0-0-0-develop-186) | 2026-08-23 | develop |
 | [`0.0.0-develop.185`](#v-0-0-0-develop-185) | 2026-08-22 | develop |
 | [`0.0.0-develop.183`](#v-0-0-0-develop-183) | 2026-08-22 | develop |
@@ -31,7 +32,6 @@ _Published automatically._
 | [`0.0.0-develop.151`](#v-0-0-0-develop-151) | 2026-08-06 | develop |
 | [`0.0.0-develop.150`](#v-0-0-0-develop-150) | 2026-08-06 | develop |
 | [`0.0.0-develop.148`](#v-0-0-0-develop-148) | 2026-08-06 | develop |
-| [`0.0.0-develop.146`](#v-0-0-0-develop-146) | 2026-08-06 | develop |
 
 # Releases
 
@@ -176,6 +176,19 @@ _commit `cda0496` · changes since 1.2.0_
 - [G2P-5335](https://openg2p.atlassian.net/browse/G2P-5335) Switch CI to GitLab (.gitlab-ci.yml); drop GitHub Actions build/publish ([`1062700`](https://gitlab.com/openg2p/registry/farmer-registry/-/commit/1062700737b8129d66fcc363c7d3809863d0cefb))
 
 # Develop builds
+
+<a id="v-0-0-0-develop-187"></a>
+
+## registry/farmer-registry — develop 0.0.0-develop.187 (2026-08-23)
+
+_commit `dd71272` · changes since 0.0.0-develop.186_
+<!-- build:0.0.0-develop.187 revision:dd7127209ae96e8186d1f83ea05f46903394d5a5 ts:1787462709 -->
+
+**Chart:** [openg2p-farmer-registry 0.0.0-develop.187](https://gitlab.com/api/v4/projects/openg2p%2Fcharts/packages/helm/stable/charts/openg2p-farmer-registry-0.0.0-develop.187.tgz)
+
+### Changes
+
+- Bumped up RP version to 0.0.0-develop.408. ([`dd71272`](https://gitlab.com/openg2p/registry/farmer-registry/-/commit/dd7127209ae96e8186d1f83ea05f46903394d5a5))
 
 <a id="v-0-0-0-develop-186"></a>
 
@@ -481,17 +494,6 @@ _commit `2e3a06a` · changes since 0.0.0-develop.146_
 
 - [G2P-4804](https://openg2p.atlassian.net/browse/G2P-4804) Skip the dashboard import when Superset is absent instead of failing the install. Superset is a separate release and analytics is optional, but the gate exited 1 after waiting, so a registry installed without a reporting stack failed outright. The gate is checked in the init container AND the main one, because an init container exiting 0 does not stop the pod; set analytics.dashboards.superset.required=true where a silent skip would be worse. ([`2e3a06a`](https://gitlab.com/openg2p/registry/farmer-registry/-/commit/2e3a06a243dc3a44d8485622deae1b9f4d07aa25))
 - [G2P-4804](https://openg2p.atlassian.net/browse/G2P-4804) Add the maps content and publish it as an image. Insights draws maps from a registry-specific image; without one, FR installs fell back to the reference content, which queries nsr_rpt_* and poverty measures FR does not have. Queries plot land tenure, input use and cooperative membership from fr_rpt_farmer/fr_rpt_crop, and are validated against a live FR database. ([`6aac6b7`](https://gitlab.com/openg2p/registry/farmer-registry/-/commit/6aac6b7b128d3ed896c70cae283af39cd25a49ac))
-
-<a id="v-0-0-0-develop-146"></a>
-
-## registry/farmer-registry — develop 0.0.0-develop.146 (2026-08-06)
-
-_commit `7af358a` · changes since 0.0.0-develop.145_
-<!-- build:0.0.0-develop.146 revision:7af358afa6577cce069d120c54b7cc2f892e94fe ts:1785981849 -->
-
-### Changes since 0.0.0-develop.145
-
-- Fixes in data seeding. ([`7af358a`](https://gitlab.com/openg2p/registry/farmer-registry/-/commit/7af358afa6577cce069d120c54b7cc2f892e94fe))
 
 ---
 
