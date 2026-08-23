@@ -6,6 +6,7 @@ _Published automatically._
 
 | Version | Date | Type |
 | --- | --- | --- |
+| [`0.0.0-develop.186`](#v-0-0-0-develop-186) | 2026-08-23 | develop |
 | [`0.0.0-develop.185`](#v-0-0-0-develop-185) | 2026-08-22 | develop |
 | [`0.0.0-develop.183`](#v-0-0-0-develop-183) | 2026-08-22 | develop |
 | [`0.0.0-develop.182`](#v-0-0-0-develop-182) | 2026-08-22 | develop |
@@ -31,7 +32,6 @@ _Published automatically._
 | [`0.0.0-develop.150`](#v-0-0-0-develop-150) | 2026-08-06 | develop |
 | [`0.0.0-develop.148`](#v-0-0-0-develop-148) | 2026-08-06 | develop |
 | [`0.0.0-develop.146`](#v-0-0-0-develop-146) | 2026-08-06 | develop |
-| [`0.0.0-develop.145`](#v-0-0-0-develop-145) | 2026-08-06 | develop |
 
 # Releases
 
@@ -176,6 +176,19 @@ _commit `cda0496` · changes since 1.2.0_
 - [G2P-5335](https://openg2p.atlassian.net/browse/G2P-5335) Switch CI to GitLab (.gitlab-ci.yml); drop GitHub Actions build/publish ([`1062700`](https://gitlab.com/openg2p/registry/farmer-registry/-/commit/1062700737b8129d66fcc363c7d3809863d0cefb))
 
 # Develop builds
+
+<a id="v-0-0-0-develop-186"></a>
+
+## registry/farmer-registry — develop 0.0.0-develop.186 (2026-08-23)
+
+_commit `8022dfc` · changes since 0.0.0-develop.185_
+<!-- build:0.0.0-develop.186 revision:8022dfcbcb92bd39b81682a6024997b3274004a1 ts:1787447477 -->
+
+**Chart:** [openg2p-farmer-registry 0.0.0-develop.186](https://gitlab.com/api/v4/projects/openg2p%2Fcharts/packages/helm/stable/charts/openg2p-farmer-registry-0.0.0-develop.186.tgz)
+
+### Changes
+
+- Bumped up RP version to 0.0.0-develop.406 ([`8022dfc`](https://gitlab.com/openg2p/registry/farmer-registry/-/commit/8022dfcbcb92bd39b81682a6024997b3274004a1))
 
 <a id="v-0-0-0-develop-185"></a>
 
@@ -479,17 +492,6 @@ _commit `7af358a` · changes since 0.0.0-develop.145_
 ### Changes since 0.0.0-develop.145
 
 - Fixes in data seeding. ([`7af358a`](https://gitlab.com/openg2p/registry/farmer-registry/-/commit/7af358afa6577cce069d120c54b7cc2f892e94fe))
-
-<a id="v-0-0-0-develop-145"></a>
-
-## registry/farmer-registry — develop 0.0.0-develop.145 (2026-08-06)
-
-_commit `f19c12d` · changes since 0.0.0-develop.144_
-<!-- build:0.0.0-develop.145 revision:f19c12dd57340798ff7de921c17ebb179eb4fc3a ts:1785977474 -->
-
-### Changes since 0.0.0-develop.144
-
-- Bumped up RP version to 0.0.0-develop.346 ([`f19c12d`](https://gitlab.com/openg2p/registry/farmer-registry/-/commit/f19c12dd57340798ff7de921c17ebb179eb4fc3a))
 
 ---
 
