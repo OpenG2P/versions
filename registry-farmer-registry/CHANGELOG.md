@@ -6,6 +6,7 @@ _Published automatically._
 
 | Version | Date | Type |
 | --- | --- | --- |
+| [`0.0.0-develop.189`](#v-0-0-0-develop-189) | 2026-08-23 | develop |
 | [`0.0.0-develop.187`](#v-0-0-0-develop-187) | 2026-08-23 | develop |
 | [`0.0.0-develop.186`](#v-0-0-0-develop-186) | 2026-08-23 | develop |
 | [`0.0.0-develop.185`](#v-0-0-0-develop-185) | 2026-08-22 | develop |
@@ -31,7 +32,6 @@ _Published automatically._
 | [`1.3.0-rc.151`](#v-1-3-0-rc-151) | 2026-08-06 | release candidate |
 | [`0.0.0-develop.151`](#v-0-0-0-develop-151) | 2026-08-06 | develop |
 | [`0.0.0-develop.150`](#v-0-0-0-develop-150) | 2026-08-06 | develop |
-| [`0.0.0-develop.148`](#v-0-0-0-develop-148) | 2026-08-06 | develop |
 
 # Releases
 
@@ -176,6 +176,25 @@ _commit `cda0496` · changes since 1.2.0_
 - [G2P-5335](https://openg2p.atlassian.net/browse/G2P-5335) Switch CI to GitLab (.gitlab-ci.yml); drop GitHub Actions build/publish ([`1062700`](https://gitlab.com/openg2p/registry/farmer-registry/-/commit/1062700737b8129d66fcc363c7d3809863d0cefb))
 
 # Develop builds
+
+<a id="v-0-0-0-develop-189"></a>
+
+## registry/farmer-registry — develop 0.0.0-develop.189 (2026-08-23)
+
+_commit `605343d` · changes since 0.0.0-develop.187_
+<!-- build:0.0.0-develop.189 revision:605343dae8893675263558be8775978424027260 ts:1787473237 -->
+
+**Chart:** [openg2p-farmer-registry 0.0.0-develop.189](https://gitlab.com/api/v4/projects/openg2p%2Fcharts/packages/helm/stable/charts/openg2p-farmer-registry-0.0.0-develop.189.tgz)
+
+### Summary
+
+- **Major:** Updated RP version to 0.0.0-develop.409, reflecting significant changes in the project.
+- New feature: Developed a farmer agent-portal-api image that integrates with the farmer register model, enhancing the system's capabilities.
+
+### Changes
+
+- Bumped up RP version to 0.0.0-develop.409 ([`605343d`](https://gitlab.com/openg2p/registry/farmer-registry/-/commit/605343dae8893675263558be8775978424027260))
+- [G2P-4929](https://openg2p.atlassian.net/browse/G2P-4929) Build a farmer agent-portal-api image so it maps the farmer register model. Bumped up RP version. ([`e0dae0b`](https://gitlab.com/openg2p/registry/farmer-registry/-/commit/e0dae0bb54567b257263414ea49501c441ab2e4b))
 
 <a id="v-0-0-0-develop-187"></a>
 
@@ -477,23 +496,6 @@ _commit `43afe27` · changes since 0.0.0-develop.148_
 
 - [G2P-5378](https://openg2p.atlassian.net/browse/G2P-5378) Fix AWE seed aborting on shared-DB policy_key clash: untargeted ON CONFLICT DO NOTHING (uq_policy_key_version was unguarded by the id-targeted clause) plus FK-orphan filters on stages/rules, so a policy another registry already owns no longer takes the whole batch — and the farmer policy — down with it ([`43afe27`](https://gitlab.com/openg2p/registry/farmer-registry/-/commit/43afe27ad81c2fedd13e22c35d1d1029c78882ae))
 - [G2P-4804](https://openg2p.atlassian.net/browse/G2P-4804) Fall back to this registry's own Superset connection name when the release is gone. The name was only ever read from `helm get values`, so uninstalling from Rancher — or running helm uninstall first — skipped the dashboard cleanup with a quiet warning and left the dashboards, charts, datasets and connection in the shared Superset, where the next install adopted them by UUID. ([`a445d51`](https://gitlab.com/openg2p/registry/farmer-registry/-/commit/a445d51fc54913d9fd0127e138f3213d748b4410))
-
-<a id="v-0-0-0-develop-148"></a>
-
-## registry/farmer-registry — develop 0.0.0-develop.148 (2026-08-06)
-
-_commit `2e3a06a` · changes since 0.0.0-develop.146_
-<!-- build:0.0.0-develop.148 revision:2e3a06a243dc3a44d8485622deae1b9f4d07aa25 ts:1785996415 -->
-
-### Summary
-
-- Installation improvements: Skip dashboard import when Superset is absent to prevent installation failures; set `analytics.dashboards.superset.required=true` for better handling of optional analytics components.
-- New feature: Added maps content published as a registry-specific image to enhance Insights, allowing for accurate queries related to land tenure, input use, and cooperative membership validated against the live FR database.
-
-### Changes since 0.0.0-develop.146
-
-- [G2P-4804](https://openg2p.atlassian.net/browse/G2P-4804) Skip the dashboard import when Superset is absent instead of failing the install. Superset is a separate release and analytics is optional, but the gate exited 1 after waiting, so a registry installed without a reporting stack failed outright. The gate is checked in the init container AND the main one, because an init container exiting 0 does not stop the pod; set analytics.dashboards.superset.required=true where a silent skip would be worse. ([`2e3a06a`](https://gitlab.com/openg2p/registry/farmer-registry/-/commit/2e3a06a243dc3a44d8485622deae1b9f4d07aa25))
-- [G2P-4804](https://openg2p.atlassian.net/browse/G2P-4804) Add the maps content and publish it as an image. Insights draws maps from a registry-specific image; without one, FR installs fell back to the reference content, which queries nsr_rpt_* and poverty measures FR does not have. Queries plot land tenure, input use and cooperative membership from fr_rpt_farmer/fr_rpt_crop, and are validated against a live FR database. ([`6aac6b7`](https://gitlab.com/openg2p/registry/farmer-registry/-/commit/6aac6b7b128d3ed896c70cae283af39cd25a49ac))
 
 ---
 
