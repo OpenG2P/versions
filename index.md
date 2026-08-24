@@ -29,6 +29,7 @@ Registry** (linked at the top of each repository's page below). See the
 - **[platform-services/audit-manager](./platform-services-audit-manager/CHANGELOG)** · [repository ↗](https://gitlab.com/openg2p/platform-services/audit-manager)
 - **[platform-services/awe](./platform-services-awe/CHANGELOG)** · [repository ↗](https://gitlab.com/openg2p/platform-services/awe)
 - **[platform-services/iam](./platform-services-iam/CHANGELOG)** · [repository ↗](https://gitlab.com/openg2p/platform-services/iam)
+- **[platform-services/master-data-service](./platform-services-master-data-service/CHANGELOG)** · [repository ↗](https://gitlab.com/openg2p/platform-services/master-data-service)
 - **[registry/disability-registry](./registry-disability-registry/CHANGELOG)** · [repository ↗](https://gitlab.com/openg2p/registry/disability-registry)
 - **[registry/farmer-registry](./registry-farmer-registry/CHANGELOG)** · [repository ↗](https://gitlab.com/openg2p/registry/farmer-registry)
 - **[registry/national-social-registry](./registry-national-social-registry/CHANGELOG)** · [repository ↗](https://gitlab.com/openg2p/registry/national-social-registry)
