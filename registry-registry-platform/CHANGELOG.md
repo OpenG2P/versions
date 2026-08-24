@@ -6,6 +6,7 @@ _Published automatically._
 
 | Version | Date | Type |
 | --- | --- | --- |
+| [`0.0.0-develop.414`](#v-0-0-0-develop-414) | 2026-08-24 | develop |
 | [`0.0.0-develop.411`](#v-0-0-0-develop-411) | 2026-08-24 | develop |
 | [`0.0.0-develop.409`](#v-0-0-0-develop-409) | 2026-08-23 | develop |
 | [`0.0.0-develop.408`](#v-0-0-0-develop-408) | 2026-08-23 | develop |
@@ -35,7 +36,6 @@ _Published automatically._
 | [`0.0.0-develop.379`](#v-0-0-0-develop-379) | 2026-08-07 | develop |
 | [`0.0.0-develop.378`](#v-0-0-0-develop-378) | 2026-08-06 | develop |
 | [`0.0.0-develop.374`](#v-0-0-0-develop-374) | 2026-08-06 | develop |
-| [`0.0.0-develop.353`](#v-0-0-0-develop-353) | 2026-08-06 | develop |
 
 # Release candidates
 
@@ -196,6 +196,26 @@ _commit `6020cb0` · changes since 1.2.0-rc.391_
 - [G2P-5493](https://openg2p.atlassian.net/browse/G2P-5493) refactor change request handling and remove unused staff-portal-ui folder ([`34d861b`](https://gitlab.com/openg2p/registry/registry-platform/-/commit/34d861b53e08918c8b30a2ac5edf72ee1d0e2162))
 
 # Develop builds
+
+<a id="v-0-0-0-develop-414"></a>
+
+## registry/registry-platform — develop 0.0.0-develop.414 (2026-08-24)
+
+_commit `746ac03` · changes since 0.0.0-develop.411_
+<!-- build:0.0.0-develop.414 revision:746ac031c147116295edac7af8c7c950f425c565 ts:1787546954 -->
+
+**Chart:** [openg2p-registry 0.0.0-develop.414](https://gitlab.com/api/v4/projects/openg2p%2Fcharts/packages/helm/stable/charts/openg2p-registry-0.0.0-develop.414.tgz)
+
+### Summary
+
+- User interface enhancement: introduced a landing page for the agent portal's tasks and aligned agent permissions with the staff portal's approach.
+- Dependency update: bumped Keycloak-init version to improve authentication management.
+
+### Changes
+
+- Keycloak-init version bumped up. ([`746ac03`](https://gitlab.com/openg2p/registry/registry-platform/-/commit/746ac031c147116295edac7af8c7c950f425c565))
+- [G2P-4929](https://openg2p.atlassian.net/browse/G2P-4929) Put the agent portal's tasks behind a landing page ([`0137024`](https://gitlab.com/openg2p/registry/registry-platform/-/commit/01370249f8100c19e8be997cca797c0194e69362))
+- [G2P-4929](https://openg2p.atlassian.net/browse/G2P-4929) Resolve agent permissions the way the staff portal does ([`0db58a4`](https://gitlab.com/openg2p/registry/registry-platform/-/commit/0db58a45b91d6fe298f12e56c6116109ed3197e1))
 
 <a id="v-0-0-0-develop-411"></a>
 
@@ -512,29 +532,6 @@ _commit `bf59097` · changes since 0.0.0-develop.353_
 - [G2P-5429](https://openg2p.atlassian.net/browse/G2P-5429) feat(ParentLookupWidget): add new parent lookup widget and update related components ([`fd4681f`](https://gitlab.com/openg2p/registry/registry-platform/-/commit/fd4681fc8e706b3270c49cd2420dadc8c33898ec))
 - [G2P-5408](https://openg2p.atlassian.net/browse/G2P-5408) Fix SelectWidget to preserve boolean values for select options ([`fa7b925`](https://gitlab.com/openg2p/registry/registry-platform/-/commit/fa7b9254baf81aa0fc0a8f71e04a0bbc3318a437))
 - G2P-[G2P-5389](https://openg2p.atlassian.net/browse/G2P-5389) improve error handling ([`40c729f`](https://gitlab.com/openg2p/registry/registry-platform/-/commit/40c729feb6b8f2b5fe697527fd5dd1ef378ece61))
-
-<a id="v-0-0-0-develop-353"></a>
-
-## registry/registry-platform — develop 0.0.0-develop.353 (2026-08-06)
-
-_commit `b203acd` · changes since 0.0.0-develop.346_
-<!-- build:0.0.0-develop.353 revision:b203acd4ceeb48f52b6f1ffd56e2153d52591c99 ts:1785996427 -->
-
-### Summary
-
-- **Major:** Removal of the data policies feature and all associated components across the API and UI, resulting in significant codebase reduction (3572 deletions).
-- Refactoring: Cleaned up service methods by removing unused request parameters and debug print statements, and updated hierarchy path building.
-- Fixes: Corrected import paths for data policy request helpers to ensure proper functionality post-removal.
-- General cleanup: A total of 57 files were modified, with a focus on streamlining the codebase and enhancing maintainability.
-
-### Changes since 0.0.0-develop.346
-
-- Remove data policies feature and related components ([`71309a2`](https://gitlab.com/openg2p/registry/registry-platform/-/commit/71309a23899cdf56be97ddf7bcebda6efc0b43af))
-- Refactor: remove unused request parameters from service methods ([`daa4521`](https://gitlab.com/openg2p/registry/registry-platform/-/commit/daa4521aa15f9374bd16070c351a847bf7ee6825))
-- Refactor: update hierarchy path building and remove debug print statements ([`36584d1`](https://gitlab.com/openg2p/registry/registry-platform/-/commit/36584d1b5f124b62db13cb084efa540b98ba3dd6))
-- Fix: update import paths for data policy request helper ([`b087344`](https://gitlab.com/openg2p/registry/registry-platform/-/commit/b087344a1b2225a11a74427b2e83cad4ea5dbbaa))
-- Fix: update import paths for data policy request helper ([`4c7c7c9`](https://gitlab.com/openg2p/registry/registry-platform/-/commit/4c7c7c9db4d10e1556369f9412106ff623e2bd9e))
-- Refactor data policy handling across services ([`c61a9db`](https://gitlab.com/openg2p/registry/registry-platform/-/commit/c61a9dbdba1ea0726d458cef2f7fc2ae9ab6e4bb))
 
 ---
 
