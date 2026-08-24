@@ -6,6 +6,7 @@ _Published automatically._
 
 | Version | Date | Type |
 | --- | --- | --- |
+| [`0.0.0-develop.217`](#v-0-0-0-develop-217) | 2026-08-24 | develop |
 | [`0.0.0-develop.215`](#v-0-0-0-develop-215) | 2026-08-24 | develop |
 | [`2.2.2-rc.214`](#v-2-2-2-rc-214) | 2026-08-24 | release candidate |
 | [`0.0.0-develop.210`](#v-0-0-0-develop-210) | 2026-08-22 | develop |
@@ -66,6 +67,17 @@ _commit `623204a` · changes since 0.0.0-develop.210_
 - [G2P-5335](https://openg2p.atlassian.net/browse/G2P-5335) Switch CI to GitLab (.gitlab-ci.yml); drop GitHub Actions build/publish ([`0988f9b`](https://gitlab.com/openg2p/commons/-/commit/0988f9b3c5af0b70f362e672975d99e25646b27e))
 
 # Develop builds
+
+<a id="v-0-0-0-develop-217"></a>
+
+## commons — develop 0.0.0-develop.217 (2026-08-24)
+
+_commit `360ccb7` · changes since 0.0.0-develop.215_
+<!-- build:0.0.0-develop.217 revision:360ccb7533c798dc9262cd50d4c9d9c99c98335d ts:1787556578 -->
+
+### Changes
+
+- Move image and env config to IAM Helm chart ([`ba9633d`](https://gitlab.com/openg2p/commons/-/commit/ba9633d03e2ffe2e5db10125e4f0dbeee99c5570))
 
 <a id="v-0-0-0-develop-215"></a>
 
