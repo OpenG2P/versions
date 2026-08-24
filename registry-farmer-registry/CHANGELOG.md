@@ -6,6 +6,7 @@ _Published automatically._
 
 | Version | Date | Type |
 | --- | --- | --- |
+| [`0.0.0-develop.190`](#v-0-0-0-develop-190) | 2026-08-24 | develop |
 | [`0.0.0-develop.189`](#v-0-0-0-develop-189) | 2026-08-23 | develop |
 | [`0.0.0-develop.187`](#v-0-0-0-develop-187) | 2026-08-23 | develop |
 | [`0.0.0-develop.186`](#v-0-0-0-develop-186) | 2026-08-23 | develop |
@@ -31,7 +32,6 @@ _Published automatically._
 | [`1.3.0`](#v-1-3-0) | 2026-08-06 | release |
 | [`1.3.0-rc.151`](#v-1-3-0-rc-151) | 2026-08-06 | release candidate |
 | [`0.0.0-develop.151`](#v-0-0-0-develop-151) | 2026-08-06 | develop |
-| [`0.0.0-develop.150`](#v-0-0-0-develop-150) | 2026-08-06 | develop |
 
 # Releases
 
@@ -176,6 +176,19 @@ _commit `cda0496` · changes since 1.2.0_
 - [G2P-5335](https://openg2p.atlassian.net/browse/G2P-5335) Switch CI to GitLab (.gitlab-ci.yml); drop GitHub Actions build/publish ([`1062700`](https://gitlab.com/openg2p/registry/farmer-registry/-/commit/1062700737b8129d66fcc363c7d3809863d0cefb))
 
 # Develop builds
+
+<a id="v-0-0-0-develop-190"></a>
+
+## registry/farmer-registry — develop 0.0.0-develop.190 (2026-08-24)
+
+_commit `2b0ed75` · changes since 0.0.0-develop.189_
+<!-- build:0.0.0-develop.190 revision:2b0ed755c6d3457ca85679cba7fc74196570e857 ts:1787540100 -->
+
+**Chart:** [openg2p-farmer-registry 0.0.0-develop.190](https://gitlab.com/api/v4/projects/openg2p%2Fcharts/packages/helm/stable/charts/openg2p-farmer-registry-0.0.0-develop.190.tgz)
+
+### Changes
+
+- Bumped up RP version to 0.0.0-develop.411 ([`2b0ed75`](https://gitlab.com/openg2p/registry/farmer-registry/-/commit/2b0ed755c6d3457ca85679cba7fc74196570e857))
 
 <a id="v-0-0-0-develop-189"></a>
 
@@ -478,24 +491,6 @@ _commit `d39deba` · changes since 0.0.0-develop.150_
 ### Changes since 0.0.0-develop.150
 
 - [G2P-5378](https://openg2p.atlassian.net/browse/G2P-5378) Fix bulk-sample id collisions: sub-table functional ids were uuid[:8], which collides by the birthday bound (100k farmers died at ~39k crops on ix_g2p_register_crops_functional_record_id) — use sequential counters like the farmer ids already do ([`d39deba`](https://gitlab.com/openg2p/registry/farmer-registry/-/commit/d39deba138813845cc34ea701b885ed763833836))
-
-<a id="v-0-0-0-develop-150"></a>
-
-## registry/farmer-registry — develop 0.0.0-develop.150 (2026-08-06)
-
-_commit `43afe27` · changes since 0.0.0-develop.148_
-<!-- build:0.0.0-develop.150 revision:43afe27ad81c2fedd13e22c35d1d1029c78882ae ts:1786005949 -->
-
-### Summary
-
-- **Major:** Database migration updates: modified approval policy, stage, and rule SQL files to enhance data integrity and prevent policy key clashes during shared database operations.
-- Policy management improvement: implemented untargeted ON CONFLICT DO NOTHING for policy key version handling, preventing batch failures due to existing policies in other registries.
-- Registry connection handling: added fallback mechanism for Superset connection name to ensure proper cleanup and avoid orphaned resources after uninstallation.
-
-### Changes since 0.0.0-develop.148
-
-- [G2P-5378](https://openg2p.atlassian.net/browse/G2P-5378) Fix AWE seed aborting on shared-DB policy_key clash: untargeted ON CONFLICT DO NOTHING (uq_policy_key_version was unguarded by the id-targeted clause) plus FK-orphan filters on stages/rules, so a policy another registry already owns no longer takes the whole batch — and the farmer policy — down with it ([`43afe27`](https://gitlab.com/openg2p/registry/farmer-registry/-/commit/43afe27ad81c2fedd13e22c35d1d1029c78882ae))
-- [G2P-4804](https://openg2p.atlassian.net/browse/G2P-4804) Fall back to this registry's own Superset connection name when the release is gone. The name was only ever read from `helm get values`, so uninstalling from Rancher — or running helm uninstall first — skipped the dashboard cleanup with a quiet warning and left the dashboards, charts, datasets and connection in the shared Superset, where the next install adopted them by UUID. ([`a445d51`](https://gitlab.com/openg2p/registry/farmer-registry/-/commit/a445d51fc54913d9fd0127e138f3213d748b4410))
 
 ---
 
