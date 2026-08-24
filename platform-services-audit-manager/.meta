@@ -1,0 +1,4 @@
+name=platform-services/audit-manager
+kind=service
+repo=https://gitlab.com/openg2p/platform-services/audit-manager
+images=https://gitlab.com/openg2p/platform-services/audit-manager/container_registry
