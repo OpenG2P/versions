@@ -6,6 +6,7 @@ _Published automatically._
 
 | Version | Date | Type |
 | --- | --- | --- |
+| [`0.0.0-develop.95`](#v-0-0-0-develop-95) | 2026-08-24 | develop |
 | [`0.0.0-develop.93`](#v-0-0-0-develop-93) | 2026-08-23 | develop |
 | [`0.0.0-develop.92`](#v-0-0-0-develop-92) | 2026-08-23 | develop |
 | [`0.0.0-develop.91`](#v-0-0-0-develop-91) | 2026-08-23 | develop |
@@ -47,6 +48,25 @@ _commit `5b238d1` · changes since 0.0.0-develop.88_
 _No new commits since 0.0.0-develop.88._
 
 # Develop builds
+
+<a id="v-0-0-0-develop-95"></a>
+
+## iam — develop 0.0.0-develop.95 (2026-08-24)
+
+_commit `4c9d599` · changes since 0.0.0-develop.93_
+<!-- build:0.0.0-develop.95 revision:4c9d599acd40e81a8620243632ea80a86a3b0bd4 ts:1787539021 -->
+
+**Chart:** [openg2p-iam-service 0.0.0-develop.95](https://gitlab.com/api/v4/projects/openg2p%2Fcharts/packages/helm/stable/charts/openg2p-iam-service-0.0.0-develop.95.tgz)
+
+### Summary
+
+- API enhancements: aligned the authentication surface of the agent portal with the staff portal, improving consistency across platforms.
+- CI/build improvements: restructured the pre-commit process to run as a single looping job, eliminating the need for a runner-local cache.
+
+### Changes
+
+- [G2P-5348](https://openg2p.atlassian.net/browse/G2P-5348) Run pre-commit as a single looping job without a runner-local cache ([`4c9d599`](https://gitlab.com/openg2p/iam/-/commit/4c9d599acd40e81a8620243632ea80a86a3b0bd4))
+- [G2P-4929](https://openg2p.atlassian.net/browse/G2P-4929) Match the staff portal's auth surface in the agent portal API ([`31250d7`](https://gitlab.com/openg2p/iam/-/commit/31250d7f4207e9d946c1986fa0ea3311d8dbfcce))
 
 <a id="v-0-0-0-develop-93"></a>
 
