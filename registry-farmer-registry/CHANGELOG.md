@@ -6,6 +6,7 @@ _Published automatically._
 
 | Version | Date | Type |
 | --- | --- | --- |
+| [`0.0.0-develop.191`](#v-0-0-0-develop-191) | 2026-08-24 | develop |
 | [`0.0.0-develop.190`](#v-0-0-0-develop-190) | 2026-08-24 | develop |
 | [`0.0.0-develop.189`](#v-0-0-0-develop-189) | 2026-08-23 | develop |
 | [`0.0.0-develop.187`](#v-0-0-0-develop-187) | 2026-08-23 | develop |
@@ -31,7 +32,6 @@ _Published automatically._
 | [`0.0.0-develop.153`](#v-0-0-0-develop-153) | 2026-08-06 | develop |
 | [`1.3.0`](#v-1-3-0) | 2026-08-06 | release |
 | [`1.3.0-rc.151`](#v-1-3-0-rc-151) | 2026-08-06 | release candidate |
-| [`0.0.0-develop.151`](#v-0-0-0-develop-151) | 2026-08-06 | develop |
 
 # Releases
 
@@ -176,6 +176,19 @@ _commit `cda0496` · changes since 1.2.0_
 - [G2P-5335](https://openg2p.atlassian.net/browse/G2P-5335) Switch CI to GitLab (.gitlab-ci.yml); drop GitHub Actions build/publish ([`1062700`](https://gitlab.com/openg2p/registry/farmer-registry/-/commit/1062700737b8129d66fcc363c7d3809863d0cefb))
 
 # Develop builds
+
+<a id="v-0-0-0-develop-191"></a>
+
+## registry/farmer-registry — develop 0.0.0-develop.191 (2026-08-24)
+
+_commit `9ce672b` · changes since 0.0.0-develop.190_
+<!-- build:0.0.0-develop.191 revision:9ce672bded8ff68a18e77df2f91c92726e329eeb ts:1787547967 -->
+
+**Chart:** [openg2p-farmer-registry 0.0.0-develop.191](https://gitlab.com/api/v4/projects/openg2p%2Fcharts/packages/helm/stable/charts/openg2p-farmer-registry-0.0.0-develop.191.tgz)
+
+### Changes
+
+- Bumped up RP version to 0.0.0-develop.414 ([`9ce672b`](https://gitlab.com/openg2p/registry/farmer-registry/-/commit/9ce672bded8ff68a18e77df2f91c92726e329eeb))
 
 <a id="v-0-0-0-develop-190"></a>
 
@@ -480,17 +493,6 @@ _commit `3d55dcd` · changes since 0.0.0-develop.151_
 ### Changes since 0.0.0-develop.151
 
 - [G2P-5402](https://openg2p.atlassian.net/browse/G2P-5402) fix: correct ui configuration for multiple sections and add dedicated parent lookup sections for crop intake and crop register ([`2f172d4`](https://gitlab.com/openg2p/registry/farmer-registry/-/commit/2f172d4848fecc02c08f9c5a9e83edb76888ba53))
-
-<a id="v-0-0-0-develop-151"></a>
-
-## registry/farmer-registry — develop 0.0.0-develop.151 (2026-08-06)
-
-_commit `d39deba` · changes since 0.0.0-develop.150_
-<!-- build:0.0.0-develop.151 revision:d39deba138813845cc34ea701b885ed763833836 ts:1786007784 -->
-
-### Changes since 0.0.0-develop.150
-
-- [G2P-5378](https://openg2p.atlassian.net/browse/G2P-5378) Fix bulk-sample id collisions: sub-table functional ids were uuid[:8], which collides by the birthday bound (100k farmers died at ~39k crops on ix_g2p_register_crops_functional_record_id) — use sequential counters like the farmer ids already do ([`d39deba`](https://gitlab.com/openg2p/registry/farmer-registry/-/commit/d39deba138813845cc34ea701b885ed763833836))
 
 ---
 
