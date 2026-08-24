@@ -6,6 +6,7 @@ _Published automatically._
 
 | Version | Date | Type |
 | --- | --- | --- |
+| [`2.3.0-rc.217`](#v-2-3-0-rc-217) | 2026-08-24 | release candidate |
 | [`0.0.0-develop.217`](#v-0-0-0-develop-217) | 2026-08-24 | develop |
 | [`0.0.0-develop.215`](#v-0-0-0-develop-215) | 2026-08-24 | develop |
 | [`2.2.2-rc.214`](#v-2-2-2-rc-214) | 2026-08-24 | release candidate |
@@ -48,6 +49,17 @@ Creating new Tag 2.2.1
 - [G2P-5335](https://openg2p.atlassian.net/browse/G2P-5335) Switch CI to GitLab (.gitlab-ci.yml); drop GitHub Actions build/publish ([`0988f9b`](https://gitlab.com/openg2p/commons/-/commit/0988f9b3c5af0b70f362e672975d99e25646b27e))
 
 # Release candidates
+
+<a id="v-2-3-0-rc-217"></a>
+
+## commons 2.3.0-rc.217 — 2026-08-24
+
+_commit `360ccb7` · changes since 0.0.0-develop.217_
+<!-- build:2.3.0-rc.217 revision:360ccb7533c798dc9262cd50d4c9d9c99c98335d ts:1787556578 -->
+
+### Changes
+
+_No new commits since 0.0.0-develop.217._
 
 <a id="v-2-2-2-rc-214"></a>
 
