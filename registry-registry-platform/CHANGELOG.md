@@ -6,6 +6,7 @@ _Published automatically._
 
 | Version | Date | Type |
 | --- | --- | --- |
+| [`0.0.0-develop.411`](#v-0-0-0-develop-411) | 2026-08-24 | develop |
 | [`0.0.0-develop.409`](#v-0-0-0-develop-409) | 2026-08-23 | develop |
 | [`0.0.0-develop.408`](#v-0-0-0-develop-408) | 2026-08-23 | develop |
 | [`0.0.0-develop.407`](#v-0-0-0-develop-407) | 2026-08-23 | develop |
@@ -35,7 +36,6 @@ _Published automatically._
 | [`0.0.0-develop.378`](#v-0-0-0-develop-378) | 2026-08-06 | develop |
 | [`0.0.0-develop.374`](#v-0-0-0-develop-374) | 2026-08-06 | develop |
 | [`0.0.0-develop.353`](#v-0-0-0-develop-353) | 2026-08-06 | develop |
-| [`0.0.0-develop.346`](#v-0-0-0-develop-346) | 2026-08-05 | develop |
 
 # Release candidates
 
@@ -196,6 +196,25 @@ _commit `6020cb0` · changes since 1.2.0-rc.391_
 - [G2P-5493](https://openg2p.atlassian.net/browse/G2P-5493) refactor change request handling and remove unused staff-portal-ui folder ([`34d861b`](https://gitlab.com/openg2p/registry/registry-platform/-/commit/34d861b53e08918c8b30a2ac5edf72ee1d0e2162))
 
 # Develop builds
+
+<a id="v-0-0-0-develop-411"></a>
+
+## registry/registry-platform — develop 0.0.0-develop.411 (2026-08-24)
+
+_commit `bc49a26` · changes since 0.0.0-develop.409_
+<!-- build:0.0.0-develop.411 revision:bc49a2655658fe3688caf8b9641db03b5bd3e83a ts:1787484876 -->
+
+**Chart:** [openg2p-registry 0.0.0-develop.411](https://gitlab.com/api/v4/projects/openg2p%2Fcharts/packages/helm/stable/charts/openg2p-registry-0.0.0-develop.411.tgz)
+
+### Summary
+
+- **Major:** Rebuilt the agent portal UI using the Next.js BFF model from the staff portal, enhancing the overall architecture and user experience.
+- Implemented reading of prefixed authentication cookies for the agent portal, improving session management and security.
+
+### Changes
+
+- [G2P-4929](https://openg2p.atlassian.net/browse/G2P-4929) Rebuild the agent portal UI on the staff portal's Next.js BFF model ([`bc49a26`](https://gitlab.com/openg2p/registry/registry-platform/-/commit/bc49a2655658fe3688caf8b9641db03b5bd3e83a))
+- [G2P-4929](https://openg2p.atlassian.net/browse/G2P-4929) Read the agent portal's prefixed auth cookies ([`136f938`](https://gitlab.com/openg2p/registry/registry-platform/-/commit/136f93812278ded5664dd7a3ab689a2e613d48ce))
 
 <a id="v-0-0-0-develop-409"></a>
 
@@ -516,17 +535,6 @@ _commit `b203acd` · changes since 0.0.0-develop.346_
 - Fix: update import paths for data policy request helper ([`b087344`](https://gitlab.com/openg2p/registry/registry-platform/-/commit/b087344a1b2225a11a74427b2e83cad4ea5dbbaa))
 - Fix: update import paths for data policy request helper ([`4c7c7c9`](https://gitlab.com/openg2p/registry/registry-platform/-/commit/4c7c7c9db4d10e1556369f9412106ff623e2bd9e))
 - Refactor data policy handling across services ([`c61a9db`](https://gitlab.com/openg2p/registry/registry-platform/-/commit/c61a9dbdba1ea0726d458cef2f7fc2ae9ab6e4bb))
-
-<a id="v-0-0-0-develop-346"></a>
-
-## registry/registry-platform — develop 0.0.0-develop.346 (2026-08-05)
-
-_commit `ab38f08` · changes since 0.0.0-develop.345_
-<!-- build:0.0.0-develop.346 revision:ab38f087fff9b48a928843a029b015822a7df606 ts:1785892510 -->
-
-### Changes since 0.0.0-develop.345
-
-- [G2P-4804](https://openg2p.atlassian.net/browse/G2P-4804) DB-seed: move the farmer-shaped sample loaders out of the platform image — load_sample_data.py/upload_images.py write farmer-extension tables and read farmer seed JSON, so they belong to the variant; the entrypoint keeps the hook and errors clearly without one ([`ab38f08`](https://gitlab.com/openg2p/registry/registry-platform/-/commit/ab38f087fff9b48a928843a029b015822a7df606))
 
 ---
 
