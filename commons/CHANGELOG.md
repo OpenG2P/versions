@@ -6,6 +6,7 @@ _Published automatically._
 
 | Version | Date | Type |
 | --- | --- | --- |
+| [`0.0.0-develop.215`](#v-0-0-0-develop-215) | 2026-08-24 | develop |
 | [`2.2.2-rc.214`](#v-2-2-2-rc-214) | 2026-08-24 | release candidate |
 | [`0.0.0-develop.210`](#v-0-0-0-develop-210) | 2026-08-22 | develop |
 | [`0.0.0-develop.209`](#v-0-0-0-develop-209) | 2026-08-21 | develop |
@@ -65,6 +66,23 @@ _commit `623204a` · changes since 0.0.0-develop.210_
 - [G2P-5335](https://openg2p.atlassian.net/browse/G2P-5335) Switch CI to GitLab (.gitlab-ci.yml); drop GitHub Actions build/publish ([`0988f9b`](https://gitlab.com/openg2p/commons/-/commit/0988f9b3c5af0b70f362e672975d99e25646b27e))
 
 # Develop builds
+
+<a id="v-0-0-0-develop-215"></a>
+
+## commons — develop 0.0.0-develop.215 (2026-08-24)
+
+_commit `fc84128` · changes since 0.0.0-develop.210_
+<!-- build:0.0.0-develop.215 revision:fc841280bfccc475382d7bf51daae993630bd58d ts:1787546762 -->
+
+### Summary
+
+- CI/CD overhaul: transitioned from GitHub Actions to GitLab CI for build and publish processes.
+- Storage configuration: added MinIO settings to `values.yaml`, including secret reference and read-only user creation.
+
+### Changes
+
+- [G2P-5451](https://openg2p.atlassian.net/browse/G2P-5451) Add MinIO configuration to values.yaml, including existing secret reference and read-only user creation ([`7f68072`](https://gitlab.com/openg2p/commons/-/commit/7f68072ad6599bb8c95c3f992fcf11a244ed0ebe))
+- [G2P-5335](https://openg2p.atlassian.net/browse/G2P-5335) Switch CI to GitLab (.gitlab-ci.yml); drop GitHub Actions build/publish ([`0988f9b`](https://gitlab.com/openg2p/commons/-/commit/0988f9b3c5af0b70f362e672975d99e25646b27e))
 
 <a id="v-0-0-0-develop-210"></a>
 
