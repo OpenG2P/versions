@@ -6,9 +6,23 @@ _Published automatically._
 
 | Version | Date | Type |
 | --- | --- | --- |
+| [`0.0.0-develop.52`](#v-0-0-0-develop-52) | 2026-08-25 | develop |
 | [`0.0.0-develop.51`](#v-0-0-0-develop-51) | 2026-08-25 | develop |
 
 # Develop builds
+
+<a id="v-0-0-0-develop-52"></a>
+
+## platform-services/consent-manager — develop 0.0.0-develop.52 (2026-08-25)
+
+_commit `81e8fd6` · changes since 0.0.0-develop.51_
+<!-- build:0.0.0-develop.52 revision:81e8fd6f8a0bd1bcdc53ea83ae474abaa1bebe2c ts:1787657396 -->
+
+**Chart:** [openg2p-consent-manager 0.0.0-develop.52](https://gitlab.com/api/v4/projects/openg2p%2Fcharts/packages/helm/stable/charts/openg2p-consent-manager-0.0.0-develop.52.tgz)
+
+### Changes
+
+- [G2P-5222](https://openg2p.atlassian.net/browse/G2P-5222) Point image source and project URLs at the new GitLab location (openg2p/platform-services/consent-manager). ([`81e8fd6`](https://gitlab.com/openg2p/platform-services/consent-manager/-/commit/81e8fd6f8a0bd1bcdc53ea83ae474abaa1bebe2c))
 
 <a id="v-0-0-0-develop-51"></a>
 
