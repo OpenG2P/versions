@@ -1,0 +1,4 @@
+name=platform-services/id-generator
+kind=service
+repo=https://gitlab.com/openg2p/platform-services/id-generator
+images=https://gitlab.com/openg2p/platform-services/id-generator/container_registry
