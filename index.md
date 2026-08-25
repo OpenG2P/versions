@@ -6,10 +6,7 @@ module and service**, produced automatically as part of the CI pipeline. Each
 entry below is a **Helm package**; its Helm chart version and the Docker image
 versions it references are **locked together** — one immutable version per commit.
 
-Browse all charts in the **[Helm package registry](https://gitlab.com/openg2p/charts/-/packages)**.
-The Docker images for each service live in that repository's **Container
-Registry** (linked at the top of each repository's page below). See the
-**[versioning & CI docs](https://docs.openg2p.org/operations/deployment/helm-docker-versioning-and-ci)** for how these are produced.
+See the **[versioning & CI docs](https://docs.openg2p.org/operations/deployment/helm-docker-versioning-and-ci)** for how these are produced.
 
 ### Services
 
@@ -23,6 +20,7 @@ Registry** (linked at the top of each repository's page below). See the
 - **[iam](./iam/CHANGELOG)** · [repository ↗](https://gitlab.com/openg2p/iam)
 - **[id-generator](./id-generator/CHANGELOG)** · [repository ↗](https://gitlab.com/openg2p/id-generator)
 - **[keycloak/keycloak-init](./keycloak-keycloak-init/CHANGELOG)** · [repository ↗](https://gitlab.com/openg2p/keycloak/keycloak-init)
+- **[keycloak/keycloak-themes](./keycloak-keycloak-themes/CHANGELOG)** · [repository ↗](https://gitlab.com/openg2p/keycloak/keycloak-themes)
 - **[master-data-service](./master-data-service/CHANGELOG)** · [repository ↗](https://gitlab.com/openg2p/master-data-service)
 - **[partner-management](./partner-management/CHANGELOG)**
 - **[pbms/pbms](./pbms-pbms/CHANGELOG)** · [repository ↗](https://gitlab.com/openg2p/pbms/pbms)
