@@ -6,6 +6,7 @@ _Published automatically._
 
 | Version | Date | Type |
 | --- | --- | --- |
+| [`0.0.0-develop.193`](#v-0-0-0-develop-193) | 2026-08-25 | develop |
 | [`0.0.0-develop.192`](#v-0-0-0-develop-192) | 2026-08-24 | develop |
 | [`0.0.0-develop.191`](#v-0-0-0-develop-191) | 2026-08-24 | develop |
 | [`0.0.0-develop.190`](#v-0-0-0-develop-190) | 2026-08-24 | develop |
@@ -29,7 +30,6 @@ _Published automatically._
 | [`0.0.0-develop.163`](#v-0-0-0-develop-163) | 2026-08-11 | develop |
 | [`0.0.0-develop.161`](#v-0-0-0-develop-161) | 2026-08-10 | develop |
 | [`0.0.0-develop.159`](#v-0-0-0-develop-159) | 2026-08-09 | develop |
-| [`0.0.0-develop.154`](#v-0-0-0-develop-154) | 2026-08-07 | develop |
 | [`1.3.0`](#v-1-3-0) | 2026-08-06 | release |
 | [`1.3.0-rc.151`](#v-1-3-0-rc-151) | 2026-08-06 | release candidate |
 
@@ -176,6 +176,19 @@ _commit `cda0496` · changes since 1.2.0_
 - [G2P-5335](https://openg2p.atlassian.net/browse/G2P-5335) Switch CI to GitLab (.gitlab-ci.yml); drop GitHub Actions build/publish ([`1062700`](https://gitlab.com/openg2p/registry/farmer-registry/-/commit/1062700737b8129d66fcc363c7d3809863d0cefb))
 
 # Develop builds
+
+<a id="v-0-0-0-develop-193"></a>
+
+## registry/farmer-registry — develop 0.0.0-develop.193 (2026-08-25)
+
+_commit `777b647` · changes since 0.0.0-develop.192_
+<!-- build:0.0.0-develop.193 revision:777b647680dcce77e351c4bea6a0eebf88387623 ts:1787661141 -->
+
+**Chart:** [openg2p-farmer-registry 0.0.0-develop.193](https://gitlab.com/api/v4/projects/openg2p%2Fcharts/packages/helm/stable/charts/openg2p-farmer-registry-0.0.0-develop.193.tgz)
+
+### Changes
+
+- Bumped up RP version to 0.0.0-develop.417 ([`777b647`](https://gitlab.com/openg2p/registry/farmer-registry/-/commit/777b647680dcce77e351c4bea6a0eebf88387623))
 
 <a id="v-0-0-0-develop-192"></a>
 
@@ -482,19 +495,6 @@ _commit `ec8828c` · changes since 0.0.0-develop.154_
 - [G2P-4804](https://openg2p.atlassian.net/browse/G2P-4804) Generate fr_rpt_crop from declarations instead of hand-written SQL. Verified byte-identical to the previous definition across all seventeen shared columns and 757 rows before the SQL was removed; it keeps its materialization and indexes, and additionally carries the geo pcodes and workflow columns the hand-written version omitted. ([`699b3a2`](https://gitlab.com/openg2p/registry/farmer-registry/-/commit/699b3a283105c25a82b7c87608afb18a1d28a61f))
 - [G2P-4804](https://openg2p.atlassian.net/browse/G2P-4804) Declare the household member age bands, matching fr_rpt_farmer's edges. The generator derives an age wherever it withholds a birth date, but where the bands fall is policy, and defining them twice with different edges is how two charts come to disagree about how many people are under 25. ([`6daa47a`](https://gitlab.com/openg2p/registry/farmer-registry/-/commit/6daa47af0c0b0abd14b6b4b701db197ac6fd2839))
 - [G2P-4804](https://openg2p.atlassian.net/browse/G2P-4804) Take the mechanical reporting views from the platform generator. reporting.yaml declares the entity tree, names farmer/land/crop as hand-written and marks the cooperative name columns as organisations rather than people; the generated ten add livestock, inputs, membership, scores, households, members, change requests, record history and geo_levels, which used to be derived from registered rows and so was empty on a production install. ([`11e3b8b`](https://gitlab.com/openg2p/registry/farmer-registry/-/commit/11e3b8beb7368af5e1dbf8bb6810c6ef08238a18))
-
-<a id="v-0-0-0-develop-154"></a>
-
-## registry/farmer-registry — develop 0.0.0-develop.154 (2026-08-07)
-
-_commit `8f93c33` · changes since 0.0.0-develop.153_
-<!-- build:0.0.0-develop.154 revision:8f93c337cbc07bcef9de94f12633572297c92e9f ts:1786095224 -->
-
-**Chart:** [openg2p-farmer-registry 0.0.0-develop.154](https://gitlab.com/api/v4/projects/openg2p%2Fcharts/packages/helm/stable/charts/openg2p-farmer-registry-0.0.0-develop.154.tgz)
-
-### Changes since 0.0.0-develop.153
-
-- [G2P-4804](https://openg2p.atlassian.net/browse/G2P-4804) Refresh the reporting views on a schedule, instead of relying on Insights to do it. They are materialized, so they held whatever the install produced and every farmer registered afterwards was invisible with no error anywhere; a CronJob now rebuilds them in dependency order resolved from pg_depend, on analytics.reportingViews.refreshSchedule. ([`8f93c33`](https://gitlab.com/openg2p/registry/farmer-registry/-/commit/8f93c337cbc07bcef9de94f12633572297c92e9f))
 
 ---
 
