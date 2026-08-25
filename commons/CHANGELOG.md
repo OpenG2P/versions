@@ -6,6 +6,7 @@ _Published automatically._
 
 | Version | Date | Type |
 | --- | --- | --- |
+| [`0.0.0-develop.228`](#v-0-0-0-develop-228) | 2026-08-25 | develop |
 | [`0.0.0-develop.227`](#v-0-0-0-develop-227) | 2026-08-25 | develop |
 | [`2.3.0-rc.217`](#v-2-3-0-rc-217) | 2026-08-24 | release candidate |
 | [`0.0.0-develop.217`](#v-0-0-0-develop-217) | 2026-08-24 | develop |
@@ -80,6 +81,17 @@ _commit `623204a` · changes since 0.0.0-develop.210_
 - [G2P-5335](https://openg2p.atlassian.net/browse/G2P-5335) Switch CI to GitLab (.gitlab-ci.yml); drop GitHub Actions build/publish ([`0988f9b`](https://gitlab.com/openg2p/commons/-/commit/0988f9b3c5af0b70f362e672975d99e25646b27e))
 
 # Develop builds
+
+<a id="v-0-0-0-develop-228"></a>
+
+## commons — develop 0.0.0-develop.228 (2026-08-25)
+
+_commit `b8dc4e5` · changes since 0.0.0-develop.227_
+<!-- build:0.0.0-develop.228 revision:b8dc4e50096a5188dcbf7fc4d04d99d9fec03c9e ts:1787660024 -->
+
+### Changes
+
+- Updated versions related to recent moving of repos to platform-services group on Gitlab. ([`b8dc4e5`](https://gitlab.com/openg2p/commons/-/commit/b8dc4e50096a5188dcbf7fc4d04d99d9fec03c9e))
 
 <a id="v-0-0-0-develop-227"></a>
 
