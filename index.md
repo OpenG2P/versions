@@ -28,6 +28,7 @@ Registry** (linked at the top of each repository's page below). See the
 - **[pbms/pbms](./pbms-pbms/CHANGELOG)** · [repository ↗](https://gitlab.com/openg2p/pbms/pbms)
 - **[platform-services/audit-manager](./platform-services-audit-manager/CHANGELOG)** · [repository ↗](https://gitlab.com/openg2p/platform-services/audit-manager)
 - **[platform-services/awe](./platform-services-awe/CHANGELOG)** · [repository ↗](https://gitlab.com/openg2p/platform-services/awe)
+- **[platform-services/consent-manager](./platform-services-consent-manager/CHANGELOG)** · [repository ↗](https://gitlab.com/openg2p/platform-services/consent-manager)
 - **[platform-services/iam](./platform-services-iam/CHANGELOG)** · [repository ↗](https://gitlab.com/openg2p/platform-services/iam)
 - **[platform-services/id-generator](./platform-services-id-generator/CHANGELOG)** · [repository ↗](https://gitlab.com/openg2p/platform-services/id-generator)
 - **[platform-services/master-data-service](./platform-services-master-data-service/CHANGELOG)** · [repository ↗](https://gitlab.com/openg2p/platform-services/master-data-service)
