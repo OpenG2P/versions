@@ -6,6 +6,7 @@ _Published automatically._
 
 | Version | Date | Type |
 | --- | --- | --- |
+| [`0.0.0-develop.417`](#v-0-0-0-develop-417) | 2026-08-25 | develop |
 | [`0.0.0-develop.415`](#v-0-0-0-develop-415) | 2026-08-24 | develop |
 | [`0.0.0-develop.414`](#v-0-0-0-develop-414) | 2026-08-24 | develop |
 | [`0.0.0-develop.411`](#v-0-0-0-develop-411) | 2026-08-24 | develop |
@@ -35,7 +36,6 @@ _Published automatically._
 | [`0.0.0-develop.384`](#v-0-0-0-develop-384) | 2026-08-14 | develop |
 | [`0.0.0-develop.383`](#v-0-0-0-develop-383) | 2026-08-09 | develop |
 | [`0.0.0-develop.379`](#v-0-0-0-develop-379) | 2026-08-07 | develop |
-| [`0.0.0-develop.378`](#v-0-0-0-develop-378) | 2026-08-06 | develop |
 
 # Release candidates
 
@@ -196,6 +196,25 @@ _commit `6020cb0` · changes since 1.2.0-rc.391_
 - [G2P-5493](https://openg2p.atlassian.net/browse/G2P-5493) refactor change request handling and remove unused staff-portal-ui folder ([`34d861b`](https://gitlab.com/openg2p/registry/registry-platform/-/commit/34d861b53e08918c8b30a2ac5edf72ee1d0e2162))
 
 # Develop builds
+
+<a id="v-0-0-0-develop-417"></a>
+
+## registry/registry-platform — develop 0.0.0-develop.417 (2026-08-25)
+
+_commit `09365e5` · changes since 0.0.0-develop.415_
+<!-- build:0.0.0-develop.417 revision:09365e55dbb5bf51c0732d998f39f3a298e66967 ts:1787660069 -->
+
+**Chart:** [openg2p-registry 0.0.0-develop.417](https://gitlab.com/api/v4/projects/openg2p%2Fcharts/packages/helm/stable/charts/openg2p-registry-0.0.0-develop.417.tgz)
+
+### Summary
+
+- API updates: Redirected the agent portal API to utilize the shared authentication Redis for improved session management.
+- Dependency management: Updated various versions related to the sub-grouping of platform services in GitLab to ensure compatibility and performance.
+
+### Changes
+
+- Updated versions related to sub grouping of platform-services in Gitlab. ([`09365e5`](https://gitlab.com/openg2p/registry/registry-platform/-/commit/09365e55dbb5bf51c0732d998f39f3a298e66967))
+- [G2P-4929](https://openg2p.atlassian.net/browse/G2P-4929) Point the agent portal API at the shared auth Redis ([`8fe8d6b`](https://gitlab.com/openg2p/registry/registry-platform/-/commit/8fe8d6b02aae7ce3257df4ed231b528e576e0fce))
 
 <a id="v-0-0-0-develop-415"></a>
 
@@ -496,25 +515,6 @@ _commit `d23682b` · changes since 0.0.0-develop.378_
 ### Changes since 0.0.0-develop.378
 
 - [G2P-5335](https://openg2p.atlassian.net/browse/G2P-5335) Enable BUILD_CACHE for registry-platform builds ([`d23682b`](https://gitlab.com/openg2p/registry/registry-platform/-/commit/d23682b28ab7a009da724e871190277c9a3229b4))
-
-<a id="v-0-0-0-develop-378"></a>
-
-## registry/registry-platform — develop 0.0.0-develop.378 (2026-08-06)
-
-_commit `b0eca4d` · changes since 0.0.0-develop.374_
-<!-- build:0.0.0-develop.378 revision:b0eca4d20214b20ad38fc8adb9fa1018dd9e9b24 ts:1786012597 -->
-
-### Summary
-
-- Partner management overhaul: Repointed to commons-services, aligning PM-seed authentication with the g2p-bridge pmSeedClientId pattern, and enhanced consent management and partner management functionalities.
-- New functionality: Introduced a consent helper in the partner API to streamline consent-related operations.
-- Dependency update: Modified dependency manifests in the partner API to reflect the latest requirements.
-
-### Changes since 0.0.0-develop.374
-
-- Reapply "[G2P-5222](https://openg2p.atlassian.net/browse/G2P-5222) Repoint Partner Management to commons-services and align PM-seed auth to the g2p-bridge pmSeedClientId pattern." ([`a5ade5e`](https://gitlab.com/openg2p/registry/registry-platform/-/commit/a5ade5e1fc966262a9188e4f05a8c22dbe2f20b2))
-- Reapply "[G2P-5222](https://openg2p.atlassian.net/browse/G2P-5222) Consent and partner management related." ([`63f2385`](https://gitlab.com/openg2p/registry/registry-platform/-/commit/63f2385601b71e657458eb23767d0807584bfc4b))
-- Reapply "[G2P-5222](https://openg2p.atlassian.net/browse/G2P-5222) Enhancements for consent management, partner management and WJS support." ([`c6b51a0`](https://gitlab.com/openg2p/registry/registry-platform/-/commit/c6b51a040e0f3d1b43f73f284da1aadb3166b264))
 
 ---
 
