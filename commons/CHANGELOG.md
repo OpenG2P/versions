@@ -6,6 +6,7 @@ _Published automatically._
 
 | Version | Date | Type |
 | --- | --- | --- |
+| [`0.0.0-develop.229`](#v-0-0-0-develop-229) | 2026-08-26 | develop |
 | [`0.0.0-develop.228`](#v-0-0-0-develop-228) | 2026-08-25 | develop |
 | [`0.0.0-develop.227`](#v-0-0-0-develop-227) | 2026-08-25 | develop |
 | [`2.3.0-rc.217`](#v-2-3-0-rc-217) | 2026-08-24 | release candidate |
@@ -81,6 +82,17 @@ _commit `623204a` · changes since 0.0.0-develop.210_
 - [G2P-5335](https://openg2p.atlassian.net/browse/G2P-5335) Switch CI to GitLab (.gitlab-ci.yml); drop GitHub Actions build/publish ([`0988f9b`](https://gitlab.com/openg2p/commons/-/commit/0988f9b3c5af0b70f362e672975d99e25646b27e))
 
 # Develop builds
+
+<a id="v-0-0-0-develop-229"></a>
+
+## commons — develop 0.0.0-develop.229 (2026-08-26)
+
+_commit `ca12014` · changes since 0.0.0-develop.228_
+<!-- build:0.0.0-develop.229 revision:ca1201496762ae937b08b2b67ba55647eb5a20ad ts:1787719430 -->
+
+### Changes
+
+- Bug fix on Keycloak init job name ([`ca12014`](https://gitlab.com/openg2p/commons/-/commit/ca1201496762ae937b08b2b67ba55647eb5a20ad))
 
 <a id="v-0-0-0-develop-228"></a>
 
