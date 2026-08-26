@@ -6,10 +6,24 @@ _Published automatically._
 
 | Version | Date | Type |
 | --- | --- | --- |
+| [`0.0.0-develop.74`](#v-0-0-0-develop-74) | 2026-08-26 | develop |
 | [`0.0.0-develop.72`](#v-0-0-0-develop-72) | 2026-08-26 | develop |
 | [`0.0.0-develop.71`](#v-0-0-0-develop-71) | 2026-08-24 | develop |
 
 # Develop builds
+
+<a id="v-0-0-0-develop-74"></a>
+
+## platform-services/awe — develop 0.0.0-develop.74 (2026-08-26)
+
+_commit `039a957` · changes since 0.0.0-develop.72_
+<!-- build:0.0.0-develop.74 revision:039a9577638d8ab3b9229dbafb63acd72d5f65d2 ts:1787731164 -->
+
+**Chart:** [openg2p-awe 0.0.0-develop.74](https://gitlab.com/api/v4/projects/openg2p%2Fcharts/packages/helm/stable/charts/openg2p-awe-0.0.0-develop.74.tgz)
+
+### Changes
+
+- [G2P-5578](https://openg2p.atlassian.net/browse/G2P-5578) Add IAM registration Job and ConfigMap for AWE admin SPA ([`3131c68`](https://gitlab.com/openg2p/platform-services/awe/-/commit/3131c6856f5e5273639fd96f0599a4df8f0fd9bc))
 
 <a id="v-0-0-0-develop-72"></a>
 
