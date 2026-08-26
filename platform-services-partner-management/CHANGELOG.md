@@ -6,9 +6,23 @@ _Published automatically._
 
 | Version | Date | Type |
 | --- | --- | --- |
+| [`0.0.0-develop.15`](#v-0-0-0-develop-15) | 2026-08-26 | develop |
 | [`0.0.0-develop.14`](#v-0-0-0-develop-14) | 2026-08-25 | develop |
 
 # Develop builds
+
+<a id="v-0-0-0-develop-15"></a>
+
+## platform-services/partner-management — develop 0.0.0-develop.15 (2026-08-26)
+
+_commit `c2462ac` · changes since 0.0.0-develop.14_
+<!-- build:0.0.0-develop.15 revision:c2462ac259961f70f599a1903c053e4f6da1bfe5 ts:1787719371 -->
+
+**Chart:** [partner-management 0.0.0-develop.15](https://gitlab.com/api/v4/projects/openg2p%2Fcharts/packages/helm/stable/charts/partner-management-0.0.0-develop.15.tgz)
+
+### Changes
+
+- Keycloak-init new location and version updated. ([`c2462ac`](https://gitlab.com/openg2p/platform-services/partner-management/-/commit/c2462ac259961f70f599a1903c053e4f6da1bfe5))
 
 <a id="v-0-0-0-develop-14"></a>
 
