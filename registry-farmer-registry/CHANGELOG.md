@@ -6,6 +6,7 @@ _Published automatically._
 
 | Version | Date | Type |
 | --- | --- | --- |
+| [`1.2.1-rc.157`](#v-1-2-1-rc-157) | 2026-08-26 | release candidate |
 | [`0.0.0-develop.193`](#v-0-0-0-develop-193) | 2026-08-25 | develop |
 | [`0.0.0-develop.192`](#v-0-0-0-develop-192) | 2026-08-24 | develop |
 | [`0.0.0-develop.191`](#v-0-0-0-develop-191) | 2026-08-24 | develop |
@@ -92,6 +93,24 @@ _commit `d39deba` · changes since 0.0.0-develop.151_
 ### Changes since 0.0.0-develop.151
 
 _No new commits since 0.0.0-develop.151._
+
+<a id="v-1-2-1-rc-157"></a>
+
+## registry/farmer-registry 1.2.1-rc.157 — 2026-08-26
+
+_commit `7563b98` · changes since 1.2.1-rc.154_
+<!-- build:1.2.1-rc.157 revision:7563b98d4f92ec6ad782ed48bea6eabeb58eac31 ts:1787731095 -->
+
+**Chart:** [openg2p-farmer-registry 1.2.1-rc.157](https://gitlab.com/api/v4/projects/openg2p%2Fcharts/packages/helm/stable/charts/openg2p-farmer-registry-1.2.1-rc.157.tgz)
+
+### Summary
+
+- Data handling optimization: reduced record seeding count from 50 to 25 to improve performance, and refactored enums alongside updated source of income references for clarity and maintainability.
+
+### Changes
+
+- [G2P-5576](https://openg2p.atlassian.net/browse/G2P-5576) Refactor enums and update source of income references ([`6dff669`](https://gitlab.com/openg2p/registry/farmer-registry/-/commit/6dff669117c19d9dc6eb84a3b23fd8643fb8c85d))
+- [G2P-5574](https://openg2p.atlassian.net/browse/G2P-5574) Reduce record seeding count from 50 to 25 ([`d33c743`](https://gitlab.com/openg2p/registry/farmer-registry/-/commit/d33c743097d2acd59a25f38199e3c3ba7daaf200))
 
 <a id="v-1-2-1-rc-154"></a>
 
