@@ -6,9 +6,29 @@ _Published automatically._
 
 | Version | Date | Type |
 | --- | --- | --- |
+| [`0.0.0-develop.62`](#v-0-0-0-develop-62) | 2026-08-26 | develop |
 | [`0.0.0-develop.60`](#v-0-0-0-develop-60) | 2026-08-24 | develop |
 
 # Develop builds
+
+<a id="v-0-0-0-develop-62"></a>
+
+## platform-services/master-data-service — develop 0.0.0-develop.62 (2026-08-26)
+
+_commit `b423005` · changes since 0.0.0-develop.60_
+<!-- build:0.0.0-develop.62 revision:b42300512c21c72c41d0b71421003b5d7c3798aa ts:1787719268 -->
+
+**Chart:** [openg2p-master-data 0.0.0-develop.62](https://gitlab.com/api/v4/projects/openg2p%2Fcharts/packages/helm/stable/charts/openg2p-master-data-0.0.0-develop.62.tgz)
+
+### Summary
+
+- Data management enhancement: improved geo level value management with data policy support.
+- Code quality: applied pre-commit formatting across the repository, including black line-length reflow and whitespace corrections.
+
+### Changes
+
+- Apply pre-commit formatting across the repo (black line-length reflow in master-data-api, trailing whitespace in codelist SQL seeds, missing final newlines in UI files, README and .gitignore); formatting only, no functional change ([`b423005`](https://gitlab.com/openg2p/platform-services/master-data-service/-/commit/b42300512c21c72c41d0b71421003b5d7c3798aa))
+- 67c4be5  [G2P-5538](https://openg2p.atlassian.net/browse/G2P-5538) Enhance geo level value management with data policy support ([`16a0d36`](https://gitlab.com/openg2p/platform-services/master-data-service/-/commit/16a0d36d8480be8f5e64f8ab33b08ab0459f0795))
 
 <a id="v-0-0-0-develop-60"></a>
 
