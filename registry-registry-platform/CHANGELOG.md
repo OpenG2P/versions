@@ -6,6 +6,7 @@ _Published automatically._
 
 | Version | Date | Type |
 | --- | --- | --- |
+| [`1.2.0-rc.425`](#v-1-2-0-rc-425) | 2026-08-26 | release candidate |
 | [`0.0.0-develop.417`](#v-0-0-0-develop-417) | 2026-08-25 | develop |
 | [`0.0.0-develop.415`](#v-0-0-0-develop-415) | 2026-08-24 | develop |
 | [`0.0.0-develop.414`](#v-0-0-0-develop-414) | 2026-08-24 | develop |
@@ -32,12 +33,36 @@ _Published automatically._
 | [`1.2.0-rc.399`](#v-1-2-0-rc-399) | 2026-08-19 | release candidate |
 | [`1.2.0-rc.397`](#v-1-2-0-rc-397) | 2026-08-18 | release candidate |
 | [`1.2.0-rc.396`](#v-1-2-0-rc-396) | 2026-08-14 | release candidate |
-| [`1.2.0-rc.393`](#v-1-2-0-rc-393) | 2026-08-14 | release candidate |
 | [`0.0.0-develop.384`](#v-0-0-0-develop-384) | 2026-08-14 | develop |
 | [`0.0.0-develop.383`](#v-0-0-0-develop-383) | 2026-08-09 | develop |
 | [`0.0.0-develop.379`](#v-0-0-0-develop-379) | 2026-08-07 | develop |
 
 # Release candidates
+
+<a id="v-1-2-0-rc-425"></a>
+
+## registry/registry-platform 1.2.0-rc.425 — 2026-08-26
+
+_commit `c267c51` · changes since 1.2.0-rc.419_
+<!-- build:1.2.0-rc.425 revision:c267c51e743ceeafaca6c2004953d1e599a08d46 ts:1787731064 -->
+
+**Chart:** [openg2p-registry 1.2.0-rc.425](https://gitlab.com/api/v4/projects/openg2p%2Fcharts/packages/helm/stable/charts/openg2p-registry-1.2.0-rc.425.tgz)
+
+### Summary
+
+- **Major:** Refactor of GeoHierarchy components to enhance hierarchy management and improve form handling with new utility functions for child level retrieval and selection path resolution.
+- Integration of Partner Management Client into registry services, including configuration, caching, partner lookup refactoring, and tests.
+- Update of fastapi-common references from GitHub to GitLab, with version change to 1.2 in Dockerfiles and pyproject.toml.
+- Refactor of crypto helper references from build_crypto_helper to CryptoFactory across multiple files.
+- Removal of domain and include_domains from request payload in POST endpoint.
+
+### Changes
+
+- [G2P-5587](https://openg2p.atlassian.net/browse/G2P-5587) Refactor GeoHierarchy components to enhance hierarchy management and improve form handling with new utility functions for child level retrieval and selection path resolution. ([`a02b46d`](https://gitlab.com/openg2p/registry/registry-platform/-/commit/a02b46d86efa9a3a1000482ac93446c7e61f7d8b))
+- [G2P-5586](https://openg2p.atlassian.net/browse/G2P-5586) Update references to fastapi-common from GitHub to GitLab and change version to 1.2 in Dockerfiles and pyproject.toml ([`1f8089f`](https://gitlab.com/openg2p/registry/registry-platform/-/commit/1f8089f0aea259c2960316ebc65eb1b12cc4ac11))
+- [G2P-5581](https://openg2p.atlassian.net/browse/G2P-5581) Refactor crypto helper references from build_crypto_helper to CryptoFactory in multiple files ([`a5496ab`](https://gitlab.com/openg2p/registry/registry-platform/-/commit/a5496ab5e6b9cfc28556f7e0c20922210831ccb0))
+- [G2P-5577](https://openg2p.atlassian.net/browse/G2P-5577) Integrate Partner Management Client into registry services with configuration, caching, partner lookup refactoring, and tests. ([`3929c1f`](https://gitlab.com/openg2p/registry/registry-platform/-/commit/3929c1f357773a6b1bdf712d857b5c0d4f84252b))
+- Remove domain and include_domains from request payload in POST endpoint ([`8ca14ed`](https://gitlab.com/openg2p/registry/registry-platform/-/commit/8ca14ed554d8989fd4de947c604f7362edeafaa8))
 
 <a id="v-1-2-0-rc-419"></a>
 
@@ -181,19 +206,6 @@ _commit `de4ce53` · changes since 1.2.0-rc.393_
 ### Changes since 1.2.0-rc.393
 
 - [G2P-5369](https://openg2p.atlassian.net/browse/G2P-5369): Enhance GeoHierarchy functionality and validation ([`a533082`](https://gitlab.com/openg2p/registry/registry-platform/-/commit/a53308284603cf91b473cbf8d365c630a78ed923))
-
-<a id="v-1-2-0-rc-393"></a>
-
-## registry/registry-platform 1.2.0-rc.393 — 2026-08-14
-
-_commit `6020cb0` · changes since 1.2.0-rc.391_
-<!-- build:1.2.0-rc.393 revision:6020cb08062d4f4b7ecf3e137aba300e404df32e ts:1786692549 -->
-
-**Chart:** [openg2p-registry 1.2.0-rc.393](https://gitlab.com/api/v4/projects/openg2p%2Fcharts/packages/helm/stable/charts/openg2p-registry-1.2.0-rc.393.tgz)
-
-### Changes since 1.2.0-rc.391
-
-- [G2P-5493](https://openg2p.atlassian.net/browse/G2P-5493) refactor change request handling and remove unused staff-portal-ui folder ([`34d861b`](https://gitlab.com/openg2p/registry/registry-platform/-/commit/34d861b53e08918c8b30a2ac5edf72ee1d0e2162))
 
 # Develop builds
 
