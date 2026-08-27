@@ -4,40 +4,58 @@ _Published automatically._
 
 **Repository:** [gitlab.com/openg2p/registry/registry-platform](https://gitlab.com/openg2p/registry/registry-platform) · **Container images:** [Container Registry](https://gitlab.com/openg2p/registry/registry-platform/container_registry)
 
-| Version | Date | Type |
-| --- | --- | --- |
-| [`1.2.0-rc.425`](#v-1-2-0-rc-425) | 2026-08-26 | release candidate |
-| [`0.0.0-develop.417`](#v-0-0-0-develop-417) | 2026-08-25 | develop |
-| [`0.0.0-develop.415`](#v-0-0-0-develop-415) | 2026-08-24 | develop |
-| [`0.0.0-develop.414`](#v-0-0-0-develop-414) | 2026-08-24 | develop |
-| [`0.0.0-develop.411`](#v-0-0-0-develop-411) | 2026-08-24 | develop |
-| [`0.0.0-develop.409`](#v-0-0-0-develop-409) | 2026-08-23 | develop |
-| [`0.0.0-develop.408`](#v-0-0-0-develop-408) | 2026-08-23 | develop |
-| [`0.0.0-develop.407`](#v-0-0-0-develop-407) | 2026-08-23 | develop |
-| [`0.0.0-develop.406`](#v-0-0-0-develop-406) | 2026-08-23 | develop |
-| [`0.0.0-develop.404`](#v-0-0-0-develop-404) | 2026-08-22 | develop |
-| [`0.0.0-develop.403`](#v-0-0-0-develop-403) | 2026-08-22 | develop |
-| [`0.0.0-develop.402`](#v-0-0-0-develop-402) | 2026-08-22 | develop |
-| [`1.2.0-rc.419`](#v-1-2-0-rc-419) | 2026-08-21 | release candidate |
-| [`1.2.0-rc.411`](#v-1-2-0-rc-411) | 2026-08-21 | release candidate |
-| [`0.0.0-develop.392`](#v-0-0-0-develop-392) | 2026-08-21 | develop |
-| [`1.2.0-rc.410`](#v-1-2-0-rc-410) | 2026-08-21 | release candidate |
-| [`0.0.0-develop.391`](#v-0-0-0-develop-391) | 2026-08-21 | develop |
-| [`0.0.0-develop.390`](#v-0-0-0-develop-390) | 2026-08-21 | develop |
-| [`1.2.0-rc.408`](#v-1-2-0-rc-408) | 2026-08-20 | release candidate |
-| [`1.2.0-rc.407`](#v-1-2-0-rc-407) | 2026-08-20 | release candidate |
-| [`1.2.0-rc.402`](#v-1-2-0-rc-402) | 2026-08-20 | release candidate |
-| [`0.0.0-develop.389`](#v-0-0-0-develop-389) | 2026-08-20 | develop |
-| [`0.0.0-develop.388`](#v-0-0-0-develop-388) | 2026-08-20 | develop |
-| [`0.0.0-develop.387`](#v-0-0-0-develop-387) | 2026-08-20 | develop |
-| [`1.2.0-rc.399`](#v-1-2-0-rc-399) | 2026-08-19 | release candidate |
-| [`1.2.0-rc.397`](#v-1-2-0-rc-397) | 2026-08-18 | release candidate |
-| [`1.2.0-rc.396`](#v-1-2-0-rc-396) | 2026-08-14 | release candidate |
-| [`0.0.0-develop.384`](#v-0-0-0-develop-384) | 2026-08-14 | develop |
-| [`0.0.0-develop.383`](#v-0-0-0-develop-383) | 2026-08-09 | develop |
-| [`0.0.0-develop.379`](#v-0-0-0-develop-379) | 2026-08-07 | develop |
+| Version | Date | Type | Notes |
+| --- | --- | --- | --- |
+| [`1.2.0-rc.428`](#v-1-2-0-rc-428) | 2026-08-27 | release candidate |  |
+| [`1.2.0-rc.425`](#v-1-2-0-rc-425) | 2026-08-26 | release candidate |  |
+| [`0.0.0-develop.417`](#v-0-0-0-develop-417) | 2026-08-25 | develop |  |
+| [`0.0.0-develop.415`](#v-0-0-0-develop-415) | 2026-08-24 | develop |  |
+| [`0.0.0-develop.414`](#v-0-0-0-develop-414) | 2026-08-24 | develop |  |
+| [`0.0.0-develop.411`](#v-0-0-0-develop-411) | 2026-08-24 | develop |  |
+| [`0.0.0-develop.409`](#v-0-0-0-develop-409) | 2026-08-23 | develop |  |
+| [`0.0.0-develop.408`](#v-0-0-0-develop-408) | 2026-08-23 | develop |  |
+| [`0.0.0-develop.407`](#v-0-0-0-develop-407) | 2026-08-23 | develop |  |
+| [`0.0.0-develop.406`](#v-0-0-0-develop-406) | 2026-08-23 | develop |  |
+| [`0.0.0-develop.404`](#v-0-0-0-develop-404) | 2026-08-22 | develop |  |
+| [`0.0.0-develop.403`](#v-0-0-0-develop-403) | 2026-08-22 | develop |  |
+| [`0.0.0-develop.402`](#v-0-0-0-develop-402) | 2026-08-22 | develop |  |
+| [`1.2.0-rc.419`](#v-1-2-0-rc-419) | 2026-08-21 | release candidate |  |
+| [`1.2.0-rc.411`](#v-1-2-0-rc-411) | 2026-08-21 | release candidate |  |
+| [`0.0.0-develop.392`](#v-0-0-0-develop-392) | 2026-08-21 | develop |  |
+| [`1.2.0-rc.410`](#v-1-2-0-rc-410) | 2026-08-21 | release candidate |  |
+| [`0.0.0-develop.391`](#v-0-0-0-develop-391) | 2026-08-21 | develop |  |
+| [`0.0.0-develop.390`](#v-0-0-0-develop-390) | 2026-08-21 | develop |  |
+| [`1.2.0-rc.408`](#v-1-2-0-rc-408) | 2026-08-20 | release candidate |  |
+| [`1.2.0-rc.407`](#v-1-2-0-rc-407) | 2026-08-20 | release candidate |  |
+| [`1.2.0-rc.402`](#v-1-2-0-rc-402) | 2026-08-20 | release candidate |  |
+| [`0.0.0-develop.389`](#v-0-0-0-develop-389) | 2026-08-20 | develop |  |
+| [`0.0.0-develop.388`](#v-0-0-0-develop-388) | 2026-08-20 | develop |  |
+| [`0.0.0-develop.387`](#v-0-0-0-develop-387) | 2026-08-20 | develop |  |
+| [`1.2.0-rc.399`](#v-1-2-0-rc-399) | 2026-08-19 | release candidate |  |
+| [`1.2.0-rc.397`](#v-1-2-0-rc-397) | 2026-08-18 | release candidate |  |
+| [`0.0.0-develop.384`](#v-0-0-0-develop-384) | 2026-08-14 | develop |  |
+| [`0.0.0-develop.383`](#v-0-0-0-develop-383) | 2026-08-09 | develop |  |
+| [`0.0.0-develop.379`](#v-0-0-0-develop-379) | 2026-08-07 | develop |  |
 
 # Release candidates
+
+<a id="v-1-2-0-rc-428"></a>
+
+## registry/registry-platform 1.2.0-rc.428 — 2026-08-27
+
+_commit `2472e13` · changes since 1.2.0-rc.425_
+<!-- build:1.2.0-rc.428 revision:2472e1378301aef56f4882676b286cb008fcb903 ts:1787822922 -->
+
+**Chart:** [openg2p-registry 1.2.0-rc.428](https://gitlab.com/api/v4/projects/openg2p%2Fcharts/packages/helm/stable/charts/openg2p-registry-1.2.0-rc.428.tgz)
+
+### Summary
+
+- New feature: added export functionality for register records and replaced config-driven page size with viewport-adaptive breakpoints for improved responsiveness.
+
+### Changes
+
+- [G2P-5585](https://openg2p.atlassian.net/browse/G2P-5585) feat: implement export functionality for register records ([`19f02b3`](https://gitlab.com/openg2p/registry/registry-platform/-/commit/19f02b3b65090016f88546e3e8c2aa735408f216))
+- [G2P-5569](https://openg2p.atlassian.net/browse/G2P-5569) feat: replace config-driven page size with viewport-adaptive breakpoints ([`560c1ef`](https://gitlab.com/openg2p/registry/registry-platform/-/commit/560c1efafff4a2991748dd28f2c537ccfa799b7d))
 
 <a id="v-1-2-0-rc-425"></a>
 
@@ -193,19 +211,6 @@ _commit `0524935` · changes since 1.2.0-rc.396_
 ### Changes since 1.2.0-rc.396
 
 - [G2P-5538](https://openg2p.atlassian.net/browse/G2P-5538) Refactored registry code list handling and API endpoints by removing attribute seeding, deleting related SQL/defaults, linking local ui-widgets, updating geo-level API routes, and optimizing attribute-value pagination defaults. ([`0524935`](https://gitlab.com/openg2p/registry/registry-platform/-/commit/052493500f69964f1b646186eb1c36ba5e2d3151))
-
-<a id="v-1-2-0-rc-396"></a>
-
-## registry/registry-platform 1.2.0-rc.396 — 2026-08-14
-
-_commit `de4ce53` · changes since 1.2.0-rc.393_
-<!-- build:1.2.0-rc.396 revision:de4ce533b916ab67104dbda1b6a432155b73bacf ts:1786692907 -->
-
-**Chart:** [openg2p-registry 1.2.0-rc.396](https://gitlab.com/api/v4/projects/openg2p%2Fcharts/packages/helm/stable/charts/openg2p-registry-1.2.0-rc.396.tgz)
-
-### Changes since 1.2.0-rc.393
-
-- [G2P-5369](https://openg2p.atlassian.net/browse/G2P-5369): Enhance GeoHierarchy functionality and validation ([`a533082`](https://gitlab.com/openg2p/registry/registry-platform/-/commit/a53308284603cf91b473cbf8d365c630a78ed923))
 
 # Develop builds
 
