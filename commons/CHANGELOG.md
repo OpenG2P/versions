@@ -6,6 +6,7 @@ _Published automatically._
 
 | Version | Date | Type |
 | --- | --- | --- |
+| [`0.0.0-develop.231`](#v-0-0-0-develop-231) | 2026-08-27 | develop |
 | [`0.0.0-develop.229`](#v-0-0-0-develop-229) | 2026-08-26 | develop |
 | [`0.0.0-develop.228`](#v-0-0-0-develop-228) | 2026-08-25 | develop |
 | [`0.0.0-develop.227`](#v-0-0-0-develop-227) | 2026-08-25 | develop |
@@ -82,6 +83,22 @@ _commit `623204a` · changes since 0.0.0-develop.210_
 - [G2P-5335](https://openg2p.atlassian.net/browse/G2P-5335) Switch CI to GitLab (.gitlab-ci.yml); drop GitHub Actions build/publish ([`0988f9b`](https://gitlab.com/openg2p/commons/-/commit/0988f9b3c5af0b70f362e672975d99e25646b27e))
 
 # Develop builds
+
+<a id="v-0-0-0-develop-231"></a>
+
+## commons — develop 0.0.0-develop.231 (2026-08-27)
+
+_commit `48411db` · changes since 0.0.0-develop.229_
+<!-- build:0.0.0-develop.231 revision:48411dbca27820b38839960dc9140e2eb351fe7d ts:1787789713 -->
+
+### Summary
+
+- Dependency updates: upgraded several services and core components to their latest versions for improved performance and security.
+
+### Changes
+
+- Versions updated. ([`48411db`](https://gitlab.com/openg2p/commons/-/commit/48411dbca27820b38839960dc9140e2eb351fe7d))
+- Updated several services to latest versions. ([`327340b`](https://gitlab.com/openg2p/commons/-/commit/327340b6c679c90c18ecb43e194505f3018c9a61))
 
 <a id="v-0-0-0-develop-229"></a>
 
