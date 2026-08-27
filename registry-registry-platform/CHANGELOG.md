@@ -6,6 +6,7 @@ _Published automatically._
 
 | Version | Date | Type | Notes |
 | --- | --- | --- | --- |
+| [`1.2.0-rc.433`](#v-1-2-0-rc-433) | 2026-08-27 | release candidate |  |
 | [`1.2.0-rc.428`](#v-1-2-0-rc-428) | 2026-08-27 | release candidate |  |
 | [`1.2.0-rc.425`](#v-1-2-0-rc-425) | 2026-08-26 | release candidate |  |
 | [`0.0.0-develop.417`](#v-0-0-0-develop-417) | 2026-08-25 | develop |  |
@@ -32,12 +33,32 @@ _Published automatically._
 | [`0.0.0-develop.388`](#v-0-0-0-develop-388) | 2026-08-20 | develop |  |
 | [`0.0.0-develop.387`](#v-0-0-0-develop-387) | 2026-08-20 | develop |  |
 | [`1.2.0-rc.399`](#v-1-2-0-rc-399) | 2026-08-19 | release candidate |  |
-| [`1.2.0-rc.397`](#v-1-2-0-rc-397) | 2026-08-18 | release candidate |  |
 | [`0.0.0-develop.384`](#v-0-0-0-develop-384) | 2026-08-14 | develop |  |
 | [`0.0.0-develop.383`](#v-0-0-0-develop-383) | 2026-08-09 | develop |  |
 | [`0.0.0-develop.379`](#v-0-0-0-develop-379) | 2026-08-07 | develop |  |
 
 # Release candidates
+
+<a id="v-1-2-0-rc-433"></a>
+
+## registry/registry-platform 1.2.0-rc.433 — 2026-08-27
+
+_commit `9b99bb7` · changes since 1.2.0-rc.428_
+<!-- build:1.2.0-rc.433 revision:9b99bb7be3896b4d75a3828f3fe24ea9b55e9722 ts:1787824109 -->
+
+**Chart:** [openg2p-registry 1.2.0-rc.433](https://gitlab.com/api/v4/projects/openg2p%2Fcharts/packages/helm/stable/charts/openg2p-registry-1.2.0-rc.433.tgz)
+
+### Summary
+
+- New feature: implemented G2P register export functionality, including APIs, a dedicated export task, and a worker for processing exports.
+- Configuration updates: modified Helm configuration to support the new register export functionality.
+
+### Changes
+
+- [G2P-5584](https://openg2p.atlassian.net/browse/G2P-5584) Update helm configuration for register export functionality ([`4444433`](https://gitlab.com/openg2p/registry/registry-platform/-/commit/4444433bb22893740e306259d6d3da716f105831))
+- [G2P-5584](https://openg2p.atlassian.net/browse/G2P-5584) Implement register export task and worker ([`001b450`](https://gitlab.com/openg2p/registry/registry-platform/-/commit/001b4501f1893ef8d121acfd26b4a15f5007f11f))
+- [G2P-5584](https://openg2p.atlassian.net/browse/G2P-5584) Add Apis for G2P register export functionality ([`5ee7fc4`](https://gitlab.com/openg2p/registry/registry-platform/-/commit/5ee7fc4e85b295ca1184ebea15b37049913de748))
+- [G2P-5584](https://openg2p.atlassian.net/browse/G2P-5584) Add G2P register export functionality ([`0b0cf89`](https://gitlab.com/openg2p/registry/registry-platform/-/commit/0b0cf89076aa87b68af63b61d5638cf55a93af93))
 
 <a id="v-1-2-0-rc-428"></a>
 
@@ -198,19 +219,6 @@ _commit `cf61f52` · changes since 1.2.0-rc.397_
 ### Changes
 
 - [G2P-4786](https://openg2p.atlassian.net/browse/G2P-4786) refactor: move G2PRegisterDomainFactory and G2PIdGeneratorFactory to core interfaces, removing dependencies from extensions ([`929a1f3`](https://gitlab.com/openg2p/registry/registry-platform/-/commit/929a1f38b5f3eda56905fe4caa886bc0d50b9370))
-
-<a id="v-1-2-0-rc-397"></a>
-
-## registry/registry-platform 1.2.0-rc.397 — 2026-08-18
-
-_commit `0524935` · changes since 1.2.0-rc.396_
-<!-- build:1.2.0-rc.397 revision:052493500f69964f1b646186eb1c36ba5e2d3151 ts:1787053503 -->
-
-**Chart:** [openg2p-registry 1.2.0-rc.397](https://gitlab.com/api/v4/projects/openg2p%2Fcharts/packages/helm/stable/charts/openg2p-registry-1.2.0-rc.397.tgz)
-
-### Changes since 1.2.0-rc.396
-
-- [G2P-5538](https://openg2p.atlassian.net/browse/G2P-5538) Refactored registry code list handling and API endpoints by removing attribute seeding, deleting related SQL/defaults, linking local ui-widgets, updating geo-level API routes, and optimizing attribute-value pagination defaults. ([`0524935`](https://gitlab.com/openg2p/registry/registry-platform/-/commit/052493500f69964f1b646186eb1c36ba5e2d3151))
 
 # Develop builds
 
