@@ -5,11 +5,49 @@
 # https://<group>.gitlab.io/<project>/  e.g. https://openg2p.gitlab.io/versions/
 #
 # The change-log markdown is written here by every repo's CI `changelog` job.
+#
+# WHY THIS JOB RE-RENDERS BEFORE BUILDING
+#   Two files in each repo folder are meant to be edited BY HAND here, not written
+#   by a pipeline: `.marked` (a build declared known-good) and `.withdrawn`. Both are
+#   read by render-aggregate.sh when it generates <repo>/CHANGELOG.md -- which
+#   normally only happens during that repo's own next build. For a module that builds
+#   rarely, a note added today could sit invisible for months.
+#
+#   So the aggregates are regenerated here, from the pages already in this repo, every
+#   time the site builds. render-aggregate.sh needs nothing but this checkout, so an
+#   edit to .marked shows up on the site within a minute of the commit.
+#
+#   Deliberately NOT committed back: a push from CI would trigger another pipeline,
+#   and needs a write token. The regenerated markdown only has to reach `public/`.
+#   The committed CHANGELOG.md may lag briefly; it is rewritten by the next build of
+#   that repo anyway, so the two converge on their own.
+
+variables:
+  PACKAGING_PROJECT: "openg2p/packaging"
+  PACKAGING_REF: "v1"
 
 pages:
   stage: deploy
   image: node:20-alpine
+  before_script:
+    # bash: the changelog scripts are bash, not busybox sh. git: to fetch them.
+    - apk add --no-cache bash git
+    - git clone --depth 1 --branch "$PACKAGING_REF"
+        "https://gitlab-ci-token:${CI_JOB_TOKEN}@${CI_SERVER_HOST}/${PACKAGING_PROJECT}.git" .packaging
   script:
+    - |
+      set -eu
+      # Regenerate every repo's CHANGELOG.md from the pages already here, so hand
+      # edits to .marked / .withdrawn take effect without waiting for that repo's
+      # next pipeline. `*/` skips .packaging (dot-prefixed); folders without a
+      # versions/ directory (assets/) are skipped explicitly.
+      for d in */; do
+        r="${d%/}"
+        [ -d "$r/versions" ] || continue
+        echo "re-rendering ${r}"
+        PAGES_DIR="$CI_PROJECT_DIR" REPO="$r" bash .packaging/ci/changelog/render-aggregate.sh
+      done
+      PAGES_DIR="$CI_PROJECT_DIR" bash .packaging/ci/changelog/render-root-index.sh
     - sh build.sh
   artifacts:
     paths:
