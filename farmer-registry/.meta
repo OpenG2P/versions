@@ -1,0 +1,4 @@
+name=farmer-registry
+kind=service
+repo=https://github.com/OpenG2P/farmer-registry
+images=https://hub.docker.com/u/openg2p
