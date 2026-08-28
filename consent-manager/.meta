@@ -1,0 +1,4 @@
+name=consent-manager
+kind=service
+repo=https://github.com/OpenG2P/consent-manager
+images=https://hub.docker.com/u/openg2p
