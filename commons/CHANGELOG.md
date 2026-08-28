@@ -6,10 +6,22 @@ _Published automatically._
 
 | Version | Date | Type | Notes |
 | --- | --- | --- | --- |
+| [`0.0.0-develop.234`](#v-0-0-0-develop-234) | 2026-08-28 | develop |  |
 | [`0.0.0-develop.233`](#v-0-0-0-develop-233) | 2026-08-28 | develop |  |
 | [`0.0.0-develop.232`](#v-0-0-0-develop-232) | 2026-08-28 | develop |  |
 
 # Develop builds
+
+<a id="v-0-0-0-develop-234"></a>
+
+## commons — develop 0.0.0-develop.234 (2026-08-28)
+
+_commit `2a9f6cb` · changes since 0.0.0-develop.233_
+<!-- build:0.0.0-develop.234 revision:2a9f6cbe578d0451616950a2772a1f3e9d217927 ts:1787914306 -->
+
+### Changes
+
+- [G2P-5605](https://openg2p.atlassian.net/browse/G2P-5605) pick up the master-data and partner-management fixes ([`2a9f6cb`](https://github.com/OpenG2P/commons/commit/2a9f6cbe578d0451616950a2772a1f3e9d217927))
 
 <a id="v-0-0-0-develop-233"></a>
 
