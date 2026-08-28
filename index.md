@@ -14,4 +14,4 @@ See the **[versioning & CI docs](https://docs.openg2p.org/operations/deployment/
 > on GitHub. The earlier history is archived at
 > **[openg2p.gitlab.io/versions](https://openg2p.gitlab.io/versions/)**.
 
-_No changelogs published yet._
+- **[audit-manager](./audit-manager/CHANGELOG)** · [repository ↗](https://github.com/OpenG2P/audit-manager)
