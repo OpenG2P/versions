@@ -1,0 +1,4 @@
+name=master-data-service
+kind=service
+repo=https://github.com/OpenG2P/master-data-service
+images=https://hub.docker.com/u/openg2p
