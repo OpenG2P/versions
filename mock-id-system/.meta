@@ -1,0 +1,3 @@
+name=mock-id-system
+kind=service
+repo=https://github.com/OpenG2P/mock-id-system
