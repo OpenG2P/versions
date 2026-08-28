@@ -1,4 +1,0 @@
-name=g2p-insights
-kind=service
-repo=https://gitlab.com/openg2p/g2p-insights
-images=https://gitlab.com/openg2p/g2p-insights/container_registry

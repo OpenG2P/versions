@@ -1,4 +1,0 @@
-name=registry/farmer-registry
-kind=service
-repo=https://gitlab.com/openg2p/registry/farmer-registry
-images=https://gitlab.com/openg2p/registry/farmer-registry/container_registry

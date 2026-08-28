@@ -1,4 +1,0 @@
-name=platform-services/partner-management
-kind=service
-repo=https://gitlab.com/openg2p/platform-services/partner-management
-images=https://gitlab.com/openg2p/platform-services/partner-management/container_registry

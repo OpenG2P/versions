@@ -1,4 +1,0 @@
-name=keycloak/keycloak-themes
-kind=service
-repo=https://gitlab.com/openg2p/keycloak/keycloak-themes
-images=https://gitlab.com/openg2p/keycloak/keycloak-themes/container_registry

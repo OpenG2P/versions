@@ -1,4 +1,0 @@
-name=platform-services/awe
-kind=service
-repo=https://gitlab.com/openg2p/platform-services/awe
-images=https://gitlab.com/openg2p/platform-services/awe/container_registry

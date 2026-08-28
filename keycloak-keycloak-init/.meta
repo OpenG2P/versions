@@ -1,4 +1,0 @@
-name=keycloak/keycloak-init
-kind=service
-repo=https://gitlab.com/openg2p/keycloak/keycloak-init
-images=https://gitlab.com/openg2p/keycloak/keycloak-init/container_registry

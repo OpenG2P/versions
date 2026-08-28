@@ -1,4 +1,0 @@
-name=registry/national-social-registry
-kind=service
-repo=https://gitlab.com/openg2p/registry/national-social-registry
-images=https://gitlab.com/openg2p/registry/national-social-registry/container_registry
