@@ -1,3 +1,4 @@
 name=audit-manager
 kind=service
 repo=https://github.com/OpenG2P/audit-manager
+images=https://hub.docker.com/r/openg2p/openg2p-audit-manager

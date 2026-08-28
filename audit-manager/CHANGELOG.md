@@ -2,7 +2,7 @@
 
 _Published automatically._
 
-**Repository:** [github.com/OpenG2P/audit-manager](https://github.com/OpenG2P/audit-manager)
+**Repository:** [github.com/OpenG2P/audit-manager](https://github.com/OpenG2P/audit-manager) · **Container images:** [Container Registry](https://hub.docker.com/r/openg2p/openg2p-audit-manager)
 
 | Version | Date | Type | Notes |
 | --- | --- | --- | --- |
@@ -17,11 +17,13 @@ _Published automatically._
 _commit `36dbf77` · changes since 1.0.0_
 <!-- build:0.0.0-develop.25 revision:36dbf77a0c0ff8afc9a10a1de769b3bdf06d5fd6 ts:1787878791 -->
 
+**Chart:** [openg2p-audit-manager 0.0.0-develop.25](https://openg2p.github.io/openg2p-helm/openg2p-audit-manager-0.0.0-develop.25.tgz)
+
 ### Summary
 
 - **Major:** Migration to GitLab for CI/CD, replacing GitHub Actions with a new `.gitlab-ci.yml` configuration and disabling build/publish on GitHub.
-- Container registry updated for the audit manager to align with the new GitLab setup.
-- GitHub repository remains accessible in a read-only state for reference purposes.
+- Container registry updated for the audit manager, reflecting changes in deployment strategy.
+- GitHub repository remains accessible in a read-only state for reference, but active development has shifted to GitLab.
 
 ### Changes
 
