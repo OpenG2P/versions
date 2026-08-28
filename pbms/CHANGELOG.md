@@ -21,10 +21,10 @@ _commit `aa1ce60` · changes since the start (showing the latest 20 commits)_
 
 ### Summary
 
-- **Major:** Migration to GitLab for CI/CD; GitHub Actions build/publish removed, with a new central build-publish CI for Docker images and Helm charts.
-- Consolidation of workflows: old Docker and Helm processes removed, and G2P-bridge models now pulled from GitLab develop branch.
-- Dependency updates: versions for core components and Postgres-init chart have been updated, and the odoo-commons pin on the core image has been dropped.
-- Documentation added: a new README.md file has been created to provide project information.
+- **Major:** Migration to GitLab for CI/CD, dropping GitHub Actions and enabling a central build-publish pipeline for multiple images and charts.
+- Dependency updates: versions for core components and Postgres-init chart have been updated, and the odoo-commons pin has been removed from the Dockerfile.
+- Consolidation efforts are ongoing, with multiple work-in-progress commits aimed at streamlining the codebase.
+- Documentation added with the creation of a README.md file to improve project clarity.
 
 ### Changes
 
