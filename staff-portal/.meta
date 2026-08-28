@@ -1,0 +1,4 @@
+name=staff-portal
+kind=service
+repo=https://github.com/OpenG2P/staff-portal
+images=https://hub.docker.com/r/openg2p/openg2p-staff-portal-ui
