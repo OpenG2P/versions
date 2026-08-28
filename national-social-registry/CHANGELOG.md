@@ -1,0 +1,60 @@
+# national-social-registry
+
+_Published automatically._
+
+**Repository:** [github.com/OpenG2P/national-social-registry](https://github.com/OpenG2P/national-social-registry) · **Container images:** [Container Registry](https://hub.docker.com/u/openg2p)
+
+| Version | Date | Type | Notes |
+| --- | --- | --- | --- |
+| [`0.0.0-develop.242`](#v-0-0-0-develop-242) | 2026-08-28 | develop |  |
+
+# Develop builds
+
+<a id="v-0-0-0-develop-242"></a>
+
+## national-social-registry — develop 0.0.0-develop.242 (2026-08-28)
+
+_commit `33a905d` · changes since 1.1.0_
+<!-- build:0.0.0-develop.242 revision:33a905d4051784a11e1cfcdbd2b4f1fae8f37293 ts:1787884394 -->
+
+**Chart:** [openg2p-nsr 0.0.0-develop.242](https://openg2p.github.io/openg2p-helm/openg2p-nsr-0.0.0-develop.242.tgz)
+
+### Summary
+
+- **Major:** Removal of G2PRegisterDomainFactory and related files to streamline app initialization.
+- Reporting enhancements: Updated reporting layer to match Farmer Registry, added materialized views for vulnerability, livelihood, and housing, and implemented a scheduled refresh for reporting views to ensure data visibility.
+- Database improvements: Fixed AWE seed process to handle policy_key clashes, ensuring batch processing integrity, and adjusted dashboard import logic to prevent install failures when Superset is absent.
+- Version updates: Bumped RP version multiple times, now at 0.0.0-develop.392.
+- Minor updates: Included minor documentation corrections and helm comment adjustments, and removed unreferenced import-dashboards-job.yaml.
+
+### Changes
+
+- [G2P-5605](https://openg2p.atlassian.net/browse/G2P-5605) Build and publish on GitHub again ([`33a905d`](https://github.com/OpenG2P/national-social-registry/commit/33a905d4051784a11e1cfcdbd2b4f1fae8f37293))
+- Bumpd up RP version to 0.0.0-develop.392 ([`966cf10`](https://github.com/OpenG2P/national-social-registry/commit/966cf101ab9e8f8b388fd7e9d54fd3e902a9d53a))
+- Bumped up RP version to 0.0.0-develop.391 ([`334a82d`](https://github.com/OpenG2P/national-social-registry/commit/334a82d17f00e2391bc652460a550856bb3f715a))
+- [G2P-5554](https://openg2p.atlassian.net/browse/G2P-5554) Seed the pack's real birth date instead of inventing 1 January. The pack carried only a year, so every sample individual in the country shared a birthday; older packs still fall back, since a date column cannot hold a year. ([`9b04d6c`](https://github.com/OpenG2P/national-social-registry/commit/9b04d6ca28f56900a08d1953762c989836a02ca1))
+- Minor doc update. ([`c4b8cb8`](https://github.com/OpenG2P/national-social-registry/commit/c4b8cb88720b52850d8d7b35b1dacaefe2f2a894))
+- [G2P-5524](https://openg2p.atlassian.net/browse/G2P-5524) Remove G2PRegisterDomainFactory and related files. The factory class and its dependencies have been eliminated to streamline the initialization process in the app. ([`6019eb0`](https://github.com/OpenG2P/national-social-registry/commit/6019eb0c1f3e284cf41d73e050917506d6ca54f3))
+- Minor correction in helm comments. ([`9169386`](https://github.com/OpenG2P/national-social-registry/commit/9169386c6e31eae8a4141265cf18acce3d7c9e91))
+- Bumped up RP version to 0.0.0-develop.383 ([`2fc8b9e`](https://github.com/OpenG2P/national-social-registry/commit/2fc8b9e729b180734ab5fb2fec379e4c519dfa38))
+- [G2P-4804](https://openg2p.atlassian.net/browse/G2P-4804) Bring the reporting layer to parity with the Farmer Registry. Materializes the vulnerability, livelihood and housing views — 259k, 166k and 62k rows, each joining a materialized parent on every read — inherits the individual's sex and age band onto its five child views so those questions need no join, and adds the devOverlay switch for testing the platform generator without publishing an image. ([`69bc95f`](https://github.com/OpenG2P/national-social-registry/commit/69bc95f0622ee52cdf1fa642a98959c548b59dc8))
+- [G2P-4804](https://openg2p.atlassian.net/browse/G2P-4804) Take the mechanical reporting views from the platform generator. reporting.yaml declares the entity tree and names household/individual as hand-written; the generator adds fourteen more, including the vulnerability and livelihood tables holding 259k and 166k rows that had no reporting view at all. ([`fb74480`](https://github.com/OpenG2P/national-social-registry/commit/fb74480a887842a87242109e9c1abe5b0e6c79a0))
+- [G2P-4804](https://openg2p.atlassian.net/browse/G2P-4804) Refresh the reporting views on a schedule, instead of relying on Insights to do it. They are materialized, so they held whatever the install produced and every household registered afterwards was invisible with no error anywhere; a CronJob now rebuilds them in dependency order resolved from pg_depend, on analytics.reportingViews.refreshSchedule. ([`9dbd065`](https://github.com/OpenG2P/national-social-registry/commit/9dbd06564961e071e5c1e8b0b5b4473abc9c5af5))
+- [G2P-4804](https://openg2p.atlassian.net/browse/G2P-4804) Drop the inline maps &lt;style&gt;; the platform injects the shared theme at build time. ([`623c313`](https://github.com/OpenG2P/national-social-registry/commit/623c3132d1a31a34f56916482dd9f4663a936b40))
+- [G2P-5378](https://openg2p.atlassian.net/browse/G2P-5378) Fix AWE seed aborting on shared-DB policy_key clash: untargeted ON CONFLICT DO NOTHING (uq_policy_key_version was unguarded by the id-targeted clause) plus FK-orphan filters on stages/rules, so a policy another registry already owns no longer takes the whole batch — and the farmer policy — down with it ([`ffc0017`](https://github.com/OpenG2P/national-social-registry/commit/ffc00171103cd373132c5fcabc10ea866fc0c029))
+- [G2P-4804](https://openg2p.atlassian.net/browse/G2P-4804) Fall back to this registry's own Superset connection name when the release is gone. The name was only ever read from `helm get values`, so uninstalling from Rancher — or running helm uninstall first — skipped the dashboard cleanup with a quiet warning and left the dashboards, charts, datasets and connection in the shared Superset, where the next install adopted them by UUID. ([`9b5f4cf`](https://github.com/OpenG2P/national-social-registry/commit/9b5f4cf52f44e3b3ac9580ac9dac894b4bfc913f))
+- [G2P-4804](https://openg2p.atlassian.net/browse/G2P-4804) Skip the dashboard import when Superset is absent instead of failing the install. Superset is a separate release and analytics is optional, but the gate exited 1 after waiting, so a registry installed without a reporting stack failed outright. The gate is checked in the init container AND the main one, because an init container exiting 0 does not stop the pod; set analytics.dashboards.superset.required=true where a silent skip would be worse. ([`7815d1f`](https://github.com/OpenG2P/national-social-registry/commit/7815d1f14372bd83d75ccc20a27ec0c566b2393e))
+- [G2P-4804](https://openg2p.atlassian.net/browse/G2P-4804) Point the maps page at the `registry` source. It still queried nsr.*, which stopped resolving when the Evidence source was renamed, so the page would not have built. ([`a1a513b`](https://github.com/OpenG2P/national-social-registry/commit/a1a513b6ed4cc8a426df3b0025914a7007315117))
+- G2P-XXXX Dashboards: drop the standalone import-dashboards-job.yaml — unreferenced, superseded by the chart's hook Job, and three fixes behind it ([`5ccc675`](https://github.com/OpenG2P/national-social-registry/commit/5ccc675d8263c6953d41990a32933d15c707389a))
+- Moved to GitLab: openg2p/registry/national-social-registry (read-only; build/publish disabled) ([`7b92133`](https://github.com/OpenG2P/national-social-registry/commit/7b921330646356a2e01ef4aba8babc841bd7610c))
+
+---
+
+> **What's shown here.** This catalogue lists **every stable release**, plus
+> the **latest 20 develop builds** and the **latest 10 release
+> candidates** per release line -- candidates are KEPT after their release
+> ships, as the audit trail of the release run. Older develop builds and
+> release candidates are pruned as they are superseded. Those versions
+> still exist in the container and Helm
+> registries — they are simply not listed here. This page is generated
+> automatically from commit history; do not edit it by hand.

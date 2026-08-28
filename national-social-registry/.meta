@@ -1,0 +1,4 @@
+name=national-social-registry
+kind=service
+repo=https://github.com/OpenG2P/national-social-registry
+images=https://hub.docker.com/u/openg2p

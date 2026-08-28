@@ -19,5 +19,6 @@ See the **[versioning & CI docs](https://docs.openg2p.org/operations/deployment/
 - **[iam](./iam/CHANGELOG)** · [repository ↗](https://github.com/OpenG2P/iam)
 - **[id-generator](./id-generator/CHANGELOG)** · [repository ↗](https://github.com/OpenG2P/id-generator)
 - **[keycloak-init](./keycloak-init/CHANGELOG)** · [repository ↗](https://github.com/OpenG2P/keycloak-init)
+- **[national-social-registry](./national-social-registry/CHANGELOG)** · [repository ↗](https://github.com/OpenG2P/national-social-registry)
 - **[partner-management](./partner-management/CHANGELOG)** · [repository ↗](https://github.com/OpenG2P/partner-management)
 - **[registry-platform](./registry-platform/CHANGELOG)** · [repository ↗](https://github.com/OpenG2P/registry-platform)
