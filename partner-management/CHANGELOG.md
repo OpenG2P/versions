@@ -21,12 +21,13 @@ _commit `9c388db` · changes since the start (showing the latest 20 commits)_
 
 ### Summary
 
-- **Major:** CI migration to GitLab, dropping GitHub Actions; new CI implemented and minor adjustments made to the build and push pipeline.
-- Authentication fixes: corrected environment variable prefixes for partner management, ensuring AUTH_ENABLED functions correctly for the first time.
-- Keycloak updated: new location and version for Keycloak initialization; IAM registration support added for Partner Management.
-- Docker configuration: corrected Docker image sourcing to avoid using Docker Hub.
-- Testing improvements: automatic tests now run from the bridge with enhanced workflow scoping and fixes for sanity tests.
-- Minor UI changes and updates to auditing features, including the addition of questions.yaml and correction of the default audit manager URL.
+- **Major:** CI migration to GitLab, dropping GitHub Actions; includes new CI implementation and minor adjustments to the build and push pipeline.
+- Authentication fixes: corrected environment variable prefixes for partner management, ensuring AUTH_ENABLED functions properly for the first time.
+- Keycloak updates: new location and version adjustments, along with enhancements to partner management authentication configuration.
+- New feature: added IAM registration support for Partner Management, improving user management capabilities.
+- Docker configuration: corrected image sourcing to prevent reliance on Docker Hub.
+- Testing improvements: automatic tests now run from the bridge, with enhancements to workflow scoping and fixes for sanity tests.
+- Minor UI changes and updates to the default audit manager URL, alongside the addition of auditing features and a new questions.yaml file.
 
 ### Changes
 
