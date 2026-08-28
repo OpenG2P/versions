@@ -1,0 +1,4 @@
+name=partner-management
+kind=service
+repo=https://github.com/OpenG2P/partner-management
+images=https://hub.docker.com/u/openg2p
