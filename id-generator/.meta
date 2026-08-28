@@ -1,0 +1,4 @@
+name=id-generator
+kind=service
+repo=https://github.com/OpenG2P/id-generator
+images=https://hub.docker.com/r/openg2p/openg2p-id-generator
