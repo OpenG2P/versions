@@ -1,0 +1,4 @@
+name=iam
+kind=service
+repo=https://github.com/OpenG2P/iam
+images=https://hub.docker.com/u/openg2p
