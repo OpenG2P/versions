@@ -15,3 +15,4 @@ See the **[versioning & CI docs](https://docs.openg2p.org/operations/deployment/
 > **[openg2p.gitlab.io/versions](https://openg2p.gitlab.io/versions/)**.
 
 - **[audit-manager](./audit-manager/CHANGELOG)** · [repository ↗](https://github.com/OpenG2P/audit-manager)
+- **[keycloak-init](./keycloak-init/CHANGELOG)** · [repository ↗](https://github.com/OpenG2P/keycloak-init)
