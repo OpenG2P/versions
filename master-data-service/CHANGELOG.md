@@ -6,6 +6,7 @@ _Published automatically._
 
 | Version | Date | Type | Notes |
 | --- | --- | --- | --- |
+| [`0.0.0-develop.67`](#v-0-0-0-develop-67) | 2026-08-28 | develop |  |
 | [`1.1.0-rc.63`](#v-1-1-0-rc-63) | 2026-08-28 | release candidate |  |
 | [`1.1.0-rc.62`](#v-1-1-0-rc-62) | 2026-08-28 | release candidate |  |
 | [`0.0.0-develop.66`](#v-0-0-0-develop-66) | 2026-08-28 | develop |  |
@@ -66,6 +67,19 @@ _commit `4ffaad7` · changes since the start (showing the latest 20 commits)_
 - [G2P-4804](https://openg2p.atlassian.net/browse/G2P-4804) Lowercase the geo-seed Job name. This template renders at the chart root, where .Chart.Name is the vendored subchart name — the commons-services umbrella carries it as `masterData`, so the Job came out as commons-services-masterData-geo-seed, which Kubernetes rejects. The hook failed, no geography or code lists were seeded, and the whole commons-services release went to `failed`. The API templates were unaffected because they render against a scoped context whose nameOverride is already lowercase. ([`83bfaee`](https://github.com/OpenG2P/master-data-service/commit/83bfaee9ae49249adb12589b0da1a290bf02f9fa))
 
 # Develop builds
+
+<a id="v-0-0-0-develop-67"></a>
+
+## master-data-service — develop 0.0.0-develop.67 (2026-08-28)
+
+_commit `135b60c` · changes since 0.0.0-develop.66_
+<!-- build:0.0.0-develop.67 revision:135b60cb76c53759802f82e5707e74cce76225e7 ts:1787914056 -->
+
+**Chart:** [openg2p-master-data 0.0.0-develop.67](https://openg2p.github.io/openg2p-helm/openg2p-master-data-0.0.0-develop.67.tgz)
+
+### Changes
+
+- [G2P-5605](https://openg2p.atlassian.net/browse/G2P-5605) pin fastapi-common to 1.2 to match iam-core 1.4 ([`135b60c`](https://github.com/OpenG2P/master-data-service/commit/135b60cb76c53759802f82e5707e74cce76225e7))
 
 <a id="v-0-0-0-develop-66"></a>
 
