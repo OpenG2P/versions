@@ -22,8 +22,8 @@ _commit `317a66d` · changes since 1.2.0_
 ### Summary
 
 - **Major:** Migration to GitLab for repository management, with GitHub workflows removed and build/publish functionality disabled.
-- Build and publish functionality reinstated on GitHub for version control.
-- Reversion of versions for the develop branch to maintain consistency.
+- Reversion of versioning for the develop branch to align with the new GitLab setup.
+- Resumption of build and publish processes on GitHub for the project.
 
 ### Changes
 
