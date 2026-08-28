@@ -16,6 +16,7 @@ See the **[versioning & CI docs](https://docs.openg2p.org/operations/deployment/
 
 - **[audit-manager](./audit-manager/CHANGELOG)** · [repository ↗](https://github.com/OpenG2P/audit-manager)
 - **[consent-manager](./consent-manager/CHANGELOG)** · [repository ↗](https://github.com/OpenG2P/consent-manager)
+- **[disability-registry](./disability-registry/CHANGELOG)** · [repository ↗](https://github.com/OpenG2P/disability-registry)
 - **[farmer-registry](./farmer-registry/CHANGELOG)** · [repository ↗](https://github.com/OpenG2P/farmer-registry)
 - **[iam](./iam/CHANGELOG)** · [repository ↗](https://github.com/OpenG2P/iam)
 - **[id-generator](./id-generator/CHANGELOG)** · [repository ↗](https://github.com/OpenG2P/id-generator)
