@@ -1,0 +1,4 @@
+name=keycloak-themes
+kind=service
+repo=https://github.com/OpenG2P/keycloak-themes
+images=https://hub.docker.com/r/openg2p/keycloak/tags
