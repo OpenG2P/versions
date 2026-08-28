@@ -14,6 +14,8 @@ See the **[versioning & CI docs](https://docs.openg2p.org/operations/deployment/
 > on GitHub. The earlier history is archived at
 > **[openg2p.gitlab.io/versions](https://openg2p.gitlab.io/versions/)**.
 
+### Services
+
 - **[audit-manager](./audit-manager/CHANGELOG)** · [repository ↗](https://github.com/OpenG2P/audit-manager)
 - **[awe](./awe/CHANGELOG)** · [repository ↗](https://github.com/OpenG2P/awe)
 - **[consent-manager](./consent-manager/CHANGELOG)** · [repository ↗](https://github.com/OpenG2P/consent-manager)
@@ -27,3 +29,7 @@ See the **[versioning & CI docs](https://docs.openg2p.org/operations/deployment/
 - **[partner-management](./partner-management/CHANGELOG)** · [repository ↗](https://github.com/OpenG2P/partner-management)
 - **[registry-platform](./registry-platform/CHANGELOG)** · [repository ↗](https://github.com/OpenG2P/registry-platform)
 - **[spar](./spar/CHANGELOG)** · [repository ↗](https://github.com/OpenG2P/spar)
+
+### Libraries
+
+- **[g2p-bridge-connectors](./g2p-bridge-connectors/CHANGELOG)** · [repository ↗](https://github.com/OpenG2P/g2p-bridge-connectors)
