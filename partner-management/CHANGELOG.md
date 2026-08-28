@@ -6,9 +6,23 @@ _Published automatically._
 
 | Version | Date | Type | Notes |
 | --- | --- | --- | --- |
+| [`0.0.0-develop.24`](#v-0-0-0-develop-24) | 2026-08-28 | develop |  |
 | [`0.0.0-develop.23`](#v-0-0-0-develop-23) | 2026-08-28 | develop |  |
 
 # Develop builds
+
+<a id="v-0-0-0-develop-24"></a>
+
+## partner-management — develop 0.0.0-develop.24 (2026-08-28)
+
+_commit `bb96ff2` · changes since 0.0.0-develop.23_
+<!-- build:0.0.0-develop.24 revision:bb96ff24d1d64538d361ad065707729a668b214c ts:1787913288 -->
+
+**Chart:** [partner-management 0.0.0-develop.24](https://openg2p.github.io/openg2p-helm/partner-management-0.0.0-develop.24.tgz)
+
+### Changes
+
+- [G2P-5605](https://openg2p.atlassian.net/browse/G2P-5605) fix InvalidImageName in the keycloak-service-account-role job ([`bb96ff2`](https://github.com/OpenG2P/partner-management/commit/bb96ff24d1d64538d361ad065707729a668b214c))
 
 <a id="v-0-0-0-develop-23"></a>
 
