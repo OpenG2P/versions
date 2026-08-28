@@ -21,10 +21,10 @@ _commit `4c1a3c6` · changes since the start (showing the latest 20 commits)_
 
 ### Summary
 
-- **Major:** Onboarded the mock-identity-system chart to the central pipeline, maintaining upstream images.
-- Identity management enhancements: fixed identity seeding to validate response bodies and include required photo and biometrics, and seeded mock identities from master data for registry authentication.
-- Data integrity improvement: stripped whitespace from seeded individual IDs and updated the identity seed to point to the renamed master data secret.
-- Build process update: implemented build and publish functionality on GitHub.
+- **Major:** Onboarded the mock-identity-system chart to the central pipeline, ensuring streamlined deployment processes.
+- Identity management enhancements: fixed identity seeding to validate response bodies and include required photo and biometrics, and seeded mock identities from master data for improved registry authentication.
+- Data integrity improvements: stripped whitespace from seeded individual IDs to ensure consistency and reliability.
+- Build and deployment updates: implemented GitHub Actions for build and publish processes, enhancing CI/CD workflows.
 
 ### Changes
 
