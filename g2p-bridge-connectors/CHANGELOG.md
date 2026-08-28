@@ -22,8 +22,8 @@ _moving branch · latest commit `ef1b69c` · baseline: 1.2.1_
 _Changes on `develop` since 1.2.1:_
 
 - CI/CD enhancements: introduced GitHub Actions workflows for build and publish processes, while removing the legacy GitLab CI configuration.
-- Documentation update: minor adjustments made to improve clarity and usability.
-- Codebase maintenance: general cleanup with 59 insertions and 48 deletions across various files.
+- Documentation update: added new documentation files to support the changes in CI workflows.
+- Codebase maintenance: minor adjustments across multiple files, resulting in a net change of 11 lines.
 
 ### Recent commits (latest 5)
 
