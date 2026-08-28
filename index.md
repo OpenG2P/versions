@@ -32,6 +32,7 @@ See the **[versioning & CI docs](https://docs.openg2p.org/operations/deployment/
 - **[pbms](./pbms/CHANGELOG)** · [repository ↗](https://github.com/OpenG2P/pbms)
 - **[registry-platform](./registry-platform/CHANGELOG)** · [repository ↗](https://github.com/OpenG2P/registry-platform)
 - **[spar](./spar/CHANGELOG)** · [repository ↗](https://github.com/OpenG2P/spar)
+- **[verifiable-credentials](./verifiable-credentials/CHANGELOG)** · [repository ↗](https://github.com/OpenG2P/verifiable-credentials)
 
 ### Libraries
 
