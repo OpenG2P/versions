@@ -6,7 +6,50 @@ _Published automatically._
 
 | Version | Date | Type | Notes |
 | --- | --- | --- | --- |
+| [`1.1.0-rc.62`](#v-1-1-0-rc-62) | 2026-08-28 | release candidate |  |
 | [`0.0.0-develop.66`](#v-0-0-0-develop-66) | 2026-08-28 | develop |  |
+
+# Release candidates
+
+<a id="v-1-1-0-rc-62"></a>
+
+## master-data-service 1.1.0-rc.62 — 2026-08-28
+
+_commit `4ffaad7` · changes since the start (showing the latest 20 commits)_
+<!-- build:1.1.0-rc.62 revision:4ffaad7339dadb2783ac9824c38bbfd417de0ff2 ts:1787897903 -->
+
+**Chart:** [openg2p-master-data 1.1.0-rc.62](https://openg2p.github.io/openg2p-helm/openg2p-master-data-1.1.0-rc.62.tgz)
+
+### Summary
+
+- **Major:** Refactored IAM configuration: updated repository references to GitLab and pinned IAM service to version 1.4, enhancing deployment stability.
+- Data model optimization: removed obsolete agricultural and social codelists, simplified attribute and geo schemas by eliminating unused fields, and updated social codelists with new livelihood values.
+- Feature enhancements: added geo level management and initial seed data for G2P attributes, along with improved geo management dialogs and localization updates in the Master Data UI.
+- Deployment improvements: aligned the master-data-api deployment with component labels, updated Docker configurations, and enhanced SQL codelists to handle conflicts.
+- Migration fixes: adjusted migration logic to ensure proper sequencing of table creation and prevent initialization failures, while also improving visibility of geo-seed options in deployment configurations.
+
+### Changes
+
+- [G2P-5605](https://openg2p.atlassian.net/browse/G2P-5605) Align the 1.1 release line with GitHub ([`4ffaad7`](https://github.com/OpenG2P/master-data-service/commit/4ffaad7339dadb2783ac9824c38bbfd417de0ff2))
+- [G2P-5586](https://openg2p.atlassian.net/browse/G2P-5586) Update FASTAPI_COMMON_REF to version 1.2 and change repository URL in Dockerfile and .gitlab-ci.yml ([`f6c2bc4`](https://github.com/OpenG2P/master-data-service/commit/f6c2bc41b1c66ccc91a7e70fd325ec5d6916841d))
+- [G2P-5578](https://openg2p.atlassian.net/browse/G2P-5578) Refactor IAM register ConfigMap and Job templates for improved naming and annotations ([`3b1dae4`](https://github.com/OpenG2P/master-data-service/commit/3b1dae4711450994d4720113521a950f8ec1fa6d))
+- [G2P-5576](https://openg2p.atlassian.net/browse/G2P-5576) Removed obsolete agricultural and social codelists, attributes, and unused schema entries, while updating social codelists with new livelihood values and attributes. ([`980d938`](https://github.com/OpenG2P/master-data-service/commit/980d938095e95d456c645d805082304af27e2681))
+- Refactor attribute and geo schemas to remove unused fields and simplify data models ([`a84cf6b`](https://github.com/OpenG2P/master-data-service/commit/a84cf6ba162bc350fcb66e4ec57ebde3ec2fb657))
+- [G2P-5574](https://openg2p.atlassian.net/browse/G2P-5574) Add component label to master-data-api deployment and service ([`f809fa7`](https://github.com/OpenG2P/master-data-service/commit/f809fa7db597b29e7f52460c9c04912b95b471b2))
+- [G2P-5572](https://openg2p.atlassian.net/browse/G2P-5572) Update IAM service repository reference from GitHub to GitLab ([`446b691`](https://github.com/OpenG2P/master-data-service/commit/446b69150b93586b240be875353126203426f2b8))
+- [G2P-5572](https://openg2p.atlassian.net/browse/G2P-5572) Update version numbers and pin IAM service reference to 1.4 ([`5efbd59`](https://github.com/OpenG2P/master-data-service/commit/5efbd59651052e0e20f025268f248f3ed2842464))
+- [G2P-5456](https://openg2p.atlassian.net/browse/G2P-5456) feat(master-data-ui): add configuration for Master Data UI deployment ([`86144ee`](https://github.com/OpenG2P/master-data-service/commit/86144ee891938e0d97537e471e0aa00536345320))
+- [G2P-5543](https://openg2p.atlassian.net/browse/G2P-5543) Update SQL codelists to handle conflicts and enhance Docker configurations ([`968c6fb`](https://github.com/OpenG2P/master-data-service/commit/968c6fb2693c947b7764baa9f1887b2d2461ef0e))
+- [G2P-5538](https://openg2p.atlassian.net/browse/G2P-5538) Add initial seed data for G2P attributes and values ([`a10123b`](https://github.com/OpenG2P/master-data-service/commit/a10123ba53ecf75d4cc2e8663b19d217851fd135))
+- [G2P-5538](https://openg2p.atlassian.net/browse/G2P-5538) Enhance geo level value management with data policy support ([`67c4be5`](https://github.com/OpenG2P/master-data-service/commit/67c4be52fe8bee62f65899917dea73d83a83a19c))
+- [G2P-5458](https://openg2p.atlassian.net/browse/G2P-5458) feat: add attribute and geo level management ([`6bad7a4`](https://github.com/OpenG2P/master-data-service/commit/6bad7a4ce930de29f4da8e416f224f896d23ef89))
+- [G2P-5456](https://openg2p.atlassian.net/browse/G2P-5456) feat: enhance geo management with new dialogs and localization updates ([`1e95c1a`](https://github.com/OpenG2P/master-data-service/commit/1e95c1a9b16943ea1e1b31fd20e97d0b6bfb9664))
+- [G2P-5456](https://openg2p.atlassian.net/browse/G2P-5456) feat(master-data-ui): add geo locations and reference data management ([`275bf51`](https://github.com/OpenG2P/master-data-service/commit/275bf51a08c07871b47f4a4e2f804a68ab9d4406))
+- [G2P-5456](https://openg2p.atlassian.net/browse/G2P-5456): initialize master-data-ui project with Next.js setup ([`876a1f4`](https://github.com/OpenG2P/master-data-service/commit/876a1f434b8ef207f39b826002b6dbcb47623baa))
+- [G2P-4804](https://openg2p.atlassian.net/browse/G2P-4804) Wait on the last table the migration creates, not the first. g2p_geo_levels is created before g2p_attributes and the sample tables, so gating on it proved only that the migration had started — wide enough for the loader to finish geo and then die on g2p_sample_households, which is the failure the guard exists to prevent. Waiting on g2p_sample_households proves the whole migration finished, since the creates are sequential and awaited. Also bounds the pg_isready loop, which could otherwise hang the init container indefinitely against an unreachable database. ([`a31a52b`](https://github.com/OpenG2P/master-data-service/commit/a31a52beab36324e77efd5dd96c74fc89c1f6c06))
+- [G2P-4804](https://openg2p.atlassian.net/browse/G2P-4804) Keep XKM as the chart default, and seed the whole pack rather than geography alone. Geography by itself leaves registries on their extension's own code lists, with no semantic role tags at all and no sample people — not a working default for anything downstream. The country itself stays a deployment decision: an install nobody configured must not attach invented figures to a real country's name or pick up a licence obligation by accident. ([`2476e12`](https://github.com/OpenG2P/master-data-service/commit/2476e12ba8ec64d515c5a35178661fc990be43b5))
+- [G2P-4804](https://openg2p.atlassian.net/browse/G2P-4804) Surface the country pack in questions.yaml. None of the geo-seed options were in the Rancher form, so the one place a deployment declares its country was reachable only by hand-editing values — an installer had no way to know the choice existed, and every install silently took the fictitious default. ([`e319189`](https://github.com/OpenG2P/master-data-service/commit/e319189f19fab97a0855c3e2165f9e78ccff4efb))
+- [G2P-4804](https://openg2p.atlassian.net/browse/G2P-4804) Lowercase the geo-seed Job name. This template renders at the chart root, where .Chart.Name is the vendored subchart name — the commons-services umbrella carries it as `masterData`, so the Job came out as commons-services-masterData-geo-seed, which Kubernetes rejects. The hook failed, no geography or code lists were seeded, and the whole commons-services release went to `failed`. The API templates were unaffected because they render against a scoped context whose nameOverride is already lowercase. ([`83bfaee`](https://github.com/OpenG2P/master-data-service/commit/83bfaee9ae49249adb12589b0da1a290bf02f9fa))
 
 # Develop builds
 
