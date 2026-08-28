@@ -1,0 +1,4 @@
+name=g2p-bridge
+kind=service
+repo=https://github.com/OpenG2P/g2p-bridge
+images=https://hub.docker.com/u/openg2p

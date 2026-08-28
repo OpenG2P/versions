@@ -21,6 +21,7 @@ See the **[versioning & CI docs](https://docs.openg2p.org/operations/deployment/
 - **[consent-manager](./consent-manager/CHANGELOG)** · [repository ↗](https://github.com/OpenG2P/consent-manager)
 - **[disability-registry](./disability-registry/CHANGELOG)** · [repository ↗](https://github.com/OpenG2P/disability-registry)
 - **[farmer-registry](./farmer-registry/CHANGELOG)** · [repository ↗](https://github.com/OpenG2P/farmer-registry)
+- **[g2p-bridge](./g2p-bridge/CHANGELOG)** · [repository ↗](https://github.com/OpenG2P/g2p-bridge)
 - **[iam](./iam/CHANGELOG)** · [repository ↗](https://github.com/OpenG2P/iam)
 - **[id-generator](./id-generator/CHANGELOG)** · [repository ↗](https://github.com/OpenG2P/id-generator)
 - **[keycloak-init](./keycloak-init/CHANGELOG)** · [repository ↗](https://github.com/OpenG2P/keycloak-init)
