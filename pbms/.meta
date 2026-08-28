@@ -1,0 +1,4 @@
+name=pbms
+kind=service
+repo=https://github.com/OpenG2P/pbms
+images=https://hub.docker.com/u/openg2p
