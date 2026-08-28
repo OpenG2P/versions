@@ -6,11 +6,23 @@ _Published automatically._
 
 | Version | Date | Type | Notes |
 | --- | --- | --- | --- |
+| [`0.0.0-develop.235`](#v-0-0-0-develop-235) | 2026-08-28 | develop |  |
 | [`0.0.0-develop.234`](#v-0-0-0-develop-234) | 2026-08-28 | develop |  |
 | [`0.0.0-develop.233`](#v-0-0-0-develop-233) | 2026-08-28 | develop |  |
 | [`0.0.0-develop.232`](#v-0-0-0-develop-232) | 2026-08-28 | develop |  |
 
 # Develop builds
+
+<a id="v-0-0-0-develop-235"></a>
+
+## commons — develop 0.0.0-develop.235 (2026-08-28)
+
+_commit `32cf1e9` · changes since 0.0.0-develop.234_
+<!-- build:0.0.0-develop.235 revision:32cf1e9da2a3db65b8ec21e7626c7bc0510b961f ts:1787915338 -->
+
+### Changes
+
+- [G2P-5605](https://openg2p.atlassian.net/browse/G2P-5605) pick up master-data 0.0.0-develop.68 ([`32cf1e9`](https://github.com/OpenG2P/commons/commit/32cf1e9da2a3db65b8ec21e7626c7bc0510b961f))
 
 <a id="v-0-0-0-develop-234"></a>
 
