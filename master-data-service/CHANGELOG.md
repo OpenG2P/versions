@@ -6,10 +6,24 @@ _Published automatically._
 
 | Version | Date | Type | Notes |
 | --- | --- | --- | --- |
+| [`1.1.0-rc.63`](#v-1-1-0-rc-63) | 2026-08-28 | release candidate |  |
 | [`1.1.0-rc.62`](#v-1-1-0-rc-62) | 2026-08-28 | release candidate |  |
 | [`0.0.0-develop.66`](#v-0-0-0-develop-66) | 2026-08-28 | develop |  |
 
 # Release candidates
+
+<a id="v-1-1-0-rc-63"></a>
+
+## master-data-service 1.1.0-rc.63 — 2026-08-28
+
+_commit `4454ed8` · changes since 1.1.0-rc.62_
+<!-- build:1.1.0-rc.63 revision:4454ed8eea85bc1984991c75c5a590025d296d57 ts:1787897916 -->
+
+**Chart:** [openg2p-master-data 1.1.0-rc.63](https://openg2p.github.io/openg2p-helm/openg2p-master-data-1.1.0-rc.63.tgz)
+
+### Changes
+
+- [G2P-5605](https://openg2p.atlassian.net/browse/G2P-5605) Point the iam-core pin at GitHub ([`4454ed8`](https://github.com/OpenG2P/master-data-service/commit/4454ed8eea85bc1984991c75c5a590025d296d57))
 
 <a id="v-1-1-0-rc-62"></a>
 
