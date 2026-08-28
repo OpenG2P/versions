@@ -15,6 +15,7 @@ See the **[versioning & CI docs](https://docs.openg2p.org/operations/deployment/
 > **[openg2p.gitlab.io/versions](https://openg2p.gitlab.io/versions/)**.
 
 - **[audit-manager](./audit-manager/CHANGELOG)** · [repository ↗](https://github.com/OpenG2P/audit-manager)
+- **[awe](./awe/CHANGELOG)** · [repository ↗](https://github.com/OpenG2P/awe)
 - **[consent-manager](./consent-manager/CHANGELOG)** · [repository ↗](https://github.com/OpenG2P/consent-manager)
 - **[disability-registry](./disability-registry/CHANGELOG)** · [repository ↗](https://github.com/OpenG2P/disability-registry)
 - **[farmer-registry](./farmer-registry/CHANGELOG)** · [repository ↗](https://github.com/OpenG2P/farmer-registry)
