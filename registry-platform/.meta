@@ -1,0 +1,4 @@
+name=registry-platform
+kind=service
+repo=https://github.com/OpenG2P/registry-platform
+images=https://hub.docker.com/u/openg2p
