@@ -1,0 +1,83 @@
+# GitHub Pages for the OpenG2P "versions" repo.
+#
+# Builds the change-log static site with build.sh (marked -> HTML, no Jekyll, no
+# themes) and publishes it. Site URL after the first success:
+#   https://openg2p.github.io/versions/
+#
+# The change-log markdown is written here by every repo's CI `changelog` job.
+#
+# WHY THIS RE-RENDERS BEFORE BUILDING
+#   Two files in each module folder are edited BY HAND here, not written by a
+#   pipeline: `.marked` (a build declared known-good) and `.withdrawn`. Both are read
+#   by render-aggregate.sh when it generates <module>/CHANGELOG.md -- which normally
+#   only happens during that module's own next build. For a module that builds rarely,
+#   a note added today could sit invisible for months.
+#
+#   So the aggregates are regenerated here, from the pages already committed, every
+#   time the site builds. render-aggregate.sh needs nothing but this checkout, so an
+#   edit to .marked shows up within a minute of the commit.
+#
+#   Deliberately NOT committed back: a push from CI would retrigger this workflow.
+#   The regenerated markdown only has to reach `public/`.
+
+name: Pages
+
+on:
+  push:
+    branches: [develop]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+# Never let two site builds publish at once; don't cancel one midway.
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deploy.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v4
+
+      # The changelog engine lives in the packaging repo, pinned to the same @v1
+      # every service repo builds against, so the site renders with exactly the
+      # policy that produced the pages.
+      - name: Fetch the changelog engine
+        uses: actions/checkout@v4
+        with:
+          repository: OpenG2P/openg2p-packaging
+          ref: v1
+          path: .packaging
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Re-render every module's CHANGELOG.md
+        run: |
+          set -eu
+          for d in */; do
+            r="${d%/}"
+            [ -d "$r/versions" ] || continue      # skips assets/ and anything else
+            echo "re-rendering ${r}"
+            PAGES_DIR="$GITHUB_WORKSPACE" REPO="$r" \
+              bash .packaging/ci/changelog/render-aggregate.sh
+          done
+          PAGES_DIR="$GITHUB_WORKSPACE" bash .packaging/ci/changelog/render-root-index.sh
+
+      - name: Build the site
+        run: sh build.sh
+
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: public
+      - id: deploy
+        uses: actions/deploy-pages@v4
