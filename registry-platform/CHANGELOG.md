@@ -6,10 +6,24 @@ _Published automatically._
 
 | Version | Date | Type | Notes |
 | --- | --- | --- | --- |
+| [`1.2.0-rc.436`](#v-1-2-0-rc-436) | 2026-08-31 | release candidate |  |
 | [`1.2.0-rc.434`](#v-1-2-0-rc-434) | 2026-08-28 | release candidate |  |
 | [`0.0.0-develop.421`](#v-0-0-0-develop-421) | 2026-08-28 | develop |  |
 
 # Release candidates
+
+<a id="v-1-2-0-rc-436"></a>
+
+## registry-platform 1.2.0-rc.436 — 2026-08-31
+
+_commit `c123021` · changes since 1.2.0-rc.434_
+<!-- build:1.2.0-rc.436 revision:c1230215fe05f2b98b60f3478d57d987c3a7c732 ts:1788165572 -->
+
+**Chart:** [openg2p-registry 1.2.0-rc.436](https://openg2p.github.io/openg2p-helm/openg2p-registry-1.2.0-rc.436.tgz)
+
+### Changes
+
+- [G2P-5610](https://openg2p.atlassian.net/browse/G2P-5610) Refactor G2PChangeRequestSectionPayloadService to enhance payload validation ([`11f44d9`](https://github.com/OpenG2P/registry-platform/commit/11f44d917344e19a2e80218f8d96dced7f536134))
 
 <a id="v-1-2-0-rc-434"></a>
 
