@@ -6,9 +6,23 @@ _Published automatically._
 
 | Version | Date | Type | Notes |
 | --- | --- | --- | --- |
+| [`0.0.0-develop.15`](#v-0-0-0-develop-15) | 2026-08-31 | develop |  |
 | [`0.0.0-develop.14`](#v-0-0-0-develop-14) | 2026-08-28 | develop |  |
 
 # Develop builds
+
+<a id="v-0-0-0-develop-15"></a>
+
+## verifiable-credentials — develop 0.0.0-develop.15 (2026-08-31)
+
+_commit `2ad48fd` · changes since 0.0.0-develop.14_
+<!-- build:0.0.0-develop.15 revision:2ad48fdf69bd3649dc26ed3ee67fbb065b8aca52 ts:1788139964 -->
+
+**Chart:** [2 charts 0.0.0-develop.15](https://openg2p.github.io/openg2p-helm/index.yaml)
+
+### Changes
+
+- [G2P-4929](https://openg2p.atlassian.net/browse/G2P-4929) Add a stateless Inji Verify chart and publish it alongside Certify ([`2ad48fd`](https://github.com/OpenG2P/verifiable-credentials/commit/2ad48fdf69bd3649dc26ed3ee67fbb065b8aca52))
 
 <a id="v-0-0-0-develop-14"></a>
 
