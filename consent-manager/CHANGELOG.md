@@ -6,6 +6,7 @@ _Published automatically._
 
 | Version | Date | Type | Notes |
 | --- | --- | --- | --- |
+| [`1.0.2-rc.61`](#v-1-0-2-rc-61) | 2026-09-01 | release candidate |  |
 | [`1.0.1`](#v-1-0-1) | 2026-09-01 | release |  |
 | [`1.0.1-rc.59`](#v-1-0-1-rc-59) | 2026-09-01 | release candidate |  |
 | [`0.0.0-develop.58`](#v-0-0-0-develop-58) | 2026-09-01 | develop |  |
@@ -115,6 +116,25 @@ Links
 - [G2P-5335](https://openg2p.atlassian.net/browse/G2P-5335) ci: replace docker-build + helm-publish with central build-publish workflow ([`0a508a6`](https://github.com/OpenG2P/consent-manager/commit/0a508a6e8ecbbb33d5b1d6ad898c28e409c051b1))
 
 # Release candidates
+
+<a id="v-1-0-2-rc-61"></a>
+
+## consent-manager 1.0.2-rc.61 — 2026-09-01
+
+_commit `52bb1b0` · changes since 0.0.0-develop.57_
+<!-- build:1.0.2-rc.61 revision:52bb1b021c3efd61103db332d7b1cc748cef9a30 ts:1788261125 -->
+
+**Chart:** [openg2p-consent-manager 1.0.2-rc.61](https://openg2p.github.io/openg2p-helm/openg2p-consent-manager-1.0.2-rc.61.tgz)
+
+### Summary
+
+- Dependency updates: upgraded image tags to version 1.0.2, FASTAPI_COMMON_REF to version 1.2.0, and keycloak-init to version 1.2.0.
+
+### Changes
+
+- Update image tags to version 1.0.2 ([`8bce8bc`](https://github.com/OpenG2P/consent-manager/commit/8bce8bc5b544efd2a468c0f801d63273419be706))
+- Update FASTAPI_COMMON_REF to version 1.2.0 ([`c84a6dd`](https://github.com/OpenG2P/consent-manager/commit/c84a6ddeec6dcac06c9ef19ae18aa32ff81971dd))
+- Update keycloak-init version to 1.2.0 ([`167a49e`](https://github.com/OpenG2P/consent-manager/commit/167a49ec5e708856651a8145b73b527ad910f76e))
 
 <a id="v-1-0-1-rc-59"></a>
 
