@@ -6,6 +6,7 @@ _Published automatically._
 
 | Version | Date | Type | Notes |
 | --- | --- | --- | --- |
+| [`1.0.1-rc.58`](#v-1-0-1-rc-58) | 2026-09-01 | release candidate |  |
 | [`1.0.0`](#v-1-0-0) | 2026-09-01 | release |  |
 | [`1.0.0-rc.57`](#v-1-0-0-rc-57) | 2026-09-01 | release candidate |  |
 | [`0.0.0-develop.57`](#v-0-0-0-develop-57) | 2026-08-28 | develop |  |
@@ -83,6 +84,19 @@ Links
 - [G2P-5335](https://openg2p.atlassian.net/browse/G2P-5335) ci: replace docker-build + helm-publish with central build-publish workflow ([`0a508a6`](https://github.com/OpenG2P/consent-manager/commit/0a508a6e8ecbbb33d5b1d6ad898c28e409c051b1))
 
 # Release candidates
+
+<a id="v-1-0-1-rc-58"></a>
+
+## consent-manager 1.0.1-rc.58 — 2026-09-01
+
+_commit `167a49e` · changes since 0.0.0-develop.57_
+<!-- build:1.0.1-rc.58 revision:167a49ec5e708856651a8145b73b527ad910f76e ts:1788254415 -->
+
+**Chart:** [openg2p-consent-manager 1.0.1-rc.58](https://openg2p.github.io/openg2p-helm/openg2p-consent-manager-1.0.1-rc.58.tgz)
+
+### Changes
+
+- Update keycloak-init version to 1.2.0 ([`167a49e`](https://github.com/OpenG2P/consent-manager/commit/167a49ec5e708856651a8145b73b527ad910f76e))
 
 <a id="v-1-0-0-rc-57"></a>
 
