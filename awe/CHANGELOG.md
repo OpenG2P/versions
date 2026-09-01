@@ -6,6 +6,7 @@ _Published automatically._
 
 | Version | Date | Type | Notes |
 | --- | --- | --- | --- |
+| [`0.0.0-develop.81`](#v-0-0-0-develop-81) | 2026-09-01 | develop |  |
 | [`1.2.0-rc.80`](#v-1-2-0-rc-80) | 2026-09-01 | release candidate |  |
 | [`0.0.0-develop.80`](#v-0-0-0-develop-80) | 2026-09-01 | develop |  |
 | [`1.1.1-rc.69`](#v-1-1-1-rc-69) | 2026-08-28 | release candidate |  |
@@ -74,6 +75,19 @@ _commit `27c7f19` · changes since 1.1.0_
 - Update version to 1.1.0 in Chart.yaml, pyproject.toml, package.json, and package-lock.json ([`e5a25b4`](https://github.com/OpenG2P/awe/commit/e5a25b441a5d04671b55f035b126c0a0c7ab5632))
 
 # Develop builds
+
+<a id="v-0-0-0-develop-81"></a>
+
+## awe — develop 0.0.0-develop.81 (2026-09-01)
+
+_commit `5f393eb` · changes since 0.0.0-develop.80_
+<!-- build:0.0.0-develop.81 revision:5f393eb0e64c3ae444ce4c0a5de42f32277f698f ts:1788256326 -->
+
+**Chart:** [openg2p-awe 0.0.0-develop.81](https://openg2p.github.io/openg2p-helm/openg2p-awe-0.0.0-develop.81.tgz)
+
+### Changes
+
+- updated fastapi-common to 1.2.0 ([`5f393eb`](https://github.com/OpenG2P/awe/commit/5f393eb0e64c3ae444ce4c0a5de42f32277f698f))
 
 <a id="v-0-0-0-develop-80"></a>
 
