@@ -6,6 +6,7 @@ _Published automatically._
 
 | Version | Date | Type | Notes |
 | --- | --- | --- | --- |
+| [`1.0.1`](#v-1-0-1) | 2026-09-01 | release |  |
 | [`1.0.1-rc.59`](#v-1-0-1-rc-59) | 2026-09-01 | release candidate |  |
 | [`0.0.0-develop.58`](#v-0-0-0-develop-58) | 2026-09-01 | develop |  |
 | [`1.0.1-rc.58`](#v-1-0-1-rc-58) | 2026-09-01 | release candidate |  |
@@ -14,6 +15,34 @@ _Published automatically._
 | [`0.0.0-develop.57`](#v-0-0-0-develop-57) | 2026-08-28 | develop |  |
 
 # Releases
+
+<a id="v-1-0-1"></a>
+
+## consent-manager 1.0.1 — 2026-09-01
+
+<!-- build:1.0.1 revision:c84a6ddeec6dcac06c9ef19ae18aa32ff81971dd ts:1788255147 -->
+
+_commit `c84a6dd` · changes since release 1.0.0_
+
+**Same artifact as [`1.0.1-rc.59`](#v-1-0-1-rc-59)** — built from the
+same commit and *promoted* (retagged), not rebuilt. No code changed between them.
+
+**Chart:** [openg2p-consent-manager 1.0.1](https://openg2p.github.io/openg2p-helm/openg2p-consent-manager-1.0.1.tgz)
+
+### Release notes
+
+**Updated**
+ - keycloak-init version to 1.2.0
+ - fastapi-common version set to 1.2.0
+
+### Summary
+
+- Dependency updates: upgraded FASTAPI_COMMON_REF and keycloak-init to version 1.2.0, ensuring compatibility with the latest features and fixes.
+
+### Changes
+
+- Update FASTAPI_COMMON_REF to version 1.2.0 ([`c84a6dd`](https://github.com/OpenG2P/consent-manager/commit/c84a6ddeec6dcac06c9ef19ae18aa32ff81971dd))
+- Update keycloak-init version to 1.2.0 ([`167a49e`](https://github.com/OpenG2P/consent-manager/commit/167a49ec5e708856651a8145b73b527ad910f76e))
 
 <a id="v-1-0-0"></a>
 
