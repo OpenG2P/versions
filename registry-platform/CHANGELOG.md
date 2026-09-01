@@ -6,6 +6,7 @@ _Published automatically._
 
 | Version | Date | Type | Notes |
 | --- | --- | --- | --- |
+| [`0.0.0-develop.426`](#v-0-0-0-develop-426) | 2026-09-01 | develop |  |
 | [`0.0.0-develop.424`](#v-0-0-0-develop-424) | 2026-09-01 | develop |  |
 | [`1.2.0-rc.436`](#v-1-2-0-rc-436) | 2026-08-31 | release candidate |  |
 | [`1.2.0-rc.434`](#v-1-2-0-rc-434) | 2026-08-28 | release candidate |  |
@@ -255,6 +256,26 @@ _commit `9b41f96` · changes since v1.0.0_
 - [G2P-5153](https://openg2p.atlassian.net/browse/G2P-5153) Refactor IAM permission handling and authentication cookie management ([`8a6abe5`](https://github.com/OpenG2P/registry-platform/commit/8a6abe5de479bf2647f89b31fbfa62989114ef3e))
 
 # Develop builds
+
+<a id="v-0-0-0-develop-426"></a>
+
+## registry-platform — develop 0.0.0-develop.426 (2026-09-01)
+
+_commit `5579d85` · changes since 0.0.0-develop.424_
+<!-- build:0.0.0-develop.426 revision:5579d85748448822328cbc72648a33aeecf7cdc8 ts:1788240190 -->
+
+**Chart:** [openg2p-registry 0.0.0-develop.426](https://openg2p.github.io/openg2p-helm/openg2p-registry-0.0.0-develop.426.tgz)
+
+### Summary
+
+- UI updates: Implemented Roboto font across the agent portal and added Farmer ID to QR codes for improved identification.
+- Credential verification enhancements: Introduced detailed auditing for credential checks to increase transparency and accountability.
+- Dependency management: Updated dependency manifests in the project to ensure compatibility and security.
+
+### Changes
+
+- [G2P-4929](https://openg2p.atlassian.net/browse/G2P-4929) Use Roboto throughout the agent portal and carry the Farmer ID in the QR ([`5579d85`](https://github.com/OpenG2P/registry-platform/commit/5579d85748448822328cbc72648a33aeecf7cdc8))
+- [G2P-4929](https://openg2p.atlassian.net/browse/G2P-4929) Show and audit what a credential verification actually checked ([`78d44e1`](https://github.com/OpenG2P/registry-platform/commit/78d44e11c580b74eee5308c449f088a74c76601e))
 
 <a id="v-0-0-0-develop-424"></a>
 

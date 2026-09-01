@@ -6,10 +6,7 @@ module and service**, produced automatically as part of the CI pipeline. Each
 entry below is a **Helm package**; its Helm chart version and the Docker image
 versions it references are **locked together** — one immutable version per commit.
 
-Browse all charts in the **[Helm package registry](https://openg2p.github.io/openg2p-helm)**.
-The Docker images for each service live in that repository's **Container
-Registry** (linked at the top of each repository's page below). See the
-**[versioning & CI docs](https://docs.openg2p.org/operations/deployment/helm-docker-versioning-and-ci)** for how these are produced.
+See the **[versioning & CI docs](https://docs.openg2p.org/operations/deployment/helm-docker-versioning-and-ci)** for how these are produced.
 
 > **Every released version is listed here.** Releases published before this
 > catalogue existed — while OpenG2P built on GitLab, and on GitHub before that —
