@@ -6,6 +6,7 @@ _Published automatically._
 
 | Version | Date | Type | Notes |
 | --- | --- | --- | --- |
+| [`1.2.0-rc.26`](#v-1-2-0-rc-26) | 2026-09-01 | release candidate |  |
 | [`1.2.0-rc.25`](#v-1-2-0-rc-25) | 2026-09-01 | release candidate |  |
 | [`0.0.0-develop.25`](#v-0-0-0-develop-25) | 2026-08-28 | develop |  |
 | [`1.0.1`](#v-1-0-1) | 2026-07-17 | release |  |
@@ -70,6 +71,19 @@ _commit `2c920b4` · first release_
 - Initial commit ([`06d5c61`](https://github.com/OpenG2P/audit-manager/commit/06d5c61632c103036c0eacac375b080c1d6fe341))
 
 # Release candidates
+
+<a id="v-1-2-0-rc-26"></a>
+
+## audit-manager 1.2.0-rc.26 — 2026-09-01
+
+_commit `dcc2154` · changes since 1.2.0-rc.25_
+<!-- build:1.2.0-rc.26 revision:dcc215485c176c75777c7df0738f3c4f6e315e23 ts:1788260395 -->
+
+**Chart:** [openg2p-audit-manager 1.2.0-rc.26](https://openg2p.github.io/openg2p-helm/openg2p-audit-manager-1.2.0-rc.26.tgz)
+
+### Changes
+
+- image(1.2.0) update and postgres init (1.2.0) version upgraded ([`dcc2154`](https://github.com/OpenG2P/audit-manager/commit/dcc215485c176c75777c7df0738f3c4f6e315e23))
 
 <a id="v-1-2-0-rc-25"></a>
 
