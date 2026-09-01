@@ -6,6 +6,7 @@ _Published automatically._
 
 | Version | Date | Type | Notes |
 | --- | --- | --- | --- |
+| [`1.2.0-rc.25`](#v-1-2-0-rc-25) | 2026-09-01 | release candidate |  |
 | [`0.0.0-develop.25`](#v-0-0-0-develop-25) | 2026-08-28 | develop |  |
 | [`1.0.1`](#v-1-0-1) | 2026-07-17 | release |  |
 | [`1.0.0`](#v-1-0-0) | 2026-07-13 | release |  |
@@ -67,6 +68,21 @@ _commit `2c920b4` · first release_
 - [G2P-4644](https://openg2p.atlassian.net/browse/G2P-4644) Fix attempt for docker build failure. Renaming. ([`476718d`](https://github.com/OpenG2P/audit-manager/commit/476718d698b2dd8a9f5adfa633250de67f3dc986))
 - [G2P-4644](https://openg2p.atlassian.net/browse/G2P-4644) Initial version. WIP. ([`8b174a7`](https://github.com/OpenG2P/audit-manager/commit/8b174a70aeab0b676babc3ac72af075ddf8b7426))
 - Initial commit ([`06d5c61`](https://github.com/OpenG2P/audit-manager/commit/06d5c61632c103036c0eacac375b080c1d6fe341))
+
+# Release candidates
+
+<a id="v-1-2-0-rc-25"></a>
+
+## audit-manager 1.2.0-rc.25 — 2026-09-01
+
+_commit `36dbf77` · changes since 0.0.0-develop.25_
+<!-- build:1.2.0-rc.25 revision:36dbf77a0c0ff8afc9a10a1de769b3bdf06d5fd6 ts:1787878791 -->
+
+**Chart:** [openg2p-audit-manager 1.2.0-rc.25](https://openg2p.github.io/openg2p-helm/openg2p-audit-manager-1.2.0-rc.25.tgz)
+
+### Changes
+
+_No new commits since 0.0.0-develop.25._
 
 # Develop builds
 
