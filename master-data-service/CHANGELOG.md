@@ -6,6 +6,7 @@ _Published automatically._
 
 | Version | Date | Type | Notes |
 | --- | --- | --- | --- |
+| [`1.1.0-rc.73`](#v-1-1-0-rc-73) | 2026-09-01 | release candidate |  |
 | [`1.1.0-rc.72`](#v-1-1-0-rc-72) | 2026-09-01 | release candidate |  |
 | [`0.0.0-develop.69`](#v-0-0-0-develop-69) | 2026-09-01 | develop |  |
 | [`1.1.0-rc.71`](#v-1-1-0-rc-71) | 2026-09-01 | release candidate |  |
@@ -17,6 +18,19 @@ _Published automatically._
 | [`0.0.0-develop.66`](#v-0-0-0-develop-66) | 2026-08-28 | develop |  |
 
 # Release candidates
+
+<a id="v-1-1-0-rc-73"></a>
+
+## master-data-service 1.1.0-rc.73 — 2026-09-01
+
+_commit `f093366` · changes since 1.1.0-rc.72_
+<!-- build:1.1.0-rc.73 revision:f0933664668c7752ff23f216259b722e437cba86 ts:1788261922 -->
+
+**Chart:** [openg2p-master-data 1.1.0-rc.73](https://openg2p.github.io/openg2p-helm/openg2p-master-data-1.1.0-rc.73.tgz)
+
+### Changes
+
+- Update image tags to version 1.1.0 ([`f093366`](https://github.com/OpenG2P/master-data-service/commit/f0933664668c7752ff23f216259b722e437cba86))
 
 <a id="v-1-1-0-rc-72"></a>
 
