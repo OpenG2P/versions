@@ -6,6 +6,7 @@ _Published automatically._
 
 | Version | Date | Type | Notes |
 | --- | --- | --- | --- |
+| [`0.0.0-develop.65`](#v-0-0-0-develop-65) | 2026-09-01 | develop |  |
 | [`1.2.0`](#v-1-2-0) | 2026-09-01 | release |  |
 | [`1.2.0-rc.64`](#v-1-2-0-rc-64) | 2026-09-01 | release candidate |  |
 | [`0.0.0-develop.64`](#v-0-0-0-develop-64) | 2026-09-01 | develop |  |
@@ -82,6 +83,19 @@ _commit `feb830c` · changes since 0.0.0-develop.63_
 _No new commits since 0.0.0-develop.63._
 
 # Develop builds
+
+<a id="v-0-0-0-develop-65"></a>
+
+## staff-portal — develop 0.0.0-develop.65 (2026-09-01)
+
+_commit `8c4fba6` · changes since 0.0.0-develop.64_
+<!-- build:0.0.0-develop.65 revision:8c4fba67fcaedf5cfa98c942b627c1bad5dbfb21 ts:1788265055 -->
+
+**Chart:** [openg2p-staff-portal-ui 0.0.0-develop.65](https://openg2p.github.io/openg2p-helm/openg2p-staff-portal-ui-0.0.0-develop.65.tgz)
+
+### Changes
+
+- Change image tag from '1.2.0' to 'develop' ([`8c4fba6`](https://github.com/OpenG2P/staff-portal/commit/8c4fba67fcaedf5cfa98c942b627c1bad5dbfb21))
 
 <a id="v-0-0-0-develop-64"></a>
 
