@@ -6,8 +6,9 @@ _Published automatically._
 
 | Version | Date | Type | Notes |
 | --- | --- | --- | --- |
+| [`0.0.0-develop.198`](#v-0-0-0-develop-198) | 2026-09-01 | develop |  |
 | [`1.2.1-rc.159`](#v-1-2-1-rc-159) | 2026-08-28 | release candidate |  |
-| [`0.0.0-develop.196`](#v-0-0-0-develop-196) | 2026-08-28 | develop |  |
+| [`0.0.0-develop.196`](#v-0-0-0-develop-196) | 2026-08-28 | develop | **Intermediate Stable Version**. Installs fine after moving back to GitHub. Has Verifiable Credentials (Basic) integrated. Compatible with 0.0.0-develop.235 of commons. |
 
 # Release candidates
 
@@ -54,9 +55,30 @@ _commit `448e66e` · changes since 1.2.0_
 
 # Develop builds
 
+<a id="v-0-0-0-develop-198"></a>
+
+## farmer-registry — develop 0.0.0-develop.198 (2026-09-01)
+
+_commit `a68e552` · changes since 0.0.0-develop.196_
+<!-- build:0.0.0-develop.198 revision:a68e552aa9bc35a24975f3d57ba7acf196b23fd5 ts:1788224900 -->
+
+**Chart:** [openg2p-farmer-registry 0.0.0-develop.198](https://openg2p.github.io/openg2p-helm/openg2p-farmer-registry-0.0.0-develop.198.tgz)
+
+### Summary
+
+- **Major:** Upgraded RP version to 0.0.0-develop.424, introducing significant changes in the development branch.
+- New feature: Added a credential-verification switch to enhance security and control over user authentication processes.
+
+### Changes
+
+- Bumped up RP version to 0.0.0-develop.424 ([`a68e552`](https://github.com/OpenG2P/farmer-registry/commit/a68e552aa9bc35a24975f3d57ba7acf196b23fd5))
+- [G2P-4929](https://openg2p.atlassian.net/browse/G2P-4929) Add the credential-verification switch ([`1cad544`](https://github.com/OpenG2P/farmer-registry/commit/1cad54408cf651a9d31768e3a1e98a0df2512e59))
+
 <a id="v-0-0-0-develop-196"></a>
 
 ## farmer-registry — develop 0.0.0-develop.196 (2026-08-28)
+
+> **Note** — **Intermediate Stable Version**. Installs fine after moving back to GitHub. Has Verifiable Credentials (Basic) integrated. Compatible with 0.0.0-develop.235 of commons.
 
 _commit `07f0237` · changes since 1.3.0_
 <!-- build:0.0.0-develop.196 revision:07f02374a8d7d6de89c0261f785a0740c4f16818 ts:1787884394 -->
