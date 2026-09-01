@@ -6,7 +6,23 @@ _Published automatically._
 
 | Version | Date | Type | Notes |
 | --- | --- | --- | --- |
+| [`1.2.0-rc.63`](#v-1-2-0-rc-63) | 2026-09-01 | release candidate |  |
 | [`0.0.0-develop.63`](#v-0-0-0-develop-63) | 2026-08-28 | develop |  |
+
+# Release candidates
+
+<a id="v-1-2-0-rc-63"></a>
+
+## staff-portal 1.2.0-rc.63 — 2026-09-01
+
+_commit `feb830c` · changes since 0.0.0-develop.63_
+<!-- build:1.2.0-rc.63 revision:feb830cfb54f5c34d01b7343e88c66a9781d2bbd ts:1787894593 -->
+
+**Chart:** [openg2p-staff-portal-ui 1.2.0-rc.63](https://openg2p.github.io/openg2p-helm/openg2p-staff-portal-ui-1.2.0-rc.63.tgz)
+
+### Changes
+
+_No new commits since 0.0.0-develop.63._
 
 # Develop builds
 
