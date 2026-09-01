@@ -6,6 +6,7 @@ _Published automatically._
 
 | Version | Date | Type | Notes |
 | --- | --- | --- | --- |
+| [`0.0.0-develop.424`](#v-0-0-0-develop-424) | 2026-09-01 | develop |  |
 | [`1.2.0-rc.436`](#v-1-2-0-rc-436) | 2026-08-31 | release candidate |  |
 | [`1.2.0-rc.434`](#v-1-2-0-rc-434) | 2026-08-28 | release candidate |  |
 | [`0.0.0-develop.421`](#v-0-0-0-develop-421) | 2026-08-28 | develop |  |
@@ -254,6 +255,25 @@ _commit `9b41f96` · changes since v1.0.0_
 - [G2P-5153](https://openg2p.atlassian.net/browse/G2P-5153) Refactor IAM permission handling and authentication cookie management ([`8a6abe5`](https://github.com/OpenG2P/registry-platform/commit/8a6abe5de479bf2647f89b31fbfa62989114ef3e))
 
 # Develop builds
+
+<a id="v-0-0-0-develop-424"></a>
+
+## registry-platform — develop 0.0.0-develop.424 (2026-09-01)
+
+_commit `634822f` · changes since 0.0.0-develop.421_
+<!-- build:0.0.0-develop.424 revision:634822f303ced5f4db04c98121bad2a425d5db80 ts:1788224041 -->
+
+**Chart:** [openg2p-registry 0.0.0-develop.424](https://openg2p.github.io/openg2p-helm/openg2p-registry-0.0.0-develop.424.tgz)
+
+### Summary
+
+- Credential verification enhancements: agents can now verify presented credentials from the portal, and the hex CWT is sent to the verifier instead of the raw QR string.
+
+### Changes
+
+- [G2P-4929](https://openg2p.atlassian.net/browse/G2P-4929) Send the hex CWT to the verifier, not the raw QR string ([`634822f`](https://github.com/OpenG2P/registry-platform/commit/634822f303ced5f4db04c98121bad2a425d5db80))
+- [G2P-4929](https://openg2p.atlassian.net/browse/G2P-4929) Let an agent verify a presented credential from the portal ([`0dbe652`](https://github.com/OpenG2P/registry-platform/commit/0dbe6521614ad1a18d56bc01c163bdae2e6b7349))
+- [G2P-4929](https://openg2p.atlassian.net/browse/G2P-4929) Let an agent verify a presented credential from the portal ([`9a7b992`](https://github.com/OpenG2P/registry-platform/commit/9a7b99281a41b69067f2dcaccff36beee8408aac))
 
 <a id="v-0-0-0-develop-421"></a>
 
