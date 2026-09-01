@@ -7,6 +7,28 @@ _Published automatically._
 | Version | Date | Type | Notes |
 | --- | --- | --- | --- |
 | [`0.0.0-develop.47`](#v-0-0-0-develop-47) | 2026-08-28 | develop |  |
+| [`1.1.0`](#v-1-1-0) | 2026-07-14 | release |  |
+
+# Releases
+
+<a id="v-1-1-0"></a>
+
+## id-generator 1.1.0 — 2026-07-14
+
+<!-- build:1.1.0 revision:e5a012a ts:1783987200 -->
+
+_commit `e5a012a` · changes since release v1.0.0_
+
+### Summary
+
+- Major: Implemented a new CI system, replacing the previous workflows with a streamlined process.
+- Removed the Docker build workflow from CI: `.github/workflows/docker-build.yml` is no longer in use.
+- Removed the Helm publish workflow from CI: `.github/workflows/publish-helm.yml` is no longer in use.
+- Added a new build and publish workflow: `.github/workflows/build-publish.yml` has been introduced to enhance CI functionality.
+
+### Changes
+
+- [G2P-5335](https://openg2p.atlassian.net/browse/G2P-5335) New CI implemented. ([`e5a012a`](https://github.com/OpenG2P/id-generator/commit/e5a012acc38a1eb2e4c3f672426564826f3dadd4))
 
 # Develop builds
 
