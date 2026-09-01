@@ -8,17 +8,11 @@ versions it references are **locked together** — one immutable version per com
 
 See the **[versioning & CI docs](https://docs.openg2p.org/operations/deployment/helm-docker-versioning-and-ci)** for how these are produced.
 
-> **Every released version is listed here.** Releases published before this
-> catalogue existed — while OpenG2P built on GitLab, and on GitHub before that —
-> have been merged in, and their Helm charts are available from
+> **Every released version is listed here**, including releases published before
+> this catalogue existed — their Helm charts are available from
 > [openg2p-helm](https://openg2p.github.io/openg2p-helm). Development builds
-> (`0.0.0-develop.N`) and release candidates from those earlier periods were not
-> moved; they remain in the
-> [GitLab catalogue](https://openg2p.gitlab.io/versions/) and the
-> [previous GitHub catalogue](https://openg2p.github.io/openg2p-packaging/).
-> Charts released on GitLab still pull their images from `registry.gitlab.com`,
-> which remains available; images move to Docker Hub as each product cuts its
-> next release.
+> (`0.0.0-develop.N`) and release candidates from those earlier periods are not
+> included.
 
 ### Services
 

@@ -95,7 +95,7 @@ while IFS= read -r md; do
     printf '%s' "<main>"
     cat /tmp/body.html
     printf '%s' "</main>"
-    printf '%s' "<footer class=\"site-foot\"><div>Version history &amp; change logs for <a href=\"https://gitlab.com/openg2p\">OpenG2P repositories</a>, generated automatically by CI.</div><div class=\"fine\">&copy; ${YEAR} OpenG2P. All rights reserved.</div></footer>"
+    printf '%s' "<footer class=\"site-foot\"><div>Version history &amp; change logs for <a href=\"https://github.com/OpenG2P\">OpenG2P repositories</a>, generated automatically by CI.</div><div class=\"fine\">&copy; ${YEAR} OpenG2P. All rights reserved.</div></footer>"
     printf '%s' "</div></body></html>"
   } > "$out"
   echo "built $out"
