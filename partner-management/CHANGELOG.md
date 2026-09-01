@@ -6,8 +6,24 @@ _Published automatically._
 
 | Version | Date | Type | Notes |
 | --- | --- | --- | --- |
+| [`1.0.0-rc.24`](#v-1-0-0-rc-24) | 2026-09-01 | release candidate |  |
 | [`0.0.0-develop.24`](#v-0-0-0-develop-24) | 2026-08-28 | develop |  |
 | [`0.0.0-develop.23`](#v-0-0-0-develop-23) | 2026-08-28 | develop |  |
+
+# Release candidates
+
+<a id="v-1-0-0-rc-24"></a>
+
+## partner-management 1.0.0-rc.24 — 2026-09-01
+
+_commit `bb96ff2` · changes since 0.0.0-develop.24_
+<!-- build:1.0.0-rc.24 revision:bb96ff24d1d64538d361ad065707729a668b214c ts:1787913288 -->
+
+**Chart:** [partner-management 1.0.0-rc.24](https://openg2p.github.io/openg2p-helm/partner-management-1.0.0-rc.24.tgz)
+
+### Changes
+
+_No new commits since 0.0.0-develop.24._
 
 # Develop builds
 
