@@ -6,6 +6,7 @@ _Published automatically._
 
 | Version | Date | Type | Notes |
 | --- | --- | --- | --- |
+| [`1.2.0-rc.440`](#v-1-2-0-rc-440) | 2026-09-01 | release candidate |  |
 | [`1.2.0-rc.439`](#v-1-2-0-rc-439) | 2026-09-01 | release candidate |  |
 | [`1.2.0-rc.437`](#v-1-2-0-rc-437) | 2026-09-01 | release candidate |  |
 | [`0.0.0-develop.426`](#v-0-0-0-develop-426) | 2026-09-01 | develop |  |
@@ -15,6 +16,19 @@ _Published automatically._
 | [`0.0.0-develop.421`](#v-0-0-0-develop-421) | 2026-08-28 | develop |  |
 
 # Release candidates
+
+<a id="v-1-2-0-rc-440"></a>
+
+## registry-platform 1.2.0-rc.440 — 2026-09-01
+
+_commit `41ae1ae` · changes since 1.2.0-rc.439_
+<!-- build:1.2.0-rc.440 revision:41ae1aefc1ee9995f6cfb4b64faa69e8d9fadb10 ts:1788270073 -->
+
+**Chart:** [openg2p-registry 1.2.0-rc.440](https://openg2p.github.io/openg2p-helm/openg2p-registry-1.2.0-rc.440.tgz)
+
+### Changes
+
+- published ui-widget 1.1.7 and updated the same in staff-ui ([`41ae1ae`](https://github.com/OpenG2P/registry-platform/commit/41ae1aefc1ee9995f6cfb4b64faa69e8d9fadb10))
 
 <a id="v-1-2-0-rc-439"></a>
 
