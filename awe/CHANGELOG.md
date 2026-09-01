@@ -6,6 +6,7 @@ _Published automatically._
 
 | Version | Date | Type | Notes |
 | --- | --- | --- | --- |
+| [`1.2.1`](#v-1-2-1) | 2026-09-01 | release |  |
 | [`1.2.1-rc.82`](#v-1-2-1-rc-82) | 2026-09-01 | release candidate |  |
 | [`1.2.0`](#v-1-2-0) | 2026-09-01 | release |  |
 | [`1.2.0-rc.81`](#v-1-2-0-rc-81) | 2026-09-01 | release candidate |  |
@@ -17,6 +18,31 @@ _Published automatically._
 | [`1.1.0`](#v-1-1-0) | 2026-07-17 | release |  |
 
 # Releases
+
+<a id="v-1-2-1"></a>
+
+## awe 1.2.1 — 2026-09-01
+
+<!-- build:1.2.1 revision:b76e63a471f0aeb690216a5337f47f7783dcc39c ts:1788259714 -->
+
+_commit `b76e63a` · changes since release 1.2.0_
+
+**Same artifact as [`1.2.1-rc.82`](#v-1-2-1-rc-82)** — built from the
+same commit and *promoted* (retagged), not rebuilt. No code changed between them.
+
+**Chart:** [openg2p-awe 1.2.1](https://openg2p.github.io/openg2p-helm/openg2p-awe-1.2.1.tgz)
+
+### Release notes
+
+Updated docker image tag in helm chart values to 1.2.1.
+
+### Summary
+
+- Dependency update: upgraded image tags to version 1.2.1 for improved performance and security.
+
+### Changes
+
+- Update image tags to version 1.2.1 ([`b76e63a`](https://github.com/OpenG2P/awe/commit/b76e63a471f0aeb690216a5337f47f7783dcc39c))
 
 <a id="v-1-2-0"></a>
 
