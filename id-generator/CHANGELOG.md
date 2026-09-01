@@ -6,6 +6,7 @@ _Published automatically._
 
 | Version | Date | Type | Notes |
 | --- | --- | --- | --- |
+| [`1.1.2-rc.48`](#v-1-1-2-rc-48) | 2026-09-01 | release candidate |  |
 | [`1.1.1`](#v-1-1-1) | 2026-09-01 | release |  |
 | [`1.1.1-rc.47`](#v-1-1-1-rc-47) | 2026-09-01 | release candidate |  |
 | [`0.0.0-develop.47`](#v-0-0-0-develop-47) | 2026-08-28 | develop |  |
@@ -62,6 +63,19 @@ _commit `e5a012a` · changes since release v1.0.0_
 - [G2P-5335](https://openg2p.atlassian.net/browse/G2P-5335) New CI implemented. ([`e5a012a`](https://github.com/OpenG2P/id-generator/commit/e5a012acc38a1eb2e4c3f672426564826f3dadd4))
 
 # Release candidates
+
+<a id="v-1-1-2-rc-48"></a>
+
+## id-generator 1.1.2-rc.48 — 2026-09-01
+
+_commit `ebf72ed` · changes since 0.0.0-develop.47_
+<!-- build:1.1.2-rc.48 revision:ebf72eda719326b9a2be5cefbccd89deda0d9c3c ts:1788260582 -->
+
+**Chart:** [openg2p-id-generator 1.1.2-rc.48](https://openg2p.github.io/openg2p-helm/openg2p-id-generator-1.1.2-rc.48.tgz)
+
+### Changes
+
+- Update image tag to version 1.1.2 ([`ebf72ed`](https://github.com/OpenG2P/id-generator/commit/ebf72eda719326b9a2be5cefbccd89deda0d9c3c))
 
 <a id="v-1-1-1-rc-47"></a>
 
