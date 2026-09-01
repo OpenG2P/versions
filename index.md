@@ -23,6 +23,7 @@ See the **[versioning & CI docs](https://docs.openg2p.org/operations/deployment/
 - **[keycloak-themes](./keycloak-themes/CHANGELOG)** · [repository ↗](https://github.com/OpenG2P/keycloak-themes)
 - **[master-data-service](./master-data-service/CHANGELOG)** · [repository ↗](https://github.com/OpenG2P/master-data-service)
 - **[mock-id-system](./mock-id-system/CHANGELOG)** · [repository ↗](https://github.com/OpenG2P/mock-id-system)
+- **[mowsa-nsr](./mowsa-nsr/CHANGELOG)** · [repository ↗](https://github.com/OpenG2P/mowsa-nsr)
 - **[national-social-registry](./national-social-registry/CHANGELOG)** · [repository ↗](https://github.com/OpenG2P/national-social-registry)
 - **[partner-management](./partner-management/CHANGELOG)** · [repository ↗](https://github.com/OpenG2P/partner-management)
 - **[pbms](./pbms/CHANGELOG)** · [repository ↗](https://github.com/OpenG2P/pbms)
