@@ -6,6 +6,7 @@ _Published automatically._
 
 | Version | Date | Type | Notes |
 | --- | --- | --- | --- |
+| [`1.2.0`](#v-1-2-0) | 2026-09-01 | release |  |
 | [`1.2.0-rc.81`](#v-1-2-0-rc-81) | 2026-09-01 | release candidate |  |
 | [`0.0.0-develop.81`](#v-0-0-0-develop-81) | 2026-09-01 | develop |  |
 | [`1.2.0-rc.80`](#v-1-2-0-rc-80) | 2026-09-01 | release candidate |  |
@@ -15,6 +16,49 @@ _Published automatically._
 | [`1.1.0`](#v-1-1-0) | 2026-07-17 | release |  |
 
 # Releases
+
+<a id="v-1-2-0"></a>
+
+## awe 1.2.0 — 2026-09-01
+
+<!-- build:1.2.0 revision:623beec073a3e405066c53e7d2f5c6193a75dad4 ts:1788256395 -->
+
+_commit `623beec` · changes since release 1.1.0_
+
+**Same artifact as [`1.2.0-rc.81`](#v-1-2-0-rc-81)** — built from the
+same commit and *promoted* (retagged), not rebuilt. No code changed between them.
+
+**Chart:** [openg2p-awe 1.2.0](https://openg2p.github.io/openg2p-helm/openg2p-awe-1.2.0.tgz)
+
+### Release notes
+
+## What's Changed
+* Enhance indexing for ApprovalTask and ApprovalDecision models by @vin0dkhichar in https://github.com/OpenG2P/awe/pull/28
+
+
+**Full Changelog**: https://github.com/OpenG2P/awe/compare/1.1.0...1.2.0
+
+### Summary
+
+- **Major:** Migration to GitLab for repository management; GitHub repository is now read-only with build/publish disabled.
+- Keycloak integration: updated to version 1.2.0, with new location and pinned version for stability; added configurable SSL verification for HTTP calls.
+- Enhancements to token management: support for multiple token issuers to resolve 'Invalid issuer' errors, improving compatibility with public Keycloak hostname.
+- New features: added IAM registration Job and ConfigMap for AWE admin SPA, and introduced an option to view policies.
+- Improved data handling: enhanced indexing for ApprovalTask and ApprovalDecision models to optimize performance.
+
+### Changes
+
+- Bump keycloak-init version to 1.2.0 ([`623beec`](https://github.com/OpenG2P/awe/commit/623beec073a3e405066c53e7d2f5c6193a75dad4))
+- Enhance indexing for ApprovalTask and ApprovalDecision models ([`a4fb948`](https://github.com/OpenG2P/awe/commit/a4fb948280d2c45c005ea94ef2cc51479708f82e))
+- [G2P-5605](https://openg2p.atlassian.net/browse/G2P-5605) Pin keycloak-init to a version published on GitHub ([`5ce7e7e`](https://github.com/OpenG2P/awe/commit/5ce7e7e1cb1d3cf15b486bc3789b2ed38b77356c))
+- [G2P-5605](https://openg2p.atlassian.net/browse/G2P-5605) Build and publish on GitHub again ([`c3759d1`](https://github.com/OpenG2P/awe/commit/c3759d17ae2b704ee6ed27a62b2bc05a5fb69007))
+- Keycloak-init new location and version updated. ([`28b16cc`](https://github.com/OpenG2P/awe/commit/28b16ccd573c6a9b5d21831f23d999db48f7b8a0))
+- [G2P-5578](https://openg2p.atlassian.net/browse/G2P-5578) Add IAM registration Job and ConfigMap for AWE admin SPA ([`3131c68`](https://github.com/OpenG2P/awe/commit/3131c6856f5e5273639fd96f0599a4df8f0fd9bc))
+- [G2P-5575](https://openg2p.atlassian.net/browse/G2P-5575) Changes applied the platform-service group change on awe ([`4037431`](https://github.com/OpenG2P/awe/commit/4037431fe9cd5d824c3cf04ff513e4ea4a1de2f7))
+- [G2P-5521](https://openg2p.atlassian.net/browse/G2P-5521) Option to view policy added. ([`dce3f9c`](https://github.com/OpenG2P/awe/commit/dce3f9c036b3dbf8d4a1ad4f81fa2ccd0e7aafc5))
+- [G2P-5498](https://openg2p.atlassian.net/browse/G2P-5498) Add configurable SSL verification for Keycloak HTTP calls ([`b75612d`](https://github.com/OpenG2P/awe/commit/b75612d89ce98e5b4e9501b4cfb84d2222406264))
+- [G2P-5378](https://openg2p.atlassian.net/browse/G2P-5378) AWE: accept multiple token issuers (issuer + additional_issuers) so tokens minted via the public Keycloak hostname validate alongside in-cluster ones; fixes 'Invalid issuer' on registry-forwarded user tokens ([`201996b`](https://github.com/OpenG2P/awe/commit/201996b6919f3e74def2b6bac25cf5306c5f2e3c))
+- Moved to GitLab: openg2p/awe (read-only; build/publish disabled) ([`1f4f542`](https://github.com/OpenG2P/awe/commit/1f4f54287f09724901502f689642ef042331717c))
 
 <a id="v-1-1-0"></a>
 
