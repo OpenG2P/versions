@@ -6,7 +6,23 @@ _Published automatically._
 
 | Version | Date | Type | Notes |
 | --- | --- | --- | --- |
+| [`1.2.0-rc.60`](#v-1-2-0-rc-60) | 2026-09-01 | release candidate |  |
 | [`0.0.0-develop.60`](#v-0-0-0-develop-60) | 2026-08-28 | develop |  |
+
+# Release candidates
+
+<a id="v-1-2-0-rc-60"></a>
+
+## keycloak-init 1.2.0-rc.60 — 2026-09-01
+
+_commit `480a324` · changes since 0.0.0-develop.60_
+<!-- build:1.2.0-rc.60 revision:480a3241b49e0b9a9c827a19bd57d112da94178a ts:1787881518 -->
+
+**Chart:** [keycloak-init 1.2.0-rc.60](https://openg2p.github.io/openg2p-helm/keycloak-init-1.2.0-rc.60.tgz)
+
+### Changes
+
+_No new commits since 0.0.0-develop.60._
 
 # Develop builds
 
