@@ -6,6 +6,7 @@ _Published automatically._
 
 | Version | Date | Type | Notes |
 | --- | --- | --- | --- |
+| [`1.0.1-rc.59`](#v-1-0-1-rc-59) | 2026-09-01 | release candidate |  |
 | [`0.0.0-develop.58`](#v-0-0-0-develop-58) | 2026-09-01 | develop |  |
 | [`1.0.1-rc.58`](#v-1-0-1-rc-58) | 2026-09-01 | release candidate |  |
 | [`1.0.0`](#v-1-0-0) | 2026-09-01 | release |  |
@@ -85,6 +86,19 @@ Links
 - [G2P-5335](https://openg2p.atlassian.net/browse/G2P-5335) ci: replace docker-build + helm-publish with central build-publish workflow ([`0a508a6`](https://github.com/OpenG2P/consent-manager/commit/0a508a6e8ecbbb33d5b1d6ad898c28e409c051b1))
 
 # Release candidates
+
+<a id="v-1-0-1-rc-59"></a>
+
+## consent-manager 1.0.1-rc.59 — 2026-09-01
+
+_commit `c84a6dd` · changes since 1.0.1-rc.58_
+<!-- build:1.0.1-rc.59 revision:c84a6ddeec6dcac06c9ef19ae18aa32ff81971dd ts:1788255147 -->
+
+**Chart:** [openg2p-consent-manager 1.0.1-rc.59](https://openg2p.github.io/openg2p-helm/openg2p-consent-manager-1.0.1-rc.59.tgz)
+
+### Changes
+
+- Update FASTAPI_COMMON_REF to version 1.2.0 ([`c84a6dd`](https://github.com/OpenG2P/consent-manager/commit/c84a6ddeec6dcac06c9ef19ae18aa32ff81971dd))
 
 <a id="v-1-0-1-rc-58"></a>
 
