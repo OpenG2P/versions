@@ -6,6 +6,7 @@ _Published automatically._
 
 | Version | Date | Type | Notes |
 | --- | --- | --- | --- |
+| [`1.0.1-rc.26`](#v-1-0-1-rc-26) | 2026-09-01 | release candidate |  |
 | [`1.0.0`](#v-1-0-0) | 2026-09-01 | release |  |
 | [`1.0.0-rc.25`](#v-1-0-0-rc-25) | 2026-09-01 | release candidate |  |
 | [`0.0.0-develop.26`](#v-0-0-0-develop-26) | 2026-09-01 | develop |  |
@@ -65,6 +66,24 @@ same commit and *promoted* (retagged), not rebuilt. No code changed between them
 -  [G2P-5261](https://openg2p.atlassian.net/browse/G2P-5261)  Auditing added. ([`f9ed65b`](https://github.com/OpenG2P/partner-management/commit/f9ed65bcc6b84340a473a8704ac332c8510a98a7))
 
 # Release candidates
+
+<a id="v-1-0-1-rc-26"></a>
+
+## partner-management 1.0.1-rc.26 — 2026-09-01
+
+_commit `a90fbed` · changes since 0.0.0-develop.24_
+<!-- build:1.0.1-rc.26 revision:a90fbed5a350bd26c75967896f4d36c2078b475e ts:1788255698 -->
+
+**Chart:** [partner-management 1.0.1-rc.26](https://openg2p.github.io/openg2p-helm/partner-management-1.0.1-rc.26.tgz)
+
+### Summary
+
+- Dependency updates: upgraded fastapi common to version 1.2.0 and keycloak-init to version 1.2.0.
+
+### Changes
+
+- Update fastapi common version to 1.2.0 ([`a90fbed`](https://github.com/OpenG2P/partner-management/commit/a90fbed5a350bd26c75967896f4d36c2078b475e))
+- Update keycloak-init version to 1.2.0 ([`f7cb219`](https://github.com/OpenG2P/partner-management/commit/f7cb2194c4aed70f74e2ff23f7d9e53973fac2e9))
 
 <a id="v-1-0-0-rc-25"></a>
 
