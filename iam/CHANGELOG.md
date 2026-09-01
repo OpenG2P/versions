@@ -6,9 +6,96 @@ _Published automatically._
 
 | Version | Date | Type | Notes |
 | --- | --- | --- | --- |
+| [`1.4.0`](#v-1-4-0) | 2026-09-01 | release |  |
 | [`1.4.0-rc.101`](#v-1-4-0-rc-101) | 2026-09-01 | release candidate |  |
 | [`1.4.0-rc.100`](#v-1-4-0-rc-100) | 2026-08-28 | release candidate |  |
 | [`0.0.0-develop.97`](#v-0-0-0-develop-97) | 2026-08-28 | develop |  |
+
+# Releases
+
+<a id="v-1-4-0"></a>
+
+## iam 1.4.0 — 2026-09-01
+
+<!-- build:1.4.0 revision:ebafe2eaeea1e3d69e1760bf60624f76d5162c2a ts:1788258730 -->
+
+_commit `ebafe2e` · changes since release v1.3.0_
+
+**Same artifact as [`1.4.0-rc.101`](#v-1-4-0-rc-101)** — built from the
+same commit and *promoted* (retagged), not rebuilt. No code changed between them.
+
+**Chart:** [openg2p-iam-service 1.4.0](https://openg2p.github.io/openg2p-helm/openg2p-iam-service-1.4.0.tgz)
+
+### Release notes
+
+**IAM 1.4.0**
+OpenG2P Identity and Access Management — first staff admin console, data-policy enforcement, and a production-ready agent portal.
+
+Compared with 1.3.0, this release turns IAM from an auth backend into an operable identity platform: you can manage applications, roles, login providers, and row-level data policies in the UI, and agents get their own Keycloak realm and API.
+
+
+**Docs**: [Staff portal SSO login flow](https://github.com/OpenG2P/iam/blob/1.4/docs/staff-portal-sso-login-flow.md)
+
+**Highlights**
+
+- IAM Staff UI — new Next.js 16 admin console (applications, roles, permissions, login providers, data policies).
+- Data policies — ALLOW/DISALLOW filters on register records, geo, and attributes; published to Keycloak as DP_<mnemonic> client roles; evaluate API for PEPs.
+- Application management APIs — CRUD for applications, roles, permissions, role-permission mappings, and login providers; roles sync to Keycloak.
+- Agent portal API — shipped in Helm on by default, with an agent realm and agent-portal client (code existed in 1.3.0 but was not deployed).
+- openg2p-fastapi-common 1.2.0 — partner JWT verification via CryptoFactory.
+- Session TTLs tuned so refresh tokens outlive the access cookie.
+
+### Summary
+
+- **Major:** CI overhaul: migrated from GitHub Actions to GitLab CI, implementing new workflows and dropping outdated configurations.
+- Security enhancements: updated FastAPI common library to version 1.2.0, improved JWT validation using CryptoFactory, and added Keycloak initialization configuration.
+- Session management improvements: updated Redis token TTLs and cache expiration settings for better performance.
+- Feature additions: implemented data policy management and middleware, added roles and permissions management tabs, and enhanced application management with Keycloak integration.
+- UI/UX refinements: refactored multiple components for consistency and accessibility, improved modal styling, and added reusable UI components.
+- Cleanup and maintenance: removed unused SQL seed scripts and API URLs, fixed templating issues for Keycloak, and updated IAM_STAFF_UI_PERMISSIONS.
+- Testing improvements: enhanced unit test coverage for IAM staff portal API components and core functionality, and updated middleware tests for accuracy.
+
+### Changes
+
+- updated fastapi-commons to 1.2.0 ([`ebafe2e`](https://github.com/OpenG2P/iam/commit/ebafe2eaeea1e3d69e1760bf60624f76d5162c2a))
+- [G2P-5605](https://openg2p.atlassian.net/browse/G2P-5605) Align the 1.4 release line with GitHub ([`f8bccfe`](https://github.com/OpenG2P/iam/commit/f8bccfe85f60a9793ff290a785f58e37e0a95927))
+- [G2P-5592](https://openg2p.atlassian.net/browse/G2P-5592) Update Redis token TTLs and cache expiration for improved session management ([`1a1ca2b`](https://github.com/OpenG2P/iam/commit/1a1ca2b68810120c30d6f13a2a494b880a2b6dc9))
+- [G2P-5587](https://openg2p.atlassian.net/browse/G2P-5587) Refactor GeoLocationPickerModal to use new utility functions for fetching geo levels and improve state management ([`b69ebd6`](https://github.com/OpenG2P/iam/commit/b69ebd628df3aeffa811d8acd0775b73a109adfb))
+- [G2P-5581](https://openg2p.atlassian.net/browse/G2P-5581) Update FastAPI common library reference to version 1.2 and add Keycloak initialization configuration ([`bd43783`](https://github.com/OpenG2P/iam/commit/bd43783f8be1d179c58a24aecc47a3a8a2f3babf))
+- [G2P-5581](https://openg2p.atlassian.net/browse/G2P-5581) Refactor JWT validation to use CryptoFactory and update tests for component registration ([`9d4d3c1`](https://github.com/OpenG2P/iam/commit/9d4d3c1ce970aca4b51d144ffb9470eb95906a75))
+- [G2P-5578](https://openg2p.atlassian.net/browse/G2P-5578) Add registration for mds, awe, partner api ([`22af5d6`](https://github.com/OpenG2P/iam/commit/22af5d687c5ff99f03a6adf5ea97e6037b51c04e))
+- [G2P-5576](https://openg2p.atlassian.net/browse/G2P-5576) Refactor DataPoliciesTab layout and comment out IconBase64Field in LoginProviderForm ([`6495993`](https://github.com/OpenG2P/iam/commit/649599302609de1af0604741c6fa5a74fe6f8e48))
+- Remove include_domains from request payload in attribute API calls ([`dafa801`](https://github.com/OpenG2P/iam/commit/dafa801754b76a0e4591e48da0f47029c4ea4296))
+- Fix templating for Keycloak base URL in IAM Staff and Agent APIs ([`ed5741a`](https://github.com/OpenG2P/iam/commit/ed5741a4cac7edafecf79d6f0b132869a605dd18))
+- [G2P-5572](https://openg2p.atlassian.net/browse/G2P-5572) Bump version to 1.4.0 and update image tags in values.yaml ([`1eb3a25`](https://github.com/OpenG2P/iam/commit/1eb3a250b00aefbec03aaadf96e2516f4bc07756))
+- [G2P-5335](https://openg2p.atlassian.net/browse/G2P-5335) Add iam-staff-ui to the build/publish pipeline and pin its chart image tag ([`d7fdd9c`](https://github.com/OpenG2P/iam/commit/d7fdd9c233643770a9f132d96649ec0ee76f5248))
+- [G2P-5552](https://openg2p.atlassian.net/browse/G2P-5552) Fix pre-commit ([`a2157ea`](https://github.com/OpenG2P/iam/commit/a2157eaed5056c130daac1cf760b0e63a8af78fe))
+- [G2P-5552](https://openg2p.atlassian.net/browse/G2P-5552) Remove registry API URL from env and add API URL to staff portal application ([`69495bf`](https://github.com/OpenG2P/iam/commit/69495bf53b3fb5b2ef72d4ecf3772017c6d8d3d2))
+- [G2P-4929](https://openg2p.atlassian.net/browse/G2P-4929) Enable the agent portal API by default and fix show_if conditions ([`da9db90`](https://github.com/OpenG2P/iam/commit/da9db90f1c0dd7702b650d205c8535b819a4d6a8))
+- [G2P-5537](https://openg2p.atlassian.net/browse/G2P-5537) Port attribute-management API routes and hooks from upstream develop; drop wrongly-ported role-permission caching ([`74c5879`](https://github.com/OpenG2P/iam/commit/74c587992636e1c4fa913457035817272c3e573e))
+- [G2P-5348](https://openg2p.atlassian.net/browse/G2P-5348) Complete GitLab migration: port GitHub workflows to CI guards, drop .github, and port pending upstream commits ([`e04966e`](https://github.com/OpenG2P/iam/commit/e04966ec74808402fc600f9f1e936a5c8351595f))
+- [G2P-5335](https://openg2p.atlassian.net/browse/G2P-5335) Switch CI to GitLab (.gitlab-ci.yml); drop GitHub Actions build/publish ([`3ed9ea0`](https://github.com/OpenG2P/iam/commit/3ed9ea066ce582c301e59ef4fc01d4b083b42fe2))
+- [G2P-4929](https://openg2p.atlassian.net/browse/G2P-4929) Wire iam-agent-portal-api into the IAM chart behind a disabled-by-default switch ([`9de210b`](https://github.com/OpenG2P/iam/commit/9de210b49892450a651173bdd85538db21e692b9))
+- Remove unused SQL seed script and login providers JSON; update IAM_STAFF_UI_PERMISSIONS to include delete permissions ([`1c5a6a6`](https://github.com/OpenG2P/iam/commit/1c5a6a633a477e72d5d16ff6e67fd97fc0fd39eb))
+- Enhance values.yaml: Add backend API URLs for iam-staff-ui and update login provider ID ([`6d1d4f9`](https://github.com/OpenG2P/iam/commit/6d1d4f9d7708a7484dbff19db6fc89ab2cbfac34))
+- Refactor: Remove unused use client directives and implement ApplicationsPageClient component ([`a694c5d`](https://github.com/OpenG2P/iam/commit/a694c5d11faf44ea65ea3197bc173ec56486d6f4))
+- [G2P-5485](https://openg2p.atlassian.net/browse/G2P-5485) Enhance IconBase64Field with MIME type detection ([`2556ffa`](https://github.com/OpenG2P/iam/commit/2556ffa32f5137038cffca59e9e5deb91e5a82af))
+- [G2P-5479](https://openg2p.atlassian.net/browse/G2P-5479) Add policy filter preview and view data policy modal components ([`5234a36`](https://github.com/OpenG2P/iam/commit/5234a3655cc2f27e4bb0471743df402ff66df143))
+- Test: Update data policy middleware tests for accuracy and coverage ([`35f3bd9`](https://github.com/OpenG2P/iam/commit/35f3bd9004798e51b97bcdec69528df7cd9e9476))
+- Feat: Implement data policy management and middleware ([`8a1c8cd`](https://github.com/OpenG2P/iam/commit/8a1c8cdca49d67828304428cd64f38da89570977))
+- [G2P-5431](https://openg2p.atlassian.net/browse/G2P-5431) Enhance application management with Keycloak integration ([`d7b1c7f`](https://github.com/OpenG2P/iam/commit/d7b1c7f348009636a95db8db1d0fd2c060250b12))
+- [G2P-5431](https://openg2p.atlassian.net/browse/G2P-5431) Refactor UI components for consistency: update styles, improve accessibility, and enhance user experience across error, button, input, and modal components ([`0c1d936`](https://github.com/OpenG2P/iam/commit/0c1d93694207a526adc4162de79743275c451bde))
+- [G2P-5431](https://openg2p.atlassian.net/browse/G2P-5431) Add reusable UI components, improve modal styling, and refactor application and login provider pages ([`12956d8`](https://github.com/OpenG2P/iam/commit/12956d893015c299b7f4057572f7bd9b6f33c6f0))
+- [G2P-5431](https://openg2p.atlassian.net/browse/G2P-5431) Refactor application and login provider components ([`b582d6f`](https://github.com/OpenG2P/iam/commit/b582d6fcd7a74a1202f7a642e1fa410c093301ed))
+- [G2P-5431](https://openg2p.atlassian.net/browse/G2P-5431) Add Roles, Permissions, and Role-Permissions management tabs with reusable modals, enhanced tables, login provider improvements, and loading skeletons ([`e70231c`](https://github.com/OpenG2P/iam/commit/e70231c8b56f1b0c908f5075025dbc038dc69abf))
+- [G2P-5431](https://openg2p.atlassian.net/browse/G2P-5431) Refactor authentication and RBAC contexts, introduce reusable hooks/components, and add typed application and login provider data management ([`7ff270c`](https://github.com/OpenG2P/iam/commit/7ff270cb101d0861b808be879b220880a3c8e5c9))
+- [G2P-5431](https://openg2p.atlassian.net/browse/G2P-5431) Refactor ApplicationAccess, Applications, and LoginProviders controllers to use strongly typed response models ([`ab5686d`](https://github.com/OpenG2P/iam/commit/ab5686dd272343ca932825f65a8acbc83da3cbfe))
+- [G2P-5431](https://openg2p.atlassian.net/browse/G2P-5431) Implement Application Management module in IAM Staff UI ([`235f138`](https://github.com/OpenG2P/iam/commit/235f138d8a691ee6efb123d4791238748ec74a8e))
+- [G2P-5335](https://openg2p.atlassian.net/browse/G2P-5335) Fix chart-image-paths to .iamStaffPortalApi.image.tag (chart shipped unpinned) ([`947f58f`](https://github.com/OpenG2P/iam/commit/947f58f1b04920854189aa65c8b9c99ff708da39))
+- [G2P-5335](https://openg2p.atlassian.net/browse/G2P-5335) New CI implemented ([`8109437`](https://github.com/OpenG2P/iam/commit/810943725a2040fadbf4c18868471f205daa930c))
+- 0.0.0-develop.N versioning implemented. ([`a1579ba`](https://github.com/OpenG2P/iam/commit/a1579ba229373a333ceb75797685e3a086d2b9d8))
+- [G2P-5313](https://openg2p.atlassian.net/browse/G2P-5313) Add unit tests for IAM staff portal API components ([`8670822`](https://github.com/OpenG2P/iam/commit/867082285f362b88550be7ba2a265621eb0b8a4d))
+- [G2P-5313](https://openg2p.atlassian.net/browse/G2P-5313) Improve unit test coverage for core IAM functionality ([`c762c7b`](https://github.com/OpenG2P/iam/commit/c762c7b741a5c9d19bbd30b6875daacbd5d88717))
 
 # Release candidates
 
