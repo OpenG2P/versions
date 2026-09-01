@@ -6,6 +6,7 @@ _Published automatically._
 
 | Version | Date | Type | Notes |
 | --- | --- | --- | --- |
+| [`1.2.1-rc.82`](#v-1-2-1-rc-82) | 2026-09-01 | release candidate |  |
 | [`1.2.0`](#v-1-2-0) | 2026-09-01 | release |  |
 | [`1.2.0-rc.81`](#v-1-2-0-rc-81) | 2026-09-01 | release candidate |  |
 | [`0.0.0-develop.81`](#v-0-0-0-develop-81) | 2026-09-01 | develop |  |
@@ -92,6 +93,24 @@ _commit `eb178cd` · changes since release v1.0.0_
 - [G2P-5147](https://openg2p.atlassian.net/browse/G2P-5147) Add Keycloak user management endpoints and UI integration in awe ([`169c313`](https://gitlab.com/openg2p/awe/-/commit/169c3137d97f6dd2598e7e3985ee9f1ba2bf1abe))
 
 # Release candidates
+
+<a id="v-1-2-1-rc-82"></a>
+
+## awe 1.2.1-rc.82 — 2026-09-01
+
+_commit `b76e63a` · changes since 0.0.0-develop.80_
+<!-- build:1.2.1-rc.82 revision:b76e63a471f0aeb690216a5337f47f7783dcc39c ts:1788259714 -->
+
+**Chart:** [openg2p-awe 1.2.1-rc.82](https://openg2p.github.io/openg2p-helm/openg2p-awe-1.2.1-rc.82.tgz)
+
+### Summary
+
+- Dependency updates: updated image tags to version 1.2.1 and bumped keycloak-init version to 1.2.0.
+
+### Changes
+
+- Update image tags to version 1.2.1 ([`b76e63a`](https://github.com/OpenG2P/awe/commit/b76e63a471f0aeb690216a5337f47f7783dcc39c))
+- Bump keycloak-init version to 1.2.0 ([`623beec`](https://github.com/OpenG2P/awe/commit/623beec073a3e405066c53e7d2f5c6193a75dad4))
 
 <a id="v-1-2-0-rc-81"></a>
 
