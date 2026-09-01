@@ -6,6 +6,7 @@ _Published automatically._
 
 | Version | Date | Type | Notes |
 | --- | --- | --- | --- |
+| [`2.3.0-rc.221`](#v-2-3-0-rc-221) | 2026-09-01 | release candidate |  |
 | [`2.3.0-rc.219`](#v-2-3-0-rc-219) | 2026-09-01 | release candidate |  |
 | [`0.0.0-develop.238`](#v-0-0-0-develop-238) | 2026-09-01 | develop |  |
 | [`0.0.0-develop.237`](#v-0-0-0-develop-237) | 2026-09-01 | develop |  |
@@ -264,6 +265,19 @@ _commit `44278e8` · first release_
 - Initial commit ([`04cc8c6`](https://github.com/OpenG2P/openg2p-commons-deployment/commit/04cc8c6f16ae3132d62a9b80087c0cea81ce472d))
 
 # Release candidates
+
+<a id="v-2-3-0-rc-221"></a>
+
+## commons 2.3.0-rc.221 — 2026-09-01
+
+_commit `f7cc7eb` · changes since 2.3.0-rc.219_
+<!-- build:2.3.0-rc.221 revision:f7cc7eb736afc7699899dd7713c84c6b6f69bab2 ts:1788267245 -->
+
+**Charts:** [openg2p-commons-base 2.3.0-rc.221](https://openg2p.github.io/openg2p-helm/openg2p-commons-base-2.3.0-rc.221.tgz) · [openg2p-commons-services 2.3.0-rc.221](https://openg2p.github.io/openg2p-helm/openg2p-commons-services-2.3.0-rc.221.tgz)
+
+### Changes
+
+- pre-commit fix ([`2b18b5b`](https://github.com/OpenG2P/commons/commit/2b18b5b44b33ce3eb6b792888e3748fdb6ddb2ba))
 
 <a id="v-2-3-0-rc-219"></a>
 
