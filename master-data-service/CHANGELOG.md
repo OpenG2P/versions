@@ -6,6 +6,7 @@ _Published automatically._
 
 | Version | Date | Type | Notes |
 | --- | --- | --- | --- |
+| [`1.1.0`](#v-1-1-0) | 2026-09-01 | release |  |
 | [`1.1.0-rc.73`](#v-1-1-0-rc-73) | 2026-09-01 | release candidate |  |
 | [`1.1.0-rc.72`](#v-1-1-0-rc-72) | 2026-09-01 | release candidate |  |
 | [`0.0.0-develop.69`](#v-0-0-0-develop-69) | 2026-09-01 | develop |  |
@@ -16,6 +17,71 @@ _Published automatically._
 | [`1.1.0-rc.63`](#v-1-1-0-rc-63) | 2026-08-28 | release candidate |  |
 | [`1.1.0-rc.62`](#v-1-1-0-rc-62) | 2026-08-28 | release candidate |  |
 | [`0.0.0-develop.66`](#v-0-0-0-develop-66) | 2026-08-28 | develop |  |
+
+# Releases
+
+<a id="v-1-1-0"></a>
+
+## master-data-service 1.1.0 — 2026-09-01
+
+<!-- build:1.1.0 revision:f0933664668c7752ff23f216259b722e437cba86 ts:1788261922 -->
+
+_commit `f093366` · first release_
+
+**Same artifact as [`1.1.0-rc.73`](#v-1-1-0-rc-73)** — built from the
+same commit and *promoted* (retagged), not rebuilt. No code changed between them.
+
+**Chart:** [openg2p-master-data 1.1.0](https://openg2p.github.io/openg2p-helm/openg2p-master-data-1.1.0.tgz)
+
+### Release notes
+
+## What's Changed
+* [G2P-4934](https://openg2p.atlassian.net/browse/G2P-4934) - master-data seeding + docker by @PSNAppz in https://github.com/OpenG2P/master-data-service/pull/1
+* Fix docker build issue by @PSNAppz in https://github.com/OpenG2P/master-data-service/pull/2
+* [G2P-5264](https://openg2p.atlassian.net/browse/G2P-5264): Add get_all_g2p_geo_levels API endpoint and response handling by @mkumar-02 in https://github.com/OpenG2P/master-data-service/pull/4
+* Refactor geo data loading to use a single denormalized CSV by @PSNAppz in https://github.com/OpenG2P/master-data-service/pull/3
+* [G2P-5268](https://openg2p.atlassian.net/browse/G2P-5268): Added DataPolicy Repository by @mkumar-02 in https://github.com/OpenG2P/master-data-service/pull/5
+* [G2P-5341](https://openg2p.atlassian.net/browse/G2P-5341): Clean up registry DB and data policy codechanges in data policy handling. by @mkumar-02 in https://github.com/OpenG2P/master-data-service/pull/9
+* [G2P-5587](https://openg2p.atlassian.net/browse/G2P-5587) Enhance geo hierarchy management with improved child-level handling, dynamic UI updates, translations, and optimized geo-tree caching by @pjoshi751 in https://github.com/OpenG2P/master-data-service/pull/12
+* Enhance seed data and fix pre-commit issues by @tahzeer in https://github.com/OpenG2P/master-data-service/pull/14
+
+## New Contributors
+* @PSNAppz made their first contribution in https://github.com/OpenG2P/master-data-service/pull/1
+* @pjoshi751 made their first contribution in https://github.com/OpenG2P/master-data-service/pull/12
+* @tahzeer made their first contribution in https://github.com/OpenG2P/master-data-service/pull/14
+
+**Full Changelog**: https://github.com/OpenG2P/master-data-service/commits/1.1.0
+
+### Summary
+
+- **Major:** Refactor of Geo and Attribute components for improved functionality, UI consistency, and error handling, alongside a redesign of the master data UI.
+- Data model enhancements: Added new prefixes and relationship attributes to `g2p_attribute_values` and `g2p_attributes` tables, and removed obsolete agricultural and social codelists and attributes.
+- Dependency updates: Upgraded `keycloak-init` to 1.2.0, `iam` to 1.4.0, and `fastapi-common` to 1.2.0, with adjustments to repository references in Docker and CI configurations.
+- Improved geo hierarchy management with dynamic UI updates, translations, and optimized geo-tree caching.
+- Pre-commit and deployment fixes to enhance code quality and streamline processes.
+
+### Changes
+
+- Update image tags to version 1.1.0 ([`f093366`](https://github.com/OpenG2P/master-data-service/commit/f0933664668c7752ff23f216259b722e437cba86))
+- keycloak-init(1.2.0) iam (1.4.0) and fastapi-common (1.2.0) updated ([`3ab8224`](https://github.com/OpenG2P/master-data-service/commit/3ab8224faeadc3be91762ecbbb24f00ca8cdf72f))
+- [G2P-5616](https://openg2p.atlassian.net/browse/G2P-5616) Enhance seed data by adding new prefixes and relationship attributes to the g2p_attribute_values and g2p_attributes tables. ([`8d3afc6`](https://github.com/OpenG2P/master-data-service/commit/8d3afc622e511e03984b0c8edb0892ba53bba3f9))
+- deployment pre-commit fix ([`99a1aa8`](https://github.com/OpenG2P/master-data-service/commit/99a1aa82232d045876c6ae536f58a48a9617e87f))
+- pre-commit fixes ([`9cae598`](https://github.com/OpenG2P/master-data-service/commit/9cae598b110936c7ec97509c7f88184cb06eb040))
+- [G2P-5605](https://openg2p.atlassian.net/browse/G2P-5605) Point the iam-core pin at GitHub ([`4454ed8`](https://github.com/OpenG2P/master-data-service/commit/4454ed8eea85bc1984991c75c5a590025d296d57))
+- [G2P-5605](https://openg2p.atlassian.net/browse/G2P-5605) Align the 1.1 release line with GitHub ([`4ffaad7`](https://github.com/OpenG2P/master-data-service/commit/4ffaad7339dadb2783ac9824c38bbfd417de0ff2))
+- [G2P-5593](https://openg2p.atlassian.net/browse/G2P-5593) Refactor Geo and Attribute components for improved functionality and UI consistency ([`7945eda`](https://github.com/OpenG2P/master-data-service/commit/7945eda9b8e52bd84df122e7b1dccdfb66b6f62d))
+- [G2P-5593](https://openg2p.atlassian.net/browse/G2P-5593) Redesign master data UI and enhance Geo components with error handling and UX improvements ([`edfc287`](https://github.com/OpenG2P/master-data-service/commit/edfc287f00bd450b06249d2163823912d04254f2))
+- [G2P-5587](https://openg2p.atlassian.net/browse/G2P-5587) Enhance geo hierarchy management with improved child-level handling, dynamic UI updates, translations, and optimized geo-tree caching. ([`0aa5879`](https://github.com/OpenG2P/master-data-service/commit/0aa5879819f4d303746b7f9760c4c44c60bb7364))
+- [G2P-5586](https://openg2p.atlassian.net/browse/G2P-5586) Update FASTAPI_COMMON_REF to version 1.2 and change repository URL in Dockerfile and .gitlab-ci.yml ([`f6c2bc4`](https://github.com/OpenG2P/master-data-service/commit/f6c2bc41b1c66ccc91a7e70fd325ec5d6916841d))
+- [G2P-5578](https://openg2p.atlassian.net/browse/G2P-5578) Refactor IAM register ConfigMap and Job templates for improved naming and annotations ([`3b1dae4`](https://github.com/OpenG2P/master-data-service/commit/3b1dae4711450994d4720113521a950f8ec1fa6d))
+- [G2P-5576](https://openg2p.atlassian.net/browse/G2P-5576) Removed obsolete agricultural and social codelists, attributes, and unused schema entries, while updating social codelists with new livelihood values and attributes. ([`980d938`](https://github.com/OpenG2P/master-data-service/commit/980d938095e95d456c645d805082304af27e2681))
+- Refactor attribute and geo schemas to remove unused fields and simplify data models ([`a84cf6b`](https://github.com/OpenG2P/master-data-service/commit/a84cf6ba162bc350fcb66e4ec57ebde3ec2fb657))
+- [G2P-5574](https://openg2p.atlassian.net/browse/G2P-5574) Add component label to master-data-api deployment and service ([`f809fa7`](https://github.com/OpenG2P/master-data-service/commit/f809fa7db597b29e7f52460c9c04912b95b471b2))
+- [G2P-5572](https://openg2p.atlassian.net/browse/G2P-5572) Update IAM service repository reference from GitHub to GitLab ([`446b691`](https://github.com/OpenG2P/master-data-service/commit/446b69150b93586b240be875353126203426f2b8))
+- [G2P-5572](https://openg2p.atlassian.net/browse/G2P-5572) Update version numbers and pin IAM service reference to 1.4 ([`5efbd59`](https://github.com/OpenG2P/master-data-service/commit/5efbd59651052e0e20f025268f248f3ed2842464))
+- [G2P-5456](https://openg2p.atlassian.net/browse/G2P-5456) feat(master-data-ui): add configuration for Master Data UI deployment ([`86144ee`](https://github.com/OpenG2P/master-data-service/commit/86144ee891938e0d97537e471e0aa00536345320))
+- [G2P-5543](https://openg2p.atlassian.net/browse/G2P-5543) Update SQL codelists to handle conflicts and enhance Docker configurations ([`968c6fb`](https://github.com/OpenG2P/master-data-service/commit/968c6fb2693c947b7764baa9f1887b2d2461ef0e))
+- [G2P-5538](https://openg2p.atlassian.net/browse/G2P-5538) Add initial seed data for G2P attributes and values ([`a10123b`](https://github.com/OpenG2P/master-data-service/commit/a10123ba53ecf75d4cc2e8663b19d217851fd135))
 
 # Release candidates
 
