@@ -6,6 +6,7 @@ _Published automatically._
 
 | Version | Date | Type | Notes |
 | --- | --- | --- | --- |
+| [`1.2.0-rc.80`](#v-1-2-0-rc-80) | 2026-09-01 | release candidate |  |
 | [`0.0.0-develop.80`](#v-0-0-0-develop-80) | 2026-09-01 | develop |  |
 | [`1.1.1-rc.69`](#v-1-1-1-rc-69) | 2026-08-28 | release candidate |  |
 | [`0.0.0-develop.78`](#v-0-0-0-develop-78) | 2026-08-28 | develop |  |
@@ -45,6 +46,19 @@ _commit `eb178cd` · changes since release v1.0.0_
 - [G2P-5147](https://openg2p.atlassian.net/browse/G2P-5147) Add Keycloak user management endpoints and UI integration in awe ([`169c313`](https://gitlab.com/openg2p/awe/-/commit/169c3137d97f6dd2598e7e3985ee9f1ba2bf1abe))
 
 # Release candidates
+
+<a id="v-1-2-0-rc-80"></a>
+
+## awe 1.2.0-rc.80 — 2026-09-01
+
+_commit `fb0c1f2` · changes since 0.0.0-develop.80_
+<!-- build:1.2.0-rc.80 revision:fb0c1f298729a8fc60ec5557200429439f8db638 ts:1788256034 -->
+
+**Chart:** [openg2p-awe 1.2.0-rc.80](https://openg2p.github.io/openg2p-helm/openg2p-awe-1.2.0-rc.80.tgz)
+
+### Changes
+
+_No new commits since 0.0.0-develop.80._
 
 <a id="v-1-1-1-rc-69"></a>
 
