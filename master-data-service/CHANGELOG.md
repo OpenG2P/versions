@@ -6,6 +6,7 @@ _Published automatically._
 
 | Version | Date | Type | Notes |
 | --- | --- | --- | --- |
+| [`1.1.0-rc.67`](#v-1-1-0-rc-67) | 2026-09-01 | release candidate |  |
 | [`0.0.0-develop.68`](#v-0-0-0-develop-68) | 2026-08-28 | develop |  |
 | [`0.0.0-develop.67`](#v-0-0-0-develop-67) | 2026-08-28 | develop |  |
 | [`1.1.0-rc.63`](#v-1-1-0-rc-63) | 2026-08-28 | release candidate |  |
@@ -13,6 +14,28 @@ _Published automatically._
 | [`0.0.0-develop.66`](#v-0-0-0-develop-66) | 2026-08-28 | develop |  |
 
 # Release candidates
+
+<a id="v-1-1-0-rc-67"></a>
+
+## master-data-service 1.1.0-rc.67 — 2026-09-01
+
+_commit `be21e73` · changes since 1.1.0-rc.63_
+<!-- build:1.1.0-rc.67 revision:be21e7300f10f4f1008c0040c0bbede9d1aaf84e ts:1788257368 -->
+
+**Chart:** [openg2p-master-data 1.1.0-rc.67](https://openg2p.github.io/openg2p-helm/openg2p-master-data-1.1.0-rc.67.tgz)
+
+### Summary
+
+- UI enhancements: redesigned master data UI with improved Geo components, error handling, and UX improvements; added new components including AddButton, DeleteButton, and SearchInput.
+- Geo management improvements: enhanced geo hierarchy management with better child-level handling, dynamic UI updates, translations, and optimized geo-tree caching.
+- Refactoring: significant refactor of Geo and Attribute components for improved functionality and UI consistency.
+- Dependency updates: modifications to dependency manifests in package.json and package-lock.json, reflecting changes in 2 dependencies.
+
+### Changes
+
+- [G2P-5593](https://openg2p.atlassian.net/browse/G2P-5593) Refactor Geo and Attribute components for improved functionality and UI consistency ([`7945eda`](https://github.com/OpenG2P/master-data-service/commit/7945eda9b8e52bd84df122e7b1dccdfb66b6f62d))
+- [G2P-5593](https://openg2p.atlassian.net/browse/G2P-5593) Redesign master data UI and enhance Geo components with error handling and UX improvements ([`edfc287`](https://github.com/OpenG2P/master-data-service/commit/edfc287f00bd450b06249d2163823912d04254f2))
+- [G2P-5587](https://openg2p.atlassian.net/browse/G2P-5587) Enhance geo hierarchy management with improved child-level handling, dynamic UI updates, translations, and optimized geo-tree caching. ([`0aa5879`](https://github.com/OpenG2P/master-data-service/commit/0aa5879819f4d303746b7f9760c4c44c60bb7364))
 
 <a id="v-1-1-0-rc-63"></a>
 
