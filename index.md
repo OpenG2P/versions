@@ -11,11 +11,17 @@ The Docker images for each service live in that repository's **Container
 Registry** (linked at the top of each repository's page below). See the
 **[versioning & CI docs](https://docs.openg2p.org/operations/deployment/helm-docker-versioning-and-ci)** for how these are produced.
 
-> **Versions published before the move to GitHub** — up to August 2026, OpenG2P
-> built and published on GitLab. Those versions, their images and their charts are
-> unchanged and still available; this catalogue starts fresh from the first build
-> on GitHub. The earlier history is archived at
-> **[openg2p.gitlab.io/versions](https://openg2p.gitlab.io/versions/)**.
+> **Every released version is listed here.** Releases published before this
+> catalogue existed — while OpenG2P built on GitLab, and on GitHub before that —
+> have been merged in, and their Helm charts are available from
+> [openg2p-helm](https://openg2p.github.io/openg2p-helm). Development builds
+> (`0.0.0-develop.N`) and release candidates from those earlier periods were not
+> moved; they remain in the
+> [GitLab catalogue](https://openg2p.gitlab.io/versions/) and the
+> [previous GitHub catalogue](https://openg2p.github.io/openg2p-packaging/).
+> Charts released on GitLab still pull their images from `registry.gitlab.com`,
+> which remains available; images move to Docker Hub as each product cuts its
+> next release.
 
 ### Services
 

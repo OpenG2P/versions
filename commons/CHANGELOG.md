@@ -6,6 +6,7 @@ _Published automatically._
 
 | Version | Date | Type | Notes |
 | --- | --- | --- | --- |
+| [`0.0.0-develop.238`](#v-0-0-0-develop-238) | 2026-09-01 | develop |  |
 | [`0.0.0-develop.237`](#v-0-0-0-develop-237) | 2026-09-01 | develop |  |
 | [`0.0.0-develop.235`](#v-0-0-0-develop-235) | 2026-08-28 | develop |  |
 | [`0.0.0-develop.234`](#v-0-0-0-develop-234) | 2026-08-28 | develop |  |
@@ -262,6 +263,19 @@ _commit `44278e8` · first release_
 - Initial commit ([`04cc8c6`](https://github.com/OpenG2P/openg2p-commons-deployment/commit/04cc8c6f16ae3132d62a9b80087c0cea81ce472d))
 
 # Develop builds
+
+<a id="v-0-0-0-develop-238"></a>
+
+## commons — develop 0.0.0-develop.238 (2026-09-01)
+
+_commit `e8b2db9` · changes since 0.0.0-develop.237_
+<!-- build:0.0.0-develop.238 revision:e8b2db98b8f7ed51b675356945df018b1ea39252 ts:1788239440 -->
+
+**Charts:** [openg2p-commons-base 0.0.0-develop.238](https://openg2p.github.io/openg2p-helm/openg2p-commons-base-0.0.0-develop.238.tgz) · [openg2p-commons-services 0.0.0-develop.238](https://openg2p.github.io/openg2p-helm/openg2p-commons-services-0.0.0-develop.238.tgz)
+
+### Changes
+
+- [G2P-5605](https://openg2p.atlassian.net/browse/G2P-5605) emit chart links on the commons catalogue pages ([`e8b2db9`](https://github.com/OpenG2P/commons/commit/e8b2db98b8f7ed51b675356945df018b1ea39252))
 
 <a id="v-0-0-0-develop-237"></a>
 
