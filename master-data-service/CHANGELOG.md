@@ -6,6 +6,7 @@ _Published automatically._
 
 | Version | Date | Type | Notes |
 | --- | --- | --- | --- |
+| [`1.1.0-rc.72`](#v-1-1-0-rc-72) | 2026-09-01 | release candidate |  |
 | [`0.0.0-develop.69`](#v-0-0-0-develop-69) | 2026-09-01 | develop |  |
 | [`1.1.0-rc.71`](#v-1-1-0-rc-71) | 2026-09-01 | release candidate |  |
 | [`1.1.0-rc.67`](#v-1-1-0-rc-67) | 2026-09-01 | release candidate |  |
@@ -16,6 +17,19 @@ _Published automatically._
 | [`0.0.0-develop.66`](#v-0-0-0-develop-66) | 2026-08-28 | develop |  |
 
 # Release candidates
+
+<a id="v-1-1-0-rc-72"></a>
+
+## master-data-service 1.1.0-rc.72 — 2026-09-01
+
+_commit `3ab8224` · changes since 1.1.0-rc.71_
+<!-- build:1.1.0-rc.72 revision:3ab8224faeadc3be91762ecbbb24f00ca8cdf72f ts:1788261744 -->
+
+**Chart:** [openg2p-master-data 1.1.0-rc.72](https://openg2p.github.io/openg2p-helm/openg2p-master-data-1.1.0-rc.72.tgz)
+
+### Changes
+
+- keycloak-init(1.2.0) iam (1.4.0) and fastapi-common (1.2.0) updated ([`3ab8224`](https://github.com/OpenG2P/master-data-service/commit/3ab8224faeadc3be91762ecbbb24f00ca8cdf72f))
 
 <a id="v-1-1-0-rc-71"></a>
 
