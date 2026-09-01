@@ -19,6 +19,8 @@ _Published automatically._
 
 _commit `e5a012a` · changes since release v1.0.0_
 
+**Chart:** [openg2p-id-generator 1.1.0](https://openg2p.github.io/openg2p-helm/openg2p-id-generator-1.1.0.tgz)
+
 ### Summary
 
 - Major: Implemented a new CI system, replacing the previous workflows with a streamlined process.

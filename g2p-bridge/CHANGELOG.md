@@ -20,6 +20,8 @@ _Published automatically._
 
 _commit `e812f7c` · changes since release 1.1.0_
 
+**Chart:** [openg2p-bridge 1.2.0](https://openg2p.github.io/openg2p-helm/openg2p-bridge-1.2.0.tgz)
+
 ### Release notes
 
 Pegging a stable version; Major restructuring - connectors moved to another repo; fastapi lib version frozen
@@ -49,6 +51,8 @@ Pegging a stable version; Major restructuring - connectors moved to another repo
 <!-- build:1.1.0 revision:60b33bea497c51647d1d016f5a10364d13b080f9 ts:1784373563 -->
 
 _commit `60b33be` · changes since release v1.0.0_
+
+**Chart:** [openg2p-bridge 1.1.0](https://openg2p.github.io/openg2p-helm/openg2p-bridge-1.1.0.tgz)
 
 ### Release notes
 

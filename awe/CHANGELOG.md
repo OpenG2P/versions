@@ -20,6 +20,8 @@ _Published automatically._
 
 _commit `eb178cd` · changes since release v1.0.0_
 
+**Chart:** [openg2p-awe 1.1.0](https://openg2p.github.io/openg2p-helm/openg2p-awe-1.1.0.tgz)
+
 ### Summary
 
 - Breaking Change: CI has been switched from GitHub Actions to GitLab CI, impacting the build and publish process.

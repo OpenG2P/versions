@@ -21,6 +21,8 @@ _commit `67b7893` · changes since 0.0.0-develop.15_
 
 **Charts:** [openg2p-inji-certify 0.0.0-develop.16](https://openg2p.github.io/openg2p-helm/openg2p-inji-certify-0.0.0-develop.16.tgz) · [openg2p-inji-verify 0.0.0-develop.16](https://openg2p.github.io/openg2p-helm/openg2p-inji-verify-0.0.0-develop.16.tgz)
 
+**Chart:** [2 charts 0.0.0-develop.16](https://openg2p.github.io/openg2p-helm/index.yaml)
+
 ### Changes
 
 - [G2P-4929](https://openg2p.atlassian.net/browse/G2P-4929) Serve the JWKS at the well-known path a verifier resolves ([`67b7893`](https://github.com/OpenG2P/verifiable-credentials/commit/67b7893cdddbc2e288990f89ab512657fdec57a1))

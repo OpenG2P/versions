@@ -21,6 +21,8 @@ _Published automatically._
 
 _commit `1d9641f` · changes since release 1.0.1_
 
+**Chart:** [openg2p-nsr 1.1.0](https://openg2p.github.io/openg2p-helm/openg2p-nsr-1.1.0.tgz)
+
 ### Release notes
 
 Intermediate stable version; several changes related to reading data from MDS; compatible with commons 0.0.0-develop.198
@@ -93,6 +95,8 @@ Intermediate stable version; several changes related to reading data from MDS; c
 
 _commit `32bc8b9` · changes since release 1.0.0_
 
+**Chart:** [openg2p-nsr 1.0.1](https://openg2p.github.io/openg2p-helm/openg2p-nsr-1.0.1.tgz)
+
 ### Release notes
 
 Intermediate stable version; Just update of RP version; compatible with openg2p-commons 0.0.0-develop.182
@@ -112,6 +116,8 @@ Intermediate stable version; Just update of RP version; compatible with openg2p-
 <!-- build:1.0.0 revision:ddfda05a04784413bccfefeb7a635d86ebb709bc ts:1784886289 -->
 
 _commit `ddfda05` · first release_
+
+**Chart:** [openg2p-nsr 1.0.0](https://openg2p.github.io/openg2p-helm/openg2p-nsr-1.0.0.tgz)
 
 ### Summary
 

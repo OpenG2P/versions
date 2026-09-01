@@ -25,6 +25,8 @@ _Published automatically._
 
 _commit `310bf24` · changes since release 2.2.0_
 
+**Chart:** [2 charts 2.2.1](https://openg2p.github.io/openg2p-helm/index.yaml)
+
 ### Release notes
 
 Creating new Tag 2.2.1
@@ -46,6 +48,8 @@ Creating new Tag 2.2.1
 <!-- build:2.2.0 revision:a8ef10b701799c2bf9c1aceb6bf4623dbc52261b ts:1785037958 -->
 
 _commit `a8ef10b` · changes since release 2.1.0_
+
+**Chart:** [2 charts 2.2.0](https://openg2p.github.io/openg2p-helm/index.yaml)
 
 ### Release notes
 
@@ -84,6 +88,8 @@ Stable version; includes consent management, partner management
 <!-- build:2.1.0 revision:44278e8 ts:1783900800 -->
 
 _commit `44278e8` · first release_
+
+**Chart:** [2 charts 2.1.0](https://openg2p.github.io/openg2p-helm/index.yaml)
 
 ### Summary
 
@@ -264,6 +270,8 @@ _commit `44278e8` · first release_
 _commit `e84f917` · changes since 0.0.0-develop.235_
 <!-- build:0.0.0-develop.237 revision:e84f9172f76bed5cfcc8750d85a5bdee2495564f ts:1788225787 -->
 
+**Chart:** [2 charts 0.0.0-develop.237](https://openg2p.github.io/openg2p-helm/index.yaml)
+
 ### Summary
 
 - **Major:** Deployed verify-service with the stack and pinned the latest VC charts, ensuring consistent versioning.
@@ -281,6 +289,8 @@ _commit `e84f917` · changes since 0.0.0-develop.235_
 _commit `32cf1e9` · changes since 0.0.0-develop.234_
 <!-- build:0.0.0-develop.235 revision:32cf1e9da2a3db65b8ec21e7626c7bc0510b961f ts:1787915338 -->
 
+**Chart:** [2 charts 0.0.0-develop.235](https://openg2p.github.io/openg2p-helm/index.yaml)
+
 ### Changes
 
 - [G2P-5605](https://openg2p.atlassian.net/browse/G2P-5605) pick up master-data 0.0.0-develop.68 ([`32cf1e9`](https://github.com/OpenG2P/commons/commit/32cf1e9da2a3db65b8ec21e7626c7bc0510b961f))
@@ -291,6 +301,8 @@ _commit `32cf1e9` · changes since 0.0.0-develop.234_
 
 _commit `2a9f6cb` · changes since 0.0.0-develop.233_
 <!-- build:0.0.0-develop.234 revision:2a9f6cbe578d0451616950a2772a1f3e9d217927 ts:1787914306 -->
+
+**Chart:** [2 charts 0.0.0-develop.234](https://openg2p.github.io/openg2p-helm/index.yaml)
 
 ### Changes
 
@@ -303,6 +315,8 @@ _commit `2a9f6cb` · changes since 0.0.0-develop.233_
 _commit `8defb45` · changes since 0.0.0-develop.232_
 <!-- build:0.0.0-develop.233 revision:8defb450c9546d840cf1862100caff901d330de1 ts:1787908180 -->
 
+**Chart:** [2 charts 0.0.0-develop.233](https://openg2p.github.io/openg2p-helm/index.yaml)
+
 ### Changes
 
 - [G2P-5605](https://openg2p.atlassian.net/browse/G2P-5605) publish the commons charts to the Rancher index too ([`8defb45`](https://github.com/OpenG2P/commons/commit/8defb450c9546d840cf1862100caff901d330de1))
@@ -313,6 +327,8 @@ _commit `8defb45` · changes since 0.0.0-develop.232_
 
 _commit `9385c3a` · changes since 2.2.1_
 <!-- build:0.0.0-develop.232 revision:9385c3a573c0fac9dfff34009adba14dfa3ba63b ts:1787893825 -->
+
+**Chart:** [2 charts 0.0.0-develop.232](https://openg2p.github.io/openg2p-helm/index.yaml)
 
 ### Summary
 

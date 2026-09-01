@@ -19,6 +19,8 @@ _Published automatically._
 
 _commit `1a71557` · changes since release v1.0.0_
 
+**Chart:** [openg2p-spar 1.1.0](https://openg2p.github.io/openg2p-helm/openg2p-spar-1.1.0.tgz)
+
 ### Release notes
 
 Pegging a stable version; Major structural changes; move to Gitlab

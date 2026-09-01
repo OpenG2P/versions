@@ -20,6 +20,8 @@ _Published automatically._
 
 _commit `b63bc77` · changes since release 1.0.0_
 
+**Chart:** [openg2p-audit-manager 1.0.1](https://openg2p.github.io/openg2p-helm/openg2p-audit-manager-1.0.1.tgz)
+
 ### Summary
 
 - Switched CI from GitHub Actions to GitLab for build and publish processes.
@@ -36,6 +38,8 @@ _commit `b63bc77` · changes since release 1.0.0_
 <!-- build:1.0.0 revision:2c920b4 ts:1783900800 -->
 
 _commit `2c920b4` · first release_
+
+**Chart:** [openg2p-audit-manager 1.0.0](https://openg2p.github.io/openg2p-helm/openg2p-audit-manager-1.0.0.tgz)
 
 ### Summary
 

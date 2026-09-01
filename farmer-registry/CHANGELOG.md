@@ -22,7 +22,7 @@ _Published automatically._
 
 _commit `d39deba` · changes since release 1.2.0_
 
-**Chart:** [openg2p-farmer-registry 1.3.0](https://gitlab.com/api/v4/projects/openg2p%2Fcharts/packages/helm/stable/charts/openg2p-farmer-registry-1.3.0.tgz)
+**Chart:** [openg2p-farmer-registry 1.3.0](https://openg2p.github.io/openg2p-helm/openg2p-farmer-registry-1.3.0.tgz)
 
 ### Release notes
 
@@ -64,6 +64,8 @@ Intermediate stable version; several enhancements related to country packs, read
 <!-- build:1.2.0 revision:7055a710a25bca297f8a1cbd6c2cb64664840b20 ts:1784886389 -->
 
 _commit `7055a71` · first release_
+
+**Chart:** [openg2p-farmer-registry 1.2.0](https://openg2p.github.io/openg2p-helm/openg2p-farmer-registry-1.2.0.tgz)
 
 ### Summary
 
