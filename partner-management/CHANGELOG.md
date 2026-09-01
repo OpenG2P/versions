@@ -6,6 +6,7 @@ _Published automatically._
 
 | Version | Date | Type | Notes |
 | --- | --- | --- | --- |
+| [`0.0.0-develop.26`](#v-0-0-0-develop-26) | 2026-09-01 | develop |  |
 | [`1.0.0-rc.24`](#v-1-0-0-rc-24) | 2026-09-01 | release candidate |  |
 | [`0.0.0-develop.24`](#v-0-0-0-develop-24) | 2026-08-28 | develop |  |
 | [`0.0.0-develop.23`](#v-0-0-0-develop-23) | 2026-08-28 | develop |  |
@@ -26,6 +27,19 @@ _commit `bb96ff2` · changes since 0.0.0-develop.24_
 _No new commits since 0.0.0-develop.24._
 
 # Develop builds
+
+<a id="v-0-0-0-develop-26"></a>
+
+## partner-management — develop 0.0.0-develop.26 (2026-09-01)
+
+_commit `11b3618` · changes since 0.0.0-develop.24_
+<!-- build:0.0.0-develop.26 revision:11b36183194b792201deb579e5698ff2aef93ad5 ts:1788251230 -->
+
+**Chart:** [partner-management 0.0.0-develop.26](https://openg2p.github.io/openg2p-helm/partner-management-0.0.0-develop.26.tgz)
+
+### Changes
+
+- [G2P-5605](https://openg2p.atlassian.net/browse/G2P-5605) bump ui dependencies to clear open security advisories ([`f383795`](https://github.com/OpenG2P/partner-management/commit/f383795af4f9fb9a607c5dcc78859be945584706))
 
 <a id="v-0-0-0-develop-24"></a>
 
