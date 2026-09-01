@@ -6,6 +6,7 @@ _Published automatically._
 
 | Version | Date | Type | Notes |
 | --- | --- | --- | --- |
+| [`1.1.2`](#v-1-1-2) | 2026-09-01 | release |  |
 | [`1.1.2-rc.48`](#v-1-1-2-rc-48) | 2026-09-01 | release candidate |  |
 | [`1.1.1`](#v-1-1-1) | 2026-09-01 | release |  |
 | [`1.1.1-rc.47`](#v-1-1-1-rc-47) | 2026-09-01 | release candidate |  |
@@ -13,6 +14,31 @@ _Published automatically._
 | [`1.1.0`](#v-1-1-0) | 2026-07-14 | release |  |
 
 # Releases
+
+<a id="v-1-1-2"></a>
+
+## id-generator 1.1.2 — 2026-09-01
+
+<!-- build:1.1.2 revision:ebf72eda719326b9a2be5cefbccd89deda0d9c3c ts:1788260582 -->
+
+_commit `ebf72ed` · changes since release 1.1.1_
+
+**Same artifact as [`1.1.2-rc.48`](#v-1-1-2-rc-48)** — built from the
+same commit and *promoted* (retagged), not rebuilt. No code changed between them.
+
+**Chart:** [openg2p-id-generator 1.1.2](https://openg2p.github.io/openg2p-helm/openg2p-id-generator-1.1.2.tgz)
+
+### Release notes
+
+updated docker images on the helm chart values to 1.1.2
+
+### Summary
+
+- Dependency update: upgraded image tag to version 1.1.2 for improved performance and security.
+
+### Changes
+
+- Update image tag to version 1.1.2 ([`ebf72ed`](https://github.com/OpenG2P/id-generator/commit/ebf72eda719326b9a2be5cefbccd89deda0d9c3c))
 
 <a id="v-1-1-1"></a>
 
