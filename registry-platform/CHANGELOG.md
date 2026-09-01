@@ -6,6 +6,7 @@ _Published automatically._
 
 | Version | Date | Type | Notes |
 | --- | --- | --- | --- |
+| [`1.2.0-rc.439`](#v-1-2-0-rc-439) | 2026-09-01 | release candidate |  |
 | [`1.2.0-rc.437`](#v-1-2-0-rc-437) | 2026-09-01 | release candidate |  |
 | [`0.0.0-develop.426`](#v-0-0-0-develop-426) | 2026-09-01 | develop |  |
 | [`0.0.0-develop.424`](#v-0-0-0-develop-424) | 2026-09-01 | develop |  |
@@ -14,6 +15,19 @@ _Published automatically._
 | [`0.0.0-develop.421`](#v-0-0-0-develop-421) | 2026-08-28 | develop |  |
 
 # Release candidates
+
+<a id="v-1-2-0-rc-439"></a>
+
+## registry-platform 1.2.0-rc.439 — 2026-09-01
+
+_commit `9c5154d` · changes since 1.2.0-rc.437_
+<!-- build:1.2.0-rc.439 revision:9c5154dae68142ef7ce5b2dec5d7a2f7df7cf61d ts:1788268523 -->
+
+**Chart:** [openg2p-registry 1.2.0-rc.439](https://openg2p.github.io/openg2p-helm/openg2p-registry-1.2.0-rc.439.tgz)
+
+### Changes
+
+-  [G2P-5598](https://openg2p.atlassian.net/browse/G2P-5598) refactor: use search params for intake submission and improve section record state ([`d2f13ef`](https://github.com/OpenG2P/registry-platform/commit/d2f13efbbda9fc97b3300cf589280bc4635083ab))
 
 <a id="v-1-2-0-rc-437"></a>
 
