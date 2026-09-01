@@ -6,6 +6,7 @@ _Published automatically._
 
 | Version | Date | Type | Notes |
 | --- | --- | --- | --- |
+| [`1.0.2`](#v-1-0-2) | 2026-09-01 | release |  |
 | [`1.0.2-rc.61`](#v-1-0-2-rc-61) | 2026-09-01 | release candidate |  |
 | [`1.0.1`](#v-1-0-1) | 2026-09-01 | release |  |
 | [`1.0.1-rc.59`](#v-1-0-1-rc-59) | 2026-09-01 | release candidate |  |
@@ -16,6 +17,35 @@ _Published automatically._
 | [`0.0.0-develop.57`](#v-0-0-0-develop-57) | 2026-08-28 | develop |  |
 
 # Releases
+
+<a id="v-1-0-2"></a>
+
+## consent-manager 1.0.2 — 2026-09-01
+
+<!-- build:1.0.2 revision:52bb1b021c3efd61103db332d7b1cc748cef9a30 ts:1788261125 -->
+
+_commit `52bb1b0` · changes since release 1.0.1_
+
+**Same artifact as [`1.0.2-rc.61`](#v-1-0-2-rc-61)** — built from the
+same commit and *promoted* (retagged), not rebuilt. No code changed between them.
+
+**Chart:** [openg2p-consent-manager 1.0.2](https://openg2p.github.io/openg2p-helm/openg2p-consent-manager-1.0.2.tgz)
+
+### Release notes
+
+## What's Changed
+* Update image tags to version 1.0.2 by @mkumar-02 in https://github.com/OpenG2P/consent-manager/pull/6
+
+
+**Full Changelog**: https://github.com/OpenG2P/consent-manager/compare/1.0.1...1.0.2
+
+### Summary
+
+- Dependency update: upgraded image tags to version 1.0.2 for improved performance and security.
+
+### Changes
+
+- Update image tags to version 1.0.2 ([`8bce8bc`](https://github.com/OpenG2P/consent-manager/commit/8bce8bc5b544efd2a468c0f801d63273419be706))
 
 <a id="v-1-0-1"></a>
 
