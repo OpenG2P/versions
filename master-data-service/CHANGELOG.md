@@ -6,6 +6,7 @@ _Published automatically._
 
 | Version | Date | Type | Notes |
 | --- | --- | --- | --- |
+| [`1.1.0-rc.71`](#v-1-1-0-rc-71) | 2026-09-01 | release candidate |  |
 | [`1.1.0-rc.67`](#v-1-1-0-rc-67) | 2026-09-01 | release candidate |  |
 | [`0.0.0-develop.68`](#v-0-0-0-develop-68) | 2026-08-28 | develop |  |
 | [`0.0.0-develop.67`](#v-0-0-0-develop-67) | 2026-08-28 | develop |  |
@@ -14,6 +15,26 @@ _Published automatically._
 | [`0.0.0-develop.66`](#v-0-0-0-develop-66) | 2026-08-28 | develop |  |
 
 # Release candidates
+
+<a id="v-1-1-0-rc-71"></a>
+
+## master-data-service 1.1.0-rc.71 — 2026-09-01
+
+_commit `e631dc5` · changes since 1.1.0-rc.67_
+<!-- build:1.1.0-rc.71 revision:e631dc5af944d6a0aa0ec0dc48ee35b5a9f6319c ts:1788257788 -->
+
+**Chart:** [openg2p-master-data 1.1.0-rc.71](https://openg2p.github.io/openg2p-helm/openg2p-master-data-1.1.0-rc.71.tgz)
+
+### Summary
+
+- Data enhancement: added new prefixes and relationship attributes to the `g2p_attribute_values` and `g2p_attributes` tables.
+- Code quality: implemented multiple pre-commit fixes to improve consistency and reduce errors during development.
+
+### Changes
+
+- [G2P-5616](https://openg2p.atlassian.net/browse/G2P-5616) Enhance seed data by adding new prefixes and relationship attributes to the g2p_attribute_values and g2p_attributes tables. ([`8d3afc6`](https://github.com/OpenG2P/master-data-service/commit/8d3afc622e511e03984b0c8edb0892ba53bba3f9))
+- deployment pre-commit fix ([`99a1aa8`](https://github.com/OpenG2P/master-data-service/commit/99a1aa82232d045876c6ae536f58a48a9617e87f))
+- pre-commit fixes ([`9cae598`](https://github.com/OpenG2P/master-data-service/commit/9cae598b110936c7ec97509c7f88184cb06eb040))
 
 <a id="v-1-1-0-rc-67"></a>
 
