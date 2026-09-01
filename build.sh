@@ -49,6 +49,9 @@ a:hover{text-decoration:underline}
 p,li{max-width:78ch}
 table{border-collapse:collapse;margin:16px 0;display:block;overflow:auto;font-size:.95em}
 th,td{border:1px solid var(--line);padding:8px 14px;text-align:left}
+/* Version, Date and Type are short and fixed-shape; keep them on one line so a
+   long Notes cell cannot squeeze them into wrapping. Notes takes the slack. */
+th:nth-child(-n+3),td:nth-child(-n+3){white-space:nowrap}
 th{background:var(--ink);color:#fff;font-weight:600}
 tbody tr:nth-child(2n) td{background:var(--lightgrey)}
 code{background:var(--lightgrey);border:1px solid var(--line);padding:.14em .42em;border-radius:5px;
