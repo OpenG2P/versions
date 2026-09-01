@@ -6,6 +6,7 @@ _Published automatically._
 
 | Version | Date | Type | Notes |
 | --- | --- | --- | --- |
+| [`1.2.0-rc.437`](#v-1-2-0-rc-437) | 2026-09-01 | release candidate |  |
 | [`0.0.0-develop.426`](#v-0-0-0-develop-426) | 2026-09-01 | develop |  |
 | [`0.0.0-develop.424`](#v-0-0-0-develop-424) | 2026-09-01 | develop |  |
 | [`1.2.0-rc.436`](#v-1-2-0-rc-436) | 2026-08-31 | release candidate |  |
@@ -13,6 +14,19 @@ _Published automatically._
 | [`0.0.0-develop.421`](#v-0-0-0-develop-421) | 2026-08-28 | develop |  |
 
 # Release candidates
+
+<a id="v-1-2-0-rc-437"></a>
+
+## registry-platform 1.2.0-rc.437 — 2026-09-01
+
+_commit `3cf68c8` · changes since 1.2.0-rc.436_
+<!-- build:1.2.0-rc.437 revision:3cf68c867d36865877e0efdcfd9bb3e569e95545 ts:1788268164 -->
+
+**Chart:** [openg2p-registry 1.2.0-rc.437](https://openg2p.github.io/openg2p-helm/openg2p-registry-1.2.0-rc.437.tgz)
+
+### Changes
+
+- updated all the dockers and docker references to 1.2.0 and updated the fastapi and keycloak init versions ([`3cf68c8`](https://github.com/OpenG2P/registry-platform/commit/3cf68c867d36865877e0efdcfd9bb3e569e95545))
 
 <a id="v-1-2-0-rc-436"></a>
 
