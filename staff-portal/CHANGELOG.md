@@ -6,11 +6,25 @@ _Published automatically._
 
 | Version | Date | Type | Notes |
 | --- | --- | --- | --- |
+| [`1.2.0-rc.64`](#v-1-2-0-rc-64) | 2026-09-01 | release candidate |  |
 | [`0.0.0-develop.64`](#v-0-0-0-develop-64) | 2026-09-01 | develop |  |
 | [`1.2.0-rc.63`](#v-1-2-0-rc-63) | 2026-09-01 | release candidate |  |
 | [`0.0.0-develop.63`](#v-0-0-0-develop-63) | 2026-08-28 | develop |  |
 
 # Release candidates
+
+<a id="v-1-2-0-rc-64"></a>
+
+## staff-portal 1.2.0-rc.64 — 2026-09-01
+
+_commit `903edc2` · changes since 1.2.0-rc.63_
+<!-- build:1.2.0-rc.64 revision:903edc29a90c003077b46e6eac884343e6790308 ts:1788265008 -->
+
+**Chart:** [openg2p-staff-portal-ui 1.2.0-rc.64](https://openg2p.github.io/openg2p-helm/openg2p-staff-portal-ui-1.2.0-rc.64.tgz)
+
+### Changes
+
+- docker image updated to 1.2 ([`903edc2`](https://github.com/OpenG2P/staff-portal/commit/903edc29a90c003077b46e6eac884343e6790308))
 
 <a id="v-1-2-0-rc-63"></a>
 
