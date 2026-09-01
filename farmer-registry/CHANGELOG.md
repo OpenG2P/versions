@@ -6,6 +6,7 @@ _Published automatically._
 
 | Version | Date | Type | Notes |
 | --- | --- | --- | --- |
+| [`0.0.0-develop.201`](#v-0-0-0-develop-201) | 2026-09-01 | develop |  |
 | [`0.0.0-develop.198`](#v-0-0-0-develop-198) | 2026-09-01 | develop |  |
 | [`1.2.1-rc.159`](#v-1-2-1-rc-159) | 2026-08-28 | release candidate |  |
 | [`0.0.0-develop.196`](#v-0-0-0-develop-196) | 2026-08-28 | develop | **Intermediate Stable Version**. Installs fine after moving back to GitHub. Has Verifiable Credentials (Basic) integrated. Compatible with 0.0.0-develop.235 of commons. |
@@ -225,6 +226,27 @@ _commit `448e66e` · changes since 1.2.0_
 - [G2P-5335](https://openg2p.atlassian.net/browse/G2P-5335) Switch CI to GitLab (.gitlab-ci.yml); drop GitHub Actions build/publish ([`1062700`](https://github.com/OpenG2P/farmer-registry/commit/1062700737b8129d66fcc363c7d3809863d0cefb))
 
 # Develop builds
+
+<a id="v-0-0-0-develop-201"></a>
+
+## farmer-registry — develop 0.0.0-develop.201 (2026-09-01)
+
+_commit `c0f00c4` · changes since 0.0.0-develop.198_
+<!-- build:0.0.0-develop.201 revision:c0f00c4c60bdf61adab8aac05f111fc315e19d50 ts:1788242760 -->
+
+**Chart:** [openg2p-farmer-registry 0.0.0-develop.201](https://openg2p.github.io/openg2p-helm/openg2p-farmer-registry-0.0.0-develop.201.tgz)
+
+### Summary
+
+- User interface updates: implemented Roboto font across the agent portal and included Farmer ID in QR codes.
+- Credential verification enhancements: added visibility and audit capabilities for the checks performed during credential verification.
+- Version bump: updated RP version to 0.0.0-develop.426.
+
+### Changes
+
+- Bumped up RP version to 0.0.0-develop.426 ([`c0f00c4`](https://github.com/OpenG2P/farmer-registry/commit/c0f00c4c60bdf61adab8aac05f111fc315e19d50))
+- [G2P-4929](https://openg2p.atlassian.net/browse/G2P-4929) Use Roboto throughout the agent portal and carry the Farmer ID in the QR ([`1d92a57`](https://github.com/OpenG2P/farmer-registry/commit/1d92a57e1089c5e08ed7e94a3caec29968423eb0))
+- [G2P-4929](https://openg2p.atlassian.net/browse/G2P-4929) Show and audit what a credential verification actually checked ([`fb85c12`](https://github.com/OpenG2P/farmer-registry/commit/fb85c12af40542f5688d6868c173f9db2ad31a43))
 
 <a id="v-0-0-0-develop-198"></a>
 
