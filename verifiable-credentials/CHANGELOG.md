@@ -6,10 +6,24 @@ _Published automatically._
 
 | Version | Date | Type | Notes |
 | --- | --- | --- | --- |
+| [`0.0.0-develop.16`](#v-0-0-0-develop-16) | 2026-09-01 | develop |  |
 | [`0.0.0-develop.15`](#v-0-0-0-develop-15) | 2026-08-31 | develop |  |
 | [`0.0.0-develop.14`](#v-0-0-0-develop-14) | 2026-08-28 | develop |  |
 
 # Develop builds
+
+<a id="v-0-0-0-develop-16"></a>
+
+## verifiable-credentials — develop 0.0.0-develop.16 (2026-09-01)
+
+_commit `67b7893` · changes since 0.0.0-develop.15_
+<!-- build:0.0.0-develop.16 revision:67b7893cdddbc2e288990f89ab512657fdec57a1 ts:1788224071 -->
+
+**Charts:** [openg2p-inji-certify 0.0.0-develop.16](https://openg2p.github.io/openg2p-helm/openg2p-inji-certify-0.0.0-develop.16.tgz) · [openg2p-inji-verify 0.0.0-develop.16](https://openg2p.github.io/openg2p-helm/openg2p-inji-verify-0.0.0-develop.16.tgz)
+
+### Changes
+
+- [G2P-4929](https://openg2p.atlassian.net/browse/G2P-4929) Serve the JWKS at the well-known path a verifier resolves ([`67b7893`](https://github.com/OpenG2P/verifiable-credentials/commit/67b7893cdddbc2e288990f89ab512657fdec57a1))
 
 <a id="v-0-0-0-develop-15"></a>
 
