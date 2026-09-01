@@ -6,6 +6,7 @@ _Published automatically._
 
 | Version | Date | Type | Notes |
 | --- | --- | --- | --- |
+| [`2.3.0-rc.219`](#v-2-3-0-rc-219) | 2026-09-01 | release candidate |  |
 | [`0.0.0-develop.238`](#v-0-0-0-develop-238) | 2026-09-01 | develop |  |
 | [`0.0.0-develop.237`](#v-0-0-0-develop-237) | 2026-09-01 | develop |  |
 | [`0.0.0-develop.235`](#v-0-0-0-develop-235) | 2026-08-28 | develop |  |
@@ -261,6 +262,55 @@ _commit `44278e8` · first release_
 - [[G2P-3267](https://openg2p.atlassian.net/browse/G2P-3267)] Updated dependencies verion for openg2p-commons. ([`aa5ce47`](https://github.com/OpenG2P/openg2p-commons-deployment/commit/aa5ce476524142e9628ad59c7c08bd67ec1a914f))
 - [[G2P-3267](https://openg2p.atlassian.net/browse/G2P-3267)] Added OpenG2P-commons Helm Charts in to openg2p-deployment-commons repo. ([`bf14317`](https://github.com/OpenG2P/openg2p-commons-deployment/commit/bf14317de2261ad192ecdf1980711eeebd315002))
 - Initial commit ([`04cc8c6`](https://github.com/OpenG2P/openg2p-commons-deployment/commit/04cc8c6f16ae3132d62a9b80087c0cea81ce472d))
+
+# Release candidates
+
+<a id="v-2-3-0-rc-219"></a>
+
+## commons 2.3.0-rc.219 — 2026-09-01
+
+_commit `ffabcdc` · changes since 2.2.1_
+<!-- build:2.3.0-rc.219 revision:ffabcdcee8f423bd7590eb95934c6cfcb25ca400 ts:1788266523 -->
+
+**Charts:** [openg2p-commons-base 2.3.0-rc.219](https://openg2p.github.io/openg2p-helm/openg2p-commons-base-2.3.0-rc.219.tgz) · [openg2p-commons-services 2.3.0-rc.219](https://openg2p.github.io/openg2p-helm/openg2p-commons-services-2.3.0-rc.219.tgz)
+
+### Summary
+
+- **Major:** CI transition to GitLab with removal of GitHub Actions; added namespace guard to prevent CI runs in forks.
+- Configuration updates: moved image and environment settings to IAM Helm chart; added MinIO configuration to values.yaml; set default baseDomain for commons charts.
+- Package updates: bumped versions for openg2p-master-data, openg2p-iam-service, and various MDS components; included Inji Certify with commons-services by default.
+- Enhancements to API and features: added agent portal API overrides for Keycloak URL resolution; enabled EMBEDDED_SUPERSET for Insights iframe support; made country pack a free-text field for better flexibility.
+- Improved uninstall process: added `--reset-keymanager` flag to commons-services uninstall to ensure proper key regeneration without data loss.
+
+### Changes
+
+- id and inji certify updated on version ([`ffabcdc`](https://github.com/OpenG2P/commons/commit/ffabcdcee8f423bd7590eb95934c6cfcb25ca400))
+- updated all the packages to the latest tagged version ([`f49cef5`](https://github.com/OpenG2P/commons/commit/f49cef5b365cf8059c226c44f0baf221425c3c5c))
+- Move image and env config to IAM Helm chart ([`ba9633d`](https://github.com/OpenG2P/commons/commit/ba9633d03e2ffe2e5db10125e4f0dbeee99c5570))
+- Add --reset-keymanager to the commons-services uninstall: esignet and mock-identity run PKCS11, so their key material sits in softhsm while their key_alias rows sit in base-owned DBs that the uninstall deliberately keeps, and resetting softhsm alone leaves the aliases pointing at HSM keys that no longer exist so both fail at keymanager init on reinstall; the flag truncates just key_alias+key_store so keys regenerate, leaving application data intact ([`9fad89d`](https://github.com/OpenG2P/commons/commit/9fad89dd4dcef322cd12cf598dd625b4f7c99656))
+- Bump openg2p-master-data to 1.1.0-rc.55 and openg2p-iam-service to 1.4.0-rc.90 ([`8832184`](https://github.com/OpenG2P/commons/commit/8832184f8053e10de50da41c1fa1c09b19e08ce2))
+- [G2P-4929](https://openg2p.atlassian.net/browse/G2P-4929) Ship Inji Certify with commons-services, enabled by default ([`1653fdb`](https://github.com/OpenG2P/commons/commit/1653fdb1a3acb423062ce0976f6efe10d052aaa9))
+- Versions of MDS, Mock ID, IAM bumped up. ([`460d8e4`](https://github.com/OpenG2P/commons/commit/460d8e43e9ab293283c659eb22ad99fe65e34327))
+- [G2P-4929](https://openg2p.atlassian.net/browse/G2P-4929) Add agent portal API overrides so its Keycloak URL and redirect resolve ([`2515d20`](https://github.com/OpenG2P/commons/commit/2515d20da59deafcf282ce79a9e539f4c6f2e887))
+- Bumped up version of IAM, and changed its location to Gitlab. ([`fa817d9`](https://github.com/OpenG2P/commons/commit/fa817d9d98a8748b20ac4b40fef85384e2b7fb26))
+- Bumped up AWE version to 0.0.0-develop.70 ([`9850037`](https://github.com/OpenG2P/commons/commit/985003774f36a2041ff2f9af465f03c5236d19b3))
+- Fix IAM keycloak base URL in commons-services: set IAM_STAFF_KEYCLOAK_BASE_URL directly under iamStaffPortalApi.envVars with an explicit tpl call, since the subchart's indirection gets only one tpl pass and was emitting the unresolved 'https://keycloak.{{ tpl .Values.global.baseDomain $ }}' into the pod; drop the hardcoded qa keycloakBaseUrl which was dead anyway because a subchart-scoped global loses to the top-level one ([`055b4d6`](https://github.com/OpenG2P/commons/commit/055b4d69b5149dad32eb9321e6dd02b5bd5c3a5e))
+- [G2P-4804](https://openg2p.atlassian.net/browse/G2P-4804) Make the country pack a free-text field with short form guidance. The two-value enum let an environment pick only ETH or XKM, so a country adding its own pack to openg2p-data could not select it; the Rancher description now says where to find the directory name and the provenance notes move to values.yaml. ([`2cabc9c`](https://github.com/OpenG2P/commons/commit/2cabc9c5aba91fa5b18ec9fbff2506d5bd44bc6f))
+- [G2P-4804](https://openg2p.atlassian.net/browse/G2P-4804) Enable EMBEDDED_SUPERSET. Insights loads /embedded/&lt;uuid&gt; in an iframe, a route Superset only registers with this flag — without it the embedded UUID and guest token are both issued successfully and only the iframe 404s, which reads as a broken client rather than a missing feature flag. ([`95dd6fb`](https://github.com/OpenG2P/commons/commit/95dd6fb73644da82b38e34662261fb1718463e72))
+- [G2P-5348](https://openg2p.atlassian.net/browse/G2P-5348) CI: refuse to run in forks (namespace guard) ([`53f78f2`](https://github.com/OpenG2P/commons/commit/53f78f2a6050d361055ad476f49a5d2edbbc1afc))
+- Just to trigger a build. No changes ([`b5b90d8`](https://github.com/OpenG2P/commons/commit/b5b90d8db9ccb37bb3ae0e7da82a7a29d14c2ea1))
+- [G2P-5335](https://openg2p.atlassian.net/browse/G2P-5335) Switch CI to GitLab (.gitlab-ci.yml); drop GitHub Actions build/publish ([`2c340a3`](https://github.com/OpenG2P/commons/commit/2c340a346f2f39ab5c54a94bd299f27466a37497))
+- [G2P-5451](https://openg2p.atlassian.net/browse/G2P-5451) Add MinIO configuration to values.yaml, including existing secret reference and read-only user creation ([`b766eea`](https://github.com/OpenG2P/commons/commit/b766eead30783b6e1f531e27937ecde1998e6cb1))
+- Default baseDomain to {{ .Release.Namespace }}.openg2p.org in both commons charts, and make every consumer tpl it (29 values refs plus the keycloak gateway/virtualservice templates) since a single tpl pass does not evaluate a template nested inside a value and would otherwise emit the literal {{ .Release.Namespace }} into hostnames ([`adc388c`](https://github.com/OpenG2P/commons/commit/adc388c5082613e409edcf1f70d56087d98136e3))
+- Bumped up MDS version ([`ae68cf6`](https://github.com/OpenG2P/commons/commit/ae68cf6a73d50925ee101d6192722cfecfa36edb))
+- Bumped up MDS version. ([`d39f5eb`](https://github.com/OpenG2P/commons/commit/d39f5eb17054534cff3ea552ce48e67386584c05))
+- [G2P-4804](https://openg2p.atlassian.net/browse/G2P-4804) Declare Ethiopia as the country for the commons environment, and surface the choice in the form. This is the one place an environment names its country — registries read the geography, code lists and sample people from Master Data and name none of their own, which is what lets one registry image serve any country. Master Data is installed from here, so the country pack, the code-list and sample switches, and the domain lists are all questions on this chart rather than values only reachable by hand-editing a subchart. ([`e9fba97`](https://github.com/OpenG2P/commons/commit/e9fba97bf72a08e44bb6ec62890758a917ab511f))
+- Add hook-succeeded to superset init-db hook-delete-policy so the Job and its pods (including a first-attempt deadlock retry) are removed once it succeeds, instead of a stale Error pod making a healthy release look failed; restate the hook keys explicitly since jobAnnotations {} never cleared the subchart defaults. Bumped up consent manager Helm version. ([`e862fe0`](https://github.com/OpenG2P/commons/commit/e862fe0ef3db49cdf4863270990d4a83064bdedb))
+- Bumped up MDS version to 0.0.0-develop.38 ([`fcd382e`](https://github.com/OpenG2P/commons/commit/fcd382efa84535d8037d3afc5ff510a3deb3c485))
+- Bumped up MDS version to 0.0.0-develop.36 ([`e77c23a`](https://github.com/OpenG2P/commons/commit/e77c23ab167cd469a4da463c04fa3befe79af849))
+- Bumped up Master Data Service version to 0.0.0-develop.31 ([`ab1f277`](https://github.com/OpenG2P/commons/commit/ab1f2779a2549309c037007fbe4bf7739db657cc))
+- Bumped up master data chart to 0.0.0-develop.30 ([`cf8be83`](https://github.com/OpenG2P/commons/commit/cf8be838ab40c768a5a002d62dd47616c0562fa9))
+- Bumped up Master Data Service version. ([`0e52ebf`](https://github.com/OpenG2P/commons/commit/0e52ebf19de3fd2ac8af3c4dd128e0f2857f7162))
 
 # Develop builds
 
