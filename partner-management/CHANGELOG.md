@@ -6,12 +6,26 @@ _Published automatically._
 
 | Version | Date | Type | Notes |
 | --- | --- | --- | --- |
+| [`1.0.0-rc.25`](#v-1-0-0-rc-25) | 2026-09-01 | release candidate |  |
 | [`0.0.0-develop.26`](#v-0-0-0-develop-26) | 2026-09-01 | develop |  |
 | [`1.0.0-rc.24`](#v-1-0-0-rc-24) | 2026-09-01 | release candidate |  |
 | [`0.0.0-develop.24`](#v-0-0-0-develop-24) | 2026-08-28 | develop |  |
 | [`0.0.0-develop.23`](#v-0-0-0-develop-23) | 2026-08-28 | develop |  |
 
 # Release candidates
+
+<a id="v-1-0-0-rc-25"></a>
+
+## partner-management 1.0.0-rc.25 — 2026-09-01
+
+_commit `f7cb219` · changes since 1.0.0-rc.24_
+<!-- build:1.0.0-rc.25 revision:f7cb2194c4aed70f74e2ff23f7d9e53973fac2e9 ts:1788253407 -->
+
+**Chart:** [partner-management 1.0.0-rc.25](https://openg2p.github.io/openg2p-helm/partner-management-1.0.0-rc.25.tgz)
+
+### Changes
+
+- Update keycloak-init version to 1.2.0 ([`f7cb219`](https://github.com/OpenG2P/partner-management/commit/f7cb2194c4aed70f74e2ff23f7d9e53973fac2e9))
 
 <a id="v-1-0-0-rc-24"></a>
 
