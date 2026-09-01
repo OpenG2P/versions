@@ -6,6 +6,7 @@ _Published automatically._
 
 | Version | Date | Type | Notes |
 | --- | --- | --- | --- |
+| [`0.0.0-develop.80`](#v-0-0-0-develop-80) | 2026-09-01 | develop |  |
 | [`1.1.1-rc.69`](#v-1-1-1-rc-69) | 2026-08-28 | release candidate |  |
 | [`0.0.0-develop.78`](#v-0-0-0-develop-78) | 2026-08-28 | develop |  |
 | [`1.1.0`](#v-1-1-0) | 2026-07-17 | release |  |
@@ -59,6 +60,19 @@ _commit `27c7f19` · changes since 1.1.0_
 - Update version to 1.1.0 in Chart.yaml, pyproject.toml, package.json, and package-lock.json ([`e5a25b4`](https://github.com/OpenG2P/awe/commit/e5a25b441a5d04671b55f035b126c0a0c7ab5632))
 
 # Develop builds
+
+<a id="v-0-0-0-develop-80"></a>
+
+## awe — develop 0.0.0-develop.80 (2026-09-01)
+
+_commit `fb0c1f2` · changes since 0.0.0-develop.78_
+<!-- build:0.0.0-develop.80 revision:fb0c1f298729a8fc60ec5557200429439f8db638 ts:1788256034 -->
+
+**Chart:** [openg2p-awe 0.0.0-develop.80](https://openg2p.github.io/openg2p-helm/openg2p-awe-0.0.0-develop.80.tgz)
+
+### Changes
+
+- Enhance indexing for ApprovalTask and ApprovalDecision models ([`a4fb948`](https://github.com/OpenG2P/awe/commit/a4fb948280d2c45c005ea94ef2cc51479708f82e))
 
 <a id="v-0-0-0-develop-78"></a>
 
