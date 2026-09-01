@@ -6,6 +6,7 @@ _Published automatically._
 
 | Version | Date | Type | Notes |
 | --- | --- | --- | --- |
+| [`1.0.1`](#v-1-0-1) | 2026-09-01 | release |  |
 | [`1.0.1-rc.26`](#v-1-0-1-rc-26) | 2026-09-01 | release candidate |  |
 | [`1.0.0`](#v-1-0-0) | 2026-09-01 | release |  |
 | [`1.0.0-rc.25`](#v-1-0-0-rc-25) | 2026-09-01 | release candidate |  |
@@ -15,6 +16,33 @@ _Published automatically._
 | [`0.0.0-develop.23`](#v-0-0-0-develop-23) | 2026-08-28 | develop |  |
 
 # Releases
+
+<a id="v-1-0-1"></a>
+
+## partner-management 1.0.1 — 2026-09-01
+
+<!-- build:1.0.1 revision:a90fbed5a350bd26c75967896f4d36c2078b475e ts:1788255698 -->
+
+_commit `a90fbed` · changes since release 1.0.0_
+
+**Same artifact as [`1.0.1-rc.26`](#v-1-0-1-rc-26)** — built from the
+same commit and *promoted* (retagged), not rebuilt. No code changed between them.
+
+**Chart:** [partner-management 1.0.1](https://openg2p.github.io/openg2p-helm/partner-management-1.0.1.tgz)
+
+### Release notes
+
+**Updated**
+ - fastapi-commons : 1.2.0
+
+### Summary
+
+- Dependency update: upgraded FastAPI common version to 1.2.0, impacting Docker configurations. 
+- Code maintenance: minor adjustments made with 2 insertions and 2 deletions across relevant files.
+
+### Changes
+
+- Update fastapi common version to 1.2.0 ([`a90fbed`](https://github.com/OpenG2P/partner-management/commit/a90fbed5a350bd26c75967896f4d36c2078b475e))
 
 <a id="v-1-0-0"></a>
 
