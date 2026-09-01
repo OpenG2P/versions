@@ -6,6 +6,7 @@ _Published automatically._
 
 | Version | Date | Type | Notes |
 | --- | --- | --- | --- |
+| [`1.0.2`](#v-1-0-2) | 2026-09-01 | release |  |
 | [`1.0.2-rc.28`](#v-1-0-2-rc-28) | 2026-09-01 | release candidate |  |
 | [`1.0.1`](#v-1-0-1) | 2026-09-01 | release |  |
 | [`1.0.1-rc.26`](#v-1-0-1-rc-26) | 2026-09-01 | release candidate |  |
@@ -17,6 +18,34 @@ _Published automatically._
 | [`0.0.0-develop.23`](#v-0-0-0-develop-23) | 2026-08-28 | develop |  |
 
 # Releases
+
+<a id="v-1-0-2"></a>
+
+## partner-management 1.0.2 — 2026-09-01
+
+<!-- build:1.0.2 revision:5be30ebc43a5aacc2a6e14978cdafe7ee1e04f4d ts:1788260833 -->
+
+_commit `5be30eb` · changes since release 1.0.1_
+
+**Same artifact as [`1.0.2-rc.28`](#v-1-0-2-rc-28)** — built from the
+same commit and *promoted* (retagged), not rebuilt. No code changed between them.
+
+**Chart:** [partner-management 1.0.2](https://openg2p.github.io/openg2p-helm/partner-management-1.0.2.tgz)
+
+### Release notes
+
+## What's Changed
+* Update image tags to version 1.0.2 by @mkumar-02 in https://github.com/OpenG2P/partner-management/pull/7
+
+**Full Changelog**: https://github.com/OpenG2P/partner-management/compare/1.0.1...1.0.2
+
+### Summary
+
+- Dependency update: upgraded image tags to version 1.0.2.
+
+### Changes
+
+- Update image tags to version 1.0.2 ([`7d90e45`](https://github.com/OpenG2P/partner-management/commit/7d90e45ade6054f7c4a48d5bb96c0198fedfd957))
 
 <a id="v-1-0-1"></a>
 
