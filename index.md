@@ -8,12 +8,6 @@ versions it references are **locked together** — one immutable version per com
 
 See the **[versioning & CI docs](https://docs.openg2p.org/operations/deployment/helm-docker-versioning-and-ci)** for how these are produced.
 
-> **Every released version is listed here**, including releases published before
-> this catalogue existed — their Helm charts are available from
-> [openg2p-helm](https://openg2p.github.io/openg2p-helm). Development builds
-> (`0.0.0-develop.N`) and release candidates from those earlier periods are not
-> included.
-
 ### Services
 
 - **[audit-manager](./audit-manager/CHANGELOG)** · [repository ↗](https://github.com/OpenG2P/audit-manager)

@@ -1,5 +1,0 @@
-> **Every released version is listed here**, including releases published before
-> this catalogue existed — their Helm charts are available from
-> [openg2p-helm](https://openg2p.github.io/openg2p-helm). Development builds
-> (`0.0.0-develop.N`) and release candidates from those earlier periods are not
-> included.
