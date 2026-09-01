@@ -6,6 +6,7 @@ _Published automatically._
 
 | Version | Date | Type | Notes |
 | --- | --- | --- | --- |
+| [`1.2.0`](#v-1-2-0) | 2026-09-01 | release |  |
 | [`1.2.0-rc.26`](#v-1-2-0-rc-26) | 2026-09-01 | release candidate |  |
 | [`1.2.0-rc.25`](#v-1-2-0-rc-25) | 2026-09-01 | release candidate |  |
 | [`0.0.0-develop.25`](#v-0-0-0-develop-25) | 2026-08-28 | develop |  |
@@ -13,6 +14,36 @@ _Published automatically._
 | [`1.0.0`](#v-1-0-0) | 2026-07-13 | release |  |
 
 # Releases
+
+<a id="v-1-2-0"></a>
+
+## audit-manager 1.2.0 — 2026-09-01
+
+<!-- build:1.2.0 revision:dcc215485c176c75777c7df0738f3c4f6e315e23 ts:1788260395 -->
+
+_commit `dcc2154` · changes since release 1.0.1_
+
+**Same artifact as [`1.2.0-rc.26`](#v-1-2-0-rc-26)** — built from the
+same commit and *promoted* (retagged), not rebuilt. No code changed between them.
+
+**Chart:** [openg2p-audit-manager 1.2.0](https://openg2p.github.io/openg2p-helm/openg2p-audit-manager-1.2.0.tgz)
+
+### Release notes
+
+updated docker images on the helm chart values to 1.2.0
+
+### Summary
+
+- **Major:** Migration to GitLab for the audit manager repository, with GitHub build/publish disabled and set to read-only.
+- Container updates: upgraded image to version 1.2.0 and changed the audit manager container registry.
+- Build process: re-enabled build and publish on GitHub.
+
+### Changes
+
+- image(1.2.0) update and postgres init (1.2.0) version upgraded ([`dcc2154`](https://github.com/OpenG2P/audit-manager/commit/dcc215485c176c75777c7df0738f3c4f6e315e23))
+- [G2P-5605](https://openg2p.atlassian.net/browse/G2P-5605) Build and publish on GitHub again ([`36dbf77`](https://github.com/OpenG2P/audit-manager/commit/36dbf77a0c0ff8afc9a10a1de769b3bdf06d5fd6))
+- [G2P-5575](https://openg2p.atlassian.net/browse/G2P-5575) audit manager container regitry changed ([`80dbc1c`](https://github.com/OpenG2P/audit-manager/commit/80dbc1c4d762b12ae19f0ee494d4df041451e831))
+- Moved to GitLab: openg2p/audit-manager (read-only; build/publish disabled) ([`42bc760`](https://github.com/OpenG2P/audit-manager/commit/42bc760109bb718406069da8b82efac8fdd63de6))
 
 <a id="v-1-0-1"></a>
 
