@@ -6,11 +6,25 @@ _Published automatically._
 
 | Version | Date | Type | Notes |
 | --- | --- | --- | --- |
+| [`1.2.0-rc.300`](#v-1-2-0-rc-300) | 2026-09-02 | release candidate |  |
 | [`1.2.0-rc.299`](#v-1-2-0-rc-299) | 2026-09-02 | release candidate |  |
 | [`1.2.0-rc.298`](#v-1-2-0-rc-298) | 2026-09-02 | release candidate |  |
 | [`1.2.0-rc.297`](#v-1-2-0-rc-297) | 2026-09-01 | release candidate |  |
 
 # Release candidates
+
+<a id="v-1-2-0-rc-300"></a>
+
+## mowsa-nsr 1.2.0-rc.300 — 2026-09-02
+
+_commit `5b8dc42` · changes since 1.2.0-rc.299_
+<!-- build:1.2.0-rc.300 revision:5b8dc423e305ef6d6510644f970895db791055b2 ts:1788324948 -->
+
+**Chart:** [mowsa-nsr 1.2.0-rc.300](https://openg2p.github.io/openg2p-helm/mowsa-nsr-1.2.0-rc.300.tgz)
+
+### Changes
+
+- Enhance Celery Docker image with NSR-specific run_celery.py and worker patches. The Dockerfile now includes the new script, which implements hot-patching for partner auto-approval in change requests and intake submissions, along with AWE bearer token handling from Keycloak. ([`5b8dc42`](https://github.com/OpenG2P/mowsa-nsr/commit/5b8dc423e305ef6d6510644f970895db791055b2))
 
 <a id="v-1-2-0-rc-299"></a>
 
