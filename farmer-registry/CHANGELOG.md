@@ -6,6 +6,7 @@ _Published automatically._
 
 | Version | Date | Type | Notes |
 | --- | --- | --- | --- |
+| [`1.2.1-rc.161`](#v-1-2-1-rc-161) | 2026-09-02 | release candidate |  |
 | [`0.0.0-develop.203`](#v-0-0-0-develop-203) | 2026-09-02 | develop |  |
 | [`0.0.0-develop.201`](#v-0-0-0-develop-201) | 2026-09-01 | develop |  |
 | [`0.0.0-develop.198`](#v-0-0-0-develop-198) | 2026-09-01 | develop |  |
@@ -184,6 +185,19 @@ _commit `7055a71` · first release_
 - Initial commit ([`6e3cf83`](https://github.com/OpenG2P/farmer-registry/commit/6e3cf838809c5522a8b0cda15b87f726683ec175))
 
 # Release candidates
+
+<a id="v-1-2-1-rc-161"></a>
+
+## farmer-registry 1.2.1-rc.161 — 2026-09-02
+
+_commit `3282b92` · changes since 1.2.1-rc.159_
+<!-- build:1.2.1-rc.161 revision:3282b9228243b76b9e18f76535cb4be6c7da3f46 ts:1788322594 -->
+
+**Chart:** [openg2p-farmer-registry 1.2.1-rc.161](https://openg2p.github.io/openg2p-helm/openg2p-farmer-registry-1.2.1-rc.161.tgz)
+
+### Changes
+
+- [G2P-5616](https://openg2p.atlassian.net/browse/G2P-5616) Enhance household member data model and validation ([`552ec3c`](https://github.com/OpenG2P/farmer-registry/commit/552ec3c4ea0c716b1019e613cb302ba3e4381c42))
 
 <a id="v-1-2-1-rc-159"></a>
 
