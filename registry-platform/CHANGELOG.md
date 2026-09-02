@@ -6,6 +6,7 @@ _Published automatically._
 
 | Version | Date | Type | Notes |
 | --- | --- | --- | --- |
+| [`0.0.0-develop.428`](#v-0-0-0-develop-428) | 2026-09-02 | develop |  |
 | [`1.2.0`](#v-1-2-0) | 2026-09-01 | release |  |
 | [`1.2.0-rc.440`](#v-1-2-0-rc-440) | 2026-09-01 | release candidate |  |
 | [`1.2.0-rc.439`](#v-1-2-0-rc-439) | 2026-09-01 | release candidate |  |
@@ -550,6 +551,25 @@ _commit `9b41f96` · changes since v1.0.0_
 - [G2P-5153](https://openg2p.atlassian.net/browse/G2P-5153) Refactor IAM permission handling and authentication cookie management ([`8a6abe5`](https://github.com/OpenG2P/registry-platform/commit/8a6abe5de479bf2647f89b31fbfa62989114ef3e))
 
 # Develop builds
+
+<a id="v-0-0-0-develop-428"></a>
+
+## registry-platform — develop 0.0.0-develop.428 (2026-09-02)
+
+_commit `6c4f5f3` · changes since 0.0.0-develop.426_
+<!-- build:0.0.0-develop.428 revision:6c4f5f3a23b2e8b54b606ffd8120c0eda92a0aba ts:1788310577 -->
+
+**Chart:** [openg2p-registry 0.0.0-develop.428](https://openg2p.github.io/openg2p-helm/openg2p-registry-0.0.0-develop.428.tgz)
+
+### Summary
+
+- Data handling enhancement: Decode Farmer ID from claim-169 key 0, allowing registries to specify the ID carried by their QR codes.
+- Security improvement: Store the eSignet client key in a Secret to prevent unauthorized rotation during reinstalls.
+
+### Changes
+
+- [G2P-4929](https://openg2p.atlassian.net/browse/G2P-4929) Decode the Farmer ID from claim-169 key 0, as PixelPass writes it. Let each registry name the id its QR carries, and stop assuming farmer ([`6c4f5f3`](https://github.com/OpenG2P/registry-platform/commit/6c4f5f3a23b2e8b54b606ffd8120c0eda92a0aba))
+- [G2P-4929](https://openg2p.atlassian.net/browse/G2P-4929) Keep the eSignet client key in a Secret so a reinstall cannot rotate it ([`1ffc2eb`](https://github.com/OpenG2P/registry-platform/commit/1ffc2ebcccc51786b36e77ddc635be99a95a8a2d))
 
 <a id="v-0-0-0-develop-426"></a>
 
