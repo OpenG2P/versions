@@ -6,9 +6,23 @@ _Published automatically._
 
 | Version | Date | Type | Notes |
 | --- | --- | --- | --- |
+| [`1.2.0-rc.298`](#v-1-2-0-rc-298) | 2026-09-02 | release candidate |  |
 | [`1.2.0-rc.297`](#v-1-2-0-rc-297) | 2026-09-01 | release candidate |  |
 
 # Release candidates
+
+<a id="v-1-2-0-rc-298"></a>
+
+## mowsa-nsr 1.2.0-rc.298 — 2026-09-02
+
+_commit `8b9a1c2` · changes since 1.2.0-rc.297_
+<!-- build:1.2.0-rc.298 revision:8b9a1c2e88deef3911081a2dd4b94a21fcab8d52 ts:1788323342 -->
+
+**Chart:** [mowsa-nsr 1.2.0-rc.298](https://openg2p.github.io/openg2p-helm/mowsa-nsr-1.2.0-rc.298.tgz)
+
+### Changes
+
+- [G2P-5630](https://openg2p.atlassian.net/browse/G2P-5630): Rename docker of staff-api to staff-portal-api to align with older images ([`8b9a1c2`](https://github.com/OpenG2P/mowsa-nsr/commit/8b9a1c2e88deef3911081a2dd4b94a21fcab8d52))
 
 <a id="v-1-2-0-rc-297"></a>
 
