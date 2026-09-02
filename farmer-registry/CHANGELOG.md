@@ -6,6 +6,7 @@ _Published automatically._
 
 | Version | Date | Type | Notes |
 | --- | --- | --- | --- |
+| [`0.0.0-develop.203`](#v-0-0-0-develop-203) | 2026-09-02 | develop |  |
 | [`0.0.0-develop.201`](#v-0-0-0-develop-201) | 2026-09-01 | develop |  |
 | [`0.0.0-develop.198`](#v-0-0-0-develop-198) | 2026-09-01 | develop |  |
 | [`1.2.1-rc.159`](#v-1-2-1-rc-159) | 2026-08-28 | release candidate |  |
@@ -226,6 +227,25 @@ _commit `448e66e` · changes since 1.2.0_
 - [G2P-5335](https://openg2p.atlassian.net/browse/G2P-5335) Switch CI to GitLab (.gitlab-ci.yml); drop GitHub Actions build/publish ([`1062700`](https://github.com/OpenG2P/farmer-registry/commit/1062700737b8129d66fcc363c7d3809863d0cefb))
 
 # Develop builds
+
+<a id="v-0-0-0-develop-203"></a>
+
+## farmer-registry — develop 0.0.0-develop.203 (2026-09-02)
+
+_commit `b0705ee` · changes since 0.0.0-develop.201_
+<!-- build:0.0.0-develop.203 revision:b0705ee67c5fdc8b706267b52c2c52e536b27b44 ts:1788310982 -->
+
+**Chart:** [openg2p-farmer-registry 0.0.0-develop.203](https://openg2p.github.io/openg2p-helm/openg2p-farmer-registry-0.0.0-develop.203.tgz)
+
+### Summary
+
+- **Major:** Dropped the claim-169 Data issuer key, resolving an issue with overwriting Language.
+- Version bump to RP 0.0.0-develop.428.
+
+### Changes
+
+- Bumped up RP version to 0.0.0-develop.428 ([`b0705ee`](https://github.com/OpenG2P/farmer-registry/commit/b0705ee67c5fdc8b706267b52c2c52e536b27b44))
+- [G2P-4929](https://openg2p.atlassian.net/browse/G2P-4929) Drop the claim-169 Data issuer key that overwrote Language ([`c977a89`](https://github.com/OpenG2P/farmer-registry/commit/c977a89db98d36299af770ed4cb3ab3d15d746a8))
 
 <a id="v-0-0-0-develop-201"></a>
 
