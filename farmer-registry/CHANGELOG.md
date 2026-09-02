@@ -6,6 +6,7 @@ _Published automatically._
 
 | Version | Date | Type | Notes |
 | --- | --- | --- | --- |
+| [`0.0.0-develop.205`](#v-0-0-0-develop-205) | 2026-09-02 | develop |  |
 | [`1.2.1-rc.161`](#v-1-2-1-rc-161) | 2026-09-02 | release candidate |  |
 | [`0.0.0-develop.203`](#v-0-0-0-develop-203) | 2026-09-02 | develop |  |
 | [`0.0.0-develop.201`](#v-0-0-0-develop-201) | 2026-09-01 | develop |  |
@@ -241,6 +242,25 @@ _commit `448e66e` · changes since 1.2.0_
 - [G2P-5335](https://openg2p.atlassian.net/browse/G2P-5335) Switch CI to GitLab (.gitlab-ci.yml); drop GitHub Actions build/publish ([`1062700`](https://github.com/OpenG2P/farmer-registry/commit/1062700737b8129d66fcc363c7d3809863d0cefb))
 
 # Develop builds
+
+<a id="v-0-0-0-develop-205"></a>
+
+## farmer-registry — develop 0.0.0-develop.205 (2026-09-02)
+
+_commit `ce948e3` · changes since 0.0.0-develop.203_
+<!-- build:0.0.0-develop.205 revision:ce948e3f695f66ab088fff7d54f7cf7be8e2189e ts:1788339305 -->
+
+**Chart:** [openg2p-farmer-registry 0.0.0-develop.205](https://openg2p.github.io/openg2p-helm/openg2p-farmer-registry-0.0.0-develop.205.tgz)
+
+### Summary
+
+- Domain management: transitioned to deriving all hostnames from `baseDomain`, eliminating hardcoded domains for improved flexibility.
+- Versioning: updated RP version to 0.0.0-develop.429, reflecting ongoing development progress.
+
+### Changes
+
+- Bumped up RP version to 0.0.0-develop.429 ([`ce948e3`](https://github.com/OpenG2P/farmer-registry/commit/ce948e3f695f66ab088fff7d54f7cf7be8e2189e))
+- [G2P-4929](https://openg2p.atlassian.net/browse/G2P-4929) Derive every hostname from baseDomain instead of hardcoding the domain ([`3315fc1`](https://github.com/OpenG2P/farmer-registry/commit/3315fc15b7a96d2435195f87297613b9eea6813b))
 
 <a id="v-0-0-0-develop-203"></a>
 
