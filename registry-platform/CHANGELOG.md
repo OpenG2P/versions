@@ -6,6 +6,7 @@ _Published automatically._
 
 | Version | Date | Type | Notes |
 | --- | --- | --- | --- |
+| [`0.0.0-develop.429`](#v-0-0-0-develop-429) | 2026-09-02 | develop |  |
 | [`0.0.0-develop.428`](#v-0-0-0-develop-428) | 2026-09-02 | develop |  |
 | [`1.2.0`](#v-1-2-0) | 2026-09-01 | release |  |
 | [`1.2.0-rc.440`](#v-1-2-0-rc-440) | 2026-09-01 | release candidate |  |
@@ -551,6 +552,19 @@ _commit `9b41f96` · changes since v1.0.0_
 - [G2P-5153](https://openg2p.atlassian.net/browse/G2P-5153) Refactor IAM permission handling and authentication cookie management ([`8a6abe5`](https://github.com/OpenG2P/registry-platform/commit/8a6abe5de479bf2647f89b31fbfa62989114ef3e))
 
 # Develop builds
+
+<a id="v-0-0-0-develop-429"></a>
+
+## registry-platform — develop 0.0.0-develop.429 (2026-09-02)
+
+_commit `8ef194b` · changes since 0.0.0-develop.428_
+<!-- build:0.0.0-develop.429 revision:8ef194bb44901888f625176355e71b06d5970a0a ts:1788323490 -->
+
+**Chart:** [openg2p-registry 0.0.0-develop.429](https://openg2p.github.io/openg2p-helm/openg2p-registry-0.0.0-develop.429.tgz)
+
+### Changes
+
+- [G2P-4929](https://openg2p.atlassian.net/browse/G2P-4929) Derive every hostname from baseDomain instead of hardcoding the domain ([`8ef194b`](https://github.com/OpenG2P/registry-platform/commit/8ef194bb44901888f625176355e71b06d5970a0a))
 
 <a id="v-0-0-0-develop-428"></a>
 
