@@ -6,10 +6,24 @@ _Published automatically._
 
 | Version | Date | Type | Notes |
 | --- | --- | --- | --- |
+| [`1.2.0-rc.299`](#v-1-2-0-rc-299) | 2026-09-02 | release candidate |  |
 | [`1.2.0-rc.298`](#v-1-2-0-rc-298) | 2026-09-02 | release candidate |  |
 | [`1.2.0-rc.297`](#v-1-2-0-rc-297) | 2026-09-01 | release candidate |  |
 
 # Release candidates
+
+<a id="v-1-2-0-rc-299"></a>
+
+## mowsa-nsr 1.2.0-rc.299 — 2026-09-02
+
+_commit `1ab5b1b` · changes since 1.2.0-rc.298_
+<!-- build:1.2.0-rc.299 revision:1ab5b1b7a488f2af5d9058ed709a44387c61a26b ts:1788323919 -->
+
+**Chart:** [mowsa-nsr 1.2.0-rc.299](https://openg2p.github.io/openg2p-helm/mowsa-nsr-1.2.0-rc.299.tgz)
+
+### Changes
+
+- Update Helm chart version to 1.2.0 and align dependency version for openg2p-registry ([`1ab5b1b`](https://github.com/OpenG2P/mowsa-nsr/commit/1ab5b1b7a488f2af5d9058ed709a44387c61a26b))
 
 <a id="v-1-2-0-rc-298"></a>
 
