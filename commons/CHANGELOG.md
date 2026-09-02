@@ -6,6 +6,7 @@ _Published automatically._
 
 | Version | Date | Type | Notes |
 | --- | --- | --- | --- |
+| [`0.0.0-develop.239`](#v-0-0-0-develop-239) | 2026-09-02 | develop |  |
 | [`2.3.0`](#v-2-3-0) | 2026-09-01 | release |  |
 | [`2.3.0-rc.221`](#v-2-3-0-rc-221) | 2026-09-01 | release candidate |  |
 | [`2.3.0-rc.219`](#v-2-3-0-rc-219) | 2026-09-01 | release candidate |  |
@@ -381,6 +382,19 @@ _commit `ffabcdc` · changes since 2.2.1_
 - Bumped up Master Data Service version. ([`0e52ebf`](https://github.com/OpenG2P/commons/commit/0e52ebf19de3fd2ac8af3c4dd128e0f2857f7162))
 
 # Develop builds
+
+<a id="v-0-0-0-develop-239"></a>
+
+## commons — develop 0.0.0-develop.239 (2026-09-02)
+
+_commit `a264540` · changes since 0.0.0-develop.238_
+<!-- build:0.0.0-develop.239 revision:a264540e55cb258d53f31ab3703cee95cf19eaf6 ts:1788312672 -->
+
+**Charts:** [openg2p-commons-base 0.0.0-develop.239](https://openg2p.github.io/openg2p-helm/openg2p-commons-base-0.0.0-develop.239.tgz) · [openg2p-commons-services 0.0.0-develop.239](https://openg2p.github.io/openg2p-helm/openg2p-commons-services-0.0.0-develop.239.tgz)
+
+### Changes
+
+- [G2P-4929](https://openg2p.atlassian.net/browse/G2P-4929) Reject an agent portal hostname that will break sign-out ([`a264540`](https://github.com/OpenG2P/commons/commit/a264540e55cb258d53f31ab3703cee95cf19eaf6))
 
 <a id="v-0-0-0-develop-238"></a>
 
