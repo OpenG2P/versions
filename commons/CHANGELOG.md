@@ -6,6 +6,7 @@ _Published automatically._
 
 | Version | Date | Type | Notes |
 | --- | --- | --- | --- |
+| [`0.0.0-develop.240`](#v-0-0-0-develop-240) | 2026-09-02 | develop |  |
 | [`2.3.1`](#v-2-3-1) | 2026-09-02 | release |  |
 | [`2.3.1-rc.223`](#v-2-3-1-rc-223) | 2026-09-02 | release candidate |  |
 | [`0.0.0-develop.239`](#v-0-0-0-develop-239) | 2026-09-02 | develop |  |
@@ -418,6 +419,19 @@ _commit `ffabcdc` · changes since 2.2.1_
 - Bumped up Master Data Service version. ([`0e52ebf`](https://github.com/OpenG2P/commons/commit/0e52ebf19de3fd2ac8af3c4dd128e0f2857f7162))
 
 # Develop builds
+
+<a id="v-0-0-0-develop-240"></a>
+
+## commons — develop 0.0.0-develop.240 (2026-09-02)
+
+_commit `1cd7abf` · changes since 0.0.0-develop.239_
+<!-- build:0.0.0-develop.240 revision:1cd7abfcb92696ea2f13ad93a6870ce792a40329 ts:1788338998 -->
+
+**Charts:** [openg2p-commons-base 0.0.0-develop.240](https://openg2p.github.io/openg2p-helm/openg2p-commons-base-0.0.0-develop.240.tgz) · [openg2p-commons-services 0.0.0-develop.240](https://openg2p.github.io/openg2p-helm/openg2p-commons-services-0.0.0-develop.240.tgz)
+
+### Changes
+
+- Bump commons-services subcharts to the latest published develop builds: openg2p-master-data .68-&gt;.69, openg2p-iam-service .97-&gt;.98, openg2p-staff-portal-ui .63-&gt;.65, openg2p-awe .78-&gt;.81, partner-management .24-&gt;.26, openg2p-consent-manager .57-&gt;.58 (mock-identity .7, inji-certify/.verify .16, audit-manager .25 and keycloak-init .60 already current); ([`1cd7abf`](https://github.com/OpenG2P/commons/commit/1cd7abfcb92696ea2f13ad93a6870ce792a40329))
 
 <a id="v-0-0-0-develop-239"></a>
 
