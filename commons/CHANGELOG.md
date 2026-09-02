@@ -6,6 +6,7 @@ _Published automatically._
 
 | Version | Date | Type | Notes |
 | --- | --- | --- | --- |
+| [`2.3.1-rc.223`](#v-2-3-1-rc-223) | 2026-09-02 | release candidate |  |
 | [`0.0.0-develop.239`](#v-0-0-0-develop-239) | 2026-09-02 | develop |  |
 | [`2.3.0`](#v-2-3-0) | 2026-09-01 | release |  |
 | [`2.3.0-rc.221`](#v-2-3-0-rc-221) | 2026-09-01 | release candidate |  |
@@ -320,6 +321,19 @@ _commit `44278e8` · first release_
 - Initial commit ([`04cc8c6`](https://github.com/OpenG2P/openg2p-commons-deployment/commit/04cc8c6f16ae3132d62a9b80087c0cea81ce472d))
 
 # Release candidates
+
+<a id="v-2-3-1-rc-223"></a>
+
+## commons 2.3.1-rc.223 — 2026-09-02
+
+_commit `be192af` · changes since 2.3.0_
+<!-- build:2.3.1-rc.223 revision:be192af5a683d121b3c02ea3e5e5f5743e68a3b8 ts:1788337013 -->
+
+**Charts:** [openg2p-commons-base 2.3.1-rc.223](https://openg2p.github.io/openg2p-helm/openg2p-commons-base-2.3.1-rc.223.tgz) · [openg2p-commons-services 2.3.1-rc.223](https://openg2p.github.io/openg2p-helm/openg2p-commons-services-2.3.1-rc.223.tgz)
+
+### Changes
+
+- Update Chart.lock and Chart.yaml to bump versions of dependencies: postgres-init to 1.2.0 and openg2p-iam-service to 1.4.1. ([`49adc9b`](https://github.com/OpenG2P/commons/commit/49adc9b2665ff206b4ad4404c0d5f00383c81f1d))
 
 <a id="v-2-3-0-rc-221"></a>
 
