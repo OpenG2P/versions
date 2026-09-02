@@ -6,6 +6,7 @@ _Published automatically._
 
 | Version | Date | Type | Notes |
 | --- | --- | --- | --- |
+| [`1.4.1`](#v-1-4-1) | 2026-09-02 | release |  |
 | [`1.4.1-rc.111`](#v-1-4-1-rc-111) | 2026-09-02 | release candidate |  |
 | [`1.4.0`](#v-1-4-0) | 2026-09-01 | release |  |
 | [`1.4.0-rc.101`](#v-1-4-0-rc-101) | 2026-09-01 | release candidate |  |
@@ -14,6 +15,53 @@ _Published automatically._
 | [`0.0.0-develop.97`](#v-0-0-0-develop-97) | 2026-08-28 | develop |  |
 
 # Releases
+
+<a id="v-1-4-1"></a>
+
+## iam 1.4.1 — 2026-09-02
+
+<!-- build:1.4.1 revision:7398f88d3fe3cee5fd26b2bab3b4b54ffa75e560 ts:1788335866 -->
+
+_commit `7398f88` · changes since release 1.4.0_
+
+**Same artifact as [`1.4.1-rc.111`](#v-1-4-1-rc-111)** — built from the
+same commit and *promoted* (retagged), not rebuilt. No code changed between them.
+
+**Chart:** [openg2p-iam-service 1.4.1](https://openg2p.github.io/openg2p-helm/openg2p-iam-service-1.4.1.tgz)
+
+### Release notes
+
+## What's Changed
+- Separate agent vs staff auth cookies (agent- prefix) so shared cookie domains do not overwrite sessions
+- Return 401 instead of 500 when a token cannot be verified against this portal’s JWKS
+- Agent API auth now matches staff: GET /auth/logout (OIDC end-session), GET /auth/get_logged_in_user
+- Enable CSRF on the agent API (the 1.4.0 Helm flag was unused)
+- Seed the agent-realm login provider by issuer so agent tokens can be validated
+- Seed staff login providers by issuer as well (shared login_providers table)
+- Render Keycloak base URL with tpl (1.4.0 left a nested template in the pod env)
+- Point the agent application URL at the agent portal host, not the IAM staff UI
+- Add global.agentPortalHostname; derive redirect URI and CORS from it
+- Remove keycloak-init from this chart (owned by commons)
+- Bump image tags to 1.4.1; pin FASTAPI_COMMON_REF to 1.2.0
+- Add tests for cookie prefix, agent data loader, and unverifiable-token 401
+
+### Summary
+
+- **Major:** Keycloak integration: configured the agent app to connect to the Keycloak base URL and aligned the agent portal API with the staff portal's authentication surface.
+- Security enhancements: separated agent and staff authentication cookies, implemented 401 responses for unverifiable tokens, and seeded the agent realm's login provider for token validation.
+- CI improvements: transitioned to a single looping job for pre-commit checks without a local cache and established build and publish processes on GitHub.
+- Code quality: applied black formatting across the repository to enforce a consistent 110-column line length.
+
+### Changes
+
+- [G2P-4929](https://openg2p.atlassian.net/browse/G2P-4929) Render the Keycloak base URL and point the agent app at the agent portal ([`6ebcbf3`](https://github.com/OpenG2P/iam/commit/6ebcbf3b1b7d03dfa21016e8a47eb611c751ac40))
+- [G2P-5605](https://openg2p.atlassian.net/browse/G2P-5605) Build and publish on GitHub ([`8682df5`](https://github.com/OpenG2P/iam/commit/8682df599b0dc919606c8e9f77387d09d0479829))
+- [G2P-5575](https://openg2p.atlassian.net/browse/G2P-5575) applied the platform-service group change on iam service ([`0d0ba76`](https://github.com/OpenG2P/iam/commit/0d0ba7675231135ba843f99eaa598bab9dfdf60a))
+- [G2P-5348](https://openg2p.atlassian.net/browse/G2P-5348) Run pre-commit as a single looping job without a runner-local cache ([`4c9d599`](https://github.com/OpenG2P/iam/commit/4c9d599acd40e81a8620243632ea80a86a3b0bd4))
+- [G2P-4929](https://openg2p.atlassian.net/browse/G2P-4929) Match the staff portal's auth surface in the agent portal API ([`31250d7`](https://github.com/OpenG2P/iam/commit/31250d7f4207e9d946c1986fa0ea3311d8dbfcce))
+- [G2P-4929](https://openg2p.atlassian.net/browse/G2P-4929) Keep agent and staff auth cookies apart and 401 on unverifiable tokens ([`2c74a91`](https://github.com/OpenG2P/iam/commit/2c74a91033590b4355e9d0ce1898adbe900edd14))
+- [G2P-4929](https://openg2p.atlassian.net/browse/G2P-4929) Apply black formatting at the repo's 110-column line length ([`29983b7`](https://github.com/OpenG2P/iam/commit/29983b7ccd0e6a9d4ab68ca61e642e13efc129ad))
+- [G2P-4929](https://openg2p.atlassian.net/browse/G2P-4929) Seed the agent realm's login provider so agent tokens validate ([`d6ecd80`](https://github.com/OpenG2P/iam/commit/d6ecd80f634a0306d02458a9474144abc24b324f))
 
 <a id="v-1-4-0"></a>
 
