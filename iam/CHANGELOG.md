@@ -8,6 +8,7 @@ _Published automatically._
 | --- | --- | --- | --- |
 | [`1.4.0`](#v-1-4-0) | 2026-09-01 | release |  |
 | [`1.4.0-rc.101`](#v-1-4-0-rc-101) | 2026-09-01 | release candidate |  |
+| [`0.0.0-develop.98`](#v-0-0-0-develop-98) | 2026-09-02 | develop |  |
 | [`1.4.0-rc.100`](#v-1-4-0-rc-100) | 2026-08-28 | release candidate |  |
 | [`0.0.0-develop.97`](#v-0-0-0-develop-97) | 2026-08-28 | develop |  |
 
@@ -174,6 +175,19 @@ _commit `f8bccfe` · changes since v1.3.0_
 - [G2P-5313](https://openg2p.atlassian.net/browse/G2P-5313) Improve unit test coverage for core IAM functionality ([`c762c7b`](https://github.com/OpenG2P/iam/commit/c762c7b741a5c9d19bbd30b6875daacbd5d88717))
 
 # Develop builds
+
+<a id="v-0-0-0-develop-98"></a>
+
+## iam — develop 0.0.0-develop.98 (2026-09-02)
+
+_commit `6ebcbf3` · changes since 0.0.0-develop.97_
+<!-- build:0.0.0-develop.98 revision:6ebcbf3b1b7d03dfa21016e8a47eb611c751ac40 ts:1788254954 -->
+
+**Chart:** [openg2p-iam-service 0.0.0-develop.98](https://openg2p.github.io/openg2p-helm/openg2p-iam-service-0.0.0-develop.98.tgz)
+
+### Changes
+
+- [G2P-4929](https://openg2p.atlassian.net/browse/G2P-4929) Render the Keycloak base URL and point the agent app at the agent portal ([`6ebcbf3`](https://github.com/OpenG2P/iam/commit/6ebcbf3b1b7d03dfa21016e8a47eb611c751ac40))
 
 <a id="v-0-0-0-develop-97"></a>
 
