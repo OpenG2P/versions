@@ -6,6 +6,7 @@ _Published automatically._
 
 | Version | Date | Type | Notes |
 | --- | --- | --- | --- |
+| [`2.3.2-rc.225`](#v-2-3-2-rc-225) | 2026-09-02 | release candidate |  |
 | [`0.0.0-develop.240`](#v-0-0-0-develop-240) | 2026-09-02 | develop |  |
 | [`2.3.1`](#v-2-3-1) | 2026-09-02 | release |  |
 | [`2.3.1-rc.223`](#v-2-3-1-rc-223) | 2026-09-02 | release candidate |  |
@@ -344,6 +345,19 @@ _commit `44278e8` · first release_
 - Initial commit ([`04cc8c6`](https://github.com/OpenG2P/openg2p-commons-deployment/commit/04cc8c6f16ae3132d62a9b80087c0cea81ce472d))
 
 # Release candidates
+
+<a id="v-2-3-2-rc-225"></a>
+
+## commons 2.3.2-rc.225 — 2026-09-02
+
+_commit `9f9089b` · changes since 2.3.1_
+<!-- build:2.3.2-rc.225 revision:9f9089b5ebbc45648fe7dddfc60c6d4f8368b7a8 ts:1788342647 -->
+
+**Charts:** [openg2p-commons-base 2.3.2-rc.225](https://openg2p.github.io/openg2p-helm/openg2p-commons-base-2.3.2-rc.225.tgz) · [openg2p-commons-services 2.3.2-rc.225](https://openg2p.github.io/openg2p-helm/openg2p-commons-services-2.3.2-rc.225.tgz)
+
+### Changes
+
+- Bump version of openg2p-awe to 1.2.2 in Chart.yaml ([`0d345ed`](https://github.com/OpenG2P/commons/commit/0d345ed2f48b8555025f503a675aaceff39ecfcd))
 
 <a id="v-2-3-1-rc-223"></a>
 
