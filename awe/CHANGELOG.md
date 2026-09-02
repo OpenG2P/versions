@@ -6,6 +6,7 @@ _Published automatically._
 
 | Version | Date | Type | Notes |
 | --- | --- | --- | --- |
+| [`0.0.0-develop.87`](#v-0-0-0-develop-87) | 2026-09-02 | develop |  |
 | [`1.2.1`](#v-1-2-1) | 2026-09-01 | release |  |
 | [`1.2.1-rc.82`](#v-1-2-1-rc-82) | 2026-09-01 | release candidate |  |
 | [`1.2.0`](#v-1-2-0) | 2026-09-01 | release |  |
@@ -178,6 +179,28 @@ _commit `27c7f19` · changes since 1.1.0_
 - Update version to 1.1.0 in Chart.yaml, pyproject.toml, package.json, and package-lock.json ([`e5a25b4`](https://github.com/OpenG2P/awe/commit/e5a25b441a5d04671b55f035b126c0a0c7ab5632))
 
 # Develop builds
+
+<a id="v-0-0-0-develop-87"></a>
+
+## awe — develop 0.0.0-develop.87 (2026-09-02)
+
+_commit `b011e38` · changes since 0.0.0-develop.81_
+<!-- build:0.0.0-develop.87 revision:b011e38da401fe7be0b797a474a26db7fa9dc8b6 ts:1788325443 -->
+
+**Chart:** [openg2p-awe 0.0.0-develop.87](https://openg2p.github.io/openg2p-helm/openg2p-awe-0.0.0-develop.87.tgz)
+
+### Summary
+
+- Performance optimization: increased UVICORN workers for better concurrency, adjusted database connection pool settings, and enhanced query performance with caching.
+- Database schema improvements: simplified search_path, restored pg_trgm GIN index on approval_task search_text, and fixed AWE startup issues related to empty search_path.
+
+### Changes
+
+- Increase UVICORN workers to improve concurrency and adjust database connection pool settings for optimized performance ([`072e943`](https://github.com/OpenG2P/awe/commit/072e94325f467231b42b21b3b99e54d62f882f86))
+- Refactor database schema setup: simplify search_path and enhance public schema privileges ([`b70bf5f`](https://github.com/OpenG2P/awe/commit/b70bf5feb853efa4968259a505dac9da4b56fa91))
+- Restore pg_trgm GIN index on approval_task search_text. ([`96fa26f`](https://github.com/OpenG2P/awe/commit/96fa26fa37be77a425c70751c124fe2f0892d0c6))
+- Fix AWE startup when the Postgres role has an empty search_path. ([`b8ca14d`](https://github.com/OpenG2P/awe/commit/b8ca14d80092971c98b48a47c30b26c6f935a2d5))
+- Enhance database connection pooling and optimize query performance with caching ([`155463b`](https://github.com/OpenG2P/awe/commit/155463b2e0b7bdfe4eb0fe5a555efafc835071f2))
 
 <a id="v-0-0-0-develop-81"></a>
 
