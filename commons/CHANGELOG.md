@@ -6,6 +6,7 @@ _Published automatically._
 
 | Version | Date | Type | Notes |
 | --- | --- | --- | --- |
+| [`2.3.3-rc.227`](#v-2-3-3-rc-227) | 2026-09-03 | release candidate |  |
 | [`0.0.0-develop.242`](#v-0-0-0-develop-242) | 2026-09-03 | develop |  |
 | [`2.3.2`](#v-2-3-2) | 2026-09-02 | release |  |
 | [`2.3.2-rc.225`](#v-2-3-2-rc-225) | 2026-09-02 | release candidate |  |
@@ -368,6 +369,19 @@ _commit `44278e8` · first release_
 - Initial commit ([`04cc8c6`](https://github.com/OpenG2P/openg2p-commons-deployment/commit/04cc8c6f16ae3132d62a9b80087c0cea81ce472d))
 
 # Release candidates
+
+<a id="v-2-3-3-rc-227"></a>
+
+## commons 2.3.3-rc.227 — 2026-09-03
+
+_commit `02dac8c` · changes since 2.3.2_
+<!-- build:2.3.3-rc.227 revision:02dac8c7bd1431be1f0e31e1f2b7e64ab6d62517 ts:1788429876 -->
+
+**Charts:** [openg2p-commons-base 2.3.3-rc.227](https://openg2p.github.io/openg2p-helm/openg2p-commons-base-2.3.3-rc.227.tgz) · [openg2p-commons-services 2.3.3-rc.227](https://openg2p.github.io/openg2p-helm/openg2p-commons-services-2.3.3-rc.227.tgz)
+
+### Changes
+
+- Bump version of openg2p-master-data to 1.1.1 in Chart.yaml ([`c255a9c`](https://github.com/OpenG2P/commons/commit/c255a9c55eb4fe2ee584de44a7bd4ab98179046b))
 
 <a id="v-2-3-2-rc-225"></a>
 
