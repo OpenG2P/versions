@@ -6,6 +6,7 @@ _Published automatically._
 
 | Version | Date | Type | Notes |
 | --- | --- | --- | --- |
+| [`1.2.1-rc.443`](#v-1-2-1-rc-443) | 2026-09-03 | release candidate |  |
 | [`0.0.0-develop.429`](#v-0-0-0-develop-429) | 2026-09-02 | develop |  |
 | [`0.0.0-develop.428`](#v-0-0-0-develop-428) | 2026-09-02 | develop |  |
 | [`1.2.0`](#v-1-2-0) | 2026-09-01 | release |  |
@@ -270,6 +271,24 @@ same commit and *promoted* (retagged), not rebuilt. No code changed between them
 - [G2P-5153](https://openg2p.atlassian.net/browse/G2P-5153) Refactor IAM permission handling and authentication cookie management ([`8a6abe5`](https://github.com/OpenG2P/registry-platform/commit/8a6abe5de479bf2647f89b31fbfa62989114ef3e))
 
 # Release candidates
+
+<a id="v-1-2-1-rc-443"></a>
+
+## registry-platform 1.2.1-rc.443 — 2026-09-03
+
+_commit `862faf3` · changes since 1.2.0_
+<!-- build:1.2.1-rc.443 revision:862faf3f3bb00c921c4d76dba7050d81b7d08f35 ts:1788410925 -->
+
+**Chart:** [openg2p-registry 1.2.1-rc.443](https://openg2p.github.io/openg2p-helm/openg2p-registry-1.2.1-rc.443.tgz)
+
+### Summary
+
+- Export optimization: updated default batch size to 2000 and enhanced export conditions and indexing in the G2P registry.
+
+### Changes
+
+- [G2P-5617](https://openg2p.atlassian.net/browse/G2P-5617) Update default export batch size across configurations to 2000 ([`da81ef5`](https://github.com/OpenG2P/registry-platform/commit/da81ef5269a7abfa917f225d1ddc4fca41ade49c))
+- [G2P-5617](https://openg2p.atlassian.net/browse/G2P-5617) Enhance export conditions and indexing in G2P registry ([`ce36109`](https://github.com/OpenG2P/registry-platform/commit/ce361098e29652c228d660bcf7ca31a84ca71616))
 
 <a id="v-1-2-0-rc-440"></a>
 
