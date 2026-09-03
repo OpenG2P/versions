@@ -6,6 +6,7 @@ _Published automatically._
 
 | Version | Date | Type | Notes |
 | --- | --- | --- | --- |
+| [`1.1.1-rc.91`](#v-1-1-1-rc-91) | 2026-09-03 | release candidate |  |
 | [`1.1.1-rc.89`](#v-1-1-1-rc-89) | 2026-09-03 | release candidate |  |
 | [`1.1.0`](#v-1-1-0) | 2026-09-01 | release |  |
 | [`1.1.0-rc.73`](#v-1-1-0-rc-73) | 2026-09-01 | release candidate |  |
@@ -85,6 +86,19 @@ same commit and *promoted* (retagged), not rebuilt. No code changed between them
 - [G2P-5538](https://openg2p.atlassian.net/browse/G2P-5538) Add initial seed data for G2P attributes and values ([`a10123b`](https://github.com/OpenG2P/master-data-service/commit/a10123ba53ecf75d4cc2e8663b19d217851fd135))
 
 # Release candidates
+
+<a id="v-1-1-1-rc-91"></a>
+
+## master-data-service 1.1.1-rc.91 — 2026-09-03
+
+_commit `f5109d9` · changes since 1.1.1-rc.89_
+<!-- build:1.1.1-rc.91 revision:f5109d9b5835dfc283e0a9ff7147f03d5df47798 ts:1788429562 -->
+
+**Chart:** [openg2p-master-data 1.1.1-rc.91](https://openg2p.github.io/openg2p-helm/openg2p-master-data-1.1.1-rc.91.tgz)
+
+### Changes
+
+- [G2P-5618](https://openg2p.atlassian.net/browse/G2P-5618) Add geo endpoints to MASTER_DATA_CSRF_EXCLUDED_PATHS for server to server API calls between mds and registry for validations ([`7406278`](https://github.com/OpenG2P/master-data-service/commit/7406278a8a6c5efcdb2d0c59fca4bc09945a906a))
 
 <a id="v-1-1-1-rc-89"></a>
 
