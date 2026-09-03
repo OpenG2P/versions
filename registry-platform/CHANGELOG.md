@@ -6,6 +6,7 @@ _Published automatically._
 
 | Version | Date | Type | Notes |
 | --- | --- | --- | --- |
+| [`1.2.1-rc.445`](#v-1-2-1-rc-445) | 2026-09-03 | release candidate |  |
 | [`0.0.0-develop.430`](#v-0-0-0-develop-430) | 2026-09-03 | develop |  |
 | [`1.2.1-rc.443`](#v-1-2-1-rc-443) | 2026-09-03 | release candidate |  |
 | [`0.0.0-develop.429`](#v-0-0-0-develop-429) | 2026-09-02 | develop |  |
@@ -272,6 +273,19 @@ same commit and *promoted* (retagged), not rebuilt. No code changed between them
 - [G2P-5153](https://openg2p.atlassian.net/browse/G2P-5153) Refactor IAM permission handling and authentication cookie management ([`8a6abe5`](https://github.com/OpenG2P/registry-platform/commit/8a6abe5de479bf2647f89b31fbfa62989114ef3e))
 
 # Release candidates
+
+<a id="v-1-2-1-rc-445"></a>
+
+## registry-platform 1.2.1-rc.445 — 2026-09-03
+
+_commit `4464cd8` · changes since 1.2.1-rc.443_
+<!-- build:1.2.1-rc.445 revision:4464cd871fb299960b32e234240bfce7a0e11a7d ts:1788434392 -->
+
+**Chart:** [openg2p-registry 1.2.1-rc.445](https://openg2p.github.io/openg2p-helm/openg2p-registry-1.2.1-rc.445.tgz)
+
+### Changes
+
+- [G2P-5618](https://openg2p.atlassian.net/browse/G2P-5618) Update environment configurations to use Master Data API ([`2b73ced`](https://github.com/OpenG2P/registry-platform/commit/2b73ced84bcdbd7d61e990248d51b8fc7eeb0360))
 
 <a id="v-1-2-1-rc-443"></a>
 
