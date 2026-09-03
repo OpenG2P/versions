@@ -6,6 +6,7 @@ _Published automatically._
 
 | Version | Date | Type | Notes |
 | --- | --- | --- | --- |
+| [`1.2.0-rc.304`](#v-1-2-0-rc-304) | 2026-09-03 | release candidate |  |
 | [`1.2.0-rc.303`](#v-1-2-0-rc-303) | 2026-09-03 | release candidate |  |
 | [`1.2.0-rc.302`](#v-1-2-0-rc-302) | 2026-09-03 | release candidate |  |
 | [`1.2.0-rc.301`](#v-1-2-0-rc-301) | 2026-09-03 | release candidate |  |
@@ -15,6 +16,19 @@ _Published automatically._
 | [`1.2.0-rc.297`](#v-1-2-0-rc-297) | 2026-09-01 | release candidate |  |
 
 # Release candidates
+
+<a id="v-1-2-0-rc-304"></a>
+
+## mowsa-nsr 1.2.0-rc.304 — 2026-09-03
+
+_commit `3166cb9` · changes since 1.2.0-rc.303_
+<!-- build:1.2.0-rc.304 revision:3166cb9a308d0547e3b71d45eb9eb38b87b70dd1 ts:1788428032 -->
+
+**Chart:** [mowsa-nsr 1.2.0-rc.304](https://openg2p.github.io/openg2p-helm/mowsa-nsr-1.2.0-rc.304.tgz)
+
+### Changes
+
+- Fix import statements in run_celery.py to use singular 'openg2p_registry_celery_worker' instead of plural 'openg2p_registry_celery_workers' for consistency in module naming. ([`3166cb9`](https://github.com/OpenG2P/mowsa-nsr/commit/3166cb9a308d0547e3b71d45eb9eb38b87b70dd1))
 
 <a id="v-1-2-0-rc-303"></a>
 
