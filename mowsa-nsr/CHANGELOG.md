@@ -6,6 +6,7 @@ _Published automatically._
 
 | Version | Date | Type | Notes |
 | --- | --- | --- | --- |
+| [`1.2.0-rc.302`](#v-1-2-0-rc-302) | 2026-09-03 | release candidate |  |
 | [`1.2.0-rc.301`](#v-1-2-0-rc-301) | 2026-09-03 | release candidate |  |
 | [`1.2.0-rc.300`](#v-1-2-0-rc-300) | 2026-09-02 | release candidate |  |
 | [`1.2.0-rc.299`](#v-1-2-0-rc-299) | 2026-09-02 | release candidate |  |
@@ -13,6 +14,19 @@ _Published automatically._
 | [`1.2.0-rc.297`](#v-1-2-0-rc-297) | 2026-09-01 | release candidate |  |
 
 # Release candidates
+
+<a id="v-1-2-0-rc-302"></a>
+
+## mowsa-nsr 1.2.0-rc.302 — 2026-09-03
+
+_commit `9113eab` · changes since 1.2.0-rc.301_
+<!-- build:1.2.0-rc.302 revision:9113eaba093ba5c07e0c5707dbd5c761426feae0 ts:1788418526 -->
+
+**Chart:** [mowsa-nsr 1.2.0-rc.302](https://openg2p.github.io/openg2p-helm/mowsa-nsr-1.2.0-rc.302.tgz)
+
+### Changes
+
+- Refactor Helm chart values.yaml to standardize image pull secrets naming convention ([`9113eab`](https://github.com/OpenG2P/mowsa-nsr/commit/9113eaba093ba5c07e0c5707dbd5c761426feae0))
 
 <a id="v-1-2-0-rc-301"></a>
 
