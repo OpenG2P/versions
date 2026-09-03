@@ -6,6 +6,7 @@ _Published automatically._
 
 | Version | Date | Type | Notes |
 | --- | --- | --- | --- |
+| [`0.0.0-develop.242`](#v-0-0-0-develop-242) | 2026-09-03 | develop |  |
 | [`2.3.2`](#v-2-3-2) | 2026-09-02 | release |  |
 | [`2.3.2-rc.225`](#v-2-3-2-rc-225) | 2026-09-02 | release candidate |  |
 | [`0.0.0-develop.240`](#v-0-0-0-develop-240) | 2026-09-02 | develop |  |
@@ -455,6 +456,25 @@ _commit `ffabcdc` · changes since 2.2.1_
 - Bumped up Master Data Service version. ([`0e52ebf`](https://github.com/OpenG2P/commons/commit/0e52ebf19de3fd2ac8af3c4dd128e0f2857f7162))
 
 # Develop builds
+
+<a id="v-0-0-0-develop-242"></a>
+
+## commons — develop 0.0.0-develop.242 (2026-09-03)
+
+_commit `54c8b24` · changes since 0.0.0-develop.240_
+<!-- build:0.0.0-develop.242 revision:54c8b24e097281aa7a185efbdc0409d1aedb06f6 ts:1788395640 -->
+
+**Charts:** [openg2p-commons-base 0.0.0-develop.242](https://openg2p.github.io/openg2p-helm/openg2p-commons-base-0.0.0-develop.242.tgz) · [openg2p-commons-services 0.0.0-develop.242](https://openg2p.github.io/openg2p-helm/openg2p-commons-services-0.0.0-develop.242.tgz)
+
+### Summary
+
+- Database enhancements: integrated pg_trgm extension for AWE, enabling efficient index migrations.
+- Dependency management: updated to AWE version 0.0.0-develop.87, ensuring compatibility and feature alignment.
+
+### Changes
+
+- [G2P-4929](https://openg2p.atlassian.net/browse/G2P-4929) Take AWE 0.0.0-develop.87 and let it own its own pg_trgm extension ([`54c8b24`](https://github.com/OpenG2P/commons/commit/54c8b24e097281aa7a185efbdc0409d1aedb06f6))
+- [G2P-4929](https://openg2p.atlassian.net/browse/G2P-4929) Create pg_trgm for the AWE database so its index migration can run ([`13f7620`](https://github.com/OpenG2P/commons/commit/13f7620866cf59bc7fccb3b919fe5ce8bf1b7f98))
 
 <a id="v-0-0-0-develop-240"></a>
 
