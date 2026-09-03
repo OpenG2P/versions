@@ -6,6 +6,7 @@ _Published automatically._
 
 | Version | Date | Type | Notes |
 | --- | --- | --- | --- |
+| [`0.0.0-develop.206`](#v-0-0-0-develop-206) | 2026-09-03 | develop |  |
 | [`1.2.1-rc.163`](#v-1-2-1-rc-163) | 2026-09-03 | release candidate |  |
 | [`0.0.0-develop.205`](#v-0-0-0-develop-205) | 2026-09-02 | develop |  |
 | [`1.2.1-rc.161`](#v-1-2-1-rc-161) | 2026-09-02 | release candidate |  |
@@ -256,6 +257,19 @@ _commit `448e66e` · changes since 1.2.0_
 - [G2P-5335](https://openg2p.atlassian.net/browse/G2P-5335) Switch CI to GitLab (.gitlab-ci.yml); drop GitHub Actions build/publish ([`1062700`](https://github.com/OpenG2P/farmer-registry/commit/1062700737b8129d66fcc363c7d3809863d0cefb))
 
 # Develop builds
+
+<a id="v-0-0-0-develop-206"></a>
+
+## farmer-registry — develop 0.0.0-develop.206 (2026-09-03)
+
+_commit `fa11515` · changes since 0.0.0-develop.205_
+<!-- build:0.0.0-develop.206 revision:fa1151506041d30b5a4ca0242e99c19da19b07f7 ts:1788434449 -->
+
+**Chart:** [openg2p-farmer-registry 0.0.0-develop.206](https://openg2p.github.io/openg2p-helm/openg2p-farmer-registry-0.0.0-develop.206.tgz)
+
+### Changes
+
+- Bumped up RP version to 0.0.0-develop.430 ([`fa11515`](https://github.com/OpenG2P/farmer-registry/commit/fa1151506041d30b5a4ca0242e99c19da19b07f7))
 
 <a id="v-0-0-0-develop-205"></a>
 
