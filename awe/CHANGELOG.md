@@ -6,6 +6,7 @@ _Published automatically._
 
 | Version | Date | Type | Notes |
 | --- | --- | --- | --- |
+| [`0.0.0-develop.90`](#v-0-0-0-develop-90) | 2026-09-03 | develop |  |
 | [`1.2.2`](#v-1-2-2) | 2026-09-02 | release |  |
 | [`1.2.2-rc.84`](#v-1-2-2-rc-84) | 2026-09-02 | release candidate |  |
 | [`0.0.0-develop.87`](#v-0-0-0-develop-87) | 2026-09-02 | develop |  |
@@ -232,6 +233,27 @@ _commit `27c7f19` · changes since 1.1.0_
 - Update version to 1.1.0 in Chart.yaml, pyproject.toml, package.json, and package-lock.json ([`e5a25b4`](https://github.com/OpenG2P/awe/commit/e5a25b441a5d04671b55f035b126c0a0c7ab5632))
 
 # Develop builds
+
+<a id="v-0-0-0-develop-90"></a>
+
+## awe — develop 0.0.0-develop.90 (2026-09-03)
+
+_commit `656ae20` · changes since 0.0.0-develop.87_
+<!-- build:0.0.0-develop.90 revision:656ae20874bbbb725aea78d009c38b8cdeb0aad3 ts:1788431597 -->
+
+**Chart:** [openg2p-awe 0.0.0-develop.90](https://openg2p.github.io/openg2p-helm/openg2p-awe-0.0.0-develop.90.tgz)
+
+### Summary
+
+- **Major:** Switched application server from Uvicorn to Gunicorn, necessitating updates to related environment variables.
+- Auto-generated OpenAPI specification to enhance API documentation.
+- Updated dependency manifests in `pyproject.toml` to reflect changes in project dependencies.
+- Adjusted Docker configuration to align with the new application server setup.
+
+### Changes
+
+- [G2P-5646](https://openg2p.atlassian.net/browse/G2P-5646) Switch from Uvicorn to Gunicorn as the application server and update related environment variables ([`4923e14`](https://github.com/OpenG2P/awe/commit/4923e1462c4900051ae6da16fcb4737791af9ad8))
+- chore: auto-generate OpenAPI spec [skip ci] ([`19e556c`](https://github.com/OpenG2P/awe/commit/19e556c70075c1d4338ac637bc24936f14f1826e))
 
 <a id="v-0-0-0-develop-87"></a>
 
