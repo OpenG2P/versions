@@ -6,6 +6,7 @@ _Published automatically._
 
 | Version | Date | Type | Notes |
 | --- | --- | --- | --- |
+| [`1.2.0-rc.303`](#v-1-2-0-rc-303) | 2026-09-03 | release candidate |  |
 | [`1.2.0-rc.302`](#v-1-2-0-rc-302) | 2026-09-03 | release candidate |  |
 | [`1.2.0-rc.301`](#v-1-2-0-rc-301) | 2026-09-03 | release candidate |  |
 | [`1.2.0-rc.300`](#v-1-2-0-rc-300) | 2026-09-02 | release candidate |  |
@@ -14,6 +15,19 @@ _Published automatically._
 | [`1.2.0-rc.297`](#v-1-2-0-rc-297) | 2026-09-01 | release candidate |  |
 
 # Release candidates
+
+<a id="v-1-2-0-rc-303"></a>
+
+## mowsa-nsr 1.2.0-rc.303 — 2026-09-03
+
+_commit `8cd4c2d` · changes since 1.2.0-rc.302_
+<!-- build:1.2.0-rc.303 revision:8cd4c2d7f851cd50abd29ffda88ab23c8f7d19df ts:1788422698 -->
+
+**Chart:** [mowsa-nsr 1.2.0-rc.303](https://openg2p.github.io/openg2p-helm/mowsa-nsr-1.2.0-rc.303.tgz)
+
+### Changes
+
+- Standardize image pull secrets format in values.yaml for consistency across all services ([`8cd4c2d`](https://github.com/OpenG2P/mowsa-nsr/commit/8cd4c2d7f851cd50abd29ffda88ab23c8f7d19df))
 
 <a id="v-1-2-0-rc-302"></a>
 
