@@ -6,12 +6,26 @@ _Published automatically._
 
 | Version | Date | Type | Notes |
 | --- | --- | --- | --- |
+| [`1.2.0-rc.301`](#v-1-2-0-rc-301) | 2026-09-03 | release candidate |  |
 | [`1.2.0-rc.300`](#v-1-2-0-rc-300) | 2026-09-02 | release candidate |  |
 | [`1.2.0-rc.299`](#v-1-2-0-rc-299) | 2026-09-02 | release candidate |  |
 | [`1.2.0-rc.298`](#v-1-2-0-rc-298) | 2026-09-02 | release candidate |  |
 | [`1.2.0-rc.297`](#v-1-2-0-rc-297) | 2026-09-01 | release candidate |  |
 
 # Release candidates
+
+<a id="v-1-2-0-rc-301"></a>
+
+## mowsa-nsr 1.2.0-rc.301 — 2026-09-03
+
+_commit `ce11c7c` · changes since 1.2.0-rc.300_
+<!-- build:1.2.0-rc.301 revision:ce11c7c202e5aa1ac6aa2472130bee89c1df9021 ts:1788416986 -->
+
+**Chart:** [mowsa-nsr 1.2.0-rc.301](https://openg2p.github.io/openg2p-helm/mowsa-nsr-1.2.0-rc.301.tgz)
+
+### Changes
+
+- Add image pull secrets for private Docker Hub images in Helm chart values.yaml ([`ce11c7c`](https://github.com/OpenG2P/mowsa-nsr/commit/ce11c7c202e5aa1ac6aa2472130bee89c1df9021))
 
 <a id="v-1-2-0-rc-300"></a>
 
