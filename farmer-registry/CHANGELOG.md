@@ -6,6 +6,7 @@ _Published automatically._
 
 | Version | Date | Type | Notes |
 | --- | --- | --- | --- |
+| [`1.2.1-rc.163`](#v-1-2-1-rc-163) | 2026-09-03 | release candidate |  |
 | [`0.0.0-develop.205`](#v-0-0-0-develop-205) | 2026-09-02 | develop |  |
 | [`1.2.1-rc.161`](#v-1-2-1-rc-161) | 2026-09-02 | release candidate |  |
 | [`0.0.0-develop.203`](#v-0-0-0-develop-203) | 2026-09-02 | develop |  |
@@ -186,6 +187,19 @@ _commit `7055a71` · first release_
 - Initial commit ([`6e3cf83`](https://github.com/OpenG2P/farmer-registry/commit/6e3cf838809c5522a8b0cda15b87f726683ec175))
 
 # Release candidates
+
+<a id="v-1-2-1-rc-163"></a>
+
+## farmer-registry 1.2.1-rc.163 — 2026-09-03
+
+_commit `0c3146f` · changes since 1.2.1-rc.161_
+<!-- build:1.2.1-rc.163 revision:0c3146fb81ec5e162d1f9bf2d81175216eda3660 ts:1788413235 -->
+
+**Chart:** [openg2p-farmer-registry 1.2.1-rc.163](https://openg2p.github.io/openg2p-helm/openg2p-farmer-registry-1.2.1-rc.163.tgz)
+
+### Changes
+
+- [G2P-5607](https://openg2p.atlassian.net/browse/G2P-5607): include is_head and relationship_to_head in members table configuration ([`407bb1c`](https://github.com/OpenG2P/farmer-registry/commit/407bb1c76e788650fe1b72e1628ae6f1f77738b3))
 
 <a id="v-1-2-1-rc-161"></a>
 
