@@ -6,6 +6,7 @@ _Published automatically._
 
 | Version | Date | Type | Notes |
 | --- | --- | --- | --- |
+| [`0.0.0-develop.430`](#v-0-0-0-develop-430) | 2026-09-03 | develop |  |
 | [`1.2.1-rc.443`](#v-1-2-1-rc-443) | 2026-09-03 | release candidate |  |
 | [`0.0.0-develop.429`](#v-0-0-0-develop-429) | 2026-09-02 | develop |  |
 | [`0.0.0-develop.428`](#v-0-0-0-develop-428) | 2026-09-02 | develop |  |
@@ -571,6 +572,19 @@ _commit `9b41f96` · changes since v1.0.0_
 - [G2P-5153](https://openg2p.atlassian.net/browse/G2P-5153) Refactor IAM permission handling and authentication cookie management ([`8a6abe5`](https://github.com/OpenG2P/registry-platform/commit/8a6abe5de479bf2647f89b31fbfa62989114ef3e))
 
 # Develop builds
+
+<a id="v-0-0-0-develop-430"></a>
+
+## registry-platform — develop 0.0.0-develop.430 (2026-09-03)
+
+_commit `42fabd9` · changes since 0.0.0-develop.429_
+<!-- build:0.0.0-develop.430 revision:42fabd9fd8cf36a640d85ab03b85ff5885a4c9d3 ts:1788432261 -->
+
+**Chart:** [openg2p-registry 0.0.0-develop.430](https://openg2p.github.io/openg2p-helm/openg2p-registry-0.0.0-develop.430.tgz)
+
+### Changes
+
+- [G2P-4929](https://openg2p.atlassian.net/browse/G2P-4929) Expose baseDomain in the Rancher form and stop three question defaults from overriding it: add global.baseDomain as the first General question, and drop the hardcoded agentPortal/esignet/certify defaults so values.yaml stays the single source (CI backfills them). NSR now derives registryHostname from baseDomain like FR ([`42fabd9`](https://github.com/OpenG2P/registry-platform/commit/42fabd9fd8cf36a640d85ab03b85ff5885a4c9d3))
 
 <a id="v-0-0-0-develop-429"></a>
 
