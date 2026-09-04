@@ -6,6 +6,7 @@ _Published automatically._
 
 | Version | Date | Type | Notes |
 | --- | --- | --- | --- |
+| [`1.4.2-rc.115`](#v-1-4-2-rc-115) | 2026-09-04 | release candidate |  |
 | [`1.4.2-rc.113`](#v-1-4-2-rc-113) | 2026-09-04 | release candidate |  |
 | [`1.4.1`](#v-1-4-1) | 2026-09-02 | release |  |
 | [`1.4.1-rc.111`](#v-1-4-1-rc-111) | 2026-09-02 | release candidate |  |
@@ -149,6 +150,19 @@ Compared with 1.3.0, this release turns IAM from an auth backend into an operabl
 - [G2P-5313](https://openg2p.atlassian.net/browse/G2P-5313) Improve unit test coverage for core IAM functionality ([`c762c7b`](https://github.com/OpenG2P/iam/commit/c762c7b741a5c9d19bbd30b6875daacbd5d88717))
 
 # Release candidates
+
+<a id="v-1-4-2-rc-115"></a>
+
+## iam 1.4.2-rc.115 — 2026-09-04
+
+_commit `410978d` · changes since 1.4.2-rc.113_
+<!-- build:1.4.2-rc.115 revision:410978d99a81adcc18aa960fe4b92846223c021a ts:1788516183 -->
+
+**Chart:** [openg2p-iam-service 1.4.2-rc.115](https://openg2p.github.io/openg2p-helm/openg2p-iam-service-1.4.2-rc.115.tgz)
+
+### Changes
+
+- Bump FASTAPI_COMMON_REF to 1.2.1 and update version numbers to 1.4.2 across multiple files ([`a60d876`](https://github.com/OpenG2P/iam/commit/a60d8761f44e0ffa56011676cecd901a15481250))
 
 <a id="v-1-4-2-rc-113"></a>
 
