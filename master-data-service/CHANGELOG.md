@@ -6,6 +6,7 @@ _Published automatically._
 
 | Version | Date | Type | Notes |
 | --- | --- | --- | --- |
+| [`1.1.2-rc.96`](#v-1-1-2-rc-96) | 2026-09-04 | release candidate |  |
 | [`1.1.2-rc.93`](#v-1-1-2-rc-93) | 2026-09-04 | release candidate |  |
 | [`1.1.1`](#v-1-1-1) | 2026-09-03 | release |  |
 | [`1.1.1-rc.91`](#v-1-1-1-rc-91) | 2026-09-03 | release candidate |  |
@@ -134,6 +135,26 @@ same commit and *promoted* (retagged), not rebuilt. No code changed between them
 - [G2P-5538](https://openg2p.atlassian.net/browse/G2P-5538) Add initial seed data for G2P attributes and values ([`a10123b`](https://github.com/OpenG2P/master-data-service/commit/a10123ba53ecf75d4cc2e8663b19d217851fd135))
 
 # Release candidates
+
+<a id="v-1-1-2-rc-96"></a>
+
+## master-data-service 1.1.2-rc.96 — 2026-09-04
+
+_commit `a98d63d` · changes since 1.1.2-rc.93_
+<!-- build:1.1.2-rc.96 revision:a98d63d34edaaace473d24bfe9670fb5d4e1abf3 ts:1788517258 -->
+
+**Chart:** [openg2p-master-data 1.1.2-rc.96](https://openg2p.github.io/openg2p-helm/openg2p-master-data-1.1.2-rc.96.tgz)
+
+### Summary
+
+- Dependency updates: upgraded FASTAPI_COMMON_REF to 1.2.1 and IAM_CORE_REF to 1.4.2, and incremented master-data API version to 1.1.1.
+- CI improvements: modifications made to enhance the continuous integration process.
+- Docker adjustments: changes applied to the Docker configuration for better compatibility.
+
+### Changes
+
+- Update dependencies FASTAPI_COMMON_REF to 1.2.1 and IAM_CORE_REF to 1.4.2 ([`d57bb41`](https://github.com/OpenG2P/master-data-service/commit/d57bb41f401cf0c467a6937a658463864f191b1f))
+- Update FASTAPI_COMMON_REF to 1.2 and increment version to 1.1.1 in master-data API ([`a142c05`](https://github.com/OpenG2P/master-data-service/commit/a142c05b4d40c6216321f5a4cf175dfd7777504d))
 
 <a id="v-1-1-2-rc-93"></a>
 
