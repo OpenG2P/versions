@@ -6,6 +6,7 @@ _Published automatically._
 
 | Version | Date | Type | Notes |
 | --- | --- | --- | --- |
+| [`0.0.0-develop.243`](#v-0-0-0-develop-243) | 2026-09-04 | develop |  |
 | [`2.3.3`](#v-2-3-3) | 2026-09-03 | release |  |
 | [`2.3.3-rc.227`](#v-2-3-3-rc-227) | 2026-09-03 | release candidate |  |
 | [`0.0.0-develop.242`](#v-0-0-0-develop-242) | 2026-09-03 | develop |  |
@@ -492,6 +493,19 @@ _commit `ffabcdc` · changes since 2.2.1_
 - Bumped up Master Data Service version. ([`0e52ebf`](https://github.com/OpenG2P/commons/commit/0e52ebf19de3fd2ac8af3c4dd128e0f2857f7162))
 
 # Develop builds
+
+<a id="v-0-0-0-develop-243"></a>
+
+## commons — develop 0.0.0-develop.243 (2026-09-04)
+
+_commit `91951b3` · changes since 0.0.0-develop.242_
+<!-- build:0.0.0-develop.243 revision:91951b320308acb915d86108aecbebf4f97a62df ts:1788502076 -->
+
+**Charts:** [openg2p-commons-base 0.0.0-develop.243](https://openg2p.github.io/openg2p-helm/openg2p-commons-base-0.0.0-develop.243.tgz) · [openg2p-commons-services 0.0.0-develop.243](https://openg2p.github.io/openg2p-helm/openg2p-commons-services-0.0.0-develop.243.tgz)
+
+### Changes
+
+- PM Keycloak URL bug fix ([`91951b3`](https://github.com/OpenG2P/commons/commit/91951b320308acb915d86108aecbebf4f97a62df))
 
 <a id="v-0-0-0-develop-242"></a>
 
