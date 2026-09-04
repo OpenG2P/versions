@@ -6,6 +6,7 @@ _Published automatically._
 
 | Version | Date | Type | Notes |
 | --- | --- | --- | --- |
+| [`1.2.1-rc.462`](#v-1-2-1-rc-462) | 2026-09-04 | release candidate |  |
 | [`1.2.1-rc.447`](#v-1-2-1-rc-447) | 2026-09-04 | release candidate |  |
 | [`1.2.1-rc.445`](#v-1-2-1-rc-445) | 2026-09-03 | release candidate |  |
 | [`0.0.0-develop.430`](#v-0-0-0-develop-430) | 2026-09-03 | develop |  |
@@ -274,6 +275,37 @@ same commit and *promoted* (retagged), not rebuilt. No code changed between them
 - [G2P-5153](https://openg2p.atlassian.net/browse/G2P-5153) Refactor IAM permission handling and authentication cookie management ([`8a6abe5`](https://github.com/OpenG2P/registry-platform/commit/8a6abe5de479bf2647f89b31fbfa62989114ef3e))
 
 # Release candidates
+
+<a id="v-1-2-1-rc-462"></a>
+
+## registry-platform 1.2.1-rc.462 — 2026-09-04
+
+_commit `6d1fe22` · changes since 1.2.1-rc.447_
+<!-- build:1.2.1-rc.462 revision:6d1fe22509a4927b6ae38b025b85826a9a40166b ts:1788531686 -->
+
+**Chart:** [openg2p-registry 1.2.1-rc.462](https://openg2p.github.io/openg2p-helm/openg2p-registry-1.2.1-rc.462.tgz)
+
+### Summary
+
+- **Major:** Version bump to 1.2.1 across all APIs and Dockerfiles, including updates to package.json and package-lock.json.
+- Workflow improvements: multiple fixes addressing workflow errors to enhance reliability.
+- UI enhancements: refactored Section Builder for better functionality and simplified components by removing RegisterRecordContext.
+- Theming updates: integrated host branding into widget themes for improved customization.
+
+### Changes
+
+- chore(ui-widgets): version for npm dev publish, sync staff-ui @1.1.9-dev.2 ([`6d1fe22`](https://github.com/OpenG2P/registry-platform/commit/6d1fe22509a4927b6ae38b025b85826a9a40166b))
+- Fixing workflow error ([`ccd23c1`](https://github.com/OpenG2P/registry-platform/commit/ccd23c1a0049da7b7eb06d0e9d02d07c50ac1dcb))
+- Fixing workflow error ([`1c29d80`](https://github.com/OpenG2P/registry-platform/commit/1c29d80ccd93b08b61fb2ea7041aecb64ee94509))
+- Fixing workflow error ([`d19eb34`](https://github.com/OpenG2P/registry-platform/commit/d19eb34bd48e0f01925da8f71c9f1a3b1ecca5a9))
+- Fixing workflow error ([`d53bcf1`](https://github.com/OpenG2P/registry-platform/commit/d53bcf13d3a2c4351784eab36374ae7089078572))
+- Fixing workflow error ([`de87a2e`](https://github.com/OpenG2P/registry-platform/commit/de87a2e300c17b72aceaa91753e17e5caa31fea8))
+- fixed the ui-widget publish issues ([`06de1be`](https://github.com/OpenG2P/registry-platform/commit/06de1bece3300f65a03347a0a67bc9366789c7df))
+- Bump version to 1.2.1 in package.json and package-lock.json ([`98ef188`](https://github.com/OpenG2P/registry-platform/commit/98ef188fefe9cfce539acb4efcfaaed9128997d8))
+- Bump version to 1.2.1 across all APIs and Dockerfiles ([`cbc3f71`](https://github.com/OpenG2P/registry-platform/commit/cbc3f7118b4ffc4a697b3a20204be97a64aa19d4))
+- [G2P-565](https://openg2p.atlassian.net/browse/G2P-565) refactor: remove RegisterRecordContext and simplify related components ([`6d53e8b`](https://github.com/OpenG2P/registry-platform/commit/6d53e8b022f266d33a7adeeeef5e1e6ee0668717))
+- [G2P-4724](https://openg2p.atlassian.net/browse/G2P-4724) feat: enhance Section Builder ([`0b90048`](https://github.com/OpenG2P/registry-platform/commit/0b90048494e7b9f243fbeeb9553a9c286b2ef75f))
+- [G2P-5650](https://openg2p.atlassian.net/browse/G2P-5650) feat: map host branding into widget theme ([`755116e`](https://github.com/OpenG2P/registry-platform/commit/755116eb5414ee92ff06fc18075623f25fd0784b))
 
 <a id="v-1-2-1-rc-447"></a>
 
