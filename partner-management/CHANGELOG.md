@@ -6,6 +6,7 @@ _Published automatically._
 
 | Version | Date | Type | Notes |
 | --- | --- | --- | --- |
+| [`1.0.3-rc.30`](#v-1-0-3-rc-30) | 2026-09-04 | release candidate |  |
 | [`1.0.2`](#v-1-0-2) | 2026-09-01 | release |  |
 | [`1.0.2-rc.28`](#v-1-0-2-rc-28) | 2026-09-01 | release candidate |  |
 | [`1.0.1`](#v-1-0-1) | 2026-09-01 | release |  |
@@ -124,6 +125,28 @@ same commit and *promoted* (retagged), not rebuilt. No code changed between them
 -  [G2P-5261](https://openg2p.atlassian.net/browse/G2P-5261)  Auditing added. ([`f9ed65b`](https://github.com/OpenG2P/partner-management/commit/f9ed65bcc6b84340a473a8704ac332c8510a98a7))
 
 # Release candidates
+
+<a id="v-1-0-3-rc-30"></a>
+
+## partner-management 1.0.3-rc.30 — 2026-09-04
+
+_commit `9cd7d4e` · changes since 0.0.0-develop.24_
+<!-- build:1.0.3-rc.30 revision:9cd7d4e016bc12d03258564a559abd06c32c0e04 ts:1788507603 -->
+
+**Chart:** [partner-management 1.0.3-rc.30](https://openg2p.github.io/openg2p-helm/partner-management-1.0.3-rc.30.tgz)
+
+### Summary
+
+- Dependency updates: upgraded FastAPI to version 1.2.0 and Keycloak-init to version 1.2.0, ensuring compatibility and access to new features.
+- Database enhancements: improved database connection settings and refactored session management for better performance and reliability.
+- Image updates: updated image tags to version 1.0.2, aligning with the latest application standards.
+
+### Changes
+
+- [G2P-5619](https://openg2p.atlassian.net/browse/G2P-5619) Enhance database connection settings and refactor session management ([`7d58855`](https://github.com/OpenG2P/partner-management/commit/7d58855be1359f07a24ebff488d95144662622c7))
+- Update image tags to version 1.0.2 ([`7d90e45`](https://github.com/OpenG2P/partner-management/commit/7d90e45ade6054f7c4a48d5bb96c0198fedfd957))
+- Update fastapi common version to 1.2.0 ([`a90fbed`](https://github.com/OpenG2P/partner-management/commit/a90fbed5a350bd26c75967896f4d36c2078b475e))
+- Update keycloak-init version to 1.2.0 ([`f7cb219`](https://github.com/OpenG2P/partner-management/commit/f7cb2194c4aed70f74e2ff23f7d9e53973fac2e9))
 
 <a id="v-1-0-2-rc-28"></a>
 
