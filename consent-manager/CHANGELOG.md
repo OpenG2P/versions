@@ -6,6 +6,7 @@ _Published automatically._
 
 | Version | Date | Type | Notes |
 | --- | --- | --- | --- |
+| [`1.0.3`](#v-1-0-3) | 2026-09-04 | release |  |
 | [`1.0.3-rc.63`](#v-1-0-3-rc-63) | 2026-09-04 | release candidate |  |
 | [`1.0.2`](#v-1-0-2) | 2026-09-01 | release |  |
 | [`1.0.2-rc.61`](#v-1-0-2-rc-61) | 2026-09-01 | release candidate |  |
@@ -18,6 +19,37 @@ _Published automatically._
 | [`0.0.0-develop.57`](#v-0-0-0-develop-57) | 2026-08-28 | develop |  |
 
 # Releases
+
+<a id="v-1-0-3"></a>
+
+## consent-manager 1.0.3 — 2026-09-04
+
+<!-- build:1.0.3 revision:b83b37cdcb3bd2d42d1e1cbdfb481a72ed15e3e0 ts:1788520876 -->
+
+_commit `b83b37c` · changes since release 1.0.2_
+
+**Same artifact as [`1.0.3-rc.63`](#v-1-0-3-rc-63)** — built from the
+same commit and *promoted* (retagged), not rebuilt. No code changed between them.
+
+**Chart:** [openg2p-consent-manager 1.0.3](https://openg2p.github.io/openg2p-helm/openg2p-consent-manager-1.0.3.tgz)
+
+### Release notes
+
+## What's Changed
+* Bump version to 1.0.3 and update image tags to 1.0.3 by @vin0dkhichar in https://github.com/OpenG2P/consent-manager/pull/7
+
+## New Contributors
+* @vin0dkhichar made their first contribution in https://github.com/OpenG2P/consent-manager/pull/7
+
+**Full Changelog**: https://github.com/OpenG2P/consent-manager/compare/1.0.2...1.0.3
+
+### Summary
+
+- Version update: bumped to 1.0.3 and updated image tags accordingly.
+
+### Changes
+
+- Bump version to 1.0.3 and update image tags to 1.0.3 ([`2d9357e`](https://github.com/OpenG2P/consent-manager/commit/2d9357e0e79a22eb0077c938bee491d1bf52a0a3))
 
 <a id="v-1-0-2"></a>
 
