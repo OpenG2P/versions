@@ -6,6 +6,7 @@ _Published automatically._
 
 | Version | Date | Type | Notes |
 | --- | --- | --- | --- |
+| [`1.4.2`](#v-1-4-2) | 2026-09-04 | release |  |
 | [`1.4.2-rc.115`](#v-1-4-2-rc-115) | 2026-09-04 | release candidate |  |
 | [`1.4.2-rc.113`](#v-1-4-2-rc-113) | 2026-09-04 | release candidate |  |
 | [`1.4.1`](#v-1-4-1) | 2026-09-02 | release |  |
@@ -17,6 +18,38 @@ _Published automatically._
 | [`0.0.0-develop.97`](#v-0-0-0-develop-97) | 2026-08-28 | develop |  |
 
 # Releases
+
+<a id="v-1-4-2"></a>
+
+## iam 1.4.2 — 2026-09-04
+
+<!-- build:1.4.2 revision:410978d99a81adcc18aa960fe4b92846223c021a ts:1788516183 -->
+
+_commit `410978d` · changes since release 1.4.1_
+
+**Same artifact as [`1.4.2-rc.115`](#v-1-4-2-rc-115)** — built from the
+same commit and *promoted* (retagged), not rebuilt. No code changed between them.
+
+**Chart:** [openg2p-iam-service 1.4.2](https://openg2p.github.io/openg2p-helm/openg2p-iam-service-1.4.2.tgz)
+
+### Release notes
+
+## What's Changed
+* [G2P-5620](https://openg2p.atlassian.net/browse/G2P-5620) Refactor database session management to use get_async_session_maker across services by @vin0dkhichar in https://github.com/OpenG2P/iam/pull/6
+* Bump FASTAPI_COMMON_REF to 1.2.1 and update version numbers to 1.4.2 … by @vin0dkhichar in https://github.com/OpenG2P/iam/pull/7
+
+
+**Full Changelog**: https://github.com/OpenG2P/iam/compare/1.4.1...1.4.2
+
+### Summary
+
+- Dependency updates: Bumped FASTAPI_COMMON_REF to 1.2.1 and updated version numbers to 1.4.2 across multiple files.
+- Code refactor: Improved database session management by implementing get_async_session_maker across services.
+
+### Changes
+
+- Bump FASTAPI_COMMON_REF to 1.2.1 and update version numbers to 1.4.2 across multiple files ([`a60d876`](https://github.com/OpenG2P/iam/commit/a60d8761f44e0ffa56011676cecd901a15481250))
+- [G2P-5620](https://openg2p.atlassian.net/browse/G2P-5620) Refactor database session management to use get_async_session_maker across services ([`13c0691`](https://github.com/OpenG2P/iam/commit/13c06911830c98ba542d37e9ef52df89cd8dd90d))
 
 <a id="v-1-4-1"></a>
 
