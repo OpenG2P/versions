@@ -6,6 +6,7 @@ _Published automatically._
 
 | Version | Date | Type | Notes |
 | --- | --- | --- | --- |
+| [`1.2.1-rc.447`](#v-1-2-1-rc-447) | 2026-09-04 | release candidate |  |
 | [`1.2.1-rc.445`](#v-1-2-1-rc-445) | 2026-09-03 | release candidate |  |
 | [`0.0.0-develop.430`](#v-0-0-0-develop-430) | 2026-09-03 | develop |  |
 | [`1.2.1-rc.443`](#v-1-2-1-rc-443) | 2026-09-03 | release candidate |  |
@@ -273,6 +274,19 @@ same commit and *promoted* (retagged), not rebuilt. No code changed between them
 - [G2P-5153](https://openg2p.atlassian.net/browse/G2P-5153) Refactor IAM permission handling and authentication cookie management ([`8a6abe5`](https://github.com/OpenG2P/registry-platform/commit/8a6abe5de479bf2647f89b31fbfa62989114ef3e))
 
 # Release candidates
+
+<a id="v-1-2-1-rc-447"></a>
+
+## registry-platform 1.2.1-rc.447 — 2026-09-04
+
+_commit `83f6153` · changes since 1.2.1-rc.445_
+<!-- build:1.2.1-rc.447 revision:83f61532292417b2e5bf33fe78cd08cad04fbeff ts:1788501938 -->
+
+**Chart:** [openg2p-registry 1.2.1-rc.447](https://openg2p.github.io/openg2p-helm/openg2p-registry-1.2.1-rc.447.tgz)
+
+### Changes
+
+- [G2P-5657](https://openg2p.atlassian.net/browse/G2P-5657) Refactor database session management to use get_async_session_maker across services ([`2fc7fdc`](https://github.com/OpenG2P/registry-platform/commit/2fc7fdce4dcee50f33defd1ed2126f5fe54632d8))
 
 <a id="v-1-2-1-rc-445"></a>
 
