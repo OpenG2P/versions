@@ -6,6 +6,7 @@ _Published automatically._
 
 | Version | Date | Type | Notes |
 | --- | --- | --- | --- |
+| [`1.1.2`](#v-1-1-2) | 2026-09-04 | release |  |
 | [`1.1.2-rc.96`](#v-1-1-2-rc-96) | 2026-09-04 | release candidate |  |
 | [`1.1.2-rc.93`](#v-1-1-2-rc-93) | 2026-09-04 | release candidate |  |
 | [`1.1.1`](#v-1-1-1) | 2026-09-03 | release |  |
@@ -24,6 +25,39 @@ _Published automatically._
 | [`0.0.0-develop.66`](#v-0-0-0-develop-66) | 2026-08-28 | develop |  |
 
 # Releases
+
+<a id="v-1-1-2"></a>
+
+## master-data-service 1.1.2 — 2026-09-04
+
+<!-- build:1.1.2 revision:a98d63d34edaaace473d24bfe9670fb5d4e1abf3 ts:1788517258 -->
+
+_commit `a98d63d` · changes since release 1.1.1_
+
+**Same artifact as [`1.1.2-rc.96`](#v-1-1-2-rc-96)** — built from the
+same commit and *promoted* (retagged), not rebuilt. No code changed between them.
+
+**Chart:** [openg2p-master-data 1.1.2](https://openg2p.github.io/openg2p-helm/openg2p-master-data-1.1.2.tgz)
+
+### Release notes
+
+## What's Changed
+* [G2P-5619](https://openg2p.atlassian.net/browse/G2P-5619) Add database connection pooling to master-data API by @tahzeer in https://github.com/OpenG2P/master-data-service/pull/17
+* Update FASTAPI_COMMON_REF to 1.2 and increment version to 1.1.1 in ma… by @tahzeer in https://github.com/OpenG2P/master-data-service/pull/18
+
+
+**Full Changelog**: https://github.com/OpenG2P/master-data-service/compare/1.1.1...1.1.2
+
+### Summary
+
+- Dependency updates: upgraded FASTAPI_COMMON_REF to 1.2.1 and IAM_CORE_REF to 1.4.2, and incremented master-data API version to 1.1.1.
+- Performance enhancement: added database connection pooling configuration to the master-data API.
+
+### Changes
+
+- Update dependencies FASTAPI_COMMON_REF to 1.2.1 and IAM_CORE_REF to 1.4.2 ([`d57bb41`](https://github.com/OpenG2P/master-data-service/commit/d57bb41f401cf0c467a6937a658463864f191b1f))
+- Update FASTAPI_COMMON_REF to 1.2 and increment version to 1.1.1 in master-data API ([`a142c05`](https://github.com/OpenG2P/master-data-service/commit/a142c05b4d40c6216321f5a4cf175dfd7777504d))
+- [G2P-5619](https://openg2p.atlassian.net/browse/G2P-5619) Add database connection pooling configuration to master-data API ([`d05e5f9`](https://github.com/OpenG2P/master-data-service/commit/d05e5f9c8a62f0827061d4e8786e1914df814e18))
 
 <a id="v-1-1-1"></a>
 
