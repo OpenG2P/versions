@@ -6,6 +6,7 @@ _Published automatically._
 
 | Version | Date | Type | Notes |
 | --- | --- | --- | --- |
+| [`1.1.3`](#v-1-1-3) | 2026-09-04 | release |  |
 | [`1.1.3-rc.98`](#v-1-1-3-rc-98) | 2026-09-04 | release candidate |  |
 | [`1.1.2`](#v-1-1-2) | 2026-09-04 | release |  |
 | [`1.1.2-rc.96`](#v-1-1-2-rc-96) | 2026-09-04 | release candidate |  |
@@ -26,6 +27,37 @@ _Published automatically._
 | [`0.0.0-develop.66`](#v-0-0-0-develop-66) | 2026-08-28 | develop |  |
 
 # Releases
+
+<a id="v-1-1-3"></a>
+
+## master-data-service 1.1.3 — 2026-09-04
+
+<!-- build:1.1.3 revision:49dfe231b6d5e78e0513f1a69c2ab2eff32da21a ts:1788520665 -->
+
+_commit `49dfe23` · changes since release 1.1.2_
+
+**Same artifact as [`1.1.3-rc.98`](#v-1-1-3-rc-98)** — built from the
+same commit and *promoted* (retagged), not rebuilt. No code changed between them.
+
+**Chart:** [openg2p-master-data 1.1.3](https://openg2p.github.io/openg2p-helm/openg2p-master-data-1.1.3.tgz)
+
+### Release notes
+
+## What's Changed
+* Bump image tags for masterDataAPI, masterDataUi, and geoSeed to 1.1.3 by @vin0dkhichar in https://github.com/OpenG2P/master-data-service/pull/19
+
+## New Contributors
+* @vin0dkhichar made their first contribution in https://github.com/OpenG2P/master-data-service/pull/19
+
+**Full Changelog**: https://github.com/OpenG2P/master-data-service/compare/1.1.2...1.1.3
+
+### Summary
+
+- Dependency updates: Bumped image tags for masterDataAPI, masterDataUi, and geoSeed to version 1.1.3.
+
+### Changes
+
+- Bump image tags for masterDataAPI, masterDataUi, and geoSeed to 1.1.3 ([`4417e7f`](https://github.com/OpenG2P/master-data-service/commit/4417e7f9fd61f534395477d5b1d9c459dd6a3862))
 
 <a id="v-1-1-2"></a>
 
