@@ -6,6 +6,7 @@ _Published automatically._
 
 | Version | Date | Type | Notes |
 | --- | --- | --- | --- |
+| [`0.0.0-develop.244`](#v-0-0-0-develop-244) | 2026-09-04 | develop |  |
 | [`0.0.0-develop.242`](#v-0-0-0-develop-242) | 2026-08-28 | develop |  |
 | [`1.1.0`](#v-1-1-0) | 2026-08-04 | release |  |
 | [`1.0.1`](#v-1-0-1) | 2026-07-25 | release |  |
@@ -265,6 +266,25 @@ _commit `ddfda05` · first release_
 - Initial commit ([`c2126d7`](https://github.com/OpenG2P/national-social-registry/commit/c2126d7e3adbd68af0bdbf579b67cb53cfd8ae49))
 
 # Develop builds
+
+<a id="v-0-0-0-develop-244"></a>
+
+## national-social-registry — develop 0.0.0-develop.244 (2026-09-04)
+
+_commit `db09ce7` · changes since 0.0.0-develop.242_
+<!-- build:0.0.0-develop.244 revision:db09ce745f86b6b32bbccbd5ccb7e33edbc2cb31 ts:1788492505 -->
+
+**Chart:** [openg2p-nsr 0.0.0-develop.244](https://openg2p.github.io/openg2p-helm/openg2p-nsr-0.0.0-develop.244.tgz)
+
+### Summary
+
+- Configuration updates: Introduced `global.baseDomain` in the Rancher form, ensuring it is the primary General question and removing hardcoded defaults for agentPortal, esignet, and certify to maintain consistency with `values.yaml`.
+- Versioning: Updated RP version to 0.0.0-develop.430, reflecting ongoing development changes.
+
+### Changes
+
+- Bumped up RP version to 0.0.0-develop.430 ([`db09ce7`](https://github.com/OpenG2P/national-social-registry/commit/db09ce745f86b6b32bbccbd5ccb7e33edbc2cb31))
+- [G2P-4929](https://openg2p.atlassian.net/browse/G2P-4929) Expose baseDomain in the Rancher form and stop three question defaults from overriding it: add global.baseDomain as the first General question, and drop the hardcoded agentPortal/esignet/certify defaults so values.yaml stays the single source (CI backfills them). NSR now derives registryHostname from baseDomain like FR ([`1885516`](https://github.com/OpenG2P/national-social-registry/commit/1885516af84fb79d04e7f1245ca597e061d678d3))
 
 <a id="v-0-0-0-develop-242"></a>
 
