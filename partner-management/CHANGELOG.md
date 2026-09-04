@@ -6,6 +6,7 @@ _Published automatically._
 
 | Version | Date | Type | Notes |
 | --- | --- | --- | --- |
+| [`1.0.3-rc.33`](#v-1-0-3-rc-33) | 2026-09-04 | release candidate |  |
 | [`1.0.3-rc.30`](#v-1-0-3-rc-30) | 2026-09-04 | release candidate |  |
 | [`1.0.2`](#v-1-0-2) | 2026-09-01 | release |  |
 | [`1.0.2-rc.28`](#v-1-0-2-rc-28) | 2026-09-01 | release candidate |  |
@@ -125,6 +126,26 @@ same commit and *promoted* (retagged), not rebuilt. No code changed between them
 -  [G2P-5261](https://openg2p.atlassian.net/browse/G2P-5261)  Auditing added. ([`f9ed65b`](https://github.com/OpenG2P/partner-management/commit/f9ed65bcc6b84340a473a8704ac332c8510a98a7))
 
 # Release candidates
+
+<a id="v-1-0-3-rc-33"></a>
+
+## partner-management 1.0.3-rc.33 — 2026-09-04
+
+_commit `b5232da` · changes since 1.0.3-rc.30_
+<!-- build:1.0.3-rc.33 revision:b5232da650841b7db013f24974c2b392e6a74efc ts:1788517115 -->
+
+**Chart:** [partner-management 1.0.3-rc.33](https://openg2p.github.io/openg2p-helm/partner-management-1.0.3-rc.33.tgz)
+
+### Summary
+
+- Dependency updates: bumped FASTAPI_COMMON_REF to version 1.2.1 across Dockerfiles and workflows, ensuring compatibility with the latest features and fixes.
+- API enhancements: updated Dockerfiles and versioning for partner management APIs to streamline deployment and integration.
+- CI/CD improvements: modified workflows to enhance build processes, reflecting changes in Docker configurations and API management.
+
+### Changes
+
+- Bump FASTAPI_COMMON_REF to version 1.2.1 in Dockerfiles and workflows ([`46bfa9f`](https://github.com/OpenG2P/partner-management/commit/46bfa9f7936f822c6bd7393fb2b823ec2b4782c2))
+- Update Dockerfiles and versioning for partner management APIs ([`e08aaef`](https://github.com/OpenG2P/partner-management/commit/e08aaefc41716d81418163a1121fd8a414c25c12))
 
 <a id="v-1-0-3-rc-30"></a>
 
