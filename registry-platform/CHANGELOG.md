@@ -6,6 +6,7 @@ _Published automatically._
 
 | Version | Date | Type | Notes |
 | --- | --- | --- | --- |
+| [`1.2.1`](#v-1-2-1) | 2026-09-07 | release |  |
 | [`1.2.1-rc.462`](#v-1-2-1-rc-462) | 2026-09-04 | release candidate |  |
 | [`1.2.1-rc.447`](#v-1-2-1-rc-447) | 2026-09-04 | release candidate |  |
 | [`1.2.1-rc.445`](#v-1-2-1-rc-445) | 2026-09-03 | release candidate |  |
@@ -24,6 +25,60 @@ _Published automatically._
 | [`0.0.0-develop.421`](#v-0-0-0-develop-421) | 2026-08-28 | develop |  |
 
 # Releases
+
+<a id="v-1-2-1"></a>
+
+## registry-platform 1.2.1 — 2026-09-07
+
+<!-- build:1.2.1 revision:6d1fe22509a4927b6ae38b025b85826a9a40166b ts:1788531686 -->
+
+_commit `6d1fe22` · changes since release 1.2.0_
+
+**Same artifact as [`1.2.1-rc.462`](#v-1-2-1-rc-462)** — built from the
+same commit and *promoted* (retagged), not rebuilt. No code changed between them.
+
+**Chart:** [openg2p-registry 1.2.1](https://openg2p.github.io/openg2p-helm/openg2p-registry-1.2.1.tgz)
+
+### Release notes
+
+## What's Changed
+* [G2P-5617](https://openg2p.atlassian.net/browse/G2P-5617) Enhance export conditions handling and indexing in G2P registry by @tahzeer in https://github.com/OpenG2P/registry-platform/pull/130
+* [G2P-5618](https://openg2p.atlassian.net/browse/G2P-5618) Add and update codebase for Master Data API integration and remove Master Data DB Connection by @tahzeer in https://github.com/OpenG2P/registry-platform/pull/131
+* [G2P-5657](https://openg2p.atlassian.net/browse/G2P-5657) Refactor database session management to use get_async_session_maker across services by @vin0dkhichar in https://github.com/OpenG2P/registry-platform/pull/136
+* Bump version to 1.2.1 across all APIs and Dockerfiles by @vin0dkhichar in https://github.com/OpenG2P/registry-platform/pull/137
+* [G2P-5650](https://openg2p.atlassian.net/browse/G2P-5650) feat: map host branding into widget theme by @Q-Niranjan in https://github.com/OpenG2P/registry-platform/pull/134
+* Bump version to 1.2.1 in package.json and package-lock.json by @vin0dkhichar in https://github.com/OpenG2P/registry-platform/pull/138
+
+
+**Full Changelog**: https://github.com/OpenG2P/registry-platform/compare/1.2.0...1.2.1
+
+### Summary
+
+- **Major:** Refactor of database session management to utilize `get_async_session_maker` across services, improving consistency and performance.
+- Workflow improvements: Resolved multiple workflow errors, enhancing the reliability of the CI process.
+- Version updates: Bumped version to 1.2.1 across all APIs, Dockerfiles, and package files, ensuring alignment in dependencies.
+- Feature enhancements: Improved Section Builder functionality and integrated host branding into the widget theme for better customization.
+- Configuration updates: Adjusted environment settings to leverage the Master Data API and increased default export batch size to 2000, optimizing data handling.
+- Code simplification: Removed `RegisterRecordContext` and streamlined related components, reducing complexity in the codebase.
+
+### Changes
+
+- chore(ui-widgets): version for npm dev publish, sync staff-ui @1.1.9-dev.2 ([`6d1fe22`](https://github.com/OpenG2P/registry-platform/commit/6d1fe22509a4927b6ae38b025b85826a9a40166b))
+- Fixing workflow error ([`ccd23c1`](https://github.com/OpenG2P/registry-platform/commit/ccd23c1a0049da7b7eb06d0e9d02d07c50ac1dcb))
+- Fixing workflow error ([`1c29d80`](https://github.com/OpenG2P/registry-platform/commit/1c29d80ccd93b08b61fb2ea7041aecb64ee94509))
+- Fixing workflow error ([`d19eb34`](https://github.com/OpenG2P/registry-platform/commit/d19eb34bd48e0f01925da8f71c9f1a3b1ecca5a9))
+- Fixing workflow error ([`d53bcf1`](https://github.com/OpenG2P/registry-platform/commit/d53bcf13d3a2c4351784eab36374ae7089078572))
+- Fixing workflow error ([`de87a2e`](https://github.com/OpenG2P/registry-platform/commit/de87a2e300c17b72aceaa91753e17e5caa31fea8))
+- fixed the ui-widget publish issues ([`06de1be`](https://github.com/OpenG2P/registry-platform/commit/06de1bece3300f65a03347a0a67bc9366789c7df))
+- Bump version to 1.2.1 in package.json and package-lock.json ([`98ef188`](https://github.com/OpenG2P/registry-platform/commit/98ef188fefe9cfce539acb4efcfaaed9128997d8))
+- Bump version to 1.2.1 across all APIs and Dockerfiles ([`cbc3f71`](https://github.com/OpenG2P/registry-platform/commit/cbc3f7118b4ffc4a697b3a20204be97a64aa19d4))
+- [G2P-565](https://openg2p.atlassian.net/browse/G2P-565) refactor: remove RegisterRecordContext and simplify related components ([`6d53e8b`](https://github.com/OpenG2P/registry-platform/commit/6d53e8b022f266d33a7adeeeef5e1e6ee0668717))
+- [G2P-5657](https://openg2p.atlassian.net/browse/G2P-5657) Refactor database session management to use get_async_session_maker across services ([`2fc7fdc`](https://github.com/OpenG2P/registry-platform/commit/2fc7fdce4dcee50f33defd1ed2126f5fe54632d8))
+- [G2P-4724](https://openg2p.atlassian.net/browse/G2P-4724) feat: enhance Section Builder ([`0b90048`](https://github.com/OpenG2P/registry-platform/commit/0b90048494e7b9f243fbeeb9553a9c286b2ef75f))
+- [G2P-5650](https://openg2p.atlassian.net/browse/G2P-5650) feat: map host branding into widget theme ([`755116e`](https://github.com/OpenG2P/registry-platform/commit/755116eb5414ee92ff06fc18075623f25fd0784b))
+- [G2P-5618](https://openg2p.atlassian.net/browse/G2P-5618) Update environment configurations to use Master Data API ([`2b73ced`](https://github.com/OpenG2P/registry-platform/commit/2b73ced84bcdbd7d61e990248d51b8fc7eeb0360))
+- [G2P-5617](https://openg2p.atlassian.net/browse/G2P-5617) Update default export batch size across configurations to 2000 ([`da81ef5`](https://github.com/OpenG2P/registry-platform/commit/da81ef5269a7abfa917f225d1ddc4fca41ade49c))
+- [G2P-5617](https://openg2p.atlassian.net/browse/G2P-5617) Enhance export conditions and indexing in G2P registry ([`ce36109`](https://github.com/OpenG2P/registry-platform/commit/ce361098e29652c228d660bcf7ca31a84ca71616))
 
 <a id="v-1-2-0"></a>
 
