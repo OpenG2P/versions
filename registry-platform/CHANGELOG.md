@@ -6,6 +6,7 @@ _Published automatically._
 
 | Version | Date | Type | Notes |
 | --- | --- | --- | --- |
+| [`0.0.0-develop.432`](#v-0-0-0-develop-432) | 2026-09-09 | develop |  |
 | [`1.2.1`](#v-1-2-1) | 2026-09-07 | release |  |
 | [`1.2.1-rc.462`](#v-1-2-1-rc-462) | 2026-09-04 | release candidate |  |
 | [`1.2.1-rc.447`](#v-1-2-1-rc-447) | 2026-09-04 | release candidate |  |
@@ -687,6 +688,24 @@ _commit `9b41f96` · changes since v1.0.0_
 - [G2P-5153](https://openg2p.atlassian.net/browse/G2P-5153) Refactor IAM permission handling and authentication cookie management ([`8a6abe5`](https://github.com/OpenG2P/registry-platform/commit/8a6abe5de479bf2647f89b31fbfa62989114ef3e))
 
 # Develop builds
+
+<a id="v-0-0-0-develop-432"></a>
+
+## registry-platform — develop 0.0.0-develop.432 (2026-09-09)
+
+_commit `c754000` · changes since 0.0.0-develop.430_
+<!-- build:0.0.0-develop.432 revision:c7540007f7c51661bc1c68a7b8009a21e6d5758d ts:1788918314 -->
+
+**Chart:** [openg2p-registry 0.0.0-develop.432](https://openg2p.github.io/openg2p-helm/openg2p-registry-0.0.0-develop.432.tgz)
+
+### Summary
+
+- Credential management enhancements: implemented rejection of duplicate credential IDs in Certify and ensured credential type is carried through look-up and authentication processes.
+
+### Changes
+
+- [G2P-4929](https://openg2p.atlassian.net/browse/G2P-4929) Reject duplicate credential ids before they collide in Certify ([`c754000`](https://github.com/OpenG2P/registry-platform/commit/c7540007f7c51661bc1c68a7b8009a21e6d5758d))
+- [G2P-4929](https://openg2p.atlassian.net/browse/G2P-4929) Carry the credential type through look-up and authentication, not just issue ([`5a9dc7a`](https://github.com/OpenG2P/registry-platform/commit/5a9dc7aadab4ac614ee720836a9712cf2b22ad71))
 
 <a id="v-0-0-0-develop-430"></a>
 
