@@ -6,7 +6,8 @@ _Published automatically._
 
 | Version | Date | Type | Notes |
 | --- | --- | --- | --- |
-| [`0.0.0-develop.206`](#v-0-0-0-develop-206) | 2026-09-03 | develop |  |
+| [`1.2.1-rc.165`](#v-1-2-1-rc-165) | 2026-09-10 | release candidate |  |
+| [`0.0.0-develop.206`](#v-0-0-0-develop-206) | 2026-09-03 | develop | **Intermediate Stable Version**. VC issuance and verification both working fine. Compatible with commons 0.0.0-develop.243. |
 | [`1.2.1-rc.163`](#v-1-2-1-rc-163) | 2026-09-03 | release candidate |  |
 | [`0.0.0-develop.205`](#v-0-0-0-develop-205) | 2026-09-02 | develop |  |
 | [`1.2.1-rc.161`](#v-1-2-1-rc-161) | 2026-09-02 | release candidate |  |
@@ -189,6 +190,19 @@ _commit `7055a71` · first release_
 
 # Release candidates
 
+<a id="v-1-2-1-rc-165"></a>
+
+## farmer-registry 1.2.1-rc.165 — 2026-09-10
+
+_commit `6dd6702` · changes since 1.2.1-rc.163_
+<!-- build:1.2.1-rc.165 revision:6dd67028fb03f0303c77e7d06d0c2fe13fbe29b6 ts:1789018645 -->
+
+**Chart:** [openg2p-farmer-registry 1.2.1-rc.165](https://openg2p.github.io/openg2p-helm/openg2p-farmer-registry-1.2.1-rc.165.tgz)
+
+### Changes
+
+- [G2P-5604](https://openg2p.atlassian.net/browse/G2P-5604) Enhance domain services for household and household members ([`5805d9d`](https://github.com/OpenG2P/farmer-registry/commit/5805d9d1147757658e6376b4fb7d1dcbe57e98f1))
+
 <a id="v-1-2-1-rc-163"></a>
 
 ## farmer-registry 1.2.1-rc.163 — 2026-09-03
@@ -261,6 +275,8 @@ _commit `448e66e` · changes since 1.2.0_
 <a id="v-0-0-0-develop-206"></a>
 
 ## farmer-registry — develop 0.0.0-develop.206 (2026-09-03)
+
+> **Note** — **Intermediate Stable Version**. VC issuance and verification both working fine. Compatible with commons 0.0.0-develop.243.
 
 _commit `fa11515` · changes since 0.0.0-develop.205_
 <!-- build:0.0.0-develop.206 revision:fa1151506041d30b5a4ca0242e99c19da19b07f7 ts:1788434449 -->
