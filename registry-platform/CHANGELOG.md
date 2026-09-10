@@ -6,6 +6,7 @@ _Published automatically._
 
 | Version | Date | Type | Notes |
 | --- | --- | --- | --- |
+| [`1.2.2-rc.480`](#v-1-2-2-rc-480) | 2026-09-10 | release candidate |  |
 | [`1.2.2-rc.475`](#v-1-2-2-rc-475) | 2026-09-10 | release candidate |  |
 | [`0.0.0-develop.432`](#v-0-0-0-develop-432) | 2026-09-09 | develop |  |
 | [`1.2.1`](#v-1-2-1) | 2026-09-07 | release |  |
@@ -332,6 +333,29 @@ same commit and *promoted* (retagged), not rebuilt. No code changed between them
 - [G2P-5153](https://openg2p.atlassian.net/browse/G2P-5153) Refactor IAM permission handling and authentication cookie management ([`8a6abe5`](https://github.com/OpenG2P/registry-platform/commit/8a6abe5de479bf2647f89b31fbfa62989114ef3e))
 
 # Release candidates
+
+<a id="v-1-2-2-rc-480"></a>
+
+## registry-platform 1.2.2-rc.480 — 2026-09-10
+
+_commit `2a26dbe` · changes since 1.2.2-rc.475_
+<!-- build:1.2.2-rc.480 revision:2a26dbe05e2ae626b3786649cd61f31bad16a049 ts:1789024439 -->
+
+**Chart:** [openg2p-registry 1.2.2-rc.480](https://openg2p.github.io/openg2p-helm/openg2p-registry-1.2.2-rc.480.tgz)
+
+### Summary
+
+- UI enhancements: refactored document handling for change requests and intake forms, improved widget theme integration, and fixed z-index issues for the "create new submission" button.
+- Data integrity: implemented validation to prevent adding empty records in list view sections.
+- Dependency updates: synchronized staff-ui to version 1.1.9-dev.3 and updated several package manifests across ui and ui-widgets.
+- Codebase maintenance: added new utility files for section rendering and document storage while removing obsolete example schema files and a DocsWidget component.
+
+### Changes
+
+- chore(ui-widgets): version for npm dev publish, sync staff-ui @1.1.9-dev.3 ([`2a26dbe`](https://github.com/OpenG2P/registry-platform/commit/2a26dbe05e2ae626b3786649cd61f31bad16a049))
+- [G2P-5677](https://openg2p.atlassian.net/browse/G2P-5677) refactor: restructure document handling for change request and intake form ([`48b03ea`](https://github.com/OpenG2P/registry-platform/commit/48b03eaed48094b5b2c6617db9c44ab47332505e))
+- [G2P-5653](https://openg2p.atlassian.net/browse/G2P-5653): Prevent adding empty records in list view sections. ([`18fb63c`](https://github.com/OpenG2P/registry-platform/commit/18fb63c332e7055f9c63b136d011a8580819714d))
+- [G2P-5650](https://openg2p.atlassian.net/browse/G2P-5650) Refactor: improve widgets theme integration and fix z-index of create new submission button ([`9dbaf66`](https://github.com/OpenG2P/registry-platform/commit/9dbaf66b1c9c4d8e10a0a70c4507296314b2b37e))
 
 <a id="v-1-2-2-rc-475"></a>
 
