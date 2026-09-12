@@ -6,6 +6,7 @@ _Published automatically._
 
 | Version | Date | Type | Notes |
 | --- | --- | --- | --- |
+| [`0.0.0-develop.207`](#v-0-0-0-develop-207) | 2026-09-12 | develop |  |
 | [`1.2.1-rc.165`](#v-1-2-1-rc-165) | 2026-09-10 | release candidate |  |
 | [`0.0.0-develop.206`](#v-0-0-0-develop-206) | 2026-09-03 | develop | **Intermediate Stable Version**. VC issuance and verification both working fine. Compatible with commons 0.0.0-develop.243. |
 | [`1.2.1-rc.163`](#v-1-2-1-rc-163) | 2026-09-03 | release candidate |  |
@@ -271,6 +272,19 @@ _commit `448e66e` · changes since 1.2.0_
 - [G2P-5335](https://openg2p.atlassian.net/browse/G2P-5335) Switch CI to GitLab (.gitlab-ci.yml); drop GitHub Actions build/publish ([`1062700`](https://github.com/OpenG2P/farmer-registry/commit/1062700737b8129d66fcc363c7d3809863d0cefb))
 
 # Develop builds
+
+<a id="v-0-0-0-develop-207"></a>
+
+## farmer-registry — develop 0.0.0-develop.207 (2026-09-12)
+
+_commit `8387808` · changes since 0.0.0-develop.206_
+<!-- build:0.0.0-develop.207 revision:8387808ba50182ec6e2ae8389ae55ebdcce36356 ts:1789175674 -->
+
+**Chart:** [openg2p-farmer-registry 0.0.0-develop.207](https://openg2p.github.io/openg2p-helm/openg2p-farmer-registry-0.0.0-develop.207.tgz)
+
+### Changes
+
+- Bumped up RP version to develop 0.0.0-develop.432 ([`8387808`](https://github.com/OpenG2P/farmer-registry/commit/8387808ba50182ec6e2ae8389ae55ebdcce36356))
 
 <a id="v-0-0-0-develop-206"></a>
 
