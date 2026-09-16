@@ -6,6 +6,7 @@ _Published automatically._
 
 | Version | Date | Type | Notes |
 | --- | --- | --- | --- |
+| [`1.2.2-rc.483`](#v-1-2-2-rc-483) | 2026-09-16 | release candidate |  |
 | [`1.2.2-rc.480`](#v-1-2-2-rc-480) | 2026-09-10 | release candidate |  |
 | [`1.2.2-rc.475`](#v-1-2-2-rc-475) | 2026-09-10 | release candidate |  |
 | [`0.0.0-develop.432`](#v-0-0-0-develop-432) | 2026-09-09 | develop |  |
@@ -333,6 +334,27 @@ same commit and *promoted* (retagged), not rebuilt. No code changed between them
 - [G2P-5153](https://openg2p.atlassian.net/browse/G2P-5153) Refactor IAM permission handling and authentication cookie management ([`8a6abe5`](https://github.com/OpenG2P/registry-platform/commit/8a6abe5de479bf2647f89b31fbfa62989114ef3e))
 
 # Release candidates
+
+<a id="v-1-2-2-rc-483"></a>
+
+## registry-platform 1.2.2-rc.483 — 2026-09-16
+
+_commit `906859c` · changes since 1.2.2-rc.480_
+<!-- build:1.2.2-rc.483 revision:906859c4d45b2b110e8dd5e75627096fee1d7875 ts:1789532536 -->
+
+**Chart:** [openg2p-registry 1.2.2-rc.483](https://openg2p.github.io/openg2p-helm/openg2p-registry-1.2.2-rc.483.tgz)
+
+### Summary
+
+- Dependency updates: synchronized versions for `staff-ui` to 1.1.9-dev.4 and updated `ui-widgets` package manifests.
+- UI enhancements: minor fixes applied to the registry-platform, improving overall functionality.
+- Testing improvements: added a new test file for change request record name validation in the core module.
+- Docker configuration: adjustments made to streamline the build process.
+
+### Changes
+
+- chore(ui-widgets): version for npm dev publish, sync staff-ui @1.1.9-dev.4 ([`906859c`](https://github.com/OpenG2P/registry-platform/commit/906859c4d45b2b110e8dd5e75627096fee1d7875))
+- [G2P-5680](https://openg2p.atlassian.net/browse/G2P-5680) [G2P-5676](https://openg2p.atlassian.net/browse/G2P-5676) registry-platform fixes ([`582fb3e`](https://github.com/OpenG2P/registry-platform/commit/582fb3ec5f6e51b2a8f0310bc236db4af3d50c42))
 
 <a id="v-1-2-2-rc-480"></a>
 
