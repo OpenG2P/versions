@@ -6,6 +6,7 @@ _Published automatically._
 
 | Version | Date | Type | Notes |
 | --- | --- | --- | --- |
+| [`1.2.1-rc.167`](#v-1-2-1-rc-167) | 2026-09-16 | release candidate |  |
 | [`0.0.0-develop.207`](#v-0-0-0-develop-207) | 2026-09-12 | develop |  |
 | [`1.2.1-rc.165`](#v-1-2-1-rc-165) | 2026-09-10 | release candidate |  |
 | [`0.0.0-develop.206`](#v-0-0-0-develop-206) | 2026-09-03 | develop | **Intermediate Stable Version**. VC issuance and verification both working fine. Compatible with commons 0.0.0-develop.243. |
@@ -190,6 +191,19 @@ _commit `7055a71` · first release_
 - Initial commit ([`6e3cf83`](https://github.com/OpenG2P/farmer-registry/commit/6e3cf838809c5522a8b0cda15b87f726683ec175))
 
 # Release candidates
+
+<a id="v-1-2-1-rc-167"></a>
+
+## farmer-registry 1.2.1-rc.167 — 2026-09-16
+
+_commit `535b80d` · changes since 1.2.1-rc.165_
+<!-- build:1.2.1-rc.167 revision:535b80d6727a56eeb8a9c49e7cc85818fc8dbf88 ts:1789532492 -->
+
+**Chart:** [openg2p-farmer-registry 1.2.1-rc.167](https://openg2p.github.io/openg2p-helm/openg2p-farmer-registry-1.2.1-rc.167.tgz)
+
+### Changes
+
+- [G2P-5680](https://openg2p.atlassian.net/browse/G2P-5680) [G2P-5676](https://openg2p.atlassian.net/browse/G2P-5676) ui-widgets decimals in table cells, child change requests inherit the subject record name, partner-api and db-seed fixes ([`73e3037`](https://github.com/OpenG2P/farmer-registry/commit/73e30377460db8762d66e3d33468a319aa1d979f))
 
 <a id="v-1-2-1-rc-165"></a>
 
