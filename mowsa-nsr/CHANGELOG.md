@@ -6,6 +6,7 @@ _Published automatically._
 
 | Version | Date | Type | Notes |
 | --- | --- | --- | --- |
+| [`1.2.1-rc.311`](#v-1-2-1-rc-311) | 2026-09-17 | release candidate |  |
 | [`1.2.0`](#v-1-2-0) | 2026-09-04 | release |  |
 | [`1.2.0-rc.304`](#v-1-2-0-rc-304) | 2026-09-03 | release candidate |  |
 | [`1.2.0-rc.303`](#v-1-2-0-rc-303) | 2026-09-03 | release candidate |  |
@@ -150,6 +151,28 @@ _AI summary unavailable — re-run the workflow with `changelog_regenerate=1.2.0
 - Fix data policy Keycloak admin client to use registry-staff-portal. ([`b2e5199`](https://github.com/OpenG2P/mowsa-nsr/commit/b2e519934b3900363db1c449b910fe33416103c0))
 
 # Release candidates
+
+<a id="v-1-2-1-rc-311"></a>
+
+## mowsa-nsr 1.2.1-rc.311 — 2026-09-17
+
+_commit `d987c3f` · changes since 1.2.0_
+<!-- build:1.2.1-rc.311 revision:d987c3f94c69b420150c8ac812bcdded524ea792 ts:1789635584 -->
+
+**Chart:** [mowsa-nsr 1.2.1-rc.311](https://openg2p.github.io/openg2p-helm/mowsa-nsr-1.2.1-rc.311.tgz)
+
+### Summary
+
+_AI summary unavailable — re-run the workflow with `changelog_regenerate=1.2.1-rc.311` to generate it._
+
+### Changes
+
+- Remove trailing  in Chart.yaml for Helm chart mowsa-nsr ([`9531d58`](https://github.com/OpenG2P/mowsa-nsr/commit/9531d58379a7b227a536505819253fade0277ce1))
+- Update openg2p-registry dependency version to 1.2.0-rc.440 in Chart.yaml for Helm chart mowsa-nsr ([`bd214b3`](https://github.com/OpenG2P/mowsa-nsr/commit/bd214b391e72668741dd0ae2bdcf7c5affab0464))
+- Update household section identifiers in SQL metadata files to use 'household_attachment_section' for consistency across registration forms. ([`598f128`](https://github.com/OpenG2P/mowsa-nsr/commit/598f1280ea84e2bbe260a679429fa929f9de7cd0))
+- [G2P-5664](https://openg2p.atlassian.net/browse/G2P-5664): Update individual registration service to validate birth date against future dates and ensure proper handling of household heads in registration process - Add  AWE configuration ([`f061fef`](https://github.com/OpenG2P/mowsa-nsr/commit/f061fef120a687c27282ddaafbea9e7e454f53bb))
+- [G2P-5663](https://openg2p.atlassian.net/browse/G2P-5663) NSR- Birth date is accepting future date [G2P-5384](https://openg2p.atlassian.net/browse/G2P-5384) NSR-Household Allows Multiple Heads for the Household ([`d7c0934`](https://github.com/OpenG2P/mowsa-nsr/commit/d7c093407598bae394d1d8d745983f887f04a65a))
+- [G2P-5666](https://openg2p.atlassian.net/browse/G2P-5666) modified the individual registration service to clear foundational ID if entered before RID. ([`38c3b85`](https://github.com/OpenG2P/mowsa-nsr/commit/38c3b8562b10781e6a59e2a3cde07e5027c00316))
 
 <a id="v-1-2-0-rc-304"></a>
 
