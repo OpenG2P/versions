@@ -6,6 +6,7 @@ _Published automatically._
 
 | Version | Date | Type | Notes |
 | --- | --- | --- | --- |
+| [`1.2.2-rc.485`](#v-1-2-2-rc-485) | 2026-09-17 | release candidate |  |
 | [`1.2.2-rc.483`](#v-1-2-2-rc-483) | 2026-09-16 | release candidate |  |
 | [`1.2.2-rc.480`](#v-1-2-2-rc-480) | 2026-09-10 | release candidate |  |
 | [`1.2.2-rc.475`](#v-1-2-2-rc-475) | 2026-09-10 | release candidate |  |
@@ -334,6 +335,19 @@ same commit and *promoted* (retagged), not rebuilt. No code changed between them
 - [G2P-5153](https://openg2p.atlassian.net/browse/G2P-5153) Refactor IAM permission handling and authentication cookie management ([`8a6abe5`](https://github.com/OpenG2P/registry-platform/commit/8a6abe5de479bf2647f89b31fbfa62989114ef3e))
 
 # Release candidates
+
+<a id="v-1-2-2-rc-485"></a>
+
+## registry-platform 1.2.2-rc.485 — 2026-09-17
+
+_commit `6052286` · changes since 1.2.2-rc.483_
+<!-- build:1.2.2-rc.485 revision:60522861dc2b7bd2be6b864318d447c6f3472dda ts:1789626346 -->
+
+**Chart:** [openg2p-registry 1.2.2-rc.485](https://openg2p.github.io/openg2p-helm/openg2p-registry-1.2.2-rc.485.tgz)
+
+### Changes
+
+- [G2P-5677](https://openg2p.atlassian.net/browse/G2P-5677) refactor: streamline document handling and update identifiers across various components ([`b3169fa`](https://github.com/OpenG2P/registry-platform/commit/b3169fabdb6b250b4dc232b49bcbe06f29baf768))
 
 <a id="v-1-2-2-rc-483"></a>
 
