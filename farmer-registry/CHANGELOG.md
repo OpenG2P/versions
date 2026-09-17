@@ -6,6 +6,7 @@ _Published automatically._
 
 | Version | Date | Type | Notes |
 | --- | --- | --- | --- |
+| [`1.2.1-rc.169`](#v-1-2-1-rc-169) | 2026-09-17 | release candidate |  |
 | [`1.2.1-rc.167`](#v-1-2-1-rc-167) | 2026-09-16 | release candidate |  |
 | [`0.0.0-develop.207`](#v-0-0-0-develop-207) | 2026-09-12 | develop |  |
 | [`1.2.1-rc.165`](#v-1-2-1-rc-165) | 2026-09-10 | release candidate |  |
@@ -191,6 +192,19 @@ _commit `7055a71` · first release_
 - Initial commit ([`6e3cf83`](https://github.com/OpenG2P/farmer-registry/commit/6e3cf838809c5522a8b0cda15b87f726683ec175))
 
 # Release candidates
+
+<a id="v-1-2-1-rc-169"></a>
+
+## farmer-registry 1.2.1-rc.169 — 2026-09-17
+
+_commit `0cf263b` · changes since 1.2.1-rc.167_
+<!-- build:1.2.1-rc.169 revision:0cf263be885dcba484ae57574269fca4150a84cf ts:1789629761 -->
+
+**Chart:** [openg2p-farmer-registry 1.2.1-rc.169](https://openg2p.github.io/openg2p-helm/openg2p-farmer-registry-1.2.1-rc.169.tgz)
+
+### Changes
+
+- Image issues ([`ea5e3fd`](https://github.com/OpenG2P/farmer-registry/commit/ea5e3fda595a607b90289ed497982ba0ab854c3d))
 
 <a id="v-1-2-1-rc-167"></a>
 
