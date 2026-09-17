@@ -1,0 +1,4 @@
+name=openg2p-registry-dr-hh-extensions
+kind=service
+repo=https://github.com/OpenG2P/openg2p-registry-dr-hh-extensions
+images=https://hub.docker.com/u/openg2p
