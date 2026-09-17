@@ -6,6 +6,7 @@ _Published automatically._
 
 | Version | Date | Type | Notes |
 | --- | --- | --- | --- |
+| [`1.2.2-rc.487`](#v-1-2-2-rc-487) | 2026-09-17 | release candidate |  |
 | [`1.2.2-rc.485`](#v-1-2-2-rc-485) | 2026-09-17 | release candidate |  |
 | [`1.2.2-rc.483`](#v-1-2-2-rc-483) | 2026-09-16 | release candidate |  |
 | [`1.2.2-rc.480`](#v-1-2-2-rc-480) | 2026-09-10 | release candidate |  |
@@ -335,6 +336,19 @@ same commit and *promoted* (retagged), not rebuilt. No code changed between them
 - [G2P-5153](https://openg2p.atlassian.net/browse/G2P-5153) Refactor IAM permission handling and authentication cookie management ([`8a6abe5`](https://github.com/OpenG2P/registry-platform/commit/8a6abe5de479bf2647f89b31fbfa62989114ef3e))
 
 # Release candidates
+
+<a id="v-1-2-2-rc-487"></a>
+
+## registry-platform 1.2.2-rc.487 — 2026-09-17
+
+_commit `9663f05` · changes since 1.2.2-rc.485_
+<!-- build:1.2.2-rc.487 revision:9663f053d3a0dabe01555a3c06d907de127edd7d ts:1789629704 -->
+
+**Chart:** [openg2p-registry 1.2.2-rc.487](https://openg2p.github.io/openg2p-helm/openg2p-registry-1.2.2-rc.487.tgz)
+
+### Changes
+
+- Rename import file document store ([`33ead30`](https://github.com/OpenG2P/registry-platform/commit/33ead301335307d8bdd4fad7b590894b03966345))
 
 <a id="v-1-2-2-rc-485"></a>
 
