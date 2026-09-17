@@ -6,6 +6,7 @@ _Published automatically._
 
 | Version | Date | Type | Notes |
 | --- | --- | --- | --- |
+| [`1.2.1-rc.170`](#v-1-2-1-rc-170) | 2026-09-17 | release candidate |  |
 | [`1.2.1-rc.169`](#v-1-2-1-rc-169) | 2026-09-17 | release candidate |  |
 | [`1.2.1-rc.167`](#v-1-2-1-rc-167) | 2026-09-16 | release candidate |  |
 | [`0.0.0-develop.207`](#v-0-0-0-develop-207) | 2026-09-12 | develop |  |
@@ -192,6 +193,19 @@ _commit `7055a71` · first release_
 - Initial commit ([`6e3cf83`](https://github.com/OpenG2P/farmer-registry/commit/6e3cf838809c5522a8b0cda15b87f726683ec175))
 
 # Release candidates
+
+<a id="v-1-2-1-rc-170"></a>
+
+## farmer-registry 1.2.1-rc.170 — 2026-09-17
+
+_commit `fb6cd5d` · changes since 1.2.1-rc.169_
+<!-- build:1.2.1-rc.170 revision:fb6cd5d764013c99ee4a26e82884f99ddfa2b2a4 ts:1789631017 -->
+
+**Chart:** [openg2p-farmer-registry 1.2.1-rc.170](https://openg2p.github.io/openg2p-helm/openg2p-farmer-registry-1.2.1-rc.170.tgz)
+
+### Changes
+
+- Bump version 1.2.2-rc.487 of registry platform in Dockerfile ([`fb6cd5d`](https://github.com/OpenG2P/farmer-registry/commit/fb6cd5d764013c99ee4a26e82884f99ddfa2b2a4))
 
 <a id="v-1-2-1-rc-169"></a>
 
