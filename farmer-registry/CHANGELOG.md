@@ -6,6 +6,7 @@ _Published automatically._
 
 | Version | Date | Type | Notes |
 | --- | --- | --- | --- |
+| [`1.2.1-rc.174`](#v-1-2-1-rc-174) | 2026-09-18 | release candidate |  |
 | [`1.2.1-rc.171`](#v-1-2-1-rc-171) | 2026-09-17 | release candidate |  |
 | [`1.2.1-rc.170`](#v-1-2-1-rc-170) | 2026-09-17 | release candidate |  |
 | [`1.2.1-rc.169`](#v-1-2-1-rc-169) | 2026-09-17 | release candidate |  |
@@ -194,6 +195,25 @@ _commit `7055a71` · first release_
 - Initial commit ([`6e3cf83`](https://github.com/OpenG2P/farmer-registry/commit/6e3cf838809c5522a8b0cda15b87f726683ec175))
 
 # Release candidates
+
+<a id="v-1-2-1-rc-174"></a>
+
+## farmer-registry 1.2.1-rc.174 — 2026-09-18
+
+_commit `6c9b020` · changes since 1.2.1-rc.171_
+<!-- build:1.2.1-rc.174 revision:6c9b020c269ad3dedf40975f633559631edd3b5d ts:1789723425 -->
+
+**Chart:** [openg2p-farmer-registry 1.2.1-rc.174](https://openg2p.github.io/openg2p-helm/openg2p-farmer-registry-1.2.1-rc.174.tgz)
+
+### Summary
+
+- Dependency updates: aligned openg2p-registry version pins to 1.2.2-rc.489.
+- Bug fixes: resolved SQL issues in the ID authentication widget.
+
+### Changes
+
+- fix: align openg2p-registry version pins to 1.2.2-rc.489 ([`b009442`](https://github.com/OpenG2P/farmer-registry/commit/b0094425c32195b621e50c087986fd88ede3eba5))
+- [G2P-5695](https://openg2p.atlassian.net/browse/G2P-5695) Fix ID authentication widget SQL ([`1c7a311`](https://github.com/OpenG2P/farmer-registry/commit/1c7a3113d0af9638311b2e7e3cc31a1608defa3e))
 
 <a id="v-1-2-1-rc-171"></a>
 
