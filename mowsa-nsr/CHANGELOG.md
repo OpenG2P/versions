@@ -6,6 +6,7 @@ _Published automatically._
 
 | Version | Date | Type | Notes |
 | --- | --- | --- | --- |
+| [`1.2.1-rc.313`](#v-1-2-1-rc-313) | 2026-09-21 | release candidate |  |
 | [`1.2.1-rc.311`](#v-1-2-1-rc-311) | 2026-09-17 | release candidate |  |
 | [`1.2.0`](#v-1-2-0) | 2026-09-04 | release |  |
 | [`1.2.0-rc.304`](#v-1-2-0-rc-304) | 2026-09-03 | release candidate |  |
@@ -151,6 +152,19 @@ _AI summary unavailable — re-run the workflow with `changelog_regenerate=1.2.0
 - Fix data policy Keycloak admin client to use registry-staff-portal. ([`b2e5199`](https://github.com/OpenG2P/mowsa-nsr/commit/b2e519934b3900363db1c449b910fe33416103c0))
 
 # Release candidates
+
+<a id="v-1-2-1-rc-313"></a>
+
+## mowsa-nsr 1.2.1-rc.313 — 2026-09-21
+
+_commit `4dd837d` · changes since 1.2.1-rc.311_
+<!-- build:1.2.1-rc.313 revision:4dd837d4d5ac63cbdbd1beb83cd25faf7f216a4c ts:1789978612 -->
+
+**Chart:** [mowsa-nsr 1.2.1-rc.313](https://openg2p.github.io/openg2p-helm/mowsa-nsr-1.2.1-rc.313.tgz)
+
+### Changes
+
+- Enhance individual registration service with additional validations for land access and household relationships. Update SQL metadata for AWE policy configurations to ensure consistency in identifiers and handling of foundational IDs. ([`b4db6b9`](https://github.com/OpenG2P/mowsa-nsr/commit/b4db6b9138395433da5eaa268976d4cda20e375e))
 
 <a id="v-1-2-1-rc-311"></a>
 
