@@ -6,6 +6,7 @@ _Published automatically._
 
 | Version | Date | Type | Notes |
 | --- | --- | --- | --- |
+| [`0.0.0-develop.435`](#v-0-0-0-develop-435) | 2026-09-23 | develop |  |
 | [`1.2.2-rc.489`](#v-1-2-2-rc-489) | 2026-09-17 | release candidate |  |
 | [`1.2.2-rc.487`](#v-1-2-2-rc-487) | 2026-09-17 | release candidate |  |
 | [`1.2.2-rc.485`](#v-1-2-2-rc-485) | 2026-09-17 | release candidate |  |
@@ -808,6 +809,26 @@ _commit `9b41f96` · changes since v1.0.0_
 - [G2P-5153](https://openg2p.atlassian.net/browse/G2P-5153) Refactor IAM permission handling and authentication cookie management ([`8a6abe5`](https://github.com/OpenG2P/registry-platform/commit/8a6abe5de479bf2647f89b31fbfa62989114ef3e))
 
 # Develop builds
+
+<a id="v-0-0-0-develop-435"></a>
+
+## registry-platform — develop 0.0.0-develop.435 (2026-09-23)
+
+_commit `c145e3a` · changes since 0.0.0-develop.432_
+<!-- build:0.0.0-develop.435 revision:c145e3ab1808e9fe8465e438834aaf9a583eec72 ts:1790124509 -->
+
+**Chart:** [openg2p-registry 0.0.0-develop.435](https://openg2p.github.io/openg2p-helm/openg2p-registry-0.0.0-develop.435.tgz)
+
+### Summary
+
+- New feature: added a mobile wallet card and offer screen to the agent portal, enabling individual transaction codes and scannable QR codes for wallet offers.
+- Ongoing development: introduced a feature for handing over verifiable credentials (VC) to beneficiaries' mobile wallets, currently a work in progress.
+
+### Changes
+
+- [G2P-4929](https://openg2p.atlassian.net/browse/G2P-4929) Add a mobile wallet card and offer screen to the agent portal ([`c145e3a`](https://github.com/OpenG2P/registry-platform/commit/c145e3ab1808e9fe8465e438834aaf9a583eec72))
+- [G2P-4929](https://openg2p.atlassian.net/browse/G2P-4929) Give each wallet offer its own transaction code and a scannable QR ([`f582bf9`](https://github.com/OpenG2P/registry-platform/commit/f582bf9ac9157ee79f49d411d357b5c0c27f2d6c))
+- [G2P-4929](https://openg2p.atlassian.net/browse/G2P-4929) Feature to handover VC to a beneficiaries mobile wallet added. WIP. ([`fa490b1`](https://github.com/OpenG2P/registry-platform/commit/fa490b109eff7c94c57b317965e5a968f6bd7750))
 
 <a id="v-0-0-0-develop-432"></a>
 
