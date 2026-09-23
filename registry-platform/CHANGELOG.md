@@ -6,6 +6,7 @@ _Published automatically._
 
 | Version | Date | Type | Notes |
 | --- | --- | --- | --- |
+| [`1.2.2-rc.491`](#v-1-2-2-rc-491) | 2026-09-23 | release candidate |  |
 | [`0.0.0-develop.435`](#v-0-0-0-develop-435) | 2026-09-23 | develop |  |
 | [`1.2.2-rc.489`](#v-1-2-2-rc-489) | 2026-09-17 | release candidate |  |
 | [`1.2.2-rc.487`](#v-1-2-2-rc-487) | 2026-09-17 | release candidate |  |
@@ -338,6 +339,19 @@ same commit and *promoted* (retagged), not rebuilt. No code changed between them
 - [G2P-5153](https://openg2p.atlassian.net/browse/G2P-5153) Refactor IAM permission handling and authentication cookie management ([`8a6abe5`](https://github.com/OpenG2P/registry-platform/commit/8a6abe5de479bf2647f89b31fbfa62989114ef3e))
 
 # Release candidates
+
+<a id="v-1-2-2-rc-491"></a>
+
+## registry-platform 1.2.2-rc.491 — 2026-09-23
+
+_commit `94252fd` · changes since 1.2.2-rc.489_
+<!-- build:1.2.2-rc.491 revision:94252fd2cd3c7e2d815861d92000236b9843dabc ts:1790163069 -->
+
+**Chart:** [openg2p-registry 1.2.2-rc.491](https://openg2p.github.io/openg2p-helm/openg2p-registry-1.2.2-rc.491.tgz)
+
+### Changes
+
+- [G2P-5655](https://openg2p.atlassian.net/browse/G2P-5655) Refactor G2PChangeRequestSectionPayloadService to remove readonly checks and update test cases ([`bde776b`](https://github.com/OpenG2P/registry-platform/commit/bde776b34994418d58f65996fa69aeab89958799))
 
 <a id="v-1-2-2-rc-489"></a>
 
