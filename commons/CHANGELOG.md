@@ -6,6 +6,7 @@ _Published automatically._
 
 | Version | Date | Type | Notes |
 | --- | --- | --- | --- |
+| [`0.0.0-develop.245`](#v-0-0-0-develop-245) | 2026-09-23 | develop |  |
 | [`0.0.0-develop.243`](#v-0-0-0-develop-243) | 2026-09-04 | develop |  |
 | [`2.3.3`](#v-2-3-3) | 2026-09-03 | release |  |
 | [`2.3.3-rc.227`](#v-2-3-3-rc-227) | 2026-09-03 | release candidate |  |
@@ -493,6 +494,19 @@ _commit `ffabcdc` · changes since 2.2.1_
 - Bumped up Master Data Service version. ([`0e52ebf`](https://github.com/OpenG2P/commons/commit/0e52ebf19de3fd2ac8af3c4dd128e0f2857f7162))
 
 # Develop builds
+
+<a id="v-0-0-0-develop-245"></a>
+
+## commons — develop 0.0.0-develop.245 (2026-09-23)
+
+_commit `e273291` · changes since 0.0.0-develop.243_
+<!-- build:0.0.0-develop.245 revision:e273291bf20f4a2cd1055cbb3518d11f92d73da3 ts:1790166301 -->
+
+**Charts:** [openg2p-commons-base 0.0.0-develop.245](https://openg2p.github.io/openg2p-helm/openg2p-commons-base-0.0.0-develop.245.tgz) · [openg2p-commons-services 0.0.0-develop.245](https://openg2p.github.io/openg2p-helm/openg2p-commons-services-0.0.0-develop.245.tgz)
+
+### Changes
+
+- [[G2P-5641](https://openg2p.atlassian.net/browse/G2P-5641)] Updated superset helm chart path on Chart.yaml. ([`41a9666`](https://github.com/OpenG2P/commons/commit/41a9666caf5eb4443b2c3bc3279731158111ebdb))
 
 <a id="v-0-0-0-develop-243"></a>
 
