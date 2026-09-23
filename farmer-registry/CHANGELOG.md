@@ -6,6 +6,7 @@ _Published automatically._
 
 | Version | Date | Type | Notes |
 | --- | --- | --- | --- |
+| [`0.0.0-develop.209`](#v-0-0-0-develop-209) | 2026-09-23 | develop |  |
 | [`1.2.1-rc.174`](#v-1-2-1-rc-174) | 2026-09-18 | release candidate |  |
 | [`1.2.1-rc.171`](#v-1-2-1-rc-171) | 2026-09-17 | release candidate |  |
 | [`1.2.1-rc.170`](#v-1-2-1-rc-170) | 2026-09-17 | release candidate |  |
@@ -348,6 +349,25 @@ _commit `448e66e` · changes since 1.2.0_
 - [G2P-5335](https://openg2p.atlassian.net/browse/G2P-5335) Switch CI to GitLab (.gitlab-ci.yml); drop GitHub Actions build/publish ([`1062700`](https://github.com/OpenG2P/farmer-registry/commit/1062700737b8129d66fcc363c7d3809863d0cefb))
 
 # Develop builds
+
+<a id="v-0-0-0-develop-209"></a>
+
+## farmer-registry — develop 0.0.0-develop.209 (2026-09-23)
+
+_commit `84e6d1e` · changes since 0.0.0-develop.207_
+<!-- build:0.0.0-develop.209 revision:84e6d1e5eaebda06fe83702a0398f8fb7c06bffc ts:1790150578 -->
+
+**Chart:** [openg2p-farmer-registry 0.0.0-develop.209](https://openg2p.github.io/openg2p-helm/openg2p-farmer-registry-0.0.0-develop.209.tgz)
+
+### Summary
+
+- Feature enhancement: Each wallet offer now includes a unique transaction code and a scannable QR code for improved user interaction.
+- Version update: The RP version has been incremented to 0.0.0-develop.435, reflecting ongoing development progress.
+
+### Changes
+
+- Bumped up RP version to 0.0.0-develop.435 ([`84e6d1e`](https://github.com/OpenG2P/farmer-registry/commit/84e6d1e5eaebda06fe83702a0398f8fb7c06bffc))
+- [G2P-4929](https://openg2p.atlassian.net/browse/G2P-4929) Give each wallet offer its own transaction code and a scannable QR ([`ce9fa75`](https://github.com/OpenG2P/farmer-registry/commit/ce9fa7505c3663166c827463e8d150e78bd4cc0c))
 
 <a id="v-0-0-0-develop-207"></a>
 
