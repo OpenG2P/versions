@@ -6,9 +6,28 @@ _Published automatically._
 
 | Version | Date | Type | Notes |
 | --- | --- | --- | --- |
+| [`0.0.0-develop.29`](#v-0-0-0-develop-29) | 2026-09-24 | develop |  |
 | [`0.0.0-develop.26`](#v-0-0-0-develop-26) | 2026-09-17 | develop |  |
 
 # Develop builds
+
+<a id="v-0-0-0-develop-29"></a>
+
+## openg2p-registry-dr-hh-extensions — develop 0.0.0-develop.29 (2026-09-24)
+
+_commit `bdd6bbf` · changes since 0.0.0-develop.26_
+<!-- build:0.0.0-develop.29 revision:bdd6bbf7ded71e0ef80c6397f9bc00ee29fdd51e ts:1790220340 -->
+
+**Chart:** [dom-household-registry 0.0.0-develop.29](https://openg2p.github.io/openg2p-helm/dom-household-registry-0.0.0-develop.29.tgz)
+
+### Summary
+
+_AI summary unavailable — re-run the workflow with `changelog_regenerate=0.0.0-develop.29` to generate it._
+
+### Changes
+
+- Fix SQL syntax in theme values and themes configuration files ([`45f825c`](https://github.com/OpenG2P/openg2p-registry-dr-hh-extensions/commit/45f825c983c532ce6907befb7d71859085919fa2))
+- Household registry extension: PMT score computation, ingestion enrichers, sample data and metadata updates; remove geo lookup seed SQL ([`355bb79`](https://github.com/OpenG2P/openg2p-registry-dr-hh-extensions/commit/355bb7912b2d65042a378909ab98f3aca74945c7))
 
 <a id="v-0-0-0-develop-26"></a>
 
