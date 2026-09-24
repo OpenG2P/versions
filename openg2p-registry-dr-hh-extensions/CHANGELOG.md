@@ -6,10 +6,29 @@ _Published automatically._
 
 | Version | Date | Type | Notes |
 | --- | --- | --- | --- |
+| [`0.0.0-develop.32`](#v-0-0-0-develop-32) | 2026-09-24 | develop |  |
 | [`0.0.0-develop.29`](#v-0-0-0-develop-29) | 2026-09-24 | develop |  |
 | [`0.0.0-develop.26`](#v-0-0-0-develop-26) | 2026-09-17 | develop |  |
 
 # Develop builds
+
+<a id="v-0-0-0-develop-32"></a>
+
+## openg2p-registry-dr-hh-extensions — develop 0.0.0-develop.32 (2026-09-24)
+
+_commit `06bd805` · changes since 0.0.0-develop.29_
+<!-- build:0.0.0-develop.32 revision:06bd805c94cb3cd27b66b4bcc9c0c3e6220aaa64 ts:1790247633 -->
+
+**Chart:** [dom-household-registry 0.0.0-develop.32](https://openg2p.github.io/openg2p-helm/dom-household-registry-0.0.0-develop.32.tgz)
+
+### Summary
+
+_AI summary unavailable — re-run the workflow with `changelog_regenerate=0.0.0-develop.32` to generate it._
+
+### Changes
+
+- Add Dominican Republic geo hierarchy and update intake form definitions ([`10ea12b`](https://github.com/OpenG2P/openg2p-registry-dr-hh-extensions/commit/10ea12b5411a6450fa1a5791510892cdbdf22a35))
+- Enhance household registry extension: update PMT score computation, add new household fields, and restructure SQL schemas for improved data handling ([`0fdb273`](https://github.com/OpenG2P/openg2p-registry-dr-hh-extensions/commit/0fdb273efde63b8db1e6ec562538fce4a1df2917))
 
 <a id="v-0-0-0-develop-29"></a>
 
