@@ -6,6 +6,7 @@ _Published automatically._
 
 | Version | Date | Type | Notes |
 | --- | --- | --- | --- |
+| [`1.2.2-rc.509`](#v-1-2-2-rc-509) | 2026-09-25 | release candidate |  |
 | [`1.2.2-rc.504`](#v-1-2-2-rc-504) | 2026-09-25 | release candidate |  |
 | [`1.2.2-rc.493`](#v-1-2-2-rc-493) | 2026-09-24 | release candidate |  |
 | [`1.2.2-rc.491`](#v-1-2-2-rc-491) | 2026-09-23 | release candidate |  |
@@ -341,6 +342,27 @@ same commit and *promoted* (retagged), not rebuilt. No code changed between them
 - [G2P-5153](https://openg2p.atlassian.net/browse/G2P-5153) Refactor IAM permission handling and authentication cookie management ([`8a6abe5`](https://github.com/OpenG2P/registry-platform/commit/8a6abe5de479bf2647f89b31fbfa62989114ef3e))
 
 # Release candidates
+
+<a id="v-1-2-2-rc-509"></a>
+
+## registry-platform 1.2.2-rc.509 — 2026-09-25
+
+_commit `f4fcb39` · changes since 1.2.2-rc.504_
+<!-- build:1.2.2-rc.509 revision:f4fcb39e6d3c2486c0d2e9d0d7e5045cdad2ec34 ts:1790341751 -->
+
+**Chart:** [openg2p-registry 1.2.2-rc.509](https://openg2p.github.io/openg2p-helm/openg2p-registry-1.2.2-rc.509.tgz)
+
+### Summary
+
+- CI/build improvements: updated npm dev publish versioning for ui-widgets and synchronized staff-ui to version 1.1.9-dev.6.
+- UI enhancements: removed the required asterisk mark from table headers for improved clarity.
+- Workflow optimization: adjusted the order of operations to run iam-register before db-seed and configured celery-beat with a consumed queue.
+
+### Changes
+
+- chore(ui-widgets): version for npm dev publish, sync staff-ui @1.1.9-dev.6 ([`35c2e15`](https://github.com/OpenG2P/registry-platform/commit/35c2e15c1d20dcdf01120351af8fd19d1db2ba83))
+- [G2P-5716](https://openg2p.atlassian.net/browse/G2P-5716) refactor: Remove required asterisk mark from table header ([`88b0766`](https://github.com/OpenG2P/registry-platform/commit/88b0766dee7a533f76a6f3a7b3be89dac3fc9cd9))
+- chart: run iam-register before db-seed, and give celery-beat a consumed queue ([`b2c29e9`](https://github.com/OpenG2P/registry-platform/commit/b2c29e950f2ce36f75580dc8783803f254a04aad))
 
 <a id="v-1-2-2-rc-504"></a>
 
