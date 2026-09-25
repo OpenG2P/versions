@@ -6,6 +6,7 @@ _Published automatically._
 
 | Version | Date | Type | Notes |
 | --- | --- | --- | --- |
+| [`1.2.1-rc.176`](#v-1-2-1-rc-176) | 2026-09-25 | release candidate |  |
 | [`0.0.0-develop.209`](#v-0-0-0-develop-209) | 2026-09-23 | develop |  |
 | [`1.2.1-rc.174`](#v-1-2-1-rc-174) | 2026-09-18 | release candidate |  |
 | [`1.2.1-rc.171`](#v-1-2-1-rc-171) | 2026-09-17 | release candidate |  |
@@ -196,6 +197,19 @@ _commit `7055a71` · first release_
 - Initial commit ([`6e3cf83`](https://github.com/OpenG2P/farmer-registry/commit/6e3cf838809c5522a8b0cda15b87f726683ec175))
 
 # Release candidates
+
+<a id="v-1-2-1-rc-176"></a>
+
+## farmer-registry 1.2.1-rc.176 — 2026-09-25
+
+_commit `c342011` · changes since 1.2.1-rc.174_
+<!-- build:1.2.1-rc.176 revision:c342011bdcad674da87da52f8aa3e12af3ec816c ts:1790341760 -->
+
+**Chart:** [openg2p-farmer-registry 1.2.1-rc.176](https://openg2p.github.io/openg2p-helm/openg2p-farmer-registry-1.2.1-rc.176.tgz)
+
+### Changes
+
+- Fix db-seed on a fresh deployment: give celery-beat a consumed queue, report why the seed fails ([`46527b5`](https://github.com/OpenG2P/farmer-registry/commit/46527b5db1d7ea81831cf06907416ab6b680457f))
 
 <a id="v-1-2-1-rc-174"></a>
 
