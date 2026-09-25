@@ -6,6 +6,7 @@ _Published automatically._
 
 | Version | Date | Type | Notes |
 | --- | --- | --- | --- |
+| [`1.2.1-rc.325`](#v-1-2-1-rc-325) | 2026-09-25 | release candidate |  |
 | [`1.2.1-rc.323`](#v-1-2-1-rc-323) | 2026-09-25 | release candidate |  |
 | [`1.2.1-rc.320`](#v-1-2-1-rc-320) | 2026-09-25 | release candidate |  |
 | [`1.2.1-rc.315`](#v-1-2-1-rc-315) | 2026-09-22 | release candidate |  |
@@ -155,6 +156,19 @@ _AI summary unavailable — re-run the workflow with `changelog_regenerate=1.2.0
 - Fix data policy Keycloak admin client to use registry-staff-portal. ([`b2e5199`](https://github.com/OpenG2P/mowsa-nsr/commit/b2e519934b3900363db1c449b910fe33416103c0))
 
 # Release candidates
+
+<a id="v-1-2-1-rc-325"></a>
+
+## mowsa-nsr 1.2.1-rc.325 — 2026-09-25
+
+_commit `b496ab9` · changes since 1.2.1-rc.323_
+<!-- build:1.2.1-rc.325 revision:b496ab9db59c0f2675f5896b31dcb83bfaff1204 ts:1790342397 -->
+
+**Chart:** [mowsa-nsr 1.2.1-rc.325](https://openg2p.github.io/openg2p-helm/mowsa-nsr-1.2.1-rc.325.tgz)
+
+### Changes
+
+- Update RP_VERSION to 1.2.2-rc.509 in Dockerfiles and Chart.yaml for all services to align with the latest registry version. ([`2e6505c`](https://github.com/OpenG2P/mowsa-nsr/commit/2e6505c64d3c1d672a1b1ac66b7f794b538c1377))
 
 <a id="v-1-2-1-rc-323"></a>
 
