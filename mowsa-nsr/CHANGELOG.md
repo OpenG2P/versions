@@ -6,6 +6,7 @@ _Published automatically._
 
 | Version | Date | Type | Notes |
 | --- | --- | --- | --- |
+| [`1.2.1-rc.329`](#v-1-2-1-rc-329) | 2026-09-25 | release candidate |  |
 | [`1.2.1-rc.327`](#v-1-2-1-rc-327) | 2026-09-25 | release candidate |  |
 | [`1.2.1-rc.325`](#v-1-2-1-rc-325) | 2026-09-25 | release candidate |  |
 | [`1.2.1-rc.323`](#v-1-2-1-rc-323) | 2026-09-25 | release candidate |  |
@@ -157,6 +158,19 @@ _AI summary unavailable — re-run the workflow with `changelog_regenerate=1.2.0
 - Fix data policy Keycloak admin client to use registry-staff-portal. ([`b2e5199`](https://github.com/OpenG2P/mowsa-nsr/commit/b2e519934b3900363db1c449b910fe33416103c0))
 
 # Release candidates
+
+<a id="v-1-2-1-rc-329"></a>
+
+## mowsa-nsr 1.2.1-rc.329 — 2026-09-25
+
+_commit `bbbcfdc` · changes since 1.2.1-rc.327_
+<!-- build:1.2.1-rc.329 revision:bbbcfdcd7da144cc2e9ab409fdba8741aa1252a6 ts:1790359923 -->
+
+**Chart:** [mowsa-nsr 1.2.1-rc.329](https://openg2p.github.io/openg2p-helm/mowsa-nsr-1.2.1-rc.329.tgz)
+
+### Changes
+
+- Add psycopg[binary] dependency to pyproject.toml for PostgreSQL support. ([`cf6b2ef`](https://github.com/OpenG2P/mowsa-nsr/commit/cf6b2ef6a0838e07e5f7fb81b99160e6cd5021ba))
 
 <a id="v-1-2-1-rc-327"></a>
 
