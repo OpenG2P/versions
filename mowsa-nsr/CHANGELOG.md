@@ -6,6 +6,7 @@ _Published automatically._
 
 | Version | Date | Type | Notes |
 | --- | --- | --- | --- |
+| [`1.2.1-rc.327`](#v-1-2-1-rc-327) | 2026-09-25 | release candidate |  |
 | [`1.2.1-rc.325`](#v-1-2-1-rc-325) | 2026-09-25 | release candidate |  |
 | [`1.2.1-rc.323`](#v-1-2-1-rc-323) | 2026-09-25 | release candidate |  |
 | [`1.2.1-rc.320`](#v-1-2-1-rc-320) | 2026-09-25 | release candidate |  |
@@ -156,6 +157,19 @@ _AI summary unavailable — re-run the workflow with `changelog_regenerate=1.2.0
 - Fix data policy Keycloak admin client to use registry-staff-portal. ([`b2e5199`](https://github.com/OpenG2P/mowsa-nsr/commit/b2e519934b3900363db1c449b910fe33416103c0))
 
 # Release candidates
+
+<a id="v-1-2-1-rc-327"></a>
+
+## mowsa-nsr 1.2.1-rc.327 — 2026-09-25
+
+_commit `a4a1808` · changes since 1.2.1-rc.325_
+<!-- build:1.2.1-rc.327 revision:a4a180808c53ce159e83e92e3ded59d5df48a288 ts:1790355255 -->
+
+**Chart:** [mowsa-nsr 1.2.1-rc.327](https://openg2p.github.io/openg2p-helm/mowsa-nsr-1.2.1-rc.327.tgz)
+
+### Changes
+
+- Add greenlet dependency to pyproject.toml for improved concurrency support. ([`acdf518`](https://github.com/OpenG2P/mowsa-nsr/commit/acdf5187d44c199ef55544ef412c73faacf83e72))
 
 <a id="v-1-2-1-rc-325"></a>
 
