@@ -6,6 +6,7 @@ _Published automatically._
 
 | Version | Date | Type | Notes |
 | --- | --- | --- | --- |
+| [`1.2.1-rc.320`](#v-1-2-1-rc-320) | 2026-09-25 | release candidate |  |
 | [`1.2.1-rc.315`](#v-1-2-1-rc-315) | 2026-09-22 | release candidate |  |
 | [`1.2.1-rc.313`](#v-1-2-1-rc-313) | 2026-09-21 | release candidate |  |
 | [`1.2.1-rc.311`](#v-1-2-1-rc-311) | 2026-09-17 | release candidate |  |
@@ -153,6 +154,26 @@ _AI summary unavailable — re-run the workflow with `changelog_regenerate=1.2.0
 - Fix data policy Keycloak admin client to use registry-staff-portal. ([`b2e5199`](https://github.com/OpenG2P/mowsa-nsr/commit/b2e519934b3900363db1c449b910fe33416103c0))
 
 # Release candidates
+
+<a id="v-1-2-1-rc-320"></a>
+
+## mowsa-nsr 1.2.1-rc.320 — 2026-09-25
+
+_commit `e3bb87c` · changes since 1.2.1-rc.315_
+<!-- build:1.2.1-rc.320 revision:e3bb87ce557dbe2da8f80e828014131f45a81a66 ts:1790317133 -->
+
+**Chart:** [mowsa-nsr 1.2.1-rc.320](https://openg2p.github.io/openg2p-helm/mowsa-nsr-1.2.1-rc.320.tgz)
+
+### Summary
+
+_AI summary unavailable — re-run the workflow with `changelog_regenerate=1.2.1-rc.320` to generate it._
+
+### Changes
+
+- [G2P-5711](https://openg2p.atlassian.net/browse/G2P-5711) - Enhance household registration logic by adding validation to prevent removal of the last active household member. ([`72a3ee5`](https://github.com/OpenG2P/mowsa-nsr/commit/72a3ee559d897c2c48f05bd7c703d5ccb1b4ee2f))
+- [G2P-5653](https://openg2p.atlassian.net/browse/G2P-5653) - Make the list fields required, Update SQL metadata for g2p_attribute_values and g2p_register_sections to enhance conflict resolution and improve widget configurations. Change 'data_import_files' to 'import-files' for consistency in g2p_registry_documents. Adjust theme values SQL to streamline theme configurations. ([`65bc429`](https://github.com/OpenG2P/mowsa-nsr/commit/65bc429fb333929bd5efcb94733774c9c89c5647))
+- Update g2p_registry_languages.sql to add new translations ([`a571edf`](https://github.com/OpenG2P/mowsa-nsr/commit/a571edfac84c2e65ec92939ba1be9378e8cfdd30))
+- Enhance G2PRegisterDomainServiceIndividual to clear RID when national ID is not present ([`45181a3`](https://github.com/OpenG2P/mowsa-nsr/commit/45181a30b3ed13d33e14781c04a0daa5c11dda7e))
 
 <a id="v-1-2-1-rc-315"></a>
 
