@@ -6,6 +6,7 @@ _Published automatically._
 
 | Version | Date | Type | Notes |
 | --- | --- | --- | --- |
+| [`0.0.0-develop.439`](#v-0-0-0-develop-439) | 2026-09-27 | develop |  |
 | [`0.0.0-develop.438`](#v-0-0-0-develop-438) | 2026-09-27 | develop |  |
 | [`1.2.2-rc.509`](#v-1-2-2-rc-509) | 2026-09-25 | release candidate |  |
 | [`1.2.2-rc.504`](#v-1-2-2-rc-504) | 2026-09-25 | release candidate |  |
@@ -888,6 +889,19 @@ _commit `9b41f96` · changes since v1.0.0_
 - [G2P-5153](https://openg2p.atlassian.net/browse/G2P-5153) Refactor IAM permission handling and authentication cookie management ([`8a6abe5`](https://github.com/OpenG2P/registry-platform/commit/8a6abe5de479bf2647f89b31fbfa62989114ef3e))
 
 # Develop builds
+
+<a id="v-0-0-0-develop-439"></a>
+
+## registry-platform — develop 0.0.0-develop.439 (2026-09-27)
+
+_commit `df0ab1a` · changes since 0.0.0-develop.438_
+<!-- build:0.0.0-develop.439 revision:df0ab1a3708d23ba75302f770de543b9d9e50fb1 ts:1790523094 -->
+
+**Chart:** [openg2p-registry 0.0.0-develop.439](https://openg2p.github.io/openg2p-helm/openg2p-registry-0.0.0-develop.439.tgz)
+
+### Changes
+
+- [G2P-5335](https://openg2p.atlassian.net/browse/G2P-5335) Port the 1.2 Master Data model to develop: read code lists live from MDS ([G2P-5538](https://openg2p.atlassian.net/browse/G2P-5538)/5457), look partners up in Partner Management instead of MDS's dropped g2p_partners ([G2P-5577](https://openg2p.atlassian.net/browse/G2P-5577)), geo hierarchy rework ([G2P-5369](https://openg2p.atlassian.net/browse/G2P-5369)/5587); repoint the activity-register attribute check at MDS ([`df0ab1a`](https://github.com/OpenG2P/registry-platform/commit/df0ab1a3708d23ba75302f770de543b9d9e50fb1))
 
 <a id="v-0-0-0-develop-438"></a>
 
