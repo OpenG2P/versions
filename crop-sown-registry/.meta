@@ -1,0 +1,4 @@
+name=crop-sown-registry
+kind=service
+repo=https://github.com/OpenG2P/crop-sown-registry
+images=https://hub.docker.com/u/openg2p

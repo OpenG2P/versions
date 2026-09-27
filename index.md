@@ -14,6 +14,7 @@ See the **[versioning & CI docs](https://docs.openg2p.org/operations/deployment/
 - **[awe](./awe/CHANGELOG)** · [repository ↗](https://github.com/OpenG2P/awe)
 - **[commons](./commons/CHANGELOG)** · [repository ↗](https://github.com/OpenG2P/commons)
 - **[consent-manager](./consent-manager/CHANGELOG)** · [repository ↗](https://github.com/OpenG2P/consent-manager)
+- **[crop-sown-registry](./crop-sown-registry/CHANGELOG)** · [repository ↗](https://github.com/OpenG2P/crop-sown-registry)
 - **[disability-registry](./disability-registry/CHANGELOG)** · [repository ↗](https://github.com/OpenG2P/disability-registry)
 - **[farmer-registry](./farmer-registry/CHANGELOG)** · [repository ↗](https://github.com/OpenG2P/farmer-registry)
 - **[g2p-bridge](./g2p-bridge/CHANGELOG)** · [repository ↗](https://github.com/OpenG2P/g2p-bridge)
