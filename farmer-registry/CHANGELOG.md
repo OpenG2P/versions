@@ -6,6 +6,7 @@ _Published automatically._
 
 | Version | Date | Type | Notes |
 | --- | --- | --- | --- |
+| [`0.0.0-develop.211`](#v-0-0-0-develop-211) | 2026-09-27 | develop |  |
 | [`1.2.1-rc.178`](#v-1-2-1-rc-178) | 2026-09-25 | release candidate |  |
 | [`1.2.1-rc.176`](#v-1-2-1-rc-176) | 2026-09-25 | release candidate |  |
 | [`0.0.0-develop.209`](#v-0-0-0-develop-209) | 2026-09-23 | develop |  |
@@ -335,6 +336,26 @@ _commit `3282b92` · changes since 1.2.1-rc.159_
 - [G2P-5616](https://openg2p.atlassian.net/browse/G2P-5616) Enhance household member data model and validation ([`552ec3c`](https://github.com/OpenG2P/farmer-registry/commit/552ec3c4ea0c716b1019e613cb302ba3e4381c42))
 
 # Develop builds
+
+<a id="v-0-0-0-develop-211"></a>
+
+## farmer-registry — develop 0.0.0-develop.211 (2026-09-27)
+
+_commit `336e09b` · changes since 0.0.0-develop.209_
+<!-- build:0.0.0-develop.211 revision:336e09be2b136bc9f46f04a43c5d47bf95d88642 ts:1790524042 -->
+
+**Chart:** [openg2p-farmer-registry 0.0.0-develop.211](https://openg2p.github.io/openg2p-helm/openg2p-farmer-registry-0.0.0-develop.211.tgz)
+
+### Summary
+
+- **Major:** Transition to Master Data 1.1 for live code lists, replacing 12 coded dropdowns with MDS attributes and aligning gender, income, education, and disability codes across various components including enums and templates.
+- Code cleanup: Removed lookup-data and streamlined sample and bulk data handling, enhancing search filters and translations.
+- Version bump: Updated RP version to 0.0.0-develop.439.
+
+### Changes
+
+- Bumped up RP verison to 0.0.0-develop.439 ([`336e09b`](https://github.com/OpenG2P/farmer-registry/commit/336e09be2b136bc9f46f04a43c5d47bf95d88642))
+- [G2P-5335](https://openg2p.atlassian.net/browse/G2P-5335) Read code lists live from Master Data 1.1: switch the 12 coded dropdowns to MDS attributes, drop lookup-data, align gender/income/education/disability codes with MDS across enums, DCI template, sample and bulk data, search filter, translations and perf generators ([`43a8198`](https://github.com/OpenG2P/farmer-registry/commit/43a819885cc7fcf9b914b369c6b3680c28d079e3))
 
 <a id="v-0-0-0-develop-209"></a>
 
