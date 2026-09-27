@@ -6,11 +6,12 @@ _Published automatically._
 
 | Version | Date | Type | Notes |
 | --- | --- | --- | --- |
+| [`0.0.0-develop.438`](#v-0-0-0-develop-438) | 2026-09-27 | develop |  |
 | [`1.2.2-rc.509`](#v-1-2-2-rc-509) | 2026-09-25 | release candidate |  |
 | [`1.2.2-rc.504`](#v-1-2-2-rc-504) | 2026-09-25 | release candidate |  |
 | [`1.2.2-rc.493`](#v-1-2-2-rc-493) | 2026-09-24 | release candidate |  |
 | [`1.2.2-rc.491`](#v-1-2-2-rc-491) | 2026-09-23 | release candidate |  |
-| [`0.0.0-develop.435`](#v-0-0-0-develop-435) | 2026-09-23 | develop |  |
+| [`0.0.0-develop.435`](#v-0-0-0-develop-435) | 2026-09-23 | develop | Marking a version at this point before major changes are done on RP\| |
 | [`1.2.2-rc.489`](#v-1-2-2-rc-489) | 2026-09-17 | release candidate |  |
 | [`1.2.2-rc.487`](#v-1-2-2-rc-487) | 2026-09-17 | release candidate |  |
 | [`1.2.2-rc.485`](#v-1-2-2-rc-485) | 2026-09-17 | release candidate |  |
@@ -888,9 +889,32 @@ _commit `9b41f96` · changes since v1.0.0_
 
 # Develop builds
 
+<a id="v-0-0-0-develop-438"></a>
+
+## registry-platform — develop 0.0.0-develop.438 (2026-09-27)
+
+_commit `fb3ef1a` · changes since 0.0.0-develop.435_
+<!-- build:0.0.0-develop.438 revision:fb3ef1a6ad181f2b574cd497c95afc47de40ed84 ts:1790475324 -->
+
+**Chart:** [openg2p-registry 0.0.0-develop.438](https://openg2p.github.io/openg2p-helm/openg2p-registry-0.0.0-develop.438.tgz)
+
+### Summary
+
+- Database testing: relocated activity DB tests to `tests_integration` to maintain unit test functionality.
+- Feature addition: introduced an append-only ACTIVITY register kind to enhance activity tracking.
+- Security enhancement: updated demo agent password to 'agent' for improved clarity and consistency.
+
+### Changes
+
+- [G2P-5719](https://openg2p.atlassian.net/browse/G2P-5719) Move activity DB tests to tests_integration so unit tests run as before ([`fb3ef1a`](https://github.com/OpenG2P/registry-platform/commit/fb3ef1a6ad181f2b574cd497c95afc47de40ed84))
+- [G2P-5719](https://openg2p.atlassian.net/browse/G2P-5719) Add activity registers: append-only ACTIVITY register kind ([`da35988`](https://github.com/OpenG2P/registry-platform/commit/da3598899e3bc43d8344d4f840b706b509391df8))
+- [G2P-4929](https://openg2p.atlassian.net/browse/G2P-4929) Use 'agent' as the demo agent password ([`27f544c`](https://github.com/OpenG2P/registry-platform/commit/27f544ce7e324f5881660e7f7b9439afc11a2570))
+
 <a id="v-0-0-0-develop-435"></a>
 
 ## registry-platform — develop 0.0.0-develop.435 (2026-09-23)
+
+> **Note** — Marking a version at this point before major changes are done on RP|
 
 _commit `c145e3a` · changes since 0.0.0-develop.432_
 <!-- build:0.0.0-develop.435 revision:c145e3ab1808e9fe8465e438834aaf9a583eec72 ts:1790124509 -->
