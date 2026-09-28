@@ -6,6 +6,7 @@ _Published automatically._
 
 | Version | Date | Type | Notes |
 | --- | --- | --- | --- |
+| [`1.2.2-rc.513`](#v-1-2-2-rc-513) | 2026-09-28 | release candidate |  |
 | [`1.2.2-rc.511`](#v-1-2-2-rc-511) | 2026-09-28 | release candidate |  |
 | [`0.0.0-develop.441`](#v-0-0-0-develop-441) | 2026-09-28 | develop |  |
 | [`0.0.0-develop.439`](#v-0-0-0-develop-439) | 2026-09-27 | develop |  |
@@ -19,7 +20,6 @@ _Published automatically._
 | [`1.2.2-rc.487`](#v-1-2-2-rc-487) | 2026-09-17 | release candidate |  |
 | [`1.2.2-rc.485`](#v-1-2-2-rc-485) | 2026-09-17 | release candidate |  |
 | [`1.2.2-rc.483`](#v-1-2-2-rc-483) | 2026-09-16 | release candidate |  |
-| [`1.2.2-rc.480`](#v-1-2-2-rc-480) | 2026-09-10 | release candidate |  |
 | [`0.0.0-develop.432`](#v-0-0-0-develop-432) | 2026-09-09 | develop |  |
 | [`1.2.1`](#v-1-2-1) | 2026-09-07 | release |  |
 | [`1.2.1-rc.462`](#v-1-2-1-rc-462) | 2026-09-04 | release candidate |  |
@@ -346,6 +346,19 @@ same commit and *promoted* (retagged), not rebuilt. No code changed between them
 
 # Release candidates
 
+<a id="v-1-2-2-rc-513"></a>
+
+## registry-platform 1.2.2-rc.513 — 2026-09-28
+
+_commit `8a7b8ab` · changes since 1.2.2-rc.511_
+<!-- build:1.2.2-rc.513 revision:8a7b8ab60968112f82f75a53b36ee5ec78bb76f1 ts:1790597157 -->
+
+**Chart:** [openg2p-registry 1.2.2-rc.513](https://openg2p.github.io/openg2p-helm/openg2p-registry-1.2.2-rc.513.tgz)
+
+### Changes
+
+- [G2P-5724](https://openg2p.atlassian.net/browse/G2P-5724) Implement date coercion for blank strings in G2P schemas and add corresponding tests. ([`d070a78`](https://github.com/OpenG2P/registry-platform/commit/d070a78486162e0398762ac127b66dc82b7bb26f))
+
 <a id="v-1-2-2-rc-511"></a>
 
 ## registry-platform 1.2.2-rc.511 — 2026-09-28
@@ -492,29 +505,6 @@ _commit `906859c` · changes since 1.2.2-rc.480_
 
 - chore(ui-widgets): version for npm dev publish, sync staff-ui @1.1.9-dev.4 ([`906859c`](https://github.com/OpenG2P/registry-platform/commit/906859c4d45b2b110e8dd5e75627096fee1d7875))
 - [G2P-5680](https://openg2p.atlassian.net/browse/G2P-5680) [G2P-5676](https://openg2p.atlassian.net/browse/G2P-5676) registry-platform fixes ([`582fb3e`](https://github.com/OpenG2P/registry-platform/commit/582fb3ec5f6e51b2a8f0310bc236db4af3d50c42))
-
-<a id="v-1-2-2-rc-480"></a>
-
-## registry-platform 1.2.2-rc.480 — 2026-09-10
-
-_commit `2a26dbe` · changes since 1.2.2-rc.475_
-<!-- build:1.2.2-rc.480 revision:2a26dbe05e2ae626b3786649cd61f31bad16a049 ts:1789024439 -->
-
-**Chart:** [openg2p-registry 1.2.2-rc.480](https://openg2p.github.io/openg2p-helm/openg2p-registry-1.2.2-rc.480.tgz)
-
-### Summary
-
-- UI enhancements: refactored document handling for change requests and intake forms, improved widget theme integration, and fixed z-index issues for the "create new submission" button.
-- Data integrity: implemented validation to prevent adding empty records in list view sections.
-- Dependency updates: synchronized staff-ui to version 1.1.9-dev.3 and updated several package manifests across ui and ui-widgets.
-- Codebase maintenance: added new utility files for section rendering and document storage while removing obsolete example schema files and a DocsWidget component.
-
-### Changes
-
-- chore(ui-widgets): version for npm dev publish, sync staff-ui @1.1.9-dev.3 ([`2a26dbe`](https://github.com/OpenG2P/registry-platform/commit/2a26dbe05e2ae626b3786649cd61f31bad16a049))
-- [G2P-5677](https://openg2p.atlassian.net/browse/G2P-5677) refactor: restructure document handling for change request and intake form ([`48b03ea`](https://github.com/OpenG2P/registry-platform/commit/48b03eaed48094b5b2c6617db9c44ab47332505e))
-- [G2P-5653](https://openg2p.atlassian.net/browse/G2P-5653): Prevent adding empty records in list view sections. ([`18fb63c`](https://github.com/OpenG2P/registry-platform/commit/18fb63c332e7055f9c63b136d011a8580819714d))
-- [G2P-5650](https://openg2p.atlassian.net/browse/G2P-5650) Refactor: improve widgets theme integration and fix z-index of create new submission button ([`9dbaf66`](https://github.com/OpenG2P/registry-platform/commit/9dbaf66b1c9c4d8e10a0a70c4507296314b2b37e))
 
 <a id="v-1-2-1-rc-462"></a>
 
