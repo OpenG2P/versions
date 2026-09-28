@@ -6,6 +6,7 @@ _Published automatically._
 
 | Version | Date | Type | Notes |
 | --- | --- | --- | --- |
+| [`0.0.0-develop.251`](#v-0-0-0-develop-251) | 2026-09-28 | develop |  |
 | [`0.0.0-develop.250`](#v-0-0-0-develop-250) | 2026-09-28 | develop |  |
 | [`0.0.0-develop.245`](#v-0-0-0-develop-245) | 2026-09-23 | develop |  |
 | [`0.0.0-develop.243`](#v-0-0-0-develop-243) | 2026-09-04 | develop |  |
@@ -495,6 +496,19 @@ _commit `ffabcdc` · changes since 2.2.1_
 - Bumped up Master Data Service version. ([`0e52ebf`](https://github.com/OpenG2P/commons/commit/0e52ebf19de3fd2ac8af3c4dd128e0f2857f7162))
 
 # Develop builds
+
+<a id="v-0-0-0-develop-251"></a>
+
+## commons — develop 0.0.0-develop.251 (2026-09-28)
+
+_commit `41f4366` · changes since 0.0.0-develop.250_
+<!-- build:0.0.0-develop.251 revision:41f43668e9076671bb1e2cdbce6a0626d16013ba ts:1790560270 -->
+
+**Charts:** [openg2p-commons-base 0.0.0-develop.251](https://openg2p.github.io/openg2p-helm/openg2p-commons-base-0.0.0-develop.251.tgz) · [openg2p-commons-services 0.0.0-develop.251](https://openg2p.github.io/openg2p-helm/openg2p-commons-services-0.0.0-develop.251.tgz)
+
+### Changes
+
+- Updated MDS version. ([`41f4366`](https://github.com/OpenG2P/commons/commit/41f43668e9076671bb1e2cdbce6a0626d16013ba))
 
 <a id="v-0-0-0-develop-250"></a>
 
