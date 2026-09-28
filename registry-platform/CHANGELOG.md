@@ -7,6 +7,7 @@ _Published automatically._
 | Version | Date | Type | Notes |
 | --- | --- | --- | --- |
 | [`1.2.2-rc.513`](#v-1-2-2-rc-513) | 2026-09-28 | release candidate |  |
+| [`0.0.0-develop.444`](#v-0-0-0-develop-444) | 2026-09-28 | develop |  |
 | [`1.2.2-rc.511`](#v-1-2-2-rc-511) | 2026-09-28 | release candidate |  |
 | [`0.0.0-develop.441`](#v-0-0-0-develop-441) | 2026-09-28 | develop |  |
 | [`0.0.0-develop.439`](#v-0-0-0-develop-439) | 2026-09-27 | develop |  |
@@ -862,6 +863,25 @@ _commit `9b41f96` · changes since v1.0.0_
 - [G2P-5153](https://openg2p.atlassian.net/browse/G2P-5153) Refactor IAM permission handling and authentication cookie management ([`8a6abe5`](https://github.com/OpenG2P/registry-platform/commit/8a6abe5de479bf2647f89b31fbfa62989114ef3e))
 
 # Develop builds
+
+<a id="v-0-0-0-develop-444"></a>
+
+## registry-platform — develop 0.0.0-develop.444 (2026-09-28)
+
+_commit `be2c853` · changes since 0.0.0-develop.441_
+<!-- build:0.0.0-develop.444 revision:be2c853c83d44f1364a35065c9318a7b9e07ec46 ts:1790594963 -->
+
+**Chart:** [openg2p-registry 0.0.0-develop.444](https://openg2p.github.io/openg2p-helm/openg2p-registry-0.0.0-develop.444.tgz)
+
+### Summary
+
+- **Major:** Activity registers enhancement: introduced schema versions, submission IDs, local-record subjects, and enriched aggregates with history; added Activities and Summaries tabs, improved navigation, and included optional database seed folders.
+- UI updates: synchronized staff-portal-ui to version 1.1.9-dev.7 in preparation for npm next publish.
+
+### Changes
+
+- [G2P-5719](https://openg2p.atlassian.net/browse/G2P-5719) Activity registers: schema versions, submission ids, local-record subjects (subject/belongs_to), enrichment and aggregates with history, profile Activities tab, Summaries tab, navigation, optional db-seed folders, add missing columns on upgrade, block ACTIVITY in Add Register ([`b770d95`](https://github.com/OpenG2P/registry-platform/commit/b770d95b5879c2a33912c513a0e64163e1f22309))
+- chore(ui-widgets): version for npm next publish, sync staff-portal-ui @1.1.9-dev.7 [skip ci] ([`74c8de4`](https://github.com/OpenG2P/registry-platform/commit/74c8de418097ea27d59c3f457e51aebf32936d5c))
 
 <a id="v-0-0-0-develop-441"></a>
 
