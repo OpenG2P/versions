@@ -6,6 +6,7 @@ _Published automatically._
 
 | Version | Date | Type | Notes |
 | --- | --- | --- | --- |
+| [`0.0.0-develop.101`](#v-0-0-0-develop-101) | 2026-09-28 | develop |  |
 | [`0.0.0-develop.100`](#v-0-0-0-develop-100) | 2026-09-28 | develop |  |
 | [`0.0.0-develop.99`](#v-0-0-0-develop-99) | 2026-09-27 | develop |  |
 | [`1.1.3`](#v-1-1-3) | 2026-09-04 | release |  |
@@ -473,6 +474,19 @@ _commit `4ffaad7` · changes since the start (showing the latest 20 commits)_
 - [G2P-4804](https://openg2p.atlassian.net/browse/G2P-4804) Lowercase the geo-seed Job name. This template renders at the chart root, where .Chart.Name is the vendored subchart name — the commons-services umbrella carries it as `masterData`, so the Job came out as commons-services-masterData-geo-seed, which Kubernetes rejects. The hook failed, no geography or code lists were seeded, and the whole commons-services release went to `failed`. The API templates were unaffected because they render against a scoped context whose nameOverride is already lowercase. ([`83bfaee`](https://github.com/OpenG2P/master-data-service/commit/83bfaee9ae49249adb12589b0da1a290bf02f9fa))
 
 # Develop builds
+
+<a id="v-0-0-0-develop-101"></a>
+
+## master-data-service — develop 0.0.0-develop.101 (2026-09-28)
+
+_commit `935dd43` · changes since 0.0.0-develop.100_
+<!-- build:0.0.0-develop.101 revision:935dd436f3d36675a1c46cc051831cb6531f137c ts:1790559745 -->
+
+**Chart:** [openg2p-master-data 0.0.0-develop.101](https://openg2p.github.io/openg2p-helm/openg2p-master-data-0.0.0-develop.101.tgz)
+
+### Changes
+
+- [G2P-5335](https://openg2p.atlassian.net/browse/G2P-5335) master-data-api: pin sqlalchemy[asyncio] &gt;=2.0,&lt;2.1 — it was only transitive via fastapi-common (&gt;=2.0.20), so the build resolved SQLAlchemy 2.1, which no longer installs greenlet, and the API crashed at import ([`935dd43`](https://github.com/OpenG2P/master-data-service/commit/935dd436f3d36675a1c46cc051831cb6531f137c))
 
 <a id="v-0-0-0-develop-100"></a>
 
