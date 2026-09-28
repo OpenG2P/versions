@@ -6,6 +6,7 @@ _Published automatically._
 
 | Version | Date | Type | Notes |
 | --- | --- | --- | --- |
+| [`1.2.2-rc.511`](#v-1-2-2-rc-511) | 2026-09-28 | release candidate |  |
 | [`0.0.0-develop.439`](#v-0-0-0-develop-439) | 2026-09-27 | develop |  |
 | [`0.0.0-develop.438`](#v-0-0-0-develop-438) | 2026-09-27 | develop |  |
 | [`1.2.2-rc.509`](#v-1-2-2-rc-509) | 2026-09-25 | release candidate |  |
@@ -18,7 +19,6 @@ _Published automatically._
 | [`1.2.2-rc.485`](#v-1-2-2-rc-485) | 2026-09-17 | release candidate |  |
 | [`1.2.2-rc.483`](#v-1-2-2-rc-483) | 2026-09-16 | release candidate |  |
 | [`1.2.2-rc.480`](#v-1-2-2-rc-480) | 2026-09-10 | release candidate |  |
-| [`1.2.2-rc.475`](#v-1-2-2-rc-475) | 2026-09-10 | release candidate |  |
 | [`0.0.0-develop.432`](#v-0-0-0-develop-432) | 2026-09-09 | develop |  |
 | [`1.2.1`](#v-1-2-1) | 2026-09-07 | release |  |
 | [`1.2.1-rc.462`](#v-1-2-1-rc-462) | 2026-09-04 | release candidate |  |
@@ -345,6 +345,19 @@ same commit and *promoted* (retagged), not rebuilt. No code changed between them
 
 # Release candidates
 
+<a id="v-1-2-2-rc-511"></a>
+
+## registry-platform 1.2.2-rc.511 — 2026-09-28
+
+_commit `f183f59` · changes since 1.2.2-rc.509_
+<!-- build:1.2.2-rc.511 revision:f183f595d3ef5ad15cb609744ba4b0c81cf63da5 ts:1790581397 -->
+
+**Chart:** [openg2p-registry 1.2.2-rc.511](https://openg2p.github.io/openg2p-helm/openg2p-registry-1.2.2-rc.511.tgz)
+
+### Changes
+
+- [G2P-5721](https://openg2p.atlassian.net/browse/G2P-5721) Connect outgoing messages to Outgestion APIs and update message counts ([`89b841a`](https://github.com/OpenG2P/registry-platform/commit/89b841a2884f548f629977c2057ad6c8984e3017))
+
 <a id="v-1-2-2-rc-509"></a>
 
 ## registry-platform 1.2.2-rc.509 — 2026-09-25
@@ -501,37 +514,6 @@ _commit `2a26dbe` · changes since 1.2.2-rc.475_
 - [G2P-5677](https://openg2p.atlassian.net/browse/G2P-5677) refactor: restructure document handling for change request and intake form ([`48b03ea`](https://github.com/OpenG2P/registry-platform/commit/48b03eaed48094b5b2c6617db9c44ab47332505e))
 - [G2P-5653](https://openg2p.atlassian.net/browse/G2P-5653): Prevent adding empty records in list view sections. ([`18fb63c`](https://github.com/OpenG2P/registry-platform/commit/18fb63c332e7055f9c63b136d011a8580819714d))
 - [G2P-5650](https://openg2p.atlassian.net/browse/G2P-5650) Refactor: improve widgets theme integration and fix z-index of create new submission button ([`9dbaf66`](https://github.com/OpenG2P/registry-platform/commit/9dbaf66b1c9c4d8e10a0a70c4507296314b2b37e))
-
-<a id="v-1-2-2-rc-475"></a>
-
-## registry-platform 1.2.2-rc.475 — 2026-09-10
-
-_commit `c729b9b` · changes since 1.2.1_
-<!-- build:1.2.2-rc.475 revision:c729b9bf23c1f6ffc1000790bcae512b6035f60a ts:1789018628 -->
-
-**Chart:** [openg2p-registry 1.2.2-rc.475](https://openg2p.github.io/openg2p-helm/openg2p-registry-1.2.2-rc.475.tgz)
-
-### Summary
-
-- **Major:** New feature integration: added G2PSectionDocumentReconcileService for improved document handling, including reconciliation of live section documents on approval and hydration of section documents.
-- Refactoring: simplified G2PChangeRequestSectionPayloadService by removing unused schema handling, replaced session maker initialization with get_async_session_maker for better session management, and stripped non-ORM fields from change-request rows.
-- Testing enhancements: updated validation tests for document labels and empty documents, and added coverage for section-document reconciliation.
-- Document management improvements: maintained separation of CR documents from section document sets and introduced nested section documents in change payloads, along with document history events and a section-document index.
-
-### Changes
-
-- [G2P-5670](https://openg2p.atlassian.net/browse/G2P-5670) test(core): update section document validation tests to assert correct handling of document labels and empty documents ([`9ff905d`](https://github.com/OpenG2P/registry-platform/commit/9ff905da15b2b434518d8cfa31ae89b0339c6b56))
-- [G2P-5670](https://openg2p.atlassian.net/browse/G2P-5670) refactor(core): simplify G2PChangeRequestSectionPayloadService by removing unused schema handling and validation logic ([`866ffbc`](https://github.com/OpenG2P/registry-platform/commit/866ffbcdc1524b76e18520616a5566a3ad8f1490))
-- refactor(core): replace session maker initialization with get_async_session_maker for improved session management ([`833930c`](https://github.com/OpenG2P/registry-platform/commit/833930c7c736727c6a3e55ea2792732694ad22d3))
-- [G2P-5670](https://openg2p.atlassian.net/browse/G2P-5670) feat(core): integrate G2PSectionDocumentReconcileService into initialization and update document widget handling ([`c535dc2`](https://github.com/OpenG2P/registry-platform/commit/c535dc2217939cca7cd83e79fd2de94b46e0d57e))
-- [G2P-5670](https://openg2p.atlassian.net/browse/G2P-5670) test(core): cover section-document reconciliation ([`6a6731d`](https://github.com/OpenG2P/registry-platform/commit/6a6731dc706b81775d3658d8c341bb81e9a3bae7))
-- [G2P-5670](https://openg2p.atlassian.net/browse/G2P-5670) feat(core): keep supporting CR docs separate from section document sets ([`71fec54`](https://github.com/OpenG2P/registry-platform/commit/71fec54ab82598449eea2f4e1605a8bdc1eef5b5))
-- [G2P-5670](https://openg2p.atlassian.net/browse/G2P-5670) feat(core): reconcile live section documents on approval ([`77fab78`](https://github.com/OpenG2P/registry-platform/commit/77fab781aeaa1ef7cef780ba904dd6fb6e1e617c))
-- [G2P-5670](https://openg2p.atlassian.net/browse/G2P-5670) feat(core): hydrate section documents and reconstruct as-of sets ([`4102f1e`](https://github.com/OpenG2P/registry-platform/commit/4102f1e61ad8448095d091f7043ef200186ef919))
-- [G2P-5655](https://openg2p.atlassian.net/browse/G2P-5655) refactor(core): strip non-ORM fields from change-request rows ([`c688e1c`](https://github.com/OpenG2P/registry-platform/commit/c688e1c1cb80178e4387775cea7d8c915faca03d))
-- [G2P-5670](https://openg2p.atlassian.net/browse/G2P-5670) feat(core): add nested section documents on change payload ([`3406f62`](https://github.com/OpenG2P/registry-platform/commit/3406f6276c807543e7ce254ec903946075bb7cfd))
-- [G2P-5670](https://openg2p.atlassian.net/browse/G2P-5670) feat(core): add document history events and section-document index ([`aca0eeb`](https://github.com/OpenG2P/registry-platform/commit/aca0eeb6a5870f7aa35530a5887c771825bb542e))
-- Revert partial orm_cache import from 2fc7fdc ([`b41e229`](https://github.com/OpenG2P/registry-platform/commit/b41e22906ae3d78e69c2646d1c8320c3ba9022ca))
 
 <a id="v-1-2-1-rc-462"></a>
 
