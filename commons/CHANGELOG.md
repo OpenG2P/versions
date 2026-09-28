@@ -6,6 +6,7 @@ _Published automatically._
 
 | Version | Date | Type | Notes |
 | --- | --- | --- | --- |
+| [`0.0.0-develop.258`](#v-0-0-0-develop-258) | 2026-09-28 | develop |  |
 | [`0.0.0-develop.255`](#v-0-0-0-develop-255) | 2026-09-28 | develop |  |
 | [`0.0.0-develop.253`](#v-0-0-0-develop-253) | 2026-09-28 | develop |  |
 | [`0.0.0-develop.251`](#v-0-0-0-develop-251) | 2026-09-28 | develop |  |
@@ -498,6 +499,19 @@ _commit `ffabcdc` · changes since 2.2.1_
 - Bumped up Master Data Service version. ([`0e52ebf`](https://github.com/OpenG2P/commons/commit/0e52ebf19de3fd2ac8af3c4dd128e0f2857f7162))
 
 # Develop builds
+
+<a id="v-0-0-0-develop-258"></a>
+
+## commons — develop 0.0.0-develop.258 (2026-09-28)
+
+_commit `dda5213` · changes since 0.0.0-develop.255_
+<!-- build:0.0.0-develop.258 revision:dda5213063fd40f74164b02befbdaaa5cc0e822a ts:1790598152 -->
+
+**Charts:** [openg2p-commons-base 0.0.0-develop.258](https://openg2p.github.io/openg2p-helm/openg2p-commons-base-0.0.0-develop.258.tgz) · [openg2p-commons-services 0.0.0-develop.258](https://openg2p.github.io/openg2p-helm/openg2p-commons-services-0.0.0-develop.258.tgz)
+
+### Changes
+
+- [G2P-5706](https://openg2p.atlassian.net/browse/G2P-5706) Refactor Novu API token handling and update virtual service gateway configuration ([`ea76bf9`](https://github.com/OpenG2P/commons/commit/ea76bf97757f58a89258fb37c80202c12d059a69))
 
 <a id="v-0-0-0-develop-255"></a>
 
