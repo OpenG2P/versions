@@ -6,6 +6,7 @@ _Published automatically._
 
 | Version | Date | Type | Notes |
 | --- | --- | --- | --- |
+| [`0.0.0-develop.102`](#v-0-0-0-develop-102) | 2026-09-28 | develop |  |
 | [`0.0.0-develop.101`](#v-0-0-0-develop-101) | 2026-09-28 | develop |  |
 | [`0.0.0-develop.100`](#v-0-0-0-develop-100) | 2026-09-28 | develop |  |
 | [`0.0.0-develop.99`](#v-0-0-0-develop-99) | 2026-09-27 | develop |  |
@@ -474,6 +475,19 @@ _commit `4ffaad7` · changes since the start (showing the latest 20 commits)_
 - [G2P-4804](https://openg2p.atlassian.net/browse/G2P-4804) Lowercase the geo-seed Job name. This template renders at the chart root, where .Chart.Name is the vendored subchart name — the commons-services umbrella carries it as `masterData`, so the Job came out as commons-services-masterData-geo-seed, which Kubernetes rejects. The hook failed, no geography or code lists were seeded, and the whole commons-services release went to `failed`. The API templates were unaffected because they render against a scoped context whose nameOverride is already lowercase. ([`83bfaee`](https://github.com/OpenG2P/master-data-service/commit/83bfaee9ae49249adb12589b0da1a290bf02f9fa))
 
 # Develop builds
+
+<a id="v-0-0-0-develop-102"></a>
+
+## master-data-service — develop 0.0.0-develop.102 (2026-09-28)
+
+_commit `60572a4` · changes since 0.0.0-develop.101_
+<!-- build:0.0.0-develop.102 revision:60572a4b1d55210f50ff2de3350a8d1ac3af057e ts:1790560899 -->
+
+**Chart:** [openg2p-master-data 0.0.0-develop.102](https://openg2p.github.io/openg2p-helm/openg2p-master-data-0.0.0-develop.102.tgz)
+
+### Changes
+
+- [G2P-5335](https://openg2p.atlassian.net/browse/G2P-5335) master-data chart: lowercase the chart part of the iam-register ConfigMap/Job names — under commons-services the chart name is the alias `masterData`, which is not a valid Kubernetes name, so the upgrade failed at the iam-register hook ([`60572a4`](https://github.com/OpenG2P/master-data-service/commit/60572a4b1d55210f50ff2de3350a8d1ac3af057e))
 
 <a id="v-0-0-0-develop-101"></a>
 
