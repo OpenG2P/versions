@@ -6,12 +6,32 @@ _Published automatically._
 
 | Version | Date | Type | Notes |
 | --- | --- | --- | --- |
+| [`0.0.0-develop.11`](#v-0-0-0-develop-11) | 2026-09-29 | develop |  |
 | [`0.0.0-develop.9`](#v-0-0-0-develop-9) | 2026-09-28 | develop |  |
 | [`0.0.0-develop.6`](#v-0-0-0-develop-6) | 2026-09-28 | develop |  |
 | [`0.0.0-develop.5`](#v-0-0-0-develop-5) | 2026-09-27 | develop |  |
 | [`0.0.0-develop.4`](#v-0-0-0-develop-4) | 2026-09-27 | develop |  |
 
 # Develop builds
+
+<a id="v-0-0-0-develop-11"></a>
+
+## crop-sown-registry — develop 0.0.0-develop.11 (2026-09-29)
+
+_commit `393f014` · changes since 0.0.0-develop.9_
+<!-- build:0.0.0-develop.11 revision:393f0146b22f583f85ae4849e5a995b6c25e8254 ts:1790646685 -->
+
+**Chart:** [openg2p-crop-sown-registry 0.0.0-develop.11](https://openg2p.github.io/openg2p-helm/openg2p-crop-sown-registry-0.0.0-develop.11.tgz)
+
+### Summary
+
+- **Major:** Introduced uninstall-registry.sh for streamlined removal of the registry, tailored for this release's persistent volumes.
+- Version bump to RP 0.0.0-develop.444, indicating ongoing development and updates.
+
+### Changes
+
+- Bumped up RP version to 0.0.0-develop.444 ([`393f014`](https://github.com/OpenG2P/crop-sown-registry/commit/393f0146b22f583f85ae4849e5a995b6c25e8254))
+- [G2P-5719](https://openg2p.atlassian.net/browse/G2P-5719) Add uninstall-registry.sh (adapted from FR; no Superset step; only this release's PVs) ([`4cfd71a`](https://github.com/OpenG2P/crop-sown-registry/commit/4cfd71ab7ea66cd4e38c3cf59e0aa24ff4aeaa71))
 
 <a id="v-0-0-0-develop-9"></a>
 
