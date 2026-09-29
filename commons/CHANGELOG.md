@@ -6,6 +6,7 @@ _Published automatically._
 
 | Version | Date | Type | Notes |
 | --- | --- | --- | --- |
+| [`0.0.0-develop.260`](#v-0-0-0-develop-260) | 2026-09-29 | develop |  |
 | [`0.0.0-develop.258`](#v-0-0-0-develop-258) | 2026-09-28 | develop |  |
 | [`0.0.0-develop.255`](#v-0-0-0-develop-255) | 2026-09-28 | develop |  |
 | [`0.0.0-develop.253`](#v-0-0-0-develop-253) | 2026-09-28 | develop |  |
@@ -499,6 +500,19 @@ _commit `ffabcdc` · changes since 2.2.1_
 - Bumped up Master Data Service version. ([`0e52ebf`](https://github.com/OpenG2P/commons/commit/0e52ebf19de3fd2ac8af3c4dd128e0f2857f7162))
 
 # Develop builds
+
+<a id="v-0-0-0-develop-260"></a>
+
+## commons — develop 0.0.0-develop.260 (2026-09-29)
+
+_commit `134820a` · changes since 0.0.0-develop.258_
+<!-- build:0.0.0-develop.260 revision:134820ab5f826ba9d84d19cc10353e97107e665c ts:1790685567 -->
+
+**Charts:** [openg2p-commons-base 0.0.0-develop.260](https://openg2p.github.io/openg2p-helm/openg2p-commons-base-0.0.0-develop.260.tgz) · [openg2p-commons-services 0.0.0-develop.260](https://openg2p.github.io/openg2p-helm/openg2p-commons-services-0.0.0-develop.260.tgz)
+
+### Changes
+
+- [G2P-5725](https://openg2p.atlassian.net/browse/G2P-5725) Add workflow job for Novu ([`76522ba`](https://github.com/OpenG2P/commons/commit/76522bade071c218abaf9148a2287f93ef2e29a3))
 
 <a id="v-0-0-0-develop-258"></a>
 
