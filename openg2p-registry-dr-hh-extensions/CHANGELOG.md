@@ -6,12 +6,26 @@ _Published automatically._
 
 | Version | Date | Type | Notes |
 | --- | --- | --- | --- |
+| [`0.0.0-develop.39`](#v-0-0-0-develop-39) | 2026-09-29 | develop |  |
 | [`0.0.0-develop.38`](#v-0-0-0-develop-38) | 2026-09-28 | develop |  |
 | [`0.0.0-develop.32`](#v-0-0-0-develop-32) | 2026-09-24 | develop |  |
 | [`0.0.0-develop.29`](#v-0-0-0-develop-29) | 2026-09-24 | develop |  |
 | [`0.0.0-develop.26`](#v-0-0-0-develop-26) | 2026-09-17 | develop |  |
 
 # Develop builds
+
+<a id="v-0-0-0-develop-39"></a>
+
+## openg2p-registry-dr-hh-extensions — develop 0.0.0-develop.39 (2026-09-29)
+
+_commit `c767d52` · changes since 0.0.0-develop.38_
+<!-- build:0.0.0-develop.39 revision:c767d524b7ee2246f53ef5da59f0af9de6677d9e ts:1790663399 -->
+
+**Chart:** [dom-household-registry 0.0.0-develop.39](https://openg2p.github.io/openg2p-helm/dom-household-registry-0.0.0-develop.39.tgz)
+
+### Changes
+
+- Refactor hh_monthly_income type to int and remove unused score_compute services ([`c767d52`](https://github.com/OpenG2P/openg2p-registry-dr-hh-extensions/commit/c767d524b7ee2246f53ef5da59f0af9de6677d9e))
 
 <a id="v-0-0-0-develop-38"></a>
 
