@@ -6,6 +6,7 @@ _Published automatically._
 
 | Version | Date | Type | Notes |
 | --- | --- | --- | --- |
+| [`2.3.4-rc.234`](#v-2-3-4-rc-234) | 2026-09-30 | release candidate |  |
 | [`0.0.0-develop.260`](#v-0-0-0-develop-260) | 2026-09-29 | develop |  |
 | [`0.0.0-develop.258`](#v-0-0-0-develop-258) | 2026-09-28 | develop |  |
 | [`0.0.0-develop.255`](#v-0-0-0-develop-255) | 2026-09-28 | develop |  |
@@ -399,6 +400,29 @@ _commit `44278e8` · first release_
 - Initial commit ([`04cc8c6`](https://github.com/OpenG2P/openg2p-commons-deployment/commit/04cc8c6f16ae3132d62a9b80087c0cea81ce472d))
 
 # Release candidates
+
+<a id="v-2-3-4-rc-234"></a>
+
+## commons 2.3.4-rc.234 — 2026-09-30
+
+_commit `ee6f7e6` · changes since 2.3.3_
+<!-- build:2.3.4-rc.234 revision:ee6f7e6112f6fff8ffd2cbddfbc2580b8e9b14df ts:1790772138 -->
+
+**Charts:** [openg2p-commons-base 2.3.4-rc.234](https://openg2p.github.io/openg2p-helm/openg2p-commons-base-2.3.4-rc.234.tgz) · [openg2p-commons-services 2.3.4-rc.234](https://openg2p.github.io/openg2p-helm/openg2p-commons-services-2.3.4-rc.234.tgz)
+
+### Summary
+
+- Dependency updates: bumped versions for openg2p-master-data to 1.1.3 and openg2p-iam-service to 1.4.3, and updated mock-identity-system in Chart.yaml.
+- Configuration enhancement: added keycloak-init configuration to allow overriding job names.
+- Fixes: resolved conflict in master-data DB secret and user password key with keycloak client secret, and renamed openg2p-master-data dependency alias to ensure DNS-safe Helm resource names.
+
+### Changes
+
+- chore(commons-services): bump dependency versions for openg2p-master-data, mock-identity-system, and openg2p-iam-service in Chart.yaml ([`155cca3`](https://github.com/OpenG2P/commons/commit/155cca3e07300da12d8a14bde7fa47570bcd0686))
+- feat(commons-services): add keycloak-init configuration to override job name. ([`b25126b`](https://github.com/OpenG2P/commons/commit/b25126b93aa203b2b3fce5e8e35a2353e4621a9e))
+- fix(commons-services): update master-data DB secret and user password key because it was conflicting with master-data keycloak client secret key. ([`eb5811f`](https://github.com/OpenG2P/commons/commit/eb5811fcb60ea7427727e09c32be088ae04108b5))
+- fix(commons-services): use DNS-safe master-data chart alias Rename the openg2p-master-data dependency alias from masterData to master-data so Helm-rendered iam-register resource names (e.g. ConfigMap commons-services-master-data-iam-register-payload) stay lowercase RFC 1123. ([`e260b6a`](https://github.com/OpenG2P/commons/commit/e260b6ac7b6a0ebfd64331485beda92f6ab97cac))
+- Bump versions of openg2p-master-data to 1.1.3 and openg2p-iam-service to 1.4.3 in Chart.yaml ([`67c655b`](https://github.com/OpenG2P/commons/commit/67c655b1e458df9f7618dde1f7f3c8d199df2334))
 
 <a id="v-2-3-3-rc-227"></a>
 
