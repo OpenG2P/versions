@@ -6,9 +6,23 @@ _Published automatically._
 
 | Version | Date | Type | Notes |
 | --- | --- | --- | --- |
+| [`0.0.0-develop.9`](#v-0-0-0-develop-9) | 2026-09-30 | develop |  |
 | [`0.0.0-develop.7`](#v-0-0-0-develop-7) | 2026-08-28 | develop |  |
 
 # Develop builds
+
+<a id="v-0-0-0-develop-9"></a>
+
+## mock-id-system — develop 0.0.0-develop.9 (2026-09-30)
+
+_commit `e85ab9c` · changes since 0.0.0-develop.7_
+<!-- build:0.0.0-develop.9 revision:e85ab9c07ee91998d4e2a1793076ccf4bdf85a08 ts:1790770809 -->
+
+**Chart:** [mock-identity-system 0.0.0-develop.9](https://openg2p.github.io/openg2p-helm/mock-identity-system-0.0.0-develop.9.tgz)
+
+### Changes
+
+- Update identity seed configuration to match renamed secrets ([`ac821ec`](https://github.com/OpenG2P/mock-id-system/commit/ac821ec6fbfbb39e23afaa90bded64938d41b5e6))
 
 <a id="v-0-0-0-develop-7"></a>
 
