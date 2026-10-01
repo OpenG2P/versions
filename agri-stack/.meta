@@ -1,0 +1,4 @@
+name=agri-stack
+kind=service
+repo=https://github.com/OpenG2P/agri-stack
+images=https://hub.docker.com/r/openg2p/openg2p-agri-composite-api
