@@ -6,6 +6,7 @@ _Published automatically._
 
 | Version | Date | Type | Notes |
 | --- | --- | --- | --- |
+| [`0.0.0-develop.447`](#v-0-0-0-develop-447) | 2026-10-01 | develop |  |
 | [`0.0.0-develop.446`](#v-0-0-0-develop-446) | 2026-09-30 | develop |  |
 | [`1.2.2-rc.513`](#v-1-2-2-rc-513) | 2026-09-28 | release candidate |  |
 | [`0.0.0-develop.444`](#v-0-0-0-develop-444) | 2026-09-28 | develop |  |
@@ -864,6 +865,19 @@ _commit `9b41f96` · changes since v1.0.0_
 - [G2P-5153](https://openg2p.atlassian.net/browse/G2P-5153) Refactor IAM permission handling and authentication cookie management ([`8a6abe5`](https://github.com/OpenG2P/registry-platform/commit/8a6abe5de479bf2647f89b31fbfa62989114ef3e))
 
 # Develop builds
+
+<a id="v-0-0-0-develop-447"></a>
+
+## registry-platform — develop 0.0.0-develop.447 (2026-10-01)
+
+_commit `9921c82` · changes since 0.0.0-develop.446_
+<!-- build:0.0.0-develop.447 revision:9921c8279613a880854556342821e0a1cbaf7bf8 ts:1790817685 -->
+
+**Chart:** [openg2p-registry 0.0.0-develop.447](https://openg2p.github.io/openg2p-helm/openg2p-registry-0.0.0-develop.447.tgz)
+
+### Changes
+
+- [G2P-5719](https://openg2p.atlassian.net/browse/G2P-5719) Activity register phase 1: typed participants (participant_roles, g2p_activity_participants, search by participant), context replacement link, partner correct_activities endpoint, sample-data task and sample_activities hook, staff UI participants and replaced-by links, tests ([`9921c82`](https://github.com/OpenG2P/registry-platform/commit/9921c8279613a880854556342821e0a1cbaf7bf8))
 
 <a id="v-0-0-0-develop-446"></a>
 
