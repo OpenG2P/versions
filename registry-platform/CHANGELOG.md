@@ -6,6 +6,7 @@ _Published automatically._
 
 | Version | Date | Type | Notes |
 | --- | --- | --- | --- |
+| [`0.0.0-develop.448`](#v-0-0-0-develop-448) | 2026-10-01 | develop |  |
 | [`0.0.0-develop.447`](#v-0-0-0-develop-447) | 2026-10-01 | develop |  |
 | [`0.0.0-develop.446`](#v-0-0-0-develop-446) | 2026-09-30 | develop |  |
 | [`1.2.2-rc.513`](#v-1-2-2-rc-513) | 2026-09-28 | release candidate |  |
@@ -865,6 +866,19 @@ _commit `9b41f96` · changes since v1.0.0_
 - [G2P-5153](https://openg2p.atlassian.net/browse/G2P-5153) Refactor IAM permission handling and authentication cookie management ([`8a6abe5`](https://github.com/OpenG2P/registry-platform/commit/8a6abe5de479bf2647f89b31fbfa62989114ef3e))
 
 # Develop builds
+
+<a id="v-0-0-0-develop-448"></a>
+
+## registry-platform — develop 0.0.0-develop.448 (2026-10-01)
+
+_commit `f0bbc3a` · changes since 0.0.0-develop.447_
+<!-- build:0.0.0-develop.448 revision:f0bbc3a9727426ca95eef676cbc2b50be076833a ts:1790819467 -->
+
+**Chart:** [openg2p-registry 0.0.0-develop.448](https://openg2p.github.io/openg2p-helm/openg2p-registry-0.0.0-develop.448.tgz)
+
+### Changes
+
+- [G2P-5719](https://openg2p.atlassian.net/browse/G2P-5719) DCI: exact subject queries on activity registers with filters on any plain field (activities, state, aggregates); exact-field register search returns linked records; ISO date-time filters ([`f0bbc3a`](https://github.com/OpenG2P/registry-platform/commit/f0bbc3a9727426ca95eef676cbc2b50be076833a))
 
 <a id="v-0-0-0-develop-447"></a>
 
