@@ -6,13 +6,14 @@ _Published automatically._
 
 | Version | Date | Type | Notes |
 | --- | --- | --- | --- |
+| [`0.0.0-develop.59`](#v-0-0-0-develop-59) | 2026-10-01 | develop |  |
 | [`1.0.3`](#v-1-0-3) | 2026-09-04 | release |  |
 | [`1.0.3-rc.63`](#v-1-0-3-rc-63) | 2026-09-04 | release candidate |  |
 | [`1.0.2`](#v-1-0-2) | 2026-09-01 | release |  |
 | [`1.0.2-rc.61`](#v-1-0-2-rc-61) | 2026-09-01 | release candidate |  |
 | [`1.0.1`](#v-1-0-1) | 2026-09-01 | release |  |
 | [`1.0.1-rc.59`](#v-1-0-1-rc-59) | 2026-09-01 | release candidate |  |
-| [`0.0.0-develop.58`](#v-0-0-0-develop-58) | 2026-09-01 | develop |  |
+| [`0.0.0-develop.58`](#v-0-0-0-develop-58) | 2026-09-01 | develop | Marking this working version before major changes are don |
 | [`1.0.1-rc.58`](#v-1-0-1-rc-58) | 2026-09-01 | release candidate |  |
 | [`1.0.0`](#v-1-0-0) | 2026-09-01 | release |  |
 | [`1.0.0-rc.57`](#v-1-0-0-rc-57) | 2026-09-01 | release candidate |  |
@@ -260,9 +261,24 @@ _No new commits since 0.0.0-develop.57._
 
 # Develop builds
 
+<a id="v-0-0-0-develop-59"></a>
+
+## consent-manager — develop 0.0.0-develop.59 (2026-10-01)
+
+_commit `87648fe` · changes since 0.0.0-develop.58_
+<!-- build:0.0.0-develop.59 revision:87648fe12ae2c0d80f2595538bfe8bd4bd5ff0aa ts:1790867869 -->
+
+**Chart:** [openg2p-consent-manager 0.0.0-develop.59](https://openg2p.github.io/openg2p-helm/openg2p-consent-manager-0.0.0-develop.59.tgz)
+
+### Changes
+
+- [G2P-5719](https://openg2p.atlassian.net/browse/G2P-5719) Single consent with one grant per registry: grants claim, data_controller on /validate, bindings per (partner, controller), replay per (jti, controller), subject_mismatch, consent requests with grants, UI, tests ([`87648fe`](https://github.com/OpenG2P/consent-manager/commit/87648fe12ae2c0d80f2595538bfe8bd4bd5ff0aa))
+
 <a id="v-0-0-0-develop-58"></a>
 
 ## consent-manager — develop 0.0.0-develop.58 (2026-09-01)
+
+> **Note** — Marking this working version before major changes are don
 
 _commit `5361069` · changes since 0.0.0-develop.57_
 <!-- build:0.0.0-develop.58 revision:536106974a7f6d67501a45dfc02cb9da95348f37 ts:1788255124 -->
