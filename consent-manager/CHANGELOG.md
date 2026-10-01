@@ -6,6 +6,7 @@ _Published automatically._
 
 | Version | Date | Type | Notes |
 | --- | --- | --- | --- |
+| [`0.0.0-develop.60`](#v-0-0-0-develop-60) | 2026-10-01 | develop |  |
 | [`0.0.0-develop.59`](#v-0-0-0-develop-59) | 2026-10-01 | develop |  |
 | [`1.0.3`](#v-1-0-3) | 2026-09-04 | release |  |
 | [`1.0.3-rc.63`](#v-1-0-3-rc-63) | 2026-09-04 | release candidate |  |
@@ -260,6 +261,19 @@ _commit `c67030b` · changes since 0.0.0-develop.57_
 _No new commits since 0.0.0-develop.57._
 
 # Develop builds
+
+<a id="v-0-0-0-develop-60"></a>
+
+## consent-manager — develop 0.0.0-develop.60 (2026-10-01)
+
+_commit `c6c6382` · changes since 0.0.0-develop.59_
+<!-- build:0.0.0-develop.60 revision:c6c63829dd0edf492365b93689717095530b797a ts:1790868794 -->
+
+**Chart:** [openg2p-consent-manager 0.0.0-develop.60](https://openg2p.github.io/openg2p-helm/openg2p-consent-manager-0.0.0-develop.60.tgz)
+
+### Changes
+
+- [G2P-5719](https://openg2p.atlassian.net/browse/G2P-5719) Return a stored consent decision only after the binding and signature check, and only for the same consent (reused jti → replay); tests; .env.example wording ([`c6c6382`](https://github.com/OpenG2P/consent-manager/commit/c6c63829dd0edf492365b93689717095530b797a))
 
 <a id="v-0-0-0-develop-59"></a>
 
