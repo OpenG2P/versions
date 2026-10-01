@@ -6,6 +6,7 @@ _Published automatically._
 
 | Version | Date | Type | Notes |
 | --- | --- | --- | --- |
+| [`0.0.0-develop.453`](#v-0-0-0-develop-453) | 2026-10-01 | develop |  |
 | [`0.0.0-develop.448`](#v-0-0-0-develop-448) | 2026-10-01 | develop |  |
 | [`0.0.0-develop.447`](#v-0-0-0-develop-447) | 2026-10-01 | develop |  |
 | [`0.0.0-develop.446`](#v-0-0-0-develop-446) | 2026-09-30 | develop |  |
@@ -866,6 +867,31 @@ _commit `9b41f96` · changes since v1.0.0_
 - [G2P-5153](https://openg2p.atlassian.net/browse/G2P-5153) Refactor IAM permission handling and authentication cookie management ([`8a6abe5`](https://github.com/OpenG2P/registry-platform/commit/8a6abe5de479bf2647f89b31fbfa62989114ef3e))
 
 # Develop builds
+
+<a id="v-0-0-0-develop-453"></a>
+
+## registry-platform — develop 0.0.0-develop.453 (2026-10-01)
+
+_commit `cc9fced` · changes since 0.0.0-develop.448_
+<!-- build:0.0.0-develop.453 revision:cc9fced3e767771e81799491e6e2a7947c404637 ts:1790871499 -->
+
+**Chart:** [openg2p-registry 0.0.0-develop.453](https://openg2p.github.io/openg2p-helm/openg2p-registry-0.0.0-develop.453.tgz)
+
+### Summary
+
+- **Major:** Registry-neutral naming conventions introduced, with deprecated aliases maintained for backward compatibility; includes updates to core test fixtures and documentation.
+- Consent management enhancements: enforcement of consent per registry and subject, with data_controller sent to CM and logging for on_behalf_of actions.
+- Data integrity improvements: final aggregates now locked by period, with late changes reverting to provisional status; DCI aggregate search enhanced for allow-listed partners.
+- UI updates: activity interface now excludes register-specific fields, ensuring consistency across context fields and UI hints.
+- Bug fixes: resolved issues with record view and intake forms by addressing synchronous data-policy condition builders.
+
+### Changes
+
+- [G2P-5719](https://openg2p.atlassian.net/browse/G2P-5719) Registry-neutral naming: sanity RECORD_*/record_seeded/register_id (old names kept as deprecated aliases), chart sanity.registerId (farmerRegisterId still honoured), neutral sanity defaults, core test fixtures TestPerson/TestParcel, generic docs; sanity consent for the registry's own data controller ([`cc9fced`](https://github.com/OpenG2P/registry-platform/commit/cc9fced3e767771e81799491e6e2a7947c404637))
+- [G2P-5719](https://openg2p.atlassian.net/browse/G2P-5719) Consent per registry and subject enforcement: send data_controller to CM, consent subject must be the person searched (records, or linked via subject_id_fields), log on_behalf_of; chart consentDataController ([`6ae86aa`](https://github.com/OpenG2P/registry-platform/commit/6ae86aa282097416b9ae869a1dc33d2b78b21952))
+- [G2P-5719](https://openg2p.atlassian.net/browse/G2P-5719) Final aggregates on period lock (is_final; late changes revert to provisional until relocked); DCI aggregate search across subjects for allow-listed partners, with is_final filter ([`fcceac6`](https://github.com/OpenG2P/registry-platform/commit/fcceac693c31fd219fb122f5f2ea90f641938715))
+- [G2P-5719](https://openg2p.atlassian.net/browse/G2P-5719) Activity UI holds no register-specific fields: context_fields (locked in corrections, enforced on supersede) and ui_hints (summary fields, context columns, batch carry fields, search hints) from the domain service ([`a8a09e4`](https://github.com/OpenG2P/registry-platform/commit/a8a09e4e647029509517b9e47f79e01efc881c0d))
+- [G2P-5719](https://openg2p.atlassian.net/browse/G2P-5719) Fix record view and intake forms: don't await the synchronous data-policy condition builders (SYS-ERR-001 on get_subject_record) ([`c08eb7c`](https://github.com/OpenG2P/registry-platform/commit/c08eb7c8be7cae10dadaefcbaa68d7b134bd152c))
 
 <a id="v-0-0-0-develop-448"></a>
 
