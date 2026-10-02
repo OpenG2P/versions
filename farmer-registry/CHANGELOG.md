@@ -6,6 +6,7 @@ _Published automatically._
 
 | Version | Date | Type | Notes |
 | --- | --- | --- | --- |
+| [`0.0.0-develop.218`](#v-0-0-0-develop-218) | 2026-10-02 | develop |  |
 | [`0.0.0-develop.215`](#v-0-0-0-develop-215) | 2026-10-01 | develop |  |
 | [`0.0.0-develop.211`](#v-0-0-0-develop-211) | 2026-09-27 | develop |  |
 | [`1.2.1-rc.178`](#v-1-2-1-rc-178) | 2026-09-25 | release candidate |  |
@@ -337,6 +338,27 @@ _commit `3282b92` · changes since 1.2.1-rc.159_
 - [G2P-5616](https://openg2p.atlassian.net/browse/G2P-5616) Enhance household member data model and validation ([`552ec3c`](https://github.com/OpenG2P/farmer-registry/commit/552ec3c4ea0c716b1019e613cb302ba3e4381c42))
 
 # Develop builds
+
+<a id="v-0-0-0-develop-218"></a>
+
+## farmer-registry — develop 0.0.0-develop.218 (2026-10-02)
+
+_commit `ed73955` · changes since 0.0.0-develop.215_
+<!-- build:0.0.0-develop.218 revision:ed73955e7f6e0706bdcbcbd819d169935f032161 ts:1790900606 -->
+
+**Chart:** [openg2p-farmer-registry 0.0.0-develop.218](https://openg2p.github.io/openg2p-helm/openg2p-farmer-registry-0.0.0-develop.218.tgz)
+
+### Summary
+
+- **Major:** Replaced the Crops tab with a new CROP_COMMODITY multi-select for declared main crops on the farmer, retiring crop register metadata and updating related sample data, DCI, reporting, and dashboards.
+- Data model updates: Introduced platform-neutral naming conventions for sanity overlay, including RECORD_* and record_seeded identifiers.
+- Version bump: Updated RP version to 0.0.0-develop.453.
+
+### Changes
+
+- Bumped up RP version to 0.0.0-develop.453 ([`ed73955`](https://github.com/OpenG2P/farmer-registry/commit/ed73955e7f6e0706bdcbcbd819d169935f032161))
+- [G2P-5719](https://openg2p.atlassian.net/browse/G2P-5719) Sanity overlay: use the platform's neutral names (RECORD_*, record_seeded, cfg.register_id, sanity.registerId); ([`8eeb6c5`](https://github.com/OpenG2P/farmer-registry/commit/8eeb6c59ace1748f0830806b28987c276d6fa3c1))
+- [G2P-5719](https://openg2p.atlassian.net/browse/G2P-5719) Replace Crops tab with declared main crops on the farmer (CROP_COMMODITY multi-select); retire crop register metadata on upgrade; main-crop sample data, DCI, reporting and dashboards ([`ee93733`](https://github.com/OpenG2P/farmer-registry/commit/ee93733bcc0b5e39b75eda1e8b5bd36209ff0191))
 
 <a id="v-0-0-0-develop-215"></a>
 
