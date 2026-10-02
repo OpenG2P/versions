@@ -6,6 +6,7 @@ _Published automatically._
 
 | Version | Date | Type | Notes |
 | --- | --- | --- | --- |
+| [`1.2.2-rc.515`](#v-1-2-2-rc-515) | 2026-10-02 | release candidate |  |
 | [`0.0.0-develop.453`](#v-0-0-0-develop-453) | 2026-10-01 | develop |  |
 | [`0.0.0-develop.448`](#v-0-0-0-develop-448) | 2026-10-01 | develop |  |
 | [`0.0.0-develop.447`](#v-0-0-0-develop-447) | 2026-10-01 | develop |  |
@@ -24,7 +25,6 @@ _Published automatically._
 | [`1.2.2-rc.489`](#v-1-2-2-rc-489) | 2026-09-17 | release candidate |  |
 | [`1.2.2-rc.487`](#v-1-2-2-rc-487) | 2026-09-17 | release candidate |  |
 | [`1.2.2-rc.485`](#v-1-2-2-rc-485) | 2026-09-17 | release candidate |  |
-| [`1.2.2-rc.483`](#v-1-2-2-rc-483) | 2026-09-16 | release candidate |  |
 | [`0.0.0-develop.432`](#v-0-0-0-develop-432) | 2026-09-09 | develop |  |
 | [`1.2.1`](#v-1-2-1) | 2026-09-07 | release |  |
 | [`1.2.1-rc.462`](#v-1-2-1-rc-462) | 2026-09-04 | release candidate |  |
@@ -351,6 +351,19 @@ same commit and *promoted* (retagged), not rebuilt. No code changed between them
 
 # Release candidates
 
+<a id="v-1-2-2-rc-515"></a>
+
+## registry-platform 1.2.2-rc.515 — 2026-10-02
+
+_commit `d9981c9` · changes since 1.2.2-rc.513_
+<!-- build:1.2.2-rc.515 revision:d9981c9ef01c641f1b37574bd8ed780c36011f20 ts:1790920560 -->
+
+**Chart:** [openg2p-registry 1.2.2-rc.515](https://openg2p.github.io/openg2p-helm/openg2p-registry-1.2.2-rc.515.tgz)
+
+### Changes
+
+- Update FASTAPI_COMMON_REF to version 1.2 ([`c68d29f`](https://github.com/OpenG2P/registry-platform/commit/c68d29f293ca29ca0b8b7100c7bf34db33c76111))
+
 <a id="v-1-2-2-rc-513"></a>
 
 ## registry-platform 1.2.2-rc.513 — 2026-09-28
@@ -489,27 +502,6 @@ _commit `6052286` · changes since 1.2.2-rc.483_
 ### Changes
 
 - [G2P-5677](https://openg2p.atlassian.net/browse/G2P-5677) refactor: streamline document handling and update identifiers across various components ([`b3169fa`](https://github.com/OpenG2P/registry-platform/commit/b3169fabdb6b250b4dc232b49bcbe06f29baf768))
-
-<a id="v-1-2-2-rc-483"></a>
-
-## registry-platform 1.2.2-rc.483 — 2026-09-16
-
-_commit `906859c` · changes since 1.2.2-rc.480_
-<!-- build:1.2.2-rc.483 revision:906859c4d45b2b110e8dd5e75627096fee1d7875 ts:1789532536 -->
-
-**Chart:** [openg2p-registry 1.2.2-rc.483](https://openg2p.github.io/openg2p-helm/openg2p-registry-1.2.2-rc.483.tgz)
-
-### Summary
-
-- Dependency updates: synchronized versions for `staff-ui` to 1.1.9-dev.4 and updated `ui-widgets` package manifests.
-- UI enhancements: minor fixes applied to the registry-platform, improving overall functionality.
-- Testing improvements: added a new test file for change request record name validation in the core module.
-- Docker configuration: adjustments made to streamline the build process.
-
-### Changes
-
-- chore(ui-widgets): version for npm dev publish, sync staff-ui @1.1.9-dev.4 ([`906859c`](https://github.com/OpenG2P/registry-platform/commit/906859c4d45b2b110e8dd5e75627096fee1d7875))
-- [G2P-5680](https://openg2p.atlassian.net/browse/G2P-5680) [G2P-5676](https://openg2p.atlassian.net/browse/G2P-5676) registry-platform fixes ([`582fb3e`](https://github.com/OpenG2P/registry-platform/commit/582fb3ec5f6e51b2a8f0310bc236db4af3d50c42))
 
 <a id="v-1-2-1-rc-462"></a>
 
