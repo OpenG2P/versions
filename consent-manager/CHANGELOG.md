@@ -6,6 +6,7 @@ _Published automatically._
 
 | Version | Date | Type | Notes |
 | --- | --- | --- | --- |
+| [`0.0.0-develop.61`](#v-0-0-0-develop-61) | 2026-10-02 | develop |  |
 | [`0.0.0-develop.60`](#v-0-0-0-develop-60) | 2026-10-01 | develop |  |
 | [`0.0.0-develop.59`](#v-0-0-0-develop-59) | 2026-10-01 | develop |  |
 | [`1.0.3`](#v-1-0-3) | 2026-09-04 | release |  |
@@ -261,6 +262,19 @@ _commit `c67030b` · changes since 0.0.0-develop.57_
 _No new commits since 0.0.0-develop.57._
 
 # Develop builds
+
+<a id="v-0-0-0-develop-61"></a>
+
+## consent-manager — develop 0.0.0-develop.61 (2026-10-02)
+
+_commit `21e817a` · changes since 0.0.0-develop.60_
+<!-- build:0.0.0-develop.61 revision:21e817aaede8dbecd11f78775932aae7cb139786 ts:1790903028 -->
+
+**Chart:** [openg2p-consent-manager 0.0.0-develop.61](https://openg2p.github.io/openg2p-helm/openg2p-consent-manager-0.0.0-develop.61.tgz)
+
+### Changes
+
+- [G2P-5719](https://openg2p.atlassian.net/browse/G2P-5719) Pin sqlalchemy[asyncio] &lt;2.1: the image died at import without greenlet ([`21e817a`](https://github.com/OpenG2P/consent-manager/commit/21e817aaede8dbecd11f78775932aae7cb139786))
 
 <a id="v-0-0-0-develop-60"></a>
 
