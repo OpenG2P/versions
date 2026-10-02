@@ -6,9 +6,23 @@ _Published automatically._
 
 | Version | Date | Type | Notes |
 | --- | --- | --- | --- |
+| [`0.0.0-develop.23`](#v-0-0-0-develop-23) | 2026-10-02 | develop |  |
 | [`0.0.0-develop.22`](#v-0-0-0-develop-22) | 2026-10-01 | develop |  |
 
 # Develop builds
+
+<a id="v-0-0-0-develop-23"></a>
+
+## agri-stack — develop 0.0.0-develop.23 (2026-10-02)
+
+_commit `a27df2b` · changes since 0.0.0-develop.22_
+<!-- build:0.0.0-develop.23 revision:a27df2ba4a9ae7590fb131a8ef1da233526a5ec2 ts:1790868230 -->
+
+**Chart:** [openg2p-agri-composite 0.0.0-develop.23](https://openg2p.github.io/openg2p-helm/openg2p-agri-composite-0.0.0-develop.23.tgz)
+
+### Changes
+
+- [G2P-5719](https://openg2p.atlassian.net/browse/G2P-5719) CI: build and publish only when composite/ changes, not on docs-only pushes ([`a27df2b`](https://github.com/OpenG2P/agri-stack/commit/a27df2ba4a9ae7590fb131a8ef1da233526a5ec2))
 
 <a id="v-0-0-0-develop-22"></a>
 
