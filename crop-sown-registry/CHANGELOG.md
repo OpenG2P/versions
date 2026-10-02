@@ -6,6 +6,7 @@ _Published automatically._
 
 | Version | Date | Type | Notes |
 | --- | --- | --- | --- |
+| [`0.0.0-develop.21`](#v-0-0-0-develop-21) | 2026-10-02 | develop |  |
 | [`0.0.0-develop.17`](#v-0-0-0-develop-17) | 2026-10-01 | develop |  |
 | [`0.0.0-develop.11`](#v-0-0-0-develop-11) | 2026-09-29 | develop |  |
 | [`0.0.0-develop.9`](#v-0-0-0-develop-9) | 2026-09-28 | develop |  |
@@ -14,6 +15,28 @@ _Published automatically._
 | [`0.0.0-develop.4`](#v-0-0-0-develop-4) | 2026-09-27 | develop |  |
 
 # Develop builds
+
+<a id="v-0-0-0-develop-21"></a>
+
+## crop-sown-registry — develop 0.0.0-develop.21 (2026-10-02)
+
+_commit `b580a2e` · changes since 0.0.0-develop.17_
+<!-- build:0.0.0-develop.21 revision:b580a2e01771b4e00a1c1066fae4389eb233d630 ts:1790900560 -->
+
+**Chart:** [openg2p-crop-sown-registry 0.0.0-develop.21](https://openg2p.github.io/openg2p-helm/openg2p-crop-sown-registry-0.0.0-develop.21.tgz)
+
+### Summary
+
+- New feature: Linked farmer ID to Fayda FAN for consent checks and implemented final summaries for farmer season data, including period locking and validation tests.
+- Data integrity: Introduced context fields and UI hints to prevent corrections from altering crop season data, with associated tests to ensure compliance.
+- Version update: Bumped RP version to 0.0.0-develop.453.
+
+### Changes
+
+- Bumped up RP version to 0.0.0-develop.453. ([`b580a2e`](https://github.com/OpenG2P/crop-sown-registry/commit/b580a2e01771b4e00a1c1066fae4389eb233d630))
+- [G2P-5719](https://openg2p.atlassian.net/browse/G2P-5719) Link farmer ID to Fayda FAN for consent checks (subject_id_fields); tests ([`34842c0`](https://github.com/OpenG2P/crop-sown-registry/commit/34842c0405bb09a0c668b7f462f2fe5e4038ad1d))
+- [G2P-5719](https://openg2p.atlassian.net/browse/G2P-5719) Farmer season summary final on period lock (is_final in DCI); tests for final summaries and searches across farmers ([`9e65500`](https://github.com/OpenG2P/crop-sown-registry/commit/9e6550049415f556c052d62db01fc99debfe6d37))
+- [G2P-5719](https://openg2p.atlassian.net/browse/G2P-5719) Declare context fields and UI hints; test that a correction can't change the crop season ([`b66b6de`](https://github.com/OpenG2P/crop-sown-registry/commit/b66b6dedafe14d50dbb126bf842a63b43268fa2c))
 
 <a id="v-0-0-0-develop-17"></a>
 
