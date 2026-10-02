@@ -6,6 +6,7 @@ _Published automatically._
 
 | Version | Date | Type | Notes |
 | --- | --- | --- | --- |
+| [`1.1.4-rc.102`](#v-1-1-4-rc-102) | 2026-10-02 | release candidate |  |
 | [`1.1.4-rc.100`](#v-1-1-4-rc-100) | 2026-09-30 | release candidate |  |
 | [`0.0.0-develop.102`](#v-0-0-0-develop-102) | 2026-09-28 | develop |  |
 | [`0.0.0-develop.101`](#v-0-0-0-develop-101) | 2026-09-28 | develop |  |
@@ -207,6 +208,19 @@ same commit and *promoted* (retagged), not rebuilt. No code changed between them
 - [G2P-5538](https://openg2p.atlassian.net/browse/G2P-5538) Add initial seed data for G2P attributes and values ([`a10123b`](https://github.com/OpenG2P/master-data-service/commit/a10123ba53ecf75d4cc2e8663b19d217851fd135))
 
 # Release candidates
+
+<a id="v-1-1-4-rc-102"></a>
+
+## master-data-service 1.1.4-rc.102 — 2026-10-02
+
+_commit `bbd624d` · changes since 1.1.4-rc.100_
+<!-- build:1.1.4-rc.102 revision:bbd624de8bb65b5a2930359df1fea96a626ea350 ts:1790920577 -->
+
+**Chart:** [openg2p-master-data 1.1.4-rc.102](https://openg2p.github.io/openg2p-helm/openg2p-master-data-1.1.4-rc.102.tgz)
+
+### Changes
+
+- Update FASTAPI_COMMON_REF to version 1.2 in Dockerfile ([`9335519`](https://github.com/OpenG2P/master-data-service/commit/9335519c2658d3c7b8cd45b7b0725398b532ad19))
 
 <a id="v-1-1-4-rc-100"></a>
 
