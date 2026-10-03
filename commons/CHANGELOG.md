@@ -6,6 +6,7 @@ _Published automatically._
 
 | Version | Date | Type | Notes |
 | --- | --- | --- | --- |
+| [`0.0.0-develop.265`](#v-0-0-0-develop-265) | 2026-10-03 | develop |  |
 | [`0.0.0-develop.261`](#v-0-0-0-develop-261) | 2026-10-02 | develop |  |
 | [`2.3.4-rc.236`](#v-2-3-4-rc-236) | 2026-10-01 | release candidate |  |
 | [`2.3.4-rc.234`](#v-2-3-4-rc-234) | 2026-09-30 | release candidate |  |
@@ -539,6 +540,27 @@ _commit `ffabcdc` · changes since 2.2.1_
 - Bumped up Master Data Service version. ([`0e52ebf`](https://github.com/OpenG2P/commons/commit/0e52ebf19de3fd2ac8af3c4dd128e0f2857f7162))
 
 # Develop builds
+
+<a id="v-0-0-0-develop-265"></a>
+
+## commons — develop 0.0.0-develop.265 (2026-10-03)
+
+_commit `34d4b6b` · changes since 0.0.0-develop.261_
+<!-- build:0.0.0-develop.265 revision:34d4b6b6dc4cb94290116460a8a5ad51f00c95eb ts:1790990996 -->
+
+**Charts:** [openg2p-commons-base 0.0.0-develop.265](https://openg2p.github.io/openg2p-helm/openg2p-commons-base-0.0.0-develop.265.tgz) · [openg2p-commons-services 0.0.0-develop.265](https://openg2p.github.io/openg2p-helm/openg2p-commons-services-0.0.0-develop.265.tgz)
+
+### Summary
+
+- **Major:** Updated MDS version to improve compatibility and functionality.
+- CI/build improvements: Fixed Build & Publish process by redirecting the garage dependency to the openg2p-helm mirror, resolving issues with the git+https protocol handler.
+- New feature: Added Garage deployment configuration to streamline deployment processes.
+
+### Changes
+
+- MDS bumped up. ([`34d4b6b`](https://github.com/OpenG2P/commons/commit/34d4b6b6dc4cb94290116460a8a5ad51f00c95eb))
+- Fix commons Build &amp; Publish: point the garage dependency at the openg2p-helm mirror instead of git+https://git.deuxfleurs.fr (the git+ scheme needs the helm-git plugin, which the CI runner does not have, so helm dep up failed on commons-base with "could not find protocol handler for: git+https"); the mirrored garage 0.9.2 / v2.2.0 is identical to the v2.2.0 git ref apart from helm-package Chart.yaml normalisation ([`2df8a89`](https://github.com/OpenG2P/commons/commit/2df8a89a6a7bc451d18b6d41a410ce0b4f70221d))
+- Add Garage deployment configuration ([`dba77bd`](https://github.com/OpenG2P/commons/commit/dba77bd49d9dfc3e1d8d072b22e1bcc5bd8736d9))
 
 <a id="v-0-0-0-develop-261"></a>
 
