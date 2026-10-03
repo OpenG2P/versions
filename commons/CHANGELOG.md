@@ -6,6 +6,7 @@ _Published automatically._
 
 | Version | Date | Type | Notes |
 | --- | --- | --- | --- |
+| [`0.0.0-develop.269`](#v-0-0-0-develop-269) | 2026-10-03 | develop |  |
 | [`0.0.0-develop.265`](#v-0-0-0-develop-265) | 2026-10-03 | develop |  |
 | [`0.0.0-develop.261`](#v-0-0-0-develop-261) | 2026-10-02 | develop |  |
 | [`2.3.4-rc.236`](#v-2-3-4-rc-236) | 2026-10-01 | release candidate |  |
@@ -540,6 +541,25 @@ _commit `ffabcdc` · changes since 2.2.1_
 - Bumped up Master Data Service version. ([`0e52ebf`](https://github.com/OpenG2P/commons/commit/0e52ebf19de3fd2ac8af3c4dd128e0f2857f7162))
 
 # Develop builds
+
+<a id="v-0-0-0-develop-269"></a>
+
+## commons — develop 0.0.0-develop.269 (2026-10-03)
+
+_commit `7d4afed` · changes since 0.0.0-develop.265_
+<!-- build:0.0.0-develop.269 revision:7d4afed977345332235968d2ef35242624dffc20 ts:1790991348 -->
+
+**Charts:** [openg2p-commons-base 0.0.0-develop.269](https://openg2p.github.io/openg2p-helm/openg2p-commons-base-0.0.0-develop.269.tgz) · [openg2p-commons-services 0.0.0-develop.269](https://openg2p.github.io/openg2p-helm/openg2p-commons-services-0.0.0-develop.269.tgz)
+
+### Summary
+
+- Helm chart updates: modified commons-services helm charts to utilize a global domain for IAM, master data, and staff portal.
+- Pre-commit fixes implemented to enhance code quality and consistency.
+
+### Changes
+
+- pre-commit fixes ([`bde6107`](https://github.com/OpenG2P/commons/commit/bde6107dd5351c60fae9674e1a98e62b51e12461))
+- [[G2P-5692](https://openg2p.atlassian.net/browse/G2P-5692)] Updated commons-services helm charts to take global domain for iam, masterdata, staff portal helm chart. ([`87b990e`](https://github.com/OpenG2P/commons/commit/87b990edbefc14fd7d920e802340fd0ccb504df0))
 
 <a id="v-0-0-0-develop-265"></a>
 
