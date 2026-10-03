@@ -6,6 +6,7 @@ _Published automatically._
 
 | Version | Date | Type | Notes |
 | --- | --- | --- | --- |
+| [`0.0.0-develop.221`](#v-0-0-0-develop-221) | 2026-10-03 | develop |  |
 | [`0.0.0-develop.218`](#v-0-0-0-develop-218) | 2026-10-02 | develop |  |
 | [`0.0.0-develop.215`](#v-0-0-0-develop-215) | 2026-10-01 | develop |  |
 | [`0.0.0-develop.211`](#v-0-0-0-develop-211) | 2026-09-27 | develop |  |
@@ -338,6 +339,27 @@ _commit `3282b92` · changes since 1.2.1-rc.159_
 - [G2P-5616](https://openg2p.atlassian.net/browse/G2P-5616) Enhance household member data model and validation ([`552ec3c`](https://github.com/OpenG2P/farmer-registry/commit/552ec3c4ea0c716b1019e613cb302ba3e4381c42))
 
 # Develop builds
+
+<a id="v-0-0-0-develop-221"></a>
+
+## farmer-registry — develop 0.0.0-develop.221 (2026-10-03)
+
+_commit `2b3cb0e` · changes since 0.0.0-develop.218_
+<!-- build:0.0.0-develop.221 revision:2b3cb0e6f5d4c2f4432bb81b44e303b5d5524f0c ts:1791021149 -->
+
+**Chart:** [openg2p-farmer-registry 0.0.0-develop.221](https://openg2p.github.io/openg2p-helm/openg2p-farmer-registry-0.0.0-develop.221.tgz)
+
+### Summary
+
+- **Major:** Transitioned registries to exclusively interact with MDS via its API, removing direct database access and eliminating loadGeoData/syncGeoWidgets functions.
+- Reporting enhancement: Large reports over 500 KB are now compressed into a zip file with a summary page for GitBook integration.
+- Version bump to RP 0.0.0-develop.599, indicating ongoing development updates.
+
+### Changes
+
+- Bumped up RP version to 0.0.0-develop.599 ([`2b3cb0e`](https://github.com/OpenG2P/farmer-registry/commit/2b3cb0e6f5d4c2f4432bb81b44e303b5d5524f0c))
+- [G2P-5719](https://openg2p.atlassian.net/browse/G2P-5719) Registries never touch MDS's database: drop loadGeoData/syncGeoWidgets, seed scripts and analytics Jobs read MDS via its API (mds_client) ([`f44d04b`](https://github.com/OpenG2P/farmer-registry/commit/f44d04b94681efc19c4182f27675e23ed37ba080))
+- [G2P-5719](https://openg2p.atlassian.net/browse/G2P-5719) create_raw_report.py: reports over 500 KB go to a zip with a short summary page for GitBook ([`74be0a9`](https://github.com/OpenG2P/farmer-registry/commit/74be0a94c8c0237b39a98a6cf032e6dee7d6f9f4))
 
 <a id="v-0-0-0-develop-218"></a>
 
