@@ -6,6 +6,7 @@ _Published automatically._
 
 | Version | Date | Type | Notes |
 | --- | --- | --- | --- |
+| [`0.0.0-develop.103`](#v-0-0-0-develop-103) | 2026-10-03 | develop |  |
 | [`1.1.4-rc.102`](#v-1-1-4-rc-102) | 2026-10-02 | release candidate |  |
 | [`1.1.4-rc.100`](#v-1-1-4-rc-100) | 2026-09-30 | release candidate |  |
 | [`0.0.0-develop.102`](#v-0-0-0-develop-102) | 2026-09-28 | develop |  |
@@ -531,6 +532,19 @@ _commit `4ffaad7` · changes since the start (showing the latest 20 commits)_
 - [G2P-4804](https://openg2p.atlassian.net/browse/G2P-4804) Lowercase the geo-seed Job name. This template renders at the chart root, where .Chart.Name is the vendored subchart name — the commons-services umbrella carries it as `masterData`, so the Job came out as commons-services-masterData-geo-seed, which Kubernetes rejects. The hook failed, no geography or code lists were seeded, and the whole commons-services release went to `failed`. The API templates were unaffected because they render against a scoped context whose nameOverride is already lowercase. ([`83bfaee`](https://github.com/OpenG2P/master-data-service/commit/83bfaee9ae49249adb12589b0da1a290bf02f9fa))
 
 # Develop builds
+
+<a id="v-0-0-0-develop-103"></a>
+
+## master-data-service — develop 0.0.0-develop.103 (2026-10-03)
+
+_commit `b198ada` · changes since 0.0.0-develop.102_
+<!-- build:0.0.0-develop.103 revision:b198ada899868ea63a26773261ed4d257baecfae ts:1790989624 -->
+
+**Chart:** [openg2p-master-data 0.0.0-develop.103](https://openg2p.github.io/openg2p-helm/openg2p-master-data-0.0.0-develop.103.tgz)
+
+### Changes
+
+- [G2P-5719](https://openg2p.atlassian.net/browse/G2P-5719) MDS as catalogue: versioned lists and geography (drafts, DB-enforced immutable published versions, never-reused numbers), approval by permission or AWE, geography change events and crosswalk, versioned MinIO boundaries, releases, typed attributes and i18n, change-log outbox to Audit Manager and WebSub, catalogue-aware pack loader, display names, UI extended (versions, drafts, approvals, diff, geography changes, releases, recent changes), tests ([`b198ada`](https://github.com/OpenG2P/master-data-service/commit/b198ada899868ea63a26773261ed4d257baecfae))
 
 <a id="v-0-0-0-develop-102"></a>
 
