@@ -6,6 +6,7 @@ _Published automatically._
 
 | Version | Date | Type | Notes |
 | --- | --- | --- | --- |
+| [`0.0.0-develop.599`](#v-0-0-0-develop-599) | 2026-10-03 | develop |  |
 | [`1.2.2-rc.515`](#v-1-2-2-rc-515) | 2026-10-02 | release candidate |  |
 | [`0.0.0-develop.453`](#v-0-0-0-develop-453) | 2026-10-01 | develop |  |
 | [`0.0.0-develop.448`](#v-0-0-0-develop-448) | 2026-10-01 | develop |  |
@@ -859,6 +860,130 @@ _commit `9b41f96` · changes since v1.0.0_
 - [G2P-5153](https://openg2p.atlassian.net/browse/G2P-5153) Refactor IAM permission handling and authentication cookie management ([`8a6abe5`](https://github.com/OpenG2P/registry-platform/commit/8a6abe5de479bf2647f89b31fbfa62989114ef3e))
 
 # Develop builds
+
+<a id="v-0-0-0-develop-599"></a>
+
+## registry-platform — develop 0.0.0-develop.599 (2026-10-03)
+
+_commit `a8c4996` · changes since 0.0.0-develop.453_
+<!-- build:0.0.0-develop.599 revision:a8c499600f29b355ec0008f3fa1f5e9bf7bc06d9 ts:1791020592 -->
+
+**Chart:** [openg2p-registry 0.0.0-develop.599](https://openg2p.github.io/openg2p-helm/openg2p-registry-0.0.0-develop.599.tgz)
+
+### Summary
+
+- **Major:** Transition to Master Data Service (MDS) integration: removed direct database access, implemented API-based data retrieval, and introduced versioned caching and change feeds.
+- Enhancements to Celery: workers and beat now wait for Redis before starting, with improved liveness checks to ensure worker reliability.
+- Refactorings: streamlined document handling across various components, improved session management with `get_async_session_maker`, and enhanced validation in change request processing.
+- New features: implemented G2P register export functionality, including APIs and worker tasks, and enhanced Section Builder capabilities.
+- UI improvements: updated widget themes, fixed layout issues, and refined the change request UI for better user experience.
+- Dependency updates: upgraded `FASTAPI_COMMON_REF` to version 1.2 and updated IAM service references to align with GitLab.
+- Bug fixes: addressed issues with change requests, document removal, and list view record handling to improve overall stability and user experience.
+
+### Changes
+
+- [G2P-5719](https://openg2p.atlassian.net/browse/G2P-5719) Minor ([`a8c4996`](https://github.com/OpenG2P/registry-platform/commit/a8c499600f29b355ec0008f3fa1f5e9bf7bc06d9))
+- [G2P-5719](https://openg2p.atlassian.net/browse/G2P-5719) Registries never touch MDS's database: drop loadGeoData/syncGeoWidgets, seed scripts read MDS via its API (mds_client), geo levels from MDS at runtime, MD DB env only in db read mode ([`e7e6e26`](https://github.com/OpenG2P/registry-platform/commit/e7e6e269ea7b482800a9662a197a5920cc7c0832))
+- [G2P-5719](https://openg2p.atlassian.net/browse/G2P-5719) Read Master Data through the MDS catalogue API (versioned cache, change feed, stale-on-error, client credentials); record catalogue_versions on activities; db read mode kept as rollback; chart and Rancher questions ([`6603727`](https://github.com/OpenG2P/registry-platform/commit/6603727f421c5e9c08a27cbcfb9fbfe0e7ac6b1e))
+- Update FASTAPI_COMMON_REF to version 1.2 ([`c68d29f`](https://github.com/OpenG2P/registry-platform/commit/c68d29f293ca29ca0b8b7100c7bf34db33c76111))
+- [G2P-5719](https://openg2p.atlassian.net/browse/G2P-5719) Celery worker and beat wait for Redis before starting; worker liveness probe pings the worker (a worker that stops consuming is restarted) ([`a5aa01a`](https://github.com/OpenG2P/registry-platform/commit/a5aa01a0c98771d54869745df733ea284e571c62))
+- [G2P-5724](https://openg2p.atlassian.net/browse/G2P-5724) Implement date coercion for blank strings in G2P schemas and add corresponding tests. ([`d070a78`](https://github.com/OpenG2P/registry-platform/commit/d070a78486162e0398762ac127b66dc82b7bb26f))
+- [G2P-5721](https://openg2p.atlassian.net/browse/G2P-5721) Connect outgoing messages to Outgestion APIs and update message counts ([`89b841a`](https://github.com/OpenG2P/registry-platform/commit/89b841a2884f548f629977c2057ad6c8984e3017))
+- chore(ui-widgets): version for npm dev publish, sync staff-ui @1.1.9-dev.6 ([`35c2e15`](https://github.com/OpenG2P/registry-platform/commit/35c2e15c1d20dcdf01120351af8fd19d1db2ba83))
+- [G2P-5717](https://openg2p.atlassian.net/browse/G2P-5717) Add function to detect file widgets and include the document object in the record. ([`7607771`](https://github.com/OpenG2P/registry-platform/commit/76077712a26886cd57d85ce452b6a22983882c79))
+- [G2P-5716](https://openg2p.atlassian.net/browse/G2P-5716) refactor: Remove required asterisk mark from table header ([`88b0766`](https://github.com/OpenG2P/registry-platform/commit/88b0766dee7a533f76a6f3a7b3be89dac3fc9cd9))
+- chart: run iam-register before db-seed, and give celery-beat a consumed queue ([`b2c29e9`](https://github.com/OpenG2P/registry-platform/commit/b2c29e950f2ce36f75580dc8783803f254a04aad))
+- chore(ui-widgets): version for npm dev publish, sync staff-ui @1.1.9-dev.5 ([`ea16fc0`](https://github.com/OpenG2P/registry-platform/commit/ea16fc0e590562524a56098c8b8f8dc3d5ebaacd))
+- [G2P-5709](https://openg2p.atlassian.net/browse/G2P-5709) fix: Change request is creating even no change has done ([`534cbf5`](https://github.com/OpenG2P/registry-platform/commit/534cbf5952e87502b9bbdb69b68ad26d8dee9f56))
+- [G2P-5712](https://openg2p.atlassian.net/browse/G2P-5712) fix: List view records removal is throwing error 400 Bad request ([`ab37249`](https://github.com/OpenG2P/registry-platform/commit/ab37249f869b04fb723d859e5967f2dc323c9070))
+- [G2P-5655](https://openg2p.atlassian.net/browse/G2P-5655) Fix explicit null link handling in _update_existing_record method and add unit tests ([`1d6ed8f`](https://github.com/OpenG2P/registry-platform/commit/1d6ed8fb352564b443238d0f7f30d169b40d683e))
+- [G2P-5655](https://openg2p.atlassian.net/browse/G2P-5655) Refactor G2PChangeRequestSectionPayloadService to remove readonly checks and update test cases ([`bde776b`](https://github.com/OpenG2P/registry-platform/commit/bde776b34994418d58f65996fa69aeab89958799))
+- [G2P-5653](https://openg2p.atlassian.net/browse/G2P-5653) Fix validation for table and dialog table widgets to handle required columns ([`d07d07c`](https://github.com/OpenG2P/registry-platform/commit/d07d07c3d9a90ec52b301c7ef54f48fac3d0a529))
+- [G2P-5702](https://openg2p.atlassian.net/browse/G2P-5702) Fix document removal not creating a change request ([`a3ea824`](https://github.com/OpenG2P/registry-platform/commit/a3ea824fcb784bfe8be2374792b1e5c9b80e62f6))
+- [G2P-5703](https://openg2p.atlassian.net/browse/G2P-5703) Refactor IAM registration job and configmap to use dynamic naming and annotations from values ([`b61e441`](https://github.com/OpenG2P/registry-platform/commit/b61e441a4fdcd9973b52fd3f088bf9c358ba1770))
+- [G2P-5703](https://openg2p.atlassian.net/browse/G2P-5703) Remove creation iam.admin in registry keycloak-init ([`ee3803a`](https://github.com/OpenG2P/registry-platform/commit/ee3803aac2a30595f1dd7744526927eb9e0ff7fc))
+- Replace dbengine import with async session maker ([`dbf5029`](https://github.com/OpenG2P/registry-platform/commit/dbf50299a5a7d6e7ccbdd09748947f7cc2353355))
+- Rename import file document store ([`33ead30`](https://github.com/OpenG2P/registry-platform/commit/33ead301335307d8bdd4fad7b590894b03966345))
+- [G2P-5677](https://openg2p.atlassian.net/browse/G2P-5677) refactor: streamline document handling and update identifiers across various components ([`b3169fa`](https://github.com/OpenG2P/registry-platform/commit/b3169fabdb6b250b4dc232b49bcbe06f29baf768))
+- chore(ui-widgets): version for npm dev publish, sync staff-ui @1.1.9-dev.4 ([`906859c`](https://github.com/OpenG2P/registry-platform/commit/906859c4d45b2b110e8dd5e75627096fee1d7875))
+- [G2P-5680](https://openg2p.atlassian.net/browse/G2P-5680) [G2P-5676](https://openg2p.atlassian.net/browse/G2P-5676) registry-platform fixes ([`582fb3e`](https://github.com/OpenG2P/registry-platform/commit/582fb3ec5f6e51b2a8f0310bc236db4af3d50c42))
+- chore(ui-widgets): version for npm dev publish, sync staff-ui @1.1.9-dev.3 ([`2a26dbe`](https://github.com/OpenG2P/registry-platform/commit/2a26dbe05e2ae626b3786649cd61f31bad16a049))
+- [G2P-5677](https://openg2p.atlassian.net/browse/G2P-5677) refactor: restructure document handling for change request and intake form ([`48b03ea`](https://github.com/OpenG2P/registry-platform/commit/48b03eaed48094b5b2c6617db9c44ab47332505e))
+- [G2P-5670](https://openg2p.atlassian.net/browse/G2P-5670) test(core): update section document validation tests to assert correct handling of document labels and empty documents ([`9ff905d`](https://github.com/OpenG2P/registry-platform/commit/9ff905da15b2b434518d8cfa31ae89b0339c6b56))
+- [G2P-5670](https://openg2p.atlassian.net/browse/G2P-5670) refactor(core): simplify G2PChangeRequestSectionPayloadService by removing unused schema handling and validation logic ([`866ffbc`](https://github.com/OpenG2P/registry-platform/commit/866ffbcdc1524b76e18520616a5566a3ad8f1490))
+- refactor(core): replace session maker initialization with get_async_session_maker for improved session management ([`833930c`](https://github.com/OpenG2P/registry-platform/commit/833930c7c736727c6a3e55ea2792732694ad22d3))
+- [G2P-5670](https://openg2p.atlassian.net/browse/G2P-5670) feat(core): integrate G2PSectionDocumentReconcileService into initialization and update document widget handling ([`c535dc2`](https://github.com/OpenG2P/registry-platform/commit/c535dc2217939cca7cd83e79fd2de94b46e0d57e))
+- [G2P-5670](https://openg2p.atlassian.net/browse/G2P-5670) test(core): cover section-document reconciliation ([`6a6731d`](https://github.com/OpenG2P/registry-platform/commit/6a6731dc706b81775d3658d8c341bb81e9a3bae7))
+- [G2P-5670](https://openg2p.atlassian.net/browse/G2P-5670) feat(core): keep supporting CR docs separate from section document sets ([`71fec54`](https://github.com/OpenG2P/registry-platform/commit/71fec54ab82598449eea2f4e1605a8bdc1eef5b5))
+- [G2P-5670](https://openg2p.atlassian.net/browse/G2P-5670) feat(core): reconcile live section documents on approval ([`77fab78`](https://github.com/OpenG2P/registry-platform/commit/77fab781aeaa1ef7cef780ba904dd6fb6e1e617c))
+- [G2P-5670](https://openg2p.atlassian.net/browse/G2P-5670) feat(core): hydrate section documents and reconstruct as-of sets ([`4102f1e`](https://github.com/OpenG2P/registry-platform/commit/4102f1e61ad8448095d091f7043ef200186ef919))
+- [G2P-5655](https://openg2p.atlassian.net/browse/G2P-5655) refactor(core): strip non-ORM fields from change-request rows ([`c688e1c`](https://github.com/OpenG2P/registry-platform/commit/c688e1c1cb80178e4387775cea7d8c915faca03d))
+- [G2P-5670](https://openg2p.atlassian.net/browse/G2P-5670) feat(core): add nested section documents on change payload ([`3406f62`](https://github.com/OpenG2P/registry-platform/commit/3406f6276c807543e7ce254ec903946075bb7cfd))
+- [G2P-5670](https://openg2p.atlassian.net/browse/G2P-5670) feat(core): add document history events and section-document index ([`aca0eeb`](https://github.com/OpenG2P/registry-platform/commit/aca0eeb6a5870f7aa35530a5887c771825bb542e))
+- Revert partial orm_cache import from 2fc7fdc ([`b41e229`](https://github.com/OpenG2P/registry-platform/commit/b41e22906ae3d78e69c2646d1c8320c3ba9022ca))
+- [G2P-5653](https://openg2p.atlassian.net/browse/G2P-5653): Prevent adding empty records in list view sections. ([`18fb63c`](https://github.com/OpenG2P/registry-platform/commit/18fb63c332e7055f9c63b136d011a8580819714d))
+- [G2P-5650](https://openg2p.atlassian.net/browse/G2P-5650) Refactor: improve widgets theme integration and fix z-index of create new submission button ([`9dbaf66`](https://github.com/OpenG2P/registry-platform/commit/9dbaf66b1c9c4d8e10a0a70c4507296314b2b37e))
+- chore(ui-widgets): version for npm dev publish, sync staff-ui @1.1.9-dev.2 ([`6d1fe22`](https://github.com/OpenG2P/registry-platform/commit/6d1fe22509a4927b6ae38b025b85826a9a40166b))
+- Fixing workflow error ([`ccd23c1`](https://github.com/OpenG2P/registry-platform/commit/ccd23c1a0049da7b7eb06d0e9d02d07c50ac1dcb))
+- Fixing workflow error ([`1c29d80`](https://github.com/OpenG2P/registry-platform/commit/1c29d80ccd93b08b61fb2ea7041aecb64ee94509))
+- Fixing workflow error ([`d19eb34`](https://github.com/OpenG2P/registry-platform/commit/d19eb34bd48e0f01925da8f71c9f1a3b1ecca5a9))
+- Fixing workflow error ([`d53bcf1`](https://github.com/OpenG2P/registry-platform/commit/d53bcf13d3a2c4351784eab36374ae7089078572))
+- Fixing workflow error ([`de87a2e`](https://github.com/OpenG2P/registry-platform/commit/de87a2e300c17b72aceaa91753e17e5caa31fea8))
+- fixed the ui-widget publish issues ([`06de1be`](https://github.com/OpenG2P/registry-platform/commit/06de1bece3300f65a03347a0a67bc9366789c7df))
+- Bump version to 1.2.1 in package.json and package-lock.json ([`98ef188`](https://github.com/OpenG2P/registry-platform/commit/98ef188fefe9cfce539acb4efcfaaed9128997d8))
+- Bump version to 1.2.1 across all APIs and Dockerfiles ([`cbc3f71`](https://github.com/OpenG2P/registry-platform/commit/cbc3f7118b4ffc4a697b3a20204be97a64aa19d4))
+- [G2P-565](https://openg2p.atlassian.net/browse/G2P-565) refactor: remove RegisterRecordContext and simplify related components ([`6d53e8b`](https://github.com/OpenG2P/registry-platform/commit/6d53e8b022f266d33a7adeeeef5e1e6ee0668717))
+- [G2P-5657](https://openg2p.atlassian.net/browse/G2P-5657) Refactor database session management to use get_async_session_maker across services ([`2fc7fdc`](https://github.com/OpenG2P/registry-platform/commit/2fc7fdce4dcee50f33defd1ed2126f5fe54632d8))
+- [G2P-4724](https://openg2p.atlassian.net/browse/G2P-4724) feat: enhance Section Builder ([`0b90048`](https://github.com/OpenG2P/registry-platform/commit/0b90048494e7b9f243fbeeb9553a9c286b2ef75f))
+- [G2P-5650](https://openg2p.atlassian.net/browse/G2P-5650) feat: map host branding into widget theme ([`755116e`](https://github.com/OpenG2P/registry-platform/commit/755116eb5414ee92ff06fc18075623f25fd0784b))
+- [G2P-5618](https://openg2p.atlassian.net/browse/G2P-5618) Update environment configurations to use Master Data API ([`2b73ced`](https://github.com/OpenG2P/registry-platform/commit/2b73ced84bcdbd7d61e990248d51b8fc7eeb0360))
+- [G2P-5617](https://openg2p.atlassian.net/browse/G2P-5617) Update default export batch size across configurations to 2000 ([`da81ef5`](https://github.com/OpenG2P/registry-platform/commit/da81ef5269a7abfa917f225d1ddc4fca41ade49c))
+- [G2P-5617](https://openg2p.atlassian.net/browse/G2P-5617) Enhance export conditions and indexing in G2P registry ([`ce36109`](https://github.com/OpenG2P/registry-platform/commit/ce361098e29652c228d660bcf7ca31a84ca71616))
+- published ui-widget 1.1.7 and updated the same in staff-ui ([`41ae1ae`](https://github.com/OpenG2P/registry-platform/commit/41ae1aefc1ee9995f6cfb4b64faa69e8d9fadb10))
+- updated all the dockers and docker references to 1.2.0 and updated the fastapi and keycloak init versions ([`3cf68c8`](https://github.com/OpenG2P/registry-platform/commit/3cf68c867d36865877e0efdcfd9bb3e569e95545))
+-  [G2P-5598](https://openg2p.atlassian.net/browse/G2P-5598) refactor: use search params for intake submission and improve section record state ([`d2f13ef`](https://github.com/OpenG2P/registry-platform/commit/d2f13efbbda9fc97b3300cf589280bc4635083ab))
+- [G2P-5610](https://openg2p.atlassian.net/browse/G2P-5610) Refactor G2PChangeRequestSectionPayloadService to enhance payload validation ([`11f44d9`](https://github.com/OpenG2P/registry-platform/commit/11f44d917344e19a2e80218f8d96dced7f536134))
+- [G2P-5605](https://openg2p.atlassian.net/browse/G2P-5605) Align the 1.2 release line with GitHub ([`9b41f96`](https://github.com/OpenG2P/registry-platform/commit/9b41f961bd72824e184684152fd6ff6cb1d6921f))
+- [G2P-5585](https://openg2p.atlassian.net/browse/G2P-5585) feat: implement export functionality for register records ([`19f02b3`](https://github.com/OpenG2P/registry-platform/commit/19f02b3b65090016f88546e3e8c2aa735408f216))
+- [G2P-5584](https://openg2p.atlassian.net/browse/G2P-5584) Update helm configuration for register export functionality ([`4444433`](https://github.com/OpenG2P/registry-platform/commit/4444433bb22893740e306259d6d3da716f105831))
+- [G2P-5584](https://openg2p.atlassian.net/browse/G2P-5584) Implement register export task and worker ([`001b450`](https://github.com/OpenG2P/registry-platform/commit/001b4501f1893ef8d121acfd26b4a15f5007f11f))
+- [G2P-5584](https://openg2p.atlassian.net/browse/G2P-5584) Add Apis for G2P register export functionality ([`5ee7fc4`](https://github.com/OpenG2P/registry-platform/commit/5ee7fc4e85b295ca1184ebea15b37049913de748))
+- [G2P-5584](https://openg2p.atlassian.net/browse/G2P-5584) Add G2P register export functionality ([`0b0cf89`](https://github.com/OpenG2P/registry-platform/commit/0b0cf89076aa87b68af63b61d5638cf55a93af93))
+- [G2P-5587](https://openg2p.atlassian.net/browse/G2P-5587) Refactor GeoHierarchy components to enhance hierarchy management and improve form handling with new utility functions for child level retrieval and selection path resolution. ([`a02b46d`](https://github.com/OpenG2P/registry-platform/commit/a02b46d86efa9a3a1000482ac93446c7e61f7d8b))
+- [G2P-5586](https://openg2p.atlassian.net/browse/G2P-5586) Update references to fastapi-common from GitHub to GitLab and change version to 1.2 in Dockerfiles and pyproject.toml ([`1f8089f`](https://github.com/OpenG2P/registry-platform/commit/1f8089f0aea259c2960316ebc65eb1b12cc4ac11))
+- [G2P-5581](https://openg2p.atlassian.net/browse/G2P-5581) Refactor crypto helper references from build_crypto_helper to CryptoFactory in multiple files ([`a5496ab`](https://github.com/OpenG2P/registry-platform/commit/a5496ab5e6b9cfc28556f7e0c20922210831ccb0))
+- [G2P-5577](https://openg2p.atlassian.net/browse/G2P-5577) Integrate Partner Management Client into registry services with configuration, caching, partner lookup refactoring, and tests. ([`3929c1f`](https://github.com/OpenG2P/registry-platform/commit/3929c1f357773a6b1bdf712d857b5c0d4f84252b))
+- [G2P-5569](https://openg2p.atlassian.net/browse/G2P-5569) feat: replace config-driven page size with viewport-adaptive breakpoints ([`560c1ef`](https://github.com/OpenG2P/registry-platform/commit/560c1efafff4a2991748dd28f2c537ccfa799b7d))
+- Remove domain and include_domains from request payload in POST endpoint ([`8ca14ed`](https://github.com/OpenG2P/registry-platform/commit/8ca14ed554d8989fd4de947c604f7362edeafaa8))
+- [G2P-5572](https://openg2p.atlassian.net/browse/G2P-5572) Update IAM service repository reference from GitHub to GitLab ([`c2a1198`](https://github.com/OpenG2P/registry-platform/commit/c2a1198696cb9e72dfb7e7e4f834ae7f97cf2a99))
+- [G2P-5572](https://openg2p.atlassian.net/browse/G2P-5572) Update IAM_CORE_REF to version 1.4 and increment version numbers to 1.2.0 across multiple APIs; refactor data policy request helper and enhance db-seed job configuration. ([`66b2eac`](https://github.com/OpenG2P/registry-platform/commit/66b2eac2547aac03b7d2a86b0902df507ee2526d))
+- Published widget version 1.1.6-dev.6 and updated the ui for the same ([`f95c4fd`](https://github.com/OpenG2P/registry-platform/commit/f95c4fd2f121f3e0cd0c2a9a3fbc9a10b97f525a))
+- [G2P-5457](https://openg2p.atlassian.net/browse/G2P-5457) refactor: include all records with modified and new rows in diffTableRows ([`e7d2668`](https://github.com/OpenG2P/registry-platform/commit/e7d2668c4c979a6a9c8c8735df13d0dd4aed098b))
+- Refactor useBreadcrumb: remove functional id and tab id ([`0495193`](https://github.com/OpenG2P/registry-platform/commit/04951937ca7e37283b7cbcfaa70b7373dfc4f48a))
+- Published widget version 1.1.6-dev.5 and updated the ui for the same ([`6028e77`](https://github.com/OpenG2P/registry-platform/commit/6028e771b07b44f7a8e8eea6a80c7233b61cd115))
+- [G2P-5552](https://openg2p.atlassian.net/browse/G2P-5552) Add APP_API_URL environment variable for IAM registration job ([`d77fd84`](https://github.com/OpenG2P/registry-platform/commit/d77fd84fa9989ecc5cda2160f4bdc9b5aa71c26c))
+- [G2P-5544](https://openg2p.atlassian.net/browse/G2P-5544) Implement G2PIntakeRegisterSectionMapService, update related services/components, and improve UI version history handling. ([`1f2ab43`](https://github.com/OpenG2P/registry-platform/commit/1f2ab43ea9141e37d8daad210d7565edff588173))
+- [G2P-5553](https://openg2p.atlassian.net/browse/G2P-5553) feat(change-api): update sor_by convention for change request searches and add unit tests for parsing sort parameters ([`0ac64f6`](https://github.com/OpenG2P/registry-platform/commit/0ac64f68b2bffad3c7152043d6e5885ae71cb1c8))
+- [G2P-5402](https://openg2p.atlassian.net/browse/G2P-5402): add record table view functionality for record list ([`66734c1`](https://github.com/OpenG2P/registry-platform/commit/66734c1ce865055c4b1e018dea1415b8ee35fb73))
+- [G2P-5541](https://openg2p.atlassian.net/browse/G2P-5541) fix(change-api): add register_mnemonic and tab_label in change request data ([`183b842`](https://github.com/OpenG2P/registry-platform/commit/183b8429a115e10d76d05c73e0eac03e161502ef))
+- [G2P-5546](https://openg2p.atlassian.net/browse/G2P-5546) refactor intake form and task ui ([`c6c852d`](https://github.com/OpenG2P/registry-platform/commit/c6c852d9e356a65fb60510cade8e0b5d1f4aef0c))
+- [G2P-5545](https://openg2p.atlassian.net/browse/G2P-5545): refactor change request ui ([`df686ef`](https://github.com/OpenG2P/registry-platform/commit/df686ef2cf1cd85b5097e01c58d50f4d602e5f5a))
+- [G2P-5457](https://openg2p.atlassian.net/browse/G2P-5457) Remove attributes configuration and related components from staff UI, including layout, pages, modals, and API routes. Update sidebar options to exclude attributes section. ([`650b158`](https://github.com/OpenG2P/registry-platform/commit/650b158f2f9c46ca6cb399bd0e3a7d5fed179c75))
+- [G2P-5538](https://openg2p.atlassian.net/browse/G2P-5538) Refactored registry code list handling and API endpoints by removing attribute seeding, deleting related SQL/defaults, linking local ui-widgets, updating geo-level API routes, and optimizing attribute-value pagination defaults. ([`0524935`](https://github.com/OpenG2P/registry-platform/commit/052493500f69964f1b646186eb1c36ba5e2d3151))
+- [G2P-4786](https://openg2p.atlassian.net/browse/G2P-4786) refactor: move G2PRegisterDomainFactory and G2PIdGeneratorFactory to core interfaces, removing dependencies from extensions ([`929a1f3`](https://github.com/OpenG2P/registry-platform/commit/929a1f38b5f3eda56905fe4caa886bc0d50b9370))
+- [G2P-5500](https://openg2p.atlassian.net/browse/G2P-5500) Enhance G2PIntakeFormDataService to validate only surviving records during intake form processing. Introduced a new method to filter out records marked for deletion before validation, ensuring data integrity in the upsert operation. ([`08ea139`](https://github.com/OpenG2P/registry-platform/commit/08ea13972db6ed1a633cd0d497beda7e3e980f21))
+- [G2P-5516](https://openg2p.atlassian.net/browse/G2P-5516) refactor: G2PGeo model and schema to use float type for latitude, longitude, and altitude fields ([`7d05211`](https://github.com/OpenG2P/registry-platform/commit/7d05211c359e88992b446a4ff028c2a9b0343be5))
+- [G2P-5369](https://openg2p.atlassian.net/browse/G2P-5369): Enhance GeoHierarchy functionality and validation ([`a533082`](https://github.com/OpenG2P/registry-platform/commit/a53308284603cf91b473cbf8d365c630a78ed923))
+- [G2P-5497](https://openg2p.atlassian.net/browse/G2P-5497) feat(cr): add G2PChangeRequestSectionPayloadService and integrate validation in change request processing ([`bc7091c`](https://github.com/OpenG2P/registry-platform/commit/bc7091c2a36f62ef80c449d77816b66507aea54f))
+- Optimize policy condition handling in G2PIntakeFormDataService to avoid unnecessary await ([`a76dbaa`](https://github.com/OpenG2P/registry-platform/commit/a76dbaa68d9f0a35dfd8e13992a8d8e65c4d6bba))
+- Refactor policy condition handling in G2PRegisterService to avoid unnecessary await ([`4552894`](https://github.com/OpenG2P/registry-platform/commit/45528947f52b9b3be91a29ff5485283a11f784d3))
+- [G2P-5495](https://openg2p.atlassian.net/browse/G2P-5495) Add IAM admin user to keycloak-init ([`816cfdf`](https://github.com/OpenG2P/registry-platform/commit/816cfdf8d4963b49b2f2bb9f2ae6bf0e738b7202))
+- [G2P-5492](https://openg2p.atlassian.net/browse/G2P-5492) feat(cr): add validation to enforce single section active crs for a record ([`3d14b54`](https://github.com/OpenG2P/registry-platform/commit/3d14b54b27741b7f2989936139a175103d090fe1))
+- [G2P-5493](https://openg2p.atlassian.net/browse/G2P-5493) refactor change request handling and remove unused staff-portal-ui folder ([`34d861b`](https://github.com/OpenG2P/registry-platform/commit/34d861b53e08918c8b30a2ac5edf72ee1d0e2162))
+- [G2P-5489](https://openg2p.atlassian.net/browse/G2P-5489) Remove redundant sharp install and chown layers from Dockerfile ([`34eb393`](https://github.com/OpenG2P/registry-platform/commit/34eb39345707ba11e4bd63f5ce236eda6659fea0))
+- Reapply "[G2P-5222](https://openg2p.atlassian.net/browse/G2P-5222) Repoint Partner Management to commons-services and align PM-seed auth to the g2p-bridge pmSeedClientId pattern." ([`ff1f9c8`](https://github.com/OpenG2P/registry-platform/commit/ff1f9c8fe8e61e5717cf65e2f1363f8f51df7da0))
+- Reapply "[G2P-5222](https://openg2p.atlassian.net/browse/G2P-5222) Consent and partner management related." ([`e378ecb`](https://github.com/OpenG2P/registry-platform/commit/e378ecbac8108749766d0ae0fc5fed197e517a4e))
+- Reapply "[G2P-5222](https://openg2p.atlassian.net/browse/G2P-5222) Enhancements for consent management, partner management and WJS support." ([`eabfb80`](https://github.com/OpenG2P/registry-platform/commit/eabfb8096865dca361b8a4f48d8d9d4551bc86d1))
 
 <a id="v-0-0-0-develop-453"></a>
 
