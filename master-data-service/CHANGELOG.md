@@ -6,6 +6,7 @@ _Published automatically._
 
 | Version | Date | Type | Notes |
 | --- | --- | --- | --- |
+| [`0.0.0-develop.105`](#v-0-0-0-develop-105) | 2026-10-03 | develop |  |
 | [`0.0.0-develop.103`](#v-0-0-0-develop-103) | 2026-10-03 | develop |  |
 | [`1.1.4-rc.102`](#v-1-1-4-rc-102) | 2026-10-02 | release candidate |  |
 | [`1.1.4-rc.100`](#v-1-1-4-rc-100) | 2026-09-30 | release candidate |  |
@@ -532,6 +533,26 @@ _commit `4ffaad7` · changes since the start (showing the latest 20 commits)_
 - [G2P-4804](https://openg2p.atlassian.net/browse/G2P-4804) Lowercase the geo-seed Job name. This template renders at the chart root, where .Chart.Name is the vendored subchart name — the commons-services umbrella carries it as `masterData`, so the Job came out as commons-services-masterData-geo-seed, which Kubernetes rejects. The hook failed, no geography or code lists were seeded, and the whole commons-services release went to `failed`. The API templates were unaffected because they render against a scoped context whose nameOverride is already lowercase. ([`83bfaee`](https://github.com/OpenG2P/master-data-service/commit/83bfaee9ae49249adb12589b0da1a290bf02f9fa))
 
 # Develop builds
+
+<a id="v-0-0-0-develop-105"></a>
+
+## master-data-service — develop 0.0.0-develop.105 (2026-10-03)
+
+_commit `1dc0ac1` · changes since 0.0.0-develop.103_
+<!-- build:0.0.0-develop.105 revision:1dc0ac169455170c49473223353193b26f96641c ts:1790992877 -->
+
+**Chart:** [openg2p-master-data 0.0.0-develop.105](https://openg2p.github.io/openg2p-helm/openg2p-master-data-0.0.0-develop.105.tgz)
+
+### Summary
+
+- New sample endpoints: Introduced `/samples/get_individuals` and `/samples/get_households` for registries' sample loaders, along with corresponding tests.
+- Testing enhancements: Marked sample endpoints for testing and demos only, ensuring clarity in usage and purpose.
+- Codebase expansion: Added four new files, including controllers, schemas, and services related to sample data management.
+
+### Changes
+
+- [G2P-5719](https://openg2p.atlassian.net/browse/G2P-5719) Samples endpoints marked for testing and demos only ([`1dc0ac1`](https://github.com/OpenG2P/master-data-service/commit/1dc0ac169455170c49473223353193b26f96641c))
+- [G2P-5719](https://openg2p.atlassian.net/browse/G2P-5719) /samples/get_individuals and /samples/get_households for registries' sample loaders, with tests ([`6479e53`](https://github.com/OpenG2P/master-data-service/commit/6479e5384e8b971d3e85c912eb2747499ae8961d))
 
 <a id="v-0-0-0-develop-103"></a>
 
