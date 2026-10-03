@@ -6,6 +6,7 @@ _Published automatically._
 
 | Version | Date | Type | Notes |
 | --- | --- | --- | --- |
+| [`0.0.0-develop.24`](#v-0-0-0-develop-24) | 2026-10-03 | develop |  |
 | [`0.0.0-develop.21`](#v-0-0-0-develop-21) | 2026-10-02 | develop |  |
 | [`0.0.0-develop.17`](#v-0-0-0-develop-17) | 2026-10-01 | develop |  |
 | [`0.0.0-develop.11`](#v-0-0-0-develop-11) | 2026-09-29 | develop |  |
@@ -15,6 +16,27 @@ _Published automatically._
 | [`0.0.0-develop.4`](#v-0-0-0-develop-4) | 2026-09-27 | develop |  |
 
 # Develop builds
+
+<a id="v-0-0-0-develop-24"></a>
+
+## crop-sown-registry — develop 0.0.0-develop.24 (2026-10-03)
+
+_commit `62a27de` · changes since 0.0.0-develop.21_
+<!-- build:0.0.0-develop.24 revision:62a27deb357268a7098a3e542c9a7518f0f12a91 ts:1791021757 -->
+
+**Chart:** [openg2p-crop-sown-registry 0.0.0-develop.24](https://openg2p.github.io/openg2p-helm/openg2p-crop-sown-registry-0.0.0-develop.24.tgz)
+
+### Summary
+
+- **Major:** Transitioned from direct database access to API-based interactions for MDS, dropping loadGeoData/syncGeoWidgets and relabeling the Cluster geo widget to Location.
+- Updated sample crop seasons to read MDS sample people via the catalogue client, maintaining support for both API and database modes in tests.
+- Bumped RP version to 0.0.0-develop.599.
+
+### Changes
+
+- Bumped up RP version to 0.0.0-develop.599 ([`62a27de`](https://github.com/OpenG2P/crop-sown-registry/commit/62a27deb357268a7098a3e542c9a7518f0f12a91))
+- [G2P-5719](https://openg2p.atlassian.net/browse/G2P-5719) Registries never touch MDS's database: drop loadGeoData/syncGeoWidgets, sample loader reads MDS via its API (mds_client), Cluster geo widget relabelled Location ([`66565a9`](https://github.com/OpenG2P/crop-sown-registry/commit/66565a96e9b77249aea7c5d51c9b7dc7e0ca9cc6))
+- [G2P-5719](https://openg2p.atlassian.net/browse/G2P-5719) Sample crop seasons read MDS sample people through the catalogue client (db mode kept); tests in api and db modes ([`3d10caf`](https://github.com/OpenG2P/crop-sown-registry/commit/3d10caf654e409f70e29a2bfecceb5cbecb07b44))
 
 <a id="v-0-0-0-develop-21"></a>
 
