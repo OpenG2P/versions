@@ -6,6 +6,7 @@ _Published automatically._
 
 | Version | Date | Type | Notes |
 | --- | --- | --- | --- |
+| [`0.0.0-develop.604`](#v-0-0-0-develop-604) | 2026-10-05 | develop |  |
 | [`0.0.0-develop.599`](#v-0-0-0-develop-599) | 2026-10-03 | develop |  |
 | [`1.2.2-rc.515`](#v-1-2-2-rc-515) | 2026-10-02 | release candidate |  |
 | [`0.0.0-develop.453`](#v-0-0-0-develop-453) | 2026-10-01 | develop |  |
@@ -860,6 +861,29 @@ _commit `9b41f96` · changes since v1.0.0_
 - [G2P-5153](https://openg2p.atlassian.net/browse/G2P-5153) Refactor IAM permission handling and authentication cookie management ([`8a6abe5`](https://github.com/OpenG2P/registry-platform/commit/8a6abe5de479bf2647f89b31fbfa62989114ef3e))
 
 # Develop builds
+
+<a id="v-0-0-0-develop-604"></a>
+
+## registry-platform — develop 0.0.0-develop.604 (2026-10-05)
+
+_commit `b6e46bc` · changes since 0.0.0-develop.599_
+<!-- build:0.0.0-develop.604 revision:b6e46bcd649f08c597ed955f29d3a2920deb6df1 ts:1791164523 -->
+
+**Chart:** [openg2p-registry 0.0.0-develop.604](https://openg2p.github.io/openg2p-helm/openg2p-registry-0.0.0-develop.604.tgz)
+
+### Summary
+
+- **Major:** Introduction of versioned groups of standard-neutral consent scopes for data management, enhancing registry field organization.
+- Activity samples now load at install time with strict error handling, including per-register failures and advisory locks, supported by a new CLI command and post-install hooks.
+- Helm configuration updated to use the in-cluster commons Garage for object storage, with default settings for global.minioHost and minioSecure adjustments.
+- UI widgets version synchronized for npm development, aligning with staff-ui version 1.1.9-dev.8.
+
+### Changes
+
+- [G2P-5719](https://openg2p.atlassian.net/browse/G2P-5719) Data scopes: standard-neutral consent scopes as versioned groups of registry fields ([`abb81f8`](https://github.com/OpenG2P/registry-platform/commit/abb81f8ee902157b1a5e285b8df2c067cb3281d5))
+- [G2P-5719](https://openg2p.atlassian.net/browse/G2P-5719) Activity samples load at install time and fail the release on error: strict load_all with per-register failures, per-register advisory lock (hook Job vs beat task), load_activity_samples CLI, post-install/upgrade activity-samples hook Job using the worker image and env; tests ([`7234831`](https://github.com/OpenG2P/registry-platform/commit/7234831e03b985661d9afa0c3a57cb61a18162b9))
+- [G2P-5719](https://openg2p.atlassian.net/browse/G2P-5719) Helm: object store is the in-cluster commons Garage — global.minioHost defaults to commons-garage:3900, minioSecure false (names unchanged); Rancher questions and CSP scheme follow minioSecure ([`b15b8c4`](https://github.com/OpenG2P/registry-platform/commit/b15b8c425e95ba73869dda2a62e4a1eddfa3f9e7))
+- chore(ui-widgets): version for npm dev publish, sync staff-ui @1.1.9-dev.8 [skip ci] ([`7a869fe`](https://github.com/OpenG2P/registry-platform/commit/7a869fed98dc77b459296c2e745d913eb3a6ea7b))
 
 <a id="v-0-0-0-develop-599"></a>
 
