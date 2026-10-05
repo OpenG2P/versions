@@ -6,12 +6,26 @@ _Published automatically._
 
 | Version | Date | Type | Notes |
 | --- | --- | --- | --- |
+| [`0.0.0-develop.28`](#v-0-0-0-develop-28) | 2026-10-05 | develop |  |
 | [`0.0.0-develop.27`](#v-0-0-0-develop-27) | 2026-10-05 | develop |  |
 | [`0.0.0-develop.26`](#v-0-0-0-develop-26) | 2026-10-02 | develop |  |
 | [`0.0.0-develop.23`](#v-0-0-0-develop-23) | 2026-10-02 | develop |  |
 | [`0.0.0-develop.22`](#v-0-0-0-develop-22) | 2026-10-01 | develop |  |
 
 # Develop builds
+
+<a id="v-0-0-0-develop-28"></a>
+
+## agri-stack — develop 0.0.0-develop.28 (2026-10-05)
+
+_commit `5aa87ad` · changes since 0.0.0-develop.27_
+<!-- build:0.0.0-develop.28 revision:5aa87ad76c22942468a7761cef0f3be31599bda1 ts:1791172372 -->
+
+**Chart:** [openg2p-agri-composite 0.0.0-develop.28](https://openg2p.github.io/openg2p-helm/openg2p-agri-composite-0.0.0-develop.28.tgz)
+
+### Changes
+
+- [G2P-5719](https://openg2p.atlassian.net/browse/G2P-5719) loan-profile: per-source timeout 10 s with no retry (a slow registry search was retried into a timeout), overall 25 s for farmer then crop sources; chart's embedded use case and engine test updated ([`5aa87ad`](https://github.com/OpenG2P/agri-stack/commit/5aa87ad76c22942468a7761cef0f3be31599bda1))
 
 <a id="v-0-0-0-develop-27"></a>
 
