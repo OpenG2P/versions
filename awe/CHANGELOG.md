@@ -6,6 +6,7 @@ _Published automatically._
 
 | Version | Date | Type | Notes |
 | --- | --- | --- | --- |
+| [`0.0.0-develop.92`](#v-0-0-0-develop-92) | 2026-10-05 | develop |  |
 | [`1.2.3-rc.86`](#v-1-2-3-rc-86) | 2026-10-05 | release candidate |  |
 | [`0.0.0-develop.90`](#v-0-0-0-develop-90) | 2026-09-03 | develop |  |
 | [`1.2.2`](#v-1-2-2) | 2026-09-02 | release |  |
@@ -255,6 +256,19 @@ _commit `27c7f19` · changes since 1.1.0_
 - Update version to 1.1.0 in Chart.yaml, pyproject.toml, package.json, and package-lock.json ([`e5a25b4`](https://github.com/OpenG2P/awe/commit/e5a25b441a5d04671b55f035b126c0a0c7ab5632))
 
 # Develop builds
+
+<a id="v-0-0-0-develop-92"></a>
+
+## awe — develop 0.0.0-develop.92 (2026-10-05)
+
+_commit `f0e55a1` · changes since 0.0.0-develop.90_
+<!-- build:0.0.0-develop.92 revision:f0e55a1bb8af7baf058f13e724119fafb6a12475 ts:1791194839 -->
+
+**Chart:** [openg2p-awe 0.0.0-develop.92](https://openg2p.github.io/openg2p-helm/openg2p-awe-0.0.0-develop.92.tgz)
+
+### Changes
+
+- [G2P-5719](https://openg2p.atlassian.net/browse/G2P-5719) Helm: iamRegister.runAsHook (default true); false renders the IAM registration Job and payload ConfigMap as regular resources, for umbrella charts where hooks are chained or skipped ([`717065c`](https://github.com/OpenG2P/awe/commit/717065c805858329a4216eb6ed34addcf249f045))
 
 <a id="v-0-0-0-develop-90"></a>
 
