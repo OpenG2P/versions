@@ -10,6 +10,7 @@ _Published automatically._
 | [`1.2.2-rc.532`](#v-1-2-2-rc-532) | 2026-10-05 | release candidate |  |
 | [`1.2.2-rc.521`](#v-1-2-2-rc-521) | 2026-10-05 | release candidate |  |
 | [`1.2.2-rc.518`](#v-1-2-2-rc-518) | 2026-10-05 | release candidate |  |
+| [`0.0.0-develop.605`](#v-0-0-0-develop-605) | 2026-10-05 | develop |  |
 | [`0.0.0-develop.604`](#v-0-0-0-develop-604) | 2026-10-05 | develop |  |
 | [`0.0.0-develop.599`](#v-0-0-0-develop-599) | 2026-10-03 | develop |  |
 | [`1.2.2-rc.515`](#v-1-2-2-rc-515) | 2026-10-02 | release candidate |  |
@@ -888,6 +889,19 @@ _commit `9b41f96` · changes since v1.0.0_
 - [G2P-5153](https://openg2p.atlassian.net/browse/G2P-5153) Refactor IAM permission handling and authentication cookie management ([`8a6abe5`](https://github.com/OpenG2P/registry-platform/commit/8a6abe5de479bf2647f89b31fbfa62989114ef3e))
 
 # Develop builds
+
+<a id="v-0-0-0-develop-605"></a>
+
+## registry-platform — develop 0.0.0-develop.605 (2026-10-05)
+
+_commit `17bd3b7` · changes since 0.0.0-develop.604_
+<!-- build:0.0.0-develop.605 revision:17bd3b7177f5e15ede5a6d35aa9cc76c13fed6c0 ts:1791175492 -->
+
+**Chart:** [openg2p-registry 0.0.0-develop.605](https://openg2p.github.io/openg2p-helm/openg2p-registry-0.0.0-develop.605.tgz)
+
+### Changes
+
+- [G2P-5719](https://openg2p.atlassian.net/browse/G2P-5719) Audit middleware (staff, partner, agent portal): take the route FastAPI matched from the request scope, so events get the endpoint's action and type instead of "unknown" (FastAPI 0.142's _IncludedRouter wrappers broke the manual route scan) ([`17bd3b7`](https://github.com/OpenG2P/registry-platform/commit/17bd3b7177f5e15ede5a6d35aa9cc76c13fed6c0))
 
 <a id="v-0-0-0-develop-604"></a>
 
