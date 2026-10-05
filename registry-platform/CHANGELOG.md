@@ -6,6 +6,7 @@ _Published automatically._
 
 | Version | Date | Type | Notes |
 | --- | --- | --- | --- |
+| [`1.2.2-rc.534`](#v-1-2-2-rc-534) | 2026-10-05 | release candidate |  |
 | [`1.2.2-rc.532`](#v-1-2-2-rc-532) | 2026-10-05 | release candidate |  |
 | [`1.2.2-rc.521`](#v-1-2-2-rc-521) | 2026-10-05 | release candidate |  |
 | [`1.2.2-rc.518`](#v-1-2-2-rc-518) | 2026-10-05 | release candidate |  |
@@ -25,7 +26,6 @@ _Published automatically._
 | [`1.2.2-rc.509`](#v-1-2-2-rc-509) | 2026-09-25 | release candidate |  |
 | [`1.2.2-rc.504`](#v-1-2-2-rc-504) | 2026-09-25 | release candidate |  |
 | [`1.2.2-rc.493`](#v-1-2-2-rc-493) | 2026-09-24 | release candidate |  |
-| [`1.2.2-rc.491`](#v-1-2-2-rc-491) | 2026-09-23 | release candidate |  |
 | [`0.0.0-develop.435`](#v-0-0-0-develop-435) | 2026-09-23 | develop | Marking a version at this point before major changes are done on RP\| |
 | [`0.0.0-develop.432`](#v-0-0-0-develop-432) | 2026-09-09 | develop |  |
 | [`1.2.1`](#v-1-2-1) | 2026-09-07 | release |  |
@@ -353,6 +353,19 @@ same commit and *promoted* (retagged), not rebuilt. No code changed between them
 
 # Release candidates
 
+<a id="v-1-2-2-rc-534"></a>
+
+## registry-platform 1.2.2-rc.534 — 2026-10-05
+
+_commit `be76faa` · changes since 1.2.2-rc.532_
+<!-- build:1.2.2-rc.534 revision:be76faa9ab0d83b8f49453b54c9dc6492fb7aef1 ts:1791181059 -->
+
+**Chart:** [openg2p-registry 1.2.2-rc.534](https://openg2p.github.io/openg2p-helm/openg2p-registry-1.2.2-rc.534.tgz)
+
+### Changes
+
+- Updated master data secret and password key name ([`1bfedff`](https://github.com/OpenG2P/registry-platform/commit/1bfedfff578b89c3eb4730ff2f3bd4341905306a))
+
 <a id="v-1-2-2-rc-532"></a>
 
 ## registry-platform 1.2.2-rc.532 — 2026-10-05
@@ -518,19 +531,6 @@ _commit `8bc7f72` · changes since 1.2.2-rc.491_
 ### Changes
 
 - [G2P-5655](https://openg2p.atlassian.net/browse/G2P-5655) Fix explicit null link handling in _update_existing_record method and add unit tests ([`1d6ed8f`](https://github.com/OpenG2P/registry-platform/commit/1d6ed8fb352564b443238d0f7f30d169b40d683e))
-
-<a id="v-1-2-2-rc-491"></a>
-
-## registry-platform 1.2.2-rc.491 — 2026-09-23
-
-_commit `94252fd` · changes since 1.2.2-rc.489_
-<!-- build:1.2.2-rc.491 revision:94252fd2cd3c7e2d815861d92000236b9843dabc ts:1790163069 -->
-
-**Chart:** [openg2p-registry 1.2.2-rc.491](https://openg2p.github.io/openg2p-helm/openg2p-registry-1.2.2-rc.491.tgz)
-
-### Changes
-
-- [G2P-5655](https://openg2p.atlassian.net/browse/G2P-5655) Refactor G2PChangeRequestSectionPayloadService to remove readonly checks and update test cases ([`bde776b`](https://github.com/OpenG2P/registry-platform/commit/bde776b34994418d58f65996fa69aeab89958799))
 
 <a id="v-1-2-1-rc-462"></a>
 
