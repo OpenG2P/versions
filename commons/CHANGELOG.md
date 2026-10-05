@@ -6,6 +6,7 @@ _Published automatically._
 
 | Version | Date | Type | Notes |
 | --- | --- | --- | --- |
+| [`2.3.4-rc.240`](#v-2-3-4-rc-240) | 2026-10-05 | release candidate |  |
 | [`2.3.4-rc.238`](#v-2-3-4-rc-238) | 2026-10-05 | release candidate |  |
 | [`0.0.0-develop.280`](#v-0-0-0-develop-280) | 2026-10-05 | develop |  |
 | [`0.0.0-develop.271`](#v-0-0-0-develop-271) | 2026-10-03 | develop |  |
@@ -405,6 +406,19 @@ _commit `44278e8` · first release_
 - Initial commit ([`04cc8c6`](https://github.com/OpenG2P/openg2p-commons-deployment/commit/04cc8c6f16ae3132d62a9b80087c0cea81ce472d))
 
 # Release candidates
+
+<a id="v-2-3-4-rc-240"></a>
+
+## commons 2.3.4-rc.240 — 2026-10-05
+
+_commit `3a41617` · changes since 2.3.4-rc.238_
+<!-- build:2.3.4-rc.240 revision:3a41617dbb78751cf29e9aa7f5e8b706399ddd7d ts:1791178737 -->
+
+**Charts:** [openg2p-commons-base 2.3.4-rc.240](https://openg2p.github.io/openg2p-helm/openg2p-commons-base-2.3.4-rc.240.tgz) · [openg2p-commons-services 2.3.4-rc.240](https://openg2p.github.io/openg2p-helm/openg2p-commons-services-2.3.4-rc.240.tgz)
+
+### Changes
+
+- fix(commons-services): update openg2p-master-data dependency version from 1.1.4-rc.102 to 1.1.4-rc.104 in Chart.yaml ([`e903f73`](https://github.com/OpenG2P/commons/commit/e903f73b49034daca429a01936c6ec51a9a3aa8c))
 
 <a id="v-2-3-4-rc-238"></a>
 
