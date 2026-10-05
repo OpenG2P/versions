@@ -6,6 +6,7 @@ _Published automatically._
 
 | Version | Date | Type | Notes |
 | --- | --- | --- | --- |
+| [`0.0.0-develop.282`](#v-0-0-0-develop-282) | 2026-10-05 | develop |  |
 | [`2.3.4-rc.240`](#v-2-3-4-rc-240) | 2026-10-05 | release candidate |  |
 | [`2.3.4-rc.238`](#v-2-3-4-rc-238) | 2026-10-05 | release candidate |  |
 | [`0.0.0-develop.280`](#v-0-0-0-develop-280) | 2026-10-05 | develop |  |
@@ -38,7 +39,6 @@ _Published automatically._
 | [`0.0.0-develop.238`](#v-0-0-0-develop-238) | 2026-09-01 | develop |  |
 | [`0.0.0-develop.237`](#v-0-0-0-develop-237) | 2026-09-01 | develop |  |
 | [`0.0.0-develop.235`](#v-0-0-0-develop-235) | 2026-08-28 | develop |  |
-| [`0.0.0-develop.234`](#v-0-0-0-develop-234) | 2026-08-28 | develop |  |
 | [`2.2.1`](#v-2-2-1) | 2026-08-06 | release |  |
 | [`2.2.0`](#v-2-2-0) | 2026-07-26 | release |  |
 | [`2.1.0`](#v-2-1-0) | 2026-07-13 | release |  |
@@ -570,6 +570,25 @@ _commit `ffabcdc` · changes since 2.2.1_
 
 # Develop builds
 
+<a id="v-0-0-0-develop-282"></a>
+
+## commons — develop 0.0.0-develop.282 (2026-10-05)
+
+_commit `9048a94` · changes since 0.0.0-develop.280_
+<!-- build:0.0.0-develop.282 revision:9048a94f5ad2a93d136a428700ea853188c8e893 ts:1791194912 -->
+
+**Charts:** [openg2p-commons-base 0.0.0-develop.282](https://openg2p.github.io/openg2p-helm/openg2p-commons-base-0.0.0-develop.282.tgz) · [openg2p-commons-services 0.0.0-develop.282](https://openg2p.github.io/openg2p-helm/openg2p-commons-services-0.0.0-develop.282.tgz)
+
+### Summary
+
+- IAM enhancements: Master Data, AWE, and Partner Management now register as regular resources, addressing previous registration issues.
+- Bug fixes: Resolved mock identity-related issues to improve functionality.
+
+### Changes
+
+- [G2P-5719](https://openg2p.atlassian.net/browse/G2P-5719) commons-services: IAM registration for Master Data, AWE and Partner Management runs as regular resources (iamRegister.runAsHook: false); a failed hook elsewhere had left them unregistered in IAM ([`9048a94`](https://github.com/OpenG2P/commons/commit/9048a94f5ad2a93d136a428700ea853188c8e893))
+- Mock identity related fix. ([`6105468`](https://github.com/OpenG2P/commons/commit/6105468a2c39b2c10b0a110c21a1f3d8c2a2ebee))
+
 <a id="v-0-0-0-develop-280"></a>
 
 ## commons — develop 0.0.0-develop.280 (2026-10-05)
@@ -867,19 +886,6 @@ _commit `32cf1e9` · changes since 0.0.0-develop.234_
 ### Changes
 
 - [G2P-5605](https://openg2p.atlassian.net/browse/G2P-5605) pick up master-data 0.0.0-develop.68 ([`32cf1e9`](https://github.com/OpenG2P/commons/commit/32cf1e9da2a3db65b8ec21e7626c7bc0510b961f))
-
-<a id="v-0-0-0-develop-234"></a>
-
-## commons — develop 0.0.0-develop.234 (2026-08-28)
-
-_commit `2a9f6cb` · changes since 0.0.0-develop.233_
-<!-- build:0.0.0-develop.234 revision:2a9f6cbe578d0451616950a2772a1f3e9d217927 ts:1787914306 -->
-
-**Charts:** [openg2p-commons-base 0.0.0-develop.234](https://openg2p.github.io/openg2p-helm/openg2p-commons-base-0.0.0-develop.234.tgz) · [openg2p-commons-services 0.0.0-develop.234](https://openg2p.github.io/openg2p-helm/openg2p-commons-services-0.0.0-develop.234.tgz)
-
-### Changes
-
-- [G2P-5605](https://openg2p.atlassian.net/browse/G2P-5605) pick up the master-data and partner-management fixes ([`2a9f6cb`](https://github.com/OpenG2P/commons/commit/2a9f6cbe578d0451616950a2772a1f3e9d217927))
 
 ---
 
