@@ -6,6 +6,7 @@ _Published automatically._
 
 | Version | Date | Type | Notes |
 | --- | --- | --- | --- |
+| [`1.2.1-rc.179`](#v-1-2-1-rc-179) | 2026-10-05 | release candidate |  |
 | [`0.0.0-develop.271`](#v-0-0-0-develop-271) | 2026-10-05 | develop |  |
 | [`0.0.0-develop.221`](#v-0-0-0-develop-221) | 2026-10-03 | develop |  |
 | [`0.0.0-develop.218`](#v-0-0-0-develop-218) | 2026-10-02 | develop |  |
@@ -24,7 +25,6 @@ _Published automatically._
 | [`0.0.0-develop.206`](#v-0-0-0-develop-206) | 2026-09-03 | develop | **Intermediate Stable Version**. VC issuance and verification both working fine. Compatible with commons 0.0.0-develop.243. |
 | [`1.2.1-rc.163`](#v-1-2-1-rc-163) | 2026-09-03 | release candidate |  |
 | [`0.0.0-develop.205`](#v-0-0-0-develop-205) | 2026-09-02 | develop |  |
-| [`1.2.1-rc.161`](#v-1-2-1-rc-161) | 2026-09-02 | release candidate |  |
 | [`0.0.0-develop.203`](#v-0-0-0-develop-203) | 2026-09-02 | develop |  |
 | [`0.0.0-develop.201`](#v-0-0-0-develop-201) | 2026-09-01 | develop |  |
 | [`0.0.0-develop.198`](#v-0-0-0-develop-198) | 2026-09-01 | develop |  |
@@ -203,6 +203,19 @@ _commit `7055a71` · first release_
 
 # Release candidates
 
+<a id="v-1-2-1-rc-179"></a>
+
+## farmer-registry 1.2.1-rc.179 — 2026-10-05
+
+_commit `e5d1fa6` · changes since 1.2.1-rc.178_
+<!-- build:1.2.1-rc.179 revision:e5d1fa6a63ba1d24ab716f620a097da916c06271 ts:1791177086 -->
+
+**Chart:** [openg2p-farmer-registry 1.2.1-rc.179](https://openg2p.github.io/openg2p-helm/openg2p-farmer-registry-1.2.1-rc.179.tgz)
+
+### Changes
+
+- Bump version of RP to 1.2.2-rc.515 ([`e5d1fa6`](https://github.com/OpenG2P/farmer-registry/commit/e5d1fa6a63ba1d24ab716f620a097da916c06271))
+
 <a id="v-1-2-1-rc-178"></a>
 
 ## farmer-registry 1.2.1-rc.178 — 2026-09-25
@@ -325,19 +338,6 @@ _commit `0c3146f` · changes since 1.2.1-rc.161_
 ### Changes
 
 - [G2P-5607](https://openg2p.atlassian.net/browse/G2P-5607): include is_head and relationship_to_head in members table configuration ([`407bb1c`](https://github.com/OpenG2P/farmer-registry/commit/407bb1c76e788650fe1b72e1628ae6f1f77738b3))
-
-<a id="v-1-2-1-rc-161"></a>
-
-## farmer-registry 1.2.1-rc.161 — 2026-09-02
-
-_commit `3282b92` · changes since 1.2.1-rc.159_
-<!-- build:1.2.1-rc.161 revision:3282b9228243b76b9e18f76535cb4be6c7da3f46 ts:1788322594 -->
-
-**Chart:** [openg2p-farmer-registry 1.2.1-rc.161](https://openg2p.github.io/openg2p-helm/openg2p-farmer-registry-1.2.1-rc.161.tgz)
-
-### Changes
-
-- [G2P-5616](https://openg2p.atlassian.net/browse/G2P-5616) Enhance household member data model and validation ([`552ec3c`](https://github.com/OpenG2P/farmer-registry/commit/552ec3c4ea0c716b1019e613cb302ba3e4381c42))
 
 # Develop builds
 
