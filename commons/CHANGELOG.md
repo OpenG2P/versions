@@ -6,6 +6,7 @@ _Published automatically._
 
 | Version | Date | Type | Notes |
 | --- | --- | --- | --- |
+| [`0.0.0-develop.280`](#v-0-0-0-develop-280) | 2026-10-05 | develop |  |
 | [`0.0.0-develop.271`](#v-0-0-0-develop-271) | 2026-10-03 | develop |  |
 | [`0.0.0-develop.269`](#v-0-0-0-develop-269) | 2026-10-03 | develop |  |
 | [`0.0.0-develop.265`](#v-0-0-0-develop-265) | 2026-10-03 | develop |  |
@@ -36,7 +37,6 @@ _Published automatically._
 | [`0.0.0-develop.237`](#v-0-0-0-develop-237) | 2026-09-01 | develop |  |
 | [`0.0.0-develop.235`](#v-0-0-0-develop-235) | 2026-08-28 | develop |  |
 | [`0.0.0-develop.234`](#v-0-0-0-develop-234) | 2026-08-28 | develop |  |
-| [`0.0.0-develop.233`](#v-0-0-0-develop-233) | 2026-08-28 | develop |  |
 | [`2.2.1`](#v-2-2-1) | 2026-08-06 | release |  |
 | [`2.2.0`](#v-2-2-0) | 2026-07-26 | release |  |
 | [`2.1.0`](#v-2-1-0) | 2026-07-13 | release |  |
@@ -542,6 +542,35 @@ _commit `ffabcdc` · changes since 2.2.1_
 
 # Develop builds
 
+<a id="v-0-0-0-develop-280"></a>
+
+## commons — develop 0.0.0-develop.280 (2026-10-05)
+
+_commit `a1a55ff` · changes since 0.0.0-develop.271_
+<!-- build:0.0.0-develop.280 revision:a1a55ffd51b1e2a88dbbb0f8b1ad9aaee40d1bf3 ts:1791166405 -->
+
+**Charts:** [openg2p-commons-base 0.0.0-develop.280](https://openg2p.github.io/openg2p-helm/openg2p-commons-base-0.0.0-develop.280.tgz) · [openg2p-commons-services 0.0.0-develop.280](https://openg2p.github.io/openg2p-helm/openg2p-commons-services-0.0.0-develop.280.tgz)
+
+### Summary
+
+- **Major:** Migration from MinIO to Garage for master data storage, updating configurations to point to the new Garage endpoints and ensuring compatibility with the new object store.
+- Dependency updates: Bumped partner-management, consent-manager, and inji libraries to their latest development versions, addressing compatibility issues with SQLAlchemy and ensuring proper installation of required packages.
+- Consent Manager enhancements: Implemented AWE wiring with callback secret management and HMAC secret handling, now configurable via Rancher.
+- Garage initialization improvements: Created import and export file buckets with appropriate access controls, and fixed wiring for ODK Central to ensure correct credential usage.
+- Template restructuring: Moved Garage-related templates from commons-services to commons-base to resolve dependency issues and improve installation reliability.
+
+### Changes
+
+- [G2P-5719](https://openg2p.atlassian.net/browse/G2P-5719) commons-services: bump partner-management to develop.27, consent-manager to develop.63, inji-certify and inji-verify to develop.17, mock-identity-system to develop.9 ([`a1a55ff`](https://github.com/OpenG2P/commons/commit/a1a55ffd51b1e2a88dbbb0f8b1ad9aaee40d1bf3))
+- [G2P-5719](https://openg2p.atlassian.net/browse/G2P-5719) Consent Manager AWE wiring (still off by default): callback secret id/Secret names, seed job and HMAC secret as plain resources, Rancher toggle ([`cdb179d`](https://github.com/OpenG2P/commons/commit/cdb179dcec5c11fe04ef3539d92d66cacf9fb2eb))
+- [G2P-5719](https://openg2p.atlassian.net/browse/G2P-5719) commons-services: Master Data loads the agriculture code lists by default (masterData.geoSeed.domains / Rancher question default "agriculture") ([`6a8cd09`](https://github.com/OpenG2P/commons/commit/6a8cd09ce92e827001955f12baa90491290e8d1b))
+- [G2P-5719](https://openg2p.atlassian.net/browse/G2P-5719) Garage init: create the registry's import-files and export-files buckets (read-write for garage-key, export-files read-only for garage-readonly-key) ([`d7651ca`](https://github.com/OpenG2P/commons/commit/d7651caf5ecd9c89021a90d1827464230b13782f))
+- Point master-data at Garage instead of the retired MinIO: set masterData.geoSeed.objectStore and masterDataAPI.catalogue.boundaryStore to http://commons-garage:3900 / openg2p-geo as literals (the subchart applies at most one tpl pass), since the defaults http://commons-minio:9000 made geo-seed fail with EndpointConnectionError; fix the masterDataApi key to masterDataAPI so its resource requests actually apply; and add openg2p-geo to the Garage init job's bucket list ([`e2634c1`](https://github.com/OpenG2P/commons/commit/e2634c106e9f3929cd33fa1a336c07cba6ea278d))
+- Fix ODK Central's Garage wiring and close two commons-services uninstall gaps: point odk-central minioInstallationName at the commons-minio credentials secret written by the Garage init job (was commons-garage, which does not exist) and s3ServerUrl at the Garage S3 port 3900 (was MinIO's 9000); in uninstall.sh delete the unlabelled superset-init-db hook Job by name, and delete the unlabelled inji-certify p12-backup Secret (a stale private signing key that survived every uninstall), keeping it under --keep-dbs ([`09a5809`](https://github.com/OpenG2P/commons/commit/09a58096317b912c1a111f940b5f8b2a608d53f0))
+- Bump openg2p-consent-manager to 0.0.0-develop.61: develop.60's image was built with SQLAlchemy 2.1, which no longer installs greenlet by default, so cm-api and cm-partner-api crashed on import and the cm-sanity post-install hook failed the install; develop.61 pins sqlalchemy[asyncio]&lt;2.1 (verified: 2.0.54 + greenlet 3.5.6); also add the Garage hostname and install toggle to base questions.yaml, left out of the template-move commit ([`603f914`](https://github.com/OpenG2P/commons/commit/603f914a7e4a2f0987c6b694186fc7222f3c1024))
+- Bump openg2p-consent-manager to 0.0.0-develop.61: develop.60's image was built with SQLAlchemy 2.1, which no longer installs greenlet by default, so cm-api and cm-partner-api crashed on import and the cm-sanity post-install hook failed the install; develop.61 pins sqlalchemy[asyncio]&lt;2.1 (verified: 2.0.54 + greenlet 3.5.6); also add the Garage hostname and install toggle to base questions.yaml, left out of the template-move commit ([`eb7aa92`](https://github.com/OpenG2P/commons/commit/eb7aa925dd860e7266596ec679df116ba6934129))
+- Move the garage templates (init-job, init-rbac, virtualservice) from commons-services to commons-base, where the garage dependency and its values live: in services .Values.garage was nil, failing the install with "nil pointer evaluating interface {}.enabled", and the templates' release-name-derived pod/service names only resolve under the base release; also add Garage hostname and install toggle to the base questions.yaml alongside MinIO ([`5f0b484`](https://github.com/OpenG2P/commons/commit/5f0b48452f9a9abb80faf11c30deaf104725ce45))
+
 <a id="v-0-0-0-develop-271"></a>
 
 ## commons — develop 0.0.0-develop.271 (2026-10-03)
@@ -823,19 +852,6 @@ _commit `2a9f6cb` · changes since 0.0.0-develop.233_
 ### Changes
 
 - [G2P-5605](https://openg2p.atlassian.net/browse/G2P-5605) pick up the master-data and partner-management fixes ([`2a9f6cb`](https://github.com/OpenG2P/commons/commit/2a9f6cbe578d0451616950a2772a1f3e9d217927))
-
-<a id="v-0-0-0-develop-233"></a>
-
-## commons — develop 0.0.0-develop.233 (2026-08-28)
-
-_commit `8defb45` · changes since 0.0.0-develop.232_
-<!-- build:0.0.0-develop.233 revision:8defb450c9546d840cf1862100caff901d330de1 ts:1787908180 -->
-
-**Charts:** [openg2p-commons-base 0.0.0-develop.233](https://openg2p.github.io/openg2p-helm/openg2p-commons-base-0.0.0-develop.233.tgz) · [openg2p-commons-services 0.0.0-develop.233](https://openg2p.github.io/openg2p-helm/openg2p-commons-services-0.0.0-develop.233.tgz)
-
-### Changes
-
-- [G2P-5605](https://openg2p.atlassian.net/browse/G2P-5605) publish the commons charts to the Rancher index too ([`8defb45`](https://github.com/OpenG2P/commons/commit/8defb450c9546d840cf1862100caff901d330de1))
 
 ---
 
