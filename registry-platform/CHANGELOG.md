@@ -6,6 +6,7 @@ _Published automatically._
 
 | Version | Date | Type | Notes |
 | --- | --- | --- | --- |
+| [`1.2.2-rc.532`](#v-1-2-2-rc-532) | 2026-10-05 | release candidate |  |
 | [`1.2.2-rc.521`](#v-1-2-2-rc-521) | 2026-10-05 | release candidate |  |
 | [`1.2.2-rc.518`](#v-1-2-2-rc-518) | 2026-10-05 | release candidate |  |
 | [`0.0.0-develop.604`](#v-0-0-0-develop-604) | 2026-10-05 | develop |  |
@@ -26,7 +27,6 @@ _Published automatically._
 | [`1.2.2-rc.493`](#v-1-2-2-rc-493) | 2026-09-24 | release candidate |  |
 | [`1.2.2-rc.491`](#v-1-2-2-rc-491) | 2026-09-23 | release candidate |  |
 | [`0.0.0-develop.435`](#v-0-0-0-develop-435) | 2026-09-23 | develop | Marking a version at this point before major changes are done on RP\| |
-| [`1.2.2-rc.489`](#v-1-2-2-rc-489) | 2026-09-17 | release candidate |  |
 | [`0.0.0-develop.432`](#v-0-0-0-develop-432) | 2026-09-09 | develop |  |
 | [`1.2.1`](#v-1-2-1) | 2026-09-07 | release |  |
 | [`1.2.1-rc.462`](#v-1-2-1-rc-462) | 2026-09-04 | release candidate |  |
@@ -353,6 +353,33 @@ same commit and *promoted* (retagged), not rebuilt. No code changed between them
 
 # Release candidates
 
+<a id="v-1-2-2-rc-532"></a>
+
+## registry-platform 1.2.2-rc.532 — 2026-10-05
+
+_commit `7cffa27` · changes since 1.2.2-rc.521_
+<!-- build:1.2.2-rc.532 revision:7cffa27351588dbec237c3809111d4b89db36baa ts:1791179550 -->
+
+**Chart:** [openg2p-registry 1.2.2-rc.532](https://openg2p.github.io/openg2p-helm/openg2p-registry-1.2.2-rc.532.tgz)
+
+### Summary
+
+- **Major:** Enhanced notification system: added configuration options for Novu integration, implemented notification for staff on register exports completion, and enabled notifications for registrants on change requests and intake events.
+- Core improvements: introduced `resolve_registry_name` function, enhanced notification payloads with related model data, and added a notification helper for registrant contact lookup.
+- Dependency updates: upgraded `fastapi-common` to version 1.2.2 in Dockerfiles for bene-api and partner-api, and removed redundant `sqlalchemy[asyncio]` dependency.
+
+### Changes
+
+- [G2P-5706](https://openg2p.atlassian.net/browse/G2P-5706) feat(notification): add configuration options for Novu integration in Helm charts ([`15c35e0`](https://github.com/OpenG2P/registry-platform/commit/15c35e02b91f1997ce4c7962a19043103849b2e9))
+- chore: update fastapi-common reference to version 1.2.2 in Dockerfiles for bene-api and partner-api ([`51bac59`](https://github.com/OpenG2P/registry-platform/commit/51bac5904b2e00dedc28c2c5ff6b8575ba237d3e))
+- [G2P-5697](https://openg2p.atlassian.net/browse/G2P-5697) feat(core): add resolve_registry_name function and update payloads ([`771b43e`](https://github.com/OpenG2P/registry-platform/commit/771b43e5eee7dd236e2440ee4b1763642a3495f9))
+- chore: bump fastapi-common tag and remove redundant dependency sqlalchemy[asyncio] ([`b492513`](https://github.com/OpenG2P/registry-platform/commit/b492513d4296a541e1d29fe00c43f0932c6e20c2))
+- [G2P-5697](https://openg2p.atlassian.net/browse/G2P-5697) feat(core): enhance notification payload with related model data ([`a2d5bec`](https://github.com/OpenG2P/registry-platform/commit/a2d5becd3262ded701ce8f66531a34694fceff50))
+- [G2P-5697](https://openg2p.atlassian.net/browse/G2P-5697) chore: wire the notification connector into images and helm ([`92ebb58`](https://github.com/OpenG2P/registry-platform/commit/92ebb5864d0457cf9ffdcb08d9705695d7ffff3e))
+- [G2P-5697](https://openg2p.atlassian.net/browse/G2P-5697) feat(core): notify staff when register exports finish ([`13c8eba`](https://github.com/OpenG2P/registry-platform/commit/13c8ebacbb61f5a4d43549878e19d4ff77c50198))
+- [G2P-5697](https://openg2p.atlassian.net/browse/G2P-5697) feat(core): notify registrants on change request and intake events ([`c062ca6`](https://github.com/OpenG2P/registry-platform/commit/c062ca64b3fa7a4e320db951cb45b618585e4b40))
+- [G2P-5697](https://openg2p.atlassian.net/browse/G2P-5697) feat(core): add notification helper and registrant contact lookup ([`99b02f7`](https://github.com/OpenG2P/registry-platform/commit/99b02f7905f622dd8bcac9f92a1408fdbefa8aa1))
+
 <a id="v-1-2-2-rc-521"></a>
 
 ## registry-platform 1.2.2-rc.521 — 2026-10-05
@@ -504,19 +531,6 @@ _commit `94252fd` · changes since 1.2.2-rc.489_
 ### Changes
 
 - [G2P-5655](https://openg2p.atlassian.net/browse/G2P-5655) Refactor G2PChangeRequestSectionPayloadService to remove readonly checks and update test cases ([`bde776b`](https://github.com/OpenG2P/registry-platform/commit/bde776b34994418d58f65996fa69aeab89958799))
-
-<a id="v-1-2-2-rc-489"></a>
-
-## registry-platform 1.2.2-rc.489 — 2026-09-17
-
-_commit `3db8fa3` · changes since 1.2.2-rc.487_
-<!-- build:1.2.2-rc.489 revision:3db8fa3224232d1fb18291272e1ab86dca2e34a1 ts:1789638278 -->
-
-**Chart:** [openg2p-registry 1.2.2-rc.489](https://openg2p.github.io/openg2p-helm/openg2p-registry-1.2.2-rc.489.tgz)
-
-### Changes
-
-- Replace dbengine import with async session maker ([`dbf5029`](https://github.com/OpenG2P/registry-platform/commit/dbf50299a5a7d6e7ccbdd09748947f7cc2353355))
 
 <a id="v-1-2-1-rc-462"></a>
 
