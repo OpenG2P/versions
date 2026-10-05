@@ -6,6 +6,7 @@ _Published automatically._
 
 | Version | Date | Type | Notes |
 | --- | --- | --- | --- |
+| [`0.0.0-develop.28`](#v-0-0-0-develop-28) | 2026-10-05 | develop |  |
 | [`0.0.0-develop.24`](#v-0-0-0-develop-24) | 2026-10-03 | develop |  |
 | [`0.0.0-develop.21`](#v-0-0-0-develop-21) | 2026-10-02 | develop |  |
 | [`0.0.0-develop.17`](#v-0-0-0-develop-17) | 2026-10-01 | develop |  |
@@ -16,6 +17,29 @@ _Published automatically._
 | [`0.0.0-develop.4`](#v-0-0-0-develop-4) | 2026-09-27 | develop |  |
 
 # Develop builds
+
+<a id="v-0-0-0-develop-28"></a>
+
+## crop-sown-registry — develop 0.0.0-develop.28 (2026-10-05)
+
+_commit `623272c` · changes since 0.0.0-develop.24_
+<!-- build:0.0.0-develop.28 revision:623272c0bc425c7ce4c1c771889f610cf745fb2d ts:1791165931 -->
+
+**Chart:** [openg2p-crop-sown-registry 0.0.0-develop.28](https://openg2p.github.io/openg2p-helm/openg2p-crop-sown-registry-0.0.0-develop.28.tgz)
+
+### Summary
+
+- **Major:** Data scopes enhancement for CropSown and Cluster, introducing new fields (crop_season, measures, etc.) and improving consent handling; activity details streamlined.
+- Cluster register improvements: functional IDs generated with a new prefix, searchable programme codes, and enhanced sample cluster mapping; error handling for missing sources now raises exceptions.
+- Helm configuration updated to direct the object store to the in-cluster commons Garage, with adjustments for security settings.
+- Version bump to RP 0.0.0-develop.604, indicating ongoing development progress.
+
+### Changes
+
+- Bumped up RP version to 0.0.0-develop.604 ([`623272c`](https://github.com/OpenG2P/crop-sown-registry/commit/623272c0bc425c7ce4c1c771889f610cf745fb2d))
+- [G2P-5719](https://openg2p.atlassian.net/browse/G2P-5719) Data scopes: catalogue for CropSown (crop_season, measures, farmer_reference, location, activity over activity/context/aggregate fields) and Cluster (section scopes relabelled, cluster_profile); DCI state/summary groups render null when not consented, is_final null not false; activity details no longer repeat farmer/location keys; tests ([`a1ca372`](https://github.com/OpenG2P/crop-sown-registry/commit/a1ca372af8f99a7972a7b85d87fe7c3f196d6da9))
+- [G2P-5719](https://openg2p.atlassian.net/browse/G2P-5719) Cluster register: functional ID from the ID generator (pool "cluster", CL- prefix), programme code moved to new searchable programme_cluster_code; chart enables idgenerator; zz-upgrades for existing installs; sample clusters with generated-style IDs, crop-season samples map clusters by woreda; missing sample sources (Master Data people, sample clusters) now raise instead of loading nothing; "Load sample crop seasons" question notes install failure; tests ([`f8b4d05`](https://github.com/OpenG2P/crop-sown-registry/commit/f8b4d05b7e1b8360eee74f90a68a87b90c2247dd))
+- [G2P-5719](https://openg2p.atlassian.net/browse/G2P-5719) Helm: point the object store at the in-cluster commons Garage (global.minioHost commons-garage:3900, minioSecure false) ([`24d8060`](https://github.com/OpenG2P/crop-sown-registry/commit/24d8060fd8d160432edaf1b19b1be3db496437bf))
 
 <a id="v-0-0-0-develop-24"></a>
 
