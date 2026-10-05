@@ -6,6 +6,7 @@ _Published automatically._
 
 | Version | Date | Type | Notes |
 | --- | --- | --- | --- |
+| [`1.2.2-rc.521`](#v-1-2-2-rc-521) | 2026-10-05 | release candidate |  |
 | [`1.2.2-rc.518`](#v-1-2-2-rc-518) | 2026-10-05 | release candidate |  |
 | [`0.0.0-develop.604`](#v-0-0-0-develop-604) | 2026-10-05 | develop |  |
 | [`0.0.0-develop.599`](#v-0-0-0-develop-599) | 2026-10-03 | develop |  |
@@ -26,7 +27,6 @@ _Published automatically._
 | [`1.2.2-rc.491`](#v-1-2-2-rc-491) | 2026-09-23 | release candidate |  |
 | [`0.0.0-develop.435`](#v-0-0-0-develop-435) | 2026-09-23 | develop | Marking a version at this point before major changes are done on RP\| |
 | [`1.2.2-rc.489`](#v-1-2-2-rc-489) | 2026-09-17 | release candidate |  |
-| [`1.2.2-rc.487`](#v-1-2-2-rc-487) | 2026-09-17 | release candidate |  |
 | [`0.0.0-develop.432`](#v-0-0-0-develop-432) | 2026-09-09 | develop |  |
 | [`1.2.1`](#v-1-2-1) | 2026-09-07 | release |  |
 | [`1.2.1-rc.462`](#v-1-2-1-rc-462) | 2026-09-04 | release candidate |  |
@@ -353,6 +353,25 @@ same commit and *promoted* (retagged), not rebuilt. No code changed between them
 
 # Release candidates
 
+<a id="v-1-2-2-rc-521"></a>
+
+## registry-platform 1.2.2-rc.521 — 2026-10-05
+
+_commit `2af6ed8` · changes since 1.2.2-rc.518_
+<!-- build:1.2.2-rc.521 revision:2af6ed8a78d734b70dbd1e15af825fef5f2f9b7d ts:1791178538 -->
+
+**Chart:** [openg2p-registry 1.2.2-rc.521](https://openg2p.github.io/openg2p-helm/openg2p-registry-1.2.2-rc.521.tgz)
+
+### Summary
+
+- Dependency updates: synchronized `staff-ui` to version `1.1.9-dev.9` and made adjustments to `ui-widgets` package manifests.
+- UI behavior fix: modified `SelectWidget` to set `null` for empty selections instead of `undefined`.
+
+### Changes
+
+- chore(ui-widgets): version for npm dev publish, sync staff-ui @1.1.9-dev.9 ([`2af6ed8`](https://github.com/OpenG2P/registry-platform/commit/2af6ed8a78d734b70dbd1e15af825fef5f2f9b7d))
+- [G2P-5729](https://openg2p.atlassian.net/browse/G2P-5729) fix(SelectWidget): change onChange behavior to set null instead of undefined for empty selection ([`8c6427a`](https://github.com/OpenG2P/registry-platform/commit/8c6427a166cb51a3a202ab110af1050448ccf7fc))
+
 <a id="v-1-2-2-rc-518"></a>
 
 ## registry-platform 1.2.2-rc.518 — 2026-10-05
@@ -498,19 +517,6 @@ _commit `3db8fa3` · changes since 1.2.2-rc.487_
 ### Changes
 
 - Replace dbengine import with async session maker ([`dbf5029`](https://github.com/OpenG2P/registry-platform/commit/dbf50299a5a7d6e7ccbdd09748947f7cc2353355))
-
-<a id="v-1-2-2-rc-487"></a>
-
-## registry-platform 1.2.2-rc.487 — 2026-09-17
-
-_commit `9663f05` · changes since 1.2.2-rc.485_
-<!-- build:1.2.2-rc.487 revision:9663f053d3a0dabe01555a3c06d907de127edd7d ts:1789629704 -->
-
-**Chart:** [openg2p-registry 1.2.2-rc.487](https://openg2p.github.io/openg2p-helm/openg2p-registry-1.2.2-rc.487.tgz)
-
-### Changes
-
-- Rename import file document store ([`33ead30`](https://github.com/OpenG2P/registry-platform/commit/33ead301335307d8bdd4fad7b590894b03966345))
 
 <a id="v-1-2-1-rc-462"></a>
 
