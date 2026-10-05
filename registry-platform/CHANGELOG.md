@@ -6,6 +6,7 @@ _Published automatically._
 
 | Version | Date | Type | Notes |
 | --- | --- | --- | --- |
+| [`1.2.2-rc.518`](#v-1-2-2-rc-518) | 2026-10-05 | release candidate |  |
 | [`0.0.0-develop.604`](#v-0-0-0-develop-604) | 2026-10-05 | develop |  |
 | [`0.0.0-develop.599`](#v-0-0-0-develop-599) | 2026-10-03 | develop |  |
 | [`1.2.2-rc.515`](#v-1-2-2-rc-515) | 2026-10-02 | release candidate |  |
@@ -26,7 +27,6 @@ _Published automatically._
 | [`0.0.0-develop.435`](#v-0-0-0-develop-435) | 2026-09-23 | develop | Marking a version at this point before major changes are done on RP\| |
 | [`1.2.2-rc.489`](#v-1-2-2-rc-489) | 2026-09-17 | release candidate |  |
 | [`1.2.2-rc.487`](#v-1-2-2-rc-487) | 2026-09-17 | release candidate |  |
-| [`1.2.2-rc.485`](#v-1-2-2-rc-485) | 2026-09-17 | release candidate |  |
 | [`0.0.0-develop.432`](#v-0-0-0-develop-432) | 2026-09-09 | develop |  |
 | [`1.2.1`](#v-1-2-1) | 2026-09-07 | release |  |
 | [`1.2.1-rc.462`](#v-1-2-1-rc-462) | 2026-09-04 | release candidate |  |
@@ -353,6 +353,26 @@ same commit and *promoted* (retagged), not rebuilt. No code changed between them
 
 # Release candidates
 
+<a id="v-1-2-2-rc-518"></a>
+
+## registry-platform 1.2.2-rc.518 — 2026-10-05
+
+_commit `282118c` · changes since 1.2.2-rc.515_
+<!-- build:1.2.2-rc.518 revision:282118c62d671cde8b5146517b774ff3193a5ba1 ts:1791178433 -->
+
+**Chart:** [openg2p-registry 1.2.2-rc.518](https://openg2p.github.io/openg2p-helm/openg2p-registry-1.2.2-rc.518.tgz)
+
+### Summary
+
+- Notification enhancements: improved HMAC to include subscriber email and first name, integrated a new notification client, and added a NotificationInbox component while removing the NotificationDropdown and related notification context and utility files.
+- Codebase cleanup: significant reduction in code with 542 deletions across various components, streamlining the notification feature.
+- Dependency updates: modifications made to package-lock and package.json files, indicating changes in third-party libraries.
+
+### Changes
+
+- [G2P-5691](https://openg2p.atlassian.net/browse/G2P-5691) feat(notification): enhance notification HMAC to include subscriber email and first name ([`21ffce9`](https://github.com/OpenG2P/registry-platform/commit/21ffce9453fa9c2d5ae795f52b70c7515445baff))
+- [G2P-5698](https://openg2p.atlassian.net/browse/G2P-5698) feat(notification): integrate notification client ([`8fbee8a`](https://github.com/OpenG2P/registry-platform/commit/8fbee8afa9e0231fa3cf53b76efa5022477f3ec2))
+
 <a id="v-1-2-2-rc-515"></a>
 
 ## registry-platform 1.2.2-rc.515 — 2026-10-02
@@ -491,19 +511,6 @@ _commit `9663f05` · changes since 1.2.2-rc.485_
 ### Changes
 
 - Rename import file document store ([`33ead30`](https://github.com/OpenG2P/registry-platform/commit/33ead301335307d8bdd4fad7b590894b03966345))
-
-<a id="v-1-2-2-rc-485"></a>
-
-## registry-platform 1.2.2-rc.485 — 2026-09-17
-
-_commit `6052286` · changes since 1.2.2-rc.483_
-<!-- build:1.2.2-rc.485 revision:60522861dc2b7bd2be6b864318d447c6f3472dda ts:1789626346 -->
-
-**Chart:** [openg2p-registry 1.2.2-rc.485](https://openg2p.github.io/openg2p-helm/openg2p-registry-1.2.2-rc.485.tgz)
-
-### Changes
-
-- [G2P-5677](https://openg2p.atlassian.net/browse/G2P-5677) refactor: streamline document handling and update identifiers across various components ([`b3169fa`](https://github.com/OpenG2P/registry-platform/commit/b3169fabdb6b250b4dc232b49bcbe06f29baf768))
 
 <a id="v-1-2-1-rc-462"></a>
 
