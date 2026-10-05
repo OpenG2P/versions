@@ -6,6 +6,7 @@ _Published automatically._
 
 | Version | Date | Type | Notes |
 | --- | --- | --- | --- |
+| [`0.0.0-develop.27`](#v-0-0-0-develop-27) | 2026-10-05 | develop |  |
 | [`1.0.3-rc.33`](#v-1-0-3-rc-33) | 2026-09-04 | release candidate |  |
 | [`1.0.3-rc.30`](#v-1-0-3-rc-30) | 2026-09-04 | release candidate |  |
 | [`1.0.2`](#v-1-0-2) | 2026-09-01 | release |  |
@@ -14,7 +15,7 @@ _Published automatically._
 | [`1.0.1-rc.26`](#v-1-0-1-rc-26) | 2026-09-01 | release candidate |  |
 | [`1.0.0`](#v-1-0-0) | 2026-09-01 | release |  |
 | [`1.0.0-rc.25`](#v-1-0-0-rc-25) | 2026-09-01 | release candidate |  |
-| [`0.0.0-develop.26`](#v-0-0-0-develop-26) | 2026-09-01 | develop |  |
+| [`0.0.0-develop.26`](#v-0-0-0-develop-26) | 2026-09-01 | develop | Marking this as a working version before major changes are done |
 | [`1.0.0-rc.24`](#v-1-0-0-rc-24) | 2026-09-01 | release candidate |  |
 | [`0.0.0-develop.24`](#v-0-0-0-develop-24) | 2026-08-28 | develop |  |
 | [`0.0.0-develop.23`](#v-0-0-0-develop-23) | 2026-08-28 | develop |  |
@@ -234,9 +235,24 @@ _No new commits since 0.0.0-develop.24._
 
 # Develop builds
 
+<a id="v-0-0-0-develop-27"></a>
+
+## partner-management — develop 0.0.0-develop.27 (2026-10-05)
+
+_commit `84b0ffd` · changes since 0.0.0-develop.26_
+<!-- build:0.0.0-develop.27 revision:84b0ffd29cdbb5845ce667583f5338efddfec4c0 ts:1791164471 -->
+
+**Chart:** [partner-management 0.0.0-develop.27](https://openg2p.github.io/openg2p-helm/partner-management-0.0.0-develop.27.tgz)
+
+### Changes
+
+- [G2P-5719](https://openg2p.atlassian.net/browse/G2P-5719) Selects for fixed-value fields in the staff UI (key algorithm, partner on key update, keys to revoke, status/type filters) fed by a new GET /metadata; API validates the same sets (algorithm, partner_id/kid format, jwks_url, revoke_kids, list filters); stored rows still load; tests ([`84b0ffd`](https://github.com/OpenG2P/partner-management/commit/84b0ffd29cdbb5845ce667583f5338efddfec4c0))
+
 <a id="v-0-0-0-develop-26"></a>
 
 ## partner-management — develop 0.0.0-develop.26 (2026-09-01)
+
+> **Note** — Marking this as a working version before major changes are done
 
 _commit `11b3618` · changes since 0.0.0-develop.24_
 <!-- build:0.0.0-develop.26 revision:11b36183194b792201deb579e5698ff2aef93ad5 ts:1788251230 -->
