@@ -6,6 +6,7 @@ _Published automatically._
 
 | Version | Date | Type | Notes |
 | --- | --- | --- | --- |
+| [`1.1.4-rc.104`](#v-1-1-4-rc-104) | 2026-10-05 | release candidate |  |
 | [`0.0.0-develop.107`](#v-0-0-0-develop-107) | 2026-10-05 | develop |  |
 | [`0.0.0-develop.105`](#v-0-0-0-develop-105) | 2026-10-03 | develop |  |
 | [`0.0.0-develop.103`](#v-0-0-0-develop-103) | 2026-10-03 | develop |  |
@@ -211,6 +212,19 @@ same commit and *promoted* (retagged), not rebuilt. No code changed between them
 - [G2P-5538](https://openg2p.atlassian.net/browse/G2P-5538) Add initial seed data for G2P attributes and values ([`a10123b`](https://github.com/OpenG2P/master-data-service/commit/a10123ba53ecf75d4cc2e8663b19d217851fd135))
 
 # Release candidates
+
+<a id="v-1-1-4-rc-104"></a>
+
+## master-data-service 1.1.4-rc.104 — 2026-10-05
+
+_commit `59f58ba` · changes since 1.1.4-rc.102_
+<!-- build:1.1.4-rc.104 revision:59f58badf055a506dbefdb5c9c661102f54b965e ts:1791178555 -->
+
+**Chart:** [openg2p-master-data 1.1.4-rc.104](https://openg2p.github.io/openg2p-helm/openg2p-master-data-1.1.4-rc.104.tgz)
+
+### Changes
+
+- Update FASTAPI_COMMON_REF to version 1.2 in build-publish workflow ([`3184624`](https://github.com/OpenG2P/master-data-service/commit/31846242154c614e789d36e1fd896aaca22bb878))
 
 <a id="v-1-1-4-rc-102"></a>
 
