@@ -6,6 +6,7 @@ _Published automatically._
 
 | Version | Date | Type | Notes |
 | --- | --- | --- | --- |
+| [`0.0.0-develop.29`](#v-0-0-0-develop-29) | 2026-10-05 | develop |  |
 | [`0.0.0-develop.28`](#v-0-0-0-develop-28) | 2026-10-05 | develop |  |
 | [`0.0.0-develop.27`](#v-0-0-0-develop-27) | 2026-10-05 | develop |  |
 | [`1.0.3-rc.33`](#v-1-0-3-rc-33) | 2026-09-04 | release candidate |  |
@@ -235,6 +236,19 @@ _commit `bb96ff2` · changes since 0.0.0-develop.24_
 _No new commits since 0.0.0-develop.24._
 
 # Develop builds
+
+<a id="v-0-0-0-develop-29"></a>
+
+## partner-management — develop 0.0.0-develop.29 (2026-10-05)
+
+_commit `d298af2` · changes since 0.0.0-develop.28_
+<!-- build:0.0.0-develop.29 revision:d298af262e47c4b31a6b5cbc2cff7819f78c3c9a ts:1791194782 -->
+
+**Chart:** [partner-management 0.0.0-develop.29](https://openg2p.github.io/openg2p-helm/partner-management-0.0.0-develop.29.tgz)
+
+### Changes
+
+- [G2P-5719](https://openg2p.atlassian.net/browse/G2P-5719) Helm: iamRegister.runAsHook (default true); false renders the IAM registration Job and payload ConfigMap as regular resources, for umbrella charts where hooks are chained or skipped ([`d298af2`](https://github.com/OpenG2P/partner-management/commit/d298af262e47c4b31a6b5cbc2cff7819f78c3c9a))
 
 <a id="v-0-0-0-develop-28"></a>
 
