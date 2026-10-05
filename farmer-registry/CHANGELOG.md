@@ -6,6 +6,7 @@ _Published automatically._
 
 | Version | Date | Type | Notes |
 | --- | --- | --- | --- |
+| [`0.0.0-develop.271`](#v-0-0-0-develop-271) | 2026-10-05 | develop |  |
 | [`0.0.0-develop.221`](#v-0-0-0-develop-221) | 2026-10-03 | develop |  |
 | [`0.0.0-develop.218`](#v-0-0-0-develop-218) | 2026-10-02 | develop |  |
 | [`0.0.0-develop.215`](#v-0-0-0-develop-215) | 2026-10-01 | develop |  |
@@ -339,6 +340,60 @@ _commit `3282b92` · changes since 1.2.1-rc.159_
 - [G2P-5616](https://openg2p.atlassian.net/browse/G2P-5616) Enhance household member data model and validation ([`552ec3c`](https://github.com/OpenG2P/farmer-registry/commit/552ec3c4ea0c716b1019e613cb302ba3e4381c42))
 
 # Develop builds
+
+<a id="v-0-0-0-develop-271"></a>
+
+## farmer-registry — develop 0.0.0-develop.271 (2026-10-05)
+
+_commit `d67f189` · changes since 0.0.0-develop.221_
+<!-- build:0.0.0-develop.271 revision:d67f189acf34ec81befdbcb27a94856b8e718ca2 ts:1791165956 -->
+
+**Chart:** [openg2p-farmer-registry 0.0.0-develop.271](https://openg2p.github.io/openg2p-helm/openg2p-farmer-registry-0.0.0-develop.271.tgz)
+
+### Summary
+
+- **Major:** CI transition to GitLab, removing GitHub Actions for build and publish processes.
+- Data model enhancements: introduced named data scopes for various farmer attributes, improved household member data model and validation, and added null annotations for Rancher compatibility.
+- Database improvements: fixed ID authentication widget SQL, updated SQL insert statements for crops and livestock, and corrected field names in household information.
+- Docker and Helm updates: aligned Dockerfile versions with registry platform, pointed object store to in-cluster commons Garage, and updated paths in Dockerfiles and Chart.yaml.
+- Seeding and data handling: fixed db-seed for fresh deployments, added functionality for data insertion via intake forms, and reduced record seeding count.
+- UI and widget improvements: enhanced table cell handling for decimals, improved child change request inheritance, and streamlined domain registration process by removing redundant files.
+
+### Changes
+
+- Bumped up RP version to 0.0.0-develop.604 ([`d67f189`](https://github.com/OpenG2P/farmer-registry/commit/d67f189acf34ec81befdbcb27a94856b8e718ca2))
+- [G2P-5719](https://openg2p.atlassian.net/browse/G2P-5719) Data scopes: named scope catalogue (farmer_identifiers, personal_details, contact, location, main_crops, socio_economic_and_health, land, land_location, livestock, farm_inputs, memberships, household, household_location, household_members, poverty_score; no default section scopes); sanity dataScopes/deniedScopes and DCI e2e use scope IDs; test publishes the catalogue and renders a filtered farmer record ([`b63a79e`](https://github.com/OpenG2P/farmer-registry/commit/b63a79ea7ace0ab64b7133d3c40a16a880462ace))
+- [G2P-5719](https://openg2p.atlassian.net/browse/G2P-5719) Helm: point the object store at the in-cluster commons Garage (global.minioHost commons-garage:3900, minioSecure false) ([`76ef5db`](https://github.com/OpenG2P/farmer-registry/commit/76ef5db0d57031f002a279214fb59624979a5591))
+- Fix db-seed on a fresh deployment: give celery-beat a consumed queue, report why the seed fails ([`46527b5`](https://github.com/OpenG2P/farmer-registry/commit/46527b5db1d7ea81831cf06907416ab6b680457f))
+- [G2P-5703](https://openg2p.atlassian.net/browse/G2P-5703) Add null annotations for Rancher compatibility in values.yaml ([`bae8577`](https://github.com/OpenG2P/farmer-registry/commit/bae85776f8f7f1d6cd07217c563ad8a891f1e3a6))
+- fix: align openg2p-registry version pins to 1.2.2-rc.489 ([`b009442`](https://github.com/OpenG2P/farmer-registry/commit/b0094425c32195b621e50c087986fd88ede3eba5))
+- [G2P-5695](https://openg2p.atlassian.net/browse/G2P-5695) Fix ID authentication widget SQL ([`1c7a311`](https://github.com/OpenG2P/farmer-registry/commit/1c7a3113d0af9638311b2e7e3cc31a1608defa3e))
+- Bump version 1.2.2-rc.489 of registry platform in Dockerfile ([`498ffa8`](https://github.com/OpenG2P/farmer-registry/commit/498ffa8e6fc7bfa84d05b88551fdd53a60566ba1))
+- Bump version 1.2.2-rc.487 of registry platform in Dockerfile ([`fb6cd5d`](https://github.com/OpenG2P/farmer-registry/commit/fb6cd5d764013c99ee4a26e82884f99ddfa2b2a4))
+- Image issues ([`ea5e3fd`](https://github.com/OpenG2P/farmer-registry/commit/ea5e3fda595a607b90289ed497982ba0ab854c3d))
+- [G2P-5680](https://openg2p.atlassian.net/browse/G2P-5680) [G2P-5676](https://openg2p.atlassian.net/browse/G2P-5676) ui-widgets decimals in table cells, child change requests inherit the subject record name, partner-api and db-seed fixes ([`73e3037`](https://github.com/OpenG2P/farmer-registry/commit/73e30377460db8762d66e3d33468a319aa1d979f))
+- [G2P-5604](https://openg2p.atlassian.net/browse/G2P-5604) Enhance domain services for household and household members ([`5805d9d`](https://github.com/OpenG2P/farmer-registry/commit/5805d9d1147757658e6376b4fb7d1dcbe57e98f1))
+- [G2P-5607](https://openg2p.atlassian.net/browse/G2P-5607): include is_head and relationship_to_head in members table configuration ([`407bb1c`](https://github.com/OpenG2P/farmer-registry/commit/407bb1c76e788650fe1b72e1628ae6f1f77738b3))
+- [G2P-5616](https://openg2p.atlassian.net/browse/G2P-5616) Enhance household member data model and validation ([`552ec3c`](https://github.com/OpenG2P/farmer-registry/commit/552ec3c4ea0c716b1019e613cb302ba3e4381c42))
+- [G2P-5605](https://openg2p.atlassian.net/browse/G2P-5605) Fix the base images: they come from registry-platform, not this repo ([`448e66e`](https://github.com/OpenG2P/farmer-registry/commit/448e66e023a1dfc38f17486804b8a7fdb711ebd6))
+- [G2P-5605](https://openg2p.atlassian.net/browse/G2P-5605) Align the 1.2 release line with GitHub ([`b740b81`](https://github.com/OpenG2P/farmer-registry/commit/b740b8138e502451b11bb2b5cd026dbb2dcf74e9))
+- [G2P-5576](https://openg2p.atlassian.net/browse/G2P-5576) Refactor enums and update source of income references ([`6dff669`](https://github.com/OpenG2P/farmer-registry/commit/6dff669117c19d9dc6eb84a3b23fd8643fb8c85d))
+- [G2P-5574](https://openg2p.atlassian.net/browse/G2P-5574) Reduce record seeding count from 50 to 25 ([`d33c743`](https://github.com/OpenG2P/farmer-registry/commit/d33c743097d2acd59a25f38199e3c3ba7daaf200))
+- [G2P-5572](https://openg2p.atlassian.net/browse/G2P-5572) Update Dockerfiles and Chart.yaml to use GitLab registry paths ([`212e9e1`](https://github.com/OpenG2P/farmer-registry/commit/212e9e18e588fc59ba7971ab5fbdea4168d21761))
+- [G2P-5572](https://openg2p.atlassian.net/browse/G2P-5572) Update Dockerfiles and Chart.yaml to version 1.2.0-rc.419 ([`7db5915`](https://github.com/OpenG2P/farmer-registry/commit/7db5915d453697b102133539c5643b2bbe0303be))
+- [G2P-5572](https://openg2p.atlassian.net/browse/G2P-5572) Add seeding to insert data via intake form ([`8dd6d6a`](https://github.com/OpenG2P/farmer-registry/commit/8dd6d6acbcd37be76cd024d1295b2b3f4f09da7c))
+- Change in Ui schema and domain translation ([`75f1c68`](https://github.com/OpenG2P/farmer-registry/commit/75f1c685deccc29c8b3d137164ffe35e644c1302))
+- [G2P-5543](https://openg2p.atlassian.net/browse/G2P-5543) Add script to upload farmer data and images to MinIO ([`81610dd`](https://github.com/OpenG2P/farmer-registry/commit/81610dd3ffad426f1b9d59a4ee012b8aeffa3ecf))
+- [G2P-5538](https://openg2p.atlassian.net/browse/G2P-5538) Enable functional_id generation for farmer and household ([`99cf568`](https://github.com/OpenG2P/farmer-registry/commit/99cf5686d7e32376143ce9b34c9ad1e65ddaf4a5))
+- [G2P-5538](https://openg2p.atlassian.net/browse/G2P-5538) Delete attribute sql files ([`ddb078f`](https://github.com/OpenG2P/farmer-registry/commit/ddb078f07fb67d41bf746da66c87857f37f6e614))
+- [G2P-5402](https://openg2p.atlassian.net/browse/G2P-5402): update SQL insert statements for crops, livestocks, and farminputs sections ([`6c6dff7`](https://github.com/OpenG2P/farmer-registry/commit/6c6dff730553ca98dba1aa14482b267540936604))
+- [G2P-5480](https://openg2p.atlassian.net/browse/G2P-5480) Change land_size field type from string to float in land model and schema ([`161821a`](https://github.com/OpenG2P/farmer-registry/commit/161821a2b04d18095df90277d5f7404b1994cca0))
+- [G2P-5524](https://openg2p.atlassian.net/browse/G2P-5524) refactor: remove G2PRegisterDomainFactory and related files to streamline domain registration process ([`ef21f34`](https://github.com/OpenG2P/farmer-registry/commit/ef21f346f57e7a358f18b5109cc8fcaf1649ebc4))
+- [G2P-5519](https://openg2p.atlassian.net/browse/G2P-5519) remove redundant repository entries in values.yaml for openg2p-farmer-registry ([`9d9ba7b`](https://github.com/OpenG2P/farmer-registry/commit/9d9ba7b48356181140821ef3ba9d1ea076ce429e))
+- [G2P-5402](https://openg2p.atlassian.net/browse/G2P-5402): Correct field names in household information section ([`675cf2e`](https://github.com/OpenG2P/farmer-registry/commit/675cf2e87eb1bfc8a057f89d0a73ff821857946f))
+- [G2P-5402](https://openg2p.atlassian.net/browse/G2P-5402) update: modify SQL insert statements for g2p_register_sections and registry_languages ([`37c1731`](https://github.com/OpenG2P/farmer-registry/commit/37c17318828fbcb4274b33e2eb7b649ee77f5f15))
+- [G2P-5402](https://openg2p.atlassian.net/browse/G2P-5402) update: enhance SQL insert statements for g2p_register_sections with additional metadata and widget configurations for livestock and household member sections ([`ab6c0db`](https://github.com/OpenG2P/farmer-registry/commit/ab6c0db73d01620066ba6d3c745b219f42cb230b))
+- [G2P-5335](https://openg2p.atlassian.net/browse/G2P-5335) Switch CI to GitLab (.gitlab-ci.yml); drop GitHub Actions build/publish ([`1062700`](https://github.com/OpenG2P/farmer-registry/commit/1062700737b8129d66fcc363c7d3809863d0cefb))
 
 <a id="v-0-0-0-develop-221"></a>
 
