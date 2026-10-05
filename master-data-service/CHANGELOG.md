@@ -6,6 +6,7 @@ _Published automatically._
 
 | Version | Date | Type | Notes |
 | --- | --- | --- | --- |
+| [`0.0.0-develop.109`](#v-0-0-0-develop-109) | 2026-10-05 | develop |  |
 | [`1.1.4-rc.104`](#v-1-1-4-rc-104) | 2026-10-05 | release candidate |  |
 | [`0.0.0-develop.107`](#v-0-0-0-develop-107) | 2026-10-05 | develop |  |
 | [`0.0.0-develop.105`](#v-0-0-0-develop-105) | 2026-10-03 | develop |  |
@@ -548,6 +549,25 @@ _commit `4ffaad7` · changes since the start (showing the latest 20 commits)_
 - [G2P-4804](https://openg2p.atlassian.net/browse/G2P-4804) Lowercase the geo-seed Job name. This template renders at the chart root, where .Chart.Name is the vendored subchart name — the commons-services umbrella carries it as `masterData`, so the Job came out as commons-services-masterData-geo-seed, which Kubernetes rejects. The hook failed, no geography or code lists were seeded, and the whole commons-services release went to `failed`. The API templates were unaffected because they render against a scoped context whose nameOverride is already lowercase. ([`83bfaee`](https://github.com/OpenG2P/master-data-service/commit/83bfaee9ae49249adb12589b0da1a290bf02f9fa))
 
 # Develop builds
+
+<a id="v-0-0-0-develop-109"></a>
+
+## master-data-service — develop 0.0.0-develop.109 (2026-10-05)
+
+_commit `3242e78` · changes since 0.0.0-develop.107_
+<!-- build:0.0.0-develop.109 revision:3242e78f4703e8bc7c81962899d36498f69e7b19 ts:1791189406 -->
+
+**Chart:** [openg2p-master-data 0.0.0-develop.109](https://openg2p.github.io/openg2p-helm/openg2p-master-data-0.0.0-develop.109.tgz)
+
+### Summary
+
+- User interface enhancements: introduced a new home page for the catalogue overview, updated menu structure, and improved visibility for signed-in users; refined terminology for datasets and entries, and implemented a theme filter on the datasets page.
+- Code quality improvements: applied code formatting with Black to `audit_middleware.py` and upgraded type annotations in `catalogue_common.py` for better clarity and maintainability.
+
+### Changes
+
+- [G2P-5719](https://openg2p.atlassian.net/browse/G2P-5719) Catalogue UI: home page (catalogue overview), Home in menu, all pages visible to signed-in users, DCAT wording (Datasets, entries, Theme, Publisher, Activity), /reference-data → /datasets; datasets page Theme filter and page size; lists carry a domain (g2p_attributes.domain, schema 4) set by the pack loader with a change-note fallback; get_changes newest option; tests ([`3242e78`](https://github.com/OpenG2P/master-data-service/commit/3242e78f4703e8bc7c81962899d36498f69e7b19))
+- [G2P-5719](https://openg2p.atlassian.net/browse/G2P-5719) pre-commit: black on audit_middleware.py, pyupgrade unquoted annotations in catalogue_common.py ([`09c5e2d`](https://github.com/OpenG2P/master-data-service/commit/09c5e2d526f2b3b2304a05304cb40c97c294a42e))
 
 <a id="v-0-0-0-develop-107"></a>
 
