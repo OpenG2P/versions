@@ -6,6 +6,7 @@ _Published automatically._
 
 | Version | Date | Type | Notes |
 | --- | --- | --- | --- |
+| [`0.0.0-develop.28`](#v-0-0-0-develop-28) | 2026-10-05 | develop |  |
 | [`0.0.0-develop.27`](#v-0-0-0-develop-27) | 2026-10-05 | develop |  |
 | [`1.0.3-rc.33`](#v-1-0-3-rc-33) | 2026-09-04 | release candidate |  |
 | [`1.0.3-rc.30`](#v-1-0-3-rc-30) | 2026-09-04 | release candidate |  |
@@ -234,6 +235,19 @@ _commit `bb96ff2` · changes since 0.0.0-develop.24_
 _No new commits since 0.0.0-develop.24._
 
 # Develop builds
+
+<a id="v-0-0-0-develop-28"></a>
+
+## partner-management — develop 0.0.0-develop.28 (2026-10-05)
+
+_commit `7104730` · changes since 0.0.0-develop.27_
+<!-- build:0.0.0-develop.28 revision:71047300897587d87044fdac5ca812a73b8869f8 ts:1791171044 -->
+
+**Chart:** [partner-management 0.0.0-develop.28](https://openg2p.github.io/openg2p-helm/partner-management-0.0.0-develop.28.tgz)
+
+### Changes
+
+- [G2P-5719](https://openg2p.atlassian.net/browse/G2P-5719) Pin sqlalchemy[asyncio] &gt;=2.0,&lt;2.1: SQLAlchemy 2.1 no longer installs greenlet, so the staff and partner APIs crashed on start-up ([`7104730`](https://github.com/OpenG2P/partner-management/commit/71047300897587d87044fdac5ca812a73b8869f8))
 
 <a id="v-0-0-0-develop-27"></a>
 
