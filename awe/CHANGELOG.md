@@ -6,6 +6,7 @@ _Published automatically._
 
 | Version | Date | Type | Notes |
 | --- | --- | --- | --- |
+| [`1.2.3-rc.86`](#v-1-2-3-rc-86) | 2026-10-05 | release candidate |  |
 | [`0.0.0-develop.90`](#v-0-0-0-develop-90) | 2026-09-03 | develop |  |
 | [`1.2.2`](#v-1-2-2) | 2026-09-02 | release |  |
 | [`1.2.2-rc.84`](#v-1-2-2-rc-84) | 2026-09-02 | release candidate |  |
@@ -154,6 +155,27 @@ _commit `eb178cd` · changes since release v1.0.0_
 - [G2P-5147](https://openg2p.atlassian.net/browse/G2P-5147) Add Keycloak user management endpoints and UI integration in awe ([`169c313`](https://gitlab.com/openg2p/awe/-/commit/169c3137d97f6dd2598e7e3985ee9f1ba2bf1abe))
 
 # Release candidates
+
+<a id="v-1-2-3-rc-86"></a>
+
+## awe 1.2.3-rc.86 — 2026-10-05
+
+_commit `2cf70b9` · changes since 0.0.0-develop.80_
+<!-- build:1.2.3-rc.86 revision:2cf70b9d2b55cad8a66b616f58a80eeabe4921f7 ts:1791179557 -->
+
+**Chart:** [openg2p-awe 1.2.3-rc.86](https://openg2p.github.io/openg2p-helm/openg2p-awe-1.2.3-rc.86.tgz)
+
+### Summary
+
+- Notification system: implemented using openg2p-notification for AWE.
+- Dependency updates: image tags updated to version 1.2.2, added PostgreSQL extension 'pg_trgm', and bumped keycloak-init version to 1.2.0.
+
+### Changes
+
+- [G2P-5697](https://openg2p.atlassian.net/browse/G2P-5697) Implement notification system using openg2p-notifcation for AWE ([`1bd3ee0`](https://github.com/OpenG2P/awe/commit/1bd3ee09cb3c072c019f75fc1b0ff62884a4d571))
+- Update image tags to version 1.2.2 and add PostgreSQL extension 'pg_trgm' ([`844ea35`](https://github.com/OpenG2P/awe/commit/844ea355e21cf94fc09bcc24001d20ec8c515317))
+- Update image tags to version 1.2.1 ([`b76e63a`](https://github.com/OpenG2P/awe/commit/b76e63a471f0aeb690216a5337f47f7783dcc39c))
+- Bump keycloak-init version to 1.2.0 ([`623beec`](https://github.com/OpenG2P/awe/commit/623beec073a3e405066c53e7d2f5c6193a75dad4))
 
 <a id="v-1-2-2-rc-84"></a>
 
