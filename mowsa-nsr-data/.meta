@@ -1,0 +1,4 @@
+name=mowsa-nsr-data
+kind=service
+repo=https://github.com/OpenG2P/mowsa-nsr-data
+images=https://hub.docker.com/r/openg2p/mowsa-nsr-db-seed

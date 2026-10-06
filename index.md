@@ -26,6 +26,7 @@ See the **[versioning & CI docs](https://docs.openg2p.org/operations/deployment/
 - **[master-data-service](./master-data-service/CHANGELOG)** · [repository ↗](https://github.com/OpenG2P/master-data-service)
 - **[mock-id-system](./mock-id-system/CHANGELOG)** · [repository ↗](https://github.com/OpenG2P/mock-id-system)
 - **[mowsa-nsr](./mowsa-nsr/CHANGELOG)** · [repository ↗](https://github.com/OpenG2P/mowsa-nsr)
+- **[mowsa-nsr-data](./mowsa-nsr-data/CHANGELOG)** · [repository ↗](https://github.com/OpenG2P/mowsa-nsr-data)
 - **[national-social-registry](./national-social-registry/CHANGELOG)** · [repository ↗](https://github.com/OpenG2P/national-social-registry)
 - **[openg2p-registry-dr-hh-extensions](./openg2p-registry-dr-hh-extensions/CHANGELOG)** · [repository ↗](https://github.com/OpenG2P/openg2p-registry-dr-hh-extensions)
 - **[partner-management](./partner-management/CHANGELOG)** · [repository ↗](https://github.com/OpenG2P/partner-management)
