@@ -6,6 +6,7 @@ _Published automatically._
 
 | Version | Date | Type | Notes |
 | --- | --- | --- | --- |
+| [`1.2.1-rc.182`](#v-1-2-1-rc-182) | 2026-10-06 | release candidate |  |
 | [`1.2.1-rc.180`](#v-1-2-1-rc-180) | 2026-10-05 | release candidate |  |
 | [`1.2.1-rc.179`](#v-1-2-1-rc-179) | 2026-10-05 | release candidate |  |
 | [`0.0.0-develop.271`](#v-0-0-0-develop-271) | 2026-10-05 | develop |  |
@@ -22,7 +23,6 @@ _Published automatically._
 | [`1.2.1-rc.169`](#v-1-2-1-rc-169) | 2026-09-17 | release candidate |  |
 | [`1.2.1-rc.167`](#v-1-2-1-rc-167) | 2026-09-16 | release candidate |  |
 | [`0.0.0-develop.207`](#v-0-0-0-develop-207) | 2026-09-12 | develop |  |
-| [`1.2.1-rc.165`](#v-1-2-1-rc-165) | 2026-09-10 | release candidate |  |
 | [`0.0.0-develop.206`](#v-0-0-0-develop-206) | 2026-09-03 | develop | **Intermediate Stable Version**. VC issuance and verification both working fine. Compatible with commons 0.0.0-develop.243. |
 | [`0.0.0-develop.205`](#v-0-0-0-develop-205) | 2026-09-02 | develop |  |
 | [`0.0.0-develop.203`](#v-0-0-0-develop-203) | 2026-09-02 | develop |  |
@@ -203,6 +203,19 @@ _commit `7055a71` · first release_
 
 # Release candidates
 
+<a id="v-1-2-1-rc-182"></a>
+
+## farmer-registry 1.2.1-rc.182 — 2026-10-06
+
+_commit `94a6152` · changes since 1.2.1-rc.180_
+<!-- build:1.2.1-rc.182 revision:94a615273562abc4a3a8269a7baffbda47fe536d ts:1791262209 -->
+
+**Chart:** [openg2p-farmer-registry 1.2.1-rc.182](https://openg2p.github.io/openg2p-helm/openg2p-farmer-registry-1.2.1-rc.182.tgz)
+
+### Changes
+
+- Bump version of RP to 1.2.2-rc.536 in Dockerfiles and Chart.yaml ([`1f0d126`](https://github.com/OpenG2P/farmer-registry/commit/1f0d12691d840db2da3c19d24c115cc556613e5f))
+
 <a id="v-1-2-1-rc-180"></a>
 
 ## farmer-registry 1.2.1-rc.180 — 2026-10-05
@@ -325,19 +338,6 @@ _commit `535b80d` · changes since 1.2.1-rc.165_
 ### Changes
 
 - [G2P-5680](https://openg2p.atlassian.net/browse/G2P-5680) [G2P-5676](https://openg2p.atlassian.net/browse/G2P-5676) ui-widgets decimals in table cells, child change requests inherit the subject record name, partner-api and db-seed fixes ([`73e3037`](https://github.com/OpenG2P/farmer-registry/commit/73e30377460db8762d66e3d33468a319aa1d979f))
-
-<a id="v-1-2-1-rc-165"></a>
-
-## farmer-registry 1.2.1-rc.165 — 2026-09-10
-
-_commit `6dd6702` · changes since 1.2.1-rc.163_
-<!-- build:1.2.1-rc.165 revision:6dd67028fb03f0303c77e7d06d0c2fe13fbe29b6 ts:1789018645 -->
-
-**Chart:** [openg2p-farmer-registry 1.2.1-rc.165](https://openg2p.github.io/openg2p-helm/openg2p-farmer-registry-1.2.1-rc.165.tgz)
-
-### Changes
-
-- [G2P-5604](https://openg2p.atlassian.net/browse/G2P-5604) Enhance domain services for household and household members ([`5805d9d`](https://github.com/OpenG2P/farmer-registry/commit/5805d9d1147757658e6376b4fb7d1dcbe57e98f1))
 
 # Develop builds
 
