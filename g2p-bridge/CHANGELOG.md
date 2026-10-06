@@ -6,12 +6,38 @@ _Published automatically._
 
 | Version | Date | Type | Notes |
 | --- | --- | --- | --- |
+| [`1.2.1`](#v-1-2-1) | 2026-10-06 | release |  |
 | [`1.2.1-rc.108`](#v-1-2-1-rc-108) | 2026-10-06 | release candidate |  |
 | [`0.0.0-develop.108`](#v-0-0-0-develop-108) | 2026-08-28 | develop |  |
 | [`1.2.0`](#v-1-2-0) | 2026-07-19 | release |  |
 | [`1.1.0`](#v-1-1-0) | 2026-07-18 | release |  |
 
 # Releases
+
+<a id="v-1-2-1"></a>
+
+## g2p-bridge 1.2.1 — 2026-10-06
+
+<!-- build:1.2.1 revision:317a66dfad955cbf0066987d6c7c1861ed37b8a5 ts:1787892284 -->
+
+_commit `317a66d` · changes since release 1.2.0_
+
+**Same artifact as [`1.2.1-rc.108`](#v-1-2-1-rc-108)** — built from the
+same commit and *promoted* (retagged), not rebuilt. No code changed between them.
+
+**Chart:** [openg2p-bridge 1.2.1](https://openg2p.github.io/openg2p-helm/openg2p-bridge-1.2.1.tgz)
+
+### Summary
+
+- **Major:** Migration to GitLab for repository management, with GitHub workflows removed and builds/publishes disabled.
+- Build and publish functionality reinstated on GitHub for the project.
+- Reversion of versioning for the develop branch to align with the new repository structure.
+
+### Changes
+
+- [G2P-5605](https://openg2p.atlassian.net/browse/G2P-5605) Build and publish on GitHub again ([`317a66d`](https://github.com/OpenG2P/g2p-bridge/commit/317a66dfad955cbf0066987d6c7c1861ed37b8a5))
+- Github workflows removed, as they are not required on Gitlab. Versions reverted for develop branch. ([`4bcae93`](https://github.com/OpenG2P/g2p-bridge/commit/4bcae93fcd9b7c82f280f189c8f52441ff07e36b))
+- Moved to GitLab: openg2p/g2p-bridge/g2p-bridge (read-only; build/publish disabled) ([`8f18a70`](https://github.com/OpenG2P/g2p-bridge/commit/8f18a70ada1c391a5016cd686ed04e62ccd54ead))
 
 <a id="v-1-2-0"></a>
 
