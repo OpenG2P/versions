@@ -6,6 +6,7 @@ _Published automatically._
 
 | Version | Date | Type | Notes |
 | --- | --- | --- | --- |
+| [`1.2.1-rc.108`](#v-1-2-1-rc-108) | 2026-10-06 | release candidate |  |
 | [`0.0.0-develop.108`](#v-0-0-0-develop-108) | 2026-08-28 | develop |  |
 | [`1.2.0`](#v-1-2-0) | 2026-07-19 | release |  |
 | [`1.1.0`](#v-1-1-0) | 2026-07-18 | release |  |
@@ -91,6 +92,21 @@ Security feature: signature verification enabled; Keymanager removed; passes san
 - [G2P-5209](https://openg2p.atlassian.net/browse/G2P-5209) Defaults updated. ([`d3e9e68`](https://gitlab.com/openg2p/g2p-bridge/g2p-bridge/-/commit/d3e9e688a4ffec853cc08bdcbfd18d829277f658))
 - [G2P-5209](https://openg2p.atlassian.net/browse/G2P-5209) Test cases updated for these changes. ([`c23a1bf`](https://gitlab.com/openg2p/g2p-bridge/g2p-bridge/-/commit/c23a1bf7ca6efc8aed66be57016763b24b9be576))
 - [G2P-5209](https://openg2p.atlassian.net/browse/G2P-5209) Major changes for using local crypto rather than Keymanager. Most changes in fastapi common. ([`dd8ed19`](https://gitlab.com/openg2p/g2p-bridge/g2p-bridge/-/commit/dd8ed19c2caf4d8f4506eac5b21e0049c79e2c3c))
+
+# Release candidates
+
+<a id="v-1-2-1-rc-108"></a>
+
+## g2p-bridge 1.2.1-rc.108 — 2026-10-06
+
+_commit `317a66d` · changes since 0.0.0-develop.108_
+<!-- build:1.2.1-rc.108 revision:317a66dfad955cbf0066987d6c7c1861ed37b8a5 ts:1787892284 -->
+
+**Chart:** [openg2p-bridge 1.2.1-rc.108](https://openg2p.github.io/openg2p-helm/openg2p-bridge-1.2.1-rc.108.tgz)
+
+### Changes
+
+_No new commits since 0.0.0-develop.108._
 
 # Develop builds
 
