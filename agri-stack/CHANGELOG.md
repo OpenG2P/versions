@@ -6,6 +6,7 @@ _Published automatically._
 
 | Version | Date | Type | Notes |
 | --- | --- | --- | --- |
+| [`0.0.0-develop.29`](#v-0-0-0-develop-29) | 2026-10-07 | develop |  |
 | [`0.0.0-develop.28`](#v-0-0-0-develop-28) | 2026-10-05 | develop |  |
 | [`0.0.0-develop.27`](#v-0-0-0-develop-27) | 2026-10-05 | develop |  |
 | [`0.0.0-develop.26`](#v-0-0-0-develop-26) | 2026-10-02 | develop |  |
@@ -13,6 +14,19 @@ _Published automatically._
 | [`0.0.0-develop.22`](#v-0-0-0-develop-22) | 2026-10-01 | develop |  |
 
 # Develop builds
+
+<a id="v-0-0-0-develop-29"></a>
+
+## agri-stack — develop 0.0.0-develop.29 (2026-10-07)
+
+_commit `ba31974` · changes since 0.0.0-develop.28_
+<!-- build:0.0.0-develop.29 revision:ba319741e9cfbf5d131ab4d25bfed271e730d046 ts:1791336410 -->
+
+**Chart:** [openg2p-agri-composite 0.0.0-develop.29](https://openg2p.github.io/openg2p-helm/openg2p-agri-composite-0.0.0-develop.29.tgz)
+
+### Changes
+
+- [G2P-5719](https://openg2p.atlassian.net/browse/G2P-5719) composite: data scope catalogue is read with the signed POST /partner/data_scopes (comments) ([`ba31974`](https://github.com/OpenG2P/agri-stack/commit/ba319741e9cfbf5d131ab4d25bfed271e730d046))
 
 <a id="v-0-0-0-develop-28"></a>
 
