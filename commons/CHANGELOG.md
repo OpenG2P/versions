@@ -6,6 +6,7 @@ _Published automatically._
 
 | Version | Date | Type | Notes |
 | --- | --- | --- | --- |
+| [`2.3.4-rc.243`](#v-2-3-4-rc-243) | 2026-10-07 | release candidate |  |
 | [`0.0.0-develop.293`](#v-0-0-0-develop-293) | 2026-10-07 | develop |  |
 | [`0.0.0-develop.291`](#v-0-0-0-develop-291) | 2026-10-07 | develop |  |
 | [`2.3.4-rc.241`](#v-2-3-4-rc-241) | 2026-10-07 | release candidate |  |
@@ -407,6 +408,24 @@ _commit `44278e8` · first release_
 - Initial commit ([`04cc8c6`](https://github.com/OpenG2P/openg2p-commons-deployment/commit/04cc8c6f16ae3132d62a9b80087c0cea81ce472d))
 
 # Release candidates
+
+<a id="v-2-3-4-rc-243"></a>
+
+## commons 2.3.4-rc.243 — 2026-10-07
+
+_commit `8c216b9` · changes since 2.3.4-rc.241_
+<!-- build:2.3.4-rc.243 revision:8c216b9baff065df5768f976e619147c9f985f8a ts:1791385894 -->
+
+**Charts:** [openg2p-commons-base 2.3.4-rc.243](https://openg2p.github.io/openg2p-helm/openg2p-commons-base-2.3.4-rc.243.tgz) · [openg2p-commons-services 2.3.4-rc.243](https://openg2p.github.io/openg2p-helm/openg2p-commons-services-2.3.4-rc.243.tgz)
+
+### Summary
+
+- Dependency update: upgraded `openg2p-iam-service` from version 1.4.3-rc.118 to 1.4.4-rc.121.
+
+### Changes
+
+- Just to trigger CI. Otherwise No code change. ([`8c216b9`](https://github.com/OpenG2P/commons/commit/8c216b9baff065df5768f976e619147c9f985f8a))
+- update openg2p-iam-service dependency version from 1.4.3-rc.118 to 1.4.4-rc.121 in Chart.yaml ([`521b536`](https://github.com/OpenG2P/commons/commit/521b536e047b7876b55c6c6191a9e826893c56c2))
 
 <a id="v-2-3-4-rc-241"></a>
 
