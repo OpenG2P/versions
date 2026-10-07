@@ -6,6 +6,7 @@ _Published automatically._
 
 | Version | Date | Type | Notes |
 | --- | --- | --- | --- |
+| [`0.0.0-develop.611`](#v-0-0-0-develop-611) | 2026-10-07 | develop |  |
 | [`0.0.0-develop.608`](#v-0-0-0-develop-608) | 2026-10-07 | develop |  |
 | [`0.0.0-develop.606`](#v-0-0-0-develop-606) | 2026-10-07 | develop |  |
 | [`1.2.2-rc.536`](#v-1-2-2-rc-536) | 2026-10-05 | release candidate |  |
@@ -44,7 +45,6 @@ _Published automatically._
 | [`1.2.0-rc.439`](#v-1-2-0-rc-439) | 2026-09-01 | release candidate |  |
 | [`1.2.0-rc.437`](#v-1-2-0-rc-437) | 2026-09-01 | release candidate |  |
 | [`0.0.0-develop.426`](#v-0-0-0-develop-426) | 2026-09-01 | develop |  |
-| [`0.0.0-develop.424`](#v-0-0-0-develop-424) | 2026-09-01 | develop |  |
 | [`1.2.0-rc.436`](#v-1-2-0-rc-436) | 2026-08-31 | release candidate |  |
 | [`1.2.0-rc.434`](#v-1-2-0-rc-434) | 2026-08-28 | release candidate |  |
 
@@ -891,6 +891,25 @@ _commit `9b41f96` · changes since v1.0.0_
 
 # Develop builds
 
+<a id="v-0-0-0-develop-611"></a>
+
+## registry-platform — develop 0.0.0-develop.611 (2026-10-07)
+
+_commit `9911db5` · changes since 0.0.0-develop.608_
+<!-- build:0.0.0-develop.611 revision:9911db5b634b80b83987cdff15ba7ea946bbf2b3 ts:1791354416 -->
+
+**Chart:** [openg2p-registry 0.0.0-develop.611](https://openg2p.github.io/openg2p-helm/openg2p-registry-0.0.0-develop.611.tgz)
+
+### Summary
+
+- Dependency updates: synchronized `staff-ui` to version 1.1.9-dev.10 and made changes to `package-lock.json` and `package.json` for both `staff-ui` and `ui-widgets`.
+- Testing enhancements: added tests for the partner API's data-scope consent time handling, prioritizing the `consent_issued_at` claim.
+
+### Changes
+
+- [G2P-5719](https://openg2p.atlassian.net/browse/G2P-5719) partner-api: data-scope consent time prefers the consent_issued_at claim (exchange consent receipts), then iat, then issued_at; test ([`b50bece`](https://github.com/OpenG2P/registry-platform/commit/b50bece98fc97ed87364fd34efa8a995971966a9))
+- chore(ui-widgets): version for npm dev publish, sync staff-ui @1.1.9-dev.10 [skip ci] ([`168412e`](https://github.com/OpenG2P/registry-platform/commit/168412eb7e08f8c7d65e0b4f41fad8d515627461))
+
 <a id="v-0-0-0-develop-608"></a>
 
 ## registry-platform — develop 0.0.0-develop.608 (2026-10-07)
@@ -1334,25 +1353,6 @@ _commit `5579d85` · changes since 0.0.0-develop.424_
 
 - [G2P-4929](https://openg2p.atlassian.net/browse/G2P-4929) Use Roboto throughout the agent portal and carry the Farmer ID in the QR ([`5579d85`](https://github.com/OpenG2P/registry-platform/commit/5579d85748448822328cbc72648a33aeecf7cdc8))
 - [G2P-4929](https://openg2p.atlassian.net/browse/G2P-4929) Show and audit what a credential verification actually checked ([`78d44e1`](https://github.com/OpenG2P/registry-platform/commit/78d44e11c580b74eee5308c449f088a74c76601e))
-
-<a id="v-0-0-0-develop-424"></a>
-
-## registry-platform — develop 0.0.0-develop.424 (2026-09-01)
-
-_commit `634822f` · changes since 0.0.0-develop.421_
-<!-- build:0.0.0-develop.424 revision:634822f303ced5f4db04c98121bad2a425d5db80 ts:1788224041 -->
-
-**Chart:** [openg2p-registry 0.0.0-develop.424](https://openg2p.github.io/openg2p-helm/openg2p-registry-0.0.0-develop.424.tgz)
-
-### Summary
-
-- Credential verification enhancements: agents can now verify presented credentials from the portal, and the hex CWT is sent to the verifier instead of the raw QR string.
-
-### Changes
-
-- [G2P-4929](https://openg2p.atlassian.net/browse/G2P-4929) Send the hex CWT to the verifier, not the raw QR string ([`634822f`](https://github.com/OpenG2P/registry-platform/commit/634822f303ced5f4db04c98121bad2a425d5db80))
-- [G2P-4929](https://openg2p.atlassian.net/browse/G2P-4929) Let an agent verify a presented credential from the portal ([`0dbe652`](https://github.com/OpenG2P/registry-platform/commit/0dbe6521614ad1a18d56bc01c163bdae2e6b7349))
-- [G2P-4929](https://openg2p.atlassian.net/browse/G2P-4929) Let an agent verify a presented credential from the portal ([`9a7b992`](https://github.com/OpenG2P/registry-platform/commit/9a7b99281a41b69067f2dcaccff36beee8408aac))
 
 ---
 
