@@ -6,6 +6,7 @@ _Published automatically._
 
 | Version | Date | Type | Notes |
 | --- | --- | --- | --- |
+| [`0.0.0-develop.293`](#v-0-0-0-develop-293) | 2026-10-07 | develop |  |
 | [`0.0.0-develop.291`](#v-0-0-0-develop-291) | 2026-10-07 | develop |  |
 | [`2.3.4-rc.241`](#v-2-3-4-rc-241) | 2026-10-07 | release candidate |  |
 | [`0.0.0-develop.289`](#v-0-0-0-develop-289) | 2026-10-07 | develop |  |
@@ -34,7 +35,6 @@ _Published automatically._
 | [`0.0.0-develop.242`](#v-0-0-0-develop-242) | 2026-09-03 | develop |  |
 | [`2.3.2`](#v-2-3-2) | 2026-09-02 | release |  |
 | [`2.3.2-rc.225`](#v-2-3-2-rc-225) | 2026-09-02 | release candidate |  |
-| [`0.0.0-develop.240`](#v-0-0-0-develop-240) | 2026-09-02 | develop |  |
 | [`2.3.1`](#v-2-3-1) | 2026-09-02 | release |  |
 | [`2.3.1-rc.223`](#v-2-3-1-rc-223) | 2026-09-02 | release candidate |  |
 | [`2.3.0`](#v-2-3-0) | 2026-09-01 | release |  |
@@ -584,6 +584,19 @@ _commit `ffabcdc` · changes since 2.2.1_
 
 # Develop builds
 
+<a id="v-0-0-0-develop-293"></a>
+
+## commons — develop 0.0.0-develop.293 (2026-10-07)
+
+_commit `9979a89` · changes since 0.0.0-develop.291_
+<!-- build:0.0.0-develop.293 revision:9979a8988d96bf39f9abaa391916a745cd4a0889 ts:1791382645 -->
+
+**Charts:** [openg2p-commons-base 0.0.0-develop.293](https://openg2p.github.io/openg2p-helm/openg2p-commons-base-0.0.0-develop.293.tgz) · [openg2p-commons-services 0.0.0-develop.293](https://openg2p.github.io/openg2p-helm/openg2p-commons-services-0.0.0-develop.293.tgz)
+
+### Changes
+
+- [G2P-5770](https://openg2p.atlassian.net/browse/G2P-5770) Add WebSub support to openg2p-commons-services ([`238cc4e`](https://github.com/OpenG2P/commons/commit/238cc4ef8a8b59d94bc96d66c3b417dc41a9c20d))
+
 <a id="v-0-0-0-develop-291"></a>
 
 ## commons — develop 0.0.0-develop.291 (2026-10-07)
@@ -901,19 +914,6 @@ _commit `54c8b24` · changes since 0.0.0-develop.240_
 
 - [G2P-4929](https://openg2p.atlassian.net/browse/G2P-4929) Take AWE 0.0.0-develop.87 and let it own its own pg_trgm extension ([`54c8b24`](https://github.com/OpenG2P/commons/commit/54c8b24e097281aa7a185efbdc0409d1aedb06f6))
 - [G2P-4929](https://openg2p.atlassian.net/browse/G2P-4929) Create pg_trgm for the AWE database so its index migration can run ([`13f7620`](https://github.com/OpenG2P/commons/commit/13f7620866cf59bc7fccb3b919fe5ce8bf1b7f98))
-
-<a id="v-0-0-0-develop-240"></a>
-
-## commons — develop 0.0.0-develop.240 (2026-09-02)
-
-_commit `1cd7abf` · changes since 0.0.0-develop.239_
-<!-- build:0.0.0-develop.240 revision:1cd7abfcb92696ea2f13ad93a6870ce792a40329 ts:1788338998 -->
-
-**Charts:** [openg2p-commons-base 0.0.0-develop.240](https://openg2p.github.io/openg2p-helm/openg2p-commons-base-0.0.0-develop.240.tgz) · [openg2p-commons-services 0.0.0-develop.240](https://openg2p.github.io/openg2p-helm/openg2p-commons-services-0.0.0-develop.240.tgz)
-
-### Changes
-
-- Bump commons-services subcharts to the latest published develop builds: openg2p-master-data .68-&gt;.69, openg2p-iam-service .97-&gt;.98, openg2p-staff-portal-ui .63-&gt;.65, openg2p-awe .78-&gt;.81, partner-management .24-&gt;.26, openg2p-consent-manager .57-&gt;.58 (mock-identity .7, inji-certify/.verify .16, audit-manager .25 and keycloak-init .60 already current); ([`1cd7abf`](https://github.com/OpenG2P/commons/commit/1cd7abfcb92696ea2f13ad93a6870ce792a40329))
 
 ---
 
