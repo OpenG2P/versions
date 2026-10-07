@@ -6,6 +6,7 @@ _Published automatically._
 
 | Version | Date | Type | Notes |
 | --- | --- | --- | --- |
+| [`0.0.0-develop.291`](#v-0-0-0-develop-291) | 2026-10-07 | develop |  |
 | [`2.3.4-rc.241`](#v-2-3-4-rc-241) | 2026-10-07 | release candidate |  |
 | [`0.0.0-develop.289`](#v-0-0-0-develop-289) | 2026-10-07 | develop |  |
 | [`0.0.0-develop.286`](#v-0-0-0-develop-286) | 2026-10-07 | develop |  |
@@ -36,7 +37,6 @@ _Published automatically._
 | [`0.0.0-develop.240`](#v-0-0-0-develop-240) | 2026-09-02 | develop |  |
 | [`2.3.1`](#v-2-3-1) | 2026-09-02 | release |  |
 | [`2.3.1-rc.223`](#v-2-3-1-rc-223) | 2026-09-02 | release candidate |  |
-| [`0.0.0-develop.239`](#v-0-0-0-develop-239) | 2026-09-02 | develop |  |
 | [`2.3.0`](#v-2-3-0) | 2026-09-01 | release |  |
 | [`2.3.0-rc.221`](#v-2-3-0-rc-221) | 2026-09-01 | release candidate |  |
 | [`2.3.0-rc.219`](#v-2-3-0-rc-219) | 2026-09-01 | release candidate |  |
@@ -584,6 +584,26 @@ _commit `ffabcdc` · changes since 2.2.1_
 
 # Develop builds
 
+<a id="v-0-0-0-develop-291"></a>
+
+## commons — develop 0.0.0-develop.291 (2026-10-07)
+
+_commit `15ff369` · changes since 0.0.0-develop.289_
+<!-- build:0.0.0-develop.291 revision:15ff3693234a1df20d56ed857dfd47d634e2a9d4 ts:1791382501 -->
+
+**Charts:** [openg2p-commons-base 0.0.0-develop.291](https://openg2p.github.io/openg2p-helm/openg2p-commons-base-0.0.0-develop.291.tgz) · [openg2p-commons-services 0.0.0-develop.291](https://openg2p.github.io/openg2p-helm/openg2p-commons-services-0.0.0-develop.291.tgz)
+
+### Summary
+
+- **Major:** Dependency update: bumped `openg2p-master-data` to version `develop.111`, introducing an opt-in public catalogue with updated visibility, licensing, and catalogue schema 5.
+- Cleanup: removed the unused mail relay and associated dependencies from commons, including the global mail installation name, as ODK Central was the sole consumer and only supports SMTP.
+- Configuration refinement: relabeled the base object-store hostname question to be product-neutral, maintaining the `global.garageHostname` variable for compatibility.
+
+### Changes
+
+- [G2P-5719](https://openg2p.atlassian.net/browse/G2P-5719) commons-services: bump openg2p-master-data to develop.111 (opt-in public catalogue, visibility and licence, catalogue schema 5) ([`15ff369`](https://github.com/OpenG2P/commons/commit/15ff3693234a1df20d56ed857dfd47d634e2a9d4))
+- Remove the unused mail relay from commons: drop the mail dependency, values and Rancher question from commons-base, and global.mailInstallationName from commons-services and install.sh; ODK Central was its only consumer (it speaks SMTP only and cannot use Novu), so its mailInstallationName is now empty with a note on pointing it at a real SMTP server; also relabel the base object-store hostname question to be product-neutral (Object Store (S3) Hostname), keeping the global.garageHostname variable ([`775fc99`](https://github.com/OpenG2P/commons/commit/775fc998a04fdaae018b93514db19c55635fcf95))
+
 <a id="v-0-0-0-develop-289"></a>
 
 ## commons — develop 0.0.0-develop.289 (2026-10-07)
@@ -894,19 +914,6 @@ _commit `1cd7abf` · changes since 0.0.0-develop.239_
 ### Changes
 
 - Bump commons-services subcharts to the latest published develop builds: openg2p-master-data .68-&gt;.69, openg2p-iam-service .97-&gt;.98, openg2p-staff-portal-ui .63-&gt;.65, openg2p-awe .78-&gt;.81, partner-management .24-&gt;.26, openg2p-consent-manager .57-&gt;.58 (mock-identity .7, inji-certify/.verify .16, audit-manager .25 and keycloak-init .60 already current); ([`1cd7abf`](https://github.com/OpenG2P/commons/commit/1cd7abfcb92696ea2f13ad93a6870ce792a40329))
-
-<a id="v-0-0-0-develop-239"></a>
-
-## commons — develop 0.0.0-develop.239 (2026-09-02)
-
-_commit `a264540` · changes since 0.0.0-develop.238_
-<!-- build:0.0.0-develop.239 revision:a264540e55cb258d53f31ab3703cee95cf19eaf6 ts:1788312672 -->
-
-**Charts:** [openg2p-commons-base 0.0.0-develop.239](https://openg2p.github.io/openg2p-helm/openg2p-commons-base-0.0.0-develop.239.tgz) · [openg2p-commons-services 0.0.0-develop.239](https://openg2p.github.io/openg2p-helm/openg2p-commons-services-0.0.0-develop.239.tgz)
-
-### Changes
-
-- [G2P-4929](https://openg2p.atlassian.net/browse/G2P-4929) Reject an agent portal hostname that will break sign-out ([`a264540`](https://github.com/OpenG2P/commons/commit/a264540e55cb258d53f31ab3703cee95cf19eaf6))
 
 ---
 
