@@ -6,9 +6,21 @@ _Published automatically._
 
 | Version | Date | Type | Notes |
 | --- | --- | --- | --- |
+| [`0.0.0-develop.6`](#v-0-0-0-develop-6) | 2026-10-07 | develop |  |
 | [`0.0.0-develop.4`](#v-0-0-0-develop-4) | 2026-10-06 | develop |  |
 
 # Develop builds
+
+<a id="v-0-0-0-develop-6"></a>
+
+## mowsa-nsr-data — develop 0.0.0-develop.6 (2026-10-07)
+
+_commit `6e95f5a` · changes since 0.0.0-develop.4_
+<!-- build:0.0.0-develop.6 revision:6e95f5ad7e98001cb88e81b12ffe40a20b4fc509 ts:1791373576 -->
+
+### Changes
+
+- Refactor ETH data structure: update level mnemonics, adjust level IDs, and enhance codelist displays. ([`2a63afb`](https://github.com/OpenG2P/mowsa-nsr-data/commit/2a63afb81e3549d58202a9e3f759e3020b7407d8))
 
 <a id="v-0-0-0-develop-4"></a>
 
