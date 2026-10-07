@@ -6,6 +6,7 @@ _Published automatically._
 
 | Version | Date | Type | Notes |
 | --- | --- | --- | --- |
+| [`0.0.0-develop.64`](#v-0-0-0-develop-64) | 2026-10-07 | develop |  |
 | [`0.0.0-develop.63`](#v-0-0-0-develop-63) | 2026-10-05 | develop |  |
 | [`0.0.0-develop.61`](#v-0-0-0-develop-61) | 2026-10-02 | develop |  |
 | [`0.0.0-develop.60`](#v-0-0-0-develop-60) | 2026-10-01 | develop |  |
@@ -263,6 +264,19 @@ _commit `c67030b` · changes since 0.0.0-develop.57_
 _No new commits since 0.0.0-develop.57._
 
 # Develop builds
+
+<a id="v-0-0-0-develop-64"></a>
+
+## consent-manager — develop 0.0.0-develop.64 (2026-10-07)
+
+_commit `8e9ef7b` · changes since 0.0.0-develop.63_
+<!-- build:0.0.0-develop.64 revision:8e9ef7b10a4d66ba968ff38ac9394a936bac1c8e ts:1791353775 -->
+
+**Chart:** [openg2p-consent-manager 0.0.0-develop.64](https://openg2p.github.io/openg2p-helm/openg2p-consent-manager-0.0.0-develop.64.tgz)
+
+### Changes
+
+- [G2P-5719](https://openg2p.atlassian.net/browse/G2P-5719) CM exchange receipts (opt-in, off by default): issue_receipts on /validate signs one consent receipt per controller for configured presenters with the CM signing key; GET /receipts/{jti}/status (revoked with the consent, expired by time); department role accepts receipts from trusted issuers (JWKS cache + unknown-kid refresh, aud/presenter/time, status check, standing policy for the presenter, scopes intersected) and logs receipt jti/issuer; chart values + Rancher "Agri Stack exchange" group; tests ([`8e9ef7b`](https://github.com/OpenG2P/consent-manager/commit/8e9ef7b10a4d66ba968ff38ac9394a936bac1c8e))
 
 <a id="v-0-0-0-develop-63"></a>
 
