@@ -6,6 +6,7 @@ _Published automatically._
 
 | Version | Date | Type | Notes |
 | --- | --- | --- | --- |
+| [`0.0.0-develop.289`](#v-0-0-0-develop-289) | 2026-10-07 | develop |  |
 | [`0.0.0-develop.286`](#v-0-0-0-develop-286) | 2026-10-07 | develop |  |
 | [`0.0.0-develop.284`](#v-0-0-0-develop-284) | 2026-10-07 | develop |  |
 | [`0.0.0-develop.282`](#v-0-0-0-develop-282) | 2026-10-05 | develop |  |
@@ -38,7 +39,6 @@ _Published automatically._
 | [`2.3.0`](#v-2-3-0) | 2026-09-01 | release |  |
 | [`2.3.0-rc.221`](#v-2-3-0-rc-221) | 2026-09-01 | release candidate |  |
 | [`2.3.0-rc.219`](#v-2-3-0-rc-219) | 2026-09-01 | release candidate |  |
-| [`0.0.0-develop.238`](#v-0-0-0-develop-238) | 2026-09-01 | develop |  |
 | [`2.2.1`](#v-2-2-1) | 2026-08-06 | release |  |
 | [`2.2.0`](#v-2-2-0) | 2026-07-26 | release |  |
 | [`2.1.0`](#v-2-1-0) | 2026-07-13 | release |  |
@@ -570,6 +570,25 @@ _commit `ffabcdc` · changes since 2.2.1_
 
 # Develop builds
 
+<a id="v-0-0-0-develop-289"></a>
+
+## commons — develop 0.0.0-develop.289 (2026-10-07)
+
+_commit `2548480` · changes since 0.0.0-develop.286_
+<!-- build:0.0.0-develop.289 revision:2548480d61c1bf678f9c855bfa03536cc5a8bc79 ts:1791358829 -->
+
+**Charts:** [openg2p-commons-base 0.0.0-develop.289](https://openg2p.github.io/openg2p-helm/openg2p-commons-base-0.0.0-develop.289.tgz) · [openg2p-commons-services 0.0.0-develop.289](https://openg2p.github.io/openg2p-helm/openg2p-commons-services-0.0.0-develop.289.tgz)
+
+### Summary
+
+- New feature: added support for Agri Stack exchange receipts with the introduction of the `values-agri-stack-exchange.yaml` profile, enabling PM and CM exchange roles.
+- Dependency update: bumped `openg2p-consent-manager` to version develop.64, enhancing consent management capabilities.
+
+### Changes
+
+- [G2P-5719](https://openg2p.atlassian.net/browse/G2P-5719) commons-services: bump openg2p-consent-manager to develop.64 (Agri Stack exchange receipts) ([`be2147e`](https://github.com/OpenG2P/commons/commit/be2147ef059c27bcaaec91a0b94c552a1702e796))
+- [G2P-5719](https://openg2p.atlassian.net/browse/G2P-5719) commons-services: values-agri-stack-exchange.yaml profile for the agrix exchange (PM, CM exchange role via global.agriStackExchange, master data, audit, IAM; registry-only services off) ([`8b7b80f`](https://github.com/OpenG2P/commons/commit/8b7b80f84b041f786a409ca659e324343feab3c5))
+
 <a id="v-0-0-0-develop-286"></a>
 
 ## commons — develop 0.0.0-develop.286 (2026-10-07)
@@ -874,19 +893,6 @@ _commit `a264540` · changes since 0.0.0-develop.238_
 ### Changes
 
 - [G2P-4929](https://openg2p.atlassian.net/browse/G2P-4929) Reject an agent portal hostname that will break sign-out ([`a264540`](https://github.com/OpenG2P/commons/commit/a264540e55cb258d53f31ab3703cee95cf19eaf6))
-
-<a id="v-0-0-0-develop-238"></a>
-
-## commons — develop 0.0.0-develop.238 (2026-09-01)
-
-_commit `e8b2db9` · changes since 0.0.0-develop.237_
-<!-- build:0.0.0-develop.238 revision:e8b2db98b8f7ed51b675356945df018b1ea39252 ts:1788239440 -->
-
-**Charts:** [openg2p-commons-base 0.0.0-develop.238](https://openg2p.github.io/openg2p-helm/openg2p-commons-base-0.0.0-develop.238.tgz) · [openg2p-commons-services 0.0.0-develop.238](https://openg2p.github.io/openg2p-helm/openg2p-commons-services-0.0.0-develop.238.tgz)
-
-### Changes
-
-- [G2P-5605](https://openg2p.atlassian.net/browse/G2P-5605) emit chart links on the commons catalogue pages ([`e8b2db9`](https://github.com/OpenG2P/commons/commit/e8b2db98b8f7ed51b675356945df018b1ea39252))
 
 ---
 
