@@ -6,6 +6,7 @@ _Published automatically._
 
 | Version | Date | Type | Notes |
 | --- | --- | --- | --- |
+| [`1.2.2-rc.544`](#v-1-2-2-rc-544) | 2026-10-07 | release candidate |  |
 | [`1.2.2-rc.542`](#v-1-2-2-rc-542) | 2026-10-07 | release candidate |  |
 | [`0.0.0-develop.611`](#v-0-0-0-develop-611) | 2026-10-07 | develop |  |
 | [`0.0.0-develop.608`](#v-0-0-0-develop-608) | 2026-10-07 | develop |  |
@@ -29,7 +30,6 @@ _Published automatically._
 | [`0.0.0-develop.441`](#v-0-0-0-develop-441) | 2026-09-28 | develop |  |
 | [`0.0.0-develop.439`](#v-0-0-0-develop-439) | 2026-09-27 | develop |  |
 | [`0.0.0-develop.438`](#v-0-0-0-develop-438) | 2026-09-27 | develop |  |
-| [`1.2.2-rc.509`](#v-1-2-2-rc-509) | 2026-09-25 | release candidate |  |
 | [`0.0.0-develop.435`](#v-0-0-0-develop-435) | 2026-09-23 | develop | Marking a version at this point before major changes are done on RP\| |
 | [`0.0.0-develop.432`](#v-0-0-0-develop-432) | 2026-09-09 | develop |  |
 | [`1.2.1`](#v-1-2-1) | 2026-09-07 | release |  |
@@ -355,6 +355,19 @@ same commit and *promoted* (retagged), not rebuilt. No code changed between them
 
 # Release candidates
 
+<a id="v-1-2-2-rc-544"></a>
+
+## registry-platform 1.2.2-rc.544 — 2026-10-07
+
+_commit `323a982` · changes since 1.2.2-rc.542_
+<!-- build:1.2.2-rc.544 revision:323a9829c5a9a46888557c7e74ac0801cd609f49 ts:1791378963 -->
+
+**Chart:** [openg2p-registry 1.2.2-rc.544](https://openg2p.github.io/openg2p-helm/openg2p-registry-1.2.2-rc.544.tgz)
+
+### Changes
+
+- [G2P-5771](https://openg2p.atlassian.net/browse/G2P-5771) fix(celery): initialize services in celery worker ([`60b9501`](https://github.com/OpenG2P/registry-platform/commit/60b95010e806f355ceb8566ee6a283018c2cde82))
+
 <a id="v-1-2-2-rc-542"></a>
 
 ## registry-platform 1.2.2-rc.542 — 2026-10-07
@@ -507,27 +520,6 @@ _commit `f183f59` · changes since 1.2.2-rc.509_
 ### Changes
 
 - [G2P-5721](https://openg2p.atlassian.net/browse/G2P-5721) Connect outgoing messages to Outgestion APIs and update message counts ([`89b841a`](https://github.com/OpenG2P/registry-platform/commit/89b841a2884f548f629977c2057ad6c8984e3017))
-
-<a id="v-1-2-2-rc-509"></a>
-
-## registry-platform 1.2.2-rc.509 — 2026-09-25
-
-_commit `f4fcb39` · changes since 1.2.2-rc.504_
-<!-- build:1.2.2-rc.509 revision:f4fcb39e6d3c2486c0d2e9d0d7e5045cdad2ec34 ts:1790341751 -->
-
-**Chart:** [openg2p-registry 1.2.2-rc.509](https://openg2p.github.io/openg2p-helm/openg2p-registry-1.2.2-rc.509.tgz)
-
-### Summary
-
-- CI/build improvements: updated npm dev publish versioning for ui-widgets and synchronized staff-ui to version 1.1.9-dev.6.
-- UI enhancements: removed the required asterisk mark from table headers for improved clarity.
-- Workflow optimization: adjusted the order of operations to run iam-register before db-seed and configured celery-beat with a consumed queue.
-
-### Changes
-
-- chore(ui-widgets): version for npm dev publish, sync staff-ui @1.1.9-dev.6 ([`35c2e15`](https://github.com/OpenG2P/registry-platform/commit/35c2e15c1d20dcdf01120351af8fd19d1db2ba83))
-- [G2P-5716](https://openg2p.atlassian.net/browse/G2P-5716) refactor: Remove required asterisk mark from table header ([`88b0766`](https://github.com/OpenG2P/registry-platform/commit/88b0766dee7a533f76a6f3a7b3be89dac3fc9cd9))
-- chart: run iam-register before db-seed, and give celery-beat a consumed queue ([`b2c29e9`](https://github.com/OpenG2P/registry-platform/commit/b2c29e950f2ce36f75580dc8783803f254a04aad))
 
 <a id="v-1-2-1-rc-462"></a>
 
