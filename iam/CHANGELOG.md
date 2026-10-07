@@ -6,6 +6,7 @@ _Published automatically._
 
 | Version | Date | Type | Notes |
 | --- | --- | --- | --- |
+| [`1.4.4-rc.121`](#v-1-4-4-rc-121) | 2026-10-07 | release candidate |  |
 | [`0.0.0-develop.99`](#v-0-0-0-develop-99) | 2026-10-07 | develop |  |
 | [`1.4.4-rc.120`](#v-1-4-4-rc-120) | 2026-10-07 | release candidate |  |
 | [`1.4.3-rc.118`](#v-1-4-3-rc-118) | 2026-09-30 | release candidate |  |
@@ -186,6 +187,19 @@ Compared with 1.3.0, this release turns IAM from an auth backend into an operabl
 - [G2P-5313](https://openg2p.atlassian.net/browse/G2P-5313) Improve unit test coverage for core IAM functionality ([`c762c7b`](https://github.com/OpenG2P/iam/commit/c762c7b741a5c9d19bbd30b6875daacbd5d88717))
 
 # Release candidates
+
+<a id="v-1-4-4-rc-121"></a>
+
+## iam 1.4.4-rc.121 — 2026-10-07
+
+_commit `a1e1156` · changes since 1.4.4-rc.120_
+<!-- build:1.4.4-rc.121 revision:a1e115645c0cccc27ef01f93a93f8212cc76abe6 ts:1791384337 -->
+
+**Chart:** [openg2p-iam-service 1.4.4-rc.121](https://openg2p.github.io/openg2p-helm/openg2p-iam-service-1.4.4-rc.121.tgz)
+
+### Changes
+
+- Clean up staff portal SSO login flow documentation ([`a1e1156`](https://github.com/OpenG2P/iam/commit/a1e115645c0cccc27ef01f93a93f8212cc76abe6))
 
 <a id="v-1-4-4-rc-120"></a>
 
