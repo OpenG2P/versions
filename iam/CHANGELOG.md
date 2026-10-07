@@ -6,6 +6,7 @@ _Published automatically._
 
 | Version | Date | Type | Notes |
 | --- | --- | --- | --- |
+| [`0.0.0-develop.99`](#v-0-0-0-develop-99) | 2026-10-07 | develop |  |
 | [`1.4.4-rc.120`](#v-1-4-4-rc-120) | 2026-10-07 | release candidate |  |
 | [`1.4.3-rc.118`](#v-1-4-3-rc-118) | 2026-09-30 | release candidate |  |
 | [`1.4.2`](#v-1-4-2) | 2026-09-04 | release |  |
@@ -407,6 +408,19 @@ _commit `f8bccfe` · changes since v1.3.0_
 - [G2P-5313](https://openg2p.atlassian.net/browse/G2P-5313) Improve unit test coverage for core IAM functionality ([`c762c7b`](https://github.com/OpenG2P/iam/commit/c762c7b741a5c9d19bbd30b6875daacbd5d88717))
 
 # Develop builds
+
+<a id="v-0-0-0-develop-99"></a>
+
+## iam — develop 0.0.0-develop.99 (2026-10-07)
+
+_commit `c63bb04` · changes since 0.0.0-develop.98_
+<!-- build:0.0.0-develop.99 revision:c63bb04fab000ef6a970df304471e858aa3ebba1 ts:1791384314 -->
+
+**Chart:** [openg2p-iam-service 0.0.0-develop.99](https://openg2p.github.io/openg2p-helm/openg2p-iam-service-0.0.0-develop.99.tgz)
+
+### Changes
+
+- Update staff-portal-sso-login-flow.md ([`c63bb04`](https://github.com/OpenG2P/iam/commit/c63bb04fab000ef6a970df304471e858aa3ebba1))
 
 <a id="v-0-0-0-develop-98"></a>
 
