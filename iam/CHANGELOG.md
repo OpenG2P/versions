@@ -6,6 +6,7 @@ _Published automatically._
 
 | Version | Date | Type | Notes |
 | --- | --- | --- | --- |
+| [`1.4.4-rc.123`](#v-1-4-4-rc-123) | 2026-10-07 | release candidate |  |
 | [`1.4.4-rc.121`](#v-1-4-4-rc-121) | 2026-10-07 | release candidate |  |
 | [`0.0.0-develop.99`](#v-0-0-0-develop-99) | 2026-10-07 | develop |  |
 | [`1.4.4-rc.120`](#v-1-4-4-rc-120) | 2026-10-07 | release candidate |  |
@@ -187,6 +188,19 @@ Compared with 1.3.0, this release turns IAM from an auth backend into an operabl
 - [G2P-5313](https://openg2p.atlassian.net/browse/G2P-5313) Improve unit test coverage for core IAM functionality ([`c762c7b`](https://github.com/OpenG2P/iam/commit/c762c7b741a5c9d19bbd30b6875daacbd5d88717))
 
 # Release candidates
+
+<a id="v-1-4-4-rc-123"></a>
+
+## iam 1.4.4-rc.123 — 2026-10-07
+
+_commit `4969f08` · changes since 1.4.4-rc.121_
+<!-- build:1.4.4-rc.123 revision:4969f08f9fff815f0a64b839536491b13cc59140 ts:1791387237 -->
+
+**Chart:** [openg2p-iam-service 1.4.4-rc.123](https://openg2p.github.io/openg2p-helm/openg2p-iam-service-1.4.4-rc.123.tgz)
+
+### Changes
+
+- Update FASTAPI_COMMON_REF to version 1.2 in Dockerfiles and workflow ([`3c5a49d`](https://github.com/OpenG2P/iam/commit/3c5a49d5d9fb3607d60674899745f385906daf1a))
 
 <a id="v-1-4-4-rc-121"></a>
 
