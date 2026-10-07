@@ -6,6 +6,7 @@ _Published automatically._
 
 | Version | Date | Type | Notes |
 | --- | --- | --- | --- |
+| [`1.2.2-rc.542`](#v-1-2-2-rc-542) | 2026-10-07 | release candidate |  |
 | [`0.0.0-develop.611`](#v-0-0-0-develop-611) | 2026-10-07 | develop |  |
 | [`0.0.0-develop.608`](#v-0-0-0-develop-608) | 2026-10-07 | develop |  |
 | [`0.0.0-develop.606`](#v-0-0-0-develop-606) | 2026-10-07 | develop |  |
@@ -29,7 +30,6 @@ _Published automatically._
 | [`0.0.0-develop.439`](#v-0-0-0-develop-439) | 2026-09-27 | develop |  |
 | [`0.0.0-develop.438`](#v-0-0-0-develop-438) | 2026-09-27 | develop |  |
 | [`1.2.2-rc.509`](#v-1-2-2-rc-509) | 2026-09-25 | release candidate |  |
-| [`1.2.2-rc.504`](#v-1-2-2-rc-504) | 2026-09-25 | release candidate |  |
 | [`0.0.0-develop.435`](#v-0-0-0-develop-435) | 2026-09-23 | develop | Marking a version at this point before major changes are done on RP\| |
 | [`0.0.0-develop.432`](#v-0-0-0-develop-432) | 2026-09-09 | develop |  |
 | [`1.2.1`](#v-1-2-1) | 2026-09-07 | release |  |
@@ -355,6 +355,28 @@ same commit and *promoted* (retagged), not rebuilt. No code changed between them
 
 # Release candidates
 
+<a id="v-1-2-2-rc-542"></a>
+
+## registry-platform 1.2.2-rc.542 — 2026-10-07
+
+_commit `11b2761` · changes since 1.2.2-rc.536_
+<!-- build:1.2.2-rc.542 revision:11b276136fd575f667bcea34af67e95983b299e9 ts:1791368229 -->
+
+**Chart:** [openg2p-registry 1.2.2-rc.542](https://openg2p.github.io/openg2p-helm/openg2p-registry-1.2.2-rc.542.tgz)
+
+### Summary
+
+- New feature: introduced FilePreview component for enhanced file previews in templates.
+- UI updates: modified change request button background color to primary_color_1 and fixed backspace functionality in dialogue table popups.
+- Dependency management: updated staff-ui to version 1.1.9-dev.11 and adjusted related package manifests across multiple files.
+
+### Changes
+
+- chore(ui-widgets): version for npm dev publish, sync staff-ui @1.1.9-dev.11 ([`11b2761`](https://github.com/OpenG2P/registry-platform/commit/11b276136fd575f667bcea34af67e95983b299e9))
+- [G2P-5768](https://openg2p.atlassian.net/browse/G2P-5768) feat(ui): add FilePreview component and update templates to use it for file previews ([`9e4bd78`](https://github.com/OpenG2P/registry-platform/commit/9e4bd78df408b920d4b10c0a3d634b337bf8b71a))
+- [G2P-5686](https://openg2p.atlassian.net/browse/G2P-5686): use primary_color_1 for change request old value button bg ([`4e90d62`](https://github.com/OpenG2P/registry-platform/commit/4e90d6286c1640af9d773b6e34c5d4225c53b190))
+-  [G2P-5733](https://openg2p.atlassian.net/browse/G2P-5733) fix: backspace button is not working on dialogue table popup ([`da35c34`](https://github.com/OpenG2P/registry-platform/commit/da35c34d52e9c9a0a74f1db4fb3e3c4307e0bca4))
+
 <a id="v-1-2-2-rc-536"></a>
 
 ## registry-platform 1.2.2-rc.536 — 2026-10-05
@@ -506,33 +528,6 @@ _commit `f4fcb39` · changes since 1.2.2-rc.504_
 - chore(ui-widgets): version for npm dev publish, sync staff-ui @1.1.9-dev.6 ([`35c2e15`](https://github.com/OpenG2P/registry-platform/commit/35c2e15c1d20dcdf01120351af8fd19d1db2ba83))
 - [G2P-5716](https://openg2p.atlassian.net/browse/G2P-5716) refactor: Remove required asterisk mark from table header ([`88b0766`](https://github.com/OpenG2P/registry-platform/commit/88b0766dee7a533f76a6f3a7b3be89dac3fc9cd9))
 - chart: run iam-register before db-seed, and give celery-beat a consumed queue ([`b2c29e9`](https://github.com/OpenG2P/registry-platform/commit/b2c29e950f2ce36f75580dc8783803f254a04aad))
-
-<a id="v-1-2-2-rc-504"></a>
-
-## registry-platform 1.2.2-rc.504 — 2026-09-25
-
-_commit `9b0f11d` · changes since 1.2.2-rc.493_
-<!-- build:1.2.2-rc.504 revision:9b0f11de019065051685aa8576c27814994d5d5e ts:1790321233 -->
-
-**Chart:** [openg2p-registry 1.2.2-rc.504](https://openg2p.github.io/openg2p-helm/openg2p-registry-1.2.2-rc.504.tgz)
-
-### Summary
-
-- Bug fixes: Resolved issues with change requests being created unnecessarily, fixed 400 Bad request errors during list view record removal, and ensured document removal triggers a change request.
-- Widget validation improvements: Enhanced validation for table and dialog table widgets to properly handle required columns.
-- IAM refactoring: Updated the IAM registration job and configmap for dynamic naming and annotations, and removed the creation of the iam.admin role in the Keycloak initialization process.
-- UI updates: Published a new version of staff-ui (1.1.9-dev.5) for npm development.
-
-### Changes
-
-- [G2P-5717](https://openg2p.atlassian.net/browse/G2P-5717) Add function to detect file widgets and include the document object in the record. ([`7607771`](https://github.com/OpenG2P/registry-platform/commit/76077712a26886cd57d85ce452b6a22983882c79))
-- chore(ui-widgets): version for npm dev publish, sync staff-ui @1.1.9-dev.5 ([`ea16fc0`](https://github.com/OpenG2P/registry-platform/commit/ea16fc0e590562524a56098c8b8f8dc3d5ebaacd))
-- [G2P-5709](https://openg2p.atlassian.net/browse/G2P-5709) fix: Change request is creating even no change has done ([`534cbf5`](https://github.com/OpenG2P/registry-platform/commit/534cbf5952e87502b9bbdb69b68ad26d8dee9f56))
-- [G2P-5712](https://openg2p.atlassian.net/browse/G2P-5712) fix: List view records removal is throwing error 400 Bad request ([`ab37249`](https://github.com/OpenG2P/registry-platform/commit/ab37249f869b04fb723d859e5967f2dc323c9070))
-- [G2P-5653](https://openg2p.atlassian.net/browse/G2P-5653) Fix validation for table and dialog table widgets to handle required columns ([`d07d07c`](https://github.com/OpenG2P/registry-platform/commit/d07d07c3d9a90ec52b301c7ef54f48fac3d0a529))
-- [G2P-5702](https://openg2p.atlassian.net/browse/G2P-5702) Fix document removal not creating a change request ([`a3ea824`](https://github.com/OpenG2P/registry-platform/commit/a3ea824fcb784bfe8be2374792b1e5c9b80e62f6))
-- [G2P-5703](https://openg2p.atlassian.net/browse/G2P-5703) Refactor IAM registration job and configmap to use dynamic naming and annotations from values ([`b61e441`](https://github.com/OpenG2P/registry-platform/commit/b61e441a4fdcd9973b52fd3f088bf9c358ba1770))
-- [G2P-5703](https://openg2p.atlassian.net/browse/G2P-5703) Remove creation iam.admin in registry keycloak-init ([`ee3803a`](https://github.com/OpenG2P/registry-platform/commit/ee3803aac2a30595f1dd7744526927eb9e0ff7fc))
 
 <a id="v-1-2-1-rc-462"></a>
 
