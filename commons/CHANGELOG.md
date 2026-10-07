@@ -6,6 +6,7 @@ _Published automatically._
 
 | Version | Date | Type | Notes |
 | --- | --- | --- | --- |
+| [`0.0.0-develop.286`](#v-0-0-0-develop-286) | 2026-10-07 | develop |  |
 | [`0.0.0-develop.284`](#v-0-0-0-develop-284) | 2026-10-07 | develop |  |
 | [`0.0.0-develop.282`](#v-0-0-0-develop-282) | 2026-10-05 | develop |  |
 | [`2.3.4-rc.240`](#v-2-3-4-rc-240) | 2026-10-05 | release candidate |  |
@@ -38,7 +39,6 @@ _Published automatically._
 | [`2.3.0-rc.221`](#v-2-3-0-rc-221) | 2026-09-01 | release candidate |  |
 | [`2.3.0-rc.219`](#v-2-3-0-rc-219) | 2026-09-01 | release candidate |  |
 | [`0.0.0-develop.238`](#v-0-0-0-develop-238) | 2026-09-01 | develop |  |
-| [`0.0.0-develop.237`](#v-0-0-0-develop-237) | 2026-09-01 | develop |  |
 | [`2.2.1`](#v-2-2-1) | 2026-08-06 | release |  |
 | [`2.2.0`](#v-2-2-0) | 2026-07-26 | release |  |
 | [`2.1.0`](#v-2-1-0) | 2026-07-13 | release |  |
@@ -570,6 +570,19 @@ _commit `ffabcdc` · changes since 2.2.1_
 
 # Develop builds
 
+<a id="v-0-0-0-develop-286"></a>
+
+## commons — develop 0.0.0-develop.286 (2026-10-07)
+
+_commit `0858457` · changes since 0.0.0-develop.284_
+<!-- build:0.0.0-develop.286 revision:0858457bfd0d88316395ee07a3047791104e0ee9 ts:1791352156 -->
+
+**Charts:** [openg2p-commons-base 0.0.0-develop.286](https://openg2p.github.io/openg2p-helm/openg2p-commons-base-0.0.0-develop.286.tgz) · [openg2p-commons-services 0.0.0-develop.286](https://openg2p.github.io/openg2p-helm/openg2p-commons-services-0.0.0-develop.286.tgz)
+
+### Changes
+
+- [G2P-5736](https://openg2p.atlassian.net/browse/G2P-5736) Add email template for novu ([`b4780d9`](https://github.com/OpenG2P/commons/commit/b4780d9ffca65b5b31577b9355305a02ae7fafa0))
+
 <a id="v-0-0-0-develop-284"></a>
 
 ## commons — develop 0.0.0-develop.284 (2026-10-07)
@@ -874,25 +887,6 @@ _commit `e8b2db9` · changes since 0.0.0-develop.237_
 ### Changes
 
 - [G2P-5605](https://openg2p.atlassian.net/browse/G2P-5605) emit chart links on the commons catalogue pages ([`e8b2db9`](https://github.com/OpenG2P/commons/commit/e8b2db98b8f7ed51b675356945df018b1ea39252))
-
-<a id="v-0-0-0-develop-237"></a>
-
-## commons — develop 0.0.0-develop.237 (2026-09-01)
-
-_commit `e84f917` · changes since 0.0.0-develop.235_
-<!-- build:0.0.0-develop.237 revision:e84f9172f76bed5cfcc8750d85a5bdee2495564f ts:1788225787 -->
-
-**Charts:** [openg2p-commons-base 0.0.0-develop.237](https://openg2p.github.io/openg2p-helm/openg2p-commons-base-0.0.0-develop.237.tgz) · [openg2p-commons-services 0.0.0-develop.237](https://openg2p.github.io/openg2p-helm/openg2p-commons-services-0.0.0-develop.237.tgz)
-
-### Summary
-
-- **Major:** Deployed verify-service with the stack and pinned the latest VC charts, ensuring consistent versioning.
-- Credential management: Assigned the credential-verification role to the agent client for enhanced security and functionality.
-
-### Changes
-
-- [G2P-4929](https://openg2p.atlassian.net/browse/G2P-4929) Deploy verify-service with the stack and pin the latest VC charts ([`e84f917`](https://github.com/OpenG2P/commons/commit/e84f9172f76bed5cfcc8750d85a5bdee2495564f))
-- [G2P-4929](https://openg2p.atlassian.net/browse/G2P-4929) Give the agent client the credential-verification role ([`cef58cc`](https://github.com/OpenG2P/commons/commit/cef58cc22bd58f405fb54bed61427d0613b06360))
 
 ---
 
