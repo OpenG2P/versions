@@ -6,6 +6,7 @@ _Published automatically._
 
 | Version | Date | Type | Notes |
 | --- | --- | --- | --- |
+| [`0.0.0-develop.30`](#v-0-0-0-develop-30) | 2026-10-07 | develop |  |
 | [`0.0.0-develop.29`](#v-0-0-0-develop-29) | 2026-10-07 | develop |  |
 | [`0.0.0-develop.28`](#v-0-0-0-develop-28) | 2026-10-05 | develop |  |
 | [`0.0.0-develop.27`](#v-0-0-0-develop-27) | 2026-10-05 | develop |  |
@@ -14,6 +15,19 @@ _Published automatically._
 | [`0.0.0-develop.22`](#v-0-0-0-develop-22) | 2026-10-01 | develop |  |
 
 # Develop builds
+
+<a id="v-0-0-0-develop-30"></a>
+
+## agri-stack — develop 0.0.0-develop.30 (2026-10-07)
+
+_commit `77a4a19` · changes since 0.0.0-develop.29_
+<!-- build:0.0.0-develop.30 revision:77a4a19561de07005610ce97381ed3db5f9553ce ts:1791353814 -->
+
+**Chart:** [openg2p-agri-composite 0.0.0-develop.30](https://openg2p.github.io/openg2p-helm/openg2p-agri-composite-0.0.0-develop.30.tgz)
+
+### Changes
+
+- [G2P-5719](https://openg2p.atlassian.net/browse/G2P-5719) composite: consent exchange mode (opt-in, default passthrough) — validate the partner consent at the exchange CM with issue_receipts and send each registry its own receipt; chart consent.mode/exchangeCmUrl with Rancher "Agri Stack exchange" group; tests ([`77a4a19`](https://github.com/OpenG2P/agri-stack/commit/77a4a19561de07005610ce97381ed3db5f9553ce))
 
 <a id="v-0-0-0-develop-29"></a>
 
