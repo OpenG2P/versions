@@ -6,6 +6,7 @@ _Published automatically._
 
 | Version | Date | Type | Notes |
 | --- | --- | --- | --- |
+| [`1.2.1-rc.332`](#v-1-2-1-rc-332) | 2026-10-07 | release candidate |  |
 | [`1.2.1-rc.329`](#v-1-2-1-rc-329) | 2026-09-25 | release candidate |  |
 | [`1.2.1-rc.327`](#v-1-2-1-rc-327) | 2026-09-25 | release candidate |  |
 | [`1.2.1-rc.325`](#v-1-2-1-rc-325) | 2026-09-25 | release candidate |  |
@@ -158,6 +159,24 @@ _AI summary unavailable — re-run the workflow with `changelog_regenerate=1.2.0
 - Fix data policy Keycloak admin client to use registry-staff-portal. ([`b2e5199`](https://github.com/OpenG2P/mowsa-nsr/commit/b2e519934b3900363db1c449b910fe33416103c0))
 
 # Release candidates
+
+<a id="v-1-2-1-rc-332"></a>
+
+## mowsa-nsr 1.2.1-rc.332 — 2026-10-07
+
+_commit `63a8c0a` · changes since 1.2.1-rc.329_
+<!-- build:1.2.1-rc.332 revision:63a8c0a3bc24bb244b31044b99cefc90ce771d49 ts:1791373605 -->
+
+**Chart:** [mowsa-nsr 1.2.1-rc.332](https://openg2p.github.io/openg2p-helm/mowsa-nsr-1.2.1-rc.332.tgz)
+
+### Summary
+
+_AI summary unavailable — re-run the workflow with `changelog_regenerate=1.2.1-rc.332` to generate it._
+
+### Changes
+
+- modify SQL metadata for g2p_attribute_values and g2p_attributes to enhance attribute definitions, and improve language translations for better clarity in the UI. ([`94a169f`](https://github.com/OpenG2P/mowsa-nsr/commit/94a169fa7c129f44d4e8d90fcc529c95ffcf4cf0))
+- Update SQL metadata for g2p_register_schemas and g2p_register_sections to include 'record_status' field in household and individual program enrollments ([`f87976c`](https://github.com/OpenG2P/mowsa-nsr/commit/f87976c0e55a3cf221328b7a34aa3601bc7a45c8))
 
 <a id="v-1-2-1-rc-329"></a>
 
