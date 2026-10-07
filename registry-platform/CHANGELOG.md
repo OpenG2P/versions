@@ -6,6 +6,7 @@ _Published automatically._
 
 | Version | Date | Type | Notes |
 | --- | --- | --- | --- |
+| [`0.0.0-develop.606`](#v-0-0-0-develop-606) | 2026-10-07 | develop |  |
 | [`1.2.2-rc.536`](#v-1-2-2-rc-536) | 2026-10-05 | release candidate |  |
 | [`1.2.2-rc.534`](#v-1-2-2-rc-534) | 2026-10-05 | release candidate |  |
 | [`1.2.2-rc.532`](#v-1-2-2-rc-532) | 2026-10-05 | release candidate |  |
@@ -889,6 +890,19 @@ _commit `9b41f96` · changes since v1.0.0_
 - [G2P-5153](https://openg2p.atlassian.net/browse/G2P-5153) Refactor IAM permission handling and authentication cookie management ([`8a6abe5`](https://github.com/OpenG2P/registry-platform/commit/8a6abe5de479bf2647f89b31fbfa62989114ef3e))
 
 # Develop builds
+
+<a id="v-0-0-0-develop-606"></a>
+
+## registry-platform — develop 0.0.0-develop.606 (2026-10-07)
+
+_commit `cd8021f` · changes since 0.0.0-develop.605_
+<!-- build:0.0.0-develop.606 revision:cd8021fdbcc27be63f15c1f8559712bc3367d37e ts:1791335239 -->
+
+**Chart:** [openg2p-registry 0.0.0-develop.606](https://openg2p.github.io/openg2p-helm/openg2p-registry-0.0.0-develop.606.tgz)
+
+### Changes
+
+- [G2P-5719](https://openg2p.atlassian.net/browse/G2P-5719) Activity registers from configuration (step 1): per-register config file (meta_data/activity-config/&lt;mnemonic&gt;.json) for context fields, subject, UI hints, search fields and final aggregates; output record templates per format (DCI as one format, rendered after data-scope filtering, or_null/pick filters); JSON Logic plausibility rules (warn/block, latest activity per type, missing value = not applicable) with a built-in evaluator; code overrides win; tests ([`cd8021f`](https://github.com/OpenG2P/registry-platform/commit/cd8021fdbcc27be63f15c1f8559712bc3367d37e))
 
 <a id="v-0-0-0-develop-605"></a>
 
