@@ -6,6 +6,7 @@ _Published automatically._
 
 | Version | Date | Type | Notes |
 | --- | --- | --- | --- |
+| [`0.0.0-develop.284`](#v-0-0-0-develop-284) | 2026-10-07 | develop |  |
 | [`0.0.0-develop.282`](#v-0-0-0-develop-282) | 2026-10-05 | develop |  |
 | [`2.3.4-rc.240`](#v-2-3-4-rc-240) | 2026-10-05 | release candidate |  |
 | [`2.3.4-rc.238`](#v-2-3-4-rc-238) | 2026-10-05 | release candidate |  |
@@ -38,7 +39,6 @@ _Published automatically._
 | [`2.3.0-rc.219`](#v-2-3-0-rc-219) | 2026-09-01 | release candidate |  |
 | [`0.0.0-develop.238`](#v-0-0-0-develop-238) | 2026-09-01 | develop |  |
 | [`0.0.0-develop.237`](#v-0-0-0-develop-237) | 2026-09-01 | develop |  |
-| [`0.0.0-develop.235`](#v-0-0-0-develop-235) | 2026-08-28 | develop |  |
 | [`2.2.1`](#v-2-2-1) | 2026-08-06 | release |  |
 | [`2.2.0`](#v-2-2-0) | 2026-07-26 | release |  |
 | [`2.1.0`](#v-2-1-0) | 2026-07-13 | release |  |
@@ -570,6 +570,26 @@ _commit `ffabcdc` · changes since 2.2.1_
 
 # Develop builds
 
+<a id="v-0-0-0-develop-284"></a>
+
+## commons — develop 0.0.0-develop.284 (2026-10-07)
+
+_commit `daf1466` · changes since 0.0.0-develop.282_
+<!-- build:0.0.0-develop.284 revision:daf1466dbe4fedbbfea4ce8a43288c39aad3d058 ts:1791338200 -->
+
+**Charts:** [openg2p-commons-base 0.0.0-develop.284](https://openg2p.github.io/openg2p-helm/openg2p-commons-base-0.0.0-develop.284.tgz) · [openg2p-commons-services 0.0.0-develop.284](https://openg2p.github.io/openg2p-helm/openg2p-commons-services-0.0.0-develop.284.tgz)
+
+### Summary
+
+- **Major:** Updated core components: bumped openg2p-master-data, openg2p-awe, and partner-management to their latest development versions, enhancing IAM registration capabilities.
+- Streamlined Rancher forms: removed legacy/internal questions, fixed Consent Manager defaults, and added Agent Portal hostname; retained Keymanager for PBMS with usage notes.
+- Configuration improvements: enabled Novu by default and integrated it into the Garage initialization process, ensuring better feature management.
+
+### Changes
+
+- [G2P-5719](https://openg2p.atlassian.net/browse/G2P-5719) commons-services: bump openg2p-master-data to develop.110, openg2p-awe to develop.92, partner-management to develop.29 (IAM registration as regular resources via iamRegister.runAsHook) ([`daf1466`](https://github.com/OpenG2P/commons/commit/daf1466dbe4fedbbfea4ce8a43288c39aad3d058))
+- [G2P-5719](https://openg2p.atlassian.net/browse/G2P-5719) Rancher forms: drop legacy and internal questions (MinIO, SoftHSM, keystore type, base-release service names), fix Consent Manager default (on), add Agent Portal hostname, show_if per feature; Keymanager kept on (PBMS uses it) with who-needs-it notes; Novu on by default and stored in Garage (novu bucket in the Garage init job) ([`22c8723`](https://github.com/OpenG2P/commons/commit/22c8723c9bdd7e9d39133236ea7e745538dc32f5))
+
 <a id="v-0-0-0-develop-282"></a>
 
 ## commons — develop 0.0.0-develop.282 (2026-10-05)
@@ -873,19 +893,6 @@ _commit `e84f917` · changes since 0.0.0-develop.235_
 
 - [G2P-4929](https://openg2p.atlassian.net/browse/G2P-4929) Deploy verify-service with the stack and pin the latest VC charts ([`e84f917`](https://github.com/OpenG2P/commons/commit/e84f9172f76bed5cfcc8750d85a5bdee2495564f))
 - [G2P-4929](https://openg2p.atlassian.net/browse/G2P-4929) Give the agent client the credential-verification role ([`cef58cc`](https://github.com/OpenG2P/commons/commit/cef58cc22bd58f405fb54bed61427d0613b06360))
-
-<a id="v-0-0-0-develop-235"></a>
-
-## commons — develop 0.0.0-develop.235 (2026-08-28)
-
-_commit `32cf1e9` · changes since 0.0.0-develop.234_
-<!-- build:0.0.0-develop.235 revision:32cf1e9da2a3db65b8ec21e7626c7bc0510b961f ts:1787915338 -->
-
-**Charts:** [openg2p-commons-base 0.0.0-develop.235](https://openg2p.github.io/openg2p-helm/openg2p-commons-base-0.0.0-develop.235.tgz) · [openg2p-commons-services 0.0.0-develop.235](https://openg2p.github.io/openg2p-helm/openg2p-commons-services-0.0.0-develop.235.tgz)
-
-### Changes
-
-- [G2P-5605](https://openg2p.atlassian.net/browse/G2P-5605) pick up master-data 0.0.0-develop.68 ([`32cf1e9`](https://github.com/OpenG2P/commons/commit/32cf1e9da2a3db65b8ec21e7626c7bc0510b961f))
 
 ---
 
