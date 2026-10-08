@@ -6,6 +6,7 @@ _Published automatically._
 
 | Version | Date | Type | Notes |
 | --- | --- | --- | --- |
+| [`0.0.0-develop.101`](#v-0-0-0-develop-101) | 2026-10-08 | develop |  |
 | [`1.4.4-rc.123`](#v-1-4-4-rc-123) | 2026-10-07 | release candidate |  |
 | [`1.4.4-rc.121`](#v-1-4-4-rc-121) | 2026-10-07 | release candidate |  |
 | [`0.0.0-develop.99`](#v-0-0-0-develop-99) | 2026-10-07 | develop |  |
@@ -436,6 +437,19 @@ _commit `f8bccfe` · changes since v1.3.0_
 - [G2P-5313](https://openg2p.atlassian.net/browse/G2P-5313) Improve unit test coverage for core IAM functionality ([`c762c7b`](https://github.com/OpenG2P/iam/commit/c762c7b741a5c9d19bbd30b6875daacbd5d88717))
 
 # Develop builds
+
+<a id="v-0-0-0-develop-101"></a>
+
+## iam — develop 0.0.0-develop.101 (2026-10-08)
+
+_commit `e421fb3` · changes since 0.0.0-develop.99_
+<!-- build:0.0.0-develop.101 revision:e421fb33660d5d4b178c15a127dc7f428ee1d095 ts:1791424668 -->
+
+**Chart:** [openg2p-iam-service 0.0.0-develop.101](https://openg2p.github.io/openg2p-helm/openg2p-iam-service-0.0.0-develop.101.tgz)
+
+### Changes
+
+- [G2P-5719](https://openg2p.atlassian.net/browse/G2P-5719) IAM APIs: pin sqlalchemy[asyncio] &gt;=2.0,&lt;2.1 so greenlet is installed (SQLAlchemy 2.1 no longer pulls it in, and the APIs crash on start) ([`125fbe9`](https://github.com/OpenG2P/iam/commit/125fbe94a708d764626c918e13a706d1d940d904))
 
 <a id="v-0-0-0-develop-99"></a>
 
