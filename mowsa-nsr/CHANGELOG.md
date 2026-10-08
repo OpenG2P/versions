@@ -6,6 +6,7 @@ _Published automatically._
 
 | Version | Date | Type | Notes |
 | --- | --- | --- | --- |
+| [`1.2.1-rc.335`](#v-1-2-1-rc-335) | 2026-10-08 | release candidate |  |
 | [`1.2.1-rc.334`](#v-1-2-1-rc-334) | 2026-10-07 | release candidate |  |
 | [`1.2.1-rc.332`](#v-1-2-1-rc-332) | 2026-10-07 | release candidate |  |
 | [`1.2.1-rc.329`](#v-1-2-1-rc-329) | 2026-09-25 | release candidate |  |
@@ -15,7 +16,6 @@ _Published automatically._
 | [`1.2.1-rc.320`](#v-1-2-1-rc-320) | 2026-09-25 | release candidate |  |
 | [`1.2.1-rc.315`](#v-1-2-1-rc-315) | 2026-09-22 | release candidate |  |
 | [`1.2.1-rc.313`](#v-1-2-1-rc-313) | 2026-09-21 | release candidate |  |
-| [`1.2.1-rc.311`](#v-1-2-1-rc-311) | 2026-09-17 | release candidate |  |
 | [`1.2.0`](#v-1-2-0) | 2026-09-04 | release |  |
 | [`1.2.0-rc.304`](#v-1-2-0-rc-304) | 2026-09-03 | release candidate |  |
 | [`1.2.0-rc.303`](#v-1-2-0-rc-303) | 2026-09-03 | release candidate |  |
@@ -161,6 +161,19 @@ _AI summary unavailable — re-run the workflow with `changelog_regenerate=1.2.0
 
 # Release candidates
 
+<a id="v-1-2-1-rc-335"></a>
+
+## mowsa-nsr 1.2.1-rc.335 — 2026-10-08
+
+_commit `8761f3b` · changes since 1.2.1-rc.334_
+<!-- build:1.2.1-rc.335 revision:8761f3bfdfc47aedd84cb9f574d283f6e2c07e6c ts:1791448354 -->
+
+**Chart:** [mowsa-nsr 1.2.1-rc.335](https://openg2p.github.io/openg2p-helm/mowsa-nsr-1.2.1-rc.335.tgz)
+
+### Changes
+
+- Deployment: Update masterDataDBUserPasswordKey and masterDataDBSecret variables in values.yaml. ([`8761f3b`](https://github.com/OpenG2P/mowsa-nsr/commit/8761f3bfdfc47aedd84cb9f574d283f6e2c07e6c))
+
 <a id="v-1-2-1-rc-334"></a>
 
 ## mowsa-nsr 1.2.1-rc.334 — 2026-10-07
@@ -294,28 +307,6 @@ _commit `4dd837d` · changes since 1.2.1-rc.311_
 ### Changes
 
 - Enhance individual registration service with additional validations for land access and household relationships. Update SQL metadata for AWE policy configurations to ensure consistency in identifiers and handling of foundational IDs. ([`b4db6b9`](https://github.com/OpenG2P/mowsa-nsr/commit/b4db6b9138395433da5eaa268976d4cda20e375e))
-
-<a id="v-1-2-1-rc-311"></a>
-
-## mowsa-nsr 1.2.1-rc.311 — 2026-09-17
-
-_commit `d987c3f` · changes since 1.2.0_
-<!-- build:1.2.1-rc.311 revision:d987c3f94c69b420150c8ac812bcdded524ea792 ts:1789635584 -->
-
-**Chart:** [mowsa-nsr 1.2.1-rc.311](https://openg2p.github.io/openg2p-helm/mowsa-nsr-1.2.1-rc.311.tgz)
-
-### Summary
-
-_AI summary unavailable — re-run the workflow with `changelog_regenerate=1.2.1-rc.311` to generate it._
-
-### Changes
-
-- Remove trailing  in Chart.yaml for Helm chart mowsa-nsr ([`9531d58`](https://github.com/OpenG2P/mowsa-nsr/commit/9531d58379a7b227a536505819253fade0277ce1))
-- Update openg2p-registry dependency version to 1.2.0-rc.440 in Chart.yaml for Helm chart mowsa-nsr ([`bd214b3`](https://github.com/OpenG2P/mowsa-nsr/commit/bd214b391e72668741dd0ae2bdcf7c5affab0464))
-- Update household section identifiers in SQL metadata files to use 'household_attachment_section' for consistency across registration forms. ([`598f128`](https://github.com/OpenG2P/mowsa-nsr/commit/598f1280ea84e2bbe260a679429fa929f9de7cd0))
-- [G2P-5664](https://openg2p.atlassian.net/browse/G2P-5664): Update individual registration service to validate birth date against future dates and ensure proper handling of household heads in registration process - Add  AWE configuration ([`f061fef`](https://github.com/OpenG2P/mowsa-nsr/commit/f061fef120a687c27282ddaafbea9e7e454f53bb))
-- [G2P-5663](https://openg2p.atlassian.net/browse/G2P-5663) NSR- Birth date is accepting future date [G2P-5384](https://openg2p.atlassian.net/browse/G2P-5384) NSR-Household Allows Multiple Heads for the Household ([`d7c0934`](https://github.com/OpenG2P/mowsa-nsr/commit/d7c093407598bae394d1d8d745983f887f04a65a))
-- [G2P-5666](https://openg2p.atlassian.net/browse/G2P-5666) modified the individual registration service to clear foundational ID if entered before RID. ([`38c3b85`](https://github.com/OpenG2P/mowsa-nsr/commit/38c3b8562b10781e6a59e2a3cde07e5027c00316))
 
 <a id="v-1-2-0-rc-304"></a>
 
