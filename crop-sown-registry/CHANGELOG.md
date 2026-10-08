@@ -6,6 +6,7 @@ _Published automatically._
 
 | Version | Date | Type | Notes |
 | --- | --- | --- | --- |
+| [`0.0.0-develop.35`](#v-0-0-0-develop-35) | 2026-10-08 | develop |  |
 | [`0.0.0-develop.34`](#v-0-0-0-develop-34) | 2026-10-08 | develop |  |
 | [`0.0.0-develop.32`](#v-0-0-0-develop-32) | 2026-10-07 | develop |  |
 | [`0.0.0-develop.31`](#v-0-0-0-develop-31) | 2026-10-07 | develop |  |
@@ -20,6 +21,19 @@ _Published automatically._
 | [`0.0.0-develop.4`](#v-0-0-0-develop-4) | 2026-09-27 | develop |  |
 
 # Develop builds
+
+<a id="v-0-0-0-develop-35"></a>
+
+## crop-sown-registry — develop 0.0.0-develop.35 (2026-10-08)
+
+_commit `f5702a9` · changes since 0.0.0-develop.34_
+<!-- build:0.0.0-develop.35 revision:f5702a9a2c7d9a487d9e7b353282f0f8afc6556c ts:1791428625 -->
+
+**Chart:** [openg2p-crop-sown-registry 0.0.0-develop.35](https://openg2p.github.io/openg2p-helm/openg2p-crop-sown-registry-0.0.0-develop.35.tgz)
+
+### Changes
+
+- [G2P-5719](https://openg2p.atlassian.net/browse/G2P-5719) CSR chart: iamRegister.runAsHook false — run IAM registration as a regular Job (as FR and commons do), so a failed registration no longer fails the release ([`f5702a9`](https://github.com/OpenG2P/crop-sown-registry/commit/f5702a9a2c7d9a487d9e7b353282f0f8afc6556c))
 
 <a id="v-0-0-0-develop-34"></a>
 
