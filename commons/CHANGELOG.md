@@ -6,6 +6,7 @@ _Published automatically._
 
 | Version | Date | Type | Notes |
 | --- | --- | --- | --- |
+| [`0.0.0-develop.299`](#v-0-0-0-develop-299) | 2026-10-08 | develop |  |
 | [`2.3.4-rc.244`](#v-2-3-4-rc-244) | 2026-10-07 | release candidate |  |
 | [`2.3.4-rc.243`](#v-2-3-4-rc-243) | 2026-10-07 | release candidate |  |
 | [`0.0.0-develop.293`](#v-0-0-0-develop-293) | 2026-10-07 | develop |  |
@@ -34,7 +35,6 @@ _Published automatically._
 | [`0.0.0-develop.243`](#v-0-0-0-develop-243) | 2026-09-04 | develop |  |
 | [`2.3.3`](#v-2-3-3) | 2026-09-03 | release |  |
 | [`2.3.3-rc.227`](#v-2-3-3-rc-227) | 2026-09-03 | release candidate |  |
-| [`0.0.0-develop.242`](#v-0-0-0-develop-242) | 2026-09-03 | develop |  |
 | [`2.3.2`](#v-2-3-2) | 2026-09-02 | release |  |
 | [`2.3.2-rc.225`](#v-2-3-2-rc-225) | 2026-09-02 | release candidate |  |
 | [`2.3.1`](#v-2-3-1) | 2026-09-02 | release |  |
@@ -617,6 +617,31 @@ _commit `ffabcdc` · changes since 2.2.1_
 
 # Develop builds
 
+<a id="v-0-0-0-develop-299"></a>
+
+## commons — develop 0.0.0-develop.299 (2026-10-08)
+
+_commit `a19f9a2` · changes since 0.0.0-develop.293_
+<!-- build:0.0.0-develop.299 revision:a19f9a2296fa90c87d4bd3aa056edfd1ea832cb0 ts:1791424254 -->
+
+**Charts:** [openg2p-commons-base 0.0.0-develop.299](https://openg2p.github.io/openg2p-helm/openg2p-commons-base-0.0.0-develop.299.tgz) · [openg2p-commons-services 0.0.0-develop.299](https://openg2p.github.io/openg2p-helm/openg2p-commons-services-0.0.0-develop.299.tgz)
+
+### Summary
+
+- **Major:** [G2P-5719](https://openg2p.atlassian.net/browse/G2P-5719) refactor: Garage initialization now runs as a regular Job with per-revision naming and TTL, resolving deadlock issues with Novu's credential Secret during installation.
+- Configuration updates: Removed `values-agri-stack-exchange.yaml`, consolidating Agri Stack exchange overrides into the agri-stack bundle for product neutrality.
+- Keymanager adjustments: Standalone Keymanager is now off by default, only required for specific use cases like PBMS or registry with partner key backend.
+- Bug fixes: Updated websub hostname configuration to read from `global.websubHostname`, addressing installation errors related to value types.
+
+### Changes
+
+- MDS bumped up. ([`a19f9a2`](https://github.com/OpenG2P/commons/commit/a19f9a2296fa90c87d4bd3aa056edfd1ea832cb0))
+- [G2P-5719](https://openg2p.atlassian.net/browse/G2P-5719) commons-base Garage init: regular Job (per-revision name, ttl) instead of a post-install hook — as a hook it ran only after everything was ready, but Novu needs the credentials Secret it writes, so installs deadlocked; idempotent keys — reuse the keys in the commons-minio Secret, create only if none (garage key create never fails on a duplicate name and made a new key each run), exact name match (grep garage-key also matched garage-readonly-key, breaking re-runs). commons-services Rancher form: catalogue wording — "Load Datasets", "Dataset Themes", datasets instead of code lists (variable names unchanged) ([`374942c`](https://github.com/OpenG2P/commons/commit/374942ccefd4cca53b5abfe82d8b8c09aa0223c7))
+- [G2P-5719](https://openg2p.atlassian.net/browse/G2P-5719) commons-base: Garage init runs as a regular Job (per-revision name, ttl) instead of a post-install hook — as a hook it ran only after everything was ready, but Novu needs the commons-minio credentials Secret it writes, so installs with Novu on deadlocked until the timeout ([`d9eb00c`](https://github.com/OpenG2P/commons/commit/d9eb00c9ef69025f9e29567b2ecc1743f6fe2388))
+- [G2P-5719](https://openg2p.atlassian.net/browse/G2P-5719) commons-services: remove values-agri-stack-exchange.yaml — the Agri Stack exchange overrides now live in the agri-stack Agri Exchange bundle; commons stays product-neutral ([`ed3cc95`](https://github.com/OpenG2P/commons/commit/ed3cc95f1f9aef2928048409bd2ee0bb8ce41f18))
+- [G2P-5719](https://openg2p.atlassian.net/browse/G2P-5719) commons-services: standalone Keymanager off by default (only PBMS, or a registry with the keymanager partner key backend, needs it; eSignet, mock identity and Inji Certify embed their own) ([`816770c`](https://github.com/OpenG2P/commons/commit/816770c38133dc11c0eb129feb6681ab5a15022f))
+- [G2P-5770](https://openg2p.atlassian.net/browse/G2P-5770) commons-services: websub hostname reads global.websubHostname (the install failed with "wrong type for value" on .Values.websubHostname) ([`fd61625`](https://github.com/OpenG2P/commons/commit/fd616253babe0a701026409a453a3232313216e7))
+
 <a id="v-0-0-0-develop-293"></a>
 
 ## commons — develop 0.0.0-develop.293 (2026-10-07)
@@ -928,25 +953,6 @@ _commit `91951b3` · changes since 0.0.0-develop.242_
 ### Changes
 
 - PM Keycloak URL bug fix ([`91951b3`](https://github.com/OpenG2P/commons/commit/91951b320308acb915d86108aecbebf4f97a62df))
-
-<a id="v-0-0-0-develop-242"></a>
-
-## commons — develop 0.0.0-develop.242 (2026-09-03)
-
-_commit `54c8b24` · changes since 0.0.0-develop.240_
-<!-- build:0.0.0-develop.242 revision:54c8b24e097281aa7a185efbdc0409d1aedb06f6 ts:1788395640 -->
-
-**Charts:** [openg2p-commons-base 0.0.0-develop.242](https://openg2p.github.io/openg2p-helm/openg2p-commons-base-0.0.0-develop.242.tgz) · [openg2p-commons-services 0.0.0-develop.242](https://openg2p.github.io/openg2p-helm/openg2p-commons-services-0.0.0-develop.242.tgz)
-
-### Summary
-
-- Database enhancements: integrated pg_trgm extension for AWE, enabling efficient index migrations.
-- Dependency management: updated to AWE version 0.0.0-develop.87, ensuring compatibility and feature alignment.
-
-### Changes
-
-- [G2P-4929](https://openg2p.atlassian.net/browse/G2P-4929) Take AWE 0.0.0-develop.87 and let it own its own pg_trgm extension ([`54c8b24`](https://github.com/OpenG2P/commons/commit/54c8b24e097281aa7a185efbdc0409d1aedb06f6))
-- [G2P-4929](https://openg2p.atlassian.net/browse/G2P-4929) Create pg_trgm for the AWE database so its index migration can run ([`13f7620`](https://github.com/OpenG2P/commons/commit/13f7620866cf59bc7fccb3b919fe5ce8bf1b7f98))
 
 ---
 
