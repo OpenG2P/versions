@@ -6,6 +6,7 @@ _Published automatically._
 
 | Version | Date | Type | Notes |
 | --- | --- | --- | --- |
+| [`0.0.0-develop.613`](#v-0-0-0-develop-613) | 2026-10-08 | develop |  |
 | [`1.2.2-rc.544`](#v-1-2-2-rc-544) | 2026-10-07 | release candidate |  |
 | [`1.2.2-rc.542`](#v-1-2-2-rc-542) | 2026-10-07 | release candidate |  |
 | [`0.0.0-develop.611`](#v-0-0-0-develop-611) | 2026-10-07 | develop |  |
@@ -44,7 +45,6 @@ _Published automatically._
 | [`1.2.0-rc.440`](#v-1-2-0-rc-440) | 2026-09-01 | release candidate |  |
 | [`1.2.0-rc.439`](#v-1-2-0-rc-439) | 2026-09-01 | release candidate |  |
 | [`1.2.0-rc.437`](#v-1-2-0-rc-437) | 2026-09-01 | release candidate |  |
-| [`0.0.0-develop.426`](#v-0-0-0-develop-426) | 2026-09-01 | develop |  |
 | [`1.2.0-rc.436`](#v-1-2-0-rc-436) | 2026-08-31 | release candidate |  |
 | [`1.2.0-rc.434`](#v-1-2-0-rc-434) | 2026-08-28 | release candidate |  |
 
@@ -878,6 +878,25 @@ _commit `9b41f96` · changes since v1.0.0_
 
 # Develop builds
 
+<a id="v-0-0-0-develop-613"></a>
+
+## registry-platform — develop 0.0.0-develop.613 (2026-10-08)
+
+_commit `ab75a67` · changes since 0.0.0-develop.611_
+<!-- build:0.0.0-develop.613 revision:ab75a67813883b2d5e7006fa146f0bf39cca9cf7 ts:1791423424 -->
+
+**Chart:** [openg2p-registry 0.0.0-develop.613](https://openg2p.github.io/openg2p-helm/openg2p-registry-0.0.0-develop.613.tgz)
+
+### Summary
+
+- Helm configuration: introduced `iamRegister.runAsHook` with a default value of true, allowing IAM registration Job and payload ConfigMap to be treated as hooks.
+- Documentation update: clarified that the catalogue release description refers to datasets instead of code lists.
+
+### Changes
+
+- [G2P-5719](https://openg2p.atlassian.net/browse/G2P-5719) Rancher form: pinned catalogue release description says datasets, not code lists ([`ab75a67`](https://github.com/OpenG2P/registry-platform/commit/ab75a67813883b2d5e7006fa146f0bf39cca9cf7))
+- [G2P-5719](https://openg2p.atlassian.net/browse/G2P-5719) Helm: iamRegister.runAsHook (default true); false renders the IAM registration Job and payload ConfigMap as regular resources (a parent chart's null cannot clear the hook annotations) ([`8869756`](https://github.com/OpenG2P/registry-platform/commit/886975659b3f5f25d06a4349bba4f42c0c6f97a1))
+
 <a id="v-0-0-0-develop-611"></a>
 
 ## registry-platform — develop 0.0.0-develop.611 (2026-10-07)
@@ -1320,26 +1339,6 @@ _commit `6c4f5f3` · changes since 0.0.0-develop.426_
 
 - [G2P-4929](https://openg2p.atlassian.net/browse/G2P-4929) Decode the Farmer ID from claim-169 key 0, as PixelPass writes it. Let each registry name the id its QR carries, and stop assuming farmer ([`6c4f5f3`](https://github.com/OpenG2P/registry-platform/commit/6c4f5f3a23b2e8b54b606ffd8120c0eda92a0aba))
 - [G2P-4929](https://openg2p.atlassian.net/browse/G2P-4929) Keep the eSignet client key in a Secret so a reinstall cannot rotate it ([`1ffc2eb`](https://github.com/OpenG2P/registry-platform/commit/1ffc2ebcccc51786b36e77ddc635be99a95a8a2d))
-
-<a id="v-0-0-0-develop-426"></a>
-
-## registry-platform — develop 0.0.0-develop.426 (2026-09-01)
-
-_commit `5579d85` · changes since 0.0.0-develop.424_
-<!-- build:0.0.0-develop.426 revision:5579d85748448822328cbc72648a33aeecf7cdc8 ts:1788240190 -->
-
-**Chart:** [openg2p-registry 0.0.0-develop.426](https://openg2p.github.io/openg2p-helm/openg2p-registry-0.0.0-develop.426.tgz)
-
-### Summary
-
-- UI updates: Implemented Roboto font across the agent portal and added Farmer ID to QR codes for improved identification.
-- Credential verification enhancements: Introduced detailed auditing for credential checks to increase transparency and accountability.
-- Dependency management: Updated dependency manifests in the project to ensure compatibility and security.
-
-### Changes
-
-- [G2P-4929](https://openg2p.atlassian.net/browse/G2P-4929) Use Roboto throughout the agent portal and carry the Farmer ID in the QR ([`5579d85`](https://github.com/OpenG2P/registry-platform/commit/5579d85748448822328cbc72648a33aeecf7cdc8))
-- [G2P-4929](https://openg2p.atlassian.net/browse/G2P-4929) Show and audit what a credential verification actually checked ([`78d44e1`](https://github.com/OpenG2P/registry-platform/commit/78d44e11c580b74eee5308c449f088a74c76601e))
 
 ---
 
