@@ -6,6 +6,7 @@ _Published automatically._
 
 | Version | Date | Type | Notes |
 | --- | --- | --- | --- |
+| [`1.4.4-rc.125`](#v-1-4-4-rc-125) | 2026-10-08 | release candidate |  |
 | [`0.0.0-develop.101`](#v-0-0-0-develop-101) | 2026-10-08 | develop |  |
 | [`1.4.4-rc.123`](#v-1-4-4-rc-123) | 2026-10-07 | release candidate |  |
 | [`1.4.4-rc.121`](#v-1-4-4-rc-121) | 2026-10-07 | release candidate |  |
@@ -189,6 +190,19 @@ Compared with 1.3.0, this release turns IAM from an auth backend into an operabl
 - [G2P-5313](https://openg2p.atlassian.net/browse/G2P-5313) Improve unit test coverage for core IAM functionality ([`c762c7b`](https://github.com/OpenG2P/iam/commit/c762c7b741a5c9d19bbd30b6875daacbd5d88717))
 
 # Release candidates
+
+<a id="v-1-4-4-rc-125"></a>
+
+## iam 1.4.4-rc.125 — 2026-10-08
+
+_commit `a073fa2` · changes since 1.4.4-rc.123_
+<!-- build:1.4.4-rc.125 revision:a073fa2b277fd45369407f00915ab22a08fed657 ts:1791446307 -->
+
+**Chart:** [openg2p-iam-service 1.4.4-rc.125](https://openg2p.github.io/openg2p-helm/openg2p-iam-service-1.4.4-rc.125.tgz)
+
+### Changes
+
+- Add nameOverride for keycloak-init in values.yaml becuase it was conflicting with commons-services keycloak-init job. ([`3e6b362`](https://github.com/OpenG2P/iam/commit/3e6b362b0f971632518db54e10c0e8582e2d6c94))
 
 <a id="v-1-4-4-rc-123"></a>
 
