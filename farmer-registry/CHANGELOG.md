@@ -6,6 +6,7 @@ _Published automatically._
 
 | Version | Date | Type | Notes |
 | --- | --- | --- | --- |
+| [`0.0.0-develop.276`](#v-0-0-0-develop-276) | 2026-10-08 | develop |  |
 | [`0.0.0-develop.275`](#v-0-0-0-develop-275) | 2026-10-08 | develop |  |
 | [`0.0.0-develop.273`](#v-0-0-0-develop-273) | 2026-10-07 | develop |  |
 | [`0.0.0-develop.272`](#v-0-0-0-develop-272) | 2026-10-07 | develop |  |
@@ -343,6 +344,19 @@ _commit `535b80d` · changes since 1.2.1-rc.165_
 - [G2P-5680](https://openg2p.atlassian.net/browse/G2P-5680) [G2P-5676](https://openg2p.atlassian.net/browse/G2P-5676) ui-widgets decimals in table cells, child change requests inherit the subject record name, partner-api and db-seed fixes ([`73e3037`](https://github.com/OpenG2P/farmer-registry/commit/73e30377460db8762d66e3d33468a319aa1d979f))
 
 # Develop builds
+
+<a id="v-0-0-0-develop-276"></a>
+
+## farmer-registry — develop 0.0.0-develop.276 (2026-10-08)
+
+_commit `5babaca` · changes since 0.0.0-develop.275_
+<!-- build:0.0.0-develop.276 revision:5babaca7d513cf94a7cc6f366b19964f2c021913 ts:1791428709 -->
+
+**Chart:** [openg2p-farmer-registry 0.0.0-develop.276](https://openg2p.github.io/openg2p-helm/openg2p-farmer-registry-0.0.0-develop.276.tgz)
+
+### Changes
+
+-  Bumped up RP version to 0.0.0-develop.613 ([`5babaca`](https://github.com/OpenG2P/farmer-registry/commit/5babaca7d513cf94a7cc6f366b19964f2c021913))
 
 <a id="v-0-0-0-develop-275"></a>
 
