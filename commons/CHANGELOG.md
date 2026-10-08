@@ -6,6 +6,7 @@ _Published automatically._
 
 | Version | Date | Type | Notes |
 | --- | --- | --- | --- |
+| [`0.0.0-develop.301`](#v-0-0-0-develop-301) | 2026-10-08 | develop |  |
 | [`0.0.0-develop.299`](#v-0-0-0-develop-299) | 2026-10-08 | develop |  |
 | [`2.3.4-rc.244`](#v-2-3-4-rc-244) | 2026-10-07 | release candidate |  |
 | [`2.3.4-rc.243`](#v-2-3-4-rc-243) | 2026-10-07 | release candidate |  |
@@ -32,7 +33,6 @@ _Published automatically._
 | [`0.0.0-develop.251`](#v-0-0-0-develop-251) | 2026-09-28 | develop |  |
 | [`0.0.0-develop.250`](#v-0-0-0-develop-250) | 2026-09-28 | develop |  |
 | [`0.0.0-develop.245`](#v-0-0-0-develop-245) | 2026-09-23 | develop |  |
-| [`0.0.0-develop.243`](#v-0-0-0-develop-243) | 2026-09-04 | develop |  |
 | [`2.3.3`](#v-2-3-3) | 2026-09-03 | release |  |
 | [`2.3.3-rc.227`](#v-2-3-3-rc-227) | 2026-09-03 | release candidate |  |
 | [`2.3.2`](#v-2-3-2) | 2026-09-02 | release |  |
@@ -617,6 +617,24 @@ _commit `ffabcdc` · changes since 2.2.1_
 
 # Develop builds
 
+<a id="v-0-0-0-develop-301"></a>
+
+## commons — develop 0.0.0-develop.301 (2026-10-08)
+
+_commit `3e8b9cb` · changes since 0.0.0-develop.299_
+<!-- build:0.0.0-develop.301 revision:3e8b9cb94935a1781d547097f5561010683626e4 ts:1791432158 -->
+
+**Charts:** [openg2p-commons-base 0.0.0-develop.301](https://openg2p.github.io/openg2p-helm/openg2p-commons-base-0.0.0-develop.301.tgz) · [openg2p-commons-services 0.0.0-develop.301](https://openg2p.github.io/openg2p-helm/openg2p-commons-services-0.0.0-develop.301.tgz)
+
+### Summary
+
+- Dependency updates: pinned IAM staff portal API image to a specific version, removing the moving "develop" tag, and performed a general IAM version bump.
+
+### Changes
+
+- [G2P-5719](https://openg2p.atlassian.net/browse/G2P-5719) commons-services: IAM staff portal API image follows the IAM chart's pinned version (drop the moving "develop" tag override) ([`3e8b9cb`](https://github.com/OpenG2P/commons/commit/3e8b9cb94935a1781d547097f5561010683626e4))
+- IAM bumped up. ([`9b770d1`](https://github.com/OpenG2P/commons/commit/9b770d13bcae298910080b06439911bac7d6ceb8))
+
 <a id="v-0-0-0-develop-299"></a>
 
 ## commons — develop 0.0.0-develop.299 (2026-10-08)
@@ -940,19 +958,6 @@ _commit `e273291` · changes since 0.0.0-develop.243_
 ### Changes
 
 - [[G2P-5641](https://openg2p.atlassian.net/browse/G2P-5641)] Updated superset helm chart path on Chart.yaml. ([`41a9666`](https://github.com/OpenG2P/commons/commit/41a9666caf5eb4443b2c3bc3279731158111ebdb))
-
-<a id="v-0-0-0-develop-243"></a>
-
-## commons — develop 0.0.0-develop.243 (2026-09-04)
-
-_commit `91951b3` · changes since 0.0.0-develop.242_
-<!-- build:0.0.0-develop.243 revision:91951b320308acb915d86108aecbebf4f97a62df ts:1788502076 -->
-
-**Charts:** [openg2p-commons-base 0.0.0-develop.243](https://openg2p.github.io/openg2p-helm/openg2p-commons-base-0.0.0-develop.243.tgz) · [openg2p-commons-services 0.0.0-develop.243](https://openg2p.github.io/openg2p-helm/openg2p-commons-services-0.0.0-develop.243.tgz)
-
-### Changes
-
-- PM Keycloak URL bug fix ([`91951b3`](https://github.com/OpenG2P/commons/commit/91951b320308acb915d86108aecbebf4f97a62df))
 
 ---
 
