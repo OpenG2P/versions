@@ -6,6 +6,7 @@ _Published automatically._
 
 | Version | Date | Type | Notes |
 | --- | --- | --- | --- |
+| [`0.0.0-develop.305`](#v-0-0-0-develop-305) | 2026-10-08 | develop |  |
 | [`0.0.0-develop.301`](#v-0-0-0-develop-301) | 2026-10-08 | develop |  |
 | [`0.0.0-develop.299`](#v-0-0-0-develop-299) | 2026-10-08 | develop |  |
 | [`2.3.4-rc.244`](#v-2-3-4-rc-244) | 2026-10-07 | release candidate |  |
@@ -32,7 +33,6 @@ _Published automatically._
 | [`0.0.0-develop.253`](#v-0-0-0-develop-253) | 2026-09-28 | develop |  |
 | [`0.0.0-develop.251`](#v-0-0-0-develop-251) | 2026-09-28 | develop |  |
 | [`0.0.0-develop.250`](#v-0-0-0-develop-250) | 2026-09-28 | develop |  |
-| [`0.0.0-develop.245`](#v-0-0-0-develop-245) | 2026-09-23 | develop |  |
 | [`2.3.3`](#v-2-3-3) | 2026-09-03 | release |  |
 | [`2.3.3-rc.227`](#v-2-3-3-rc-227) | 2026-09-03 | release candidate |  |
 | [`2.3.2`](#v-2-3-2) | 2026-09-02 | release |  |
@@ -617,6 +617,19 @@ _commit `ffabcdc` · changes since 2.2.1_
 
 # Develop builds
 
+<a id="v-0-0-0-develop-305"></a>
+
+## commons — develop 0.0.0-develop.305 (2026-10-08)
+
+_commit `c35d74e` · changes since 0.0.0-develop.301_
+<!-- build:0.0.0-develop.305 revision:c35d74ea68cac0d40df1af67af2f85860eb7695a ts:1791435038 -->
+
+**Charts:** [openg2p-commons-base 0.0.0-develop.305](https://openg2p.github.io/openg2p-helm/openg2p-commons-base-0.0.0-develop.305.tgz) · [openg2p-commons-services 0.0.0-develop.305](https://openg2p.github.io/openg2p-helm/openg2p-commons-services-0.0.0-develop.305.tgz)
+
+### Changes
+
+- [G2P-5770](https://openg2p.atlassian.net/browse/G2P-5770) Update WebSub configuration in values.yaml ([`43582b8`](https://github.com/OpenG2P/commons/commit/43582b8166665c1ee45ee828bf05fd1e30874f36))
+
 <a id="v-0-0-0-develop-301"></a>
 
 ## commons — develop 0.0.0-develop.301 (2026-10-08)
@@ -945,19 +958,6 @@ _commit `c6cc8cf` · changes since 0.0.0-develop.245_
 - [G2P-5706](https://openg2p.atlassian.net/browse/G2P-5706) Remove deprecated web configuration from values.yaml in openg2p-commons-base ([`18c562f`](https://github.com/OpenG2P/commons/commit/18c562fa600517957e4ee4d7727bb85dbdd1c0dd))
 - [G2P-5706](https://openg2p.atlassian.net/browse/G2P-5706) Refactor Novu integration in openg2p-commons-base ([`531a922`](https://github.com/OpenG2P/commons/commit/531a9226229b28b18314bfce2010e7e7d647d98e))
 - [G2P-5706](https://openg2p.atlassian.net/browse/G2P-5706) Add Novu integration to openg2p-commons-base ([`d951e5f`](https://github.com/OpenG2P/commons/commit/d951e5fbafef1fc6abf7a812cdbebfc0a1db09be))
-
-<a id="v-0-0-0-develop-245"></a>
-
-## commons — develop 0.0.0-develop.245 (2026-09-23)
-
-_commit `e273291` · changes since 0.0.0-develop.243_
-<!-- build:0.0.0-develop.245 revision:e273291bf20f4a2cd1055cbb3518d11f92d73da3 ts:1790166301 -->
-
-**Charts:** [openg2p-commons-base 0.0.0-develop.245](https://openg2p.github.io/openg2p-helm/openg2p-commons-base-0.0.0-develop.245.tgz) · [openg2p-commons-services 0.0.0-develop.245](https://openg2p.github.io/openg2p-helm/openg2p-commons-services-0.0.0-develop.245.tgz)
-
-### Changes
-
-- [[G2P-5641](https://openg2p.atlassian.net/browse/G2P-5641)] Updated superset helm chart path on Chart.yaml. ([`41a9666`](https://github.com/OpenG2P/commons/commit/41a9666caf5eb4443b2c3bc3279731158111ebdb))
 
 ---
 
