@@ -6,6 +6,7 @@ _Published automatically._
 
 | Version | Date | Type | Notes |
 | --- | --- | --- | --- |
+| [`0.0.0-develop.34`](#v-0-0-0-develop-34) | 2026-10-08 | develop |  |
 | [`0.0.0-develop.32`](#v-0-0-0-develop-32) | 2026-10-07 | develop |  |
 | [`0.0.0-develop.31`](#v-0-0-0-develop-31) | 2026-10-07 | develop |  |
 | [`0.0.0-develop.28`](#v-0-0-0-develop-28) | 2026-10-05 | develop |  |
@@ -19,6 +20,25 @@ _Published automatically._
 | [`0.0.0-develop.4`](#v-0-0-0-develop-4) | 2026-09-27 | develop |  |
 
 # Develop builds
+
+<a id="v-0-0-0-develop-34"></a>
+
+## crop-sown-registry — develop 0.0.0-develop.34 (2026-10-08)
+
+_commit `1fba2ad` · changes since 0.0.0-develop.32_
+<!-- build:0.0.0-develop.34 revision:1fba2ad5bf5a8c8b61a14de96721127d2525fb8f ts:1791424326 -->
+
+**Chart:** [openg2p-crop-sown-registry 0.0.0-develop.34](https://openg2p.github.io/openg2p-helm/openg2p-crop-sown-registry-0.0.0-develop.34.tgz)
+
+### Summary
+
+- Version update: bumped RP version to 0.0.0-develop.613.
+- Maintenance: updated uninstall script for improved functionality.
+
+### Changes
+
+- Bumped up RP version to 0.0.0-develop.613 ([`1fba2ad`](https://github.com/OpenG2P/crop-sown-registry/commit/1fba2ad5bf5a8c8b61a14de96721127d2525fb8f))
+- Uninstall script updated. ([`cf6358a`](https://github.com/OpenG2P/crop-sown-registry/commit/cf6358af204d90eb69ac661a8cd468a1d734d51d))
 
 <a id="v-0-0-0-develop-32"></a>
 
