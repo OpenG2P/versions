@@ -6,6 +6,7 @@ _Published automatically._
 
 | Version | Date | Type | Notes |
 | --- | --- | --- | --- |
+| [`0.0.0-develop.43`](#v-0-0-0-develop-43) | 2026-10-09 | develop |  |
 | [`0.0.0-develop.42`](#v-0-0-0-develop-42) | 2026-10-09 | develop |  |
 | [`0.0.0-develop.39`](#v-0-0-0-develop-39) | 2026-10-09 | develop |  |
 | [`0.0.0-develop.36`](#v-0-0-0-develop-36) | 2026-10-09 | develop |  |
@@ -18,6 +19,19 @@ _Published automatically._
 | [`0.0.0-develop.22`](#v-0-0-0-develop-22) | 2026-10-01 | develop |  |
 
 # Develop builds
+
+<a id="v-0-0-0-develop-43"></a>
+
+## agri-stack — develop 0.0.0-develop.43 (2026-10-09)
+
+_commit `1570399` · changes since 0.0.0-develop.42_
+<!-- build:0.0.0-develop.43 revision:1570399f5ed1d5ab0ba627f137e454cce902e33e ts:1791537449 -->
+
+**Chart:** [openg2p-agri-composite 0.0.0-develop.43](https://openg2p.github.io/openg2p-helm/openg2p-agri-composite-0.0.0-develop.43.tgz)
+
+### Changes
+
+- [G2P-5719](https://openg2p.atlassian.net/browse/G2P-5719) composite console: login redirect is an absolute URL on the console's public origin (forwarded host/proto) — a relative "/" sent users to IAM's own host (404) ([`1570399`](https://github.com/OpenG2P/agri-stack/commit/1570399f5ed1d5ab0ba627f137e454cce902e33e))
 
 <a id="v-0-0-0-develop-42"></a>
 
