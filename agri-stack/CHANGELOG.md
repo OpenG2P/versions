@@ -6,6 +6,7 @@ _Published automatically._
 
 | Version | Date | Type | Notes |
 | --- | --- | --- | --- |
+| [`0.0.0-develop.42`](#v-0-0-0-develop-42) | 2026-10-09 | develop |  |
 | [`0.0.0-develop.39`](#v-0-0-0-develop-39) | 2026-10-09 | develop |  |
 | [`0.0.0-develop.36`](#v-0-0-0-develop-36) | 2026-10-09 | develop |  |
 | [`0.0.0-develop.30`](#v-0-0-0-develop-30) | 2026-10-07 | develop |  |
@@ -17,6 +18,29 @@ _Published automatically._
 | [`0.0.0-develop.22`](#v-0-0-0-develop-22) | 2026-10-01 | develop |  |
 
 # Develop builds
+
+<a id="v-0-0-0-develop-42"></a>
+
+## agri-stack — develop 0.0.0-develop.42 (2026-10-09)
+
+_commit `09a540f` · changes since 0.0.0-develop.39_
+<!-- build:0.0.0-develop.42 revision:09a540f1c9221fe7e8cf8a473bd96c6e0985dc1c ts:1791525195 -->
+
+**Chart:** [openg2p-agri-composite 0.0.0-develop.42](https://openg2p.github.io/openg2p-helm/openg2p-agri-composite-0.0.0-develop.42.tgz)
+
+### Summary
+
+- **Major:** Backend enhancements for composite review, including signature verification for call logs, batched writer implementation, and improved indexing for use-case names.
+- Security improvements: Rejection of untraceable JSONPath at load, and enforcement of full grant for undeclared sources in requested_scopes.
+- API stability: Updated iam-core to align with openg2p-fastapi-common, resolving startup crashes related to crypto imports.
+- CI/build adjustments: Autoscaling disabled by default for the composite chart, now set to 1 replica, and various audit fixes applied.
+- Console updates: Safe login redirect implemented, elimination of login loops, and enhancements to error screens and nullable activity fields.
+
+### Changes
+
+- [G2P-5719](https://openg2p.atlassian.net/browse/G2P-5719) composite review fixes — backend: call log only for signature-verified calls, batched writer, capped counts, indexed use-case name, maintenance loop (advisory-locked create + daily purge, retried), untraceable JSONPath rejected at load, exchange requested_scopes keep the full grant for undeclared sources, subject-less queries not sent, full pages flagged, single-flight catalogue fetch, tests; console: next 16.4.0 + audit fixes, safe login redirect, no login loop, error screens, nullable activity fields, total_capped; chart: service-name helpers, iam-register hook cleanup and keycloakInit gate, postgres-init wait image, no tag defaults in questions; agri-exchange: portal links from baseDomain ([`09a540f`](https://github.com/OpenG2P/agri-stack/commit/09a540f1c9221fe7e8cf8a473bd96c6e0985dc1c))
+- [G2P-5719](https://openg2p.atlassian.net/browse/G2P-5719) composite API image: iam-core from its develop line (CI-pinned SHA) to match openg2p-fastapi-common develop — iam-core 1.4.x imports openg2p_fastapi_common.crypto, which develop moved to utils.crypto (API crashed at start with the console on) ([`3c3b0d1`](https://github.com/OpenG2P/agri-stack/commit/3c3b0d12cac63e197f50b718b18cb9d2d51a2ed7))
+- [G2P-5719](https://openg2p.atlassian.net/browse/G2P-5719) composite chart: autoscaling off by default (1 replica) ([`e0092a4`](https://github.com/OpenG2P/agri-stack/commit/e0092a465f6f67a298645868963a327091a0d016))
 
 <a id="v-0-0-0-develop-39"></a>
 
