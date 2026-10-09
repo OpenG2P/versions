@@ -2,10 +2,11 @@
 
 _Published automatically._
 
-**Repository:** [github.com/OpenG2P/agri-stack](https://github.com/OpenG2P/agri-stack) · **Container images:** [Container Registry](https://hub.docker.com/r/openg2p/openg2p-agri-composite-api)
+**Repository:** [github.com/OpenG2P/agri-stack](https://github.com/OpenG2P/agri-stack) · **Container images:** [Container Registry](https://hub.docker.com/u/openg2p)
 
 | Version | Date | Type | Notes |
 | --- | --- | --- | --- |
+| [`0.0.0-develop.36`](#v-0-0-0-develop-36) | 2026-10-09 | develop |  |
 | [`0.0.0-develop.30`](#v-0-0-0-develop-30) | 2026-10-07 | develop |  |
 | [`0.0.0-develop.29`](#v-0-0-0-develop-29) | 2026-10-07 | develop |  |
 | [`0.0.0-develop.28`](#v-0-0-0-develop-28) | 2026-10-05 | develop |  |
@@ -15,6 +16,33 @@ _Published automatically._
 | [`0.0.0-develop.22`](#v-0-0-0-develop-22) | 2026-10-01 | develop |  |
 
 # Develop builds
+
+<a id="v-0-0-0-develop-36"></a>
+
+## agri-stack — develop 0.0.0-develop.36 (2026-10-09)
+
+_commit `126cd27` · changes since 0.0.0-develop.30_
+<!-- build:0.0.0-develop.36 revision:126cd27a9d0c64cb33fa31a7f3a6400be0bcfbd8 ts:1791510445 -->
+
+**Chart:** [openg2p-agri-composite 0.0.0-develop.36](https://openg2p.github.io/openg2p-helm/openg2p-agri-composite-0.0.0-develop.36.tgz)
+
+### Summary
+
+- **Major:** Composite chart enhancements: console enabled by default, IAM registration as a Job, and derived hostnames/cookie domains from baseDomain.
+- Composite data handling improvements: refined data scopes for use cases, ensuring consent grants required scopes, and registry scope catalogues are now signed.
+- UI and API updates: read-only staff console with IAM login, Next.js UI integration, and partner_test.py now limited to public APIs with sample defaults.
+- Enhanced error handling: fields from failed sources now return null instead of empty arrays or zeros, clarifying registry responses.
+- CI and testing improvements: integration of agri-composite-ui in CI builds, and comprehensive end-to-end tests for registries across namespaces.
+- Agri Exchange installation streamlined: helmfile now installs commons and agri-composite with pinned versions, and includes templated overrides for configuration.
+
+### Changes
+
+- [G2P-5719](https://openg2p.atlassian.net/browse/G2P-5719) composite chart: console on by default (values + Rancher form); Agri Exchange bundle runs its IAM registration as a regular Job and derives console/IAM hostnames and cookie domain from baseDomain ([`126cd27`](https://github.com/OpenG2P/agri-stack/commit/126cd27a9d0c64cb33fa31a7f3a6400be0bcfbd8))
+- [G2P-5719](https://openg2p.atlassian.net/browse/G2P-5719) composite: use cases fix their data scopes (required/optional per source; consent must grant required ones; exchange receipts carry only these); registry scope catalogues (signed); read-only staff console — admin API with IAM login (composite:view), call log in its own DB, Next.js UI on the MDS shell; chart console.enabled (UI, DB init, Keycloak client, IAM registration); CI builds agri-composite-ui; partner_test uses the use case's scopes; tests ([`bc7a2bc`](https://github.com/OpenG2P/agri-stack/commit/bc7a2bc1bacd97f09f238e95ebcca506cee1118d))
+- [G2P-5719](https://openg2p.atlassian.net/browse/G2P-5719) composite: fields built from a failed source (denied/unavailable/error) are null, not [] / 0 — empty values now mean the registry answered "no record"; tests ([`93d48c7`](https://github.com/OpenG2P/agri-stack/commit/93d48c7ee62a964aed0e024dff64728fe556a5be))
+- [G2P-5719](https://openg2p.atlassian.net/browse/G2P-5719) composite: partner_test.py — public APIs only; defaults to sample farmer FR-0007 (FAN 946053125409, openg2p-data ETH-IND-0007); PM admin API at pm-staff-portal.&lt;domain&gt;; CM AWE wait only when CM's AWE approval is on ([`c5bc3cf`](https://github.com/OpenG2P/agri-stack/commit/c5bc3cf5e696e2592334846608d1fe6d408d9b75))
+- [G2P-5719](https://openg2p.atlassian.net/browse/G2P-5719) composite e2e: registries in other namespaces (--fr-namespace/--csr-namespace) — set up each registry's own PM/CM (exchange: composite key + agri-composite binding; passthrough: both keys + partner binding), check receipt trust, read each registry's DB in its namespace ([`272209a`](https://github.com/OpenG2P/agri-stack/commit/272209a211f6067ca6d5a10125aa46408a2cc1e7))
+- [G2P-5719](https://openg2p.atlassian.net/browse/G2P-5719) Agri Exchange install bundle (deploy/agri-exchange): helmfile installing commons, commons-services and agri-composite in order into one namespace with pinned chart versions; exchange overrides (Novu/Kafka UI off, slim commons-services with WebSub/AWE off, CM exchange role with the operator's signing key Secret, composite consent mode exchange and registry URLs) templated from a small operator values.yaml; README with helmfile and Rancher steps ([`4950eca`](https://github.com/OpenG2P/agri-stack/commit/4950eca75bd255aac7ab77134f80fb6b51ffb6f9))
 
 <a id="v-0-0-0-develop-30"></a>
 
