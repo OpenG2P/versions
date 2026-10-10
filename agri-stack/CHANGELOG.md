@@ -6,6 +6,7 @@ _Published automatically._
 
 | Version | Date | Type | Notes |
 | --- | --- | --- | --- |
+| [`0.0.0-develop.46`](#v-0-0-0-develop-46) | 2026-10-10 | develop |  |
 | [`0.0.0-develop.43`](#v-0-0-0-develop-43) | 2026-10-09 | develop |  |
 | [`0.0.0-develop.42`](#v-0-0-0-develop-42) | 2026-10-09 | develop |  |
 | [`0.0.0-develop.39`](#v-0-0-0-develop-39) | 2026-10-09 | develop |  |
@@ -19,6 +20,28 @@ _Published automatically._
 | [`0.0.0-develop.22`](#v-0-0-0-develop-22) | 2026-10-01 | develop |  |
 
 # Develop builds
+
+<a id="v-0-0-0-develop-46"></a>
+
+## agri-stack — develop 0.0.0-develop.46 (2026-10-10)
+
+_commit `9cc27d3` · changes since 0.0.0-develop.43_
+<!-- build:0.0.0-develop.46 revision:9cc27d3857634160473b36e7aee1c56c6dc1dbc4 ts:1791591353 -->
+
+**Chart:** [openg2p-agri-composite 0.0.0-develop.46](https://openg2p.github.io/openg2p-helm/openg2p-agri-composite-0.0.0-develop.46.tgz)
+
+### Summary
+
+- **Major:** Retirement of `e2e.py` in favor of `setup_exchange.py`, which introduces a composite signing key, PM entries, and department CM policies based on published use cases, along with a receipt-trust check.
+- Composite enhancements: Queries now support `message.consent_id` in exchange mode with applied scope rules; the Agri Exchange bundle activates the CM partner portal for reading composite use cases.
+- Console improvements: Detail pages in the composite console now decode their route segments only once, resolving double-encoding issues for API calls. 
+- Test suite updates: Renamed tests to `test_scripts.py` to align with new helper structure.
+
+### Changes
+
+- [G2P-5719](https://openg2p.atlassian.net/browse/G2P-5719) scripts: retire e2e.py — shared helpers in partner_kit, new setup_exchange.py (composite signing key, its PM entries, department CM policies from the published use cases, receipt-trust check), tests renamed to test_scripts.py ([`9cc27d3`](https://github.com/OpenG2P/agri-stack/commit/9cc27d3857634160473b36e7aee1c56c6dc1dbc4))
+- [G2P-5719](https://openg2p.atlassian.net/browse/G2P-5719) composite: queries may carry message.consent_id (exchange mode; scope rules applied to what the exchange CM grants); chart corsAllowOrigins; Agri Exchange bundle turns on the CM partner portal and lets it read the composite's use cases ([`0cbdf0a`](https://github.com/OpenG2P/agri-stack/commit/0cbdf0a5bd3dd55f94aa7163fbd7c81f43eaefe7))
+- [G2P-5719](https://openg2p.atlassian.net/browse/G2P-5719) composite console: detail pages decode their route segment once (useParams returns it encoded; "loan-profile@1" reached the API double-encoded as "loan-profile%401") ([`310043e`](https://github.com/OpenG2P/agri-stack/commit/310043e242b152b86f86e3e51a01eafdbcc9e2d8))
 
 <a id="v-0-0-0-develop-43"></a>
 
