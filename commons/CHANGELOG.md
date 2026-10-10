@@ -6,6 +6,7 @@ _Published automatically._
 
 | Version | Date | Type | Notes |
 | --- | --- | --- | --- |
+| [`0.0.0-develop.309`](#v-0-0-0-develop-309) | 2026-10-10 | develop |  |
 | [`2.3.4-rc.245`](#v-2-3-4-rc-245) | 2026-10-08 | release candidate |  |
 | [`0.0.0-develop.305`](#v-0-0-0-develop-305) | 2026-10-08 | develop |  |
 | [`0.0.0-develop.301`](#v-0-0-0-develop-301) | 2026-10-08 | develop |  |
@@ -33,7 +34,6 @@ _Published automatically._
 | [`0.0.0-develop.255`](#v-0-0-0-develop-255) | 2026-09-28 | develop |  |
 | [`0.0.0-develop.253`](#v-0-0-0-develop-253) | 2026-09-28 | develop |  |
 | [`0.0.0-develop.251`](#v-0-0-0-develop-251) | 2026-09-28 | develop |  |
-| [`0.0.0-develop.250`](#v-0-0-0-develop-250) | 2026-09-28 | develop |  |
 | [`2.3.3`](#v-2-3-3) | 2026-09-03 | release |  |
 | [`2.3.3-rc.227`](#v-2-3-3-rc-227) | 2026-09-03 | release candidate |  |
 | [`2.3.2`](#v-2-3-2) | 2026-09-02 | release |  |
@@ -631,6 +631,27 @@ _commit `ffabcdc` · changes since 2.2.1_
 
 # Develop builds
 
+<a id="v-0-0-0-develop-309"></a>
+
+## commons — develop 0.0.0-develop.309 (2026-10-10)
+
+_commit `ce909ef` · changes since 0.0.0-develop.305_
+<!-- build:0.0.0-develop.309 revision:ce909eff0f5cdd3d56a0e50901b6ac78360162eb ts:1791591367 -->
+
+**Charts:** [openg2p-commons-base 0.0.0-develop.309](https://openg2p.github.io/openg2p-helm/openg2p-commons-base-0.0.0-develop.309.tgz) · [openg2p-commons-services 0.0.0-develop.309](https://openg2p.github.io/openg2p-helm/openg2p-commons-services-0.0.0-develop.309.tgz)
+
+### Summary
+
+- **Major:** [G2P-5719](https://openg2p.atlassian.net/browse/G2P-5719) introduces a new consent-evidence bucket in the Consent Manager for uploading consent evidence, enhancing data handling capabilities.
+- API restructuring: PM staff API route has been separated to its own host (pm-staff-portal.<domain>), resolving conflicts with the inherited IAM's staff-iam.<domain> route.
+- Dependency updates: CM version has been bumped, ensuring the latest features and fixes are integrated.
+
+### Changes
+
+- CM bumped up ([`ce909ef`](https://github.com/OpenG2P/commons/commit/ce909eff0f5cdd3d56a0e50901b6ac78360162eb))
+- [G2P-5719](https://openg2p.atlassian.net/browse/G2P-5719) commons-base Garage init: consent-evidence bucket (Consent Manager uploaded consent evidence) ([`3bdfbea`](https://github.com/OpenG2P/commons/commit/3bdfbea2390f89862ed69ba2dbf9f5b64ad16ad0))
+- [G2P-5719](https://openg2p.atlassian.net/browse/G2P-5719) commons-services: PM staff API route on its own host pm-staff-portal.&lt;domain&gt; (it inherited IAM's staff-iam.&lt;domain&gt; via the shared global staffPortalApiHostname, so both routes claimed one host) ([`5fd1538`](https://github.com/OpenG2P/commons/commit/5fd1538b00e9925a08c4862eef5c7e642b607471))
+
 <a id="v-0-0-0-develop-305"></a>
 
 ## commons — develop 0.0.0-develop.305 (2026-10-08)
@@ -950,28 +971,6 @@ _commit `41f4366` · changes since 0.0.0-develop.250_
 ### Changes
 
 - Updated MDS version. ([`41f4366`](https://github.com/OpenG2P/commons/commit/41f43668e9076671bb1e2cdbce6a0626d16013ba))
-
-<a id="v-0-0-0-develop-250"></a>
-
-## commons — develop 0.0.0-develop.250 (2026-09-28)
-
-_commit `c6cc8cf` · changes since 0.0.0-develop.245_
-<!-- build:0.0.0-develop.250 revision:c6cc8cf010e46d35361f72b9166f73b3e12daff7 ts:1790556773 -->
-
-**Charts:** [openg2p-commons-base 0.0.0-develop.250](https://openg2p.github.io/openg2p-helm/openg2p-commons-base-0.0.0-develop.250.tgz) · [openg2p-commons-services 0.0.0-develop.250](https://openg2p.github.io/openg2p-helm/openg2p-commons-services-0.0.0-develop.250.tgz)
-
-### Summary
-
-- **Major:** Refactored and added Novu integration in openg2p-commons-base, enhancing notification capabilities.
-- Removed deprecated web configuration from values.yaml, streamlining configuration management.
-- MDS version updated, ensuring compatibility with the latest features and fixes.
-
-### Changes
-
-- MDS version bumped up. ([`c6cc8cf`](https://github.com/OpenG2P/commons/commit/c6cc8cf010e46d35361f72b9166f73b3e12daff7))
-- [G2P-5706](https://openg2p.atlassian.net/browse/G2P-5706) Remove deprecated web configuration from values.yaml in openg2p-commons-base ([`18c562f`](https://github.com/OpenG2P/commons/commit/18c562fa600517957e4ee4d7727bb85dbdd1c0dd))
-- [G2P-5706](https://openg2p.atlassian.net/browse/G2P-5706) Refactor Novu integration in openg2p-commons-base ([`531a922`](https://github.com/OpenG2P/commons/commit/531a9226229b28b18314bfce2010e7e7d647d98e))
-- [G2P-5706](https://openg2p.atlassian.net/browse/G2P-5706) Add Novu integration to openg2p-commons-base ([`d951e5f`](https://github.com/OpenG2P/commons/commit/d951e5fbafef1fc6abf7a812cdbebfc0a1db09be))
 
 ---
 
