@@ -6,6 +6,7 @@ _Published automatically._
 
 | Version | Date | Type | Notes |
 | --- | --- | --- | --- |
+| [`0.0.0-develop.65`](#v-0-0-0-develop-65) | 2026-10-10 | develop |  |
 | [`0.0.0-develop.64`](#v-0-0-0-develop-64) | 2026-10-07 | develop |  |
 | [`0.0.0-develop.63`](#v-0-0-0-develop-63) | 2026-10-05 | develop |  |
 | [`0.0.0-develop.61`](#v-0-0-0-develop-61) | 2026-10-02 | develop |  |
@@ -264,6 +265,19 @@ _commit `c67030b` · changes since 0.0.0-develop.57_
 _No new commits since 0.0.0-develop.57._
 
 # Develop builds
+
+<a id="v-0-0-0-develop-65"></a>
+
+## consent-manager — develop 0.0.0-develop.65 (2026-10-10)
+
+_commit `1e29e4b` · changes since 0.0.0-develop.64_
+<!-- build:0.0.0-develop.65 revision:1e29e4bebe76417639ae4c9dbb104a39c48cc418 ts:1791548826 -->
+
+**Chart:** [openg2p-consent-manager 0.0.0-develop.65](https://openg2p.github.io/openg2p-helm/openg2p-consent-manager-0.0.0-develop.65.tgz)
+
+### Changes
+
+- [G2P-5719](https://openg2p.atlassian.net/browse/G2P-5719) consent scenario 1 (phase 1): partner realm auth, partner-portal API and SPA (requests, signed-form evidence in Garage, submit/cancel, consents and receipts, use-case prefill), staff "Consent verifications" in the console, assurance on consents, /validate by consent_id with receipts and grants; chart partnerPortal/evidence (off by default) + partner keycloak-init; setup-partner-realm.sh; CI builds the portal image ([`1e29e4b`](https://github.com/OpenG2P/consent-manager/commit/1e29e4bebe76417639ae4c9dbb104a39c48cc418))
 
 <a id="v-0-0-0-develop-64"></a>
 
