@@ -6,6 +6,7 @@ _Published automatically._
 
 | Version | Date | Type | Notes |
 | --- | --- | --- | --- |
+| [`0.0.0-develop.36`](#v-0-0-0-develop-36) | 2026-10-11 | develop |  |
 | [`0.0.0-develop.35`](#v-0-0-0-develop-35) | 2026-10-08 | develop |  |
 | [`0.0.0-develop.34`](#v-0-0-0-develop-34) | 2026-10-08 | develop |  |
 | [`0.0.0-develop.32`](#v-0-0-0-develop-32) | 2026-10-07 | develop |  |
@@ -21,6 +22,19 @@ _Published automatically._
 | [`0.0.0-develop.4`](#v-0-0-0-develop-4) | 2026-09-27 | develop |  |
 
 # Develop builds
+
+<a id="v-0-0-0-develop-36"></a>
+
+## crop-sown-registry — develop 0.0.0-develop.36 (2026-10-11)
+
+_commit `16f177d` · changes since 0.0.0-develop.35_
+<!-- build:0.0.0-develop.36 revision:16f177d81d925c5b7d8d1f6b8ad5ecc2e1753a77 ts:1791476871 -->
+
+**Chart:** [openg2p-crop-sown-registry 0.0.0-develop.36](https://openg2p.github.io/openg2p-helm/openg2p-crop-sown-registry-0.0.0-develop.36.tgz)
+
+### Changes
+
+- [G2P-5719](https://openg2p.atlassian.net/browse/G2P-5719) CSR samples: report why Master Data's sample people could not be read (e.g. no Keycloak token) instead of "No sample people" ([`16f177d`](https://github.com/OpenG2P/crop-sown-registry/commit/16f177d81d925c5b7d8d1f6b8ad5ecc2e1753a77))
 
 <a id="v-0-0-0-develop-35"></a>
 
