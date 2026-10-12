@@ -6,6 +6,7 @@ _Published automatically._
 
 | Version | Date | Type | Notes |
 | --- | --- | --- | --- |
+| [`0.0.0-develop.72`](#v-0-0-0-develop-72) | 2026-10-12 | develop |  |
 | [`0.0.0-develop.69`](#v-0-0-0-develop-69) | 2026-10-12 | develop |  |
 | [`0.0.0-develop.68`](#v-0-0-0-develop-68) | 2026-10-12 | develop |  |
 | [`0.0.0-develop.65`](#v-0-0-0-develop-65) | 2026-10-10 | develop |  |
@@ -267,6 +268,27 @@ _commit `c67030b` · changes since 0.0.0-develop.57_
 _No new commits since 0.0.0-develop.57._
 
 # Develop builds
+
+<a id="v-0-0-0-develop-72"></a>
+
+## consent-manager — develop 0.0.0-develop.72 (2026-10-12)
+
+_commit `ba467f4` · changes since 0.0.0-develop.69_
+<!-- build:0.0.0-develop.72 revision:ba467f419f7aa3b85108e8455357c012c56a97f9 ts:1791792357 -->
+
+**Chart:** [openg2p-consent-manager 0.0.0-develop.72](https://openg2p.github.io/openg2p-helm/openg2p-consent-manager-0.0.0-develop.72.tgz)
+
+### Summary
+
+- National-ID login enhancement: implemented userinfo JWT validation against the registry's VC flow, including checks for aud and sub, with support for both published and unpublished signing keys.
+- User experience improvements: redesigned partner portal interface with a new layout featuring a black left pane, full logo, and an icon-based menu, utilizing lucide-react icons for better visual consistency.
+- Testing updates: added comprehensive tests to mirror eSignet's responses for national-ID login scenarios, ensuring robust validation of JWT handling and user authentication flows.
+
+### Changes
+
+- [G2P-5719](https://openg2p.atlassian.net/browse/G2P-5719) national-ID login, checked against the registry's VC flow and the mock identity system: the userinfo JWT (identity system's key and own iss, aud = client, no exp) accepted as fetched over HTTPS with aud and sub checked; a callback that never finished reads as failed; tests mirror eSignet's answer ([`ba467f4`](https://github.com/OpenG2P/consent-manager/commit/ba467f419f7aa3b85108e8455357c012c56a97f9))
+- [G2P-5719](https://openg2p.atlassian.net/browse/G2P-5719) national-ID login: a userinfo JWT signed with a key eSignet does not publish (the identity system's) is accepted as fetched over HTTPS with the access token (OIDC Core 5.3.2), with iss/aud/exp/sub still checked; signature checked when the key is published; tests ([`c612b99`](https://github.com/OpenG2P/consent-manager/commit/c612b9967cfe468a92eb7868e4f65e97d0b123b5))
+- [G2P-5719](https://openg2p.atlassian.net/browse/G2P-5719) partner portal: OpenG2P shell as in the Master Data UI — black left pane with the full logo and "Partner Portal", menu with icons, user and sign-out at the bottom (top bar on phones); lucide-react icons ([`382dfdb`](https://github.com/OpenG2P/consent-manager/commit/382dfdb63e48e3ab376cee9ca636faf1b48d9ecb))
 
 <a id="v-0-0-0-develop-69"></a>
 
