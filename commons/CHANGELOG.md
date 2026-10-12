@@ -6,6 +6,7 @@ _Published automatically._
 
 | Version | Date | Type | Notes |
 | --- | --- | --- | --- |
+| [`0.0.0-develop.311`](#v-0-0-0-develop-311) | 2026-10-12 | develop |  |
 | [`0.0.0-develop.310`](#v-0-0-0-develop-310) | 2026-10-12 | develop |  |
 | [`0.0.0-develop.309`](#v-0-0-0-develop-309) | 2026-10-10 | develop |  |
 | [`2.3.4-rc.245`](#v-2-3-4-rc-245) | 2026-10-08 | release candidate |  |
@@ -33,7 +34,6 @@ _Published automatically._
 | [`0.0.0-develop.260`](#v-0-0-0-develop-260) | 2026-09-29 | develop |  |
 | [`0.0.0-develop.258`](#v-0-0-0-develop-258) | 2026-09-28 | develop |  |
 | [`0.0.0-develop.255`](#v-0-0-0-develop-255) | 2026-09-28 | develop |  |
-| [`0.0.0-develop.253`](#v-0-0-0-develop-253) | 2026-09-28 | develop |  |
 | [`2.3.3`](#v-2-3-3) | 2026-09-03 | release |  |
 | [`2.3.3-rc.227`](#v-2-3-3-rc-227) | 2026-09-03 | release candidate |  |
 | [`2.3.2`](#v-2-3-2) | 2026-09-02 | release |  |
@@ -631,6 +631,19 @@ _commit `ffabcdc` · changes since 2.2.1_
 
 # Develop builds
 
+<a id="v-0-0-0-develop-311"></a>
+
+## commons — develop 0.0.0-develop.311 (2026-10-12)
+
+_commit `d4aa778` · changes since 0.0.0-develop.310_
+<!-- build:0.0.0-develop.311 revision:d4aa7786878ae957c6c82eb3370f26d5abd34e86 ts:1791785358 -->
+
+**Charts:** [openg2p-commons-base 0.0.0-develop.311](https://openg2p.github.io/openg2p-helm/openg2p-commons-base-0.0.0-develop.311.tgz) · [openg2p-commons-services 0.0.0-develop.311](https://openg2p.github.io/openg2p-helm/openg2p-commons-services-0.0.0-develop.311.tgz)
+
+### Changes
+
+- Bumped up CM, IAM ([`d4aa778`](https://github.com/OpenG2P/commons/commit/d4aa7786878ae957c6c82eb3370f26d5abd34e86))
+
 <a id="v-0-0-0-develop-310"></a>
 
 ## commons — develop 0.0.0-develop.310 (2026-10-12)
@@ -958,19 +971,6 @@ _commit `3fa929e` · changes since 0.0.0-develop.253_
 ### Changes
 
 - [G2P-5719](https://openg2p.atlassian.net/browse/G2P-5719) Country Pack group in the commons-services form: surface domains; descriptions say registries read code lists live from Master Data ([`5f61e65`](https://github.com/OpenG2P/commons/commit/5f61e6593715721c25ee0ca8a0ce99e0b1daee5a))
-
-<a id="v-0-0-0-develop-253"></a>
-
-## commons — develop 0.0.0-develop.253 (2026-09-28)
-
-_commit `cf0710f` · changes since 0.0.0-develop.251_
-<!-- build:0.0.0-develop.253 revision:cf0710f70e868dd9308e4771b5772661a611b277 ts:1790577688 -->
-
-**Charts:** [openg2p-commons-base 0.0.0-develop.253](https://openg2p.github.io/openg2p-helm/openg2p-commons-base-0.0.0-develop.253.tgz) · [openg2p-commons-services 0.0.0-develop.253](https://openg2p.github.io/openg2p-helm/openg2p-commons-services-0.0.0-develop.253.tgz)
-
-### Changes
-
-- trigger ci build and push for commons-base ([`28cefa6`](https://github.com/OpenG2P/commons/commit/28cefa641f1357fdbb23acfb684b3efaa82d3b93))
 
 ---
 
