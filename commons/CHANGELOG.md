@@ -6,6 +6,7 @@ _Published automatically._
 
 | Version | Date | Type | Notes |
 | --- | --- | --- | --- |
+| [`0.0.0-develop.310`](#v-0-0-0-develop-310) | 2026-10-12 | develop |  |
 | [`0.0.0-develop.309`](#v-0-0-0-develop-309) | 2026-10-10 | develop |  |
 | [`2.3.4-rc.245`](#v-2-3-4-rc-245) | 2026-10-08 | release candidate |  |
 | [`0.0.0-develop.305`](#v-0-0-0-develop-305) | 2026-10-08 | develop |  |
@@ -33,7 +34,6 @@ _Published automatically._
 | [`0.0.0-develop.258`](#v-0-0-0-develop-258) | 2026-09-28 | develop |  |
 | [`0.0.0-develop.255`](#v-0-0-0-develop-255) | 2026-09-28 | develop |  |
 | [`0.0.0-develop.253`](#v-0-0-0-develop-253) | 2026-09-28 | develop |  |
-| [`0.0.0-develop.251`](#v-0-0-0-develop-251) | 2026-09-28 | develop |  |
 | [`2.3.3`](#v-2-3-3) | 2026-09-03 | release |  |
 | [`2.3.3-rc.227`](#v-2-3-3-rc-227) | 2026-09-03 | release candidate |  |
 | [`2.3.2`](#v-2-3-2) | 2026-09-02 | release |  |
@@ -631,6 +631,19 @@ _commit `ffabcdc` · changes since 2.2.1_
 
 # Develop builds
 
+<a id="v-0-0-0-develop-310"></a>
+
+## commons — develop 0.0.0-develop.310 (2026-10-12)
+
+_commit `ccf7372` · changes since 0.0.0-develop.309_
+<!-- build:0.0.0-develop.310 revision:ccf73726e46915c58a68f4a823dd0f53274feae9 ts:1791769769 -->
+
+**Charts:** [openg2p-commons-base 0.0.0-develop.310](https://openg2p.github.io/openg2p-helm/openg2p-commons-base-0.0.0-develop.310.tgz) · [openg2p-commons-services 0.0.0-develop.310](https://openg2p.github.io/openg2p-helm/openg2p-commons-services-0.0.0-develop.310.tgz)
+
+### Changes
+
+- [G2P-5719](https://openg2p.atlassian.net/browse/G2P-5719) commons-services Rancher form: "Install Artifactory?" (it has its own switch, on by default, and serves eSignet, mock identity and Keymanager, so it stayed on when they were off); "Install Mock Identity System?" always shown (hidden behind eSignet it stayed on by default when eSignet was off) ([`ccf7372`](https://github.com/OpenG2P/commons/commit/ccf73726e46915c58a68f4a823dd0f53274feae9))
+
 <a id="v-0-0-0-develop-309"></a>
 
 ## commons — develop 0.0.0-develop.309 (2026-10-10)
@@ -958,19 +971,6 @@ _commit `cf0710f` · changes since 0.0.0-develop.251_
 ### Changes
 
 - trigger ci build and push for commons-base ([`28cefa6`](https://github.com/OpenG2P/commons/commit/28cefa641f1357fdbb23acfb684b3efaa82d3b93))
-
-<a id="v-0-0-0-develop-251"></a>
-
-## commons — develop 0.0.0-develop.251 (2026-09-28)
-
-_commit `41f4366` · changes since 0.0.0-develop.250_
-<!-- build:0.0.0-develop.251 revision:41f43668e9076671bb1e2cdbce6a0626d16013ba ts:1790560270 -->
-
-**Charts:** [openg2p-commons-base 0.0.0-develop.251](https://openg2p.github.io/openg2p-helm/openg2p-commons-base-0.0.0-develop.251.tgz) · [openg2p-commons-services 0.0.0-develop.251](https://openg2p.github.io/openg2p-helm/openg2p-commons-services-0.0.0-develop.251.tgz)
-
-### Changes
-
-- Updated MDS version. ([`41f4366`](https://github.com/OpenG2P/commons/commit/41f43668e9076671bb1e2cdbce6a0626d16013ba))
 
 ---
 
