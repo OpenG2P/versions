@@ -6,6 +6,7 @@ _Published automatically._
 
 | Version | Date | Type | Notes |
 | --- | --- | --- | --- |
+| [`1.2.2-rc.554`](#v-1-2-2-rc-554) | 2026-10-12 | release candidate |  |
 | [`0.0.0-develop.615`](#v-0-0-0-develop-615) | 2026-10-12 | develop |  |
 | [`0.0.0-develop.613`](#v-0-0-0-develop-613) | 2026-10-08 | develop |  |
 | [`1.2.2-rc.544`](#v-1-2-2-rc-544) | 2026-10-07 | release candidate |  |
@@ -28,7 +29,6 @@ _Published automatically._
 | [`0.0.0-develop.446`](#v-0-0-0-develop-446) | 2026-09-30 | develop |  |
 | [`1.2.2-rc.513`](#v-1-2-2-rc-513) | 2026-09-28 | release candidate |  |
 | [`0.0.0-develop.444`](#v-0-0-0-develop-444) | 2026-09-28 | develop |  |
-| [`1.2.2-rc.511`](#v-1-2-2-rc-511) | 2026-09-28 | release candidate |  |
 | [`0.0.0-develop.441`](#v-0-0-0-develop-441) | 2026-09-28 | develop |  |
 | [`0.0.0-develop.439`](#v-0-0-0-develop-439) | 2026-09-27 | develop |  |
 | [`0.0.0-develop.438`](#v-0-0-0-develop-438) | 2026-09-27 | develop |  |
@@ -355,6 +355,34 @@ same commit and *promoted* (retagged), not rebuilt. No code changed between them
 
 # Release candidates
 
+<a id="v-1-2-2-rc-554"></a>
+
+## registry-platform 1.2.2-rc.554 — 2026-10-12
+
+_commit `242e8f8` · changes since 1.2.2-rc.544_
+<!-- build:1.2.2-rc.554 revision:242e8f82bc8db91da45207776dd8d6aa87d0b490 ts:1791799738 -->
+
+**Chart:** [openg2p-registry 1.2.2-rc.554](https://openg2p.github.io/openg2p-helm/openg2p-registry-1.2.2-rc.554.tgz)
+
+### Summary
+
+- **Major:** Integration with WebSub: updated base URL to commons-services, pointed the registry at the commons WebSub hub, and implemented request denial handling.
+- New features in DCI: published async search on the partner topic, decoded four query types, and allowed searchable columns to be allowlisted.
+- Enhancements in outgest: added partner and register topics to improve data handling.
+- Performance improvements: implemented batch loading for related-register queries to optimize search operations.
+
+### Changes
+
+- chore(env): update WebSub base URL to commons-services ([`eadcffa`](https://github.com/OpenG2P/registry-platform/commit/eadcffa92e6a678acbdb64b7bd1a25209e7d192c))
+- chore(env): update .env.example ([`1512d7f`](https://github.com/OpenG2P/registry-platform/commit/1512d7f9c2c8a844afe1746aa1e65dd5b39a4206))
+- [G2P-5756](https://openg2p.atlassian.net/browse/G2P-5756) feat(helm): point the registry at the commons websub hub ([`0b8bbbd`](https://github.com/OpenG2P/registry-platform/commit/0b8bbbd51c387251d45d7b4820f657808a2e5d12))
+- [G2P-5756](https://openg2p.atlassian.net/browse/G2P-5756) fix(websub): fail when the hub denies a request ([`a635618`](https://github.com/OpenG2P/registry-platform/commit/a6356181e04f5091121f768519aa6a98908b67da))
+- [G2P-5756](https://openg2p.atlassian.net/browse/G2P-5756) feat(dci): publish async search on the partner topic ([`dedf0b3`](https://github.com/OpenG2P/registry-platform/commit/dedf0b352bdfe58fa8f886c781a7a2290dc597d6))
+- [G2P-5756](https://openg2p.atlassian.net/browse/G2P-5756) feat(outgest): add partner and register topics ([`048550e`](https://github.com/OpenG2P/registry-platform/commit/048550ea2011c719e441e1eac17989fef9102433))
+- [G2P-5753](https://openg2p.atlassian.net/browse/G2P-5753) feat(dci): decode the four query types ([`e2eb547`](https://github.com/OpenG2P/registry-platform/commit/e2eb54723b8528c6b4d0c44d64ce98ff7303da94))
+- [G2P-5754](https://openg2p.atlassian.net/browse/G2P-5754) feat(dci): allowlist searchable columns ([`16eb155`](https://github.com/OpenG2P/registry-platform/commit/16eb155854f9729cd8cf835c4f7b72dd9b76d135))
+- [G2P-5755](https://openg2p.atlassian.net/browse/G2P-5755) feat(search): batch related-register loads ([`c8ba897`](https://github.com/OpenG2P/registry-platform/commit/c8ba897240a0170d38e9fbbeb3e0d0cf24f9f78f))
+
 <a id="v-1-2-2-rc-544"></a>
 
 ## registry-platform 1.2.2-rc.544 — 2026-10-07
@@ -507,19 +535,6 @@ _commit `8a7b8ab` · changes since 1.2.2-rc.511_
 ### Changes
 
 - [G2P-5724](https://openg2p.atlassian.net/browse/G2P-5724) Implement date coercion for blank strings in G2P schemas and add corresponding tests. ([`d070a78`](https://github.com/OpenG2P/registry-platform/commit/d070a78486162e0398762ac127b66dc82b7bb26f))
-
-<a id="v-1-2-2-rc-511"></a>
-
-## registry-platform 1.2.2-rc.511 — 2026-09-28
-
-_commit `f183f59` · changes since 1.2.2-rc.509_
-<!-- build:1.2.2-rc.511 revision:f183f595d3ef5ad15cb609744ba4b0c81cf63da5 ts:1790581397 -->
-
-**Chart:** [openg2p-registry 1.2.2-rc.511](https://openg2p.github.io/openg2p-helm/openg2p-registry-1.2.2-rc.511.tgz)
-
-### Changes
-
-- [G2P-5721](https://openg2p.atlassian.net/browse/G2P-5721) Connect outgoing messages to Outgestion APIs and update message counts ([`89b841a`](https://github.com/OpenG2P/registry-platform/commit/89b841a2884f548f629977c2057ad6c8984e3017))
 
 <a id="v-1-2-1-rc-462"></a>
 
