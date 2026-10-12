@@ -6,6 +6,7 @@ _Published automatically._
 
 | Version | Date | Type | Notes |
 | --- | --- | --- | --- |
+| [`0.0.0-develop.50`](#v-0-0-0-develop-50) | 2026-10-12 | develop |  |
 | [`0.0.0-develop.46`](#v-0-0-0-develop-46) | 2026-10-10 | develop |  |
 | [`0.0.0-develop.43`](#v-0-0-0-develop-43) | 2026-10-09 | develop |  |
 | [`0.0.0-develop.42`](#v-0-0-0-develop-42) | 2026-10-09 | develop |  |
@@ -20,6 +21,28 @@ _Published automatically._
 | [`0.0.0-develop.22`](#v-0-0-0-develop-22) | 2026-10-01 | develop |  |
 
 # Develop builds
+
+<a id="v-0-0-0-develop-50"></a>
+
+## agri-stack — develop 0.0.0-develop.50 (2026-10-12)
+
+_commit `efff75d` · changes since 0.0.0-develop.46_
+<!-- build:0.0.0-develop.50 revision:efff75d411d8d351410ba2af84593447bde3db68 ts:1791770960 -->
+
+**Chart:** [openg2p-agri-composite 0.0.0-develop.50](https://openg2p.github.io/openg2p-helm/openg2p-agri-composite-0.0.0-develop.50.tgz)
+
+### Summary
+
+- Composite chart updates: introduced consent mode exchange with passthrough opt-in, and enhanced CORS configuration to render as a JSON list, addressing API startup issues with empty or plain-URL values.
+- Dependency management: pinned commons-base/services to version 0.0.0-develop.309 and composite to 0.0.0-develop.46 to ensure compatibility with the CM partner portal and consent_id.
+- Documentation improvements: updated README to include details about the CM partner portal integration in commons-services.
+
+### Changes
+
+- [G2P-5719](https://openg2p.atlassian.net/browse/G2P-5719) composite chart defaults for the exchange: consent mode exchange (passthrough opt-in), exchange CM URL http://commons-services-cm-partner-api, CORS origin the CM partner portal (new Rancher field); CORS rendered as a JSON list ([`efff75d`](https://github.com/OpenG2P/agri-stack/commit/efff75d411d8d351410ba2af84593447bde3db68))
+- [G2P-5719](https://openg2p.atlassian.net/browse/G2P-5719) composite chart: AGRI_COMPOSITE_CORS_ALLOW_ORIGINS rendered as a JSON list (agriComposite.corsOriginsJson) — the setting is a list, so an empty or plain-URL value stopped the API at start ([`d5e9710`](https://github.com/OpenG2P/agri-stack/commit/d5e9710331e3e42ad283b6e623e34e0017335299))
+- [G2P-5719](https://openg2p.atlassian.net/browse/G2P-5719) agri-exchange: bundle pins commons-base/services 0.0.0-develop.309 (CM develop.65: partner portal, consent_id) and composite 0.0.0-develop.46; README: CM partner portal ([`1f61a14`](https://github.com/OpenG2P/agri-stack/commit/1f61a14cc73914d7f1a7a7bd68ee864c8a8e7335))
+- [G2P-5719](https://openg2p.atlassian.net/browse/G2P-5719) agri-exchange README: CM partner portal in commons-services ([`ea15439`](https://github.com/OpenG2P/agri-stack/commit/ea1543979d947c1b4ea3a819978048ac44b2711b))
 
 <a id="v-0-0-0-develop-46"></a>
 
