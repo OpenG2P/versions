@@ -6,6 +6,7 @@ _Published automatically._
 
 | Version | Date | Type | Notes |
 | --- | --- | --- | --- |
+| [`0.0.0-develop.615`](#v-0-0-0-develop-615) | 2026-10-12 | develop |  |
 | [`0.0.0-develop.613`](#v-0-0-0-develop-613) | 2026-10-08 | develop |  |
 | [`1.2.2-rc.544`](#v-1-2-2-rc-544) | 2026-10-07 | release candidate |  |
 | [`1.2.2-rc.542`](#v-1-2-2-rc-542) | 2026-10-07 | release candidate |  |
@@ -40,7 +41,6 @@ _Published automatically._
 | [`0.0.0-develop.430`](#v-0-0-0-develop-430) | 2026-09-03 | develop |  |
 | [`1.2.1-rc.443`](#v-1-2-1-rc-443) | 2026-09-03 | release candidate |  |
 | [`0.0.0-develop.429`](#v-0-0-0-develop-429) | 2026-09-02 | develop |  |
-| [`0.0.0-develop.428`](#v-0-0-0-develop-428) | 2026-09-02 | develop |  |
 | [`1.2.0`](#v-1-2-0) | 2026-09-01 | release |  |
 | [`1.2.0-rc.440`](#v-1-2-0-rc-440) | 2026-09-01 | release candidate |  |
 | [`1.2.0-rc.439`](#v-1-2-0-rc-439) | 2026-09-01 | release candidate |  |
@@ -878,6 +878,26 @@ _commit `9b41f96` · changes since v1.0.0_
 
 # Develop builds
 
+<a id="v-0-0-0-develop-615"></a>
+
+## registry-platform — develop 0.0.0-develop.615 (2026-10-12)
+
+_commit `e112aac` · changes since 0.0.0-develop.613_
+<!-- build:0.0.0-develop.615 revision:e112aacafa3071fb1db51bdbeb4170d80107bf81 ts:1791783128 -->
+
+**Chart:** [openg2p-registry 0.0.0-develop.615](https://openg2p.github.io/openg2p-helm/openg2p-registry-0.0.0-develop.615.tgz)
+
+### Summary
+
+- Security enhancement: added refusal of registrant authentication providers from different registries to prevent unauthorized access.
+- Dependency updates: synchronized staff-ui to version 1.1.9-dev.12 and updated package-lock files for both staff-ui and ui-widgets.
+- Testing improvements: introduced a new test for the registrant authentication provider registration process.
+
+### Changes
+
+- [G2P-4929](https://openg2p.atlassian.net/browse/G2P-4929) Refuse a registrant authentication provider that belongs to another register ([`e112aac`](https://github.com/OpenG2P/registry-platform/commit/e112aacafa3071fb1db51bdbeb4170d80107bf81))
+- chore(ui-widgets): version for npm dev publish, sync staff-ui @1.1.9-dev.12 [skip ci] ([`c1e59b6`](https://github.com/OpenG2P/registry-platform/commit/c1e59b6f6a5358cde133fe0401ffe6b688c325fe))
+
 <a id="v-0-0-0-develop-613"></a>
 
 ## registry-platform — develop 0.0.0-develop.613 (2026-10-08)
@@ -1320,25 +1340,6 @@ _commit `8ef194b` · changes since 0.0.0-develop.428_
 ### Changes
 
 - [G2P-4929](https://openg2p.atlassian.net/browse/G2P-4929) Derive every hostname from baseDomain instead of hardcoding the domain ([`8ef194b`](https://github.com/OpenG2P/registry-platform/commit/8ef194bb44901888f625176355e71b06d5970a0a))
-
-<a id="v-0-0-0-develop-428"></a>
-
-## registry-platform — develop 0.0.0-develop.428 (2026-09-02)
-
-_commit `6c4f5f3` · changes since 0.0.0-develop.426_
-<!-- build:0.0.0-develop.428 revision:6c4f5f3a23b2e8b54b606ffd8120c0eda92a0aba ts:1788310577 -->
-
-**Chart:** [openg2p-registry 0.0.0-develop.428](https://openg2p.github.io/openg2p-helm/openg2p-registry-0.0.0-develop.428.tgz)
-
-### Summary
-
-- Data handling enhancement: Decode Farmer ID from claim-169 key 0, allowing registries to specify the ID carried by their QR codes.
-- Security improvement: Store the eSignet client key in a Secret to prevent unauthorized rotation during reinstalls.
-
-### Changes
-
-- [G2P-4929](https://openg2p.atlassian.net/browse/G2P-4929) Decode the Farmer ID from claim-169 key 0, as PixelPass writes it. Let each registry name the id its QR carries, and stop assuming farmer ([`6c4f5f3`](https://github.com/OpenG2P/registry-platform/commit/6c4f5f3a23b2e8b54b606ffd8120c0eda92a0aba))
-- [G2P-4929](https://openg2p.atlassian.net/browse/G2P-4929) Keep the eSignet client key in a Secret so a reinstall cannot rotate it ([`1ffc2eb`](https://github.com/OpenG2P/registry-platform/commit/1ffc2ebcccc51786b36e77ddc635be99a95a8a2d))
 
 ---
 
