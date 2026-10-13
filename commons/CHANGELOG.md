@@ -6,6 +6,7 @@ _Published automatically._
 
 | Version | Date | Type | Notes |
 | --- | --- | --- | --- |
+| [`0.0.0-develop.314`](#v-0-0-0-develop-314) | 2026-10-13 | develop |  |
 | [`0.0.0-develop.312`](#v-0-0-0-develop-312) | 2026-10-13 | develop |  |
 | [`0.0.0-develop.311`](#v-0-0-0-develop-311) | 2026-10-12 | develop |  |
 | [`0.0.0-develop.310`](#v-0-0-0-develop-310) | 2026-10-12 | develop |  |
@@ -33,7 +34,6 @@ _Published automatically._
 | [`2.3.4-rc.236`](#v-2-3-4-rc-236) | 2026-10-01 | release candidate |  |
 | [`2.3.4-rc.234`](#v-2-3-4-rc-234) | 2026-09-30 | release candidate |  |
 | [`0.0.0-develop.260`](#v-0-0-0-develop-260) | 2026-09-29 | develop |  |
-| [`0.0.0-develop.258`](#v-0-0-0-develop-258) | 2026-09-28 | develop |  |
 | [`2.3.3`](#v-2-3-3) | 2026-09-03 | release |  |
 | [`2.3.3-rc.227`](#v-2-3-3-rc-227) | 2026-09-03 | release candidate |  |
 | [`2.3.2`](#v-2-3-2) | 2026-09-02 | release |  |
@@ -631,6 +631,26 @@ _commit `ffabcdc` · changes since 2.2.1_
 
 # Develop builds
 
+<a id="v-0-0-0-develop-314"></a>
+
+## commons — develop 0.0.0-develop.314 (2026-10-13)
+
+_commit `f4adbcd` · changes since 0.0.0-develop.312_
+<!-- build:0.0.0-develop.314 revision:f4adbcd581bcb6eaa846cc07b6d22269e564e833 ts:1791874395 -->
+
+**Charts:** [openg2p-commons-base 0.0.0-develop.314](https://openg2p.github.io/openg2p-helm/openg2p-commons-base-0.0.0-develop.314.tgz) · [openg2p-commons-services 0.0.0-develop.314](https://openg2p.github.io/openg2p-helm/openg2p-commons-services-0.0.0-develop.314.tgz)
+
+### Summary
+
+- **Major:** Enhanced consent management features: introduced a signing key for the Consent Manager, implemented consent receipts with role-based access, and added national-ID login for the partner portal.
+- Improved form handling: required subject identifiers and composite URLs are now enforced in commons-services forms.
+- User experience updates: default behavior for "Install Inji Verify?" prompts has been standardized to today's settings.
+
+### Changes
+
+- Bumped up CM. ([`f4adbcd`](https://github.com/OpenG2P/commons/commit/f4adbcd581bcb6eaa846cc07b6d22269e564e833))
+- [G2P-5719](https://openg2p.atlassian.net/browse/G2P-5719) commons-services form: Consent Manager signing key (own Secret, kid), consent receipts (exchange and department roles), partner portal with national-ID login, required subject identifiers and composite URL; "Install Inji Verify?" — all defaulting to today's behaviour ([`7e43255`](https://github.com/OpenG2P/commons/commit/7e432558137db6d40e7af3c281884a2cee733672))
+
 <a id="v-0-0-0-develop-312"></a>
 
 ## commons — develop 0.0.0-develop.312 (2026-10-13)
@@ -958,19 +978,6 @@ _commit `134820a` · changes since 0.0.0-develop.258_
 ### Changes
 
 - [G2P-5725](https://openg2p.atlassian.net/browse/G2P-5725) Add workflow job for Novu ([`76522ba`](https://github.com/OpenG2P/commons/commit/76522bade071c218abaf9148a2287f93ef2e29a3))
-
-<a id="v-0-0-0-develop-258"></a>
-
-## commons — develop 0.0.0-develop.258 (2026-09-28)
-
-_commit `dda5213` · changes since 0.0.0-develop.255_
-<!-- build:0.0.0-develop.258 revision:dda5213063fd40f74164b02befbdaaa5cc0e822a ts:1790598152 -->
-
-**Charts:** [openg2p-commons-base 0.0.0-develop.258](https://openg2p.github.io/openg2p-helm/openg2p-commons-base-0.0.0-develop.258.tgz) · [openg2p-commons-services 0.0.0-develop.258](https://openg2p.github.io/openg2p-helm/openg2p-commons-services-0.0.0-develop.258.tgz)
-
-### Changes
-
-- [G2P-5706](https://openg2p.atlassian.net/browse/G2P-5706) Refactor Novu API token handling and update virtual service gateway configuration ([`ea76bf9`](https://github.com/OpenG2P/commons/commit/ea76bf97757f58a89258fb37c80202c12d059a69))
 
 ---
 
