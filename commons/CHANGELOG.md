@@ -6,6 +6,7 @@ _Published automatically._
 
 | Version | Date | Type | Notes |
 | --- | --- | --- | --- |
+| [`0.0.0-develop.318`](#v-0-0-0-develop-318) | 2026-10-13 | develop |  |
 | [`0.0.0-develop.316`](#v-0-0-0-develop-316) | 2026-10-13 | develop |  |
 | [`0.0.0-develop.314`](#v-0-0-0-develop-314) | 2026-10-13 | develop |  |
 | [`0.0.0-develop.312`](#v-0-0-0-develop-312) | 2026-10-13 | develop |  |
@@ -31,7 +32,6 @@ _Published automatically._
 | [`0.0.0-develop.271`](#v-0-0-0-develop-271) | 2026-10-03 | develop |  |
 | [`0.0.0-develop.269`](#v-0-0-0-develop-269) | 2026-10-03 | develop |  |
 | [`0.0.0-develop.265`](#v-0-0-0-develop-265) | 2026-10-03 | develop |  |
-| [`0.0.0-develop.261`](#v-0-0-0-develop-261) | 2026-10-02 | develop |  |
 | [`2.3.4-rc.236`](#v-2-3-4-rc-236) | 2026-10-01 | release candidate |  |
 | [`2.3.4-rc.234`](#v-2-3-4-rc-234) | 2026-09-30 | release candidate |  |
 | [`2.3.3`](#v-2-3-3) | 2026-09-03 | release |  |
@@ -631,6 +631,26 @@ _commit `ffabcdc` · changes since 2.2.1_
 
 # Develop builds
 
+<a id="v-0-0-0-develop-318"></a>
+
+## commons — develop 0.0.0-develop.318 (2026-10-13)
+
+_commit `1a885ef` · changes since 0.0.0-develop.316_
+<!-- build:0.0.0-develop.318 revision:1a885efe1311308a9dd1d2968293e33fde26c667 ts:1791910527 -->
+
+**Charts:** [openg2p-commons-base 0.0.0-develop.318](https://openg2p.github.io/openg2p-helm/openg2p-commons-base-0.0.0-develop.318.tgz) · [openg2p-commons-services 0.0.0-develop.318](https://openg2p.github.io/openg2p-helm/openg2p-commons-services-0.0.0-develop.318.tgz)
+
+### Summary
+
+- **Major:** Replaced consent-token switch and fields in the commons-services form with Agri Stack Exchange Role, ensuring compatibility with Agri Stack test scripts.
+- Updated CM to the latest version for improved functionality.
+- Enhanced portal fields to clearly indicate default values for the exchange role.
+
+### Changes
+
+- Bumped up CM. ([`1a885ef`](https://github.com/OpenG2P/commons/commit/1a885efe1311308a9dd1d2968293e33fde26c667))
+- [G2P-5719](https://openg2p.atlassian.net/browse/G2P-5719) commons-services form: Agri Stack Exchange Role replaces the consent-token switch and fields (defaults work with the Agri Stack test scripts); portal fields say what the exchange role defaults to ([`3189f03`](https://github.com/OpenG2P/commons/commit/3189f0341e901883663a472e7d605f6e61c2f0ce))
+
 <a id="v-0-0-0-develop-316"></a>
 
 ## commons — develop 0.0.0-develop.316 (2026-10-13)
@@ -971,19 +991,6 @@ _commit `34d4b6b` · changes since 0.0.0-develop.261_
 - MDS bumped up. ([`34d4b6b`](https://github.com/OpenG2P/commons/commit/34d4b6b6dc4cb94290116460a8a5ad51f00c95eb))
 - Fix commons Build &amp; Publish: point the garage dependency at the openg2p-helm mirror instead of git+https://git.deuxfleurs.fr (the git+ scheme needs the helm-git plugin, which the CI runner does not have, so helm dep up failed on commons-base with "could not find protocol handler for: git+https"); the mirrored garage 0.9.2 / v2.2.0 is identical to the v2.2.0 git ref apart from helm-package Chart.yaml normalisation ([`2df8a89`](https://github.com/OpenG2P/commons/commit/2df8a89a6a7bc451d18b6d41a410ce0b4f70221d))
 - Add Garage deployment configuration ([`dba77bd`](https://github.com/OpenG2P/commons/commit/dba77bd49d9dfc3e1d8d072b22e1bcc5bd8736d9))
-
-<a id="v-0-0-0-develop-261"></a>
-
-## commons — develop 0.0.0-develop.261 (2026-10-02)
-
-_commit `202f23e` · changes since 0.0.0-develop.260_
-<!-- build:0.0.0-develop.261 revision:202f23e1e637dfa0ca6ba016de23bc841c4ca0b6 ts:1790909947 -->
-
-**Charts:** [openg2p-commons-base 0.0.0-develop.261](https://openg2p.github.io/openg2p-helm/openg2p-commons-base-0.0.0-develop.261.tgz) · [openg2p-commons-services 0.0.0-develop.261](https://openg2p.github.io/openg2p-helm/openg2p-commons-services-0.0.0-develop.261.tgz)
-
-### Changes
-
-- CM bumped up ([`202f23e`](https://github.com/OpenG2P/commons/commit/202f23e1e637dfa0ca6ba016de23bc841c4ca0b6))
 
 ---
 
