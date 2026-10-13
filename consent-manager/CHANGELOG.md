@@ -6,6 +6,7 @@ _Published automatically._
 
 | Version | Date | Type | Notes |
 | --- | --- | --- | --- |
+| [`0.0.0-develop.75`](#v-0-0-0-develop-75) | 2026-10-13 | develop |  |
 | [`0.0.0-develop.74`](#v-0-0-0-develop-74) | 2026-10-13 | develop |  |
 | [`0.0.0-develop.72`](#v-0-0-0-develop-72) | 2026-10-12 | develop |  |
 | [`0.0.0-develop.69`](#v-0-0-0-develop-69) | 2026-10-12 | develop |  |
@@ -269,6 +270,19 @@ _commit `c67030b` · changes since 0.0.0-develop.57_
 _No new commits since 0.0.0-develop.57._
 
 # Develop builds
+
+<a id="v-0-0-0-develop-75"></a>
+
+## consent-manager — develop 0.0.0-develop.75 (2026-10-13)
+
+_commit `f48f34e` · changes since 0.0.0-develop.74_
+<!-- build:0.0.0-develop.75 revision:f48f34e257190967444ea66be6a281ce0a32dcef ts:1791873879 -->
+
+**Chart:** [openg2p-consent-manager 0.0.0-develop.75](https://openg2p.github.io/openg2p-helm/openg2p-consent-manager-0.0.0-develop.75.tgz)
+
+### Changes
+
+- [G2P-5719](https://openg2p.atlassian.net/browse/G2P-5719) CM chart: .p12 password read from the key's Secret unless set separately; required subject identifiers accept a comma-separated string (Rancher); form fields for the national-ID login and required identifiers; partner portal form text points to setup-partner-realm.sh ([`f48f34e`](https://github.com/OpenG2P/consent-manager/commit/f48f34e257190967444ea66be6a281ce0a32dcef))
 
 <a id="v-0-0-0-develop-74"></a>
 
