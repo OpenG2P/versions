@@ -6,6 +6,7 @@ _Published automatically._
 
 | Version | Date | Type | Notes |
 | --- | --- | --- | --- |
+| [`0.0.0-develop.316`](#v-0-0-0-develop-316) | 2026-10-13 | develop |  |
 | [`0.0.0-develop.314`](#v-0-0-0-develop-314) | 2026-10-13 | develop |  |
 | [`0.0.0-develop.312`](#v-0-0-0-develop-312) | 2026-10-13 | develop |  |
 | [`0.0.0-develop.311`](#v-0-0-0-develop-311) | 2026-10-12 | develop |  |
@@ -33,7 +34,6 @@ _Published automatically._
 | [`0.0.0-develop.261`](#v-0-0-0-develop-261) | 2026-10-02 | develop |  |
 | [`2.3.4-rc.236`](#v-2-3-4-rc-236) | 2026-10-01 | release candidate |  |
 | [`2.3.4-rc.234`](#v-2-3-4-rc-234) | 2026-09-30 | release candidate |  |
-| [`0.0.0-develop.260`](#v-0-0-0-develop-260) | 2026-09-29 | develop |  |
 | [`2.3.3`](#v-2-3-3) | 2026-09-03 | release |  |
 | [`2.3.3-rc.227`](#v-2-3-3-rc-227) | 2026-09-03 | release candidate |  |
 | [`2.3.2`](#v-2-3-2) | 2026-09-02 | release |  |
@@ -631,6 +631,25 @@ _commit `ffabcdc` · changes since 2.2.1_
 
 # Develop builds
 
+<a id="v-0-0-0-develop-316"></a>
+
+## commons — develop 0.0.0-develop.316 (2026-10-13)
+
+_commit `8cedfd8` · changes since 0.0.0-develop.314_
+<!-- build:0.0.0-develop.316 revision:8cedfd8b7acd63f4b364f5fa07dd7002ede33257 ts:1791880574 -->
+
+**Charts:** [openg2p-commons-base 0.0.0-develop.316](https://openg2p.github.io/openg2p-helm/openg2p-commons-base-0.0.0-develop.316.tgz) · [openg2p-commons-services 0.0.0-develop.316](https://openg2p.github.io/openg2p-helm/openg2p-commons-services-0.0.0-develop.316.tgz)
+
+### Summary
+
+- Consent Manager updates: renamed exchange fields to "consent tokens" for clarity while maintaining existing setting names.
+- Dependency management: updated commons version to the latest release for improved functionality and performance.
+
+### Changes
+
+- CM bumped up. ([`8cedfd8`](https://github.com/OpenG2P/commons/commit/8cedfd8b7acd63f4b364f5fa07dd7002ede33257))
+- [G2P-5719](https://openg2p.atlassian.net/browse/G2P-5719) commons-services form: Consent Manager exchange fields labelled "consent tokens" (setting names unchanged) ([`6a6d513`](https://github.com/OpenG2P/commons/commit/6a6d513149823f3ef8b8c4fac70188ed5408ba36))
+
 <a id="v-0-0-0-develop-314"></a>
 
 ## commons — develop 0.0.0-develop.314 (2026-10-13)
@@ -965,19 +984,6 @@ _commit `202f23e` · changes since 0.0.0-develop.260_
 ### Changes
 
 - CM bumped up ([`202f23e`](https://github.com/OpenG2P/commons/commit/202f23e1e637dfa0ca6ba016de23bc841c4ca0b6))
-
-<a id="v-0-0-0-develop-260"></a>
-
-## commons — develop 0.0.0-develop.260 (2026-09-29)
-
-_commit `134820a` · changes since 0.0.0-develop.258_
-<!-- build:0.0.0-develop.260 revision:134820ab5f826ba9d84d19cc10353e97107e665c ts:1790685567 -->
-
-**Charts:** [openg2p-commons-base 0.0.0-develop.260](https://openg2p.github.io/openg2p-helm/openg2p-commons-base-0.0.0-develop.260.tgz) · [openg2p-commons-services 0.0.0-develop.260](https://openg2p.github.io/openg2p-helm/openg2p-commons-services-0.0.0-develop.260.tgz)
-
-### Changes
-
-- [G2P-5725](https://openg2p.atlassian.net/browse/G2P-5725) Add workflow job for Novu ([`76522ba`](https://github.com/OpenG2P/commons/commit/76522bade071c218abaf9148a2287f93ef2e29a3))
 
 ---
 
