@@ -6,6 +6,7 @@ _Published automatically._
 
 | Version | Date | Type | Notes |
 | --- | --- | --- | --- |
+| [`0.0.0-develop.77`](#v-0-0-0-develop-77) | 2026-10-13 | develop |  |
 | [`0.0.0-develop.76`](#v-0-0-0-develop-76) | 2026-10-13 | develop |  |
 | [`0.0.0-develop.75`](#v-0-0-0-develop-75) | 2026-10-13 | develop |  |
 | [`0.0.0-develop.74`](#v-0-0-0-develop-74) | 2026-10-13 | develop |  |
@@ -271,6 +272,19 @@ _commit `c67030b` · changes since 0.0.0-develop.57_
 _No new commits since 0.0.0-develop.57._
 
 # Develop builds
+
+<a id="v-0-0-0-develop-77"></a>
+
+## consent-manager — develop 0.0.0-develop.77 (2026-10-13)
+
+_commit `8393bc0` · changes since 0.0.0-develop.76_
+<!-- build:0.0.0-develop.77 revision:8393bc0934d6dd931cd4f4c5ecb4b6101e9edd05 ts:1791885334 -->
+
+**Chart:** [openg2p-consent-manager 0.0.0-develop.77](https://openg2p.github.io/openg2p-helm/openg2p-consent-manager-0.0.0-develop.77.tgz)
+
+### Changes
+
+- [G2P-5719](https://openg2p.atlassian.net/browse/G2P-5719) CM chart: Agri Stack Exchange Role (none | exchange | department) with working defaults: exchange issues as agri-stack-exchange-cm to agri-composite, and with the partner portal turns on the national-ID login, requires FARMER_ID and points at agri-composite.&lt;domain&gt;; department trusts agri-stack-exchange-cm / agri-composite with the JWKS at agrix.&lt;parent domain&gt; (or Exchange Domain); fields only override; explicit fields without a role work as before ([`8393bc0`](https://github.com/OpenG2P/consent-manager/commit/8393bc0934d6dd931cd4f4c5ecb4b6101e9edd05))
 
 <a id="v-0-0-0-develop-76"></a>
 
