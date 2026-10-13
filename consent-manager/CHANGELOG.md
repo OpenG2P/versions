@@ -6,6 +6,7 @@ _Published automatically._
 
 | Version | Date | Type | Notes |
 | --- | --- | --- | --- |
+| [`0.0.0-develop.74`](#v-0-0-0-develop-74) | 2026-10-13 | develop |  |
 | [`0.0.0-develop.72`](#v-0-0-0-develop-72) | 2026-10-12 | develop |  |
 | [`0.0.0-develop.69`](#v-0-0-0-develop-69) | 2026-10-12 | develop |  |
 | [`0.0.0-develop.68`](#v-0-0-0-develop-68) | 2026-10-12 | develop |  |
@@ -268,6 +269,27 @@ _commit `c67030b` · changes since 0.0.0-develop.57_
 _No new commits since 0.0.0-develop.57._
 
 # Develop builds
+
+<a id="v-0-0-0-develop-74"></a>
+
+## consent-manager — develop 0.0.0-develop.74 (2026-10-13)
+
+_commit `69cd69c` · changes since 0.0.0-develop.72_
+<!-- build:0.0.0-develop.74 revision:69cd69cd47b5f8b02055fd89d03e241538c1eeaa ts:1791856194 -->
+
+**Chart:** [openg2p-consent-manager 0.0.0-develop.74](https://openg2p.github.io/openg2p-helm/openg2p-consent-manager-0.0.0-develop.74.tgz)
+
+### Summary
+
+- **Major:** Assisted consent feature enhancement: support for additional subject identifiers (e.g., FARMER_ID) in requests and consents, with visibility in the portal and staff page, and mandatory confirmation by approvers in the registry.
+- Evidence bucket creation streamlined through the commons-base Garage init job, reducing manual steps for older commons versions.
+- National-ID login demographics are now displayed with clear source labels, ensuring no comparisons are made between identifiers.
+- Comprehensive testing implemented for the new consent features to ensure reliability and compliance.
+
+### Changes
+
+- [G2P-5719](https://openg2p.atlassian.net/browse/G2P-5719) CM chart: the evidence bucket is created by the commons-base Garage init job (manual step only for older commons) ([`69cd69c`](https://github.com/OpenG2P/consent-manager/commit/69cd69cd47b5f8b02055fd89d03e241538c1eeaa))
+- [G2P-5719](https://openg2p.atlassian.net/browse/G2P-5719) assisted consent: other subject identifiers (e.g. FARMER_ID) on requests and consents — required per deployment (partnerPortal.requiredSubjectIdentifiers), shown in the portal, staff page, consent and consent record; approver must confirm them in the registry (recorded in assurance); national-ID login demographics shown labelled with their source, never compared; tests ([`262e80c`](https://github.com/OpenG2P/consent-manager/commit/262e80c801186ede05d0473eb9f69e2cde5144d5))
 
 <a id="v-0-0-0-develop-72"></a>
 
