@@ -6,6 +6,7 @@ _Published automatically._
 
 | Version | Date | Type | Notes |
 | --- | --- | --- | --- |
+| [`0.0.0-develop.54`](#v-0-0-0-develop-54) | 2026-10-13 | develop |  |
 | [`0.0.0-develop.53`](#v-0-0-0-develop-53) | 2026-10-13 | develop |  |
 | [`0.0.0-develop.50`](#v-0-0-0-develop-50) | 2026-10-12 | develop |  |
 | [`0.0.0-develop.46`](#v-0-0-0-develop-46) | 2026-10-10 | develop |  |
@@ -22,6 +23,19 @@ _Published automatically._
 | [`0.0.0-develop.22`](#v-0-0-0-develop-22) | 2026-10-01 | develop |  |
 
 # Develop builds
+
+<a id="v-0-0-0-develop-54"></a>
+
+## agri-stack — develop 0.0.0-develop.54 (2026-10-13)
+
+_commit `aa2dfdc` · changes since 0.0.0-develop.53_
+<!-- build:0.0.0-develop.54 revision:aa2dfdc71cfcb2dba5ab8a87bc86451681d509d8 ts:1791879507 -->
+
+**Chart:** [openg2p-agri-composite 0.0.0-develop.54](https://openg2p.github.io/openg2p-helm/openg2p-agri-composite-0.0.0-develop.54.tgz)
+
+### Changes
+
+- [G2P-5719](https://openg2p.atlassian.net/browse/G2P-5719) composite and setup script: "consent token" for the exchange CM's per-registry token in comments, chart descriptions and script messages ([`aa2dfdc`](https://github.com/OpenG2P/agri-stack/commit/aa2dfdc71cfcb2dba5ab8a87bc86451681d509d8))
 
 <a id="v-0-0-0-develop-53"></a>
 
