@@ -6,6 +6,7 @@ _Published automatically._
 
 | Version | Date | Type | Notes |
 | --- | --- | --- | --- |
+| [`0.0.0-develop.312`](#v-0-0-0-develop-312) | 2026-10-13 | develop |  |
 | [`0.0.0-develop.311`](#v-0-0-0-develop-311) | 2026-10-12 | develop |  |
 | [`0.0.0-develop.310`](#v-0-0-0-develop-310) | 2026-10-12 | develop |  |
 | [`0.0.0-develop.309`](#v-0-0-0-develop-309) | 2026-10-10 | develop |  |
@@ -33,7 +34,6 @@ _Published automatically._
 | [`2.3.4-rc.234`](#v-2-3-4-rc-234) | 2026-09-30 | release candidate |  |
 | [`0.0.0-develop.260`](#v-0-0-0-develop-260) | 2026-09-29 | develop |  |
 | [`0.0.0-develop.258`](#v-0-0-0-develop-258) | 2026-09-28 | develop |  |
-| [`0.0.0-develop.255`](#v-0-0-0-develop-255) | 2026-09-28 | develop |  |
 | [`2.3.3`](#v-2-3-3) | 2026-09-03 | release |  |
 | [`2.3.3-rc.227`](#v-2-3-3-rc-227) | 2026-09-03 | release candidate |  |
 | [`2.3.2`](#v-2-3-2) | 2026-09-02 | release |  |
@@ -631,6 +631,19 @@ _commit `ffabcdc` · changes since 2.2.1_
 
 # Develop builds
 
+<a id="v-0-0-0-develop-312"></a>
+
+## commons — develop 0.0.0-develop.312 (2026-10-13)
+
+_commit `09795ae` · changes since 0.0.0-develop.311_
+<!-- build:0.0.0-develop.312 revision:09795ae7c8738a20bc027f0ce6706da447de51f0 ts:1791869809 -->
+
+**Charts:** [openg2p-commons-base 0.0.0-develop.312](https://openg2p.github.io/openg2p-helm/openg2p-commons-base-0.0.0-develop.312.tgz) · [openg2p-commons-services 0.0.0-develop.312](https://openg2p.github.io/openg2p-helm/openg2p-commons-services-0.0.0-develop.312.tgz)
+
+### Changes
+
+- Bumped up Keycloak and CM versions. ([`09795ae`](https://github.com/OpenG2P/commons/commit/09795ae7c8738a20bc027f0ce6706da447de51f0))
+
 <a id="v-0-0-0-develop-311"></a>
 
 ## commons — develop 0.0.0-develop.311 (2026-10-12)
@@ -958,19 +971,6 @@ _commit `dda5213` · changes since 0.0.0-develop.255_
 ### Changes
 
 - [G2P-5706](https://openg2p.atlassian.net/browse/G2P-5706) Refactor Novu API token handling and update virtual service gateway configuration ([`ea76bf9`](https://github.com/OpenG2P/commons/commit/ea76bf97757f58a89258fb37c80202c12d059a69))
-
-<a id="v-0-0-0-develop-255"></a>
-
-## commons — develop 0.0.0-develop.255 (2026-09-28)
-
-_commit `3fa929e` · changes since 0.0.0-develop.253_
-<!-- build:0.0.0-develop.255 revision:3fa929ea9658f223232d500678fb597376bc21ad ts:1790588816 -->
-
-**Charts:** [openg2p-commons-base 0.0.0-develop.255](https://openg2p.github.io/openg2p-helm/openg2p-commons-base-0.0.0-develop.255.tgz) · [openg2p-commons-services 0.0.0-develop.255](https://openg2p.github.io/openg2p-helm/openg2p-commons-services-0.0.0-develop.255.tgz)
-
-### Changes
-
-- [G2P-5719](https://openg2p.atlassian.net/browse/G2P-5719) Country Pack group in the commons-services form: surface domains; descriptions say registries read code lists live from Master Data ([`5f61e65`](https://github.com/OpenG2P/commons/commit/5f61e6593715721c25ee0ca8a0ce99e0b1daee5a))
 
 ---
 
