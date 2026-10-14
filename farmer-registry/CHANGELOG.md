@@ -6,6 +6,7 @@ _Published automatically._
 
 | Version | Date | Type | Notes |
 | --- | --- | --- | --- |
+| [`1.2.1-rc.188`](#v-1-2-1-rc-188) | 2026-10-14 | release candidate |  |
 | [`0.0.0-develop.276`](#v-0-0-0-develop-276) | 2026-10-08 | develop |  |
 | [`0.0.0-develop.275`](#v-0-0-0-develop-275) | 2026-10-08 | develop |  |
 | [`0.0.0-develop.273`](#v-0-0-0-develop-273) | 2026-10-07 | develop |  |
@@ -25,7 +26,6 @@ _Published automatically._
 | [`1.2.1-rc.171`](#v-1-2-1-rc-171) | 2026-09-17 | release candidate |  |
 | [`1.2.1-rc.170`](#v-1-2-1-rc-170) | 2026-09-17 | release candidate |  |
 | [`1.2.1-rc.169`](#v-1-2-1-rc-169) | 2026-09-17 | release candidate |  |
-| [`1.2.1-rc.167`](#v-1-2-1-rc-167) | 2026-09-16 | release candidate |  |
 | [`0.0.0-develop.207`](#v-0-0-0-develop-207) | 2026-09-12 | develop |  |
 | [`0.0.0-develop.206`](#v-0-0-0-develop-206) | 2026-09-03 | develop | **Intermediate Stable Version**. VC issuance and verification both working fine. Compatible with commons 0.0.0-develop.243. |
 | [`0.0.0-develop.205`](#v-0-0-0-develop-205) | 2026-09-02 | develop |  |
@@ -207,6 +207,31 @@ _commit `7055a71` · first release_
 
 # Release candidates
 
+<a id="v-1-2-1-rc-188"></a>
+
+## farmer-registry 1.2.1-rc.188 — 2026-10-14
+
+_commit `7d86b26` · changes since 1.2.1-rc.182_
+<!-- build:1.2.1-rc.188 revision:7d86b2671045f44b26e34d6658cdef6adf3a2c3c ts:1791972342 -->
+
+**Chart:** [openg2p-farmer-registry 1.2.1-rc.188](https://openg2p.github.io/openg2p-helm/openg2p-farmer-registry-1.2.1-rc.188.tgz)
+
+### Summary
+
+- Data model updates: revised section identifiers for farmer crop, input, and livestock details in Python and SQL files; changed crop season designation from SUMMER to MEHER.
+- Validation improvements: added validation for household data to enhance data integrity.
+- UI enhancements: improved dropdown field widgets and made the relationship to head field conditional, with Primary Cooperative Member or Cooperative Union Member status now also conditional.
+- Migration updates: modified four migration scripts related to metadata and registry configurations, ensuring alignment with the new data model changes.
+- Testing additions: introduced a new test file for dependent field clearing to bolster test coverage.
+
+### Changes
+
+- Update section identifiers in Python and SQL files for farmer crop, input, and livestock details ([`19597f7`](https://github.com/OpenG2P/farmer-registry/commit/19597f7c15e13adf93ce85a630bede8a8826b84e))
+- Add validation for household ([`39d3dfa`](https://github.com/OpenG2P/farmer-registry/commit/39d3dfa9798ff1ce6df91c6258822334eec5ca8a))
+- [G2P-5791](https://openg2p.atlassian.net/browse/G2P-5791) [G2P-5595](https://openg2p.atlassian.net/browse/G2P-5595) - Update section identifiers in SQL and Python files for farmer crop, input, and livestock details; change crop season from SUMMER to MEHER. ([`3ea84d8`](https://github.com/OpenG2P/farmer-registry/commit/3ea84d831bebf8c1def1c2efd691011aa4cddcb3))
+- [G2P-5776](https://openg2p.atlassian.net/browse/G2P-5776) Enhanced widget for dropdown fields ([`f9de3e5`](https://github.com/OpenG2P/farmer-registry/commit/f9de3e57ad11c88bcb330632cbc9359299413e13))
+- [G2P-5783](https://openg2p.atlassian.net/browse/G2P-5783) [G2P-5778](https://openg2p.atlassian.net/browse/G2P-5778) - relationship to head field make it conditional and Primary Cooperative Member or Cooperative Union Member is now conditional ([`51cf1ec`](https://github.com/OpenG2P/farmer-registry/commit/51cf1ec24850f8a455960927b9cb04ffff2f961d))
+
 <a id="v-1-2-1-rc-182"></a>
 
 ## farmer-registry 1.2.1-rc.182 — 2026-10-06
@@ -329,19 +354,6 @@ _commit `0cf263b` · changes since 1.2.1-rc.167_
 ### Changes
 
 - Image issues ([`ea5e3fd`](https://github.com/OpenG2P/farmer-registry/commit/ea5e3fda595a607b90289ed497982ba0ab854c3d))
-
-<a id="v-1-2-1-rc-167"></a>
-
-## farmer-registry 1.2.1-rc.167 — 2026-09-16
-
-_commit `535b80d` · changes since 1.2.1-rc.165_
-<!-- build:1.2.1-rc.167 revision:535b80d6727a56eeb8a9c49e7cc85818fc8dbf88 ts:1789532492 -->
-
-**Chart:** [openg2p-farmer-registry 1.2.1-rc.167](https://openg2p.github.io/openg2p-helm/openg2p-farmer-registry-1.2.1-rc.167.tgz)
-
-### Changes
-
-- [G2P-5680](https://openg2p.atlassian.net/browse/G2P-5680) [G2P-5676](https://openg2p.atlassian.net/browse/G2P-5676) ui-widgets decimals in table cells, child change requests inherit the subject record name, partner-api and db-seed fixes ([`73e3037`](https://github.com/OpenG2P/farmer-registry/commit/73e30377460db8762d66e3d33468a319aa1d979f))
 
 # Develop builds
 
