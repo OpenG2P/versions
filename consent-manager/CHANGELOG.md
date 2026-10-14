@@ -6,6 +6,7 @@ _Published automatically._
 
 | Version | Date | Type | Notes |
 | --- | --- | --- | --- |
+| [`0.0.0-develop.81`](#v-0-0-0-develop-81) | 2026-10-14 | develop |  |
 | [`0.0.0-develop.80`](#v-0-0-0-develop-80) | 2026-10-14 | develop |  |
 | [`0.0.0-develop.77`](#v-0-0-0-develop-77) | 2026-10-13 | develop |  |
 | [`0.0.0-develop.76`](#v-0-0-0-develop-76) | 2026-10-13 | develop |  |
@@ -273,6 +274,19 @@ _commit `c67030b` · changes since 0.0.0-develop.57_
 _No new commits since 0.0.0-develop.57._
 
 # Develop builds
+
+<a id="v-0-0-0-develop-81"></a>
+
+## consent-manager — develop 0.0.0-develop.81 (2026-10-14)
+
+_commit `4591963` · changes since 0.0.0-develop.80_
+<!-- build:0.0.0-develop.81 revision:45919633b146cf67f588a89b2b641e884375d485 ts:1791971744 -->
+
+**Chart:** [openg2p-consent-manager 0.0.0-develop.81](https://openg2p.github.io/openg2p-helm/openg2p-consent-manager-0.0.0-develop.81.tgz)
+
+### Changes
+
+- [G2P-5719](https://openg2p.atlassian.net/browse/G2P-5719) CM chart: Base Domain (global.baseDomain) — every hostname derives from it; inside commons-services it follows commons' Base Domain (fixes the partner portal, eSignet and AWE hostnames); Rancher field ([`4591963`](https://github.com/OpenG2P/consent-manager/commit/45919633b146cf67f588a89b2b641e884375d485))
 
 <a id="v-0-0-0-develop-80"></a>
 
