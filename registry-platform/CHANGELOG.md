@@ -6,6 +6,7 @@ _Published automatically._
 
 | Version | Date | Type | Notes |
 | --- | --- | --- | --- |
+| [`1.2.2-rc.557`](#v-1-2-2-rc-557) | 2026-10-14 | release candidate |  |
 | [`1.2.2-rc.554`](#v-1-2-2-rc-554) | 2026-10-12 | release candidate |  |
 | [`0.0.0-develop.615`](#v-0-0-0-develop-615) | 2026-10-12 | develop |  |
 | [`0.0.0-develop.613`](#v-0-0-0-develop-613) | 2026-10-08 | develop |  |
@@ -27,7 +28,6 @@ _Published automatically._
 | [`0.0.0-develop.448`](#v-0-0-0-develop-448) | 2026-10-01 | develop |  |
 | [`0.0.0-develop.447`](#v-0-0-0-develop-447) | 2026-10-01 | develop |  |
 | [`0.0.0-develop.446`](#v-0-0-0-develop-446) | 2026-09-30 | develop |  |
-| [`1.2.2-rc.513`](#v-1-2-2-rc-513) | 2026-09-28 | release candidate |  |
 | [`0.0.0-develop.444`](#v-0-0-0-develop-444) | 2026-09-28 | develop |  |
 | [`0.0.0-develop.441`](#v-0-0-0-develop-441) | 2026-09-28 | develop |  |
 | [`0.0.0-develop.439`](#v-0-0-0-develop-439) | 2026-09-27 | develop |  |
@@ -355,6 +355,25 @@ same commit and *promoted* (retagged), not rebuilt. No code changed between them
 
 # Release candidates
 
+<a id="v-1-2-2-rc-557"></a>
+
+## registry-platform 1.2.2-rc.557 — 2026-10-14
+
+_commit `4d5482d` · changes since 1.2.2-rc.554_
+<!-- build:1.2.2-rc.557 revision:4d5482dfea23d1accf98fe474fb90ed6ddb5f651 ts:1791914278 -->
+
+**Chart:** [openg2p-registry 1.2.2-rc.557](https://openg2p.github.io/openg2p-helm/openg2p-registry-1.2.2-rc.557.tgz)
+
+### Summary
+
+- Dependency updates: synchronized staff-ui to version 1.1.9-dev.13 and made changes to package-lock.json and package.json for both staff-ui and ui-widgets.
+- UI refactoring: implemented null value handling across multiple widgets to improve data consistency and user experience.
+
+### Changes
+
+- chore(ui-widgets): version for npm dev publish, sync staff-ui @1.1.9-dev.13 ([`4d5482d`](https://github.com/OpenG2P/registry-platform/commit/4d5482dfea23d1accf98fe474fb90ed6ddb5f651))
+- [G2P-5774](https://openg2p.atlassian.net/browse/G2P-5774) refactor(ui-widgets): set null for empty values across multiple widgets ([`bda0833`](https://github.com/OpenG2P/registry-platform/commit/bda08337a9e33cfff88947dadbabe473902fbb46))
+
 <a id="v-1-2-2-rc-554"></a>
 
 ## registry-platform 1.2.2-rc.554 — 2026-10-12
@@ -522,19 +541,6 @@ _commit `d9981c9` · changes since 1.2.2-rc.513_
 ### Changes
 
 - Update FASTAPI_COMMON_REF to version 1.2 ([`c68d29f`](https://github.com/OpenG2P/registry-platform/commit/c68d29f293ca29ca0b8b7100c7bf34db33c76111))
-
-<a id="v-1-2-2-rc-513"></a>
-
-## registry-platform 1.2.2-rc.513 — 2026-09-28
-
-_commit `8a7b8ab` · changes since 1.2.2-rc.511_
-<!-- build:1.2.2-rc.513 revision:8a7b8ab60968112f82f75a53b36ee5ec78bb76f1 ts:1790597157 -->
-
-**Chart:** [openg2p-registry 1.2.2-rc.513](https://openg2p.github.io/openg2p-helm/openg2p-registry-1.2.2-rc.513.tgz)
-
-### Changes
-
-- [G2P-5724](https://openg2p.atlassian.net/browse/G2P-5724) Implement date coercion for blank strings in G2P schemas and add corresponding tests. ([`d070a78`](https://github.com/OpenG2P/registry-platform/commit/d070a78486162e0398762ac127b66dc82b7bb26f))
 
 <a id="v-1-2-1-rc-462"></a>
 
