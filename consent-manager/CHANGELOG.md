@@ -6,6 +6,7 @@ _Published automatically._
 
 | Version | Date | Type | Notes |
 | --- | --- | --- | --- |
+| [`0.0.0-develop.80`](#v-0-0-0-develop-80) | 2026-10-14 | develop |  |
 | [`0.0.0-develop.77`](#v-0-0-0-develop-77) | 2026-10-13 | develop |  |
 | [`0.0.0-develop.76`](#v-0-0-0-develop-76) | 2026-10-13 | develop |  |
 | [`0.0.0-develop.75`](#v-0-0-0-develop-75) | 2026-10-13 | develop |  |
@@ -272,6 +273,26 @@ _commit `c67030b` · changes since 0.0.0-develop.57_
 _No new commits since 0.0.0-develop.57._
 
 # Develop builds
+
+<a id="v-0-0-0-develop-80"></a>
+
+## consent-manager — develop 0.0.0-develop.80 (2026-10-14)
+
+_commit `b616631` · changes since 0.0.0-develop.77_
+<!-- build:0.0.0-develop.80 revision:b616631ff3a4c3b786ced4d2d1ed8628dd69895b ts:1791961297 -->
+
+**Chart:** [openg2p-consent-manager 0.0.0-develop.80](https://openg2p.github.io/openg2p-helm/openg2p-consent-manager-0.0.0-develop.80.tgz)
+
+### Summary
+
+- User interface enhancement: introduced a new OpenG2P shell in the CM console with a redesigned layout featuring a black left pane, full logo, and a menu with icons for user roles and sign-out options.
+- Terminology updates: capitalized "Exchange" in module descriptions and clarified that "Exchange Role" and group "Exchange" now encompass consent tokens for any data exchange, not limited to Agri Stack.
+
+### Changes
+
+- [G2P-5719](https://openg2p.atlassian.net/browse/G2P-5719) CM console: OpenG2P shell as in the Master Data UI and the partner portal — black left pane with the full logo and "Consent Manager", menu with icons, user, role and sign-out at the bottom (top bar on phones); lucide-react icons ([`b616631`](https://github.com/OpenG2P/consent-manager/commit/b616631ff3a4c3b786ced4d2d1ed8628dd69895b))
+- [G2P-5719](https://openg2p.atlassian.net/browse/G2P-5719) CM chart form: "Exchange" capitalised as the module name in descriptions ([`008a890`](https://github.com/OpenG2P/consent-manager/commit/008a890057c75e230eb955a367d388486eb621a4))
+- [G2P-5719](https://openg2p.atlassian.net/browse/G2P-5719) CM chart form: "Exchange Role" and group "Exchange" — consent tokens described for any data exchange (e.g. Agri Stack), not Agri Stack only ([`c1fde54`](https://github.com/OpenG2P/consent-manager/commit/c1fde54c33e4e3034e3055076f000f2252af83f6))
 
 <a id="v-0-0-0-develop-77"></a>
 
