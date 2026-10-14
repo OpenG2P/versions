@@ -6,6 +6,7 @@ _Published automatically._
 
 | Version | Date | Type | Notes |
 | --- | --- | --- | --- |
+| [`1.2.1-rc.190`](#v-1-2-1-rc-190) | 2026-10-14 | release candidate |  |
 | [`1.2.1-rc.188`](#v-1-2-1-rc-188) | 2026-10-14 | release candidate |  |
 | [`0.0.0-develop.276`](#v-0-0-0-develop-276) | 2026-10-08 | develop |  |
 | [`0.0.0-develop.275`](#v-0-0-0-develop-275) | 2026-10-08 | develop |  |
@@ -25,7 +26,6 @@ _Published automatically._
 | [`1.2.1-rc.174`](#v-1-2-1-rc-174) | 2026-09-18 | release candidate |  |
 | [`1.2.1-rc.171`](#v-1-2-1-rc-171) | 2026-09-17 | release candidate |  |
 | [`1.2.1-rc.170`](#v-1-2-1-rc-170) | 2026-09-17 | release candidate |  |
-| [`1.2.1-rc.169`](#v-1-2-1-rc-169) | 2026-09-17 | release candidate |  |
 | [`0.0.0-develop.207`](#v-0-0-0-develop-207) | 2026-09-12 | develop |  |
 | [`0.0.0-develop.206`](#v-0-0-0-develop-206) | 2026-09-03 | develop | **Intermediate Stable Version**. VC issuance and verification both working fine. Compatible with commons 0.0.0-develop.243. |
 | [`0.0.0-develop.205`](#v-0-0-0-develop-205) | 2026-09-02 | develop |  |
@@ -207,6 +207,19 @@ _commit `7055a71` · first release_
 
 # Release candidates
 
+<a id="v-1-2-1-rc-190"></a>
+
+## farmer-registry 1.2.1-rc.190 — 2026-10-14
+
+_commit `48ddb80` · changes since 1.2.1-rc.188_
+<!-- build:1.2.1-rc.190 revision:48ddb804e8c5ab73c98f32d7f3719928a30ee4ea ts:1791978720 -->
+
+**Chart:** [openg2p-farmer-registry 1.2.1-rc.190](https://openg2p.github.io/openg2p-helm/openg2p-farmer-registry-1.2.1-rc.190.tgz)
+
+### Changes
+
+- Bump version of RP to 1.2.2-rc.557 in Dockerfiles and Chart.yaml ([`3ecf1ee`](https://github.com/OpenG2P/farmer-registry/commit/3ecf1eec0a93618050f94b869b3c60e76233f6e9))
+
 <a id="v-1-2-1-rc-188"></a>
 
 ## farmer-registry 1.2.1-rc.188 — 2026-10-14
@@ -341,19 +354,6 @@ _commit `fb6cd5d` · changes since 1.2.1-rc.169_
 ### Changes
 
 - Bump version 1.2.2-rc.487 of registry platform in Dockerfile ([`fb6cd5d`](https://github.com/OpenG2P/farmer-registry/commit/fb6cd5d764013c99ee4a26e82884f99ddfa2b2a4))
-
-<a id="v-1-2-1-rc-169"></a>
-
-## farmer-registry 1.2.1-rc.169 — 2026-09-17
-
-_commit `0cf263b` · changes since 1.2.1-rc.167_
-<!-- build:1.2.1-rc.169 revision:0cf263be885dcba484ae57574269fca4150a84cf ts:1789629761 -->
-
-**Chart:** [openg2p-farmer-registry 1.2.1-rc.169](https://openg2p.github.io/openg2p-helm/openg2p-farmer-registry-1.2.1-rc.169.tgz)
-
-### Changes
-
-- Image issues ([`ea5e3fd`](https://github.com/OpenG2P/farmer-registry/commit/ea5e3fda595a607b90289ed497982ba0ab854c3d))
 
 # Develop builds
 
