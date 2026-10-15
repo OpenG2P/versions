@@ -6,6 +6,7 @@ _Published automatically._
 
 | Version | Date | Type | Notes |
 | --- | --- | --- | --- |
+| [`1.1.4-rc.106`](#v-1-1-4-rc-106) | 2026-10-15 | release candidate |  |
 | [`0.0.0-develop.112`](#v-0-0-0-develop-112) | 2026-10-08 | develop |  |
 | [`0.0.0-develop.111`](#v-0-0-0-develop-111) | 2026-10-07 | develop |  |
 | [`0.0.0-develop.110`](#v-0-0-0-develop-110) | 2026-10-05 | develop |  |
@@ -216,6 +217,19 @@ same commit and *promoted* (retagged), not rebuilt. No code changed between them
 - [G2P-5538](https://openg2p.atlassian.net/browse/G2P-5538) Add initial seed data for G2P attributes and values ([`a10123b`](https://github.com/OpenG2P/master-data-service/commit/a10123ba53ecf75d4cc2e8663b19d217851fd135))
 
 # Release candidates
+
+<a id="v-1-1-4-rc-106"></a>
+
+## master-data-service 1.1.4-rc.106 — 2026-10-15
+
+_commit `ca4391b` · changes since 1.1.4-rc.104_
+<!-- build:1.1.4-rc.106 revision:ca4391b90a85444c964afc963c5a3589573c51ab ts:1792043742 -->
+
+**Chart:** [openg2p-master-data 1.1.4-rc.106](https://openg2p.github.io/openg2p-helm/openg2p-master-data-1.1.4-rc.106.tgz)
+
+### Changes
+
+- Update layout section in README.md ([`f76e2c1`](https://github.com/OpenG2P/master-data-service/commit/f76e2c13caa9f8e37dceda7b0cfc133156aba5d8))
 
 <a id="v-1-1-4-rc-104"></a>
 
