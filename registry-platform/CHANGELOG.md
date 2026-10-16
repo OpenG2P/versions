@@ -6,6 +6,7 @@ _Published automatically._
 
 | Version | Date | Type | Notes |
 | --- | --- | --- | --- |
+| [`1.2.2-rc.559`](#v-1-2-2-rc-559) | 2026-10-16 | release candidate |  |
 | [`1.2.2-rc.557`](#v-1-2-2-rc-557) | 2026-10-14 | release candidate |  |
 | [`1.2.2-rc.554`](#v-1-2-2-rc-554) | 2026-10-12 | release candidate |  |
 | [`0.0.0-develop.615`](#v-0-0-0-develop-615) | 2026-10-12 | develop |  |
@@ -23,7 +24,6 @@ _Published automatically._
 | [`0.0.0-develop.605`](#v-0-0-0-develop-605) | 2026-10-05 | develop |  |
 | [`0.0.0-develop.604`](#v-0-0-0-develop-604) | 2026-10-05 | develop |  |
 | [`0.0.0-develop.599`](#v-0-0-0-develop-599) | 2026-10-03 | develop |  |
-| [`1.2.2-rc.515`](#v-1-2-2-rc-515) | 2026-10-02 | release candidate |  |
 | [`0.0.0-develop.453`](#v-0-0-0-develop-453) | 2026-10-01 | develop |  |
 | [`0.0.0-develop.448`](#v-0-0-0-develop-448) | 2026-10-01 | develop |  |
 | [`0.0.0-develop.447`](#v-0-0-0-develop-447) | 2026-10-01 | develop |  |
@@ -355,6 +355,19 @@ same commit and *promoted* (retagged), not rebuilt. No code changed between them
 
 # Release candidates
 
+<a id="v-1-2-2-rc-559"></a>
+
+## registry-platform 1.2.2-rc.559 — 2026-10-16
+
+_commit `4194051` · changes since 1.2.2-rc.557_
+<!-- build:1.2.2-rc.559 revision:4194051e913d0ff4a59717428128e8a7721eb66b ts:1792143084 -->
+
+**Chart:** [openg2p-registry 1.2.2-rc.559](https://openg2p.github.io/openg2p-helm/openg2p-registry-1.2.2-rc.559.tgz)
+
+### Changes
+
+- [G2P-5767](https://openg2p.atlassian.net/browse/G2P-5767) feat(ui): enhance outgest topic management with partner support ([`26e93fd`](https://github.com/OpenG2P/registry-platform/commit/26e93fd081b899395910cc02abaf9cf955b8f147))
+
 <a id="v-1-2-2-rc-557"></a>
 
 ## registry-platform 1.2.2-rc.557 — 2026-10-14
@@ -528,19 +541,6 @@ _commit `282118c` · changes since 1.2.2-rc.515_
 
 - [G2P-5691](https://openg2p.atlassian.net/browse/G2P-5691) feat(notification): enhance notification HMAC to include subscriber email and first name ([`21ffce9`](https://github.com/OpenG2P/registry-platform/commit/21ffce9453fa9c2d5ae795f52b70c7515445baff))
 - [G2P-5698](https://openg2p.atlassian.net/browse/G2P-5698) feat(notification): integrate notification client ([`8fbee8a`](https://github.com/OpenG2P/registry-platform/commit/8fbee8afa9e0231fa3cf53b76efa5022477f3ec2))
-
-<a id="v-1-2-2-rc-515"></a>
-
-## registry-platform 1.2.2-rc.515 — 2026-10-02
-
-_commit `d9981c9` · changes since 1.2.2-rc.513_
-<!-- build:1.2.2-rc.515 revision:d9981c9ef01c641f1b37574bd8ed780c36011f20 ts:1790920560 -->
-
-**Chart:** [openg2p-registry 1.2.2-rc.515](https://openg2p.github.io/openg2p-helm/openg2p-registry-1.2.2-rc.515.tgz)
-
-### Changes
-
-- Update FASTAPI_COMMON_REF to version 1.2 ([`c68d29f`](https://github.com/OpenG2P/registry-platform/commit/c68d29f293ca29ca0b8b7100c7bf34db33c76111))
 
 <a id="v-1-2-1-rc-462"></a>
 
