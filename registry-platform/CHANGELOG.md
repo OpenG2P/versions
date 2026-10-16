@@ -6,6 +6,7 @@ _Published automatically._
 
 | Version | Date | Type | Notes |
 | --- | --- | --- | --- |
+| [`1.2.2-rc.568`](#v-1-2-2-rc-568) | 2026-10-16 | release candidate |  |
 | [`1.2.2-rc.565`](#v-1-2-2-rc-565) | 2026-10-16 | release candidate |  |
 | [`1.2.2-rc.559`](#v-1-2-2-rc-559) | 2026-10-16 | release candidate |  |
 | [`1.2.2-rc.557`](#v-1-2-2-rc-557) | 2026-10-14 | release candidate |  |
@@ -20,7 +21,6 @@ _Published automatically._
 | [`1.2.2-rc.536`](#v-1-2-2-rc-536) | 2026-10-05 | release candidate |  |
 | [`1.2.2-rc.534`](#v-1-2-2-rc-534) | 2026-10-05 | release candidate |  |
 | [`1.2.2-rc.532`](#v-1-2-2-rc-532) | 2026-10-05 | release candidate |  |
-| [`1.2.2-rc.521`](#v-1-2-2-rc-521) | 2026-10-05 | release candidate |  |
 | [`0.0.0-develop.605`](#v-0-0-0-develop-605) | 2026-10-05 | develop |  |
 | [`0.0.0-develop.604`](#v-0-0-0-develop-604) | 2026-10-05 | develop |  |
 | [`0.0.0-develop.599`](#v-0-0-0-develop-599) | 2026-10-03 | develop |  |
@@ -355,6 +355,25 @@ same commit and *promoted* (retagged), not rebuilt. No code changed between them
 
 # Release candidates
 
+<a id="v-1-2-2-rc-568"></a>
+
+## registry-platform 1.2.2-rc.568 — 2026-10-16
+
+_commit `5f828d2` · changes since 1.2.2-rc.565_
+<!-- build:1.2.2-rc.568 revision:5f828d263bdaf909fefb1952d1fe0c80660240d8 ts:1792147437 -->
+
+**Chart:** [openg2p-registry 1.2.2-rc.568](https://openg2p.github.io/openg2p-helm/openg2p-registry-1.2.2-rc.568.tgz)
+
+### Summary
+
+- UI enhancements: improved responsiveness of UI widget components and synchronized staff-ui to version 1.1.9-dev.14.
+- Dependency updates: modified package-lock and package.json files for both staff-ui and ui-widgets, affecting four dependencies in total.
+
+### Changes
+
+- chore(ui-widgets): version for npm dev publish, sync staff-ui @1.1.9-dev.14 ([`5f828d2`](https://github.com/OpenG2P/registry-platform/commit/5f828d263bdaf909fefb1952d1fe0c80660240d8))
+- [G2P-5806](https://openg2p.atlassian.net/browse/G2P-5806) fix: improve responsiveness of UI widget components ([`2400c55`](https://github.com/OpenG2P/registry-platform/commit/2400c5510e88bf626baba05a1280698e3c1720bd))
+
 <a id="v-1-2-2-rc-565"></a>
 
 ## registry-platform 1.2.2-rc.565 — 2026-10-16
@@ -525,25 +544,6 @@ _commit `7cffa27` · changes since 1.2.2-rc.521_
 - [G2P-5697](https://openg2p.atlassian.net/browse/G2P-5697) feat(core): notify staff when register exports finish ([`13c8eba`](https://github.com/OpenG2P/registry-platform/commit/13c8ebacbb61f5a4d43549878e19d4ff77c50198))
 - [G2P-5697](https://openg2p.atlassian.net/browse/G2P-5697) feat(core): notify registrants on change request and intake events ([`c062ca6`](https://github.com/OpenG2P/registry-platform/commit/c062ca64b3fa7a4e320db951cb45b618585e4b40))
 - [G2P-5697](https://openg2p.atlassian.net/browse/G2P-5697) feat(core): add notification helper and registrant contact lookup ([`99b02f7`](https://github.com/OpenG2P/registry-platform/commit/99b02f7905f622dd8bcac9f92a1408fdbefa8aa1))
-
-<a id="v-1-2-2-rc-521"></a>
-
-## registry-platform 1.2.2-rc.521 — 2026-10-05
-
-_commit `2af6ed8` · changes since 1.2.2-rc.518_
-<!-- build:1.2.2-rc.521 revision:2af6ed8a78d734b70dbd1e15af825fef5f2f9b7d ts:1791178538 -->
-
-**Chart:** [openg2p-registry 1.2.2-rc.521](https://openg2p.github.io/openg2p-helm/openg2p-registry-1.2.2-rc.521.tgz)
-
-### Summary
-
-- Dependency updates: synchronized `staff-ui` to version `1.1.9-dev.9` and made adjustments to `ui-widgets` package manifests.
-- UI behavior fix: modified `SelectWidget` to set `null` for empty selections instead of `undefined`.
-
-### Changes
-
-- chore(ui-widgets): version for npm dev publish, sync staff-ui @1.1.9-dev.9 ([`2af6ed8`](https://github.com/OpenG2P/registry-platform/commit/2af6ed8a78d734b70dbd1e15af825fef5f2f9b7d))
-- [G2P-5729](https://openg2p.atlassian.net/browse/G2P-5729) fix(SelectWidget): change onChange behavior to set null instead of undefined for empty selection ([`8c6427a`](https://github.com/OpenG2P/registry-platform/commit/8c6427a166cb51a3a202ab110af1050448ccf7fc))
 
 <a id="v-1-2-1-rc-462"></a>
 
