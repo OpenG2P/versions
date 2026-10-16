@@ -6,6 +6,7 @@ _Published automatically._
 
 | Version | Date | Type | Notes |
 | --- | --- | --- | --- |
+| [`1.2.2-rc.565`](#v-1-2-2-rc-565) | 2026-10-16 | release candidate |  |
 | [`1.2.2-rc.559`](#v-1-2-2-rc-559) | 2026-10-16 | release candidate |  |
 | [`1.2.2-rc.557`](#v-1-2-2-rc-557) | 2026-10-14 | release candidate |  |
 | [`1.2.2-rc.554`](#v-1-2-2-rc-554) | 2026-10-12 | release candidate |  |
@@ -20,7 +21,6 @@ _Published automatically._
 | [`1.2.2-rc.534`](#v-1-2-2-rc-534) | 2026-10-05 | release candidate |  |
 | [`1.2.2-rc.532`](#v-1-2-2-rc-532) | 2026-10-05 | release candidate |  |
 | [`1.2.2-rc.521`](#v-1-2-2-rc-521) | 2026-10-05 | release candidate |  |
-| [`1.2.2-rc.518`](#v-1-2-2-rc-518) | 2026-10-05 | release candidate |  |
 | [`0.0.0-develop.605`](#v-0-0-0-develop-605) | 2026-10-05 | develop |  |
 | [`0.0.0-develop.604`](#v-0-0-0-develop-604) | 2026-10-05 | develop |  |
 | [`0.0.0-develop.599`](#v-0-0-0-develop-599) | 2026-10-03 | develop |  |
@@ -355,6 +355,29 @@ same commit and *promoted* (retagged), not rebuilt. No code changed between them
 
 # Release candidates
 
+<a id="v-1-2-2-rc-565"></a>
+
+## registry-platform 1.2.2-rc.565 — 2026-10-16
+
+_commit `3f765db` · changes since 1.2.2-rc.559_
+<!-- build:1.2.2-rc.565 revision:3f765dbe9a97f5cd58c0ab253cc20dc349284833 ts:1792146837 -->
+
+**Chart:** [openg2p-registry 1.2.2-rc.565](https://openg2p.github.io/openg2p-helm/openg2p-registry-1.2.2-rc.565.tgz)
+
+### Summary
+
+- UI responsiveness enhancements: significant improvements made to the data model, registers, registry, intake page, homepage, and various related components, optimizing user experience across multiple pages.
+- Codebase maintenance: 97 files modified with a net change of 1052 insertions and 939 deletions, streamlining the overall structure and performance.
+- File removals: deprecated components related to program applications, specifically AddFormModal, EditFormModal, and their index file, indicating a shift in the application's feature set.
+
+### Changes
+
+- [G2P-5818](https://openg2p.atlassian.net/browse/G2P-5818) fix: improve responsiveness of the data model, outgest, ingest and awe configuration ([`495f8e9`](https://github.com/OpenG2P/registry-platform/commit/495f8e9b7a9e5f51aca76c4d97f18287775b9686))
+- [G2P-5817](https://openg2p.atlassian.net/browse/G2P-5817) fix: improve responsiveness of the registers configuration ([`a9ea795`](https://github.com/OpenG2P/registry-platform/commit/a9ea7957e5c5a0e53b783f394d4d63a8d1c21426))
+- [G2P-5815](https://openg2p.atlassian.net/browse/G2P-5815) fix: improve responsiveness of the registry configuration ([`ef44577`](https://github.com/OpenG2P/registry-platform/commit/ef445774eba9194c00a839ab8bb00197eab9490c))
+- [G2P-5807](https://openg2p.atlassian.net/browse/G2P-5807) fix: improve responsiveness of the intake page and related components ([`d9100d1`](https://github.com/OpenG2P/registry-platform/commit/d9100d11b057de8d90303b25759617dd6a1ef562))
+- [G2P-5805](https://openg2p.atlassian.net/browse/G2P-5805) fix: improve responsiveness of homepage, register, change request, version history pages, and related components ([`6e4148f`](https://github.com/OpenG2P/registry-platform/commit/6e4148f8a0b9d45855ad21fa3fc9faef6543df2e))
+
 <a id="v-1-2-2-rc-559"></a>
 
 ## registry-platform 1.2.2-rc.559 — 2026-10-16
@@ -521,26 +544,6 @@ _commit `2af6ed8` · changes since 1.2.2-rc.518_
 
 - chore(ui-widgets): version for npm dev publish, sync staff-ui @1.1.9-dev.9 ([`2af6ed8`](https://github.com/OpenG2P/registry-platform/commit/2af6ed8a78d734b70dbd1e15af825fef5f2f9b7d))
 - [G2P-5729](https://openg2p.atlassian.net/browse/G2P-5729) fix(SelectWidget): change onChange behavior to set null instead of undefined for empty selection ([`8c6427a`](https://github.com/OpenG2P/registry-platform/commit/8c6427a166cb51a3a202ab110af1050448ccf7fc))
-
-<a id="v-1-2-2-rc-518"></a>
-
-## registry-platform 1.2.2-rc.518 — 2026-10-05
-
-_commit `282118c` · changes since 1.2.2-rc.515_
-<!-- build:1.2.2-rc.518 revision:282118c62d671cde8b5146517b774ff3193a5ba1 ts:1791178433 -->
-
-**Chart:** [openg2p-registry 1.2.2-rc.518](https://openg2p.github.io/openg2p-helm/openg2p-registry-1.2.2-rc.518.tgz)
-
-### Summary
-
-- Notification enhancements: improved HMAC to include subscriber email and first name, integrated a new notification client, and added a NotificationInbox component while removing the NotificationDropdown and related notification context and utility files.
-- Codebase cleanup: significant reduction in code with 542 deletions across various components, streamlining the notification feature.
-- Dependency updates: modifications made to package-lock and package.json files, indicating changes in third-party libraries.
-
-### Changes
-
-- [G2P-5691](https://openg2p.atlassian.net/browse/G2P-5691) feat(notification): enhance notification HMAC to include subscriber email and first name ([`21ffce9`](https://github.com/OpenG2P/registry-platform/commit/21ffce9453fa9c2d5ae795f52b70c7515445baff))
-- [G2P-5698](https://openg2p.atlassian.net/browse/G2P-5698) feat(notification): integrate notification client ([`8fbee8a`](https://github.com/OpenG2P/registry-platform/commit/8fbee8afa9e0231fa3cf53b76efa5022477f3ec2))
 
 <a id="v-1-2-1-rc-462"></a>
 
