@@ -6,6 +6,7 @@ _Published automatically._
 
 | Version | Date | Type | Notes |
 | --- | --- | --- | --- |
+| [`0.0.0-develop.59`](#v-0-0-0-develop-59) | 2026-10-19 | develop |  |
 | [`0.0.0-develop.58`](#v-0-0-0-develop-58) | 2026-10-14 | develop |  |
 | [`0.0.0-develop.54`](#v-0-0-0-develop-54) | 2026-10-13 | develop |  |
 | [`0.0.0-develop.53`](#v-0-0-0-develop-53) | 2026-10-13 | develop |  |
@@ -24,6 +25,19 @@ _Published automatically._
 | [`0.0.0-develop.22`](#v-0-0-0-develop-22) | 2026-10-01 | develop |  |
 
 # Develop builds
+
+<a id="v-0-0-0-develop-59"></a>
+
+## agri-stack — develop 0.0.0-develop.59 (2026-10-19)
+
+_commit `392f27f` · changes since 0.0.0-develop.58_
+<!-- build:0.0.0-develop.59 revision:392f27f4e52112171adbc6e5b5b3ad29c8267049 ts:1792124830 -->
+
+**Chart:** [openg2p-agri-composite 0.0.0-develop.59](https://openg2p.github.io/openg2p-helm/openg2p-agri-composite-0.0.0-develop.59.tgz)
+
+### Changes
+
+- [G2P-5719](https://openg2p.atlassian.net/browse/G2P-5719) sample crop CROP_WHEAT -&gt; CROP_BREAD_WHEAT (CROP_WHEAT retired in the ETH pack) ([`392f27f`](https://github.com/OpenG2P/agri-stack/commit/392f27f4e52112171adbc6e5b5b3ad29c8267049))
 
 <a id="v-0-0-0-develop-58"></a>
 
