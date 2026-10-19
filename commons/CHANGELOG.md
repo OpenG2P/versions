@@ -6,6 +6,7 @@ _Published automatically._
 
 | Version | Date | Type | Notes |
 | --- | --- | --- | --- |
+| [`0.0.0-develop.323`](#v-0-0-0-develop-323) | 2026-10-19 | develop |  |
 | [`2.3.4-rc.247`](#v-2-3-4-rc-247) | 2026-10-15 | release candidate |  |
 | [`0.0.0-develop.318`](#v-0-0-0-develop-318) | 2026-10-13 | develop |  |
 | [`0.0.0-develop.316`](#v-0-0-0-develop-316) | 2026-10-13 | develop |  |
@@ -32,7 +33,6 @@ _Published automatically._
 | [`0.0.0-develop.280`](#v-0-0-0-develop-280) | 2026-10-05 | develop |  |
 | [`0.0.0-develop.271`](#v-0-0-0-develop-271) | 2026-10-03 | develop |  |
 | [`0.0.0-develop.269`](#v-0-0-0-develop-269) | 2026-10-03 | develop |  |
-| [`0.0.0-develop.265`](#v-0-0-0-develop-265) | 2026-10-03 | develop |  |
 | [`2.3.4-rc.236`](#v-2-3-4-rc-236) | 2026-10-01 | release candidate |  |
 | [`2.3.4-rc.234`](#v-2-3-4-rc-234) | 2026-09-30 | release candidate |  |
 | [`2.3.3`](#v-2-3-3) | 2026-09-03 | release |  |
@@ -645,6 +645,30 @@ _commit `ffabcdc` · changes since 2.2.1_
 
 # Develop builds
 
+<a id="v-0-0-0-develop-323"></a>
+
+## commons — develop 0.0.0-develop.323 (2026-10-19)
+
+_commit `7483cd3` · changes since 0.0.0-develop.318_
+<!-- build:0.0.0-develop.323 revision:7483cd3c6e5b962e0b01b697a9e12458971e3a3b ts:1792408154 -->
+
+**Charts:** [openg2p-commons-base 0.0.0-develop.323](https://openg2p.github.io/openg2p-helm/openg2p-commons-base-0.0.0-develop.323.tgz) · [openg2p-commons-services 0.0.0-develop.323](https://openg2p.github.io/openg2p-helm/openg2p-commons-services-0.0.0-develop.323.tgz)
+
+### Summary
+
+- Updates to MDS: version bump and enhancements to country pack references in commons-services.
+- Consent Manager improvements: standardized terminology with "Composite" capitalized and generic descriptions for data exchange roles.
+- Websub URL integration added to enhance service connectivity.
+- Minor adjustments in commons-services forms to provide neutral examples for signing keys.
+
+### Changes
+
+- Bumped up MDS. ([`7483cd3`](https://github.com/OpenG2P/commons/commit/7483cd3c6e5b962e0b01b697a9e12458971e3a3b))
+- Websub URL. ([`45f653d`](https://github.com/OpenG2P/commons/commit/45f653dddbc1f7d022c3d26a9b0f31112310b001))
+- [G2P-5719](https://openg2p.atlassian.net/browse/G2P-5719) commons-services: values comment points to MDS Country Packs ([`7541c0b`](https://github.com/OpenG2P/commons/commit/7541c0ba03226ddf2398be4fb218cf327b7eb280))
+- [G2P-5719](https://openg2p.atlassian.net/browse/G2P-5719) commons-services: CM chart 0.0.0-develop.81 (Base Domain for every CM hostname); "Composite" capitalised in Consent Manager descriptions ([`d0af8ca`](https://github.com/OpenG2P/commons/commit/d0af8cad943b243774356e7d5f71b5d1391225a6))
+- [G2P-5719](https://openg2p.atlassian.net/browse/G2P-5719) commons-services form: Exchange Role and portal descriptions generic to any data exchange (e.g. Agri Stack); neutral signing-key examples ([`cfc234b`](https://github.com/OpenG2P/commons/commit/cfc234bdb26d7e14727ae2e81cf816aaab4864cc))
+
 <a id="v-0-0-0-develop-318"></a>
 
 ## commons — develop 0.0.0-develop.318 (2026-10-13)
@@ -984,27 +1008,6 @@ _commit `7d4afed` · changes since 0.0.0-develop.265_
 
 - pre-commit fixes ([`bde6107`](https://github.com/OpenG2P/commons/commit/bde6107dd5351c60fae9674e1a98e62b51e12461))
 - [[G2P-5692](https://openg2p.atlassian.net/browse/G2P-5692)] Updated commons-services helm charts to take global domain for iam, masterdata, staff portal helm chart. ([`87b990e`](https://github.com/OpenG2P/commons/commit/87b990edbefc14fd7d920e802340fd0ccb504df0))
-
-<a id="v-0-0-0-develop-265"></a>
-
-## commons — develop 0.0.0-develop.265 (2026-10-03)
-
-_commit `34d4b6b` · changes since 0.0.0-develop.261_
-<!-- build:0.0.0-develop.265 revision:34d4b6b6dc4cb94290116460a8a5ad51f00c95eb ts:1790990996 -->
-
-**Charts:** [openg2p-commons-base 0.0.0-develop.265](https://openg2p.github.io/openg2p-helm/openg2p-commons-base-0.0.0-develop.265.tgz) · [openg2p-commons-services 0.0.0-develop.265](https://openg2p.github.io/openg2p-helm/openg2p-commons-services-0.0.0-develop.265.tgz)
-
-### Summary
-
-- **Major:** Updated MDS version to improve compatibility and functionality.
-- CI/build improvements: Fixed Build & Publish process by redirecting the garage dependency to the openg2p-helm mirror, resolving issues with the git+https protocol handler.
-- New feature: Added Garage deployment configuration to streamline deployment processes.
-
-### Changes
-
-- MDS bumped up. ([`34d4b6b`](https://github.com/OpenG2P/commons/commit/34d4b6b6dc4cb94290116460a8a5ad51f00c95eb))
-- Fix commons Build &amp; Publish: point the garage dependency at the openg2p-helm mirror instead of git+https://git.deuxfleurs.fr (the git+ scheme needs the helm-git plugin, which the CI runner does not have, so helm dep up failed on commons-base with "could not find protocol handler for: git+https"); the mirrored garage 0.9.2 / v2.2.0 is identical to the v2.2.0 git ref apart from helm-package Chart.yaml normalisation ([`2df8a89`](https://github.com/OpenG2P/commons/commit/2df8a89a6a7bc451d18b6d41a410ce0b4f70221d))
-- Add Garage deployment configuration ([`dba77bd`](https://github.com/OpenG2P/commons/commit/dba77bd49d9dfc3e1d8d072b22e1bcc5bd8736d9))
 
 ---
 
