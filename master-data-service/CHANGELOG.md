@@ -6,6 +6,7 @@ _Published automatically._
 
 | Version | Date | Type | Notes |
 | --- | --- | --- | --- |
+| [`0.0.0-develop.116`](#v-0-0-0-develop-116) | 2026-10-19 | develop |  |
 | [`0.0.0-develop.115`](#v-0-0-0-develop-115) | 2026-10-16 | develop |  |
 | [`1.1.4-rc.106`](#v-1-1-4-rc-106) | 2026-10-15 | release candidate |  |
 | [`0.0.0-develop.112`](#v-0-0-0-develop-112) | 2026-10-08 | develop |  |
@@ -567,6 +568,19 @@ _commit `4ffaad7` · changes since the start (showing the latest 20 commits)_
 - [G2P-4804](https://openg2p.atlassian.net/browse/G2P-4804) Lowercase the geo-seed Job name. This template renders at the chart root, where .Chart.Name is the vendored subchart name — the commons-services umbrella carries it as `masterData`, so the Job came out as commons-services-masterData-geo-seed, which Kubernetes rejects. The hook failed, no geography or code lists were seeded, and the whole commons-services release went to `failed`. The API templates were unaffected because they render against a scoped context whose nameOverride is already lowercase. ([`83bfaee`](https://github.com/OpenG2P/master-data-service/commit/83bfaee9ae49249adb12589b0da1a290bf02f9fa))
 
 # Develop builds
+
+<a id="v-0-0-0-develop-116"></a>
+
+## master-data-service — develop 0.0.0-develop.116 (2026-10-19)
+
+_commit `ccf31bb` · changes since 0.0.0-develop.115_
+<!-- build:0.0.0-develop.116 revision:ccf31bbf830648c00e4a241f758d848ab8c92831 ts:1792373739 -->
+
+**Chart:** [openg2p-master-data 0.0.0-develop.116](https://openg2p.github.io/openg2p-helm/openg2p-master-data-0.0.0-develop.116.tgz)
+
+### Changes
+
+- [G2P-5719](https://openg2p.atlassian.net/browse/G2P-5719) MDS loader test: ETH pack counts (69 datasets, 477 entries) for CROP_CATEGORY, the MoA crop list and the new agriculture lists ([`ccf31bb`](https://github.com/OpenG2P/master-data-service/commit/ccf31bbf830648c00e4a241f758d848ab8c92831))
 
 <a id="v-0-0-0-develop-115"></a>
 
