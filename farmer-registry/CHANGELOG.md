@@ -6,6 +6,7 @@ _Published automatically._
 
 | Version | Date | Type | Notes |
 | --- | --- | --- | --- |
+| [`0.0.0-develop.278`](#v-0-0-0-develop-278) | 2026-10-19 | develop |  |
 | [`1.2.1-rc.190`](#v-1-2-1-rc-190) | 2026-10-14 | release candidate |  |
 | [`1.2.1-rc.188`](#v-1-2-1-rc-188) | 2026-10-14 | release candidate |  |
 | [`0.0.0-develop.276`](#v-0-0-0-develop-276) | 2026-10-08 | develop |  |
@@ -356,6 +357,25 @@ _commit `fb6cd5d` · changes since 1.2.1-rc.169_
 - Bump version 1.2.2-rc.487 of registry platform in Dockerfile ([`fb6cd5d`](https://github.com/OpenG2P/farmer-registry/commit/fb6cd5d764013c99ee4a26e82884f99ddfa2b2a4))
 
 # Develop builds
+
+<a id="v-0-0-0-develop-278"></a>
+
+## farmer-registry — develop 0.0.0-develop.278 (2026-10-19)
+
+_commit `57111fc` · changes since 0.0.0-develop.276_
+<!-- build:0.0.0-develop.278 revision:57111fc95d4ab4458b6c9065aac18749c8dcff8d ts:1792408006 -->
+
+**Chart:** [openg2p-farmer-registry 0.0.0-develop.278](https://openg2p.github.io/openg2p-helm/openg2p-farmer-registry-0.0.0-develop.278.tgz)
+
+### Summary
+
+- **Major:** Updated RP version to 0.0.0-develop.615, indicating a significant development milestone.
+- Data model changes: Retired CROP_WHEAT in the ETH pack and replaced it with CROP_BREAD_WHEAT for improved clarity in crop categorization.
+
+### Changes
+
+- Bumped up RP version to 0.0.0-develop.615 ([`57111fc`](https://github.com/OpenG2P/farmer-registry/commit/57111fc95d4ab4458b6c9065aac18749c8dcff8d))
+- [G2P-5719](https://openg2p.atlassian.net/browse/G2P-5719) sample crop CROP_WHEAT -&gt; CROP_BREAD_WHEAT (CROP_WHEAT retired in the ETH pack) ([`67b5f21`](https://github.com/OpenG2P/farmer-registry/commit/67b5f218617c279a06a2ae13c720f0b9e4bcd85b))
 
 <a id="v-0-0-0-develop-276"></a>
 
