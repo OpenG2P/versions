@@ -6,6 +6,7 @@ _Published automatically._
 
 | Version | Date | Type | Notes |
 | --- | --- | --- | --- |
+| [`0.0.0-develop.324`](#v-0-0-0-develop-324) | 2026-10-20 | develop |  |
 | [`0.0.0-develop.323`](#v-0-0-0-develop-323) | 2026-10-19 | develop |  |
 | [`2.3.4-rc.247`](#v-2-3-4-rc-247) | 2026-10-15 | release candidate |  |
 | [`0.0.0-develop.318`](#v-0-0-0-develop-318) | 2026-10-13 | develop |  |
@@ -32,7 +33,6 @@ _Published automatically._
 | [`2.3.4-rc.238`](#v-2-3-4-rc-238) | 2026-10-05 | release candidate |  |
 | [`0.0.0-develop.280`](#v-0-0-0-develop-280) | 2026-10-05 | develop |  |
 | [`0.0.0-develop.271`](#v-0-0-0-develop-271) | 2026-10-03 | develop |  |
-| [`0.0.0-develop.269`](#v-0-0-0-develop-269) | 2026-10-03 | develop |  |
 | [`2.3.4-rc.236`](#v-2-3-4-rc-236) | 2026-10-01 | release candidate |  |
 | [`2.3.4-rc.234`](#v-2-3-4-rc-234) | 2026-09-30 | release candidate |  |
 | [`2.3.3`](#v-2-3-3) | 2026-09-03 | release |  |
@@ -645,6 +645,19 @@ _commit `ffabcdc` · changes since 2.2.1_
 
 # Develop builds
 
+<a id="v-0-0-0-develop-324"></a>
+
+## commons — develop 0.0.0-develop.324 (2026-10-20)
+
+_commit `1fcbe3e` · changes since 0.0.0-develop.323_
+<!-- build:0.0.0-develop.324 revision:1fcbe3ebced7cea9306f6a8fc887681796900338 ts:1792459436 -->
+
+**Charts:** [openg2p-commons-base 0.0.0-develop.324](https://openg2p.github.io/openg2p-helm/openg2p-commons-base-0.0.0-develop.324.tgz) · [openg2p-commons-services 0.0.0-develop.324](https://openg2p.github.io/openg2p-helm/openg2p-commons-services-0.0.0-develop.324.tgz)
+
+### Changes
+
+- [G2P-5719](https://openg2p.atlassian.net/browse/G2P-5719) commons-services form: eSignet, mock identity system and Artifactory in their own "National ID login (eSignet)" group, each saying who needs it; CM national-ID login and Inji Certify point to it ([`1fcbe3e`](https://github.com/OpenG2P/commons/commit/1fcbe3ebced7cea9306f6a8fc887681796900338))
+
 <a id="v-0-0-0-develop-323"></a>
 
 ## commons — develop 0.0.0-develop.323 (2026-10-19)
@@ -989,25 +1002,6 @@ _commit `b39389e` · changes since 0.0.0-develop.269_
 ### Changes
 
 - Bumped up MDS version ([`0d1d0f5`](https://github.com/OpenG2P/commons/commit/0d1d0f512ec15ab813bfb86cdced6e27784247b8))
-
-<a id="v-0-0-0-develop-269"></a>
-
-## commons — develop 0.0.0-develop.269 (2026-10-03)
-
-_commit `7d4afed` · changes since 0.0.0-develop.265_
-<!-- build:0.0.0-develop.269 revision:7d4afed977345332235968d2ef35242624dffc20 ts:1790991348 -->
-
-**Charts:** [openg2p-commons-base 0.0.0-develop.269](https://openg2p.github.io/openg2p-helm/openg2p-commons-base-0.0.0-develop.269.tgz) · [openg2p-commons-services 0.0.0-develop.269](https://openg2p.github.io/openg2p-helm/openg2p-commons-services-0.0.0-develop.269.tgz)
-
-### Summary
-
-- Helm chart updates: modified commons-services helm charts to utilize a global domain for IAM, master data, and staff portal.
-- Pre-commit fixes implemented to enhance code quality and consistency.
-
-### Changes
-
-- pre-commit fixes ([`bde6107`](https://github.com/OpenG2P/commons/commit/bde6107dd5351c60fae9674e1a98e62b51e12461))
-- [[G2P-5692](https://openg2p.atlassian.net/browse/G2P-5692)] Updated commons-services helm charts to take global domain for iam, masterdata, staff portal helm chart. ([`87b990e`](https://github.com/OpenG2P/commons/commit/87b990edbefc14fd7d920e802340fd0ccb504df0))
 
 ---
 
