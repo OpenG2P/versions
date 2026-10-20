@@ -6,6 +6,7 @@ _Published automatically._
 
 | Version | Date | Type | Notes |
 | --- | --- | --- | --- |
+| [`0.0.0-develop.325`](#v-0-0-0-develop-325) | 2026-10-20 | develop |  |
 | [`0.0.0-develop.324`](#v-0-0-0-develop-324) | 2026-10-20 | develop |  |
 | [`0.0.0-develop.323`](#v-0-0-0-develop-323) | 2026-10-19 | develop |  |
 | [`2.3.4-rc.247`](#v-2-3-4-rc-247) | 2026-10-15 | release candidate |  |
@@ -32,7 +33,6 @@ _Published automatically._
 | [`2.3.4-rc.240`](#v-2-3-4-rc-240) | 2026-10-05 | release candidate |  |
 | [`2.3.4-rc.238`](#v-2-3-4-rc-238) | 2026-10-05 | release candidate |  |
 | [`0.0.0-develop.280`](#v-0-0-0-develop-280) | 2026-10-05 | develop |  |
-| [`0.0.0-develop.271`](#v-0-0-0-develop-271) | 2026-10-03 | develop |  |
 | [`2.3.4-rc.236`](#v-2-3-4-rc-236) | 2026-10-01 | release candidate |  |
 | [`2.3.4-rc.234`](#v-2-3-4-rc-234) | 2026-09-30 | release candidate |  |
 | [`2.3.3`](#v-2-3-3) | 2026-09-03 | release |  |
@@ -645,6 +645,19 @@ _commit `ffabcdc` · changes since 2.2.1_
 
 # Develop builds
 
+<a id="v-0-0-0-develop-325"></a>
+
+## commons — develop 0.0.0-develop.325 (2026-10-20)
+
+_commit `b0fd363` · changes since 0.0.0-develop.324_
+<!-- build:0.0.0-develop.325 revision:b0fd36300cbcc5a8c71cccf60d75f0514dcf5941 ts:1792462100 -->
+
+**Charts:** [openg2p-commons-base 0.0.0-develop.325](https://openg2p.github.io/openg2p-helm/openg2p-commons-base-0.0.0-develop.325.tgz) · [openg2p-commons-services 0.0.0-develop.325](https://openg2p.github.io/openg2p-helm/openg2p-commons-services-0.0.0-develop.325.tgz)
+
+### Changes
+
+- [G2P-5719](https://openg2p.atlassian.net/browse/G2P-5719) commons-services form: Artifactory question removed (always installed; only the MOSIP components use it); values comment explains turning it off in YAML ([`b0fd363`](https://github.com/OpenG2P/commons/commit/b0fd36300cbcc5a8c71cccf60d75f0514dcf5941))
+
 <a id="v-0-0-0-develop-324"></a>
 
 ## commons — develop 0.0.0-develop.324 (2026-10-20)
@@ -989,19 +1002,6 @@ _commit `a1a55ff` · changes since 0.0.0-develop.271_
 - Bump openg2p-consent-manager to 0.0.0-develop.61: develop.60's image was built with SQLAlchemy 2.1, which no longer installs greenlet by default, so cm-api and cm-partner-api crashed on import and the cm-sanity post-install hook failed the install; develop.61 pins sqlalchemy[asyncio]&lt;2.1 (verified: 2.0.54 + greenlet 3.5.6); also add the Garage hostname and install toggle to base questions.yaml, left out of the template-move commit ([`603f914`](https://github.com/OpenG2P/commons/commit/603f914a7e4a2f0987c6b694186fc7222f3c1024))
 - Bump openg2p-consent-manager to 0.0.0-develop.61: develop.60's image was built with SQLAlchemy 2.1, which no longer installs greenlet by default, so cm-api and cm-partner-api crashed on import and the cm-sanity post-install hook failed the install; develop.61 pins sqlalchemy[asyncio]&lt;2.1 (verified: 2.0.54 + greenlet 3.5.6); also add the Garage hostname and install toggle to base questions.yaml, left out of the template-move commit ([`eb7aa92`](https://github.com/OpenG2P/commons/commit/eb7aa925dd860e7266596ec679df116ba6934129))
 - Move the garage templates (init-job, init-rbac, virtualservice) from commons-services to commons-base, where the garage dependency and its values live: in services .Values.garage was nil, failing the install with "nil pointer evaluating interface {}.enabled", and the templates' release-name-derived pod/service names only resolve under the base release; also add Garage hostname and install toggle to the base questions.yaml alongside MinIO ([`5f0b484`](https://github.com/OpenG2P/commons/commit/5f0b48452f9a9abb80faf11c30deaf104725ce45))
-
-<a id="v-0-0-0-develop-271"></a>
-
-## commons — develop 0.0.0-develop.271 (2026-10-03)
-
-_commit `b39389e` · changes since 0.0.0-develop.269_
-<!-- build:0.0.0-develop.271 revision:b39389e5bbb778e48b6dd529141be45c0a9b21b1 ts:1791021943 -->
-
-**Charts:** [openg2p-commons-base 0.0.0-develop.271](https://openg2p.github.io/openg2p-helm/openg2p-commons-base-0.0.0-develop.271.tgz) · [openg2p-commons-services 0.0.0-develop.271](https://openg2p.github.io/openg2p-helm/openg2p-commons-services-0.0.0-develop.271.tgz)
-
-### Changes
-
-- Bumped up MDS version ([`0d1d0f5`](https://github.com/OpenG2P/commons/commit/0d1d0f512ec15ab813bfb86cdced6e27784247b8))
 
 ---
 
