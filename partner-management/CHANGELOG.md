@@ -6,6 +6,7 @@ _Published automatically._
 
 | Version | Date | Type | Notes |
 | --- | --- | --- | --- |
+| [`0.0.0-develop.31`](#v-0-0-0-develop-31) | 2026-10-21 | develop |  |
 | [`0.0.0-develop.30`](#v-0-0-0-develop-30) | 2026-10-21 | develop |  |
 | [`0.0.0-develop.29`](#v-0-0-0-develop-29) | 2026-10-05 | develop |  |
 | [`0.0.0-develop.28`](#v-0-0-0-develop-28) | 2026-10-05 | develop |  |
@@ -237,6 +238,19 @@ _commit `bb96ff2` · changes since 0.0.0-develop.24_
 _No new commits since 0.0.0-develop.24._
 
 # Develop builds
+
+<a id="v-0-0-0-develop-31"></a>
+
+## partner-management — develop 0.0.0-develop.31 (2026-10-21)
+
+_commit `9d488cd` · changes since 0.0.0-develop.30_
+<!-- build:0.0.0-develop.31 revision:9d488cdf0ecdfa5fa0bd229a70703b1424223793 ts:1792557220 -->
+
+**Chart:** [partner-management 0.0.0-develop.31](https://openg2p.github.io/openg2p-helm/partner-management-0.0.0-develop.31.tgz)
+
+### Changes
+
+- [G2P-5719](https://openg2p.atlassian.net/browse/G2P-5719) PM policy form: catalogue sources (registry scopes, Composite use cases; GET /catalogue; checked on submit, warning when a source is down); purposes and subject ID types from Master Data code lists; signing algorithms pre-filled from partner keys; console: any 401 means log in again ([`9d488cd`](https://github.com/OpenG2P/partner-management/commit/9d488cdf0ecdfa5fa0bd229a70703b1424223793))
 
 <a id="v-0-0-0-develop-30"></a>
 
