@@ -1,0 +1,4 @@
+name=registry-connector
+kind=service
+repo=https://github.com/OpenG2P/registry-connector
+images=https://hub.docker.com/u/openg2p
