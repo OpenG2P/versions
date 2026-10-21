@@ -6,6 +6,7 @@ _Published automatically._
 
 | Version | Date | Type | Notes |
 | --- | --- | --- | --- |
+| [`0.0.0-develop.621`](#v-0-0-0-develop-621) | 2026-10-21 | develop |  |
 | [`1.2.2-rc.568`](#v-1-2-2-rc-568) | 2026-10-16 | release candidate |  |
 | [`1.2.2-rc.565`](#v-1-2-2-rc-565) | 2026-10-16 | release candidate |  |
 | [`1.2.2-rc.559`](#v-1-2-2-rc-559) | 2026-10-16 | release candidate |  |
@@ -40,7 +41,6 @@ _Published automatically._
 | [`1.2.1-rc.445`](#v-1-2-1-rc-445) | 2026-09-03 | release candidate |  |
 | [`0.0.0-develop.430`](#v-0-0-0-develop-430) | 2026-09-03 | develop |  |
 | [`1.2.1-rc.443`](#v-1-2-1-rc-443) | 2026-09-03 | release candidate |  |
-| [`0.0.0-develop.429`](#v-0-0-0-develop-429) | 2026-09-02 | develop |  |
 | [`1.2.0`](#v-1-2-0) | 2026-09-01 | release |  |
 | [`1.2.0-rc.440`](#v-1-2-0-rc-440) | 2026-09-01 | release candidate |  |
 | [`1.2.0-rc.439`](#v-1-2-0-rc-439) | 2026-09-01 | release candidate |  |
@@ -902,6 +902,30 @@ _commit `9b41f96` · changes since v1.0.0_
 
 # Develop builds
 
+<a id="v-0-0-0-develop-621"></a>
+
+## registry-platform — develop 0.0.0-develop.621 (2026-10-21)
+
+_commit `0620eb2` · changes since 0.0.0-develop.615_
+<!-- build:0.0.0-develop.621 revision:0620eb26f2c0189f8f7fe71947ee8d16149d0ad4 ts:1792488506 -->
+
+**Chart:** [openg2p-registry 0.0.0-develop.621](https://openg2p.github.io/openg2p-helm/openg2p-registry-0.0.0-develop.621.tgz)
+
+### Summary
+
+- Enhancements to partner management: seeded partner access policies and removed the cm-seed job and CM environment.
+- Registry database seeding improvements: sample images now skipped with a warning instead of failing, and form descriptions updated for clarity on catalogue release, beneficiary login setup, and data scope catalogue access.
+- Registry chart form updates: renamed data scope catalogue switch for clarity, added plain descriptions for signature checks, consent enforcement, and sanity tests, and clarified beneficiary login setup instructions.
+
+### Changes
+
+- [G2P-5719](https://openg2p.atlassian.net/browse/G2P-5719) Sanity seeds the partner's access policy in Partner Management (cm-seed job and CM env removed) ([`0620eb2`](https://github.com/OpenG2P/registry-platform/commit/0620eb26f2c0189f8f7fe71947ee8d16149d0ad4))
+- [G2P-5719](https://openg2p.atlassian.net/browse/G2P-5719) registry db-seed: sample images skipped with a warning when a registry ships none (no longer fails the seed); form descriptions: pinned catalogue release, beneficiary login setup, unsigned data scope catalogue read, sample images ([`cde2b80`](https://github.com/OpenG2P/registry-platform/commit/cde2b808cb5a18a1fb044ea2872ee252d3218a14))
+- [G2P-5719](https://openg2p.atlassian.net/browse/G2P-5719) registry chart form: data scope catalogue switch renamed "Allow Unsigned Read of Data Scope Catalogue", with a plain description ([`c34ac73`](https://github.com/OpenG2P/registry-platform/commit/c34ac7377f2d77690d90893fb1de6fb1f251921b))
+- [G2P-5719](https://openg2p.atlassian.net/browse/G2P-5719) registry chart form: plain descriptions for signature check, consent enforcement and sanity tests ([`4fa2ada`](https://github.com/OpenG2P/registry-platform/commit/4fa2ada67196f2ab93a6857357180588dcc8d907))
+- [G2P-5719](https://openg2p.atlassian.net/browse/G2P-5719) registry chart form: beneficiary login setup — plain label and description (leave on; what it sets up; when to turn off) ([`67d2e1e`](https://github.com/OpenG2P/registry-platform/commit/67d2e1e2f468944f5222049c56c134474a8a2852))
+- [G2P-5719](https://openg2p.atlassian.net/browse/G2P-5719) registry chart form: Pinned Catalogue Release says what to enter (a release name, usually empty) and that the staff UI still shows the latest versions ([`cd6776f`](https://github.com/OpenG2P/registry-platform/commit/cd6776f63f80e521bdfa6d684d54f8d3b5992d47))
+
 <a id="v-0-0-0-develop-615"></a>
 
 ## registry-platform — develop 0.0.0-develop.615 (2026-10-12)
@@ -1351,19 +1375,6 @@ _commit `42fabd9` · changes since 0.0.0-develop.429_
 ### Changes
 
 - [G2P-4929](https://openg2p.atlassian.net/browse/G2P-4929) Expose baseDomain in the Rancher form and stop three question defaults from overriding it: add global.baseDomain as the first General question, and drop the hardcoded agentPortal/esignet/certify defaults so values.yaml stays the single source (CI backfills them). NSR now derives registryHostname from baseDomain like FR ([`42fabd9`](https://github.com/OpenG2P/registry-platform/commit/42fabd9fd8cf36a640d85ab03b85ff5885a4c9d3))
-
-<a id="v-0-0-0-develop-429"></a>
-
-## registry-platform — develop 0.0.0-develop.429 (2026-09-02)
-
-_commit `8ef194b` · changes since 0.0.0-develop.428_
-<!-- build:0.0.0-develop.429 revision:8ef194bb44901888f625176355e71b06d5970a0a ts:1788323490 -->
-
-**Chart:** [openg2p-registry 0.0.0-develop.429](https://openg2p.github.io/openg2p-helm/openg2p-registry-0.0.0-develop.429.tgz)
-
-### Changes
-
-- [G2P-4929](https://openg2p.atlassian.net/browse/G2P-4929) Derive every hostname from baseDomain instead of hardcoding the domain ([`8ef194b`](https://github.com/OpenG2P/registry-platform/commit/8ef194bb44901888f625176355e71b06d5970a0a))
 
 ---
 
