@@ -6,9 +6,29 @@ _Published automatically._
 
 | Version | Date | Type | Notes |
 | --- | --- | --- | --- |
+| [`0.0.0-develop.12`](#v-0-0-0-develop-12) | 2026-10-21 | develop |  |
 | [`0.0.0-develop.10`](#v-0-0-0-develop-10) | 2026-08-28 | develop |  |
 
 # Develop builds
+
+<a id="v-0-0-0-develop-12"></a>
+
+## disability-registry — develop 0.0.0-develop.12 (2026-10-21)
+
+_commit `6f04c94` · changes since 0.0.0-develop.10_
+<!-- build:0.0.0-develop.12 revision:6f04c947cb405c94b770a982047ea71dfc67b70c ts:1792544227 -->
+
+**Chart:** [openg2p-disability-registry 0.0.0-develop.12](https://openg2p.github.io/openg2p-helm/openg2p-disability-registry-0.0.0-develop.12.tgz)
+
+### Summary
+
+- **Major:** Updated RP to version 0.0.0-develop.621, introducing significant changes in the release process.
+- Partner Management enhancements: added sanity checks and uninstall notes related to partner policies, improving clarity and compliance.
+
+### Changes
+
+- Bumped up RP to 0.0.0-develop.621 ([`6f04c94`](https://github.com/OpenG2P/disability-registry/commit/6f04c947cb405c94b770a982047ea71dfc67b70c))
+- [G2P-5719](https://openg2p.atlassian.net/browse/G2P-5719) Sanity and uninstall note: partner policy in Partner Management ([`052c520`](https://github.com/OpenG2P/disability-registry/commit/052c520f111a69e9889ad5e8b72c21a4d56ce514))
 
 <a id="v-0-0-0-develop-10"></a>
 
