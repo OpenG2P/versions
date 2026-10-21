@@ -6,6 +6,7 @@ _Published automatically._
 
 | Version | Date | Type | Notes |
 | --- | --- | --- | --- |
+| [`0.0.0-develop.61`](#v-0-0-0-develop-61) | 2026-10-21 | develop |  |
 | [`0.0.0-develop.59`](#v-0-0-0-develop-59) | 2026-10-19 | develop |  |
 | [`0.0.0-develop.58`](#v-0-0-0-develop-58) | 2026-10-14 | develop |  |
 | [`0.0.0-develop.54`](#v-0-0-0-develop-54) | 2026-10-13 | develop |  |
@@ -25,6 +26,26 @@ _Published automatically._
 | [`0.0.0-develop.22`](#v-0-0-0-develop-22) | 2026-10-01 | develop |  |
 
 # Develop builds
+
+<a id="v-0-0-0-develop-61"></a>
+
+## agri-stack — develop 0.0.0-develop.61 (2026-10-21)
+
+_commit `c4cf682` · changes since 0.0.0-develop.59_
+<!-- build:0.0.0-develop.61 revision:c4cf682bfce77161ea5d55d517981c4ed5ad2131 ts:1792488495 -->
+
+**Chart:** [openg2p-agri-composite 0.0.0-develop.61](https://openg2p.github.io/openg2p-helm/openg2p-agri-composite-0.0.0-develop.61.tgz)
+
+### Summary
+
+- **Major:** Revamped partner access management in Composite and scripts, introducing use-case grant checks and improved consent handling, while removing legacy allowed_partners and CM bindings.
+- Enhanced Composite console functionality with new features like "Source (search)" and "If it can't answer", along with a streamlined consent-grant section and version display.
+- Improved error handling with a 503 response on Partner Management outages, ensuring better user experience during service disruptions.
+
+### Changes
+
+- [G2P-5719](https://openg2p.atlassian.net/browse/G2P-5719) Composite and scripts: partner access from Partner Management policies (use-case grant check, 503 on PM outage; consent call sends use_case and purpose; console "Granted to" from PM); allowed_partners and CM bindings removed; setup_exchange sets the Composite's ceiling in department PMs ([`c4cf682`](https://github.com/OpenG2P/agri-stack/commit/c4cf682bfce77161ea5d55d517981c4ed5ad2131))
+- [G2P-5719](https://openg2p.atlassian.net/browse/G2P-5719) Composite console use case page: "Source (search)", "If it can't answer", "Runs after"; consent-grant section removed; version shown as "name · version x (partners call @N)" ([`c2c113f`](https://github.com/OpenG2P/agri-stack/commit/c2c113faf93c2bc66e1aedaf6a925acca3e12af5))
 
 <a id="v-0-0-0-develop-59"></a>
 
