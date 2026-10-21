@@ -6,6 +6,7 @@ _Published automatically._
 
 | Version | Date | Type | Notes |
 | --- | --- | --- | --- |
+| [`0.0.0-develop.83`](#v-0-0-0-develop-83) | 2026-10-21 | develop |  |
 | [`0.0.0-develop.82`](#v-0-0-0-develop-82) | 2026-10-21 | develop |  |
 | [`0.0.0-develop.81`](#v-0-0-0-develop-81) | 2026-10-14 | develop |  |
 | [`0.0.0-develop.80`](#v-0-0-0-develop-80) | 2026-10-14 | develop |  |
@@ -275,6 +276,19 @@ _commit `c67030b` · changes since 0.0.0-develop.57_
 _No new commits since 0.0.0-develop.57._
 
 # Develop builds
+
+<a id="v-0-0-0-develop-83"></a>
+
+## consent-manager — develop 0.0.0-develop.83 (2026-10-21)
+
+_commit `b4fe457` · changes since 0.0.0-develop.82_
+<!-- build:0.0.0-develop.83 revision:b4fe45703aa7d488f6595928344a96b1ed984212 ts:1792559331 -->
+
+**Chart:** [openg2p-consent-manager 0.0.0-develop.83](https://openg2p.github.io/openg2p-helm/openg2p-consent-manager-0.0.0-develop.83.tgz)
+
+### Changes
+
+- [G2P-5719](https://openg2p.atlassian.net/browse/G2P-5719) CM: one PM policy per use case (?use_case=, use_case_not_granted); full policy reference (policy_id + kind:key) recorded on decisions, consents and grants; Decisions page shows it and links to PM ([`b4fe457`](https://github.com/OpenG2P/consent-manager/commit/b4fe45703aa7d488f6595928344a96b1ed984212))
 
 <a id="v-0-0-0-develop-82"></a>
 
