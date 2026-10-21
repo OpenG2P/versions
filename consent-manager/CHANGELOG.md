@@ -6,6 +6,7 @@ _Published automatically._
 
 | Version | Date | Type | Notes |
 | --- | --- | --- | --- |
+| [`0.0.0-develop.82`](#v-0-0-0-develop-82) | 2026-10-21 | develop |  |
 | [`0.0.0-develop.81`](#v-0-0-0-develop-81) | 2026-10-14 | develop |  |
 | [`0.0.0-develop.80`](#v-0-0-0-develop-80) | 2026-10-14 | develop |  |
 | [`0.0.0-develop.77`](#v-0-0-0-develop-77) | 2026-10-13 | develop |  |
@@ -274,6 +275,19 @@ _commit `c67030b` · changes since 0.0.0-develop.57_
 _No new commits since 0.0.0-develop.57._
 
 # Develop builds
+
+<a id="v-0-0-0-develop-82"></a>
+
+## consent-manager — develop 0.0.0-develop.82 (2026-10-21)
+
+_commit `93c4c54` · changes since 0.0.0-develop.81_
+<!-- build:0.0.0-develop.82 revision:93c4c54ad8266b3745395da2affa5ef36c807929 ts:1792488485 -->
+
+**Chart:** [openg2p-consent-manager 0.0.0-develop.82](https://openg2p.github.io/openg2p-helm/openg2p-consent-manager-0.0.0-develop.82.tgz)
+
+### Changes
+
+- [G2P-5719](https://openg2p.atlassian.net/browse/G2P-5719) CM is consent only: partner policies read from Partner Management (cached client, policy_unavailable); use-case mode on validate (use_case, purpose, use_case_not_granted); Exchange consents made by use case; bindings, policies and AWE removed; records keep audience + policy_version; partner-portal /bindings → /access; chart, sanity and UIs updated ([`93c4c54`](https://github.com/OpenG2P/consent-manager/commit/93c4c54ad8266b3745395da2affa5ef36c807929))
 
 <a id="v-0-0-0-develop-81"></a>
 
