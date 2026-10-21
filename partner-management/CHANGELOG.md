@@ -6,6 +6,7 @@ _Published automatically._
 
 | Version | Date | Type | Notes |
 | --- | --- | --- | --- |
+| [`0.0.0-develop.32`](#v-0-0-0-develop-32) | 2026-10-21 | develop |  |
 | [`0.0.0-develop.31`](#v-0-0-0-develop-31) | 2026-10-21 | develop |  |
 | [`0.0.0-develop.30`](#v-0-0-0-develop-30) | 2026-10-21 | develop |  |
 | [`0.0.0-develop.29`](#v-0-0-0-develop-29) | 2026-10-05 | develop |  |
@@ -238,6 +239,19 @@ _commit `bb96ff2` · changes since 0.0.0-develop.24_
 _No new commits since 0.0.0-develop.24._
 
 # Develop builds
+
+<a id="v-0-0-0-develop-32"></a>
+
+## partner-management — develop 0.0.0-develop.32 (2026-10-21)
+
+_commit `c7f6952` · changes since 0.0.0-develop.31_
+<!-- build:0.0.0-develop.32 revision:c7f695203ed3e115c1e79824eaa3d1cd075d5585 ts:1792559293 -->
+
+**Chart:** [partner-management 0.0.0-develop.32](https://openg2p.github.io/openg2p-helm/partner-management-0.0.0-develop.32.tgz)
+
+### Changes
+
+- [G2P-5719](https://openg2p.atlassian.net/browse/G2P-5719) PM: one policy per use case (use_case key replaces allowed_use_cases; revoke by key; GET /policies/{partner}?use_case= and no-filter = all; PolicyOut carries the version id); partner page: one row per policy with Edit/Revoke, Add policy ([`c7f6952`](https://github.com/OpenG2P/partner-management/commit/c7f695203ed3e115c1e79824eaa3d1cd075d5585))
 
 <a id="v-0-0-0-develop-31"></a>
 
