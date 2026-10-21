@@ -6,6 +6,7 @@ _Published automatically._
 
 | Version | Date | Type | Notes |
 | --- | --- | --- | --- |
+| [`0.0.0-develop.30`](#v-0-0-0-develop-30) | 2026-10-21 | develop |  |
 | [`0.0.0-develop.29`](#v-0-0-0-develop-29) | 2026-10-05 | develop |  |
 | [`0.0.0-develop.28`](#v-0-0-0-develop-28) | 2026-10-05 | develop |  |
 | [`0.0.0-develop.27`](#v-0-0-0-develop-27) | 2026-10-05 | develop |  |
@@ -236,6 +237,19 @@ _commit `bb96ff2` · changes since 0.0.0-develop.24_
 _No new commits since 0.0.0-develop.24._
 
 # Develop builds
+
+<a id="v-0-0-0-develop-30"></a>
+
+## partner-management — develop 0.0.0-develop.30 (2026-10-21)
+
+_commit `5c8f747` · changes since 0.0.0-develop.29_
+<!-- build:0.0.0-develop.30 revision:5c8f7474ae36cc26abc5af0667e5ac941ee7f6c1 ts:1792488457 -->
+
+**Chart:** [partner-management 0.0.0-develop.30](https://openg2p.github.io/openg2p-helm/partner-management-0.0.0-develop.30.tgz)
+
+### Changes
+
+- [G2P-5719](https://openg2p.atlassian.net/browse/G2P-5719) Partner access policies: versioned per (partner, data controller), granting data scopes or use cases (name@major); set via onboarding or policy requests (active partners only); internal GET /policies read API (fail closed, filter required, cached); staff UI and Helm cache setting ([`5c8f747`](https://github.com/OpenG2P/partner-management/commit/5c8f7474ae36cc26abc5af0667e5ac941ee7f6c1))
 
 <a id="v-0-0-0-develop-29"></a>
 
