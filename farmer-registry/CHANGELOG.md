@@ -6,6 +6,7 @@ _Published automatically._
 
 | Version | Date | Type | Notes |
 | --- | --- | --- | --- |
+| [`0.0.0-develop.280`](#v-0-0-0-develop-280) | 2026-10-21 | develop |  |
 | [`0.0.0-develop.278`](#v-0-0-0-develop-278) | 2026-10-19 | develop |  |
 | [`1.2.1-rc.190`](#v-1-2-1-rc-190) | 2026-10-14 | release candidate |  |
 | [`1.2.1-rc.188`](#v-1-2-1-rc-188) | 2026-10-14 | release candidate |  |
@@ -357,6 +358,25 @@ _commit `fb6cd5d` · changes since 1.2.1-rc.169_
 - Bump version 1.2.2-rc.487 of registry platform in Dockerfile ([`fb6cd5d`](https://github.com/OpenG2P/farmer-registry/commit/fb6cd5d764013c99ee4a26e82884f99ddfa2b2a4))
 
 # Develop builds
+
+<a id="v-0-0-0-develop-280"></a>
+
+## farmer-registry — develop 0.0.0-develop.280 (2026-10-21)
+
+_commit `3df7c16` · changes since 0.0.0-develop.278_
+<!-- build:0.0.0-develop.280 revision:3df7c16309ce1a02c0e4f1f80cc648b43206aab5 ts:1792544115 -->
+
+**Chart:** [openg2p-farmer-registry 0.0.0-develop.280](https://openg2p.github.io/openg2p-helm/openg2p-farmer-registry-0.0.0-develop.280.tgz)
+
+### Summary
+
+- Policy management enhancement: introduced data-scope text and updated documentation for Partner Management, including an uninstall note.
+- Version bump: updated RP to 0.0.0-develop.621, reflecting ongoing development progress.
+
+### Changes
+
+- Bumped up RP to 0.0.0-develop.621 ([`3df7c16`](https://github.com/OpenG2P/farmer-registry/commit/3df7c16309ce1a02c0e4f1f80cc648b43206aab5))
+- [G2P-5719](https://openg2p.atlassian.net/browse/G2P-5719) Policies are in Partner Management: data-scope text, sanity docs and uninstall note ([`93c80f6`](https://github.com/OpenG2P/farmer-registry/commit/93c80f607c7b2ac740e3f3a1e2a292f980723bb1))
 
 <a id="v-0-0-0-develop-278"></a>
 
