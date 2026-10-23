@@ -6,6 +6,7 @@ _Published automatically._
 
 | Version | Date | Type | Notes |
 | --- | --- | --- | --- |
+| [`0.0.0-develop.67`](#v-0-0-0-develop-67) | 2026-10-23 | develop |  |
 | [`0.0.0-develop.64`](#v-0-0-0-develop-64) | 2026-10-21 | develop |  |
 | [`0.0.0-develop.61`](#v-0-0-0-develop-61) | 2026-10-21 | develop |  |
 | [`0.0.0-develop.59`](#v-0-0-0-develop-59) | 2026-10-19 | develop |  |
@@ -27,6 +28,26 @@ _Published automatically._
 | [`0.0.0-develop.22`](#v-0-0-0-develop-22) | 2026-10-01 | develop |  |
 
 # Develop builds
+
+<a id="v-0-0-0-develop-67"></a>
+
+## agri-stack — develop 0.0.0-develop.67 (2026-10-23)
+
+_commit `c5b4f73` · changes since 0.0.0-develop.64_
+<!-- build:0.0.0-develop.67 revision:c5b4f7344dcf2bb24171d3d7a2bd89ea1009a8d6 ts:1792742493 -->
+
+**Chart:** [openg2p-agri-composite 0.0.0-develop.67](https://openg2p.github.io/openg2p-helm/openg2p-agri-composite-0.0.0-develop.67.tgz)
+
+### Summary
+
+- Consent management overhaul: exchange is now the default consent mode across all components, including service, engine, and chart fallback; test partner's policy allows partner-signed consents only when it signs its own consent.
+- Policy configuration: introduced a hard TTL for the partner policy in Rancher, enhancing control over consent validity.
+
+### Changes
+
+- [G2P-5719](https://openg2p.atlassian.net/browse/G2P-5719) Composite: exchange is the default consent mode everywhere (service, engine, chart fallback, setup_exchange); Rancher field for the partner policy hard TTL ([`c5b4f73`](https://github.com/OpenG2P/agri-stack/commit/c5b4f7344dcf2bb24171d3d7a2bd89ea1009a8d6))
+- [G2P-5719](https://openg2p.atlassian.net/browse/G2P-5719) partner_kit keys: the test partner's printed policy allows partner-signed consents (call signs its own) ([`6091ee8`](https://github.com/OpenG2P/agri-stack/commit/6091ee855faf75fb45be1056a4abad12754ecb6a))
+- [G2P-5719](https://openg2p.atlassian.net/browse/G2P-5719) partner_test/partner_kit: allow_partner_consents on the test partner's policy only when it signs its own consent ([`2d343b6`](https://github.com/OpenG2P/agri-stack/commit/2d343b656f4082165afd0adb198aaf347ce9c02b))
 
 <a id="v-0-0-0-develop-64"></a>
 
