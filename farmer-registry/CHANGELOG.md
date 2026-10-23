@@ -6,6 +6,7 @@ _Published automatically._
 
 | Version | Date | Type | Notes |
 | --- | --- | --- | --- |
+| [`1.2.1-rc.192`](#v-1-2-1-rc-192) | 2026-10-23 | release candidate |  |
 | [`0.0.0-develop.280`](#v-0-0-0-develop-280) | 2026-10-21 | develop |  |
 | [`0.0.0-develop.278`](#v-0-0-0-develop-278) | 2026-10-19 | develop |  |
 | [`1.2.1-rc.190`](#v-1-2-1-rc-190) | 2026-10-14 | release candidate |  |
@@ -27,7 +28,6 @@ _Published automatically._
 | [`0.0.0-develop.209`](#v-0-0-0-develop-209) | 2026-09-23 | develop |  |
 | [`1.2.1-rc.174`](#v-1-2-1-rc-174) | 2026-09-18 | release candidate |  |
 | [`1.2.1-rc.171`](#v-1-2-1-rc-171) | 2026-09-17 | release candidate |  |
-| [`1.2.1-rc.170`](#v-1-2-1-rc-170) | 2026-09-17 | release candidate |  |
 | [`0.0.0-develop.207`](#v-0-0-0-develop-207) | 2026-09-12 | develop |  |
 | [`0.0.0-develop.206`](#v-0-0-0-develop-206) | 2026-09-03 | develop | **Intermediate Stable Version**. VC issuance and verification both working fine. Compatible with commons 0.0.0-develop.243. |
 | [`0.0.0-develop.205`](#v-0-0-0-develop-205) | 2026-09-02 | develop |  |
@@ -209,6 +209,19 @@ _commit `7055a71` · first release_
 
 # Release candidates
 
+<a id="v-1-2-1-rc-192"></a>
+
+## farmer-registry 1.2.1-rc.192 — 2026-10-23
+
+_commit `ed1e70c` · changes since 1.2.1-rc.190_
+<!-- build:1.2.1-rc.192 revision:ed1e70ccf18df5476fa404ed8018e12d55e418fa ts:1792751536 -->
+
+**Chart:** [openg2p-farmer-registry 1.2.1-rc.192](https://openg2p.github.io/openg2p-helm/openg2p-farmer-registry-1.2.1-rc.192.tgz)
+
+### Changes
+
+- [G2P-5769](https://openg2p.atlassian.net/browse/G2P-5769): Add staff-ui extensibility support to Farmer Registry ([`0e4af4e`](https://github.com/OpenG2P/farmer-registry/commit/0e4af4e79a0d356f09cf6438f84636cf2e8d9e22))
+
 <a id="v-1-2-1-rc-190"></a>
 
 ## farmer-registry 1.2.1-rc.190 — 2026-10-14
@@ -343,19 +356,6 @@ _commit `498ffa8` · changes since 1.2.1-rc.170_
 ### Changes
 
 - Bump version 1.2.2-rc.489 of registry platform in Dockerfile ([`498ffa8`](https://github.com/OpenG2P/farmer-registry/commit/498ffa8e6fc7bfa84d05b88551fdd53a60566ba1))
-
-<a id="v-1-2-1-rc-170"></a>
-
-## farmer-registry 1.2.1-rc.170 — 2026-09-17
-
-_commit `fb6cd5d` · changes since 1.2.1-rc.169_
-<!-- build:1.2.1-rc.170 revision:fb6cd5d764013c99ee4a26e82884f99ddfa2b2a4 ts:1789631017 -->
-
-**Chart:** [openg2p-farmer-registry 1.2.1-rc.170](https://openg2p.github.io/openg2p-helm/openg2p-farmer-registry-1.2.1-rc.170.tgz)
-
-### Changes
-
-- Bump version 1.2.2-rc.487 of registry platform in Dockerfile ([`fb6cd5d`](https://github.com/OpenG2P/farmer-registry/commit/fb6cd5d764013c99ee4a26e82884f99ddfa2b2a4))
 
 # Develop builds
 
