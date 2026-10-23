@@ -6,6 +6,7 @@ _Published automatically._
 
 | Version | Date | Type | Notes |
 | --- | --- | --- | --- |
+| [`1.2.2-rc.585`](#v-1-2-2-rc-585) | 2026-10-23 | release candidate |  |
 | [`0.0.0-develop.621`](#v-0-0-0-develop-621) | 2026-10-21 | develop |  |
 | [`1.2.2-rc.568`](#v-1-2-2-rc-568) | 2026-10-16 | release candidate |  |
 | [`1.2.2-rc.565`](#v-1-2-2-rc-565) | 2026-10-16 | release candidate |  |
@@ -21,7 +22,6 @@ _Published automatically._
 | [`0.0.0-develop.606`](#v-0-0-0-develop-606) | 2026-10-07 | develop |  |
 | [`1.2.2-rc.536`](#v-1-2-2-rc-536) | 2026-10-05 | release candidate |  |
 | [`1.2.2-rc.534`](#v-1-2-2-rc-534) | 2026-10-05 | release candidate |  |
-| [`1.2.2-rc.532`](#v-1-2-2-rc-532) | 2026-10-05 | release candidate |  |
 | [`0.0.0-develop.605`](#v-0-0-0-develop-605) | 2026-10-05 | develop |  |
 | [`0.0.0-develop.604`](#v-0-0-0-develop-604) | 2026-10-05 | develop |  |
 | [`0.0.0-develop.599`](#v-0-0-0-develop-599) | 2026-10-03 | develop |  |
@@ -355,6 +355,36 @@ same commit and *promoted* (retagged), not rebuilt. No code changed between them
 
 # Release candidates
 
+<a id="v-1-2-2-rc-585"></a>
+
+## registry-platform 1.2.2-rc.585 — 2026-10-23
+
+_commit `53551e3` · changes since 1.2.2-rc.568_
+<!-- build:1.2.2-rc.585 revision:53551e379a710417963ab2ef7c252ba1d1336fff ts:1792745759 -->
+
+**Chart:** [openg2p-registry 1.2.2-rc.585](https://openg2p.github.io/openg2p-helm/openg2p-registry-1.2.2-rc.585.tgz)
+
+### Summary
+
+- Enhancements to authentication: improved Keycloak URL handling and navigation reliability, alongside expanded functional gate workflows with new Tier-2 environment variables and structured test execution.
+- API updates: corrected endpoint references from `/dci/registry/sync/search` to `/dci/sync/search` in tests and documentation.
+- Functional testing improvements: refactored MinIO configuration in docker-compose, updated MinIO image to `pgsty/mc`, and added new functional test cases workflow.
+- UI and migration updates: expanded functional gate to include staff tiers, partner consent, and UI AWE journeys, with several migrations affecting metadata and seed data. 
+- Dependency management: updated manifests for functional testing requirements and UI package management.
+
+### Changes
+
+- [G2P-5601](https://openg2p.atlassian.net/browse/G2P-5601): feat(auth): enhance Keycloak URL handling and improve navigation reliability ([`6ead9af`](https://github.com/OpenG2P/registry-platform/commit/6ead9af240987c5f7c378a05225c828ba95d2941))
+- fix(api): update endpoint references from /dci/registry/sync/search to /dci/sync/search in tests and documentation ([`f899738`](https://github.com/OpenG2P/registry-platform/commit/f899738d6c2eab777ee3e11d6a983d5fa14b0bf2))
+- [G2P-5601](https://openg2p.atlassian.net/browse/G2P-5601): Enhance functional gate workflow and documentation with new Tier-2 environment variables ([`4edffde`](https://github.com/OpenG2P/registry-platform/commit/4edffde5bdf6cd9c1330fcc2fd2c96fe81a4a400))
+- Fix formatting in functional gate workflow YAML file ([`c36329a`](https://github.com/OpenG2P/registry-platform/commit/c36329ab33cbb9f9d550fbac84aa9ab393168952))
+- [G2P-5601](https://openg2p.atlassian.net/browse/G2P-5601): Enhance functional gate workflow with structured test execution ([`28fa720`](https://github.com/OpenG2P/registry-platform/commit/28fa72030ef0a0ce35b7ec0fdba66f0ac2606d3a))
+- [G2P-5601](https://openg2p.atlassian.net/browse/G2P-5601): Refactor MinIO configuration in docker-compose for functional testing ([`cf10cb0`](https://github.com/OpenG2P/registry-platform/commit/cf10cb042c6a7f5bb1cf93ec410902a594052321))
+- [G2P-5601](https://openg2p.atlassian.net/browse/G2P-5601): Update MinIO image to pgsty/mc for functional testing ([`41cd7a5`](https://github.com/OpenG2P/registry-platform/commit/41cd7a5179f4a10a973b49b01777f3352518bc4a))
+- [G2P-5601](https://openg2p.atlassian.net/browse/G2P-5601): Update MinIO image in docker-compose for functional testing ([`6430192`](https://github.com/OpenG2P/registry-platform/commit/6430192d684beb73c4b0201a6d01c399e1d8ce90))
+- [G2P-5601](https://openg2p.atlassian.net/browse/G2P-5601): Expand functional gate: staff tiers, partner consent, and UI AWE journeys ([`cf0b151`](https://github.com/OpenG2P/registry-platform/commit/cf0b15172d311fc7c75453a2013ecc17e986fe00))
+- [G2P-5601](https://openg2p.atlassian.net/browse/G2P-5601): Added funcational test cases workflow ([`b5f3ad7`](https://github.com/OpenG2P/registry-platform/commit/b5f3ad7c342c8749379907f4f7a39edf5d41528a))
+
 <a id="v-1-2-2-rc-568"></a>
 
 ## registry-platform 1.2.2-rc.568 — 2026-10-16
@@ -517,33 +547,6 @@ _commit `be76faa` · changes since 1.2.2-rc.532_
 ### Changes
 
 - Updated master data secret and password key name ([`1bfedff`](https://github.com/OpenG2P/registry-platform/commit/1bfedfff578b89c3eb4730ff2f3bd4341905306a))
-
-<a id="v-1-2-2-rc-532"></a>
-
-## registry-platform 1.2.2-rc.532 — 2026-10-05
-
-_commit `7cffa27` · changes since 1.2.2-rc.521_
-<!-- build:1.2.2-rc.532 revision:7cffa27351588dbec237c3809111d4b89db36baa ts:1791179550 -->
-
-**Chart:** [openg2p-registry 1.2.2-rc.532](https://openg2p.github.io/openg2p-helm/openg2p-registry-1.2.2-rc.532.tgz)
-
-### Summary
-
-- **Major:** Enhanced notification system: added configuration options for Novu integration, implemented notification for staff on register exports completion, and enabled notifications for registrants on change requests and intake events.
-- Core improvements: introduced `resolve_registry_name` function, enhanced notification payloads with related model data, and added a notification helper for registrant contact lookup.
-- Dependency updates: upgraded `fastapi-common` to version 1.2.2 in Dockerfiles for bene-api and partner-api, and removed redundant `sqlalchemy[asyncio]` dependency.
-
-### Changes
-
-- [G2P-5706](https://openg2p.atlassian.net/browse/G2P-5706) feat(notification): add configuration options for Novu integration in Helm charts ([`15c35e0`](https://github.com/OpenG2P/registry-platform/commit/15c35e02b91f1997ce4c7962a19043103849b2e9))
-- chore: update fastapi-common reference to version 1.2.2 in Dockerfiles for bene-api and partner-api ([`51bac59`](https://github.com/OpenG2P/registry-platform/commit/51bac5904b2e00dedc28c2c5ff6b8575ba237d3e))
-- [G2P-5697](https://openg2p.atlassian.net/browse/G2P-5697) feat(core): add resolve_registry_name function and update payloads ([`771b43e`](https://github.com/OpenG2P/registry-platform/commit/771b43e5eee7dd236e2440ee4b1763642a3495f9))
-- chore: bump fastapi-common tag and remove redundant dependency sqlalchemy[asyncio] ([`b492513`](https://github.com/OpenG2P/registry-platform/commit/b492513d4296a541e1d29fe00c43f0932c6e20c2))
-- [G2P-5697](https://openg2p.atlassian.net/browse/G2P-5697) feat(core): enhance notification payload with related model data ([`a2d5bec`](https://github.com/OpenG2P/registry-platform/commit/a2d5becd3262ded701ce8f66531a34694fceff50))
-- [G2P-5697](https://openg2p.atlassian.net/browse/G2P-5697) chore: wire the notification connector into images and helm ([`92ebb58`](https://github.com/OpenG2P/registry-platform/commit/92ebb5864d0457cf9ffdcb08d9705695d7ffff3e))
-- [G2P-5697](https://openg2p.atlassian.net/browse/G2P-5697) feat(core): notify staff when register exports finish ([`13c8eba`](https://github.com/OpenG2P/registry-platform/commit/13c8ebacbb61f5a4d43549878e19d4ff77c50198))
-- [G2P-5697](https://openg2p.atlassian.net/browse/G2P-5697) feat(core): notify registrants on change request and intake events ([`c062ca6`](https://github.com/OpenG2P/registry-platform/commit/c062ca64b3fa7a4e320db951cb45b618585e4b40))
-- [G2P-5697](https://openg2p.atlassian.net/browse/G2P-5697) feat(core): add notification helper and registrant contact lookup ([`99b02f7`](https://github.com/OpenG2P/registry-platform/commit/99b02f7905f622dd8bcac9f92a1408fdbefa8aa1))
 
 <a id="v-1-2-1-rc-462"></a>
 
