@@ -6,6 +6,7 @@ _Published automatically._
 
 | Version | Date | Type | Notes |
 | --- | --- | --- | --- |
+| [`1.4.4-rc.127`](#v-1-4-4-rc-127) | 2026-10-27 | release candidate |  |
 | [`0.0.0-develop.102`](#v-0-0-0-develop-102) | 2026-10-12 | develop |  |
 | [`1.4.4-rc.125`](#v-1-4-4-rc-125) | 2026-10-08 | release candidate |  |
 | [`0.0.0-develop.101`](#v-0-0-0-develop-101) | 2026-10-08 | develop |  |
@@ -191,6 +192,19 @@ Compared with 1.3.0, this release turns IAM from an auth backend into an operabl
 - [G2P-5313](https://openg2p.atlassian.net/browse/G2P-5313) Improve unit test coverage for core IAM functionality ([`c762c7b`](https://github.com/OpenG2P/iam/commit/c762c7b741a5c9d19bbd30b6875daacbd5d88717))
 
 # Release candidates
+
+<a id="v-1-4-4-rc-127"></a>
+
+## iam 1.4.4-rc.127 — 2026-10-27
+
+_commit `a73ef00` · changes since 1.4.4-rc.125_
+<!-- build:1.4.4-rc.127 revision:a73ef0090926dc9ea9b1edec0994b405670df7c1 ts:1793085450 -->
+
+**Chart:** [openg2p-iam-service 1.4.4-rc.127](https://openg2p.github.io/openg2p-helm/openg2p-iam-service-1.4.4-rc.127.tgz)
+
+### Changes
+
+- fix(iam-core): decrypt eSignet encrypted userinfo JWT ([`3b1fb5a`](https://github.com/OpenG2P/iam/commit/3b1fb5a1c530c8fd0552b9474350dbe382609876))
 
 <a id="v-1-4-4-rc-125"></a>
 
