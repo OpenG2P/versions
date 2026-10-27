@@ -6,6 +6,7 @@ _Published automatically._
 
 | Version | Date | Type | Notes |
 | --- | --- | --- | --- |
+| [`1.2.1-rc.338`](#v-1-2-1-rc-338) | 2026-10-27 | release candidate |  |
 | [`1.2.1-rc.335`](#v-1-2-1-rc-335) | 2026-10-08 | release candidate |  |
 | [`1.2.1-rc.334`](#v-1-2-1-rc-334) | 2026-10-07 | release candidate |  |
 | [`1.2.1-rc.332`](#v-1-2-1-rc-332) | 2026-10-07 | release candidate |  |
@@ -15,7 +16,6 @@ _Published automatically._
 | [`1.2.1-rc.323`](#v-1-2-1-rc-323) | 2026-09-25 | release candidate |  |
 | [`1.2.1-rc.320`](#v-1-2-1-rc-320) | 2026-09-25 | release candidate |  |
 | [`1.2.1-rc.315`](#v-1-2-1-rc-315) | 2026-09-22 | release candidate |  |
-| [`1.2.1-rc.313`](#v-1-2-1-rc-313) | 2026-09-21 | release candidate |  |
 | [`1.2.0`](#v-1-2-0) | 2026-09-04 | release |  |
 | [`1.2.0-rc.304`](#v-1-2-0-rc-304) | 2026-09-03 | release candidate |  |
 | [`1.2.0-rc.303`](#v-1-2-0-rc-303) | 2026-09-03 | release candidate |  |
@@ -161,6 +161,24 @@ _AI summary unavailable — re-run the workflow with `changelog_regenerate=1.2.0
 
 # Release candidates
 
+<a id="v-1-2-1-rc-338"></a>
+
+## mowsa-nsr 1.2.1-rc.338 — 2026-10-27
+
+_commit `3091862` · changes since 1.2.1-rc.335_
+<!-- build:1.2.1-rc.338 revision:3091862940961f65e923a5aaddc078fa4cd2e4cf ts:1793085559 -->
+
+**Chart:** [mowsa-nsr 1.2.1-rc.338](https://openg2p.github.io/openg2p-helm/mowsa-nsr-1.2.1-rc.338.tgz)
+
+### Summary
+
+_AI summary unavailable — re-run the workflow with `changelog_regenerate=1.2.1-rc.338` to generate it._
+
+### Changes
+
+- fix(nsr): align eSignet CR mapping with section fields ([`32f8af3`](https://github.com/OpenG2P/mowsa-nsr/commit/32f8af3fc04e23ac5c30d96b76f29fcbc3929b99))
+- feat(nsr): add Individual eSignet userinfo change-request provider config ([`0768003`](https://github.com/OpenG2P/mowsa-nsr/commit/076800332ab1f1b3d045246313973b2ecb2cd226))
+
 <a id="v-1-2-1-rc-335"></a>
 
 ## mowsa-nsr 1.2.1-rc.335 — 2026-10-08
@@ -294,19 +312,6 @@ _commit `d891f8a` · changes since 1.2.1-rc.313_
 ### Changes
 
 - Update RP_VERSION to 1.2.2-rc.489 in Dockerfiles and Chart.yaml for all services to ensure consistency with the latest registry version. ([`0f258c8`](https://github.com/OpenG2P/mowsa-nsr/commit/0f258c8472c7a25633098f6af63f8b3115231c14))
-
-<a id="v-1-2-1-rc-313"></a>
-
-## mowsa-nsr 1.2.1-rc.313 — 2026-09-21
-
-_commit `4dd837d` · changes since 1.2.1-rc.311_
-<!-- build:1.2.1-rc.313 revision:4dd837d4d5ac63cbdbd1beb83cd25faf7f216a4c ts:1789978612 -->
-
-**Chart:** [mowsa-nsr 1.2.1-rc.313](https://openg2p.github.io/openg2p-helm/mowsa-nsr-1.2.1-rc.313.tgz)
-
-### Changes
-
-- Enhance individual registration service with additional validations for land access and household relationships. Update SQL metadata for AWE policy configurations to ensure consistency in identifiers and handling of foundational IDs. ([`b4db6b9`](https://github.com/OpenG2P/mowsa-nsr/commit/b4db6b9138395433da5eaa268976d4cda20e375e))
 
 <a id="v-1-2-0-rc-304"></a>
 
