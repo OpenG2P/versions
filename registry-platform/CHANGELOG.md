@@ -6,6 +6,7 @@ _Published automatically._
 
 | Version | Date | Type | Notes |
 | --- | --- | --- | --- |
+| [`1.2.2-rc.601`](#v-1-2-2-rc-601) | 2026-10-27 | release candidate |  |
 | [`1.2.2-rc.593`](#v-1-2-2-rc-593) | 2026-10-26 | release candidate |  |
 | [`1.2.2-rc.585`](#v-1-2-2-rc-585) | 2026-10-23 | release candidate |  |
 | [`0.0.0-develop.621`](#v-0-0-0-develop-621) | 2026-10-21 | develop |  |
@@ -21,7 +22,6 @@ _Published automatically._
 | [`0.0.0-develop.611`](#v-0-0-0-develop-611) | 2026-10-07 | develop |  |
 | [`0.0.0-develop.608`](#v-0-0-0-develop-608) | 2026-10-07 | develop |  |
 | [`0.0.0-develop.606`](#v-0-0-0-develop-606) | 2026-10-07 | develop |  |
-| [`1.2.2-rc.536`](#v-1-2-2-rc-536) | 2026-10-05 | release candidate |  |
 | [`0.0.0-develop.605`](#v-0-0-0-develop-605) | 2026-10-05 | develop |  |
 | [`0.0.0-develop.604`](#v-0-0-0-develop-604) | 2026-10-05 | develop |  |
 | [`0.0.0-develop.599`](#v-0-0-0-develop-599) | 2026-10-03 | develop |  |
@@ -355,6 +355,30 @@ same commit and *promoted* (retagged), not rebuilt. No code changed between them
 
 # Release candidates
 
+<a id="v-1-2-2-rc-601"></a>
+
+## registry-platform 1.2.2-rc.601 — 2026-10-27
+
+_commit `44119a1` · changes since 1.2.2-rc.593_
+<!-- build:1.2.2-rc.601 revision:44119a1eb90d0b1c96fb6de6af7e708e788db968 ts:1793085491 -->
+
+**Chart:** [openg2p-registry 1.2.2-rc.601](https://openg2p.github.io/openg2p-helm/openg2p-registry-1.2.2-rc.601.tgz)
+
+### Summary
+
+- New feature: optional registry-connector added to openg2p-registry (1.2) and pending CRs can now be created from eSignet userinfo after authentication.
+- Fixes: limited AWE token soft-skip to registrant-auth CR path, deferred AWE service token application until policy is applied, and isolated per-section userinfo CRs while dropping domain gender codes.
+- Testing improvements: implemented real registry-core imports for pending CR tests to enhance test reliability.
+
+### Changes
+
+- feat(helm): optional registry-connector on openg2p-registry (1.2) ([`ad95e8e`](https://github.com/OpenG2P/registry-platform/commit/ad95e8ee6cb2107e1903e9d832f757b4ea026178))
+- fix: limit AWE token soft-skip to registrant-auth CR path ([`41076e3`](https://github.com/OpenG2P/registry-platform/commit/41076e3aebe2da56fdde3181ef4fe5b9b21c2f25))
+- fix: isolate per-section userinfo CRs and drop domain gender codes ([`3df9b29`](https://github.com/OpenG2P/registry-platform/commit/3df9b29fcf264bb83a77ab50515f770549499690))
+- test: use real registry-core imports for pending CR tests ([`6933dc2`](https://github.com/OpenG2P/registry-platform/commit/6933dc2a6179432e341aee22b3ef3714e1ad5f0f))
+- fix: defer AWE service token until policy applies ([`176ad79`](https://github.com/OpenG2P/registry-platform/commit/176ad7970fbb7471353686d1f3c856ccbfa514e2))
+- feat: create pending CRs from eSignet userinfo after auth ([`1d699d3`](https://github.com/OpenG2P/registry-platform/commit/1d699d3633ef587873c0993a2cbdad4a6675cea6))
+
 <a id="v-1-2-2-rc-593"></a>
 
 ## registry-platform 1.2.2-rc.593 — 2026-10-26
@@ -544,19 +568,6 @@ _commit `11b2761` · changes since 1.2.2-rc.536_
 - [G2P-5768](https://openg2p.atlassian.net/browse/G2P-5768) feat(ui): add FilePreview component and update templates to use it for file previews ([`9e4bd78`](https://github.com/OpenG2P/registry-platform/commit/9e4bd78df408b920d4b10c0a3d634b337bf8b71a))
 - [G2P-5686](https://openg2p.atlassian.net/browse/G2P-5686): use primary_color_1 for change request old value button bg ([`4e90d62`](https://github.com/OpenG2P/registry-platform/commit/4e90d6286c1640af9d773b6e34c5d4225c53b190))
 -  [G2P-5733](https://openg2p.atlassian.net/browse/G2P-5733) fix: backspace button is not working on dialogue table popup ([`da35c34`](https://github.com/OpenG2P/registry-platform/commit/da35c34d52e9c9a0a74f1db4fb3e3c4307e0bca4))
-
-<a id="v-1-2-2-rc-536"></a>
-
-## registry-platform 1.2.2-rc.536 — 2026-10-05
-
-_commit `fb856a2` · changes since 1.2.2-rc.534_
-<!-- build:1.2.2-rc.536 revision:fb856a2cc2ea9864abe81f2e70f192fcc973ccec ts:1791199106 -->
-
-**Chart:** [openg2p-registry 1.2.2-rc.536](https://openg2p.github.io/openg2p-helm/openg2p-registry-1.2.2-rc.536.tgz)
-
-### Changes
-
-- chore(Dockerfile): add notification connector dependency ([`4848b4b`](https://github.com/OpenG2P/registry-platform/commit/4848b4ba2e6565908c3039f084ac97dfd6ea6192))
 
 <a id="v-1-2-1-rc-462"></a>
 
