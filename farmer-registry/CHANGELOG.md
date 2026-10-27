@@ -6,6 +6,7 @@ _Published automatically._
 
 | Version | Date | Type | Notes |
 | --- | --- | --- | --- |
+| [`1.2.1-rc.199`](#v-1-2-1-rc-199) | 2026-10-27 | release candidate |  |
 | [`1.2.1-rc.194`](#v-1-2-1-rc-194) | 2026-10-26 | release candidate |  |
 | [`1.2.1-rc.192`](#v-1-2-1-rc-192) | 2026-10-23 | release candidate |  |
 | [`0.0.0-develop.280`](#v-0-0-0-develop-280) | 2026-10-21 | develop |  |
@@ -27,7 +28,6 @@ _Published automatically._
 | [`1.2.1-rc.178`](#v-1-2-1-rc-178) | 2026-09-25 | release candidate |  |
 | [`1.2.1-rc.176`](#v-1-2-1-rc-176) | 2026-09-25 | release candidate |  |
 | [`0.0.0-develop.209`](#v-0-0-0-develop-209) | 2026-09-23 | develop |  |
-| [`1.2.1-rc.174`](#v-1-2-1-rc-174) | 2026-09-18 | release candidate |  |
 | [`0.0.0-develop.207`](#v-0-0-0-develop-207) | 2026-09-12 | develop |  |
 | [`0.0.0-develop.206`](#v-0-0-0-develop-206) | 2026-09-03 | develop | **Intermediate Stable Version**. VC issuance and verification both working fine. Compatible with commons 0.0.0-develop.243. |
 | [`0.0.0-develop.205`](#v-0-0-0-develop-205) | 2026-09-02 | develop |  |
@@ -209,6 +209,26 @@ _commit `7055a71` · first release_
 
 # Release candidates
 
+<a id="v-1-2-1-rc-199"></a>
+
+## farmer-registry 1.2.1-rc.199 — 2026-10-27
+
+_commit `e144e71` · changes since 1.2.1-rc.194_
+<!-- build:1.2.1-rc.199 revision:e144e71e1a2e47552bd983af8d11f9c94b120f7c ts:1793104323 -->
+
+**Chart:** [openg2p-farmer-registry 1.2.1-rc.199](https://openg2p.github.io/openg2p-helm/openg2p-farmer-registry-1.2.1-rc.199.tgz)
+
+### Summary
+
+- Version update: upgraded RP from 1.2.2-rc.557 to 1.2.2-rc.593 in Dockerfiles and Chart.yaml.
+- Data integrity enhancements: added field validation for Farmer Registry section widgets and restricted duplicate values in list sections for land, crop, livestock, and farm input.
+
+### Changes
+
+- Version of RP from 1.2.2-rc.557 to 1.2.2-rc.593 in Dockerfiles and Chart.yaml ([`5782d66`](https://github.com/OpenG2P/farmer-registry/commit/5782d6618f25b9bcc2a089a840a965bebd924e7c))
+- [G2P-5841](https://openg2p.atlassian.net/browse/G2P-5841) Add field validation to Farmer Registry section widgets ([`2c04ad9`](https://github.com/OpenG2P/farmer-registry/commit/2c04ad96e768bcb0df5ff4af433ea48b9a6e6b57))
+- [G2P-5816](https://openg2p.atlassian.net/browse/G2P-5816) - Restrict duplicate values in list sections such as land, crop, livestock and farm input ([`a91e605`](https://github.com/OpenG2P/farmer-registry/commit/a91e6058e228fefdfbe4b0269e9a0eebc1a5d448))
+
 <a id="v-1-2-1-rc-194"></a>
 
 ## farmer-registry 1.2.1-rc.194 — 2026-10-26
@@ -337,25 +357,6 @@ _commit `c342011` · changes since 1.2.1-rc.174_
 ### Changes
 
 - Fix db-seed on a fresh deployment: give celery-beat a consumed queue, report why the seed fails ([`46527b5`](https://github.com/OpenG2P/farmer-registry/commit/46527b5db1d7ea81831cf06907416ab6b680457f))
-
-<a id="v-1-2-1-rc-174"></a>
-
-## farmer-registry 1.2.1-rc.174 — 2026-09-18
-
-_commit `6c9b020` · changes since 1.2.1-rc.171_
-<!-- build:1.2.1-rc.174 revision:6c9b020c269ad3dedf40975f633559631edd3b5d ts:1789723425 -->
-
-**Chart:** [openg2p-farmer-registry 1.2.1-rc.174](https://openg2p.github.io/openg2p-helm/openg2p-farmer-registry-1.2.1-rc.174.tgz)
-
-### Summary
-
-- Dependency updates: aligned openg2p-registry version pins to 1.2.2-rc.489.
-- Bug fixes: resolved SQL issues in the ID authentication widget.
-
-### Changes
-
-- fix: align openg2p-registry version pins to 1.2.2-rc.489 ([`b009442`](https://github.com/OpenG2P/farmer-registry/commit/b0094425c32195b621e50c087986fd88ede3eba5))
-- [G2P-5695](https://openg2p.atlassian.net/browse/G2P-5695) Fix ID authentication widget SQL ([`1c7a311`](https://github.com/OpenG2P/farmer-registry/commit/1c7a3113d0af9638311b2e7e3cc31a1608defa3e))
 
 # Develop builds
 
