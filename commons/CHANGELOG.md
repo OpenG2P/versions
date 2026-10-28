@@ -6,6 +6,7 @@ _Published automatically._
 
 | Version | Date | Type | Notes |
 | --- | --- | --- | --- |
+| [`0.0.0-develop.329`](#v-0-0-0-develop-329) | 2026-10-28 | develop |  |
 | [`0.0.0-develop.327`](#v-0-0-0-develop-327) | 2026-10-21 | develop |  |
 | [`0.0.0-develop.325`](#v-0-0-0-develop-325) | 2026-10-20 | develop |  |
 | [`0.0.0-develop.324`](#v-0-0-0-develop-324) | 2026-10-20 | develop |  |
@@ -30,7 +31,6 @@ _Published automatically._
 | [`0.0.0-develop.289`](#v-0-0-0-develop-289) | 2026-10-07 | develop |  |
 | [`0.0.0-develop.286`](#v-0-0-0-develop-286) | 2026-10-07 | develop |  |
 | [`0.0.0-develop.284`](#v-0-0-0-develop-284) | 2026-10-07 | develop |  |
-| [`0.0.0-develop.282`](#v-0-0-0-develop-282) | 2026-10-05 | develop |  |
 | [`2.3.4-rc.240`](#v-2-3-4-rc-240) | 2026-10-05 | release candidate |  |
 | [`2.3.4-rc.238`](#v-2-3-4-rc-238) | 2026-10-05 | release candidate |  |
 | [`2.3.4-rc.236`](#v-2-3-4-rc-236) | 2026-10-01 | release candidate |  |
@@ -645,6 +645,25 @@ _commit `ffabcdc` · changes since 2.2.1_
 
 # Develop builds
 
+<a id="v-0-0-0-develop-329"></a>
+
+## commons — develop 0.0.0-develop.329 (2026-10-28)
+
+_commit `7689a78` · changes since 0.0.0-develop.327_
+<!-- build:0.0.0-develop.329 revision:7689a788f0f692a76f4ece2a562616db38082278 ts:1793152614 -->
+
+**Charts:** [openg2p-commons-base 0.0.0-develop.329](https://openg2p.github.io/openg2p-helm/openg2p-commons-base-0.0.0-develop.329.tgz) · [openg2p-commons-services 0.0.0-develop.329](https://openg2p.github.io/openg2p-helm/openg2p-commons-services-0.0.0-develop.329.tgz)
+
+### Summary
+
+- New features: Introduced Partner Management with one policy per use case and catalogue dropdowns, and enhanced Consent Manager with full policy reference.
+- Data model updates: Added CONSENT_PURPOSE and SUBJECT_ID_TYPE to Master Data, improving data structure for consent management.
+
+### Changes
+
+- [G2P-5719](https://openg2p.atlassian.net/browse/G2P-5719) Commons: Partner Management develop.33, Consent Manager develop.86 ([`7689a78`](https://github.com/OpenG2P/commons/commit/7689a788f0f692a76f4ece2a562616db38082278))
+- [G2P-5719](https://openg2p.atlassian.net/browse/G2P-5719) Commons: Master Data develop.118 (CONSENT_PURPOSE, SUBJECT_ID_TYPE), Partner Management develop.32 (one policy per use case, catalogue dropdowns), Consent Manager develop.83 (full policy reference) ([`2534fdb`](https://github.com/OpenG2P/commons/commit/2534fdb4b934cd6c6827d07ac91216315bc938b3))
+
 <a id="v-0-0-0-develop-327"></a>
 
 ## commons — develop 0.0.0-develop.327 (2026-10-21)
@@ -973,25 +992,6 @@ _commit `daf1466` · changes since 0.0.0-develop.282_
 
 - [G2P-5719](https://openg2p.atlassian.net/browse/G2P-5719) commons-services: bump openg2p-master-data to develop.110, openg2p-awe to develop.92, partner-management to develop.29 (IAM registration as regular resources via iamRegister.runAsHook) ([`daf1466`](https://github.com/OpenG2P/commons/commit/daf1466dbe4fedbbfea4ce8a43288c39aad3d058))
 - [G2P-5719](https://openg2p.atlassian.net/browse/G2P-5719) Rancher forms: drop legacy and internal questions (MinIO, SoftHSM, keystore type, base-release service names), fix Consent Manager default (on), add Agent Portal hostname, show_if per feature; Keymanager kept on (PBMS uses it) with who-needs-it notes; Novu on by default and stored in Garage (novu bucket in the Garage init job) ([`22c8723`](https://github.com/OpenG2P/commons/commit/22c8723c9bdd7e9d39133236ea7e745538dc32f5))
-
-<a id="v-0-0-0-develop-282"></a>
-
-## commons — develop 0.0.0-develop.282 (2026-10-05)
-
-_commit `9048a94` · changes since 0.0.0-develop.280_
-<!-- build:0.0.0-develop.282 revision:9048a94f5ad2a93d136a428700ea853188c8e893 ts:1791194912 -->
-
-**Charts:** [openg2p-commons-base 0.0.0-develop.282](https://openg2p.github.io/openg2p-helm/openg2p-commons-base-0.0.0-develop.282.tgz) · [openg2p-commons-services 0.0.0-develop.282](https://openg2p.github.io/openg2p-helm/openg2p-commons-services-0.0.0-develop.282.tgz)
-
-### Summary
-
-- IAM enhancements: Master Data, AWE, and Partner Management now register as regular resources, addressing previous registration issues.
-- Bug fixes: Resolved mock identity-related issues to improve functionality.
-
-### Changes
-
-- [G2P-5719](https://openg2p.atlassian.net/browse/G2P-5719) commons-services: IAM registration for Master Data, AWE and Partner Management runs as regular resources (iamRegister.runAsHook: false); a failed hook elsewhere had left them unregistered in IAM ([`9048a94`](https://github.com/OpenG2P/commons/commit/9048a94f5ad2a93d136a428700ea853188c8e893))
-- Mock identity related fix. ([`6105468`](https://github.com/OpenG2P/commons/commit/6105468a2c39b2c10b0a110c21a1f3d8c2a2ebee))
 
 ---
 
