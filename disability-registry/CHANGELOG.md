@@ -6,10 +6,24 @@ _Published automatically._
 
 | Version | Date | Type | Notes |
 | --- | --- | --- | --- |
+| [`0.0.0-develop.13`](#v-0-0-0-develop-13) | 2026-10-28 | develop |  |
 | [`0.0.0-develop.12`](#v-0-0-0-develop-12) | 2026-10-21 | develop |  |
 | [`0.0.0-develop.10`](#v-0-0-0-develop-10) | 2026-08-28 | develop |  |
 
 # Develop builds
+
+<a id="v-0-0-0-develop-13"></a>
+
+## disability-registry — develop 0.0.0-develop.13 (2026-10-28)
+
+_commit `63b51f4` · changes since 0.0.0-develop.12_
+<!-- build:0.0.0-develop.13 revision:63b51f43b31828cc31f6a453539d0661dddc9ccb ts:1793152579 -->
+
+**Chart:** [openg2p-disability-registry 0.0.0-develop.13](https://openg2p.github.io/openg2p-helm/openg2p-disability-registry-0.0.0-develop.13.tgz)
+
+### Changes
+
+- Bumped up RP to 0.0.0-develop.625 ([`63b51f4`](https://github.com/OpenG2P/disability-registry/commit/63b51f43b31828cc31f6a453539d0661dddc9ccb))
 
 <a id="v-0-0-0-develop-12"></a>
 
