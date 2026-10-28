@@ -6,6 +6,7 @@ _Published automatically._
 
 | Version | Date | Type | Notes |
 | --- | --- | --- | --- |
+| [`0.0.0-develop.43`](#v-0-0-0-develop-43) | 2026-10-28 | develop |  |
 | [`0.0.0-develop.41`](#v-0-0-0-develop-41) | 2026-10-21 | develop |  |
 | [`0.0.0-develop.38`](#v-0-0-0-develop-38) | 2026-10-19 | develop |  |
 | [`0.0.0-develop.36`](#v-0-0-0-develop-36) | 2026-10-11 | develop |  |
@@ -24,6 +25,25 @@ _Published automatically._
 | [`0.0.0-develop.4`](#v-0-0-0-develop-4) | 2026-09-27 | develop |  |
 
 # Develop builds
+
+<a id="v-0-0-0-develop-43"></a>
+
+## crop-sown-registry — develop 0.0.0-develop.43 (2026-10-28)
+
+_commit `83f5f7e` · changes since 0.0.0-develop.41_
+<!-- build:0.0.0-develop.43 revision:83f5f7e4a81e1d0b58a83b4da511c54c6eeab5f5 ts:1793152481 -->
+
+**Chart:** [openg2p-crop-sown-registry 0.0.0-develop.43](https://openg2p.github.io/openg2p-helm/openg2p-crop-sown-registry-0.0.0-develop.43.tgz)
+
+### Summary
+
+- **Major:** Updated RP to version 0.0.0-develop.625, introducing significant changes to the registry.
+- Data model adjustment: changed `consentSubjectIdTypes` from UIN to FAYDA_FAN for improved consent lookup functionality.
+
+### Changes
+
+- Bumped up RP to 0.0.0-develop.625 ([`83f5f7e`](https://github.com/OpenG2P/crop-sown-registry/commit/83f5f7e4a81e1d0b58a83b4da511c54c6eeab5f5))
+- [G2P-5719](https://openg2p.atlassian.net/browse/G2P-5719) Chart: consentSubjectIdTypes UIN → FAYDA_FAN for consent lookup ([`dba6bb2`](https://github.com/OpenG2P/crop-sown-registry/commit/dba6bb289f086ab0ee45c79f20642f385f69ea61))
 
 <a id="v-0-0-0-develop-41"></a>
 
