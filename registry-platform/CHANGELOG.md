@@ -6,6 +6,7 @@ _Published automatically._
 
 | Version | Date | Type | Notes |
 | --- | --- | --- | --- |
+| [`1.2.2-rc.614`](#v-1-2-2-rc-614) | 2026-10-28 | release candidate |  |
 | [`1.2.2-rc.607`](#v-1-2-2-rc-607) | 2026-10-28 | release candidate |  |
 | [`0.0.0-develop.625`](#v-0-0-0-develop-625) | 2026-10-28 | develop |  |
 | [`1.2.2-rc.601`](#v-1-2-2-rc-601) | 2026-10-27 | release candidate |  |
@@ -19,7 +20,6 @@ _Published automatically._
 | [`1.2.2-rc.554`](#v-1-2-2-rc-554) | 2026-10-12 | release candidate |  |
 | [`0.0.0-develop.615`](#v-0-0-0-develop-615) | 2026-10-12 | develop |  |
 | [`0.0.0-develop.613`](#v-0-0-0-develop-613) | 2026-10-08 | develop |  |
-| [`1.2.2-rc.544`](#v-1-2-2-rc-544) | 2026-10-07 | release candidate |  |
 | [`0.0.0-develop.611`](#v-0-0-0-develop-611) | 2026-10-07 | develop |  |
 | [`0.0.0-develop.608`](#v-0-0-0-develop-608) | 2026-10-07 | develop |  |
 | [`0.0.0-develop.606`](#v-0-0-0-develop-606) | 2026-10-07 | develop |  |
@@ -355,6 +355,30 @@ same commit and *promoted* (retagged), not rebuilt. No code changed between them
 
 # Release candidates
 
+<a id="v-1-2-2-rc-614"></a>
+
+## registry-platform 1.2.2-rc.614 — 2026-10-28
+
+_commit `ca399ed` · changes since 1.2.2-rc.607_
+<!-- build:1.2.2-rc.614 revision:ca399ed3110f6f93d607bd406b22933554adcc5e ts:1793186140 -->
+
+**Chart:** [openg2p-registry 1.2.2-rc.614](https://openg2p.github.io/openg2p-helm/openg2p-registry-1.2.2-rc.614.tgz)
+
+### Summary
+
+- Feature enhancements: added support for cross-register intake form submission and conditional rendering of sections in intake form mode, improving user experience.
+- UI improvements: fixed dashboard carousel navigation by disabling arrows at the beginning and end, and ensured UI tests wait for intake validation and household record data.
+- Dependency updates: synchronized staff-ui to version 1.1.9-dev.16 and updated package manifests for both staff-ui and ui-widgets, reflecting changes in 4 dependencies.
+- Codebase maintenance: made significant changes across 26 files, with a total of 734 insertions and 261 deletions, optimizing the overall structure and functionality.
+
+### Changes
+
+- [G2P-5840](https://openg2p.atlassian.net/browse/G2P-5840) fix: wait for intake validation and household record data in UI tests ([`6ab7506`](https://github.com/OpenG2P/registry-platform/commit/6ab750633a7f2be1e3d76d09aec7e4a875d247e5))
+- chore(ui-widgets): version for npm dev publish, sync staff-ui @1.1.9-dev.16 ([`4173efc`](https://github.com/OpenG2P/registry-platform/commit/4173efc9737f6e619f58ed64fd9e40dfc8763d8a))
+- [G2P-5814](https://openg2p.atlassian.net/browse/G2P-5814) fix: disable dashboard carousel arrows at the beginning and end ([`e374c22`](https://github.com/OpenG2P/registry-platform/commit/e374c22910a1fb69ea72fde49273b309662f9bc6))
+- [G2P-5840](https://openg2p.atlassian.net/browse/G2P-5840) feat: support cross-register intake form submission ([`6b602fd`](https://github.com/OpenG2P/registry-platform/commit/6b602fdcd45548f417dcc614f203d0d006632e04))
+- [G2P-5844](https://openg2p.atlassian.net/browse/G2P-5844) feat: render sections conditionally in intake form mode ([`ab32876`](https://github.com/OpenG2P/registry-platform/commit/ab3287602360d7fd6bc564c779eab07ed3ad5788))
+
 <a id="v-1-2-2-rc-607"></a>
 
 ## registry-platform 1.2.2-rc.607 — 2026-10-28
@@ -556,19 +580,6 @@ _commit `242e8f8` · changes since 1.2.2-rc.544_
 - [G2P-5753](https://openg2p.atlassian.net/browse/G2P-5753) feat(dci): decode the four query types ([`e2eb547`](https://github.com/OpenG2P/registry-platform/commit/e2eb54723b8528c6b4d0c44d64ce98ff7303da94))
 - [G2P-5754](https://openg2p.atlassian.net/browse/G2P-5754) feat(dci): allowlist searchable columns ([`16eb155`](https://github.com/OpenG2P/registry-platform/commit/16eb155854f9729cd8cf835c4f7b72dd9b76d135))
 - [G2P-5755](https://openg2p.atlassian.net/browse/G2P-5755) feat(search): batch related-register loads ([`c8ba897`](https://github.com/OpenG2P/registry-platform/commit/c8ba897240a0170d38e9fbbeb3e0d0cf24f9f78f))
-
-<a id="v-1-2-2-rc-544"></a>
-
-## registry-platform 1.2.2-rc.544 — 2026-10-07
-
-_commit `323a982` · changes since 1.2.2-rc.542_
-<!-- build:1.2.2-rc.544 revision:323a9829c5a9a46888557c7e74ac0801cd609f49 ts:1791378963 -->
-
-**Chart:** [openg2p-registry 1.2.2-rc.544](https://openg2p.github.io/openg2p-helm/openg2p-registry-1.2.2-rc.544.tgz)
-
-### Changes
-
-- [G2P-5771](https://openg2p.atlassian.net/browse/G2P-5771) fix(celery): initialize services in celery worker ([`60b9501`](https://github.com/OpenG2P/registry-platform/commit/60b95010e806f355ceb8566ee6a283018c2cde82))
 
 <a id="v-1-2-1-rc-462"></a>
 
