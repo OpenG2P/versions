@@ -6,6 +6,7 @@ _Published automatically._
 
 | Version | Date | Type | Notes |
 | --- | --- | --- | --- |
+| [`0.0.0-develop.86`](#v-0-0-0-develop-86) | 2026-10-28 | develop |  |
 | [`0.0.0-develop.83`](#v-0-0-0-develop-83) | 2026-10-21 | develop |  |
 | [`0.0.0-develop.82`](#v-0-0-0-develop-82) | 2026-10-21 | develop |  |
 | [`0.0.0-develop.81`](#v-0-0-0-develop-81) | 2026-10-14 | develop |  |
@@ -276,6 +277,27 @@ _commit `c67030b` · changes since 0.0.0-develop.57_
 _No new commits since 0.0.0-develop.57._
 
 # Develop builds
+
+<a id="v-0-0-0-develop-86"></a>
+
+## consent-manager — develop 0.0.0-develop.86 (2026-10-28)
+
+_commit `efc351c` · changes since 0.0.0-develop.83_
+<!-- build:0.0.0-develop.86 revision:efc351c5132f85c38b0de4e31784ce14accba8ff ts:1792804224 -->
+
+**Chart:** [openg2p-consent-manager 0.0.0-develop.86](https://openg2p.github.io/openg2p-helm/openg2p-consent-manager-0.0.0-develop.86.tgz)
+
+### Summary
+
+- **Major:** Revamped consent management: introduced staff consent page with revocation on request, removed farmer pages from staff console, and added receipt withdrawal method as a configurable setting.
+- Enhanced partner API: restricted routes to JWKS with optional token status, implemented partner policy TTLs in Rancher, and updated console with new tabs for Consent Approvals and Access Log.
+- Updated data handling: renamed consent token type to `consent-token+jwt`, maintaining backward compatibility with `consent-receipt+jwt` for smoother upgrades across systems.
+
+### Changes
+
+- [G2P-5719](https://openg2p.atlassian.net/browse/G2P-5719) CM: staff consent page and revoke on the subject's request (reason recorded); farmer pages removed from the staff console; receipt withdrawal method is a setting ([`efc351c`](https://github.com/OpenG2P/consent-manager/commit/efc351c5132f85c38b0de4e31784ce14accba8ff))
+- [G2P-5719](https://openg2p.atlassian.net/browse/G2P-5719) CM: partner API routes only JWKS (+ optional token status) publicly; partner policy TTLs in Rancher form; console tabs Consent Approvals / Access Log; partner portal purposes and subject ID types from Master Data code lists ([`6615b6d`](https://github.com/OpenG2P/consent-manager/commit/6615b6d5b74e17e67bda8ddc225de53b072003b6))
+- [G2P-5719](https://openg2p.atlassian.net/browse/G2P-5719) Consent token typ renamed to consent-token+jwt (consent-receipt+jwt still recognised, so the Exchange and departments can upgrade separately) ([`054f310`](https://github.com/OpenG2P/consent-manager/commit/054f3109f7b6a01b467954d95a5ea9bb86db78f3))
 
 <a id="v-0-0-0-develop-83"></a>
 
