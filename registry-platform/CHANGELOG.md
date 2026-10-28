@@ -6,6 +6,7 @@ _Published automatically._
 
 | Version | Date | Type | Notes |
 | --- | --- | --- | --- |
+| [`1.2.2-rc.607`](#v-1-2-2-rc-607) | 2026-10-28 | release candidate |  |
 | [`0.0.0-develop.625`](#v-0-0-0-develop-625) | 2026-10-28 | develop |  |
 | [`1.2.2-rc.601`](#v-1-2-2-rc-601) | 2026-10-27 | release candidate |  |
 | [`1.2.2-rc.593`](#v-1-2-2-rc-593) | 2026-10-26 | release candidate |  |
@@ -19,7 +20,6 @@ _Published automatically._
 | [`0.0.0-develop.615`](#v-0-0-0-develop-615) | 2026-10-12 | develop |  |
 | [`0.0.0-develop.613`](#v-0-0-0-develop-613) | 2026-10-08 | develop |  |
 | [`1.2.2-rc.544`](#v-1-2-2-rc-544) | 2026-10-07 | release candidate |  |
-| [`1.2.2-rc.542`](#v-1-2-2-rc-542) | 2026-10-07 | release candidate |  |
 | [`0.0.0-develop.611`](#v-0-0-0-develop-611) | 2026-10-07 | develop |  |
 | [`0.0.0-develop.608`](#v-0-0-0-develop-608) | 2026-10-07 | develop |  |
 | [`0.0.0-develop.606`](#v-0-0-0-develop-606) | 2026-10-07 | develop |  |
@@ -355,6 +355,29 @@ same commit and *promoted* (retagged), not rebuilt. No code changed between them
 
 # Release candidates
 
+<a id="v-1-2-2-rc-607"></a>
+
+## registry-platform 1.2.2-rc.607 — 2026-10-28
+
+_commit `57ba3e7` · changes since 1.2.2-rc.601_
+<!-- build:1.2.2-rc.607 revision:57ba3e7c3268f7629a656450c66cb49ac725147c ts:1793171693 -->
+
+**Chart:** [openg2p-registry 1.2.2-rc.607](https://openg2p.github.io/openg2p-helm/openg2p-registry-1.2.2-rc.607.tgz)
+
+### Summary
+
+- New intake features: added submission validation, enhanced inflight parent link retrieval with search and pagination, and implemented search functionality for register and inflight intake.
+- Data sanitization: introduced sanitization for unapproved parent links during intake ingestion.
+- Codebase updates: significant modifications across 11 files with a total of 1445 insertions and 90 deletions, impacting the API and tests.
+
+### Changes
+
+- [G2P-5821](https://openg2p.atlassian.net/browse/G2P-5821) feat(celery): sanitize unapproved parent links on intake ingest ([`a0b8335`](https://github.com/OpenG2P/registry-platform/commit/a0b833550a730ccb68022594642c7deea55fa7c7))
+- [G2P-5821](https://openg2p.atlassian.net/browse/G2P-5821) feat(intake): add submission validation and parent link readiness ([`c50957a`](https://github.com/OpenG2P/registry-platform/commit/c50957a04b39177ad7e910f29bb938d3468b5f2d))
+- [G2P-5821](https://openg2p.atlassian.net/browse/G2P-5821) feat(intake): implement search in register and inflight intake functionality ([`91fccf7`](https://github.com/OpenG2P/registry-platform/commit/91fccf72a2df6e8d643fcd5066cc46eabcc37ad6))
+- feat(intake): enhance inflight register parents retrieval with search and pagination ([`f26550b`](https://github.com/OpenG2P/registry-platform/commit/f26550b9b4d9b44a837038e4b2a6f4b0121c4078))
+- feat(intake): add inflight register parent lookup ([`6c099f6`](https://github.com/OpenG2P/registry-platform/commit/6c099f69823c3a05fb7559586916ca7a7452307f))
+
 <a id="v-1-2-2-rc-601"></a>
 
 ## registry-platform 1.2.2-rc.601 — 2026-10-27
@@ -546,28 +569,6 @@ _commit `323a982` · changes since 1.2.2-rc.542_
 ### Changes
 
 - [G2P-5771](https://openg2p.atlassian.net/browse/G2P-5771) fix(celery): initialize services in celery worker ([`60b9501`](https://github.com/OpenG2P/registry-platform/commit/60b95010e806f355ceb8566ee6a283018c2cde82))
-
-<a id="v-1-2-2-rc-542"></a>
-
-## registry-platform 1.2.2-rc.542 — 2026-10-07
-
-_commit `11b2761` · changes since 1.2.2-rc.536_
-<!-- build:1.2.2-rc.542 revision:11b276136fd575f667bcea34af67e95983b299e9 ts:1791368229 -->
-
-**Chart:** [openg2p-registry 1.2.2-rc.542](https://openg2p.github.io/openg2p-helm/openg2p-registry-1.2.2-rc.542.tgz)
-
-### Summary
-
-- New feature: introduced FilePreview component for enhanced file previews in templates.
-- UI updates: modified change request button background color to primary_color_1 and fixed backspace functionality in dialogue table popups.
-- Dependency management: updated staff-ui to version 1.1.9-dev.11 and adjusted related package manifests across multiple files.
-
-### Changes
-
-- chore(ui-widgets): version for npm dev publish, sync staff-ui @1.1.9-dev.11 ([`11b2761`](https://github.com/OpenG2P/registry-platform/commit/11b276136fd575f667bcea34af67e95983b299e9))
-- [G2P-5768](https://openg2p.atlassian.net/browse/G2P-5768) feat(ui): add FilePreview component and update templates to use it for file previews ([`9e4bd78`](https://github.com/OpenG2P/registry-platform/commit/9e4bd78df408b920d4b10c0a3d634b337bf8b71a))
-- [G2P-5686](https://openg2p.atlassian.net/browse/G2P-5686): use primary_color_1 for change request old value button bg ([`4e90d62`](https://github.com/OpenG2P/registry-platform/commit/4e90d6286c1640af9d773b6e34c5d4225c53b190))
--  [G2P-5733](https://openg2p.atlassian.net/browse/G2P-5733) fix: backspace button is not working on dialogue table popup ([`da35c34`](https://github.com/OpenG2P/registry-platform/commit/da35c34d52e9c9a0a74f1db4fb3e3c4307e0bca4))
 
 <a id="v-1-2-1-rc-462"></a>
 
