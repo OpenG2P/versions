@@ -6,6 +6,7 @@ _Published automatically._
 
 | Version | Date | Type | Notes |
 | --- | --- | --- | --- |
+| [`0.0.0-develop.625`](#v-0-0-0-develop-625) | 2026-10-28 | develop |  |
 | [`1.2.2-rc.601`](#v-1-2-2-rc-601) | 2026-10-27 | release candidate |  |
 | [`1.2.2-rc.593`](#v-1-2-2-rc-593) | 2026-10-26 | release candidate |  |
 | [`1.2.2-rc.585`](#v-1-2-2-rc-585) | 2026-10-23 | release candidate |  |
@@ -39,7 +40,6 @@ _Published automatically._
 | [`1.2.1-rc.462`](#v-1-2-1-rc-462) | 2026-09-04 | release candidate |  |
 | [`1.2.1-rc.447`](#v-1-2-1-rc-447) | 2026-09-04 | release candidate |  |
 | [`1.2.1-rc.445`](#v-1-2-1-rc-445) | 2026-09-03 | release candidate |  |
-| [`0.0.0-develop.430`](#v-0-0-0-develop-430) | 2026-09-03 | develop |  |
 | [`1.2.1-rc.443`](#v-1-2-1-rc-443) | 2026-09-03 | release candidate |  |
 | [`1.2.0`](#v-1-2-0) | 2026-09-01 | release |  |
 | [`1.2.0-rc.440`](#v-1-2-0-rc-440) | 2026-09-01 | release candidate |  |
@@ -926,6 +926,27 @@ _commit `9b41f96` · changes since v1.0.0_
 
 # Develop builds
 
+<a id="v-0-0-0-develop-625"></a>
+
+## registry-platform — develop 0.0.0-develop.625 (2026-10-28)
+
+_commit `98223a1` · changes since 0.0.0-develop.621_
+<!-- build:0.0.0-develop.625 revision:98223a1bc269116b47e5bc441fa6e30d09b2ccb1 ts:1793152088 -->
+
+**Chart:** [openg2p-registry 0.0.0-develop.625](https://openg2p.github.io/openg2p-helm/openg2p-registry-0.0.0-develop.625.tgz)
+
+### Summary
+
+- Partner API enhancements: introduced consent by lookup for idtype-value searches, added consent, token, and released scopes to audit events, and implemented a sanity policy for partner consents.
+- Data scope catalogue updates: made the catalogue readable and unsigned by default, with clear explanations in Partner Management on exposed values and disabling options.
+- UI widgets maintenance: published a new version for npm and synchronized staff-ui to version 1.1.9-dev.15.
+
+### Changes
+
+- [G2P-5719](https://openg2p.atlassian.net/browse/G2P-5719) Partner API: consent by lookup for idtype-value searches without a consent (consentSubjectIdTypes mapping); consent, token and released scopes in audit events; sanity policy allows partner consents ([`a28f362`](https://github.com/OpenG2P/registry-platform/commit/a28f362bcda7db3efe256132bab7b37edde7cf2c))
+- [G2P-5719](https://openg2p.atlassian.net/browse/G2P-5719) Data scope catalogue readable unsigned by default (Partner Management offers scopes as a checklist); values and Rancher text explain what it exposes and how to turn it off ([`8a6d06f`](https://github.com/OpenG2P/registry-platform/commit/8a6d06f360264335d0e293c8c2384a781778f0bc))
+- chore(ui-widgets): version for npm dev publish, sync staff-ui @1.1.9-dev.15 [skip ci] ([`e3e52e1`](https://github.com/OpenG2P/registry-platform/commit/e3e52e1d56fd5a21b51f47c156bd4a80a328ace7))
+
 <a id="v-0-0-0-develop-621"></a>
 
 ## registry-platform — develop 0.0.0-develop.621 (2026-10-21)
@@ -1386,19 +1407,6 @@ _commit `c754000` · changes since 0.0.0-develop.430_
 
 - [G2P-4929](https://openg2p.atlassian.net/browse/G2P-4929) Reject duplicate credential ids before they collide in Certify ([`c754000`](https://github.com/OpenG2P/registry-platform/commit/c7540007f7c51661bc1c68a7b8009a21e6d5758d))
 - [G2P-4929](https://openg2p.atlassian.net/browse/G2P-4929) Carry the credential type through look-up and authentication, not just issue ([`5a9dc7a`](https://github.com/OpenG2P/registry-platform/commit/5a9dc7aadab4ac614ee720836a9712cf2b22ad71))
-
-<a id="v-0-0-0-develop-430"></a>
-
-## registry-platform — develop 0.0.0-develop.430 (2026-09-03)
-
-_commit `42fabd9` · changes since 0.0.0-develop.429_
-<!-- build:0.0.0-develop.430 revision:42fabd9fd8cf36a640d85ab03b85ff5885a4c9d3 ts:1788432261 -->
-
-**Chart:** [openg2p-registry 0.0.0-develop.430](https://openg2p.github.io/openg2p-helm/openg2p-registry-0.0.0-develop.430.tgz)
-
-### Changes
-
-- [G2P-4929](https://openg2p.atlassian.net/browse/G2P-4929) Expose baseDomain in the Rancher form and stop three question defaults from overriding it: add global.baseDomain as the first General question, and drop the hardcoded agentPortal/esignet/certify defaults so values.yaml stays the single source (CI backfills them). NSR now derives registryHostname from baseDomain like FR ([`42fabd9`](https://github.com/OpenG2P/registry-platform/commit/42fabd9fd8cf36a640d85ab03b85ff5885a4c9d3))
 
 ---
 
