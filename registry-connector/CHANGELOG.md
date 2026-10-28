@@ -6,9 +6,23 @@ _Published automatically._
 
 | Version | Date | Type | Notes |
 | --- | --- | --- | --- |
+| [`0.0.0-develop.11`](#v-0-0-0-develop-11) | 2026-10-28 | develop |  |
 | [`0.0.0-develop.9`](#v-0-0-0-develop-9) | 2026-10-21 | develop |  |
 
 # Develop builds
+
+<a id="v-0-0-0-develop-11"></a>
+
+## registry-connector — develop 0.0.0-develop.11 (2026-10-28)
+
+_commit `c535ba0` · changes since 0.0.0-develop.9_
+<!-- build:0.0.0-develop.11 revision:c535ba0c89c7a53ca4ca618b31c3b863bc92b22a ts:1793185899 -->
+
+**Chart:** [registry-connector 0.0.0-develop.11](https://openg2p.github.io/openg2p-helm/registry-connector-0.0.0-develop.11.tgz)
+
+### Changes
+
+- fix: store last_poll_at as TIMESTAMPTZ ([`42d7c1a`](https://github.com/OpenG2P/registry-connector/commit/42d7c1aa16dac331a22b1b2b1ec59f5998e4fb86))
 
 <a id="v-0-0-0-develop-9"></a>
 
