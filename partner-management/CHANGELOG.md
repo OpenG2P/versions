@@ -6,6 +6,7 @@ _Published automatically._
 
 | Version | Date | Type | Notes |
 | --- | --- | --- | --- |
+| [`0.0.0-develop.33`](#v-0-0-0-develop-33) | 2026-10-28 | develop |  |
 | [`0.0.0-develop.32`](#v-0-0-0-develop-32) | 2026-10-21 | develop |  |
 | [`0.0.0-develop.31`](#v-0-0-0-develop-31) | 2026-10-21 | develop |  |
 | [`0.0.0-develop.30`](#v-0-0-0-develop-30) | 2026-10-21 | develop |  |
@@ -239,6 +240,19 @@ _commit `bb96ff2` · changes since 0.0.0-develop.24_
 _No new commits since 0.0.0-develop.24._
 
 # Develop builds
+
+<a id="v-0-0-0-develop-33"></a>
+
+## partner-management — develop 0.0.0-develop.33 (2026-10-28)
+
+_commit `b17b200` · changes since 0.0.0-develop.32_
+<!-- build:0.0.0-develop.33 revision:b17b200598c7d020861e16927ea8cfdc2e9b9f74 ts:1792588400 -->
+
+**Chart:** [partner-management 0.0.0-develop.33](https://openg2p.github.io/openg2p-helm/partner-management-0.0.0-develop.33.tgz)
+
+### Changes
+
+- [G2P-5719](https://openg2p.atlassian.net/browse/G2P-5719) Policy field allow_partner_consents (default false): model/migration, PolicyInput/PolicyOut, UI checkbox and summaries, tests ([`b17b200`](https://github.com/OpenG2P/partner-management/commit/b17b200598c7d020861e16927ea8cfdc2e9b9f74))
 
 <a id="v-0-0-0-develop-32"></a>
 
