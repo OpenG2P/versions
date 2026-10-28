@@ -6,6 +6,7 @@ _Published automatically._
 
 | Version | Date | Type | Notes |
 | --- | --- | --- | --- |
+| [`0.0.0-develop.250`](#v-0-0-0-develop-250) | 2026-10-28 | develop |  |
 | [`0.0.0-develop.248`](#v-0-0-0-develop-248) | 2026-10-21 | develop |  |
 | [`0.0.0-develop.244`](#v-0-0-0-develop-244) | 2026-09-04 | develop |  |
 | [`0.0.0-develop.242`](#v-0-0-0-develop-242) | 2026-08-28 | develop |  |
@@ -267,6 +268,24 @@ _commit `ddfda05` · first release_
 - Initial commit ([`c2126d7`](https://github.com/OpenG2P/national-social-registry/commit/c2126d7e3adbd68af0bdbf579b67cb53cfd8ae49))
 
 # Develop builds
+
+<a id="v-0-0-0-develop-250"></a>
+
+## national-social-registry — develop 0.0.0-develop.250 (2026-10-28)
+
+_commit `71503ea` · changes since 0.0.0-develop.248_
+<!-- build:0.0.0-develop.250 revision:71503ea8237e0855eb095eddbba8f4e9c8191bb6 ts:1793152549 -->
+
+**Chart:** [openg2p-nsr 0.0.0-develop.250](https://openg2p.github.io/openg2p-helm/openg2p-nsr-0.0.0-develop.250.tgz)
+
+### Summary
+
+- Version updates: bumped RP to 0.0.0-develop.625 and updated the RP version.
+
+### Changes
+
+- Bumped up RP to 0.0.0-develop.625 ([`71503ea`](https://github.com/OpenG2P/national-social-registry/commit/71503ea8237e0855eb095eddbba8f4e9c8191bb6))
+- Bumped up RP version ([`ae75197`](https://github.com/OpenG2P/national-social-registry/commit/ae75197f412fe19b5d551cdb07139b2fcaca3986))
 
 <a id="v-0-0-0-develop-248"></a>
 
