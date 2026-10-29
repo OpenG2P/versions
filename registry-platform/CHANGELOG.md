@@ -6,6 +6,7 @@ _Published automatically._
 
 | Version | Date | Type | Notes |
 | --- | --- | --- | --- |
+| [`1.2.2-rc.625`](#v-1-2-2-rc-625) | 2026-10-29 | release candidate |  |
 | [`1.2.2-rc.614`](#v-1-2-2-rc-614) | 2026-10-28 | release candidate |  |
 | [`1.2.2-rc.607`](#v-1-2-2-rc-607) | 2026-10-28 | release candidate |  |
 | [`0.0.0-develop.625`](#v-0-0-0-develop-625) | 2026-10-28 | develop |  |
@@ -17,7 +18,6 @@ _Published automatically._
 | [`1.2.2-rc.565`](#v-1-2-2-rc-565) | 2026-10-16 | release candidate |  |
 | [`1.2.2-rc.559`](#v-1-2-2-rc-559) | 2026-10-16 | release candidate |  |
 | [`1.2.2-rc.557`](#v-1-2-2-rc-557) | 2026-10-14 | release candidate |  |
-| [`1.2.2-rc.554`](#v-1-2-2-rc-554) | 2026-10-12 | release candidate |  |
 | [`0.0.0-develop.615`](#v-0-0-0-develop-615) | 2026-10-12 | develop |  |
 | [`0.0.0-develop.613`](#v-0-0-0-develop-613) | 2026-10-08 | develop |  |
 | [`0.0.0-develop.611`](#v-0-0-0-develop-611) | 2026-10-07 | develop |  |
@@ -355,6 +355,33 @@ same commit and *promoted* (retagged), not rebuilt. No code changed between them
 
 # Release candidates
 
+<a id="v-1-2-2-rc-625"></a>
+
+## registry-platform 1.2.2-rc.625 — 2026-10-29
+
+_commit `29d2a23` · changes since 1.2.2-rc.614_
+<!-- build:1.2.2-rc.625 revision:29d2a2397ef9fa09308561e15ae9aa444a4fcd7c ts:1793282441 -->
+
+**Chart:** [openg2p-registry 1.2.2-rc.625](https://openg2p.github.io/openg2p-helm/openg2p-registry-1.2.2-rc.625.tgz)
+
+### Summary
+
+- **Major:** New multi-calendar date picker feature with Gregorian storage added to the UI widgets.
+- UI enhancements: fixes for date pattern tokenization and narrowing, including explicit handling for TypeScript compatibility.
+- Dependency updates: synchronized staff-ui to version 1.1.9-dev.17 and updated package-lock files for ui-widgets and staff-ui.
+- Maintenance: re-triggered functional gate to address flaky tests and removed demo changes from the multi-calendar PR.
+
+### Changes
+
+- [G2P-5840](https://openg2p.atlassian.net/browse/G2P-5840) fix(intake-form): hide sections from section-data-options in read and edit ([`1f30a59`](https://github.com/OpenG2P/registry-platform/commit/1f30a59af09af0ff5588fd1c0a9ba5d213303972))
+- chore(ui-widgets): version for npm dev publish, sync staff-ui @1.1.9-dev.17 ([`e87c4d9`](https://github.com/OpenG2P/registry-platform/commit/e87c4d9f8006622d59f234967aa8e7faf6e06e03))
+- fix(ui-widgets): narrow date pattern lit tokens explicitly ([`69a09c3`](https://github.com/OpenG2P/registry-platform/commit/69a09c319df35c2574fb89a9a826c544bd1a0ca9))
+- chore: re-trigger functional gate after flaky household CR poll ([`ddeb006`](https://github.com/OpenG2P/registry-platform/commit/ddeb0061d842095c30e7093402eb4468c81d8b66))
+- fix(ui-widgets): narrow DatePatternToken for tsc ([`95c44f8`](https://github.com/OpenG2P/registry-platform/commit/95c44f805823a56b496af466b124104d038a81e0))
+- fix(ui-widgets): tokenize calendar date pattern parsing ([`6f0021b`](https://github.com/OpenG2P/registry-platform/commit/6f0021bc5c104e8aee87361b4696a439d2f65c4e))
+- chore(ui-widgets): drop example-ui-schema demo changes from multi-calendar PR ([`b6b0a04`](https://github.com/OpenG2P/registry-platform/commit/b6b0a04dec2d79ac8ed16b11de61ec129a9c8a25))
+- feat(ui-widgets): multi-calendar date picker with Gregorian storage ([`8a90c5e`](https://github.com/OpenG2P/registry-platform/commit/8a90c5e6ab1c4567306e3e90ca818b842cd55615))
+
 <a id="v-1-2-2-rc-614"></a>
 
 ## registry-platform 1.2.2-rc.614 — 2026-10-28
@@ -552,34 +579,6 @@ _commit `4d5482d` · changes since 1.2.2-rc.554_
 
 - chore(ui-widgets): version for npm dev publish, sync staff-ui @1.1.9-dev.13 ([`4d5482d`](https://github.com/OpenG2P/registry-platform/commit/4d5482dfea23d1accf98fe474fb90ed6ddb5f651))
 - [G2P-5774](https://openg2p.atlassian.net/browse/G2P-5774) refactor(ui-widgets): set null for empty values across multiple widgets ([`bda0833`](https://github.com/OpenG2P/registry-platform/commit/bda08337a9e33cfff88947dadbabe473902fbb46))
-
-<a id="v-1-2-2-rc-554"></a>
-
-## registry-platform 1.2.2-rc.554 — 2026-10-12
-
-_commit `242e8f8` · changes since 1.2.2-rc.544_
-<!-- build:1.2.2-rc.554 revision:242e8f82bc8db91da45207776dd8d6aa87d0b490 ts:1791799738 -->
-
-**Chart:** [openg2p-registry 1.2.2-rc.554](https://openg2p.github.io/openg2p-helm/openg2p-registry-1.2.2-rc.554.tgz)
-
-### Summary
-
-- **Major:** Integration with WebSub: updated base URL to commons-services, pointed the registry at the commons WebSub hub, and implemented request denial handling.
-- New features in DCI: published async search on the partner topic, decoded four query types, and allowed searchable columns to be allowlisted.
-- Enhancements in outgest: added partner and register topics to improve data handling.
-- Performance improvements: implemented batch loading for related-register queries to optimize search operations.
-
-### Changes
-
-- chore(env): update WebSub base URL to commons-services ([`eadcffa`](https://github.com/OpenG2P/registry-platform/commit/eadcffa92e6a678acbdb64b7bd1a25209e7d192c))
-- chore(env): update .env.example ([`1512d7f`](https://github.com/OpenG2P/registry-platform/commit/1512d7f9c2c8a844afe1746aa1e65dd5b39a4206))
-- [G2P-5756](https://openg2p.atlassian.net/browse/G2P-5756) feat(helm): point the registry at the commons websub hub ([`0b8bbbd`](https://github.com/OpenG2P/registry-platform/commit/0b8bbbd51c387251d45d7b4820f657808a2e5d12))
-- [G2P-5756](https://openg2p.atlassian.net/browse/G2P-5756) fix(websub): fail when the hub denies a request ([`a635618`](https://github.com/OpenG2P/registry-platform/commit/a6356181e04f5091121f768519aa6a98908b67da))
-- [G2P-5756](https://openg2p.atlassian.net/browse/G2P-5756) feat(dci): publish async search on the partner topic ([`dedf0b3`](https://github.com/OpenG2P/registry-platform/commit/dedf0b352bdfe58fa8f886c781a7a2290dc597d6))
-- [G2P-5756](https://openg2p.atlassian.net/browse/G2P-5756) feat(outgest): add partner and register topics ([`048550e`](https://github.com/OpenG2P/registry-platform/commit/048550ea2011c719e441e1eac17989fef9102433))
-- [G2P-5753](https://openg2p.atlassian.net/browse/G2P-5753) feat(dci): decode the four query types ([`e2eb547`](https://github.com/OpenG2P/registry-platform/commit/e2eb54723b8528c6b4d0c44d64ce98ff7303da94))
-- [G2P-5754](https://openg2p.atlassian.net/browse/G2P-5754) feat(dci): allowlist searchable columns ([`16eb155`](https://github.com/OpenG2P/registry-platform/commit/16eb155854f9729cd8cf835c4f7b72dd9b76d135))
-- [G2P-5755](https://openg2p.atlassian.net/browse/G2P-5755) feat(search): batch related-register loads ([`c8ba897`](https://github.com/OpenG2P/registry-platform/commit/c8ba897240a0170d38e9fbbeb3e0d0cf24f9f78f))
 
 <a id="v-1-2-1-rc-462"></a>
 
