@@ -6,6 +6,7 @@ _Published automatically._
 
 | Version | Date | Type | Notes |
 | --- | --- | --- | --- |
+| [`0.0.0-develop.43`](#v-0-0-0-develop-43) | 2026-10-30 | develop |  |
 | [`0.0.0-develop.39`](#v-0-0-0-develop-39) | 2026-09-29 | develop |  |
 | [`0.0.0-develop.38`](#v-0-0-0-develop-38) | 2026-09-28 | develop |  |
 | [`0.0.0-develop.32`](#v-0-0-0-develop-32) | 2026-09-24 | develop |  |
@@ -13,6 +14,25 @@ _Published automatically._
 | [`0.0.0-develop.26`](#v-0-0-0-develop-26) | 2026-09-17 | develop |  |
 
 # Develop builds
+
+<a id="v-0-0-0-develop-43"></a>
+
+## openg2p-registry-dr-hh-extensions — develop 0.0.0-develop.43 (2026-10-30)
+
+_commit `7aec25c` · changes since 0.0.0-develop.39_
+<!-- build:0.0.0-develop.43 revision:7aec25c6904626f63e4e3f43f89826a3a6b4cf67 ts:1793352683 -->
+
+**Chart:** [dom-household-registry 0.0.0-develop.43](https://openg2p.github.io/openg2p-helm/dom-household-registry-0.0.0-develop.43.tgz)
+
+### Summary
+
+_AI summary unavailable — re-run the workflow with `changelog_regenerate=0.0.0-develop.43` to generate it._
+
+### Changes
+
+- Accept the extra master-data codes for dwelling, wall, roof, floor, relationship, and education. ([`ad60135`](https://github.com/OpenG2P/openg2p-registry-dr-hh-extensions/commit/ad6013522e2266af51e4e6921733938abf12d0a1))
+- Store the other numeric household enums as text codes so varchar updates accept them. ([`526a441`](https://github.com/OpenG2P/openg2p-registry-dr-hh-extensions/commit/526a441ed0a942e700040d319dcb877bed0bcef1))
+- Store ICV category as its text code so household approval can write the varchar column. ([`a7f839a`](https://github.com/OpenG2P/openg2p-registry-dr-hh-extensions/commit/a7f839aea8413a2239c37d82e4af7d5e5f30c385))
 
 <a id="v-0-0-0-develop-39"></a>
 
