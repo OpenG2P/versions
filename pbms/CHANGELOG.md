@@ -6,9 +6,36 @@ _Published automatically._
 
 | Version | Date | Type | Notes |
 | --- | --- | --- | --- |
+| [`0.0.0-develop.18`](#v-0-0-0-develop-18) | 2026-10-30 | develop |  |
 | [`0.0.0-develop.11`](#v-0-0-0-develop-11) | 2026-08-28 | develop |  |
 
 # Develop builds
+
+<a id="v-0-0-0-develop-18"></a>
+
+## pbms — develop 0.0.0-develop.18 (2026-10-30)
+
+_commit `6e69621` · changes since 0.0.0-develop.11_
+<!-- build:0.0.0-develop.18 revision:6e6962128616de9dbc56642a3618f32c207af75f ts:1793365610 -->
+
+**Chart:** [openg2p-pbms-platform 0.0.0-develop.18](https://openg2p.github.io/openg2p-helm/openg2p-pbms-platform-0.0.0-develop.18.tgz)
+
+### Summary
+
+- **Major:** Refactor of Helm chart, renaming to `openg2p-pbms-platform`, and merging Celery beat and worker into a single image.
+- Refactoring of background task routing and search functionality through adapters, enhancing modularity.
+- Registry extensions have been relocated to `pbms-connectors`, streamlining the architecture.
+- Transition from `sql_query` rules to `pbms_domain`, simplifying rule management. 
+- CI improvements with the publication of base images and platform charts for better deployment processes.
+
+### Changes
+
+- [G2P-5803](https://openg2p.atlassian.net/browse/G2P-5803) build(ci): publish base images and platform chart ([`e079ecf`](https://github.com/OpenG2P/pbms/commit/e079ecfddd3fdf91100293493b058e27ed64354b))
+- [G2P-5803](https://openg2p.atlassian.net/browse/G2P-5803) refactor(helm)!: rename chart to openg2p-pbms-platform ([`08c8534`](https://github.com/OpenG2P/pbms/commit/08c85342fefcb5fa5de30041cf3d5790867d6b52))
+- [G2P-5803](https://openg2p.atlassian.net/browse/G2P-5803) refactor!: merge celery beat and worker into one image ([`0c7bbb3`](https://github.com/OpenG2P/pbms/commit/0c7bbb35bb273bb68a777a372a7b57fc0933f72c))
+- [G2P-5803](https://openg2p.atlassian.net/browse/G2P-5803) refactor!: route bg tasks and search through adapters ([`254ab60`](https://github.com/OpenG2P/pbms/commit/254ab6011440c23b1dfa4e05c2a3f04e5468c0fe))
+- [G2P-5803](https://openg2p.atlassian.net/browse/G2P-5803) refactor!: move registry extensions to pbms-connectors ([`4bf6f59`](https://github.com/OpenG2P/pbms/commit/4bf6f59f8a10f02a3ce4c58443d617163139300c))
+- [G2P-5803](https://openg2p.atlassian.net/browse/G2P-5803) refactor!: drop sql_query rules in favor of pbms_domain ([`a98dbf3`](https://github.com/OpenG2P/pbms/commit/a98dbf339e72dad024d4bc4446018a36e51d99fa))
 
 <a id="v-0-0-0-develop-11"></a>
 
