@@ -6,6 +6,7 @@ _Published automatically._
 
 | Version | Date | Type | Notes |
 | --- | --- | --- | --- |
+| [`1.2.1-rc.210`](#v-1-2-1-rc-210) | 2026-10-30 | release candidate |  |
 | [`0.0.0-develop.282`](#v-0-0-0-develop-282) | 2026-10-28 | develop |  |
 | [`1.2.1-rc.199`](#v-1-2-1-rc-199) | 2026-10-27 | release candidate |  |
 | [`1.2.1-rc.194`](#v-1-2-1-rc-194) | 2026-10-26 | release candidate |  |
@@ -27,7 +28,6 @@ _Published automatically._
 | [`0.0.0-develop.215`](#v-0-0-0-develop-215) | 2026-10-01 | develop |  |
 | [`0.0.0-develop.211`](#v-0-0-0-develop-211) | 2026-09-27 | develop |  |
 | [`1.2.1-rc.178`](#v-1-2-1-rc-178) | 2026-09-25 | release candidate |  |
-| [`1.2.1-rc.176`](#v-1-2-1-rc-176) | 2026-09-25 | release candidate |  |
 | [`0.0.0-develop.209`](#v-0-0-0-develop-209) | 2026-09-23 | develop |  |
 | [`0.0.0-develop.207`](#v-0-0-0-develop-207) | 2026-09-12 | develop |  |
 | [`0.0.0-develop.206`](#v-0-0-0-develop-206) | 2026-09-03 | develop | **Intermediate Stable Version**. VC issuance and verification both working fine. Compatible with commons 0.0.0-develop.243. |
@@ -210,6 +210,32 @@ _commit `7055a71` · first release_
 
 # Release candidates
 
+<a id="v-1-2-1-rc-210"></a>
+
+## farmer-registry 1.2.1-rc.210 — 2026-10-30
+
+_commit `4166d39` · changes since 1.2.1-rc.199_
+<!-- build:1.2.1-rc.210 revision:4166d399c10ff8b94dba5dba7f55fccdc9d654df ts:1793352490 -->
+
+**Chart:** [openg2p-farmer-registry 1.2.1-rc.210](https://openg2p.github.io/openg2p-helm/openg2p-farmer-registry-1.2.1-rc.210.tgz)
+
+### Summary
+
+- **Major:** Refactor SQL insert statements for G2P registry and intake forms, reintroducing household farmer personal identification and socio-economic sections, while removing household intake.
+- Version updates: Bumped RP_VERSION to 1.2.2-rc.625 and 1.2.2-rc.557 in Dockerfiles and Chart.yaml, and updated Docker images for celery, partner-api, and staff-api.
+- Feature enhancements: Added validation for household state and farmer household status during intake submission.
+- SQL updates: Revised section order for farmer intake forms and added new SQL entries for household and outgoing templates.
+
+### Changes
+
+- Update Dockerfiles to use new image names for celery and partner-api; reintroduce SQL insert statements for household farmer personal identification and socio-economic sections in metadata. ([`8334bb3`](https://github.com/OpenG2P/farmer-registry/commit/8334bb31f158dee56c15c1f41b59829c57a70641))
+- Bump RP_VERSION to 1.2.2-rc.625 in Dockerfiles and Chart.yaml; update SQL tab section order for farmer intake forms. ([`4063159`](https://github.com/OpenG2P/farmer-registry/commit/40631593f890e117b93b40374d9dc1810e881fa2))
+- [G2P-5849](https://openg2p.atlassian.net/browse/G2P-5849) Refactor SQL insert statements for G2P registry and intake forms and remove household intake ([`c13dd55`](https://github.com/OpenG2P/farmer-registry/commit/c13dd55c2cd8d0c000d20b7137c983dcce99f85b))
+- Bump RP_VERSION to 1.2.2-rc.557 in Dockerfiles for celery, partner-api, and staff-api ([`3e2b0f5`](https://github.com/OpenG2P/farmer-registry/commit/3e2b0f5b2a431f6778e59457295cdc87e3597212))
+- [G2P-5821](https://openg2p.atlassian.net/browse/G2P-5821) feat(intake): validate household state on submit ([`8ae2f70`](https://github.com/OpenG2P/farmer-registry/commit/8ae2f70e9454f41d4ec3d211356488161511a79f))
+- [G2P-5821](https://openg2p.atlassian.net/browse/G2P-5821) feat(intake): validate farmer household status ([`9b1afd8`](https://github.com/OpenG2P/farmer-registry/commit/9b1afd8691a3a6a1d7011a978dfc0330b362aba2))
+- Update Dockerfiles to use version 1.2.0-rc.434 and refactor image names; add new SQL entries for household and outgoing templates. ([`fb3edf6`](https://github.com/OpenG2P/farmer-registry/commit/fb3edf6bfb8fc13a4f46ad122d69190ee0591cc9))
+
 <a id="v-1-2-1-rc-199"></a>
 
 ## farmer-registry 1.2.1-rc.199 — 2026-10-27
@@ -345,19 +371,6 @@ _commit `0fea832` · changes since 1.2.1-rc.176_
 ### Changes
 
 - [G2P-5703](https://openg2p.atlassian.net/browse/G2P-5703) Add null annotations for Rancher compatibility in values.yaml ([`bae8577`](https://github.com/OpenG2P/farmer-registry/commit/bae85776f8f7f1d6cd07217c563ad8a891f1e3a6))
-
-<a id="v-1-2-1-rc-176"></a>
-
-## farmer-registry 1.2.1-rc.176 — 2026-09-25
-
-_commit `c342011` · changes since 1.2.1-rc.174_
-<!-- build:1.2.1-rc.176 revision:c342011bdcad674da87da52f8aa3e12af3ec816c ts:1790341760 -->
-
-**Chart:** [openg2p-farmer-registry 1.2.1-rc.176](https://openg2p.github.io/openg2p-helm/openg2p-farmer-registry-1.2.1-rc.176.tgz)
-
-### Changes
-
-- Fix db-seed on a fresh deployment: give celery-beat a consumed queue, report why the seed fails ([`46527b5`](https://github.com/OpenG2P/farmer-registry/commit/46527b5db1d7ea81831cf06907416ab6b680457f))
 
 # Develop builds
 
