@@ -6,6 +6,7 @@ _Published automatically._
 
 | Version | Date | Type | Notes |
 | --- | --- | --- | --- |
+| [`0.0.0-develop.61`](#v-0-0-0-develop-61) | 2026-10-31 | develop |  |
 | [`1.2.0`](#v-1-2-0) | 2026-09-01 | release |  |
 | [`1.2.0-rc.60`](#v-1-2-0-rc-60) | 2026-09-01 | release candidate |  |
 | [`0.0.0-develop.60`](#v-0-0-0-develop-60) | 2026-08-28 | develop |  |
@@ -71,6 +72,19 @@ _commit `480a324` · changes since 0.0.0-develop.60_
 _No new commits since 0.0.0-develop.60._
 
 # Develop builds
+
+<a id="v-0-0-0-develop-61"></a>
+
+## keycloak-init — develop 0.0.0-develop.61 (2026-10-31)
+
+_commit `247cbe7` · changes since 0.0.0-develop.60_
+<!-- build:0.0.0-develop.61 revision:247cbe74c82eb47d7cd6bf841894d1a1480f3fdc ts:1793433097 -->
+
+**Chart:** [keycloak-init 0.0.0-develop.61](https://openg2p.github.io/openg2p-helm/keycloak-init-0.0.0-develop.61.tgz)
+
+### Changes
+
+- [G2P-5719](https://openg2p.atlassian.net/browse/G2P-5719) keycloak-init: realm userProfileAttributes and client protocolMappers/attributes (upserted, also on existing clients); pass every realm key through the ConfigMap (displayName was dropped) ([`247cbe7`](https://github.com/OpenG2P/keycloak-init/commit/247cbe74c82eb47d7cd6bf841894d1a1480f3fdc))
 
 <a id="v-0-0-0-develop-60"></a>
 
