@@ -6,10 +6,24 @@ _Published automatically._
 
 | Version | Date | Type | Notes |
 | --- | --- | --- | --- |
+| [`0.0.0-develop.20`](#v-0-0-0-develop-20) | 2026-11-02 | develop |  |
 | [`0.0.0-develop.18`](#v-0-0-0-develop-18) | 2026-10-30 | develop |  |
 | [`0.0.0-develop.11`](#v-0-0-0-develop-11) | 2026-08-28 | develop |  |
 
 # Develop builds
+
+<a id="v-0-0-0-develop-20"></a>
+
+## pbms — develop 0.0.0-develop.20 (2026-11-02)
+
+_commit `06842de` · changes since 0.0.0-develop.18_
+<!-- build:0.0.0-develop.20 revision:06842de68580edd0d7ebebefddad25c6c3aec101 ts:1793599741 -->
+
+**Chart:** [openg2p-pbms-platform 0.0.0-develop.20](https://openg2p.github.io/openg2p-helm/openg2p-pbms-platform-0.0.0-develop.20.tgz)
+
+### Changes
+
+- style: pre-commit fix ([`abcab30`](https://github.com/OpenG2P/pbms/commit/abcab30b32b873a13dd10adbb950ed22cde2a8a9))
 
 <a id="v-0-0-0-develop-18"></a>
 
