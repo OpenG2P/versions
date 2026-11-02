@@ -6,6 +6,7 @@ _Published automatically._
 
 | Version | Date | Type | Notes |
 | --- | --- | --- | --- |
+| [`0.0.0-develop.71`](#v-0-0-0-develop-71) | 2026-11-02 | develop |  |
 | [`0.0.0-develop.69`](#v-0-0-0-develop-69) | 2026-10-28 | develop |  |
 | [`0.0.0-develop.67`](#v-0-0-0-develop-67) | 2026-10-23 | develop |  |
 | [`0.0.0-develop.64`](#v-0-0-0-develop-64) | 2026-10-21 | develop |  |
@@ -25,9 +26,28 @@ _Published automatically._
 | [`0.0.0-develop.28`](#v-0-0-0-develop-28) | 2026-10-05 | develop |  |
 | [`0.0.0-develop.27`](#v-0-0-0-develop-27) | 2026-10-05 | develop |  |
 | [`0.0.0-develop.26`](#v-0-0-0-develop-26) | 2026-10-02 | develop |  |
-| [`0.0.0-develop.23`](#v-0-0-0-develop-23) | 2026-10-02 | develop |  |
 
 # Develop builds
+
+<a id="v-0-0-0-develop-71"></a>
+
+## agri-stack — develop 0.0.0-develop.71 (2026-11-02)
+
+_commit `48c63fe` · changes since 0.0.0-develop.69_
+<!-- build:0.0.0-develop.71 revision:48c63fe4339dc3174897b35b5eb71d86974aacc7 ts:1793585258 -->
+
+**Chart:** [openg2p-agri-composite 0.0.0-develop.71](https://openg2p.github.io/openg2p-helm/openg2p-agri-composite-0.0.0-develop.71.tgz)
+
+### Summary
+
+- **Major:** Installation process overhaul: introduced `scripts/test_install.py` for installation testing, removed legacy scripts including `setup_exchange.py` and `partner_test.py`.
+- Key management enhancement: signing key is now generated during installation, with PEM Secret retained through upgrades and public keys accessible at `/.well-known/jwks.json`.
+- Testing improvements: added comprehensive tests for installation and key management functionalities, ensuring robust validation of the new processes.
+
+### Changes
+
+- [G2P-5719](https://openg2p.atlassian.net/browse/G2P-5719) One install test: scripts/test_install.py with test_install.yaml (namespaces, domains, registries, credentials from config); removed setup_exchange.py, exchange_test.sh, partner_test.py, partner_kit.py; tests ([`48c63fe`](https://github.com/OpenG2P/agri-stack/commit/48c63fe4339dc3174897b35b5eb71d86974aacc7))
+- [G2P-5719](https://openg2p.atlassian.net/browse/G2P-5719) Composite: signing key generated at install (PEM Secret kept on upgrades; a hand-made Secret or .p12 wins); public keys at /.well-known/jwks.json; tests ([`6d25737`](https://github.com/OpenG2P/agri-stack/commit/6d25737b424b78d3875331c5460219e8dfb404fa))
 
 <a id="v-0-0-0-develop-69"></a>
 
@@ -378,19 +398,6 @@ _commit `3824d2d` · changes since 0.0.0-develop.23_
 - [G2P-5719](https://openg2p.atlassian.net/browse/G2P-5719) Docs moved to docs.openg2p.org (Open Agri Stack); remove docs/, READMEs and chart readme point there ([`3824d2d`](https://github.com/OpenG2P/agri-stack/commit/3824d2d245ec41230e11011a8e0f88d0c52e4f38))
 - [G2P-5719](https://openg2p.atlassian.net/browse/G2P-5719) composite e2e: save the full run log next to the response JSON in git-ignored scripts/out/ ([`19e2868`](https://github.com/OpenG2P/agri-stack/commit/19e2868ccf4ffc7ef05f6e9bdce1046cb30d6832))
 - [G2P-5719](https://openg2p.atlassian.net/browse/G2P-5719) docs: TODO for geo dropdowns on register forms (default the sync on, later read levels from Master Data at run time) ([`223a3d2`](https://github.com/OpenG2P/agri-stack/commit/223a3d2ebb4ae56c31ceb636a117a5cbd9abb4a2))
-
-<a id="v-0-0-0-develop-23"></a>
-
-## agri-stack — develop 0.0.0-develop.23 (2026-10-02)
-
-_commit `a27df2b` · changes since 0.0.0-develop.22_
-<!-- build:0.0.0-develop.23 revision:a27df2ba4a9ae7590fb131a8ef1da233526a5ec2 ts:1790868230 -->
-
-**Chart:** [openg2p-agri-composite 0.0.0-develop.23](https://openg2p.github.io/openg2p-helm/openg2p-agri-composite-0.0.0-develop.23.tgz)
-
-### Changes
-
-- [G2P-5719](https://openg2p.atlassian.net/browse/G2P-5719) CI: build and publish only when composite/ changes, not on docs-only pushes ([`a27df2b`](https://github.com/OpenG2P/agri-stack/commit/a27df2ba4a9ae7590fb131a8ef1da233526a5ec2))
 
 ---
 
