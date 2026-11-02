@@ -6,6 +6,7 @@ _Published automatically._
 
 | Version | Date | Type | Notes |
 | --- | --- | --- | --- |
+| [`0.0.0-develop.35`](#v-0-0-0-develop-35) | 2026-11-02 | develop |  |
 | [`0.0.0-develop.33`](#v-0-0-0-develop-33) | 2026-10-28 | develop |  |
 | [`0.0.0-develop.32`](#v-0-0-0-develop-32) | 2026-10-21 | develop |  |
 | [`0.0.0-develop.31`](#v-0-0-0-develop-31) | 2026-10-21 | develop |  |
@@ -240,6 +241,27 @@ _commit `bb96ff2` · changes since 0.0.0-develop.24_
 _No new commits since 0.0.0-develop.24._
 
 # Develop builds
+
+<a id="v-0-0-0-develop-35"></a>
+
+## partner-management — develop 0.0.0-develop.35 (2026-11-02)
+
+_commit `71bef19` · changes since 0.0.0-develop.33_
+<!-- build:0.0.0-develop.35 revision:71bef1920e60fe4197deeba65877cad4ab1703a6 ts:1793585381 -->
+
+**Chart:** [partner-management 0.0.0-develop.35](https://openg2p.github.io/openg2p-helm/partner-management-0.0.0-develop.35.tgz)
+
+### Summary
+
+- **Major:** Keycloak initialization updated to the latest version, enhancing security and compatibility.
+- Partner management enhancement: implemented dynamic partner key retrieval from JWKS URL with caching for reliability, and streamlined partner onboarding and approval process at startup.
+- User interface improvements: added UI checkboxes and labels for better user interaction.
+- Testing enhancements: expanded test coverage for new features and functionalities.
+
+### Changes
+
+- Keycloak init bumped up. ([`71bef19`](https://github.com/OpenG2P/partner-management/commit/71bef1920e60fe4197deeba65877cad4ab1703a6))
+- [G2P-5719](https://openg2p.atlassian.net/browse/G2P-5719) PM: partner keys read from its JWKS URL when needed (keys_from_jwks_url; cached, last good kept while the URL fails); bootstrapPartners onboarded and approved at startup (actor bootstrap, no policy); UI checkbox and labels; tests ([`3094b70`](https://github.com/OpenG2P/partner-management/commit/3094b7082557e5d4015595c2640b4f5e1f33439c))
 
 <a id="v-0-0-0-develop-33"></a>
 
