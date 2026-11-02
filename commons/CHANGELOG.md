@@ -6,6 +6,7 @@ _Published automatically._
 
 | Version | Date | Type | Notes |
 | --- | --- | --- | --- |
+| [`0.0.0-develop.332`](#v-0-0-0-develop-332) | 2026-11-02 | develop |  |
 | [`0.0.0-develop.329`](#v-0-0-0-develop-329) | 2026-10-28 | develop |  |
 | [`0.0.0-develop.327`](#v-0-0-0-develop-327) | 2026-10-21 | develop |  |
 | [`0.0.0-develop.325`](#v-0-0-0-develop-325) | 2026-10-20 | develop |  |
@@ -30,7 +31,6 @@ _Published automatically._
 | [`2.3.4-rc.241`](#v-2-3-4-rc-241) | 2026-10-07 | release candidate |  |
 | [`0.0.0-develop.289`](#v-0-0-0-develop-289) | 2026-10-07 | develop |  |
 | [`0.0.0-develop.286`](#v-0-0-0-develop-286) | 2026-10-07 | develop |  |
-| [`0.0.0-develop.284`](#v-0-0-0-develop-284) | 2026-10-07 | develop |  |
 | [`2.3.4-rc.240`](#v-2-3-4-rc-240) | 2026-10-05 | release candidate |  |
 | [`2.3.4-rc.238`](#v-2-3-4-rc-238) | 2026-10-05 | release candidate |  |
 | [`2.3.4-rc.236`](#v-2-3-4-rc-236) | 2026-10-01 | release candidate |  |
@@ -645,6 +645,28 @@ _commit `ffabcdc` · changes since 2.2.1_
 
 # Develop builds
 
+<a id="v-0-0-0-develop-332"></a>
+
+## commons — develop 0.0.0-develop.332 (2026-11-02)
+
+_commit `cee0f02` · changes since 0.0.0-develop.329_
+<!-- build:0.0.0-develop.332 revision:cee0f0284b876ddc2244be2969bde3544f6dafe5 ts:1793585830 -->
+
+**Charts:** [openg2p-commons-base 0.0.0-develop.332](https://openg2p.github.io/openg2p-helm/openg2p-commons-base-0.0.0-develop.332.tgz) · [openg2p-commons-services 0.0.0-develop.332](https://openg2p.github.io/openg2p-helm/openg2p-commons-services-0.0.0-develop.332.tgz)
+
+### Summary
+
+- **Major:** Integration of partner-management and consent-manager services with composite onboarding from JWKS URL, enhancing partner realm attributes and mappers.
+- Setup of partner portal realm during installation, including user addition in Keycloak for streamlined access management.
+- Configuration of Exchange questions under global.agriStackExchange to improve visibility for partner management, with bootstrapping of PARTNER_AGRI_COMPOSITE from the Composite's JWKS URL.
+- Introduction of a Composite JWKS URL field to facilitate easier integration and management of partner services.
+
+### Changes
+
+- [G2P-5719](https://openg2p.atlassian.net/browse/G2P-5719) Commons Services: partner-management develop.35, consent-manager develop.89 (Composite onboarded at install from its JWKS URL; partner realm attribute and mapper) ([`cee0f02`](https://github.com/OpenG2P/commons/commit/cee0f0284b876ddc2244be2969bde3544f6dafe5))
+- [G2P-5719](https://openg2p.atlassian.net/browse/G2P-5719) Commons Services form: partner portal realm set up at install; users added in Keycloak ([`3b3978d`](https://github.com/OpenG2P/commons/commit/3b3978da587aa6392060c5bf5821a3b3bdcf74e1))
+- [G2P-5719](https://openg2p.atlassian.net/browse/G2P-5719) Commons Services: Exchange questions under global.agriStackExchange so PM sees the role; PM bootstraps PARTNER_AGRI_COMPOSITE from the Composite's JWKS URL (exchange: in-cluster; department: the Exchange's public host); Composite JWKS URL field ([`911a2cd`](https://github.com/OpenG2P/commons/commit/911a2cd1dcecae7aca485aaa1ec6a99e5041ba9b))
+
 <a id="v-0-0-0-develop-329"></a>
 
 ## commons — develop 0.0.0-develop.329 (2026-10-28)
@@ -972,26 +994,6 @@ _commit `0858457` · changes since 0.0.0-develop.284_
 ### Changes
 
 - [G2P-5736](https://openg2p.atlassian.net/browse/G2P-5736) Add email template for novu ([`b4780d9`](https://github.com/OpenG2P/commons/commit/b4780d9ffca65b5b31577b9355305a02ae7fafa0))
-
-<a id="v-0-0-0-develop-284"></a>
-
-## commons — develop 0.0.0-develop.284 (2026-10-07)
-
-_commit `daf1466` · changes since 0.0.0-develop.282_
-<!-- build:0.0.0-develop.284 revision:daf1466dbe4fedbbfea4ce8a43288c39aad3d058 ts:1791338200 -->
-
-**Charts:** [openg2p-commons-base 0.0.0-develop.284](https://openg2p.github.io/openg2p-helm/openg2p-commons-base-0.0.0-develop.284.tgz) · [openg2p-commons-services 0.0.0-develop.284](https://openg2p.github.io/openg2p-helm/openg2p-commons-services-0.0.0-develop.284.tgz)
-
-### Summary
-
-- **Major:** Updated core components: bumped openg2p-master-data, openg2p-awe, and partner-management to their latest development versions, enhancing IAM registration capabilities.
-- Streamlined Rancher forms: removed legacy/internal questions, fixed Consent Manager defaults, and added Agent Portal hostname; retained Keymanager for PBMS with usage notes.
-- Configuration improvements: enabled Novu by default and integrated it into the Garage initialization process, ensuring better feature management.
-
-### Changes
-
-- [G2P-5719](https://openg2p.atlassian.net/browse/G2P-5719) commons-services: bump openg2p-master-data to develop.110, openg2p-awe to develop.92, partner-management to develop.29 (IAM registration as regular resources via iamRegister.runAsHook) ([`daf1466`](https://github.com/OpenG2P/commons/commit/daf1466dbe4fedbbfea4ce8a43288c39aad3d058))
-- [G2P-5719](https://openg2p.atlassian.net/browse/G2P-5719) Rancher forms: drop legacy and internal questions (MinIO, SoftHSM, keystore type, base-release service names), fix Consent Manager default (on), add Agent Portal hostname, show_if per feature; Keymanager kept on (PBMS uses it) with who-needs-it notes; Novu on by default and stored in Garage (novu bucket in the Garage init job) ([`22c8723`](https://github.com/OpenG2P/commons/commit/22c8723c9bdd7e9d39133236ea7e745538dc32f5))
 
 ---
 
