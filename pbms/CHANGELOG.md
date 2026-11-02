@@ -6,11 +6,25 @@ _Published automatically._
 
 | Version | Date | Type | Notes |
 | --- | --- | --- | --- |
+| [`0.0.0-develop.22`](#v-0-0-0-develop-22) | 2026-11-02 | develop |  |
 | [`0.0.0-develop.20`](#v-0-0-0-develop-20) | 2026-11-02 | develop |  |
 | [`0.0.0-develop.18`](#v-0-0-0-develop-18) | 2026-10-30 | develop |  |
 | [`0.0.0-develop.11`](#v-0-0-0-develop-11) | 2026-08-28 | develop |  |
 
 # Develop builds
+
+<a id="v-0-0-0-develop-22"></a>
+
+## pbms — develop 0.0.0-develop.22 (2026-11-02)
+
+_commit `032d6d7` · changes since 0.0.0-develop.20_
+<!-- build:0.0.0-develop.22 revision:032d6d7c961f73da2b4cac3589cd612c6d867cfd ts:1793604912 -->
+
+**Chart:** [openg2p-pbms-platform 0.0.0-develop.22](https://openg2p.github.io/openg2p-helm/openg2p-pbms-platform-0.0.0-develop.22.tgz)
+
+### Changes
+
+- [G2P-5803](https://openg2p.atlassian.net/browse/G2P-5803) refactor(helm)!: drop registry adapter config from platform ([`9eab9bd`](https://github.com/OpenG2P/pbms/commit/9eab9bdc64e4e03f5f77666053810b6f408001c6))
 
 <a id="v-0-0-0-develop-20"></a>
 
