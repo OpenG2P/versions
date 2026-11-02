@@ -1,0 +1,60 @@
+# pbms-connectors
+
+_Published automatically._
+
+**Repository:** [github.com/OpenG2P/pbms-connectors](https://github.com/OpenG2P/pbms-connectors) · **Container images:** [Container Registry](https://hub.docker.com/u/openg2p)
+
+| Version | Date | Type | Notes |
+| --- | --- | --- | --- |
+| [`0.0.0-develop.18`](#v-0-0-0-develop-18) | 2026-11-02 | develop |  |
+
+# Develop builds
+
+<a id="v-0-0-0-develop-18"></a>
+
+## pbms-connectors — develop 0.0.0-develop.18 (2026-11-02)
+
+_commit `7995766` · changes since the start (showing the latest 20 commits)_
+<!-- build:0.0.0-develop.18 revision:799576649a36c09e04bed6598ce75a805cf4364f ts:1793599766 -->
+
+**Chart:** [openg2p-pbms 0.0.0-develop.18](https://openg2p.github.io/openg2p-helm/openg2p-pbms-0.0.0-develop.18.tgz)
+
+### Summary
+
+- **Major:** Refactor of core models, including renaming the farmer model and household registry type, and changing the search count to beneficiary_count.
+- New features: Added PBMS theme extension and registry type addons in Odoo, along with a new registry-adapters package.
+- Build improvements: Dockerfiles for Odoo, Celery, and staff-portal added; base image name parameterized; and enforced pin lockstep for pbms.
+- CI enhancements: Introduced pre-commit, ruff, and packaging workflows; dependency questions now passed to chart packaging.
+- Documentation: Added .env.example for registry-adapters to assist with configuration.
+- Code quality: Applied ruff formatting and linting across Odoo and extensions, ensuring consistent code style.
+
+### Changes
+
+- [G2P-5803](https://openg2p.atlassian.net/browse/G2P-5803) build: pin pbms to 0.0.0-develop.18 ([`9e4886a`](https://github.com/OpenG2P/pbms-connectors/commit/9e4886ac1572da7b7b1412e50ff32b89ba89e330))
+- [G2P-5803](https://openg2p.atlassian.net/browse/G2P-5803) build: enforce pbms pin lockstep ([`953b87b`](https://github.com/OpenG2P/pbms-connectors/commit/953b87b614465cfcd53ec3b57ba22372efde6d77))
+- [G2P-5803](https://openg2p.atlassian.net/browse/G2P-5803) fix(docker): raise pip timeout to 300s ([`0fa7d93`](https://github.com/OpenG2P/pbms-connectors/commit/0fa7d930eeceb1aad0c2aae649c1baf21895ca7a))
+- [G2P-5803](https://openg2p.atlassian.net/browse/G2P-5803) refactor(extensions): rename search count to beneficiary_count ([`dfd04a2`](https://github.com/OpenG2P/pbms-connectors/commit/dfd04a2f71826af2c0cc3db90d7d2aff9fc824e6))
+- [G2P-5803](https://openg2p.atlassian.net/browse/G2P-5803) fix(odoo): disable isort that breaks parent model import ([`9c07dcc`](https://github.com/OpenG2P/pbms-connectors/commit/9c07dccebc2ac772a0b4c102409f328c0b5976f8))
+- [G2P-5803](https://openg2p.atlassian.net/browse/G2P-5803) refactor!: rename farmer model and household registry type ([`1e4cdc7`](https://github.com/OpenG2P/pbms-connectors/commit/1e4cdc7b02a75497b55f1e3e3afadf5ca6f0cdbf))
+- [G2P-5803](https://openg2p.atlassian.net/browse/G2P-5803) build(docker): parameterize base image name as build arg ([`73a6999`](https://github.com/OpenG2P/pbms-connectors/commit/73a6999ec89681ca00d8cd939f87ffe85f2625af))
+- [G2P-5803](https://openg2p.atlassian.net/browse/G2P-5803) docs(extensions): add registry-adapters .env.example ([`1a7310d`](https://github.com/OpenG2P/pbms-connectors/commit/1a7310d032f2d7eafa710727d8148654d280795c))
+- [G2P-5803](https://openg2p.atlassian.net/browse/G2P-5803) ci: pass dependency questions to chart packaging ([`126967b`](https://github.com/OpenG2P/pbms-connectors/commit/126967bd18a00938e39c8a4bc27289720054c354))
+- [G2P-5803](https://openg2p.atlassian.net/browse/G2P-5803) style: apply ruff format and lint across odoo and extensions ([`a174082`](https://github.com/OpenG2P/pbms-connectors/commit/a174082223e670f4e17665bb4c6671b50e55531e))
+- [G2P-5803](https://openg2p.atlassian.net/browse/G2P-5803) chore(helm): add openg2p-pbms umbrella chart ([`ef66fe4`](https://github.com/OpenG2P/pbms-connectors/commit/ef66fe4079d5513e05a04214896d1b50963ac81a))
+- [G2P-5803](https://openg2p.atlassian.net/browse/G2P-5803) build(docker): add odoo, celery and staff-portal Dockerfiles ([`05060aa`](https://github.com/OpenG2P/pbms-connectors/commit/05060aab8f5c043751976788e8bd6a8340dce0da))
+- [G2P-5803](https://openg2p.atlassian.net/browse/G2P-5803) feat(odoo): add PBMS theme extension ([`1227837`](https://github.com/OpenG2P/pbms-connectors/commit/1227837da58d42029c0eef161e1e39a9e7cb6702))
+- [G2P-5803](https://openg2p.atlassian.net/browse/G2P-5803) feat(odoo): add PBMS registry and registry type addons ([`8608dc0`](https://github.com/OpenG2P/pbms-connectors/commit/8608dc0dce05e830573580ab2093ae0169c85c84))
+- [G2P-5803](https://openg2p.atlassian.net/browse/G2P-5803) feat(extensions): add registry-adapters package ([`c5c1c41`](https://github.com/OpenG2P/pbms-connectors/commit/c5c1c41105cdbc6cbf3bf4bc0a7fe236c447cda8))
+- [G2P-5803](https://openg2p.atlassian.net/browse/G2P-5803) chore(ci): add pre-commit, ruff and packaging workflows ([`4bee005`](https://github.com/OpenG2P/pbms-connectors/commit/4bee0053b3b32a979be7e5c210e1041248bf2bd6))
+- Initial commit ([`faa001e`](https://github.com/OpenG2P/pbms-connectors/commit/faa001ea9d5c2b63d6c4c5eb0043e9121a4f4115))
+
+---
+
+> **What's shown here.** This catalogue lists **every stable release**, plus
+> the **latest 20 develop builds** and the **latest 10 release
+> candidates** per release line -- candidates are KEPT after their release
+> ships, as the audit trail of the release run. Older develop builds and
+> release candidates are pruned as they are superseded. Those versions
+> still exist in the container and Helm
+> registries — they are simply not listed here. This page is generated
+> automatically from commit history; do not edit it by hand.

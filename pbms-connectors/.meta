@@ -1,0 +1,4 @@
+name=pbms-connectors
+kind=service
+repo=https://github.com/OpenG2P/pbms-connectors
+images=https://hub.docker.com/u/openg2p
