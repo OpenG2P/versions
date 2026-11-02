@@ -6,10 +6,26 @@ _Published automatically._
 
 | Version | Date | Type | Notes |
 | --- | --- | --- | --- |
+| [`4.0.0-rc.22`](#v-4-0-0-rc-22) | 2026-11-02 | release candidate |  |
 | [`0.0.0-develop.22`](#v-0-0-0-develop-22) | 2026-11-02 | develop |  |
 | [`0.0.0-develop.20`](#v-0-0-0-develop-20) | 2026-11-02 | develop |  |
 | [`0.0.0-develop.18`](#v-0-0-0-develop-18) | 2026-10-30 | develop |  |
 | [`0.0.0-develop.11`](#v-0-0-0-develop-11) | 2026-08-28 | develop |  |
+
+# Release candidates
+
+<a id="v-4-0-0-rc-22"></a>
+
+## pbms 4.0.0-rc.22 — 2026-11-02
+
+_commit `032d6d7` · changes since 0.0.0-develop.22_
+<!-- build:4.0.0-rc.22 revision:032d6d7c961f73da2b4cac3589cd612c6d867cfd ts:1793604912 -->
+
+**Chart:** [openg2p-pbms-platform 4.0.0-rc.22](https://openg2p.github.io/openg2p-helm/openg2p-pbms-platform-4.0.0-rc.22.tgz)
+
+### Changes
+
+_No new commits since 0.0.0-develop.22._
 
 # Develop builds
 
