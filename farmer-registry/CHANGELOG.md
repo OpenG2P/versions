@@ -6,6 +6,7 @@ _Published automatically._
 
 | Version | Date | Type | Notes |
 | --- | --- | --- | --- |
+| [`1.2.1-rc.326`](#v-1-2-1-rc-326) | 2026-11-04 | release candidate |  |
 | [`1.2.1-rc.210`](#v-1-2-1-rc-210) | 2026-10-30 | release candidate |  |
 | [`0.0.0-develop.282`](#v-0-0-0-develop-282) | 2026-10-28 | develop |  |
 | [`1.2.1-rc.199`](#v-1-2-1-rc-199) | 2026-10-27 | release candidate |  |
@@ -27,7 +28,6 @@ _Published automatically._
 | [`0.0.0-develop.218`](#v-0-0-0-develop-218) | 2026-10-02 | develop |  |
 | [`0.0.0-develop.215`](#v-0-0-0-develop-215) | 2026-10-01 | develop |  |
 | [`0.0.0-develop.211`](#v-0-0-0-develop-211) | 2026-09-27 | develop |  |
-| [`1.2.1-rc.178`](#v-1-2-1-rc-178) | 2026-09-25 | release candidate |  |
 | [`0.0.0-develop.209`](#v-0-0-0-develop-209) | 2026-09-23 | develop |  |
 | [`0.0.0-develop.207`](#v-0-0-0-develop-207) | 2026-09-12 | develop |  |
 | [`0.0.0-develop.206`](#v-0-0-0-develop-206) | 2026-09-03 | develop | **Intermediate Stable Version**. VC issuance and verification both working fine. Compatible with commons 0.0.0-develop.243. |
@@ -210,6 +210,110 @@ _commit `7055a71` · first release_
 
 # Release candidates
 
+<a id="v-1-2-1-rc-326"></a>
+
+## farmer-registry 1.2.1-rc.326 — 2026-11-04
+
+_commit `20a17e4` · changes since 1.2.1-rc.210_
+<!-- build:1.2.1-rc.326 revision:20a17e4d9f56bd3df2c4159c041e95e3a00df510 ts:1793780280 -->
+
+**Chart:** [openg2p-farmer-registry 1.2.1-rc.326](https://openg2p.github.io/openg2p-helm/openg2p-farmer-registry-1.2.1-rc.326.tgz)
+
+### Summary
+
+- Performance testing enhancements: Added comprehensive performance data collection for async partner search, birth-date range queries, and Celery worker performance, including detailed results and documentation for various test scenarios.
+- Documentation overhaul: Significant updates to performance testing documentation, including new reports for partner API and Celery, and restructuring of existing materials for clarity and accessibility.
+- CI/CD migration: Transitioned CI from GitHub Actions to GitLab, streamlining build and publish processes while addressing issues with configuration and dependencies.
+- Data integrity improvements: Resolved issues with bulk-sample ID collisions and improved handling of geo dropdowns, ensuring accurate data seeding and API interactions.
+- Code refactoring: Removed unused async methods across several models to enhance maintainability and streamline codebase.
+- Dependency updates: Adjusted dependency manifests for performance testing scripts and related components, ensuring compatibility and stability across the project.
+
+### Changes
+
+- partner-api perf test measurements ([`2ef9506`](https://github.com/OpenG2P/farmer-registry/commit/2ef95067000ebd7f56be4e882347b6dadab0bb74))
+- Add performance data for async partner search ([`cf8f02a`](https://github.com/OpenG2P/farmer-registry/commit/cf8f02a117e5730c5d305bbb53cad269c00552d3))
+- [G2P-5839](https://openg2p.atlassian.net/browse/G2P-5839) Collected birth-date range query performance data for expression, predicate, and GraphQL searches at page sizes 100 ([`c853a69`](https://github.com/OpenG2P/farmer-registry/commit/c853a693ce93b388814865801e6aa8ee581b9160))
+- Collect performance data for async search ([`fd10b10`](https://github.com/OpenG2P/farmer-registry/commit/fd10b1003f398104468e6c03af92d088bffe0383))
+- Add performance testing results ([`1eb2b4e`](https://github.com/OpenG2P/farmer-registry/commit/1eb2b4e090a4ff53250738714957168be48446fb))
+- [G2P-5826](https://openg2p.atlassian.net/browse/G2P-5826) Collect ingest data and add scripts for performance testing ([`42e27ec`](https://github.com/OpenG2P/farmer-registry/commit/42e27ec34f6627455655a1a6186b55a9be838cae))
+- [G2P-5810](https://openg2p.atlassian.net/browse/G2P-5810) Add partner ingest performance test script ([`364265d`](https://github.com/OpenG2P/farmer-registry/commit/364265db6b829af6dec24d4a3ba250a193aeab64))
+- Added links to actual github files for index and table sizes in storage measurements ([`c39ace1`](https://github.com/OpenG2P/farmer-registry/commit/c39ace1f4227f549f28d6a594ca266826c94d559))
+- Celery - final measurements ([`86d5355`](https://github.com/OpenG2P/farmer-registry/commit/86d5355db50ba8e24f7927505b630d6ed37aa205))
+- Add performance test result images for worker pods in blend scenario ([`3fcdda2`](https://github.com/OpenG2P/farmer-registry/commit/3fcdda279aacaa4e8a17483c9679b8553f7d0ba0))
+- Collect deduplication case data and analyze Celery Beat and worker performance ([`7964688`](https://github.com/OpenG2P/farmer-registry/commit/7964688224234702358ce2c6241d8a2ea27bac47))
+- Created Celery Documentation for Performance Test ([`eee7f03`](https://github.com/OpenG2P/farmer-registry/commit/eee7f03909b599d38840d1bb6cc615ec15639495))
+- [G2P-5765](https://openg2p.atlassian.net/browse/G2P-5765) Record Celery import progress by CSV row and build outgest and import backlogs in the populate scripts ([`d853df2`](https://github.com/OpenG2P/farmer-registry/commit/d853df22671da676dd9debee28f57facf802bd8b))
+- Refactor poverty score computation to use contributing attribute configuration and update performance testing documentation with new scenarios and results. ([`705b7c6`](https://github.com/OpenG2P/farmer-registry/commit/705b7c61292f43bf2e527dc1581e1c94622c264b))
+- Add result files and images for pods 1-3 ([`4db782b`](https://github.com/OpenG2P/farmer-registry/commit/4db782beb88b5233913ff68c3e776d6316277671))
+- Reworked documentation ([`500e285`](https://github.com/OpenG2P/farmer-registry/commit/500e285d18d0bc775f1cee83e8671b0fff12304a))
+- [G2P-5735](https://openg2p.atlassian.net/browse/G2P-5735) Collected data for farmer poverty score completion and validated score computation. ([`4671cb7`](https://github.com/OpenG2P/farmer-registry/commit/4671cb7cab547e897465069bfc9d3743599d3b33))
+- [G2P-5728](https://openg2p.atlassian.net/browse/G2P-5728) Add performance testing scripts for Celery backlog observation and Kubernetes case execution, with SQL, preflight checks, and dependency updates. ([`9e044f4`](https://github.com/OpenG2P/farmer-registry/commit/9e044f4ad4016afb7e5b9884341bab0d3ffb9624))
+- [G2P-5713](https://openg2p.atlassian.net/browse/G2P-5713) Add in-cluster performance metrics ([`1bf24e0`](https://github.com/OpenG2P/farmer-registry/commit/1bf24e0fa66c8b75b52f3f8754e727005caa205e))
+- [G2P-5713](https://openg2p.atlassian.net/browse/G2P-5713) Add performance metrics for 50M data volume ([`e61374e`](https://github.com/OpenG2P/farmer-registry/commit/e61374e04dd631e15af7e6a9a694cfa9f61ca6cf))
+- Add table and index sizes for 50M ([`9656be7`](https://github.com/OpenG2P/farmer-registry/commit/9656be726a03cd90ac5c83a1db1f4197dcc789c7))
+- Update rebuild-indexes job configuration and enhance index rebuilding script ([`406a45d`](https://github.com/OpenG2P/farmer-registry/commit/406a45d9a73b5a4b501af23eee268d812c4c621c))
+- More changes to documentation ([`af50147`](https://github.com/OpenG2P/farmer-registry/commit/af50147d2ed3d828cae4f6c3578be3ac750a28a8))
+- [G2P-5693](https://openg2p.atlassian.net/browse/G2P-5693) Add configurable 50M farmer seeding setup ([`f088407`](https://github.com/OpenG2P/farmer-registry/commit/f088407840b9b123a6934b625741c33e8d0ceb0e))
+- Edited seeding-design and environment-topology - corrections ([`690108f`](https://github.com/OpenG2P/farmer-registry/commit/690108ff0572f20db986e4a8ff1da00278bb277d))
+- brought back documentation for WIP ([`4bac2b2`](https://github.com/OpenG2P/farmer-registry/commit/4bac2b2928a90487fc5f96004b8f010bba36066d))
+- moved documentation to openg2p-documentation ([`aa179d6`](https://github.com/OpenG2P/farmer-registry/commit/aa179d6f52b787f1f497e029b979d010cd5683ff))
+- [G2P-5690](https://openg2p.atlassian.net/browse/G2P-5690) Add soak test performance data ([`8d4a37f`](https://github.com/OpenG2P/farmer-registry/commit/8d4a37fb99dd9d8aa635aa6651e1a40b403f18be))
+- Add results from in-cluster performance tests ([`c164da5`](https://github.com/OpenG2P/farmer-registry/commit/c164da5989ee3daf2c0095194b65ff5e5a6892d8))
+- Changes to documentation ([`814559c`](https://github.com/OpenG2P/farmer-registry/commit/814559cd453f71abe0b0a76ade2316604fbc52de))
+- [G2P-5689](https://openg2p.atlassian.net/browse/G2P-5689) Implemented in-cluster soak testing ([`ea63109`](https://github.com/OpenG2P/farmer-registry/commit/ea631099cf784a44485f2b0d2b29781f43c1b6ac))
+- [G2P-5681](https://openg2p.atlassian.net/browse/G2P-5681) Add performance test data for blend scenario primary volume ([`9fd4e79`](https://github.com/OpenG2P/farmer-registry/commit/9fd4e796086dd9feabd618da2b739f3775fee359))
+- [G2P-5681](https://openg2p.atlassian.net/browse/G2P-5681) Add performance test data to Pod 3 primary volume ([`2701c7a`](https://github.com/OpenG2P/farmer-registry/commit/2701c7a3245d5b7d4f34908cf22ab1c5326d378f))
+- [G2P-5681](https://openg2p.atlassian.net/browse/G2P-5681) Add performance test data to Pod 2 primary volume ([`2f9d904`](https://github.com/OpenG2P/farmer-registry/commit/2f9d904b8574f3c1ade7290c7b40ed05fb27488d))
+- [G2P-5681](https://openg2p.atlassian.net/browse/G2P-5681) Add performance test data to Pod 1 primary volume ([`4d0f580`](https://github.com/OpenG2P/farmer-registry/commit/4d0f5807d3defc0e97fa9b2caa79aa22bb027728))
+- [G2P-5678](https://openg2p.atlassian.net/browse/G2P-5678)  Add CPU monitoring and SLO adjustments ([`1352f32`](https://github.com/OpenG2P/farmer-registry/commit/1352f32b6ee85e8cbab7500e26d220bc60ee6897))
+- Add results for primary volume ([`0520f97`](https://github.com/OpenG2P/farmer-registry/commit/0520f9783aa8029b3b5955a329200a1a934088c3))
+- Add table_sizes.txt to document primary volume table sizes and row counts ([`d19df56`](https://github.com/OpenG2P/farmer-registry/commit/d19df5605605cb3b51c263479a8e9ab1e40709cd))
+- [G2P-5669](https://openg2p.atlassian.net/browse/G2P-5669) Add rebuild indexes job and script for missing live indexes ([`02ac515`](https://github.com/OpenG2P/farmer-registry/commit/02ac515d3b293eb80eb5cdbaf5feceda701a7620))
+- worked on final-report for realistic user modeling ([`0a893aa`](https://github.com/OpenG2P/farmer-registry/commit/0a893aa12c2580eeb3214eb4d4b109af909ffb41))
+- Enhance performance testing seeding configuration ([`b66236a`](https://github.com/OpenG2P/farmer-registry/commit/b66236af113f4d759a4c4ee42b0cec7e044f98cb))
+- [G2P-5668](https://openg2p.atlassian.net/browse/G2P-5668) Add Kubernetes job generation and seeding scripts ([`eb68120`](https://github.com/OpenG2P/farmer-registry/commit/eb681205c0a292bdc8cee40e464789b3c48af829))
+- update final-report.md -- performance testing ([`28c0c4a`](https://github.com/OpenG2P/farmer-registry/commit/28c0c4ae430dd857f6b6a68253fc74bbb01cd29a))
+- Added performance data for all testcases ([`142e256`](https://github.com/OpenG2P/farmer-registry/commit/142e256a0c249ffe8ea72e05862db87d493884fc))
+- Collect performance data for all test cases with a 3 pod ([`28f92d7`](https://github.com/OpenG2P/farmer-registry/commit/28f92d722e3b864a2c35d640046c2820ca61a551))
+- Collect performance data for all test cases with a 3 pod ([`2a2a8c0`](https://github.com/OpenG2P/farmer-registry/commit/2a2a8c0b00fd681df9cabf06d5658a1b2deec25d))
+- Collect performance data for all test cases with a 2 pod ([`764d798`](https://github.com/OpenG2P/farmer-registry/commit/764d798fe54934cf5c3eef3fd8538a9068bb7467))
+- Collect performance data for all test cases with a single pod ([`06f8097`](https://github.com/OpenG2P/farmer-registry/commit/06f80979cca8249c3252a620e66508b75aad9e5e))
+- Refactor performance testing scripts for change request and intake approval flows ([`a88a4f7`](https://github.com/OpenG2P/farmer-registry/commit/a88a4f7b721f7aba8dd8daabb2d429d3a7e1245c))
+- [G2P-5605](https://openg2p.atlassian.net/browse/G2P-5605) Fix the base images: they come from registry-platform, not this repo ([`49756e3`](https://github.com/OpenG2P/farmer-registry/commit/49756e3f90755e25a349015d946beaf777afec99))
+- [G2P-5605](https://openg2p.atlassian.net/browse/G2P-5605) Align the performance-test branch with GitHub ([`f904a69`](https://github.com/OpenG2P/farmer-registry/commit/f904a6950d24c7a469ca3a8687c7d5d4b5922a53))
+- [G2P-5520](https://openg2p.atlassian.net/browse/G2P-5520) Enhanced performance testing for intake and change request flows with realistic search scenarios, warmup-aware ramping, improved change request tracking and approval ordering, and support for both successful and intentional miss scenarios. ([`416f48b`](https://github.com/OpenG2P/farmer-registry/commit/416f48b5ad97d05a8c87239bdbfc091bb22d1371))
+- Failures should not affect ramp up logic. Only SLOs influence Ramp up ([`31350c2`](https://github.com/OpenG2P/farmer-registry/commit/31350c27db728a653ff02b6d1e44147d755aea81))
+- Modified the test harness to run for 15 minutes at top users and not break at first failure ([`bdb20b7`](https://github.com/OpenG2P/farmer-registry/commit/bdb20b7fe2802730aabd0df1185d98b8c08ec546))
+- Updated seed_manifest.json ([`69da4ff`](https://github.com/OpenG2P/farmer-registry/commit/69da4ffd25d7cddcd92865fcba1ab7534a15d630))
+- Add AWE integration in change request and intake approval processes ([`b3de289`](https://github.com/OpenG2P/farmer-registry/commit/b3de28908c572afa12980a2171c203749eeb547b))
+- Add seed manifest generation and remove obsolete performance templates ([`bee2c80`](https://github.com/OpenG2P/farmer-registry/commit/bee2c80bda0d7c178d97c2c177c5db7250ea12ab))
+- [G2P-5402](https://openg2p.atlassian.net/browse/G2P-5402) update: modify SQL insert statements for g2p_register_sections and registry_languages ([`b2cda40`](https://github.com/OpenG2P/farmer-registry/commit/b2cda40ae3ff83f6b189a43fd8c160bed6dda398))
+- Bumped up RP version to 0.0.0-develop.383 ([`ec8828c`](https://github.com/OpenG2P/farmer-registry/commit/ec8828c439ff33ac65bfb502bdb3bad5358c14d1))
+- [G2P-4804](https://openg2p.atlassian.net/browse/G2P-4804) Declare score against both farmer and household. A single install carries both — the bulk generator attaches scores to farmers and the sample loader to households, 5,671 and 6 on a reference install — so naming one parent silently stripped the id and the geography from every row of the other. ([`40556c9`](https://github.com/OpenG2P/farmer-registry/commit/40556c9a6b4ea4f0791f3a2e30a8fbaa428c85ef))
+- [G2P-4804](https://openg2p.atlassian.net/browse/G2P-4804) Generate fr_rpt_crop from declarations instead of hand-written SQL. Verified byte-identical to the previous definition across all seventeen shared columns and 757 rows before the SQL was removed; it keeps its materialization and indexes, and additionally carries the geo pcodes and workflow columns the hand-written version omitted. ([`699b3a2`](https://github.com/OpenG2P/farmer-registry/commit/699b3a283105c25a82b7c87608afb18a1d28a61f))
+- [G2P-4804](https://openg2p.atlassian.net/browse/G2P-4804) Declare the household member age bands, matching fr_rpt_farmer's edges. The generator derives an age wherever it withholds a birth date, but where the bands fall is policy, and defining them twice with different edges is how two charts come to disagree about how many people are under 25. ([`6daa47a`](https://github.com/OpenG2P/farmer-registry/commit/6daa47af0c0b0abd14b6b4b701db197ac6fd2839))
+- [G2P-4804](https://openg2p.atlassian.net/browse/G2P-4804) Take the mechanical reporting views from the platform generator. reporting.yaml declares the entity tree, names farmer/land/crop as hand-written and marks the cooperative name columns as organisations rather than people; the generated ten add livestock, inputs, membership, scores, households, members, change requests, record history and geo_levels, which used to be derived from registered rows and so was empty on a production install. ([`11e3b8b`](https://github.com/OpenG2P/farmer-registry/commit/11e3b8beb7368af5e1dbf8bb6810c6ef08238a18))
+- [G2P-4804](https://openg2p.atlassian.net/browse/G2P-4804) Refresh the reporting views on a schedule, instead of relying on Insights to do it. They are materialized, so they held whatever the install produced and every farmer registered afterwards was invisible with no error anywhere; a CronJob now rebuilds them in dependency order resolved from pg_depend, on analytics.reportingViews.refreshSchedule. ([`8f93c33`](https://github.com/OpenG2P/farmer-registry/commit/8f93c337cbc07bcef9de94f12633572297c92e9f))
+- [G2P-5402](https://openg2p.atlassian.net/browse/G2P-5402) fix: correct ui configuration for multiple sections and add dedicated parent lookup sections for crop intake and crop register ([`2f172d4`](https://github.com/OpenG2P/farmer-registry/commit/2f172d4848fecc02c08f9c5a9e83edb76888ba53))
+- [G2P-5378](https://openg2p.atlassian.net/browse/G2P-5378) Fix bulk-sample id collisions: sub-table functional ids were uuid[:8], which collides by the birthday bound (100k farmers died at ~39k crops on ix_g2p_register_crops_functional_record_id) — use sequential counters like the farmer ids already do ([`d39deba`](https://github.com/OpenG2P/farmer-registry/commit/d39deba138813845cc34ea701b885ed763833836))
+- [G2P-5378](https://openg2p.atlassian.net/browse/G2P-5378) Fix AWE seed aborting on shared-DB policy_key clash: untargeted ON CONFLICT DO NOTHING (uq_policy_key_version was unguarded by the id-targeted clause) plus FK-orphan filters on stages/rules, so a policy another registry already owns no longer takes the whole batch — and the farmer policy — down with it ([`43afe27`](https://github.com/OpenG2P/farmer-registry/commit/43afe27ad81c2fedd13e22c35d1d1029c78882ae))
+- [G2P-4804](https://openg2p.atlassian.net/browse/G2P-4804) Fall back to this registry's own Superset connection name when the release is gone. The name was only ever read from `helm get values`, so uninstalling from Rancher — or running helm uninstall first — skipped the dashboard cleanup with a quiet warning and left the dashboards, charts, datasets and connection in the shared Superset, where the next install adopted them by UUID. ([`a445d51`](https://github.com/OpenG2P/farmer-registry/commit/a445d51fc54913d9fd0127e138f3213d748b4410))
+- [G2P-4804](https://openg2p.atlassian.net/browse/G2P-4804) Skip the dashboard import when Superset is absent instead of failing the install. Superset is a separate release and analytics is optional, but the gate exited 1 after waiting, so a registry installed without a reporting stack failed outright. The gate is checked in the init container AND the main one, because an init container exiting 0 does not stop the pod; set analytics.dashboards.superset.required=true where a silent skip would be worse. ([`2e3a06a`](https://github.com/OpenG2P/farmer-registry/commit/2e3a06a243dc3a44d8485622deae1b9f4d07aa25))
+- [G2P-4804](https://openg2p.atlassian.net/browse/G2P-4804) Add the maps content and publish it as an image. Insights draws maps from a registry-specific image; without one, FR installs fell back to the reference content, which queries nsr_rpt_* and poverty measures FR does not have. Queries plot land tenure, input use and cooperative membership from fr_rpt_farmer/fr_rpt_crop, and are validated against a live FR database. ([`6aac6b7`](https://github.com/OpenG2P/farmer-registry/commit/6aac6b7b128d3ed896c70cae283af39cd25a49ac))
+- Fixes in data seeding. ([`7af358a`](https://github.com/OpenG2P/farmer-registry/commit/7af358afa6577cce069d120c54b7cc2f892e94fe))
+- Bumped up RP version to 0.0.0-develop.346 ([`f19c12d`](https://github.com/OpenG2P/farmer-registry/commit/f19c12dd57340798ff7de921c17ebb179eb4fc3a))
+- [G2P-4804](https://openg2p.atlassian.net/browse/G2P-4804) DB-seed: take ownership of load_sample_data.py and upload_images.py from the platform image ([`003ac5d`](https://github.com/OpenG2P/farmer-registry/commit/003ac5de37ee21bb695b23bc492248c0b68d5f6a))
+- [G2P-4804](https://openg2p.atlassian.net/browse/G2P-4804) Analytics: add FR reporting views, bulk sample generator, Superset bundle (5 dashboards/45 charts) and the analytics Jobs; declare the DB globals the wrapper's own templates need ([`932aa5a`](https://github.com/OpenG2P/farmer-registry/commit/932aa5a4ddf7b9c9a0ebb4b30096ad67c22758df))
+- [G2P-2804](https://openg2p.atlassian.net/browse/G2P-2804) Analytics: add FR reporting layer (fr_rpt_farmer, fr_rpt_land, fr_rpt_geo_levels) — area normalised to hectares, crops/livestock/inputs rolled off the land grain ([`30672a4`](https://github.com/OpenG2P/farmer-registry/commit/30672a410c1fc942b9bdd1e4b544ab337e507436))
+- questions.yaml copied during CI ([`ae32039`](https://github.com/OpenG2P/farmer-registry/commit/ae32039b18158b8ade948311e02681bc6442dadd))
+- Bumped up RP version ([`5cae5e3`](https://github.com/OpenG2P/farmer-registry/commit/5cae5e38b01f7c598811f49f7451bd30d4ea50d1))
+- [G2P-5335](https://openg2p.atlassian.net/browse/G2P-5335) Chart: fix values.yaml clobbered by the CI migration (yq line offset; staffApi/partnerApi pointed at the wrong images); take registry-platform 0.0.0-develop.343 from the GitLab charts registry ([`c989a9d`](https://github.com/OpenG2P/farmer-registry/commit/c989a9db99f52fb64fa871219abd7adde8222ea4))
+- Data related changes. ([`d66f1a6`](https://github.com/OpenG2P/farmer-registry/commit/d66f1a697e05a5b78b9c6b9a4eddc72b727354be))
+- [G2P-4804](https://openg2p.atlassian.net/browse/G2P-4804) Enable the Master Data path and stop seeding a second geography. loadGeoData was still true, which runs the legacy slug-path loader over the hierarchy master-data already holds from its country pack — two hierarchies, one of which joins to nothing. Also enables loadAttributes with the agriculture domain, and syncGeoWidgets. ([`e2d45bc`](https://github.com/OpenG2P/farmer-registry/commit/e2d45bc2153058f54bd5a0f13f4ac49394827f15))
+- [G2P-5335](https://openg2p.atlassian.net/browse/G2P-5335) Switch CI to GitLab (.gitlab-ci.yml); drop GitHub Actions build/publish ([`1cc19d0`](https://github.com/OpenG2P/farmer-registry/commit/1cc19d0410a71c7c7d45ae5458d64519a1457c47))
+- [G2P-4804](https://openg2p.atlassian.net/browse/G2P-4804) Fix the two geo dropdowns. They carried a hardcoded dev-environment URL and no service/endpoint, so the widget layer bailed before making the request and the dropdowns never populated. Now resolved through master-data like every other api widget, with levels that match the default country pack. ([`79edff5`](https://github.com/OpenG2P/farmer-registry/commit/79edff5679c097d400c4ce645f28b383ceae32cc))
+- [G2P-5412](https://openg2p.atlassian.net/browse/G2P-5412) Refactor: Remove unused async methods for linking internal record IDs in various models (crop, farm inputs, farmer, household member, land, livestock, membership details) to streamline code and improve maintainability. ([`c5ab693`](https://github.com/OpenG2P/farmer-registry/commit/c5ab69323dd7435a93ae3572213fd5dfdec6a71f))
+
 <a id="v-1-2-1-rc-210"></a>
 
 ## farmer-registry 1.2.1-rc.210 — 2026-10-30
@@ -358,19 +462,6 @@ _commit `e5d1fa6` · changes since 1.2.1-rc.178_
 ### Changes
 
 - Bump version of RP to 1.2.2-rc.515 ([`e5d1fa6`](https://github.com/OpenG2P/farmer-registry/commit/e5d1fa6a63ba1d24ab716f620a097da916c06271))
-
-<a id="v-1-2-1-rc-178"></a>
-
-## farmer-registry 1.2.1-rc.178 — 2026-09-25
-
-_commit `0fea832` · changes since 1.2.1-rc.176_
-<!-- build:1.2.1-rc.178 revision:0fea832b1c85d3b3cba944cc412a269f6ffa30bd ts:1790341839 -->
-
-**Chart:** [openg2p-farmer-registry 1.2.1-rc.178](https://openg2p.github.io/openg2p-helm/openg2p-farmer-registry-1.2.1-rc.178.tgz)
-
-### Changes
-
-- [G2P-5703](https://openg2p.atlassian.net/browse/G2P-5703) Add null annotations for Rancher compatibility in values.yaml ([`bae8577`](https://github.com/OpenG2P/farmer-registry/commit/bae85776f8f7f1d6cd07217c563ad8a891f1e3a6))
 
 # Develop builds
 
