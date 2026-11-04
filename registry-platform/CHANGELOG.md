@@ -6,6 +6,7 @@ _Published automatically._
 
 | Version | Date | Type | Notes |
 | --- | --- | --- | --- |
+| [`1.2.2-rc.681`](#v-1-2-2-rc-681) | 2026-11-04 | release candidate |  |
 | [`1.2.2-rc.677`](#v-1-2-2-rc-677) | 2026-11-04 | release candidate |  |
 | [`1.2.2-rc.625`](#v-1-2-2-rc-625) | 2026-10-29 | release candidate |  |
 | [`1.2.2-rc.614`](#v-1-2-2-rc-614) | 2026-10-28 | release candidate |  |
@@ -17,7 +18,6 @@ _Published automatically._
 | [`0.0.0-develop.621`](#v-0-0-0-develop-621) | 2026-10-21 | develop |  |
 | [`1.2.2-rc.568`](#v-1-2-2-rc-568) | 2026-10-16 | release candidate |  |
 | [`1.2.2-rc.565`](#v-1-2-2-rc-565) | 2026-10-16 | release candidate |  |
-| [`1.2.2-rc.559`](#v-1-2-2-rc-559) | 2026-10-16 | release candidate |  |
 | [`0.0.0-develop.615`](#v-0-0-0-develop-615) | 2026-10-12 | develop |  |
 | [`0.0.0-develop.613`](#v-0-0-0-develop-613) | 2026-10-08 | develop |  |
 | [`0.0.0-develop.611`](#v-0-0-0-develop-611) | 2026-10-07 | develop |  |
@@ -355,6 +355,27 @@ same commit and *promoted* (retagged), not rebuilt. No code changed between them
 
 # Release candidates
 
+<a id="v-1-2-2-rc-681"></a>
+
+## registry-platform 1.2.2-rc.681 — 2026-11-04
+
+_commit `71e1ae4` · changes since 1.2.2-rc.677_
+<!-- build:1.2.2-rc.681 revision:71e1ae43d808b2c5e650a68fbca2a8347fdac9db ts:1793799428 -->
+
+**Chart:** [openg2p-registry 1.2.2-rc.681](https://openg2p.github.io/openg2p-helm/openg2p-registry-1.2.2-rc.681.tgz)
+
+### Summary
+
+- **Major:** Helm configuration changes: default partner signature and consent settings are now off.
+- Core feature enhancement: full record state is now written into register history for improved tracking.
+- Dependency updates: switched to using `celery[redis]` extra to accommodate kombu version requirements.
+
+### Changes
+
+- fix(celery): use celery[redis] extra - kombu&gt;=5.7 imports packaging in the redis transport ([`fe52b3d`](https://github.com/OpenG2P/registry-platform/commit/fe52b3d030b30399099a2d1b11bc838f77273e87))
+- [G2P-5905](https://openg2p.atlassian.net/browse/G2P-5905) feat(core): write full record state into register history ([`ca7e109`](https://github.com/OpenG2P/registry-platform/commit/ca7e109e50e7af8665c3c9228039b329a9c6fce0))
+- chore(helm)!: default partner signature and consent to off ([`043df5c`](https://github.com/OpenG2P/registry-platform/commit/043df5c80c41868c53e5047024c9cf99150c4032))
+
 <a id="v-1-2-2-rc-677"></a>
 
 ## registry-platform 1.2.2-rc.677 — 2026-11-04
@@ -608,19 +629,6 @@ _commit `3f765db` · changes since 1.2.2-rc.559_
 - [G2P-5815](https://openg2p.atlassian.net/browse/G2P-5815) fix: improve responsiveness of the registry configuration ([`ef44577`](https://github.com/OpenG2P/registry-platform/commit/ef445774eba9194c00a839ab8bb00197eab9490c))
 - [G2P-5807](https://openg2p.atlassian.net/browse/G2P-5807) fix: improve responsiveness of the intake page and related components ([`d9100d1`](https://github.com/OpenG2P/registry-platform/commit/d9100d11b057de8d90303b25759617dd6a1ef562))
 - [G2P-5805](https://openg2p.atlassian.net/browse/G2P-5805) fix: improve responsiveness of homepage, register, change request, version history pages, and related components ([`6e4148f`](https://github.com/OpenG2P/registry-platform/commit/6e4148f8a0b9d45855ad21fa3fc9faef6543df2e))
-
-<a id="v-1-2-2-rc-559"></a>
-
-## registry-platform 1.2.2-rc.559 — 2026-10-16
-
-_commit `4194051` · changes since 1.2.2-rc.557_
-<!-- build:1.2.2-rc.559 revision:4194051e913d0ff4a59717428128e8a7721eb66b ts:1792143084 -->
-
-**Chart:** [openg2p-registry 1.2.2-rc.559](https://openg2p.github.io/openg2p-helm/openg2p-registry-1.2.2-rc.559.tgz)
-
-### Changes
-
-- [G2P-5767](https://openg2p.atlassian.net/browse/G2P-5767) feat(ui): enhance outgest topic management with partner support ([`26e93fd`](https://github.com/OpenG2P/registry-platform/commit/26e93fd081b899395910cc02abaf9cf955b8f147))
 
 <a id="v-1-2-1-rc-462"></a>
 
