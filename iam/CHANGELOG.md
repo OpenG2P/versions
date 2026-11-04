@@ -6,6 +6,7 @@ _Published automatically._
 
 | Version | Date | Type | Notes |
 | --- | --- | --- | --- |
+| [`1.4.4-rc.142`](#v-1-4-4-rc-142) | 2026-11-04 | release candidate |  |
 | [`1.4.4-rc.127`](#v-1-4-4-rc-127) | 2026-10-27 | release candidate |  |
 | [`0.0.0-develop.102`](#v-0-0-0-develop-102) | 2026-10-12 | develop |  |
 | [`1.4.4-rc.125`](#v-1-4-4-rc-125) | 2026-10-08 | release candidate |  |
@@ -192,6 +193,37 @@ Compared with 1.3.0, this release turns IAM from an auth backend into an operabl
 - [G2P-5313](https://openg2p.atlassian.net/browse/G2P-5313) Improve unit test coverage for core IAM functionality ([`c762c7b`](https://github.com/OpenG2P/iam/commit/c762c7b741a5c9d19bbd30b6875daacbd5d88717))
 
 # Release candidates
+
+<a id="v-1-4-4-rc-142"></a>
+
+## iam 1.4.4-rc.142 — 2026-11-04
+
+_commit `fe8c7d6` · changes since 1.4.4-rc.127_
+<!-- build:1.4.4-rc.142 revision:fe8c7d658244e4145c9611042269382caf449f8b ts:1793799501 -->
+
+**Chart:** [openg2p-iam-service 1.4.4-rc.142](https://openg2p.github.io/openg2p-helm/openg2p-iam-service-1.4.4-rc.142.tgz)
+
+### Summary
+
+- **Major:** CI transition to GitLab with removal of GitHub Actions for build and publish processes.
+- Caching enhancements: implemented caching for JWKS, OIDC metadata, and role permissions resolution using fastapi-cache.
+- Security update: CSRF cookie configuration modified to ensure persistence until logout by removing Max-Age and Expires attributes.
+- Dependency management: removed openg2p-fastapi-common and updated fastapi-common version to develop.
+- Database refactor: standardized session management across services using get_async_session_maker.
+- Testing improvements: fixed unit tests and restored previously dropped role-permission caching functionality.
+
+### Changes
+
+- [G2P-5900](https://openg2p.atlassian.net/browse/G2P-5900) Fix(csrf): remove Max-Age and Expires from CSRF cookie to ensure persistence until logout ([`6f320a8`](https://github.com/OpenG2P/iam/commit/6f320a8f3fc6f8902ea3ef696c4f8b3b9986b85a))
+- Remove openg2p-fastapi-common dependency from pyproject.toml ([`e65e4ac`](https://github.com/OpenG2P/iam/commit/e65e4ac4786482ed60dcc60568c9a64ba8ed845a))
+- [G2P-5647](https://openg2p.atlassian.net/browse/G2P-5647) Implement caching for JWKS and OIDC metadata ([`4c1888b`](https://github.com/OpenG2P/iam/commit/4c1888b5225dacca0f76c302c6ea2158aa157844))
+- Update fastapi-common version from 1.1 to develop ([`7a23b8c`](https://github.com/OpenG2P/iam/commit/7a23b8c7acb07b8b479bc49793f27d01e9bf42a1))
+- Fix unit tests ([`fd581c1`](https://github.com/OpenG2P/iam/commit/fd581c112bec4a8cd496ea0c99816413507eb1d3))
+- [G2P-5620](https://openg2p.atlassian.net/browse/G2P-5620) Refactor database session management to use get_async_session_maker across services ([`64b5920`](https://github.com/OpenG2P/iam/commit/64b59207abdced4ac19fcf48eadcaa3b81586d84))
+- [G2P-5605](https://openg2p.atlassian.net/browse/G2P-5605) Restore the role-permission caching work dropped by the merge ([`ef8d34b`](https://github.com/OpenG2P/iam/commit/ef8d34b9e26cdfe77832b552bcc1449499ecb3a4))
+- [G2P-5605](https://openg2p.atlassian.net/browse/G2P-5605) Align the performance-test branch with GitHub ([`7bfd957`](https://github.com/OpenG2P/iam/commit/7bfd95706afb7913699ac988818267c28a2bec1f))
+- [G2P-5335](https://openg2p.atlassian.net/browse/G2P-5335) Switch CI to GitLab (.gitlab-ci.yml); drop GitHub Actions build/publish ([`895fcc1`](https://github.com/OpenG2P/iam/commit/895fcc1c6086e9ebe81915f9481f8881b21b7599))
+- [G2P-5515](https://openg2p.atlassian.net/browse/G2P-5515) Add fastapi-cache dependency and implement caching for role permissions resolution ([`fe6d788`](https://github.com/OpenG2P/iam/commit/fe6d788cdb84ab07fdd510fb76a4b14ce7fdd6b0))
 
 <a id="v-1-4-4-rc-127"></a>
 
