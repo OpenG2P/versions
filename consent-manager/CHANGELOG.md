@@ -6,6 +6,7 @@ _Published automatically._
 
 | Version | Date | Type | Notes |
 | --- | --- | --- | --- |
+| [`0.0.0-develop.90`](#v-0-0-0-develop-90) | 2026-11-04 | develop |  |
 | [`0.0.0-develop.89`](#v-0-0-0-develop-89) | 2026-11-02 | develop |  |
 | [`0.0.0-develop.87`](#v-0-0-0-develop-87) | 2026-10-31 | develop |  |
 | [`0.0.0-develop.86`](#v-0-0-0-develop-86) | 2026-10-28 | develop |  |
@@ -25,7 +26,6 @@ _Published automatically._
 | [`0.0.0-develop.63`](#v-0-0-0-develop-63) | 2026-10-05 | develop |  |
 | [`0.0.0-develop.61`](#v-0-0-0-develop-61) | 2026-10-02 | develop |  |
 | [`0.0.0-develop.60`](#v-0-0-0-develop-60) | 2026-10-01 | develop |  |
-| [`0.0.0-develop.59`](#v-0-0-0-develop-59) | 2026-10-01 | develop |  |
 | [`1.0.3`](#v-1-0-3) | 2026-09-04 | release |  |
 | [`1.0.3-rc.63`](#v-1-0-3-rc-63) | 2026-09-04 | release candidate |  |
 | [`1.0.2`](#v-1-0-2) | 2026-09-01 | release |  |
@@ -277,6 +277,19 @@ _commit `c67030b` · changes since 0.0.0-develop.57_
 _No new commits since 0.0.0-develop.57._
 
 # Develop builds
+
+<a id="v-0-0-0-develop-90"></a>
+
+## consent-manager — develop 0.0.0-develop.90 (2026-11-04)
+
+_commit `52f4b05` · changes since 0.0.0-develop.89_
+<!-- build:0.0.0-develop.90 revision:52f4b050e0634382f4d3270ee7aa671fbed3e3b8 ts:1793757898 -->
+
+**Chart:** [openg2p-consent-manager 0.0.0-develop.90](https://openg2p.github.io/openg2p-helm/openg2p-consent-manager-0.0.0-develop.90.tgz)
+
+### Changes
+
+- [G2P-5719](https://openg2p.atlassian.net/browse/G2P-5719) Consent: Farmer ID optional and kept as entered (no staff check; registries' subject enforcement keeps other farmers' data out); request flow steps 4–7; consent lifecycle table; CM API/deployment, registries and Collecting a Consent updated ([`52f4b05`](https://github.com/OpenG2P/consent-manager/commit/52f4b050e0634382f4d3270ee7aa671fbed3e3b8))
 
 <a id="v-0-0-0-develop-89"></a>
 
@@ -578,19 +591,6 @@ _commit `c6c6382` · changes since 0.0.0-develop.59_
 ### Changes
 
 - [G2P-5719](https://openg2p.atlassian.net/browse/G2P-5719) Return a stored consent decision only after the binding and signature check, and only for the same consent (reused jti → replay); tests; .env.example wording ([`c6c6382`](https://github.com/OpenG2P/consent-manager/commit/c6c63829dd0edf492365b93689717095530b797a))
-
-<a id="v-0-0-0-develop-59"></a>
-
-## consent-manager — develop 0.0.0-develop.59 (2026-10-01)
-
-_commit `87648fe` · changes since 0.0.0-develop.58_
-<!-- build:0.0.0-develop.59 revision:87648fe12ae2c0d80f2595538bfe8bd4bd5ff0aa ts:1790867869 -->
-
-**Chart:** [openg2p-consent-manager 0.0.0-develop.59](https://openg2p.github.io/openg2p-helm/openg2p-consent-manager-0.0.0-develop.59.tgz)
-
-### Changes
-
-- [G2P-5719](https://openg2p.atlassian.net/browse/G2P-5719) Single consent with one grant per registry: grants claim, data_controller on /validate, bindings per (partner, controller), replay per (jti, controller), subject_mismatch, consent requests with grants, UI, tests ([`87648fe`](https://github.com/OpenG2P/consent-manager/commit/87648fe12ae2c0d80f2595538bfe8bd4bd5ff0aa))
 
 ---
 
