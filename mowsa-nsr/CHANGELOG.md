@@ -6,6 +6,7 @@ _Published automatically._
 
 | Version | Date | Type | Notes |
 | --- | --- | --- | --- |
+| [`1.2.1-rc.340`](#v-1-2-1-rc-340) | 2026-11-04 | release candidate |  |
 | [`1.2.1-rc.338`](#v-1-2-1-rc-338) | 2026-10-27 | release candidate |  |
 | [`1.2.1-rc.335`](#v-1-2-1-rc-335) | 2026-10-08 | release candidate |  |
 | [`1.2.1-rc.334`](#v-1-2-1-rc-334) | 2026-10-07 | release candidate |  |
@@ -15,7 +16,6 @@ _Published automatically._
 | [`1.2.1-rc.325`](#v-1-2-1-rc-325) | 2026-09-25 | release candidate |  |
 | [`1.2.1-rc.323`](#v-1-2-1-rc-323) | 2026-09-25 | release candidate |  |
 | [`1.2.1-rc.320`](#v-1-2-1-rc-320) | 2026-09-25 | release candidate |  |
-| [`1.2.1-rc.315`](#v-1-2-1-rc-315) | 2026-09-22 | release candidate |  |
 | [`1.2.0`](#v-1-2-0) | 2026-09-04 | release |  |
 | [`1.2.0-rc.304`](#v-1-2-0-rc-304) | 2026-09-03 | release candidate |  |
 | [`1.2.0-rc.303`](#v-1-2-0-rc-303) | 2026-09-03 | release candidate |  |
@@ -161,6 +161,19 @@ _AI summary unavailable — re-run the workflow with `changelog_regenerate=1.2.0
 
 # Release candidates
 
+<a id="v-1-2-1-rc-340"></a>
+
+## mowsa-nsr 1.2.1-rc.340 — 2026-11-04
+
+_commit `bfe5c44` · changes since 1.2.1-rc.338_
+<!-- build:1.2.1-rc.340 revision:bfe5c44082e2bca3177c66e22847a2b688998736 ts:1793783525 -->
+
+**Chart:** [mowsa-nsr 1.2.1-rc.340](https://openg2p.github.io/openg2p-helm/mowsa-nsr-1.2.1-rc.340.tgz)
+
+### Changes
+
+- Update RP_VERSION to 1.2.2-rc.677 in Dockerfiles and Chart.yaml for all services to align with the latest registry version. ([`14c8b0a`](https://github.com/OpenG2P/mowsa-nsr/commit/14c8b0a868f1fffa30451f6be47fb65643fc8e79))
+
 <a id="v-1-2-1-rc-338"></a>
 
 ## mowsa-nsr 1.2.1-rc.338 — 2026-10-27
@@ -299,19 +312,6 @@ _AI summary unavailable — re-run the workflow with `changelog_regenerate=1.2.1
 - [G2P-5653](https://openg2p.atlassian.net/browse/G2P-5653) - Make the list fields required, Update SQL metadata for g2p_attribute_values and g2p_register_sections to enhance conflict resolution and improve widget configurations. Change 'data_import_files' to 'import-files' for consistency in g2p_registry_documents. Adjust theme values SQL to streamline theme configurations. ([`65bc429`](https://github.com/OpenG2P/mowsa-nsr/commit/65bc429fb333929bd5efcb94733774c9c89c5647))
 - Update g2p_registry_languages.sql to add new translations ([`a571edf`](https://github.com/OpenG2P/mowsa-nsr/commit/a571edfac84c2e65ec92939ba1be9378e8cfdd30))
 - Enhance G2PRegisterDomainServiceIndividual to clear RID when national ID is not present ([`45181a3`](https://github.com/OpenG2P/mowsa-nsr/commit/45181a30b3ed13d33e14781c04a0daa5c11dda7e))
-
-<a id="v-1-2-1-rc-315"></a>
-
-## mowsa-nsr 1.2.1-rc.315 — 2026-09-22
-
-_commit `d891f8a` · changes since 1.2.1-rc.313_
-<!-- build:1.2.1-rc.315 revision:d891f8ae38b8dfa3b07523bc3d96d74d7bb0c775 ts:1790071937 -->
-
-**Chart:** [mowsa-nsr 1.2.1-rc.315](https://openg2p.github.io/openg2p-helm/mowsa-nsr-1.2.1-rc.315.tgz)
-
-### Changes
-
-- Update RP_VERSION to 1.2.2-rc.489 in Dockerfiles and Chart.yaml for all services to ensure consistency with the latest registry version. ([`0f258c8`](https://github.com/OpenG2P/mowsa-nsr/commit/0f258c8472c7a25633098f6af63f8b3115231c14))
 
 <a id="v-1-2-0-rc-304"></a>
 
