@@ -6,6 +6,7 @@ _Published automatically._
 
 | Version | Date | Type | Notes |
 | --- | --- | --- | --- |
+| [`1.2.2-rc.677`](#v-1-2-2-rc-677) | 2026-11-04 | release candidate |  |
 | [`1.2.2-rc.625`](#v-1-2-2-rc-625) | 2026-10-29 | release candidate |  |
 | [`1.2.2-rc.614`](#v-1-2-2-rc-614) | 2026-10-28 | release candidate |  |
 | [`1.2.2-rc.607`](#v-1-2-2-rc-607) | 2026-10-28 | release candidate |  |
@@ -17,7 +18,6 @@ _Published automatically._
 | [`1.2.2-rc.568`](#v-1-2-2-rc-568) | 2026-10-16 | release candidate |  |
 | [`1.2.2-rc.565`](#v-1-2-2-rc-565) | 2026-10-16 | release candidate |  |
 | [`1.2.2-rc.559`](#v-1-2-2-rc-559) | 2026-10-16 | release candidate |  |
-| [`1.2.2-rc.557`](#v-1-2-2-rc-557) | 2026-10-14 | release candidate |  |
 | [`0.0.0-develop.615`](#v-0-0-0-develop-615) | 2026-10-12 | develop |  |
 | [`0.0.0-develop.613`](#v-0-0-0-develop-613) | 2026-10-08 | develop |  |
 | [`0.0.0-develop.611`](#v-0-0-0-develop-611) | 2026-10-07 | develop |  |
@@ -355,6 +355,67 @@ same commit and *promoted* (retagged), not rebuilt. No code changed between them
 
 # Release candidates
 
+<a id="v-1-2-2-rc-677"></a>
+
+## registry-platform 1.2.2-rc.677 — 2026-11-04
+
+_commit `c2c8913` · changes since 1.2.2-rc.625_
+<!-- build:1.2.2-rc.677 revision:c2c8913b3cf521075094d5fd4f857712a1ac73d0 ts:1793780260 -->
+
+**Chart:** [openg2p-registry 1.2.2-rc.677](https://openg2p.github.io/openg2p-helm/openg2p-registry-1.2.2-rc.677.tgz)
+
+### Summary
+
+- **Major:** Enhanced WebSub integration: updated base URL to commons-services, configured the registry to point to the commons websub hub, and improved error handling for denied requests.
+- Performance improvements: refactored search functionality for better query performance, enhanced database connection pooling for asyncpg compatibility, and implemented caching mechanisms for intake form and register metadata services.
+- New features: added filtering functionality to change request and intake form pages, and introduced async search publishing on partner topics.
+- Refactoring efforts: improved intake form submission processing, deduplication logic, and validation methods for better maintainability and readability.
+- Caching enhancements: implemented caching for compiled Jinja templates, partner topics, and summary data retrieval across services.
+- Miscellaneous updates: added submission_id to intake history handling, improved sorting mechanisms in G2PRegisterService, and updated environment configuration files.
+
+### Changes
+
+- [G2P-5889](https://openg2p.atlassian.net/browse/G2P-5889) Feat: integrate filtering functionality in change request and intake form pages ([`77e80ec`](https://github.com/OpenG2P/registry-platform/commit/77e80ecc49d052f0044aaf8dbb57ae6c3a925152))
+- [G2P-5855](https://openg2p.atlassian.net/browse/G2P-5855) Fix : add submission_id to history columns for intake history handling ([`f32b1de`](https://github.com/OpenG2P/registry-platform/commit/f32b1de68db89cbd38cf25c47015dceceafdef61))
+- [G2P-5833](https://openg2p.atlassian.net/browse/G2P-5833) Make WebsubHelper methods async and update publish and registration calls ([`f45aa88`](https://github.com/OpenG2P/registry-platform/commit/f45aa88eb9b1fe0a7243baed05ec19838080ca43))
+- [G2P-5830](https://openg2p.atlassian.net/browse/G2P-5830) Cache partner topics and configure cache duration for async search ([`87c8f59`](https://github.com/OpenG2P/registry-platform/commit/87c8f595147ea504ccf1ceb7ce53748b3b085aa2))
+- [G2P-5812](https://openg2p.atlassian.net/browse/G2P-5812) Cache compiled Jinja templates and look up ingest partners in Partner Management. ([`6bbe3fe`](https://github.com/OpenG2P/registry-platform/commit/6bbe3fefb7cfca3b15beabd7c2403539f58a8c3b))
+- chore(env): update WebSub base URL to commons-services ([`e97bd30`](https://github.com/OpenG2P/registry-platform/commit/e97bd30ff799bda090d4931f814b3459041e7b0e))
+- chore(env): update .env.example ([`bc60073`](https://github.com/OpenG2P/registry-platform/commit/bc60073492c535bf1aad42fd918493a327e9dfea))
+- [G2P-5756](https://openg2p.atlassian.net/browse/G2P-5756) feat(helm): point the registry at the commons websub hub ([`7402c73`](https://github.com/OpenG2P/registry-platform/commit/7402c73e33e24aae0dcc623c9fcccf232eed7119))
+- [G2P-5756](https://openg2p.atlassian.net/browse/G2P-5756) fix(websub): fail when the hub denies a request ([`511cafc`](https://github.com/OpenG2P/registry-platform/commit/511cafcb0830c6be16ead4267ce56225b6ebf7fc))
+- [G2P-5756](https://openg2p.atlassian.net/browse/G2P-5756) feat(dci): publish async search on the partner topic ([`8f502cf`](https://github.com/OpenG2P/registry-platform/commit/8f502cfdec4152c502bcd9f74ae2d795e5a54bca))
+- [G2P-5756](https://openg2p.atlassian.net/browse/G2P-5756) feat(outgest): add partner and register topics ([`0433d80`](https://github.com/OpenG2P/registry-platform/commit/0433d80c686517a823252f81a09e55ab3691b36d))
+- [G2P-5753](https://openg2p.atlassian.net/browse/G2P-5753) feat(dci): decode the four query types ([`2d04ec5`](https://github.com/OpenG2P/registry-platform/commit/2d04ec517372f6a8a8018ca938bb693d4c25b860))
+- [G2P-5754](https://openg2p.atlassian.net/browse/G2P-5754) feat(dci): allowlist searchable columns ([`6a32a2c`](https://github.com/OpenG2P/registry-platform/commit/6a32a2ce60f99967b031f7fd602884c8a6da5d29))
+- [G2P-5755](https://openg2p.atlassian.net/browse/G2P-5755) feat(search): batch related-register loads ([`e408418`](https://github.com/OpenG2P/registry-platform/commit/e4084186c8ab56490ff42fcfcd9e86003fe69e89))
+- [G2P-5794](https://openg2p.atlassian.net/browse/G2P-5794) Refactor intake form submission processing to handle already processed submissions and improve error handling ([`1caffc0`](https://github.com/OpenG2P/registry-platform/commit/1caffc0cc837abdf328e8298f710b4ce6fada6b2))
+- [G2P-5787](https://openg2p.atlassian.net/browse/G2P-5787) Refactor deduplication logic to prevent duplicate scoring of section registers in intake form processing ([`becadb7`](https://github.com/OpenG2P/registry-platform/commit/becadb762903dc778c172be3ba44cb8795d4e9f5))
+- [G2P-5785](https://openg2p.atlassian.net/browse/G2P-5785) Refactor intake deduplication with a candidate-discovery helper, remove unused non-approved submission logic, and improve logging ([`3004761`](https://github.com/OpenG2P/registry-platform/commit/3004761ddedd6b455fa42f71a39bec31e09b5350))
+- [G2P-5766](https://openg2p.atlassian.net/browse/G2P-5766) Initialize ingest worker cache, validators, and app-reference generator; widen references to prevent concurrent insert collisions ([`21315b5`](https://github.com/OpenG2P/registry-platform/commit/21315b5d40e71bd948a79c8abad672fd66e3d6b3))
+- Refactor search functionality across services to improve query performance and handle empty search cases ([`228fd9d`](https://github.com/OpenG2P/registry-platform/commit/228fd9d3cd221411334da6a816c65fbf78fd47d1))
+- Add filtering to G2PRegisterChangeRequestService and G2PIntakeFormDataService ([`68366e4`](https://github.com/OpenG2P/registry-platform/commit/68366e48b1c3ca2e874a410f33b6afc92cc3b891))
+- Improve sorting mechanism in G2PRegisterService for better performance with Postgres ([`f86a9ac`](https://github.com/OpenG2P/registry-platform/commit/f86a9ac69b15075220908dc2d4e8ffa256189236))
+- Enhance database connection pooling for asyncpg compatibility ([`4c62463`](https://github.com/OpenG2P/registry-platform/commit/4c6246345338ad962337fe0579c56eeee14f9144))
+- [G2P-5647](https://openg2p.atlassian.net/browse/G2P-5647) Enhance caching configuration and summary data retrieval across services for improved performance ([`5669277`](https://github.com/OpenG2P/registry-platform/commit/5669277793dd08076a9085d25681b3d1769bc84f))
+- Add caching mechanisms for intake form and register metadata services ([`37284e2`](https://github.com/OpenG2P/registry-platform/commit/37284e2870b32449bad1a39f38fd42f470008cf3))
+- [G2P-5620](https://openg2p.atlassian.net/browse/G2P-5620) Disable sequence checks to allow approval ([`af00e8d`](https://github.com/OpenG2P/registry-platform/commit/af00e8da032c9189b077551f5f122ceb5fa9ff84))
+- [G2P-5620](https://openg2p.atlassian.net/browse/G2P-5620) Refactor database session management to use get_async_session_maker across services ([`41147a9`](https://github.com/OpenG2P/registry-platform/commit/41147a9840b9a7dea8bbf26e648c8554fcee7725))
+- [G2P-5609](https://openg2p.atlassian.net/browse/G2P-5609) Add policy lookup key builder and caching mechanism in AWE policy service; refactor related methods for cache invalidation ([`0699d12`](https://github.com/OpenG2P/registry-platform/commit/0699d1280229f1890f0b276b434b83c2635318f6))
+- [G2P-5609](https://openg2p.atlassian.net/browse/G2P-5609) Refactor validation methods in G2PRegisterChangeRequestService and G2PRegisterMetadataService for improved readability and maintainability. ([`2ef461b`](https://github.com/OpenG2P/registry-platform/commit/2ef461b5e679db54fe0d85e0f003ff5d6546e772))
+- [G2P-5514](https://openg2p.atlassian.net/browse/G2P-5514) g2p_register_service.get_summary_data ([`b852f24`](https://github.com/OpenG2P/registry-platform/commit/b852f245d53885b43c9ce513be92de444538deec))
+- [G2P-5513](https://openg2p.atlassian.net/browse/G2P-5513) g2p_register_service.search_in_a_register ([`c8efcac`](https://github.com/OpenG2P/registry-platform/commit/c8efcacec0ee4c79971cdc5baca5c4736317a4b9))
+- [G2P-5512](https://openg2p.atlassian.net/browse/G2P-5512) g2p_register_metadata_service.get_all_tabs ([`4342369`](https://github.com/OpenG2P/registry-platform/commit/43423696171117d1dfa474f5eae27ca61aab2f31))
+- [G2P-5511](https://openg2p.atlassian.net/browse/G2P-5511) g2p_register_service.get_record (get_subject_record) -- Tuning ([`913c6ac`](https://github.com/OpenG2P/registry-platform/commit/913c6ac8668cd98cc02106488500a667b226a850))
+- [G2P-5510](https://openg2p.atlassian.net/browse/G2P-5510) g2p_register_change_request_service.get_number_of_pending_change_requests - Tuning ([`5c0a396`](https://github.com/OpenG2P/registry-platform/commit/5c0a396b660c73f28041c9b82bd1aa7f6b2b3fa5))
+- [G2P-5509](https://openg2p.atlassian.net/browse/G2P-5509) g2p_register_service.get_version_dates ([`7ade042`](https://github.com/OpenG2P/registry-platform/commit/7ade0420d6ae5335cbf575d85f333a5bbcb70435))
+- [G2P-5508](https://openg2p.atlassian.net/browse/G2P-5508) g2p_register_service.py. get_versions_for_a_date ([`3fa183e`](https://github.com/OpenG2P/registry-platform/commit/3fa183e7cf1642e9cbeed49056955ee6622013f6))
+- [G2P-5507](https://openg2p.atlassian.net/browse/G2P-5507) g2p_register_change_request_servicve.get_change_requests_flattened - Performance Tuning ([`59209d7`](https://github.com/OpenG2P/registry-platform/commit/59209d773661ea2be906da918411bc84485fa529))
+- [G2P-5506](https://openg2p.atlassian.net/browse/G2P-5506) g2p_register_metadata_service.get_tab_sections - performance tuning ([`ef9177f`](https://github.com/OpenG2P/registry-platform/commit/ef9177f4428fc2b050aad14e131cd9b6973cd7e7))
+- [G2P-5505](https://openg2p.atlassian.net/browse/G2P-5505) g2p_register_service.get_number_of_versions - Performance Tuning ([`891ce91`](https://github.com/OpenG2P/registry-platform/commit/891ce910aa77b48c2a33336f41117a42238c5401))
+- [G2P-5504](https://openg2p.atlassian.net/browse/G2P-5504) get_tab_records - performance tuning ([`7ac37e6`](https://github.com/OpenG2P/registry-platform/commit/7ac37e6dff725c41adefddd04e42218027b6b37f))
+- [G2P-5498](https://openg2p.atlassian.net/browse/G2P-5498) Add auth_verify_ssl configuration for AWE settings ([`de0657e`](https://github.com/OpenG2P/registry-platform/commit/de0657e85134621e439e0c77efe6c7fb6b716ceb))
+
 <a id="v-1-2-2-rc-625"></a>
 
 ## registry-platform 1.2.2-rc.625 — 2026-10-29
@@ -560,25 +621,6 @@ _commit `4194051` · changes since 1.2.2-rc.557_
 ### Changes
 
 - [G2P-5767](https://openg2p.atlassian.net/browse/G2P-5767) feat(ui): enhance outgest topic management with partner support ([`26e93fd`](https://github.com/OpenG2P/registry-platform/commit/26e93fd081b899395910cc02abaf9cf955b8f147))
-
-<a id="v-1-2-2-rc-557"></a>
-
-## registry-platform 1.2.2-rc.557 — 2026-10-14
-
-_commit `4d5482d` · changes since 1.2.2-rc.554_
-<!-- build:1.2.2-rc.557 revision:4d5482dfea23d1accf98fe474fb90ed6ddb5f651 ts:1791914278 -->
-
-**Chart:** [openg2p-registry 1.2.2-rc.557](https://openg2p.github.io/openg2p-helm/openg2p-registry-1.2.2-rc.557.tgz)
-
-### Summary
-
-- Dependency updates: synchronized staff-ui to version 1.1.9-dev.13 and made changes to package-lock.json and package.json for both staff-ui and ui-widgets.
-- UI refactoring: implemented null value handling across multiple widgets to improve data consistency and user experience.
-
-### Changes
-
-- chore(ui-widgets): version for npm dev publish, sync staff-ui @1.1.9-dev.13 ([`4d5482d`](https://github.com/OpenG2P/registry-platform/commit/4d5482dfea23d1accf98fe474fb90ed6ddb5f651))
-- [G2P-5774](https://openg2p.atlassian.net/browse/G2P-5774) refactor(ui-widgets): set null for empty values across multiple widgets ([`bda0833`](https://github.com/OpenG2P/registry-platform/commit/bda08337a9e33cfff88947dadbabe473902fbb46))
 
 <a id="v-1-2-1-rc-462"></a>
 
