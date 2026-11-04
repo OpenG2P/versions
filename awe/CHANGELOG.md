@@ -6,6 +6,7 @@ _Published automatically._
 
 | Version | Date | Type | Notes |
 | --- | --- | --- | --- |
+| [`0.0.0-develop.95`](#v-0-0-0-develop-95) | 2026-11-04 | develop |  |
 | [`0.0.0-develop.92`](#v-0-0-0-develop-92) | 2026-10-05 | develop |  |
 | [`1.2.3-rc.86`](#v-1-2-3-rc-86) | 2026-10-05 | release candidate |  |
 | [`0.0.0-develop.90`](#v-0-0-0-develop-90) | 2026-09-03 | develop |  |
@@ -256,6 +257,26 @@ _commit `27c7f19` · changes since 1.1.0_
 - Update version to 1.1.0 in Chart.yaml, pyproject.toml, package.json, and package-lock.json ([`e5a25b4`](https://github.com/OpenG2P/awe/commit/e5a25b441a5d04671b55f035b126c0a0c7ab5632))
 
 # Develop builds
+
+<a id="v-0-0-0-develop-95"></a>
+
+## awe — develop 0.0.0-develop.95 (2026-11-04)
+
+_commit `968ae6e` · changes since 0.0.0-develop.92_
+<!-- build:0.0.0-develop.95 revision:968ae6e2cb16f990ebfb1f8ecfb26ea75cc46944 ts:1793780326 -->
+
+**Chart:** [openg2p-awe 0.0.0-develop.95](https://openg2p.github.io/openg2p-helm/openg2p-awe-0.0.0-develop.95.tgz)
+
+### Summary
+
+- Search enhancement: improved functionality by trimming whitespace in search text for better query accuracy.
+- Task management: updated task retrieval queries to include a status filter for open tasks, streamlining task tracking. 
+- Code maintenance: minor adjustments across 6 files with a total of 33 insertions and 18 deletions, including updates to tests.
+
+### Changes
+
+- [G2P-5720](https://openg2p.atlassian.net/browse/G2P-5720) Update task retrieval queries to include status filter for open tasks ([`4f69b79`](https://github.com/OpenG2P/awe/commit/4f69b7943aae91d34556ebc2a9b487ed64a92e48))
+- Improve search functionality by trimming whitespace in search text ([`a5ae79c`](https://github.com/OpenG2P/awe/commit/a5ae79c9347634b4c226e2743db7d92c9cf234f3))
 
 <a id="v-0-0-0-develop-92"></a>
 
