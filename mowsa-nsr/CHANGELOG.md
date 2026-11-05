@@ -6,6 +6,7 @@ _Published automatically._
 
 | Version | Date | Type | Notes |
 | --- | --- | --- | --- |
+| [`1.2.1-rc.343`](#v-1-2-1-rc-343) | 2026-11-05 | release candidate |  |
 | [`1.2.1-rc.342`](#v-1-2-1-rc-342) | 2026-11-05 | release candidate |  |
 | [`1.2.1-rc.340`](#v-1-2-1-rc-340) | 2026-11-04 | release candidate |  |
 | [`1.2.1-rc.338`](#v-1-2-1-rc-338) | 2026-10-27 | release candidate |  |
@@ -15,7 +16,6 @@ _Published automatically._
 | [`1.2.1-rc.329`](#v-1-2-1-rc-329) | 2026-09-25 | release candidate |  |
 | [`1.2.1-rc.327`](#v-1-2-1-rc-327) | 2026-09-25 | release candidate |  |
 | [`1.2.1-rc.325`](#v-1-2-1-rc-325) | 2026-09-25 | release candidate |  |
-| [`1.2.1-rc.323`](#v-1-2-1-rc-323) | 2026-09-25 | release candidate |  |
 | [`1.2.0`](#v-1-2-0) | 2026-09-04 | release |  |
 | [`1.2.0-rc.304`](#v-1-2-0-rc-304) | 2026-09-03 | release candidate |  |
 | [`1.2.0-rc.303`](#v-1-2-0-rc-303) | 2026-09-03 | release candidate |  |
@@ -161,6 +161,19 @@ _AI summary unavailable — re-run the workflow with `changelog_regenerate=1.2.0
 
 # Release candidates
 
+<a id="v-1-2-1-rc-343"></a>
+
+## mowsa-nsr 1.2.1-rc.343 — 2026-11-05
+
+_commit `5012597` · changes since 1.2.1-rc.342_
+<!-- build:1.2.1-rc.343 revision:50125976a83a0d3c267c03f48c6bf3969588a90a ts:1793876465 -->
+
+**Chart:** [mowsa-nsr 1.2.1-rc.343](https://openg2p.github.io/openg2p-helm/mowsa-nsr-1.2.1-rc.343.tgz)
+
+### Changes
+
+- Refactor database connection handling in db-seed entrypoint script to prevent leaking sensitive information. Update psql command to use local environment variables instead of exporting them globally. ([`5012597`](https://github.com/OpenG2P/mowsa-nsr/commit/50125976a83a0d3c267c03f48c6bf3969588a90a))
+
 <a id="v-1-2-1-rc-342"></a>
 
 ## mowsa-nsr 1.2.1-rc.342 — 2026-11-05
@@ -287,24 +300,6 @@ _commit `b496ab9` · changes since 1.2.1-rc.323_
 ### Changes
 
 - Update RP_VERSION to 1.2.2-rc.509 in Dockerfiles and Chart.yaml for all services to align with the latest registry version. ([`2e6505c`](https://github.com/OpenG2P/mowsa-nsr/commit/2e6505c64d3c1d672a1b1ac66b7f794b538c1377))
-
-<a id="v-1-2-1-rc-323"></a>
-
-## mowsa-nsr 1.2.1-rc.323 — 2026-09-25
-
-_commit `f899ee3` · changes since 1.2.1-rc.320_
-<!-- build:1.2.1-rc.323 revision:f899ee34e013050028e99af1f4354e088dd3c615 ts:1790334713 -->
-
-**Chart:** [mowsa-nsr 1.2.1-rc.323](https://openg2p.github.io/openg2p-helm/mowsa-nsr-1.2.1-rc.323.tgz)
-
-### Summary
-
-_AI summary unavailable — re-run the workflow with `changelog_regenerate=1.2.1-rc.323` to generate it._
-
-### Changes
-
-- Enhance household registration logic by adding overcrowding indicator calculations based on room count updates. Introduce utility function for recalculating overcrowding and update SQL metadata for housing and services section to improve widget configurations. ([`4c769ab`](https://github.com/OpenG2P/mowsa-nsr/commit/4c769abcff59ce81a3a4459eb17f68dcc0e034a5))
-- Implement disability status synchronization enhancements and add utility functions for parent ID retrieval in disability change requests. Update SQL metadata for individual disability sections and improve language consistency in UI prompts. ([`8e723c3`](https://github.com/OpenG2P/mowsa-nsr/commit/8e723c3655b39996ec957062b64a2e39bedb5396))
 
 <a id="v-1-2-0-rc-304"></a>
 
