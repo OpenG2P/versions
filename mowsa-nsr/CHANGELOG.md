@@ -6,6 +6,7 @@ _Published automatically._
 
 | Version | Date | Type | Notes |
 | --- | --- | --- | --- |
+| [`1.2.1-rc.342`](#v-1-2-1-rc-342) | 2026-11-05 | release candidate |  |
 | [`1.2.1-rc.340`](#v-1-2-1-rc-340) | 2026-11-04 | release candidate |  |
 | [`1.2.1-rc.338`](#v-1-2-1-rc-338) | 2026-10-27 | release candidate |  |
 | [`1.2.1-rc.335`](#v-1-2-1-rc-335) | 2026-10-08 | release candidate |  |
@@ -15,7 +16,6 @@ _Published automatically._
 | [`1.2.1-rc.327`](#v-1-2-1-rc-327) | 2026-09-25 | release candidate |  |
 | [`1.2.1-rc.325`](#v-1-2-1-rc-325) | 2026-09-25 | release candidate |  |
 | [`1.2.1-rc.323`](#v-1-2-1-rc-323) | 2026-09-25 | release candidate |  |
-| [`1.2.1-rc.320`](#v-1-2-1-rc-320) | 2026-09-25 | release candidate |  |
 | [`1.2.0`](#v-1-2-0) | 2026-09-04 | release |  |
 | [`1.2.0-rc.304`](#v-1-2-0-rc-304) | 2026-09-03 | release candidate |  |
 | [`1.2.0-rc.303`](#v-1-2-0-rc-303) | 2026-09-03 | release candidate |  |
@@ -161,6 +161,19 @@ _AI summary unavailable — re-run the workflow with `changelog_regenerate=1.2.0
 
 # Release candidates
 
+<a id="v-1-2-1-rc-342"></a>
+
+## mowsa-nsr 1.2.1-rc.342 — 2026-11-05
+
+_commit `8e6f90a` · changes since 1.2.1-rc.340_
+<!-- build:1.2.1-rc.342 revision:8e6f90a5205583d9d00c8ef847628b651266de2e ts:1793851572 -->
+
+**Chart:** [mowsa-nsr 1.2.1-rc.342](https://openg2p.github.io/openg2p-helm/mowsa-nsr-1.2.1-rc.342.tgz)
+
+### Changes
+
+- Update RP_VERSION to 1.2.2-rc.681 in Dockerfiles and Chart.yaml for all services to align with the latest registry version. ([`cddf07e`](https://github.com/OpenG2P/mowsa-nsr/commit/cddf07e5368fb59734ba1e8def78693b707c4bf4))
+
 <a id="v-1-2-1-rc-340"></a>
 
 ## mowsa-nsr 1.2.1-rc.340 — 2026-11-04
@@ -292,26 +305,6 @@ _AI summary unavailable — re-run the workflow with `changelog_regenerate=1.2.1
 
 - Enhance household registration logic by adding overcrowding indicator calculations based on room count updates. Introduce utility function for recalculating overcrowding and update SQL metadata for housing and services section to improve widget configurations. ([`4c769ab`](https://github.com/OpenG2P/mowsa-nsr/commit/4c769abcff59ce81a3a4459eb17f68dcc0e034a5))
 - Implement disability status synchronization enhancements and add utility functions for parent ID retrieval in disability change requests. Update SQL metadata for individual disability sections and improve language consistency in UI prompts. ([`8e723c3`](https://github.com/OpenG2P/mowsa-nsr/commit/8e723c3655b39996ec957062b64a2e39bedb5396))
-
-<a id="v-1-2-1-rc-320"></a>
-
-## mowsa-nsr 1.2.1-rc.320 — 2026-09-25
-
-_commit `e3bb87c` · changes since 1.2.1-rc.315_
-<!-- build:1.2.1-rc.320 revision:e3bb87ce557dbe2da8f80e828014131f45a81a66 ts:1790317133 -->
-
-**Chart:** [mowsa-nsr 1.2.1-rc.320](https://openg2p.github.io/openg2p-helm/mowsa-nsr-1.2.1-rc.320.tgz)
-
-### Summary
-
-_AI summary unavailable — re-run the workflow with `changelog_regenerate=1.2.1-rc.320` to generate it._
-
-### Changes
-
-- [G2P-5711](https://openg2p.atlassian.net/browse/G2P-5711) - Enhance household registration logic by adding validation to prevent removal of the last active household member. ([`72a3ee5`](https://github.com/OpenG2P/mowsa-nsr/commit/72a3ee559d897c2c48f05bd7c703d5ccb1b4ee2f))
-- [G2P-5653](https://openg2p.atlassian.net/browse/G2P-5653) - Make the list fields required, Update SQL metadata for g2p_attribute_values and g2p_register_sections to enhance conflict resolution and improve widget configurations. Change 'data_import_files' to 'import-files' for consistency in g2p_registry_documents. Adjust theme values SQL to streamline theme configurations. ([`65bc429`](https://github.com/OpenG2P/mowsa-nsr/commit/65bc429fb333929bd5efcb94733774c9c89c5647))
-- Update g2p_registry_languages.sql to add new translations ([`a571edf`](https://github.com/OpenG2P/mowsa-nsr/commit/a571edfac84c2e65ec92939ba1be9378e8cfdd30))
-- Enhance G2PRegisterDomainServiceIndividual to clear RID when national ID is not present ([`45181a3`](https://github.com/OpenG2P/mowsa-nsr/commit/45181a30b3ed13d33e14781c04a0daa5c11dda7e))
 
 <a id="v-1-2-0-rc-304"></a>
 
