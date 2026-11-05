@@ -6,6 +6,7 @@ _Published automatically._
 
 | Version | Date | Type | Notes |
 | --- | --- | --- | --- |
+| [`0.0.0-develop.91`](#v-0-0-0-develop-91) | 2026-11-05 | develop |  |
 | [`0.0.0-develop.90`](#v-0-0-0-develop-90) | 2026-11-04 | develop |  |
 | [`0.0.0-develop.89`](#v-0-0-0-develop-89) | 2026-11-02 | develop |  |
 | [`0.0.0-develop.87`](#v-0-0-0-develop-87) | 2026-10-31 | develop |  |
@@ -25,7 +26,6 @@ _Published automatically._
 | [`0.0.0-develop.64`](#v-0-0-0-develop-64) | 2026-10-07 | develop |  |
 | [`0.0.0-develop.63`](#v-0-0-0-develop-63) | 2026-10-05 | develop |  |
 | [`0.0.0-develop.61`](#v-0-0-0-develop-61) | 2026-10-02 | develop |  |
-| [`0.0.0-develop.60`](#v-0-0-0-develop-60) | 2026-10-01 | develop |  |
 | [`1.0.3`](#v-1-0-3) | 2026-09-04 | release |  |
 | [`1.0.3-rc.63`](#v-1-0-3-rc-63) | 2026-09-04 | release candidate |  |
 | [`1.0.2`](#v-1-0-2) | 2026-09-01 | release |  |
@@ -277,6 +277,19 @@ _commit `c67030b` · changes since 0.0.0-develop.57_
 _No new commits since 0.0.0-develop.57._
 
 # Develop builds
+
+<a id="v-0-0-0-develop-91"></a>
+
+## consent-manager — develop 0.0.0-develop.91 (2026-11-05)
+
+_commit `a54c7bf` · changes since 0.0.0-develop.90_
+<!-- build:0.0.0-develop.91 revision:a54c7bf7f2031019265d2245d39c4030dc1deb18 ts:1793758791 -->
+
+**Chart:** [openg2p-consent-manager 0.0.0-develop.91](https://openg2p.github.io/openg2p-helm/openg2p-consent-manager-0.0.0-develop.91.tgz)
+
+### Changes
+
+- [G2P-5719](https://openg2p.atlassian.net/browse/G2P-5719) Partner portal: Consents (home, New consent, in-progress requests first), Use cases (approved, read-only; Data access outside an Exchange), History (all requests); Requests and catalogue tabs removed, old paths redirect ([`a54c7bf`](https://github.com/OpenG2P/consent-manager/commit/a54c7bf7f2031019265d2245d39c4030dc1deb18))
 
 <a id="v-0-0-0-develop-90"></a>
 
@@ -578,19 +591,6 @@ _commit `21e817a` · changes since 0.0.0-develop.60_
 ### Changes
 
 - [G2P-5719](https://openg2p.atlassian.net/browse/G2P-5719) Pin sqlalchemy[asyncio] &lt;2.1: the image died at import without greenlet ([`21e817a`](https://github.com/OpenG2P/consent-manager/commit/21e817aaede8dbecd11f78775932aae7cb139786))
-
-<a id="v-0-0-0-develop-60"></a>
-
-## consent-manager — develop 0.0.0-develop.60 (2026-10-01)
-
-_commit `c6c6382` · changes since 0.0.0-develop.59_
-<!-- build:0.0.0-develop.60 revision:c6c63829dd0edf492365b93689717095530b797a ts:1790868794 -->
-
-**Chart:** [openg2p-consent-manager 0.0.0-develop.60](https://openg2p.github.io/openg2p-helm/openg2p-consent-manager-0.0.0-develop.60.tgz)
-
-### Changes
-
-- [G2P-5719](https://openg2p.atlassian.net/browse/G2P-5719) Return a stored consent decision only after the binding and signature check, and only for the same consent (reused jti → replay); tests; .env.example wording ([`c6c6382`](https://github.com/OpenG2P/consent-manager/commit/c6c63829dd0edf492365b93689717095530b797a))
 
 ---
 
