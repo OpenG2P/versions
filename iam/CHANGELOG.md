@@ -6,6 +6,7 @@ _Published automatically._
 
 | Version | Date | Type | Notes |
 | --- | --- | --- | --- |
+| [`0.0.0-develop.147`](#v-0-0-0-develop-147) | 2026-11-06 | develop |  |
 | [`1.4.4-rc.142`](#v-1-4-4-rc-142) | 2026-11-04 | release candidate |  |
 | [`1.4.4-rc.127`](#v-1-4-4-rc-127) | 2026-10-27 | release candidate |  |
 | [`0.0.0-develop.102`](#v-0-0-0-develop-102) | 2026-10-12 | develop |  |
@@ -498,6 +499,58 @@ _commit `f8bccfe` · changes since v1.3.0_
 - [G2P-5313](https://openg2p.atlassian.net/browse/G2P-5313) Improve unit test coverage for core IAM functionality ([`c762c7b`](https://github.com/OpenG2P/iam/commit/c762c7b741a5c9d19bbd30b6875daacbd5d88717))
 
 # Develop builds
+
+<a id="v-0-0-0-develop-147"></a>
+
+## iam — develop 0.0.0-develop.147 (2026-11-06)
+
+_commit `8f02f18` · changes since 0.0.0-develop.102_
+<!-- build:0.0.0-develop.147 revision:8f02f18d4eec60949d204d37c74d1e03808e737c ts:1793961442 -->
+
+**Chart:** [openg2p-iam-service 0.0.0-develop.147](https://openg2p.github.io/openg2p-helm/openg2p-iam-service-0.0.0-develop.147.tgz)
+
+### Summary
+
+- **Major:** CI transition to GitLab, removing GitHub Actions for build and publish processes.
+- Security enhancements: fixed JWT decryption for eSignet userinfo, updated CSRF cookie settings for session persistence.
+- Dependency updates: bumped FASTAPI_COMMON_REF to version 1.2.1 and removed openg2p-fastapi-common from project dependencies.
+- Caching improvements: implemented caching for JWKS, OIDC metadata, and role permissions resolution.
+- Refactoring efforts: standardized database session management across services and improved GeoLocationPickerModal state management.
+- UI consistency: added missing translations and updated translation keys, along with a layout refactor for DataPoliciesTab.
+- Documentation updates: cleaned up SSO login flow documentation and fixed templating for Keycloak base URL in APIs.
+- Miscellaneous fixes: addressed unit test failures and refined IAM admin user settings in configuration.
+
+### Changes
+
+- [G2P-5900](https://openg2p.atlassian.net/browse/G2P-5900) Fix(csrf): remove Max-Age and Expires from CSRF cookie to ensure persistence until logout ([`6f320a8`](https://github.com/OpenG2P/iam/commit/6f320a8f3fc6f8902ea3ef696c4f8b3b9986b85a))
+- fix(iam-core): decrypt eSignet encrypted userinfo JWT ([`3b1fb5a`](https://github.com/OpenG2P/iam/commit/3b1fb5a1c530c8fd0552b9474350dbe382609876))
+- Add nameOverride for keycloak-init in values.yaml becuase it was conflicting with commons-services keycloak-init job. ([`3e6b362`](https://github.com/OpenG2P/iam/commit/3e6b362b0f971632518db54e10c0e8582e2d6c94))
+- Update FASTAPI_COMMON_REF to version 1.2 in Dockerfiles and workflow ([`3c5a49d`](https://github.com/OpenG2P/iam/commit/3c5a49d5d9fb3607d60674899745f385906daf1a))
+- Clean up staff portal SSO login flow documentation ([`a1e1156`](https://github.com/OpenG2P/iam/commit/a1e115645c0cccc27ef01f93a93f8212cc76abe6))
+- Update keycloak-init redirect URI in values.yaml to use global application URL ([`fac8a03`](https://github.com/OpenG2P/iam/commit/fac8a03a5a69a4a90feb1e239e8ab9ddb45aae7a))
+- [G2P-5703](https://openg2p.atlassian.net/browse/G2P-5703) Add keycloak-init configuration and IAM admin user settings to values.yaml ([`273c34b`](https://github.com/OpenG2P/iam/commit/273c34b5a20c40d886a92aceeff9744c2ddba229))
+- [G2P-5699](https://openg2p.atlassian.net/browse/G2P-5699) Add missing translations and update translation keys for UI consistency ([`67ac82a`](https://github.com/OpenG2P/iam/commit/67ac82a825983347aabf35f78b1d39aa70ef96a0))
+- Bump FASTAPI_COMMON_REF to 1.2.1 and update version numbers to 1.4.2 across multiple files ([`a60d876`](https://github.com/OpenG2P/iam/commit/a60d8761f44e0ffa56011676cecd901a15481250))
+- [G2P-5620](https://openg2p.atlassian.net/browse/G2P-5620) Refactor database session management to use get_async_session_maker across services ([`13c0691`](https://github.com/OpenG2P/iam/commit/13c06911830c98ba542d37e9ef52df89cd8dd90d))
+- Remove openg2p-fastapi-common dependency from pyproject.toml ([`e65e4ac`](https://github.com/OpenG2P/iam/commit/e65e4ac4786482ed60dcc60568c9a64ba8ed845a))
+- [G2P-5647](https://openg2p.atlassian.net/browse/G2P-5647) Implement caching for JWKS and OIDC metadata ([`4c1888b`](https://github.com/OpenG2P/iam/commit/4c1888b5225dacca0f76c302c6ea2158aa157844))
+- Update fastapi-common version from 1.1 to develop ([`7a23b8c`](https://github.com/OpenG2P/iam/commit/7a23b8c7acb07b8b479bc49793f27d01e9bf42a1))
+- Fix unit tests ([`fd581c1`](https://github.com/OpenG2P/iam/commit/fd581c112bec4a8cd496ea0c99816413507eb1d3))
+- updated fastapi-commons to 1.2.0 ([`ebafe2e`](https://github.com/OpenG2P/iam/commit/ebafe2eaeea1e3d69e1760bf60624f76d5162c2a))
+- [G2P-5620](https://openg2p.atlassian.net/browse/G2P-5620) Refactor database session management to use get_async_session_maker across services ([`64b5920`](https://github.com/OpenG2P/iam/commit/64b59207abdced4ac19fcf48eadcaa3b81586d84))
+- [G2P-5605](https://openg2p.atlassian.net/browse/G2P-5605) Restore the role-permission caching work dropped by the merge ([`ef8d34b`](https://github.com/OpenG2P/iam/commit/ef8d34b9e26cdfe77832b552bcc1449499ecb3a4))
+- [G2P-5605](https://openg2p.atlassian.net/browse/G2P-5605) Align the performance-test branch with GitHub ([`7bfd957`](https://github.com/OpenG2P/iam/commit/7bfd95706afb7913699ac988818267c28a2bec1f))
+- [G2P-5605](https://openg2p.atlassian.net/browse/G2P-5605) Align the 1.4 release line with GitHub ([`f8bccfe`](https://github.com/OpenG2P/iam/commit/f8bccfe85f60a9793ff290a785f58e37e0a95927))
+- [G2P-5592](https://openg2p.atlassian.net/browse/G2P-5592) Update Redis token TTLs and cache expiration for improved session management ([`1a1ca2b`](https://github.com/OpenG2P/iam/commit/1a1ca2b68810120c30d6f13a2a494b880a2b6dc9))
+- [G2P-5587](https://openg2p.atlassian.net/browse/G2P-5587) Refactor GeoLocationPickerModal to use new utility functions for fetching geo levels and improve state management ([`b69ebd6`](https://github.com/OpenG2P/iam/commit/b69ebd628df3aeffa811d8acd0775b73a109adfb))
+- [G2P-5581](https://openg2p.atlassian.net/browse/G2P-5581) Update FastAPI common library reference to version 1.2 and add Keycloak initialization configuration ([`bd43783`](https://github.com/OpenG2P/iam/commit/bd43783f8be1d179c58a24aecc47a3a8a2f3babf))
+- [G2P-5581](https://openg2p.atlassian.net/browse/G2P-5581) Refactor JWT validation to use CryptoFactory and update tests for component registration ([`9d4d3c1`](https://github.com/OpenG2P/iam/commit/9d4d3c1ce970aca4b51d144ffb9470eb95906a75))
+- [G2P-5578](https://openg2p.atlassian.net/browse/G2P-5578) Add registration for mds, awe, partner api ([`22af5d6`](https://github.com/OpenG2P/iam/commit/22af5d687c5ff99f03a6adf5ea97e6037b51c04e))
+- [G2P-5576](https://openg2p.atlassian.net/browse/G2P-5576) Refactor DataPoliciesTab layout and comment out IconBase64Field in LoginProviderForm ([`6495993`](https://github.com/OpenG2P/iam/commit/649599302609de1af0604741c6fa5a74fe6f8e48))
+- Remove include_domains from request payload in attribute API calls ([`dafa801`](https://github.com/OpenG2P/iam/commit/dafa801754b76a0e4591e48da0f47029c4ea4296))
+- Fix templating for Keycloak base URL in IAM Staff and Agent APIs ([`ed5741a`](https://github.com/OpenG2P/iam/commit/ed5741a4cac7edafecf79d6f0b132869a605dd18))
+- [G2P-5335](https://openg2p.atlassian.net/browse/G2P-5335) Switch CI to GitLab (.gitlab-ci.yml); drop GitHub Actions build/publish ([`895fcc1`](https://github.com/OpenG2P/iam/commit/895fcc1c6086e9ebe81915f9481f8881b21b7599))
+- [G2P-5515](https://openg2p.atlassian.net/browse/G2P-5515) Add fastapi-cache dependency and implement caching for role permissions resolution ([`fe6d788`](https://github.com/OpenG2P/iam/commit/fe6d788cdb84ab07fdd510fb76a4b14ce7fdd6b0))
 
 <a id="v-0-0-0-develop-102"></a>
 
