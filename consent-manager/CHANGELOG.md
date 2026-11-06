@@ -6,6 +6,7 @@ _Published automatically._
 
 | Version | Date | Type | Notes |
 | --- | --- | --- | --- |
+| [`0.0.0-develop.92`](#v-0-0-0-develop-92) | 2026-11-06 | develop |  |
 | [`0.0.0-develop.91`](#v-0-0-0-develop-91) | 2026-11-05 | develop |  |
 | [`0.0.0-develop.90`](#v-0-0-0-develop-90) | 2026-11-04 | develop |  |
 | [`0.0.0-develop.89`](#v-0-0-0-develop-89) | 2026-11-02 | develop |  |
@@ -25,7 +26,6 @@ _Published automatically._
 | [`0.0.0-develop.65`](#v-0-0-0-develop-65) | 2026-10-10 | develop |  |
 | [`0.0.0-develop.64`](#v-0-0-0-develop-64) | 2026-10-07 | develop |  |
 | [`0.0.0-develop.63`](#v-0-0-0-develop-63) | 2026-10-05 | develop |  |
-| [`0.0.0-develop.61`](#v-0-0-0-develop-61) | 2026-10-02 | develop |  |
 | [`1.0.3`](#v-1-0-3) | 2026-09-04 | release |  |
 | [`1.0.3-rc.63`](#v-1-0-3-rc-63) | 2026-09-04 | release candidate |  |
 | [`1.0.2`](#v-1-0-2) | 2026-09-01 | release |  |
@@ -277,6 +277,19 @@ _commit `c67030b` · changes since 0.0.0-develop.57_
 _No new commits since 0.0.0-develop.57._
 
 # Develop builds
+
+<a id="v-0-0-0-develop-92"></a>
+
+## consent-manager — develop 0.0.0-develop.92 (2026-11-06)
+
+_commit `3e99b2e` · changes since 0.0.0-develop.91_
+<!-- build:0.0.0-develop.92 revision:3e99b2e5d1c53977e3376c25c48dc89323c414e0 ts:1793960438 -->
+
+**Chart:** [openg2p-consent-manager 0.0.0-develop.92](https://openg2p.github.io/openg2p-helm/openg2p-consent-manager-0.0.0-develop.92.tgz)
+
+### Changes
+
+- [G2P-5719](https://openg2p.atlassian.net/browse/G2P-5719) Crypto from openg2p_fastapi_common.crypto (CryptoFactory.build); Dockerfile builds fastapi-common develop, as CI does ([`3e99b2e`](https://github.com/OpenG2P/consent-manager/commit/3e99b2e5d1c53977e3376c25c48dc89323c414e0))
 
 <a id="v-0-0-0-develop-91"></a>
 
@@ -578,19 +591,6 @@ _commit `b6950f1` · changes since 0.0.0-develop.61_
 
 - [G2P-5719](https://openg2p.atlassian.net/browse/G2P-5719) Policy form selects fed by GET /consent/v1/meta with server-side validation; clearing an "any when empty" list counts as widening; AWE approvals ready to enable (still off by default): seed job seeds the approval policy, admin token forwarded with external-issuer fallback, callback URL from the staff API service name, failed/stale states, one pending version per binding, resubmit endpoint + UI, configurable hook annotations, inbox lists open and claimed tasks, AWE error parsing, requester, fetch type/interval count as widening, first-policy gate configurable; tests ([`b6950f1`](https://github.com/OpenG2P/consent-manager/commit/b6950f1505be67fc1950b2da6c86ec68cae688b0))
 - [G2P-5719](https://openg2p.atlassian.net/browse/G2P-5719) Policy form: signing algs as checkboxes, fetch type and durations as pickers fed by GET /consent/v1/meta; policy fields, binding status and decision filter validated server-side; stored invalid values load flagged via issues; clearing an "any when empty" list (purposes, subject ID types, signing algs) now counts as widening and needs approval; tests ([`b01788d`](https://github.com/OpenG2P/consent-manager/commit/b01788d67d2d758e3b6d8eab8e860050ac2a5404))
-
-<a id="v-0-0-0-develop-61"></a>
-
-## consent-manager — develop 0.0.0-develop.61 (2026-10-02)
-
-_commit `21e817a` · changes since 0.0.0-develop.60_
-<!-- build:0.0.0-develop.61 revision:21e817aaede8dbecd11f78775932aae7cb139786 ts:1790903028 -->
-
-**Chart:** [openg2p-consent-manager 0.0.0-develop.61](https://openg2p.github.io/openg2p-helm/openg2p-consent-manager-0.0.0-develop.61.tgz)
-
-### Changes
-
-- [G2P-5719](https://openg2p.atlassian.net/browse/G2P-5719) Pin sqlalchemy[asyncio] &lt;2.1: the image died at import without greenlet ([`21e817a`](https://github.com/OpenG2P/consent-manager/commit/21e817aaede8dbecd11f78775932aae7cb139786))
 
 ---
 
