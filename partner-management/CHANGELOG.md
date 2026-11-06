@@ -6,6 +6,7 @@ _Published automatically._
 
 | Version | Date | Type | Notes |
 | --- | --- | --- | --- |
+| [`0.0.0-develop.36`](#v-0-0-0-develop-36) | 2026-11-06 | develop |  |
 | [`0.0.0-develop.35`](#v-0-0-0-develop-35) | 2026-11-02 | develop |  |
 | [`0.0.0-develop.33`](#v-0-0-0-develop-33) | 2026-10-28 | develop |  |
 | [`0.0.0-develop.32`](#v-0-0-0-develop-32) | 2026-10-21 | develop |  |
@@ -241,6 +242,19 @@ _commit `bb96ff2` · changes since 0.0.0-develop.24_
 _No new commits since 0.0.0-develop.24._
 
 # Develop builds
+
+<a id="v-0-0-0-develop-36"></a>
+
+## partner-management — develop 0.0.0-develop.36 (2026-11-06)
+
+_commit `32d27cc` · changes since 0.0.0-develop.35_
+<!-- build:0.0.0-develop.36 revision:32d27cc6167c36992597ede81eb08ac05c661ae3 ts:1793960834 -->
+
+**Chart:** [partner-management 0.0.0-develop.36](https://openg2p.github.io/openg2p-helm/partner-management-0.0.0-develop.36.tgz)
+
+### Changes
+
+- [G2P-5719](https://openg2p.atlassian.net/browse/G2P-5719) Dockerfiles build fastapi-common develop by default, as CI does ([`32d27cc`](https://github.com/OpenG2P/partner-management/commit/32d27cc6167c36992597ede81eb08ac05c661ae3))
 
 <a id="v-0-0-0-develop-35"></a>
 
