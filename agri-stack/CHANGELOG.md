@@ -6,6 +6,7 @@ _Published automatically._
 
 | Version | Date | Type | Notes |
 | --- | --- | --- | --- |
+| [`0.0.0-develop.73`](#v-0-0-0-develop-73) | 2026-11-06 | develop |  |
 | [`0.0.0-develop.71`](#v-0-0-0-develop-71) | 2026-11-02 | develop |  |
 | [`0.0.0-develop.69`](#v-0-0-0-develop-69) | 2026-10-28 | develop |  |
 | [`0.0.0-develop.67`](#v-0-0-0-develop-67) | 2026-10-23 | develop |  |
@@ -25,9 +26,29 @@ _Published automatically._
 | [`0.0.0-develop.29`](#v-0-0-0-develop-29) | 2026-10-07 | develop |  |
 | [`0.0.0-develop.28`](#v-0-0-0-develop-28) | 2026-10-05 | develop |  |
 | [`0.0.0-develop.27`](#v-0-0-0-develop-27) | 2026-10-05 | develop |  |
-| [`0.0.0-develop.26`](#v-0-0-0-develop-26) | 2026-10-02 | develop |  |
 
 # Develop builds
+
+<a id="v-0-0-0-develop-73"></a>
+
+## agri-stack — develop 0.0.0-develop.73 (2026-11-06)
+
+_commit `441af8f` · changes since 0.0.0-develop.71_
+<!-- build:0.0.0-develop.73 revision:441af8f3a7addfa0f18cd9a447b65804698a04bc ts:1793960460 -->
+
+**Chart:** [openg2p-agri-composite 0.0.0-develop.73](https://openg2p.github.io/openg2p-helm/openg2p-agri-composite-0.0.0-develop.73.tgz)
+
+### Summary
+
+- Crypto integration: migrated crypto functionality to `openg2p_fastapi_common.crypto` with updates to `CryptoFactory.build` and `PartnerMgmtKeyStore`.
+- User management enhancement: implemented partner portal user creation with mandatory fields (email, first name, last name) in Keycloak, ensuring existing users have completed profiles while retaining passwords.
+- Testing improvements: added a new test for user installation processes.
+- Build configuration: updated Docker setup with a new `.gitignore` file to streamline builds.
+
+### Changes
+
+- [G2P-5719](https://openg2p.atlassian.net/browse/G2P-5719) Composite on current fastapi-common: crypto from openg2p_fastapi_common.crypto (CryptoFactory.build, PartnerMgmtKeyStore) ([`441af8f`](https://github.com/OpenG2P/agri-stack/commit/441af8f3a7addfa0f18cd9a447b65804698a04bc))
+- [G2P-5719](https://openg2p.atlassian.net/browse/G2P-5719) test_install: partner portal user created with email, first and last name (Keycloak's required profile); an existing one is completed, password kept ([`aadfabb`](https://github.com/OpenG2P/agri-stack/commit/aadfabba74786eec93578e43c771177e04314d39))
 
 <a id="v-0-0-0-develop-71"></a>
 
@@ -377,27 +398,6 @@ _commit `297d36a` · changes since 0.0.0-develop.26_
 ### Changes
 
 - [G2P-5719](https://openg2p.atlassian.net/browse/G2P-5719) Composite: partner kit grants and loan-profile consent notes use registry data scope IDs (farmer-registry.farmer_identifiers carries the farmer ID the crop sources query by); tests ([`297d36a`](https://github.com/OpenG2P/agri-stack/commit/297d36acec4c292c4424f8a7d91aaa224b74f25e))
-
-<a id="v-0-0-0-develop-26"></a>
-
-## agri-stack — develop 0.0.0-develop.26 (2026-10-02)
-
-_commit `3824d2d` · changes since 0.0.0-develop.23_
-<!-- build:0.0.0-develop.26 revision:3824d2d245ec41230e11011a8e0f88d0c52e4f38 ts:1790907477 -->
-
-**Chart:** [openg2p-agri-composite 0.0.0-develop.26](https://openg2p.github.io/openg2p-helm/openg2p-agri-composite-0.0.0-develop.26.tgz)
-
-### Summary
-
-- Documentation overhaul: moved to docs.openg2p.org, removing local docs and READMEs, with chart readme pointing to the new location.
-- Testing enhancements: composite end-to-end tests now save full run logs alongside response JSON in git-ignored scripts/out.
-- Feature updates: added a TODO for geo dropdowns on registration forms, planning to default sync on and read levels from Master Data at runtime.
-
-### Changes
-
-- [G2P-5719](https://openg2p.atlassian.net/browse/G2P-5719) Docs moved to docs.openg2p.org (Open Agri Stack); remove docs/, READMEs and chart readme point there ([`3824d2d`](https://github.com/OpenG2P/agri-stack/commit/3824d2d245ec41230e11011a8e0f88d0c52e4f38))
-- [G2P-5719](https://openg2p.atlassian.net/browse/G2P-5719) composite e2e: save the full run log next to the response JSON in git-ignored scripts/out/ ([`19e2868`](https://github.com/OpenG2P/agri-stack/commit/19e2868ccf4ffc7ef05f6e9bdce1046cb30d6832))
-- [G2P-5719](https://openg2p.atlassian.net/browse/G2P-5719) docs: TODO for geo dropdowns on register forms (default the sync on, later read levels from Master Data at run time) ([`223a3d2`](https://github.com/OpenG2P/agri-stack/commit/223a3d2ebb4ae56c31ceb636a117a5cbd9abb4a2))
 
 ---
 
