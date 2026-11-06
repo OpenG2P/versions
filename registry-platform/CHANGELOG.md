@@ -6,6 +6,7 @@ _Published automatically._
 
 | Version | Date | Type | Notes |
 | --- | --- | --- | --- |
+| [`1.2.2-rc.683`](#v-1-2-2-rc-683) | 2026-11-06 | release candidate |  |
 | [`0.0.0-develop.716`](#v-0-0-0-develop-716) | 2026-11-06 | develop |  |
 | [`1.2.2-rc.681`](#v-1-2-2-rc-681) | 2026-11-04 | release candidate |  |
 | [`1.2.2-rc.677`](#v-1-2-2-rc-677) | 2026-11-04 | release candidate |  |
@@ -18,7 +19,6 @@ _Published automatically._
 | [`1.2.2-rc.585`](#v-1-2-2-rc-585) | 2026-10-23 | release candidate |  |
 | [`0.0.0-develop.621`](#v-0-0-0-develop-621) | 2026-10-21 | develop |  |
 | [`1.2.2-rc.568`](#v-1-2-2-rc-568) | 2026-10-16 | release candidate |  |
-| [`1.2.2-rc.565`](#v-1-2-2-rc-565) | 2026-10-16 | release candidate |  |
 | [`0.0.0-develop.615`](#v-0-0-0-develop-615) | 2026-10-12 | develop |  |
 | [`0.0.0-develop.613`](#v-0-0-0-develop-613) | 2026-10-08 | develop |  |
 | [`0.0.0-develop.611`](#v-0-0-0-develop-611) | 2026-10-07 | develop |  |
@@ -355,6 +355,19 @@ same commit and *promoted* (retagged), not rebuilt. No code changed between them
 
 # Release candidates
 
+<a id="v-1-2-2-rc-683"></a>
+
+## registry-platform 1.2.2-rc.683 — 2026-11-06
+
+_commit `b5498c1` · changes since 1.2.2-rc.681_
+<!-- build:1.2.2-rc.683 revision:b5498c1c3cc0bcf3d014a6def4a0558370bbb06d ts:1793962144 -->
+
+**Chart:** [openg2p-registry 1.2.2-rc.683](https://openg2p.github.io/openg2p-helm/openg2p-registry-1.2.2-rc.683.tgz)
+
+### Changes
+
+- [G2P-5919](https://openg2p.atlassian.net/browse/G2P-5919) Fix: update draft status filter to use 'PENDING' instead of FINAL ([`eae31b7`](https://github.com/OpenG2P/registry-platform/commit/eae31b7697283597c7bd7f4643730b2d05bcbe98))
+
 <a id="v-1-2-2-rc-681"></a>
 
 ## registry-platform 1.2.2-rc.681 — 2026-11-04
@@ -606,29 +619,6 @@ _commit `5f828d2` · changes since 1.2.2-rc.565_
 
 - chore(ui-widgets): version for npm dev publish, sync staff-ui @1.1.9-dev.14 ([`5f828d2`](https://github.com/OpenG2P/registry-platform/commit/5f828d263bdaf909fefb1952d1fe0c80660240d8))
 - [G2P-5806](https://openg2p.atlassian.net/browse/G2P-5806) fix: improve responsiveness of UI widget components ([`2400c55`](https://github.com/OpenG2P/registry-platform/commit/2400c5510e88bf626baba05a1280698e3c1720bd))
-
-<a id="v-1-2-2-rc-565"></a>
-
-## registry-platform 1.2.2-rc.565 — 2026-10-16
-
-_commit `3f765db` · changes since 1.2.2-rc.559_
-<!-- build:1.2.2-rc.565 revision:3f765dbe9a97f5cd58c0ab253cc20dc349284833 ts:1792146837 -->
-
-**Chart:** [openg2p-registry 1.2.2-rc.565](https://openg2p.github.io/openg2p-helm/openg2p-registry-1.2.2-rc.565.tgz)
-
-### Summary
-
-- UI responsiveness enhancements: significant improvements made to the data model, registers, registry, intake page, homepage, and various related components, optimizing user experience across multiple pages.
-- Codebase maintenance: 97 files modified with a net change of 1052 insertions and 939 deletions, streamlining the overall structure and performance.
-- File removals: deprecated components related to program applications, specifically AddFormModal, EditFormModal, and their index file, indicating a shift in the application's feature set.
-
-### Changes
-
-- [G2P-5818](https://openg2p.atlassian.net/browse/G2P-5818) fix: improve responsiveness of the data model, outgest, ingest and awe configuration ([`495f8e9`](https://github.com/OpenG2P/registry-platform/commit/495f8e9b7a9e5f51aca76c4d97f18287775b9686))
-- [G2P-5817](https://openg2p.atlassian.net/browse/G2P-5817) fix: improve responsiveness of the registers configuration ([`a9ea795`](https://github.com/OpenG2P/registry-platform/commit/a9ea7957e5c5a0e53b783f394d4d63a8d1c21426))
-- [G2P-5815](https://openg2p.atlassian.net/browse/G2P-5815) fix: improve responsiveness of the registry configuration ([`ef44577`](https://github.com/OpenG2P/registry-platform/commit/ef445774eba9194c00a839ab8bb00197eab9490c))
-- [G2P-5807](https://openg2p.atlassian.net/browse/G2P-5807) fix: improve responsiveness of the intake page and related components ([`d9100d1`](https://github.com/OpenG2P/registry-platform/commit/d9100d11b057de8d90303b25759617dd6a1ef562))
-- [G2P-5805](https://openg2p.atlassian.net/browse/G2P-5805) fix: improve responsiveness of homepage, register, change request, version history pages, and related components ([`6e4148f`](https://github.com/OpenG2P/registry-platform/commit/6e4148f8a0b9d45855ad21fa3fc9faef6543df2e))
 
 <a id="v-1-2-1-rc-462"></a>
 
