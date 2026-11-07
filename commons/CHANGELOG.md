@@ -6,6 +6,7 @@ _Published automatically._
 
 | Version | Date | Type | Notes |
 | --- | --- | --- | --- |
+| [`0.0.0-develop.333`](#v-0-0-0-develop-333) | 2026-11-07 | develop |  |
 | [`0.0.0-develop.332`](#v-0-0-0-develop-332) | 2026-11-02 | develop |  |
 | [`0.0.0-develop.329`](#v-0-0-0-develop-329) | 2026-10-28 | develop |  |
 | [`0.0.0-develop.327`](#v-0-0-0-develop-327) | 2026-10-21 | develop |  |
@@ -30,7 +31,6 @@ _Published automatically._
 | [`0.0.0-develop.291`](#v-0-0-0-develop-291) | 2026-10-07 | develop |  |
 | [`2.3.4-rc.241`](#v-2-3-4-rc-241) | 2026-10-07 | release candidate |  |
 | [`0.0.0-develop.289`](#v-0-0-0-develop-289) | 2026-10-07 | develop |  |
-| [`0.0.0-develop.286`](#v-0-0-0-develop-286) | 2026-10-07 | develop |  |
 | [`2.3.4-rc.240`](#v-2-3-4-rc-240) | 2026-10-05 | release candidate |  |
 | [`2.3.4-rc.238`](#v-2-3-4-rc-238) | 2026-10-05 | release candidate |  |
 | [`2.3.4-rc.236`](#v-2-3-4-rc-236) | 2026-10-01 | release candidate |  |
@@ -645,6 +645,19 @@ _commit `ffabcdc` · changes since 2.2.1_
 
 # Develop builds
 
+<a id="v-0-0-0-develop-333"></a>
+
+## commons — develop 0.0.0-develop.333 (2026-11-07)
+
+_commit `48027c0` · changes since 0.0.0-develop.332_
+<!-- build:0.0.0-develop.333 revision:48027c057cc920c67794652b5f683bd376905738 ts:1794011265 -->
+
+**Charts:** [openg2p-commons-base 0.0.0-develop.333](https://openg2p.github.io/openg2p-helm/openg2p-commons-base-0.0.0-develop.333.tgz) · [openg2p-commons-services 0.0.0-develop.333](https://openg2p.github.io/openg2p-helm/openg2p-commons-services-0.0.0-develop.333.tgz)
+
+### Changes
+
+- [G2P-5719](https://openg2p.atlassian.net/browse/G2P-5719) Commons Services: iam develop.147, consent-manager develop.92, partner-management develop.36, awe develop.95, master-data develop.119, keycloak-init develop.61 (both charts) ([`48027c0`](https://github.com/OpenG2P/commons/commit/48027c057cc920c67794652b5f683bd376905738))
+
 <a id="v-0-0-0-develop-332"></a>
 
 ## commons — develop 0.0.0-develop.332 (2026-11-02)
@@ -981,19 +994,6 @@ _commit `2548480` · changes since 0.0.0-develop.286_
 
 - [G2P-5719](https://openg2p.atlassian.net/browse/G2P-5719) commons-services: bump openg2p-consent-manager to develop.64 (Agri Stack exchange receipts) ([`be2147e`](https://github.com/OpenG2P/commons/commit/be2147ef059c27bcaaec91a0b94c552a1702e796))
 - [G2P-5719](https://openg2p.atlassian.net/browse/G2P-5719) commons-services: values-agri-stack-exchange.yaml profile for the agrix exchange (PM, CM exchange role via global.agriStackExchange, master data, audit, IAM; registry-only services off) ([`8b7b80f`](https://github.com/OpenG2P/commons/commit/8b7b80f84b041f786a409ca659e324343feab3c5))
-
-<a id="v-0-0-0-develop-286"></a>
-
-## commons — develop 0.0.0-develop.286 (2026-10-07)
-
-_commit `0858457` · changes since 0.0.0-develop.284_
-<!-- build:0.0.0-develop.286 revision:0858457bfd0d88316395ee07a3047791104e0ee9 ts:1791352156 -->
-
-**Charts:** [openg2p-commons-base 0.0.0-develop.286](https://openg2p.github.io/openg2p-helm/openg2p-commons-base-0.0.0-develop.286.tgz) · [openg2p-commons-services 0.0.0-develop.286](https://openg2p.github.io/openg2p-helm/openg2p-commons-services-0.0.0-develop.286.tgz)
-
-### Changes
-
-- [G2P-5736](https://openg2p.atlassian.net/browse/G2P-5736) Add email template for novu ([`b4780d9`](https://github.com/OpenG2P/commons/commit/b4780d9ffca65b5b31577b9355305a02ae7fafa0))
 
 ---
 
