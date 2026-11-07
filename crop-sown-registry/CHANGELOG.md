@@ -6,6 +6,7 @@ _Published automatically._
 
 | Version | Date | Type | Notes |
 | --- | --- | --- | --- |
+| [`0.0.0-develop.44`](#v-0-0-0-develop-44) | 2026-11-07 | develop |  |
 | [`0.0.0-develop.43`](#v-0-0-0-develop-43) | 2026-10-28 | develop |  |
 | [`0.0.0-develop.41`](#v-0-0-0-develop-41) | 2026-10-21 | develop |  |
 | [`0.0.0-develop.38`](#v-0-0-0-develop-38) | 2026-10-19 | develop |  |
@@ -25,6 +26,19 @@ _Published automatically._
 | [`0.0.0-develop.4`](#v-0-0-0-develop-4) | 2026-09-27 | develop |  |
 
 # Develop builds
+
+<a id="v-0-0-0-develop-44"></a>
+
+## crop-sown-registry — develop 0.0.0-develop.44 (2026-11-07)
+
+_commit `79c4cc3` · changes since 0.0.0-develop.43_
+<!-- build:0.0.0-develop.44 revision:79c4cc3566788ff328290c58be56a75a42b8a111 ts:1794011072 -->
+
+**Chart:** [openg2p-crop-sown-registry 0.0.0-develop.44](https://openg2p.github.io/openg2p-helm/openg2p-crop-sown-registry-0.0.0-develop.44.tgz)
+
+### Changes
+
+- Bumped up RP to 0.0.0-develop.716 ([`79c4cc3`](https://github.com/OpenG2P/crop-sown-registry/commit/79c4cc3566788ff328290c58be56a75a42b8a111))
 
 <a id="v-0-0-0-develop-43"></a>
 
