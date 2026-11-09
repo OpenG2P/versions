@@ -6,6 +6,7 @@ _Published automatically._
 
 | Version | Date | Type | Notes |
 | --- | --- | --- | --- |
+| [`0.0.0-develop.335`](#v-0-0-0-develop-335) | 2026-11-09 | develop |  |
 | [`0.0.0-develop.334`](#v-0-0-0-develop-334) | 2026-11-09 | develop |  |
 | [`0.0.0-develop.333`](#v-0-0-0-develop-333) | 2026-11-07 | develop |  |
 | [`0.0.0-develop.332`](#v-0-0-0-develop-332) | 2026-11-02 | develop |  |
@@ -29,7 +30,6 @@ _Published automatically._
 | [`2.3.4-rc.244`](#v-2-3-4-rc-244) | 2026-10-07 | release candidate |  |
 | [`2.3.4-rc.243`](#v-2-3-4-rc-243) | 2026-10-07 | release candidate |  |
 | [`0.0.0-develop.293`](#v-0-0-0-develop-293) | 2026-10-07 | develop |  |
-| [`0.0.0-develop.291`](#v-0-0-0-develop-291) | 2026-10-07 | develop |  |
 | [`2.3.4-rc.241`](#v-2-3-4-rc-241) | 2026-10-07 | release candidate |  |
 | [`2.3.4-rc.240`](#v-2-3-4-rc-240) | 2026-10-05 | release candidate |  |
 | [`2.3.4-rc.238`](#v-2-3-4-rc-238) | 2026-10-05 | release candidate |  |
@@ -645,6 +645,19 @@ _commit `ffabcdc` · changes since 2.2.1_
 
 # Develop builds
 
+<a id="v-0-0-0-develop-335"></a>
+
+## commons — develop 0.0.0-develop.335 (2026-11-09)
+
+_commit `dc614ef` · changes since 0.0.0-develop.334_
+<!-- build:0.0.0-develop.335 revision:dc614efd5311b5cda9d186471628724807c9c4f5 ts:1794190326 -->
+
+**Charts:** [openg2p-commons-base 0.0.0-develop.335](https://openg2p.github.io/openg2p-helm/openg2p-commons-base-0.0.0-develop.335.tgz) · [openg2p-commons-services 0.0.0-develop.335](https://openg2p.github.io/openg2p-helm/openg2p-commons-services-0.0.0-develop.335.tgz)
+
+### Changes
+
+- [G2P-5719](https://openg2p.atlassian.net/browse/G2P-5719) Commons Services: Master Data public catalogue on by default on its own host (internal gateway, /public/ only), no in-API rate limit (limited at the public nginx); Rancher questions ([`dc614ef`](https://github.com/OpenG2P/commons/commit/dc614efd5311b5cda9d186471628724807c9c4f5))
+
 <a id="v-0-0-0-develop-334"></a>
 
 ## commons — develop 0.0.0-develop.334 (2026-11-09)
@@ -968,26 +981,6 @@ _commit `9979a89` · changes since 0.0.0-develop.291_
 ### Changes
 
 - [G2P-5770](https://openg2p.atlassian.net/browse/G2P-5770) Add WebSub support to openg2p-commons-services ([`238cc4e`](https://github.com/OpenG2P/commons/commit/238cc4ef8a8b59d94bc96d66c3b417dc41a9c20d))
-
-<a id="v-0-0-0-develop-291"></a>
-
-## commons — develop 0.0.0-develop.291 (2026-10-07)
-
-_commit `15ff369` · changes since 0.0.0-develop.289_
-<!-- build:0.0.0-develop.291 revision:15ff3693234a1df20d56ed857dfd47d634e2a9d4 ts:1791382501 -->
-
-**Charts:** [openg2p-commons-base 0.0.0-develop.291](https://openg2p.github.io/openg2p-helm/openg2p-commons-base-0.0.0-develop.291.tgz) · [openg2p-commons-services 0.0.0-develop.291](https://openg2p.github.io/openg2p-helm/openg2p-commons-services-0.0.0-develop.291.tgz)
-
-### Summary
-
-- **Major:** Dependency update: bumped `openg2p-master-data` to version `develop.111`, introducing an opt-in public catalogue with updated visibility, licensing, and catalogue schema 5.
-- Cleanup: removed the unused mail relay and associated dependencies from commons, including the global mail installation name, as ODK Central was the sole consumer and only supports SMTP.
-- Configuration refinement: relabeled the base object-store hostname question to be product-neutral, maintaining the `global.garageHostname` variable for compatibility.
-
-### Changes
-
-- [G2P-5719](https://openg2p.atlassian.net/browse/G2P-5719) commons-services: bump openg2p-master-data to develop.111 (opt-in public catalogue, visibility and licence, catalogue schema 5) ([`15ff369`](https://github.com/OpenG2P/commons/commit/15ff3693234a1df20d56ed857dfd47d634e2a9d4))
-- Remove the unused mail relay from commons: drop the mail dependency, values and Rancher question from commons-base, and global.mailInstallationName from commons-services and install.sh; ODK Central was its only consumer (it speaks SMTP only and cannot use Novu), so its mailInstallationName is now empty with a note on pointing it at a real SMTP server; also relabel the base object-store hostname question to be product-neutral (Object Store (S3) Hostname), keeping the global.garageHostname variable ([`775fc99`](https://github.com/OpenG2P/commons/commit/775fc998a04fdaae018b93514db19c55635fcf95))
 
 ---
 
