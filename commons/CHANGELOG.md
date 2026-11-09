@@ -6,6 +6,7 @@ _Published automatically._
 
 | Version | Date | Type | Notes |
 | --- | --- | --- | --- |
+| [`0.0.0-develop.334`](#v-0-0-0-develop-334) | 2026-11-09 | develop |  |
 | [`0.0.0-develop.333`](#v-0-0-0-develop-333) | 2026-11-07 | develop |  |
 | [`0.0.0-develop.332`](#v-0-0-0-develop-332) | 2026-11-02 | develop |  |
 | [`0.0.0-develop.329`](#v-0-0-0-develop-329) | 2026-10-28 | develop |  |
@@ -30,7 +31,6 @@ _Published automatically._
 | [`0.0.0-develop.293`](#v-0-0-0-develop-293) | 2026-10-07 | develop |  |
 | [`0.0.0-develop.291`](#v-0-0-0-develop-291) | 2026-10-07 | develop |  |
 | [`2.3.4-rc.241`](#v-2-3-4-rc-241) | 2026-10-07 | release candidate |  |
-| [`0.0.0-develop.289`](#v-0-0-0-develop-289) | 2026-10-07 | develop |  |
 | [`2.3.4-rc.240`](#v-2-3-4-rc-240) | 2026-10-05 | release candidate |  |
 | [`2.3.4-rc.238`](#v-2-3-4-rc-238) | 2026-10-05 | release candidate |  |
 | [`2.3.4-rc.236`](#v-2-3-4-rc-236) | 2026-10-01 | release candidate |  |
@@ -645,6 +645,19 @@ _commit `ffabcdc` · changes since 2.2.1_
 
 # Develop builds
 
+<a id="v-0-0-0-develop-334"></a>
+
+## commons — develop 0.0.0-develop.334 (2026-11-09)
+
+_commit `d2f844c` · changes since 0.0.0-develop.333_
+<!-- build:0.0.0-develop.334 revision:d2f844c3d0554d4ce961ef80ee8f031c80020977 ts:1794189533 -->
+
+**Charts:** [openg2p-commons-base 0.0.0-develop.334](https://openg2p.github.io/openg2p-helm/openg2p-commons-base-0.0.0-develop.334.tgz) · [openg2p-commons-services 0.0.0-develop.334](https://openg2p.github.io/openg2p-helm/openg2p-commons-services-0.0.0-develop.334.tgz)
+
+### Changes
+
+- [G2P-5719](https://openg2p.atlassian.net/browse/G2P-5719) Commons Services: Master Data public catalogue on by default, on its own host catalogue.&lt;base domain&gt; (internal gateway, /public/ only); Rancher questions to turn it off or rename the host ([`d2f844c`](https://github.com/OpenG2P/commons/commit/d2f844c3d0554d4ce961ef80ee8f031c80020977))
+
 <a id="v-0-0-0-develop-333"></a>
 
 ## commons — develop 0.0.0-develop.333 (2026-11-07)
@@ -975,25 +988,6 @@ _commit `15ff369` · changes since 0.0.0-develop.289_
 
 - [G2P-5719](https://openg2p.atlassian.net/browse/G2P-5719) commons-services: bump openg2p-master-data to develop.111 (opt-in public catalogue, visibility and licence, catalogue schema 5) ([`15ff369`](https://github.com/OpenG2P/commons/commit/15ff3693234a1df20d56ed857dfd47d634e2a9d4))
 - Remove the unused mail relay from commons: drop the mail dependency, values and Rancher question from commons-base, and global.mailInstallationName from commons-services and install.sh; ODK Central was its only consumer (it speaks SMTP only and cannot use Novu), so its mailInstallationName is now empty with a note on pointing it at a real SMTP server; also relabel the base object-store hostname question to be product-neutral (Object Store (S3) Hostname), keeping the global.garageHostname variable ([`775fc99`](https://github.com/OpenG2P/commons/commit/775fc998a04fdaae018b93514db19c55635fcf95))
-
-<a id="v-0-0-0-develop-289"></a>
-
-## commons — develop 0.0.0-develop.289 (2026-10-07)
-
-_commit `2548480` · changes since 0.0.0-develop.286_
-<!-- build:0.0.0-develop.289 revision:2548480d61c1bf678f9c855bfa03536cc5a8bc79 ts:1791358829 -->
-
-**Charts:** [openg2p-commons-base 0.0.0-develop.289](https://openg2p.github.io/openg2p-helm/openg2p-commons-base-0.0.0-develop.289.tgz) · [openg2p-commons-services 0.0.0-develop.289](https://openg2p.github.io/openg2p-helm/openg2p-commons-services-0.0.0-develop.289.tgz)
-
-### Summary
-
-- New feature: added support for Agri Stack exchange receipts with the introduction of the `values-agri-stack-exchange.yaml` profile, enabling PM and CM exchange roles.
-- Dependency update: bumped `openg2p-consent-manager` to version develop.64, enhancing consent management capabilities.
-
-### Changes
-
-- [G2P-5719](https://openg2p.atlassian.net/browse/G2P-5719) commons-services: bump openg2p-consent-manager to develop.64 (Agri Stack exchange receipts) ([`be2147e`](https://github.com/OpenG2P/commons/commit/be2147ef059c27bcaaec91a0b94c552a1702e796))
-- [G2P-5719](https://openg2p.atlassian.net/browse/G2P-5719) commons-services: values-agri-stack-exchange.yaml profile for the agrix exchange (PM, CM exchange role via global.agriStackExchange, master data, audit, IAM; registry-only services off) ([`8b7b80f`](https://github.com/OpenG2P/commons/commit/8b7b80f84b041f786a409ca659e324343feab3c5))
 
 ---
 
