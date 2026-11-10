@@ -6,6 +6,7 @@ _Published automatically._
 
 | Version | Date | Type | Notes |
 | --- | --- | --- | --- |
+| [`1.2.2-rc.686`](#v-1-2-2-rc-686) | 2026-11-10 | release candidate |  |
 | [`1.2.2-rc.683`](#v-1-2-2-rc-683) | 2026-11-06 | release candidate |  |
 | [`0.0.0-develop.716`](#v-0-0-0-develop-716) | 2026-11-06 | develop |  |
 | [`1.2.2-rc.681`](#v-1-2-2-rc-681) | 2026-11-04 | release candidate |  |
@@ -18,7 +19,6 @@ _Published automatically._
 | [`1.2.2-rc.593`](#v-1-2-2-rc-593) | 2026-10-26 | release candidate |  |
 | [`1.2.2-rc.585`](#v-1-2-2-rc-585) | 2026-10-23 | release candidate |  |
 | [`0.0.0-develop.621`](#v-0-0-0-develop-621) | 2026-10-21 | develop |  |
-| [`1.2.2-rc.568`](#v-1-2-2-rc-568) | 2026-10-16 | release candidate |  |
 | [`0.0.0-develop.615`](#v-0-0-0-develop-615) | 2026-10-12 | develop |  |
 | [`0.0.0-develop.613`](#v-0-0-0-develop-613) | 2026-10-08 | develop |  |
 | [`0.0.0-develop.611`](#v-0-0-0-develop-611) | 2026-10-07 | develop |  |
@@ -355,6 +355,25 @@ same commit and *promoted* (retagged), not rebuilt. No code changed between them
 
 # Release candidates
 
+<a id="v-1-2-2-rc-686"></a>
+
+## registry-platform 1.2.2-rc.686 — 2026-11-10
+
+_commit `5087658` · changes since 1.2.2-rc.683_
+<!-- build:1.2.2-rc.686 revision:50876587de5274e1a60fb9afbadbe696a9b92348 ts:1794293934 -->
+
+**Chart:** [openg2p-registry 1.2.2-rc.686](https://openg2p.github.io/openg2p-helm/openg2p-registry-1.2.2-rc.686.tgz)
+
+### Summary
+
+- API updates: corrected and refactored endpoint paths in the G2P DCI controller to include a 'registry' prefix, ensuring consistency and accuracy.
+- Testing improvements: modifications made to enhance test coverage and reliability across the affected areas.
+
+### Changes
+
+- fix(api): correct endpoint paths in G2P DCI controller ([`45ac5cf`](https://github.com/OpenG2P/registry-platform/commit/45ac5cf0a30e0ebd45b58c33ce72fb228036ee6a))
+- refactor(api): update DCI endpoint paths to include 'registry' prefix ([`588741f`](https://github.com/OpenG2P/registry-platform/commit/588741f3cd396eb488a93431bcab897592522ad0))
+
 <a id="v-1-2-2-rc-683"></a>
 
 ## registry-platform 1.2.2-rc.683 — 2026-11-06
@@ -600,25 +619,6 @@ _commit `53551e3` · changes since 1.2.2-rc.568_
 - [G2P-5601](https://openg2p.atlassian.net/browse/G2P-5601): Update MinIO image in docker-compose for functional testing ([`6430192`](https://github.com/OpenG2P/registry-platform/commit/6430192d684beb73c4b0201a6d01c399e1d8ce90))
 - [G2P-5601](https://openg2p.atlassian.net/browse/G2P-5601): Expand functional gate: staff tiers, partner consent, and UI AWE journeys ([`cf0b151`](https://github.com/OpenG2P/registry-platform/commit/cf0b15172d311fc7c75453a2013ecc17e986fe00))
 - [G2P-5601](https://openg2p.atlassian.net/browse/G2P-5601): Added funcational test cases workflow ([`b5f3ad7`](https://github.com/OpenG2P/registry-platform/commit/b5f3ad7c342c8749379907f4f7a39edf5d41528a))
-
-<a id="v-1-2-2-rc-568"></a>
-
-## registry-platform 1.2.2-rc.568 — 2026-10-16
-
-_commit `5f828d2` · changes since 1.2.2-rc.565_
-<!-- build:1.2.2-rc.568 revision:5f828d263bdaf909fefb1952d1fe0c80660240d8 ts:1792147437 -->
-
-**Chart:** [openg2p-registry 1.2.2-rc.568](https://openg2p.github.io/openg2p-helm/openg2p-registry-1.2.2-rc.568.tgz)
-
-### Summary
-
-- UI enhancements: improved responsiveness of UI widget components and synchronized staff-ui to version 1.1.9-dev.14.
-- Dependency updates: modified package-lock and package.json files for both staff-ui and ui-widgets, affecting four dependencies in total.
-
-### Changes
-
-- chore(ui-widgets): version for npm dev publish, sync staff-ui @1.1.9-dev.14 ([`5f828d2`](https://github.com/OpenG2P/registry-platform/commit/5f828d263bdaf909fefb1952d1fe0c80660240d8))
-- [G2P-5806](https://openg2p.atlassian.net/browse/G2P-5806) fix: improve responsiveness of UI widget components ([`2400c55`](https://github.com/OpenG2P/registry-platform/commit/2400c5510e88bf626baba05a1280698e3c1720bd))
 
 <a id="v-1-2-1-rc-462"></a>
 
