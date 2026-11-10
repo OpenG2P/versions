@@ -6,6 +6,7 @@ _Published automatically._
 
 | Version | Date | Type | Notes |
 | --- | --- | --- | --- |
+| [`1.2.2-rc.691`](#v-1-2-2-rc-691) | 2026-11-10 | release candidate |  |
 | [`1.2.2-rc.686`](#v-1-2-2-rc-686) | 2026-11-10 | release candidate |  |
 | [`1.2.2-rc.683`](#v-1-2-2-rc-683) | 2026-11-06 | release candidate |  |
 | [`0.0.0-develop.716`](#v-0-0-0-develop-716) | 2026-11-06 | develop |  |
@@ -17,7 +18,6 @@ _Published automatically._
 | [`0.0.0-develop.625`](#v-0-0-0-develop-625) | 2026-10-28 | develop |  |
 | [`1.2.2-rc.601`](#v-1-2-2-rc-601) | 2026-10-27 | release candidate |  |
 | [`1.2.2-rc.593`](#v-1-2-2-rc-593) | 2026-10-26 | release candidate |  |
-| [`1.2.2-rc.585`](#v-1-2-2-rc-585) | 2026-10-23 | release candidate |  |
 | [`0.0.0-develop.621`](#v-0-0-0-develop-621) | 2026-10-21 | develop |  |
 | [`0.0.0-develop.615`](#v-0-0-0-develop-615) | 2026-10-12 | develop |  |
 | [`0.0.0-develop.613`](#v-0-0-0-develop-613) | 2026-10-08 | develop |  |
@@ -355,6 +355,29 @@ same commit and *promoted* (retagged), not rebuilt. No code changed between them
 
 # Release candidates
 
+<a id="v-1-2-2-rc-691"></a>
+
+## registry-platform 1.2.2-rc.691 — 2026-11-10
+
+_commit `1a94f0c` · changes since 1.2.2-rc.686_
+<!-- build:1.2.2-rc.691 revision:1a94f0c64135825cf5df25b6877ceacd70412e90 ts:1794293967 -->
+
+**Chart:** [openg2p-registry 1.2.2-rc.691](https://openg2p.github.io/openg2p-helm/openg2p-registry-1.2.2-rc.691.tgz)
+
+### Summary
+
+- **Major:** New feature for version history: UI now renders version history from recorded data, with core functionality to serve section records from history.
+- Data handling improvements: Refactored version section data management in the UI and streamlined the process of copying live register rows into history after application.
+- API enhancements: Modifications made across the API to support the new version history features.
+- Testing updates: Adjustments made to testing framework to accommodate the new features and refactorings.
+
+### Changes
+
+- [G2P-5907](https://openg2p.atlassian.net/browse/G2P-5907) refactor(ui): streamline version section data handling ([`ecd73ca`](https://github.com/OpenG2P/registry-platform/commit/ecd73cacd4b39866d97f3dd98eab724967d9c12b))
+- [G2P-5907](https://openg2p.atlassian.net/browse/G2P-5907) feat(ui): render version history from recorded history ([`80444af`](https://github.com/OpenG2P/registry-platform/commit/80444afafeece7d7d8e46a51923dad617dc4a33e))
+- [G2P-5907](https://openg2p.atlassian.net/browse/G2P-5907) feat(core): serve a version's section records from history ([`5847117`](https://github.com/OpenG2P/registry-platform/commit/58471178bf1c4a6acccfe76933de3e3db2621843))
+- [G2P-5907](https://openg2p.atlassian.net/browse/G2P-5907) refactor(core): copy live register row into history after apply ([`c7f75d6`](https://github.com/OpenG2P/registry-platform/commit/c7f75d6a0972455318f4453272a9963a3fea8546))
+
 <a id="v-1-2-2-rc-686"></a>
 
 ## registry-platform 1.2.2-rc.686 — 2026-11-10
@@ -589,36 +612,6 @@ _commit `0e45aed` · changes since 1.2.2-rc.585_
 - Enhance functional testing setup and Docker configurations ([`782d988`](https://github.com/OpenG2P/registry-platform/commit/782d988e4dd1d6d86a1a8240f870c262b429669a))
 - Enhance functional testing framework with new document handling features ([`80a858b`](https://github.com/OpenG2P/registry-platform/commit/80a858beef3dc2f705fdde246d54778212dec912))
 - No code change. Just to trigger workflow ([`265809d`](https://github.com/OpenG2P/registry-platform/commit/265809d7b832cdfec704e952f8cb2e2bc1d3a141))
-
-<a id="v-1-2-2-rc-585"></a>
-
-## registry-platform 1.2.2-rc.585 — 2026-10-23
-
-_commit `53551e3` · changes since 1.2.2-rc.568_
-<!-- build:1.2.2-rc.585 revision:53551e379a710417963ab2ef7c252ba1d1336fff ts:1792745759 -->
-
-**Chart:** [openg2p-registry 1.2.2-rc.585](https://openg2p.github.io/openg2p-helm/openg2p-registry-1.2.2-rc.585.tgz)
-
-### Summary
-
-- Enhancements to authentication: improved Keycloak URL handling and navigation reliability, alongside expanded functional gate workflows with new Tier-2 environment variables and structured test execution.
-- API updates: corrected endpoint references from `/dci/registry/sync/search` to `/dci/sync/search` in tests and documentation.
-- Functional testing improvements: refactored MinIO configuration in docker-compose, updated MinIO image to `pgsty/mc`, and added new functional test cases workflow.
-- UI and migration updates: expanded functional gate to include staff tiers, partner consent, and UI AWE journeys, with several migrations affecting metadata and seed data. 
-- Dependency management: updated manifests for functional testing requirements and UI package management.
-
-### Changes
-
-- [G2P-5601](https://openg2p.atlassian.net/browse/G2P-5601): feat(auth): enhance Keycloak URL handling and improve navigation reliability ([`6ead9af`](https://github.com/OpenG2P/registry-platform/commit/6ead9af240987c5f7c378a05225c828ba95d2941))
-- fix(api): update endpoint references from /dci/registry/sync/search to /dci/sync/search in tests and documentation ([`f899738`](https://github.com/OpenG2P/registry-platform/commit/f899738d6c2eab777ee3e11d6a983d5fa14b0bf2))
-- [G2P-5601](https://openg2p.atlassian.net/browse/G2P-5601): Enhance functional gate workflow and documentation with new Tier-2 environment variables ([`4edffde`](https://github.com/OpenG2P/registry-platform/commit/4edffde5bdf6cd9c1330fcc2fd2c96fe81a4a400))
-- Fix formatting in functional gate workflow YAML file ([`c36329a`](https://github.com/OpenG2P/registry-platform/commit/c36329ab33cbb9f9d550fbac84aa9ab393168952))
-- [G2P-5601](https://openg2p.atlassian.net/browse/G2P-5601): Enhance functional gate workflow with structured test execution ([`28fa720`](https://github.com/OpenG2P/registry-platform/commit/28fa72030ef0a0ce35b7ec0fdba66f0ac2606d3a))
-- [G2P-5601](https://openg2p.atlassian.net/browse/G2P-5601): Refactor MinIO configuration in docker-compose for functional testing ([`cf10cb0`](https://github.com/OpenG2P/registry-platform/commit/cf10cb042c6a7f5bb1cf93ec410902a594052321))
-- [G2P-5601](https://openg2p.atlassian.net/browse/G2P-5601): Update MinIO image to pgsty/mc for functional testing ([`41cd7a5`](https://github.com/OpenG2P/registry-platform/commit/41cd7a5179f4a10a973b49b01777f3352518bc4a))
-- [G2P-5601](https://openg2p.atlassian.net/browse/G2P-5601): Update MinIO image in docker-compose for functional testing ([`6430192`](https://github.com/OpenG2P/registry-platform/commit/6430192d684beb73c4b0201a6d01c399e1d8ce90))
-- [G2P-5601](https://openg2p.atlassian.net/browse/G2P-5601): Expand functional gate: staff tiers, partner consent, and UI AWE journeys ([`cf0b151`](https://github.com/OpenG2P/registry-platform/commit/cf0b15172d311fc7c75453a2013ecc17e986fe00))
-- [G2P-5601](https://openg2p.atlassian.net/browse/G2P-5601): Added funcational test cases workflow ([`b5f3ad7`](https://github.com/OpenG2P/registry-platform/commit/b5f3ad7c342c8749379907f4f7a39edf5d41528a))
 
 <a id="v-1-2-1-rc-462"></a>
 
