@@ -6,6 +6,7 @@ _Published automatically._
 
 | Version | Date | Type | Notes |
 | --- | --- | --- | --- |
+| [`0.0.0-develop.37`](#v-0-0-0-develop-37) | 2026-11-10 | develop |  |
 | [`0.0.0-develop.36`](#v-0-0-0-develop-36) | 2026-11-06 | develop |  |
 | [`0.0.0-develop.35`](#v-0-0-0-develop-35) | 2026-11-02 | develop |  |
 | [`0.0.0-develop.33`](#v-0-0-0-develop-33) | 2026-10-28 | develop |  |
@@ -242,6 +243,19 @@ _commit `bb96ff2` · changes since 0.0.0-develop.24_
 _No new commits since 0.0.0-develop.24._
 
 # Develop builds
+
+<a id="v-0-0-0-develop-37"></a>
+
+## partner-management — develop 0.0.0-develop.37 (2026-11-10)
+
+_commit `3ef9b31` · changes since 0.0.0-develop.36_
+<!-- build:0.0.0-develop.37 revision:3ef9b31e363e302827c282e67550e603f9aac7f7 ts:1794299373 -->
+
+**Chart:** [partner-management 0.0.0-develop.37](https://openg2p.github.io/openg2p-helm/partner-management-0.0.0-develop.37.tgz)
+
+### Changes
+
+- [G2P-5719](https://openg2p.atlassian.net/browse/G2P-5719) PM UI: use-case policy asks only for the use case (and signing algorithm); purposes, ID types and other limits folded under "Optional limits" ([`3ef9b31`](https://github.com/OpenG2P/partner-management/commit/3ef9b31e363e302827c282e67550e603f9aac7f7))
 
 <a id="v-0-0-0-develop-36"></a>
 
