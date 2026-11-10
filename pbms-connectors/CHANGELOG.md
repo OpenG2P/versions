@@ -6,10 +6,24 @@ _Published automatically._
 
 | Version | Date | Type | Notes |
 | --- | --- | --- | --- |
+| [`0.0.0-develop.30`](#v-0-0-0-develop-30) | 2026-11-10 | develop |  |
 | [`0.0.0-develop.28`](#v-0-0-0-develop-28) | 2026-11-02 | develop |  |
 | [`0.0.0-develop.18`](#v-0-0-0-develop-18) | 2026-11-02 | develop |  |
 
 # Develop builds
+
+<a id="v-0-0-0-develop-30"></a>
+
+## pbms-connectors — develop 0.0.0-develop.30 (2026-11-10)
+
+_commit `7449cbf` · changes since 0.0.0-develop.28_
+<!-- build:0.0.0-develop.30 revision:7449cbfac3239083c7f6e285cbc9e7b8b2c9bba5 ts:1794293999 -->
+
+**Chart:** [openg2p-pbms 0.0.0-develop.30](https://openg2p.github.io/openg2p-helm/openg2p-pbms-0.0.0-develop.30.tgz)
+
+### Changes
+
+- docs: update DCI connection string references in README and examples ([`80aef4e`](https://github.com/OpenG2P/pbms-connectors/commit/80aef4ede571a0e905ee4931a5779adb952b0b88))
 
 <a id="v-0-0-0-develop-28"></a>
 
