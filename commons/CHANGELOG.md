@@ -6,6 +6,7 @@ _Published automatically._
 
 | Version | Date | Type | Notes |
 | --- | --- | --- | --- |
+| [`0.0.0-develop.336`](#v-0-0-0-develop-336) | 2026-11-10 | develop |  |
 | [`0.0.0-develop.335`](#v-0-0-0-develop-335) | 2026-11-09 | develop |  |
 | [`0.0.0-develop.334`](#v-0-0-0-develop-334) | 2026-11-09 | develop |  |
 | [`0.0.0-develop.333`](#v-0-0-0-develop-333) | 2026-11-07 | develop |  |
@@ -29,7 +30,6 @@ _Published automatically._
 | [`0.0.0-develop.299`](#v-0-0-0-develop-299) | 2026-10-08 | develop |  |
 | [`2.3.4-rc.244`](#v-2-3-4-rc-244) | 2026-10-07 | release candidate |  |
 | [`2.3.4-rc.243`](#v-2-3-4-rc-243) | 2026-10-07 | release candidate |  |
-| [`0.0.0-develop.293`](#v-0-0-0-develop-293) | 2026-10-07 | develop |  |
 | [`2.3.4-rc.241`](#v-2-3-4-rc-241) | 2026-10-07 | release candidate |  |
 | [`2.3.4-rc.240`](#v-2-3-4-rc-240) | 2026-10-05 | release candidate |  |
 | [`2.3.4-rc.238`](#v-2-3-4-rc-238) | 2026-10-05 | release candidate |  |
@@ -645,6 +645,19 @@ _commit `ffabcdc` · changes since 2.2.1_
 
 # Develop builds
 
+<a id="v-0-0-0-develop-336"></a>
+
+## commons — develop 0.0.0-develop.336 (2026-11-10)
+
+_commit `5780355` · changes since 0.0.0-develop.335_
+<!-- build:0.0.0-develop.336 revision:5780355e3a1727b370473189ff96e6604a42fcc5 ts:1794276588 -->
+
+**Charts:** [openg2p-commons-base 0.0.0-develop.336](https://openg2p.github.io/openg2p-helm/openg2p-commons-base-0.0.0-develop.336.tgz) · [openg2p-commons-services 0.0.0-develop.336](https://openg2p.github.io/openg2p-helm/openg2p-commons-services-0.0.0-develop.336.tgz)
+
+### Changes
+
+- [G2P-5719](https://openg2p.atlassian.net/browse/G2P-5719) Commons Services: the Composite is onboarded only in departments' Partner Management, not at the Exchange (nothing there checks its key) ([`5780355`](https://github.com/OpenG2P/commons/commit/5780355e3a1727b370473189ff96e6604a42fcc5))
+
 <a id="v-0-0-0-develop-335"></a>
 
 ## commons — develop 0.0.0-develop.335 (2026-11-09)
@@ -968,19 +981,6 @@ _commit `a19f9a2` · changes since 0.0.0-develop.293_
 - [G2P-5719](https://openg2p.atlassian.net/browse/G2P-5719) commons-services: remove values-agri-stack-exchange.yaml — the Agri Stack exchange overrides now live in the agri-stack Agri Exchange bundle; commons stays product-neutral ([`ed3cc95`](https://github.com/OpenG2P/commons/commit/ed3cc95f1f9aef2928048409bd2ee0bb8ce41f18))
 - [G2P-5719](https://openg2p.atlassian.net/browse/G2P-5719) commons-services: standalone Keymanager off by default (only PBMS, or a registry with the keymanager partner key backend, needs it; eSignet, mock identity and Inji Certify embed their own) ([`816770c`](https://github.com/OpenG2P/commons/commit/816770c38133dc11c0eb129feb6681ab5a15022f))
 - [G2P-5770](https://openg2p.atlassian.net/browse/G2P-5770) commons-services: websub hostname reads global.websubHostname (the install failed with "wrong type for value" on .Values.websubHostname) ([`fd61625`](https://github.com/OpenG2P/commons/commit/fd616253babe0a701026409a453a3232313216e7))
-
-<a id="v-0-0-0-develop-293"></a>
-
-## commons — develop 0.0.0-develop.293 (2026-10-07)
-
-_commit `9979a89` · changes since 0.0.0-develop.291_
-<!-- build:0.0.0-develop.293 revision:9979a8988d96bf39f9abaa391916a745cd4a0889 ts:1791382645 -->
-
-**Charts:** [openg2p-commons-base 0.0.0-develop.293](https://openg2p.github.io/openg2p-helm/openg2p-commons-base-0.0.0-develop.293.tgz) · [openg2p-commons-services 0.0.0-develop.293](https://openg2p.github.io/openg2p-helm/openg2p-commons-services-0.0.0-develop.293.tgz)
-
-### Changes
-
-- [G2P-5770](https://openg2p.atlassian.net/browse/G2P-5770) Add WebSub support to openg2p-commons-services ([`238cc4e`](https://github.com/OpenG2P/commons/commit/238cc4ef8a8b59d94bc96d66c3b417dc41a9c20d))
 
 ---
 
