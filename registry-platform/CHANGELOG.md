@@ -6,6 +6,7 @@ _Published automatically._
 
 | Version | Date | Type | Notes |
 | --- | --- | --- | --- |
+| [`1.2.2-rc.698`](#v-1-2-2-rc-698) | 2026-11-10 | release candidate |  |
 | [`1.2.2-rc.691`](#v-1-2-2-rc-691) | 2026-11-10 | release candidate |  |
 | [`1.2.2-rc.686`](#v-1-2-2-rc-686) | 2026-11-10 | release candidate |  |
 | [`1.2.2-rc.683`](#v-1-2-2-rc-683) | 2026-11-06 | release candidate |  |
@@ -17,7 +18,6 @@ _Published automatically._
 | [`1.2.2-rc.607`](#v-1-2-2-rc-607) | 2026-10-28 | release candidate |  |
 | [`0.0.0-develop.625`](#v-0-0-0-develop-625) | 2026-10-28 | develop |  |
 | [`1.2.2-rc.601`](#v-1-2-2-rc-601) | 2026-10-27 | release candidate |  |
-| [`1.2.2-rc.593`](#v-1-2-2-rc-593) | 2026-10-26 | release candidate |  |
 | [`0.0.0-develop.621`](#v-0-0-0-develop-621) | 2026-10-21 | develop |  |
 | [`0.0.0-develop.615`](#v-0-0-0-develop-615) | 2026-10-12 | develop |  |
 | [`0.0.0-develop.613`](#v-0-0-0-develop-613) | 2026-10-08 | develop |  |
@@ -355,6 +355,30 @@ same commit and *promoted* (retagged), not rebuilt. No code changed between them
 
 # Release candidates
 
+<a id="v-1-2-2-rc-698"></a>
+
+## registry-platform 1.2.2-rc.698 — 2026-11-10
+
+_commit `d1df4cd` · changes since 1.2.2-rc.691_
+<!-- build:1.2.2-rc.698 revision:d1df4cd2e3e4e1ccd45f23c5b68d5da2b3262314 ts:1794311329 -->
+
+**Chart:** [openg2p-registry 1.2.2-rc.698](https://openg2p.github.io/openg2p-helm/openg2p-registry-1.2.2-rc.698.tgz)
+
+### Summary
+
+- Core enhancements: introduced snapshot functionality for unchanged list rows in history and section payloads, ensuring validation of these rows adheres to domain rules.
+- UI improvements: fixed BooleanWidget to correctly handle radio button changes, enhancing user interaction.
+- Dependency updates: synchronized staff-ui to version 1.1.9-dev.19 and updated package-lock files for ui/staff-ui and ui/ui-widgets, reflecting changes in dependencies across the project.
+- Testing adjustments: made modifications in three test files to align with recent core and UI changes, ensuring robustness in functionality.
+
+### Changes
+
+- [G2P-5933](https://openg2p.atlassian.net/browse/G2P-5933) feat(core): snapshot unchanged list rows into history ([`7e9a1df`](https://github.com/OpenG2P/registry-platform/commit/7e9a1df962369ea2fec137360547ae62e7125492))
+- [G2P-5933](https://openg2p.atlassian.net/browse/G2P-5933) feat(core): retain unchanged list rows in section payloads ([`b7c0a99`](https://github.com/OpenG2P/registry-platform/commit/b7c0a99616bb7f10648b1570425f1289af2e30b1))
+- [G2P-5933](https://openg2p.atlassian.net/browse/G2P-5933) fix(core): validate unchanged rows only via domain rules ([`d35ea40`](https://github.com/OpenG2P/registry-platform/commit/d35ea405c5de94b3fb9fda3097b67b8326d5d6e4))
+- chore(ui-widgets): version for npm dev publish, sync staff-ui @1.1.9-dev.19 ([`0f89ff7`](https://github.com/OpenG2P/registry-platform/commit/0f89ff771d315618a35c891e20896ddcd34c8601))
+- [G2P-5923](https://openg2p.atlassian.net/browse/G2P-5923) Fix: update BooleanWidget to handle radio change correctly ([`4245651`](https://github.com/OpenG2P/registry-platform/commit/4245651353b7f95187de98fc216380982123c1b7))
+
 <a id="v-1-2-2-rc-691"></a>
 
 ## registry-platform 1.2.2-rc.691 — 2026-11-10
@@ -589,29 +613,6 @@ _commit `44119a1` · changes since 1.2.2-rc.593_
 - test: use real registry-core imports for pending CR tests ([`6933dc2`](https://github.com/OpenG2P/registry-platform/commit/6933dc2a6179432e341aee22b3ef3714e1ad5f0f))
 - fix: defer AWE service token until policy applies ([`176ad79`](https://github.com/OpenG2P/registry-platform/commit/176ad7970fbb7471353686d1f3c856ccbfa514e2))
 - feat: create pending CRs from eSignet userinfo after auth ([`1d699d3`](https://github.com/OpenG2P/registry-platform/commit/1d699d3633ef587873c0993a2cbdad4a6675cea6))
-
-<a id="v-1-2-2-rc-593"></a>
-
-## registry-platform 1.2.2-rc.593 — 2026-10-26
-
-_commit `0e45aed` · changes since 1.2.2-rc.585_
-<!-- build:1.2.2-rc.593 revision:0e45aed9488812f77dcaca7f30ce44fdc23d5601 ts:1792990090 -->
-
-**Chart:** [openg2p-registry 1.2.2-rc.593](https://openg2p.github.io/openg2p-helm/openg2p-registry-1.2.2-rc.593.tgz)
-
-### Summary
-
-- CI improvements: refactored functional testing workflow to separate API and UI jobs, updated job names for clarity, and enhanced Docker configurations.
-- Testing enhancements: introduced new document handling features in the functional testing framework and added two new test files for API document validation.
-- Codebase adjustments: made 642 insertions and 172 deletions across 26 files, impacting API, Docker, UI, and testing areas.
-
-### Changes
-
-- Update API job name in functional testing workflow for clarity ([`72e0e47`](https://github.com/OpenG2P/registry-platform/commit/72e0e47a38417e16bd13f3969d7c61076feba4c9))
-- Refactor functional testing workflow to separate API and UI jobs ([`01bade2`](https://github.com/OpenG2P/registry-platform/commit/01bade29998fc8d5012167f4b568e5c88ba2e465))
-- Enhance functional testing setup and Docker configurations ([`782d988`](https://github.com/OpenG2P/registry-platform/commit/782d988e4dd1d6d86a1a8240f870c262b429669a))
-- Enhance functional testing framework with new document handling features ([`80a858b`](https://github.com/OpenG2P/registry-platform/commit/80a858beef3dc2f705fdde246d54778212dec912))
-- No code change. Just to trigger workflow ([`265809d`](https://github.com/OpenG2P/registry-platform/commit/265809d7b832cdfec704e952f8cb2e2bc1d3a141))
 
 <a id="v-1-2-1-rc-462"></a>
 
