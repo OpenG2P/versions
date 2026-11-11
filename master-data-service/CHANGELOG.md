@@ -6,6 +6,7 @@ _Published automatically._
 
 | Version | Date | Type | Notes |
 | --- | --- | --- | --- |
+| [`0.0.0-develop.121`](#v-0-0-0-develop-121) | 2026-11-11 | develop |  |
 | [`0.0.0-develop.120`](#v-0-0-0-develop-120) | 2026-11-10 | develop |  |
 | [`0.0.0-develop.119`](#v-0-0-0-develop-119) | 2026-11-06 | develop |  |
 | [`1.1.4-rc.108`](#v-1-1-4-rc-108) | 2026-11-02 | release candidate |  |
@@ -43,7 +44,6 @@ _Published automatically._
 | [`1.1.0-rc.71`](#v-1-1-0-rc-71) | 2026-09-01 | release candidate |  |
 | [`1.1.0-rc.67`](#v-1-1-0-rc-67) | 2026-09-01 | release candidate |  |
 | [`0.0.0-develop.68`](#v-0-0-0-develop-68) | 2026-08-28 | develop |  |
-| [`0.0.0-develop.67`](#v-0-0-0-develop-67) | 2026-08-28 | develop |  |
 | [`1.1.0-rc.63`](#v-1-1-0-rc-63) | 2026-08-28 | release candidate |  |
 | [`1.1.0-rc.62`](#v-1-1-0-rc-62) | 2026-08-28 | release candidate |  |
 
@@ -586,6 +586,19 @@ _commit `4ffaad7` · changes since the start (showing the latest 20 commits)_
 
 # Develop builds
 
+<a id="v-0-0-0-develop-121"></a>
+
+## master-data-service — develop 0.0.0-develop.121 (2026-11-11)
+
+_commit `4914c79` · changes since 0.0.0-develop.120_
+<!-- build:0.0.0-develop.121 revision:4914c79b1856352f420b8fa6917577e8a90adcc9 ts:1794357729 -->
+
+**Chart:** [openg2p-master-data 0.0.0-develop.121](https://openg2p.github.io/openg2p-helm/openg2p-master-data-0.0.0-develop.121.tgz)
+
+### Changes
+
+- [G2P-5719](https://openg2p.atlassian.net/browse/G2P-5719) MDS UI: Releases hint says it is a catalogue release, not the publishing of a dataset ([`4914c79`](https://github.com/OpenG2P/master-data-service/commit/4914c79b1856352f420b8fa6917577e8a90adcc9))
+
 <a id="v-0-0-0-develop-120"></a>
 
 ## master-data-service — develop 0.0.0-develop.120 (2026-11-10)
@@ -889,19 +902,6 @@ _commit `cfc0c13` · changes since 0.0.0-develop.67_
 ### Changes
 
 - [G2P-5605](https://openg2p.atlassian.net/browse/G2P-5605) pin FASTAPI_COMMON_REF to 1.2 in the caller, not just the Dockerfile ([`cfc0c13`](https://github.com/OpenG2P/master-data-service/commit/cfc0c13dfd0dcc3ed058494e24ba953a3abf1094))
-
-<a id="v-0-0-0-develop-67"></a>
-
-## master-data-service — develop 0.0.0-develop.67 (2026-08-28)
-
-_commit `135b60c` · changes since 0.0.0-develop.66_
-<!-- build:0.0.0-develop.67 revision:135b60cb76c53759802f82e5707e74cce76225e7 ts:1787914056 -->
-
-**Chart:** [openg2p-master-data 0.0.0-develop.67](https://openg2p.github.io/openg2p-helm/openg2p-master-data-0.0.0-develop.67.tgz)
-
-### Changes
-
-- [G2P-5605](https://openg2p.atlassian.net/browse/G2P-5605) pin fastapi-common to 1.2 to match iam-core 1.4 ([`135b60c`](https://github.com/OpenG2P/master-data-service/commit/135b60cb76c53759802f82e5707e74cce76225e7))
 
 ---
 
