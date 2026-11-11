@@ -6,6 +6,7 @@ _Published automatically._
 
 | Version | Date | Type | Notes |
 | --- | --- | --- | --- |
+| [`1.2.2-rc.700`](#v-1-2-2-rc-700) | 2026-11-11 | release candidate |  |
 | [`1.2.2-rc.698`](#v-1-2-2-rc-698) | 2026-11-10 | release candidate |  |
 | [`1.2.2-rc.691`](#v-1-2-2-rc-691) | 2026-11-10 | release candidate |  |
 | [`1.2.2-rc.686`](#v-1-2-2-rc-686) | 2026-11-10 | release candidate |  |
@@ -17,7 +18,6 @@ _Published automatically._
 | [`1.2.2-rc.614`](#v-1-2-2-rc-614) | 2026-10-28 | release candidate |  |
 | [`1.2.2-rc.607`](#v-1-2-2-rc-607) | 2026-10-28 | release candidate |  |
 | [`0.0.0-develop.625`](#v-0-0-0-develop-625) | 2026-10-28 | develop |  |
-| [`1.2.2-rc.601`](#v-1-2-2-rc-601) | 2026-10-27 | release candidate |  |
 | [`0.0.0-develop.621`](#v-0-0-0-develop-621) | 2026-10-21 | develop |  |
 | [`0.0.0-develop.615`](#v-0-0-0-develop-615) | 2026-10-12 | develop |  |
 | [`0.0.0-develop.613`](#v-0-0-0-develop-613) | 2026-10-08 | develop |  |
@@ -355,6 +355,19 @@ same commit and *promoted* (retagged), not rebuilt. No code changed between them
 
 # Release candidates
 
+<a id="v-1-2-2-rc-700"></a>
+
+## registry-platform 1.2.2-rc.700 — 2026-11-11
+
+_commit `1c042e2` · changes since 1.2.2-rc.698_
+<!-- build:1.2.2-rc.700 revision:1c042e2f63dea3846c5c0afbee57d50302c9219e ts:1794372419 -->
+
+**Chart:** [openg2p-registry 1.2.2-rc.700](https://openg2p.github.io/openg2p-helm/openg2p-registry-1.2.2-rc.700.tgz)
+
+### Changes
+
+- [G2P-5932](https://openg2p.atlassian.net/browse/G2P-5932) fix: include all list records regardless of whether they are added, updated, or unchanged ([`60d45ab`](https://github.com/OpenG2P/registry-platform/commit/60d45ab79e9680a3738b171fc0fdc2546e10df2f))
+
 <a id="v-1-2-2-rc-698"></a>
 
 ## registry-platform 1.2.2-rc.698 — 2026-11-10
@@ -589,30 +602,6 @@ _commit `57ba3e7` · changes since 1.2.2-rc.601_
 - [G2P-5821](https://openg2p.atlassian.net/browse/G2P-5821) feat(intake): implement search in register and inflight intake functionality ([`91fccf7`](https://github.com/OpenG2P/registry-platform/commit/91fccf72a2df6e8d643fcd5066cc46eabcc37ad6))
 - feat(intake): enhance inflight register parents retrieval with search and pagination ([`f26550b`](https://github.com/OpenG2P/registry-platform/commit/f26550b9b4d9b44a837038e4b2a6f4b0121c4078))
 - feat(intake): add inflight register parent lookup ([`6c099f6`](https://github.com/OpenG2P/registry-platform/commit/6c099f69823c3a05fb7559586916ca7a7452307f))
-
-<a id="v-1-2-2-rc-601"></a>
-
-## registry-platform 1.2.2-rc.601 — 2026-10-27
-
-_commit `44119a1` · changes since 1.2.2-rc.593_
-<!-- build:1.2.2-rc.601 revision:44119a1eb90d0b1c96fb6de6af7e708e788db968 ts:1793085491 -->
-
-**Chart:** [openg2p-registry 1.2.2-rc.601](https://openg2p.github.io/openg2p-helm/openg2p-registry-1.2.2-rc.601.tgz)
-
-### Summary
-
-- New feature: optional registry-connector added to openg2p-registry (1.2) and pending CRs can now be created from eSignet userinfo after authentication.
-- Fixes: limited AWE token soft-skip to registrant-auth CR path, deferred AWE service token application until policy is applied, and isolated per-section userinfo CRs while dropping domain gender codes.
-- Testing improvements: implemented real registry-core imports for pending CR tests to enhance test reliability.
-
-### Changes
-
-- feat(helm): optional registry-connector on openg2p-registry (1.2) ([`ad95e8e`](https://github.com/OpenG2P/registry-platform/commit/ad95e8ee6cb2107e1903e9d832f757b4ea026178))
-- fix: limit AWE token soft-skip to registrant-auth CR path ([`41076e3`](https://github.com/OpenG2P/registry-platform/commit/41076e3aebe2da56fdde3181ef4fe5b9b21c2f25))
-- fix: isolate per-section userinfo CRs and drop domain gender codes ([`3df9b29`](https://github.com/OpenG2P/registry-platform/commit/3df9b29fcf264bb83a77ab50515f770549499690))
-- test: use real registry-core imports for pending CR tests ([`6933dc2`](https://github.com/OpenG2P/registry-platform/commit/6933dc2a6179432e341aee22b3ef3714e1ad5f0f))
-- fix: defer AWE service token until policy applies ([`176ad79`](https://github.com/OpenG2P/registry-platform/commit/176ad7970fbb7471353686d1f3c856ccbfa514e2))
-- feat: create pending CRs from eSignet userinfo after auth ([`1d699d3`](https://github.com/OpenG2P/registry-platform/commit/1d699d3633ef587873c0993a2cbdad4a6675cea6))
 
 <a id="v-1-2-1-rc-462"></a>
 
