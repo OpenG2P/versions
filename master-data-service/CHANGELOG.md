@@ -6,6 +6,7 @@ _Published automatically._
 
 | Version | Date | Type | Notes |
 | --- | --- | --- | --- |
+| [`1.1.4-rc.110`](#v-1-1-4-rc-110) | 2026-11-11 | release candidate |  |
 | [`0.0.0-develop.121`](#v-0-0-0-develop-121) | 2026-11-11 | develop |  |
 | [`0.0.0-develop.120`](#v-0-0-0-develop-120) | 2026-11-10 | develop |  |
 | [`0.0.0-develop.119`](#v-0-0-0-develop-119) | 2026-11-06 | develop |  |
@@ -223,6 +224,19 @@ same commit and *promoted* (retagged), not rebuilt. No code changed between them
 - [G2P-5538](https://openg2p.atlassian.net/browse/G2P-5538) Add initial seed data for G2P attributes and values ([`a10123b`](https://github.com/OpenG2P/master-data-service/commit/a10123ba53ecf75d4cc2e8663b19d217851fd135))
 
 # Release candidates
+
+<a id="v-1-1-4-rc-110"></a>
+
+## master-data-service 1.1.4-rc.110 — 2026-11-11
+
+_commit `d82a2d6` · changes since 1.1.4-rc.108_
+<!-- build:1.1.4-rc.110 revision:d82a2d6652347ec69a7de95e934bf43637900663 ts:1794382658 -->
+
+**Chart:** [openg2p-master-data 1.1.4-rc.110](https://openg2p.github.io/openg2p-helm/openg2p-master-data-1.1.4-rc.110.tgz)
+
+### Changes
+
+- Fix formatting in uninstall-master-data.sh command ([`471c978`](https://github.com/OpenG2P/master-data-service/commit/471c978e5f3c1b0b0c9b3b76f142e657543d2f91))
 
 <a id="v-1-1-4-rc-108"></a>
 
