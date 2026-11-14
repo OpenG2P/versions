@@ -6,6 +6,7 @@ _Published automatically._
 
 | Version | Date | Type | Notes |
 | --- | --- | --- | --- |
+| [`0.0.0-develop.93`](#v-0-0-0-develop-93) | 2026-11-14 | develop |  |
 | [`0.0.0-develop.92`](#v-0-0-0-develop-92) | 2026-11-06 | develop |  |
 | [`0.0.0-develop.91`](#v-0-0-0-develop-91) | 2026-11-05 | develop |  |
 | [`0.0.0-develop.90`](#v-0-0-0-develop-90) | 2026-11-04 | develop |  |
@@ -25,7 +26,6 @@ _Published automatically._
 | [`0.0.0-develop.68`](#v-0-0-0-develop-68) | 2026-10-12 | develop |  |
 | [`0.0.0-develop.65`](#v-0-0-0-develop-65) | 2026-10-10 | develop |  |
 | [`0.0.0-develop.64`](#v-0-0-0-develop-64) | 2026-10-07 | develop |  |
-| [`0.0.0-develop.63`](#v-0-0-0-develop-63) | 2026-10-05 | develop |  |
 | [`1.0.3`](#v-1-0-3) | 2026-09-04 | release |  |
 | [`1.0.3-rc.63`](#v-1-0-3-rc-63) | 2026-09-04 | release candidate |  |
 | [`1.0.2`](#v-1-0-2) | 2026-09-01 | release |  |
@@ -277,6 +277,19 @@ _commit `c67030b` · changes since 0.0.0-develop.57_
 _No new commits since 0.0.0-develop.57._
 
 # Develop builds
+
+<a id="v-0-0-0-develop-93"></a>
+
+## consent-manager — develop 0.0.0-develop.93 (2026-11-14)
+
+_commit `7b4cc42` · changes since 0.0.0-develop.92_
+<!-- build:0.0.0-develop.93 revision:7b4cc4272be78a86025c461c0e04cd18a2f47b8d ts:1794618431 -->
+
+**Chart:** [openg2p-consent-manager 0.0.0-develop.93](https://openg2p.github.io/openg2p-helm/openg2p-consent-manager-0.0.0-develop.93.tgz)
+
+### Changes
+
+- [G2P-5719](https://openg2p.atlassian.net/browse/G2P-5719) CM unaware of use cases: validate takes caller terms (purpose, scopes, limits) from the token presenter; consents from consent templates (generic template source); use_case → template (migration); partner portal "Consent templates" ([`7b4cc42`](https://github.com/OpenG2P/consent-manager/commit/7b4cc4272be78a86025c461c0e04cd18a2f47b8d))
 
 <a id="v-0-0-0-develop-92"></a>
 
@@ -570,27 +583,6 @@ _commit `8e9ef7b` · changes since 0.0.0-develop.63_
 ### Changes
 
 - [G2P-5719](https://openg2p.atlassian.net/browse/G2P-5719) CM exchange receipts (opt-in, off by default): issue_receipts on /validate signs one consent receipt per controller for configured presenters with the CM signing key; GET /receipts/{jti}/status (revoked with the consent, expired by time); department role accepts receipts from trusted issuers (JWKS cache + unknown-kid refresh, aud/presenter/time, status check, standing policy for the presenter, scopes intersected) and logs receipt jti/issuer; chart values + Rancher "Agri Stack exchange" group; tests ([`8e9ef7b`](https://github.com/OpenG2P/consent-manager/commit/8e9ef7b10a4d66ba968ff38ac9394a936bac1c8e))
-
-<a id="v-0-0-0-develop-63"></a>
-
-## consent-manager — develop 0.0.0-develop.63 (2026-10-05)
-
-_commit `b6950f1` · changes since 0.0.0-develop.61_
-<!-- build:0.0.0-develop.63 revision:b6950f1505be67fc1950b2da6c86ec68cae688b0 ts:1791165766 -->
-
-**Chart:** [openg2p-consent-manager 0.0.0-develop.63](https://openg2p.github.io/openg2p-helm/openg2p-consent-manager-0.0.0-develop.63.tgz)
-
-### Summary
-
-- **Major:** Policy form enhancements: server-side validation for policy fields, binding status, and decision filters; new signing algorithms as checkboxes and fetch type/durations as pickers; invalid values flagged via issues.
-- AWE approvals: enabled via a seed job for the approval policy, with admin token forwarding, callback URL configuration, and support for failed/stale states.
-- Improved user experience: resubmit endpoint and UI for pending versions, along with inbox lists for open and claimed tasks.
-- Testing improvements: comprehensive tests added for new features and validations, ensuring robust functionality.
-
-### Changes
-
-- [G2P-5719](https://openg2p.atlassian.net/browse/G2P-5719) Policy form selects fed by GET /consent/v1/meta with server-side validation; clearing an "any when empty" list counts as widening; AWE approvals ready to enable (still off by default): seed job seeds the approval policy, admin token forwarded with external-issuer fallback, callback URL from the staff API service name, failed/stale states, one pending version per binding, resubmit endpoint + UI, configurable hook annotations, inbox lists open and claimed tasks, AWE error parsing, requester, fetch type/interval count as widening, first-policy gate configurable; tests ([`b6950f1`](https://github.com/OpenG2P/consent-manager/commit/b6950f1505be67fc1950b2da6c86ec68cae688b0))
-- [G2P-5719](https://openg2p.atlassian.net/browse/G2P-5719) Policy form: signing algs as checkboxes, fetch type and durations as pickers fed by GET /consent/v1/meta; policy fields, binding status and decision filter validated server-side; stored invalid values load flagged via issues; clearing an "any when empty" list (purposes, subject ID types, signing algs) now counts as widening and needs approval; tests ([`b01788d`](https://github.com/OpenG2P/consent-manager/commit/b01788d67d2d758e3b6d8eab8e860050ac2a5404))
 
 ---
 
