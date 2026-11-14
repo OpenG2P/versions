@@ -6,6 +6,7 @@ _Published automatically._
 
 | Version | Date | Type | Notes |
 | --- | --- | --- | --- |
+| [`0.0.0-develop.75`](#v-0-0-0-develop-75) | 2026-11-14 | develop |  |
 | [`0.0.0-develop.73`](#v-0-0-0-develop-73) | 2026-11-06 | develop |  |
 | [`0.0.0-develop.71`](#v-0-0-0-develop-71) | 2026-11-02 | develop |  |
 | [`0.0.0-develop.69`](#v-0-0-0-develop-69) | 2026-10-28 | develop |  |
@@ -25,9 +26,28 @@ _Published automatically._
 | [`0.0.0-develop.30`](#v-0-0-0-develop-30) | 2026-10-07 | develop |  |
 | [`0.0.0-develop.29`](#v-0-0-0-develop-29) | 2026-10-07 | develop |  |
 | [`0.0.0-develop.28`](#v-0-0-0-develop-28) | 2026-10-05 | develop |  |
-| [`0.0.0-develop.27`](#v-0-0-0-develop-27) | 2026-10-05 | develop |  |
 
 # Develop builds
+
+<a id="v-0-0-0-develop-75"></a>
+
+## agri-stack — develop 0.0.0-develop.75 (2026-11-14)
+
+_commit `1c0591a` · changes since 0.0.0-develop.73_
+<!-- build:0.0.0-develop.75 revision:1c0591a76f92b9a8bb300039a17ecf417f07f9b8 ts:1794618451 -->
+
+**Chart:** [openg2p-agri-composite 0.0.0-develop.75](https://openg2p.github.io/openg2p-helm/openg2p-agri-composite-0.0.0-develop.75.tgz)
+
+### Summary
+
+- Security enhancements: implemented a composite key check for department PMs, verified responses against the Composite's JWKS, and restricted internal consent-templates API access.
+- API adjustments: updated CORS settings to be empty by default and refined the test_install process to exclude purposes on use-case policies while checking internal paths.
+- Compliance improvements: ensured that purpose, scopes, and policy limits are sent to the Exchange CM during grant checks.
+
+### Changes
+
+- [G2P-5719](https://openg2p.atlassian.net/browse/G2P-5719) Composite: only grant check; sends purpose, scopes and policy limits to the Exchange CM; internal consent-templates API kept off the public host; CORS empty by default; test_install: no purposes on use-case policies, internal path checked ([`1c0591a`](https://github.com/OpenG2P/agri-stack/commit/1c0591a76f92b9a8bb300039a17ecf417f07f9b8))
+- [G2P-5719](https://openg2p.atlassian.net/browse/G2P-5719) test_install: Composite key checked in departments' PMs only; response verified against the Composite's JWKS, as partners do ([`f4e5ed8`](https://github.com/OpenG2P/agri-stack/commit/f4e5ed8327634d9381d7e3aec247438f5bf55d74))
 
 <a id="v-0-0-0-develop-73"></a>
 
@@ -385,19 +405,6 @@ _commit `5aa87ad` · changes since 0.0.0-develop.27_
 ### Changes
 
 - [G2P-5719](https://openg2p.atlassian.net/browse/G2P-5719) loan-profile: per-source timeout 10 s with no retry (a slow registry search was retried into a timeout), overall 25 s for farmer then crop sources; chart's embedded use case and engine test updated ([`5aa87ad`](https://github.com/OpenG2P/agri-stack/commit/5aa87ad76c22942468a7761cef0f3be31599bda1))
-
-<a id="v-0-0-0-develop-27"></a>
-
-## agri-stack — develop 0.0.0-develop.27 (2026-10-05)
-
-_commit `297d36a` · changes since 0.0.0-develop.26_
-<!-- build:0.0.0-develop.27 revision:297d36acec4c292c4424f8a7d91aaa224b74f25e ts:1791164483 -->
-
-**Chart:** [openg2p-agri-composite 0.0.0-develop.27](https://openg2p.github.io/openg2p-helm/openg2p-agri-composite-0.0.0-develop.27.tgz)
-
-### Changes
-
-- [G2P-5719](https://openg2p.atlassian.net/browse/G2P-5719) Composite: partner kit grants and loan-profile consent notes use registry data scope IDs (farmer-registry.farmer_identifiers carries the farmer ID the crop sources query by); tests ([`297d36a`](https://github.com/OpenG2P/agri-stack/commit/297d36acec4c292c4424f8a7d91aaa224b74f25e))
 
 ---
 
