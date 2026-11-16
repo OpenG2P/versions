@@ -6,6 +6,7 @@ _Published automatically._
 
 | Version | Date | Type | Notes |
 | --- | --- | --- | --- |
+| [`0.0.0-develop.340`](#v-0-0-0-develop-340) | 2026-11-16 | develop |  |
 | [`0.0.0-develop.337`](#v-0-0-0-develop-337) | 2026-11-10 | develop |  |
 | [`0.0.0-develop.336`](#v-0-0-0-develop-336) | 2026-11-10 | develop |  |
 | [`0.0.0-develop.335`](#v-0-0-0-develop-335) | 2026-11-09 | develop |  |
@@ -27,7 +28,6 @@ _Published automatically._
 | [`0.0.0-develop.309`](#v-0-0-0-develop-309) | 2026-10-10 | develop |  |
 | [`2.3.4-rc.245`](#v-2-3-4-rc-245) | 2026-10-08 | release candidate |  |
 | [`0.0.0-develop.305`](#v-0-0-0-develop-305) | 2026-10-08 | develop |  |
-| [`0.0.0-develop.301`](#v-0-0-0-develop-301) | 2026-10-08 | develop |  |
 | [`2.3.4-rc.244`](#v-2-3-4-rc-244) | 2026-10-07 | release candidate |  |
 | [`2.3.4-rc.243`](#v-2-3-4-rc-243) | 2026-10-07 | release candidate |  |
 | [`2.3.4-rc.241`](#v-2-3-4-rc-241) | 2026-10-07 | release candidate |  |
@@ -645,6 +645,27 @@ _commit `ffabcdc` · changes since 2.2.1_
 
 # Develop builds
 
+<a id="v-0-0-0-develop-340"></a>
+
+## commons — develop 0.0.0-develop.340 (2026-11-16)
+
+_commit `add7a5c` · changes since 0.0.0-develop.337_
+<!-- build:0.0.0-develop.340 revision:add7a5c017cc7d7d5e85edd5019c1b115ef936d9 ts:1794800311 -->
+
+**Charts:** [openg2p-commons-base 0.0.0-develop.340](https://openg2p.github.io/openg2p-helm/openg2p-commons-base-0.0.0-develop.340.tgz) · [openg2p-commons-services 0.0.0-develop.340](https://openg2p.github.io/openg2p-helm/openg2p-commons-services-0.0.0-develop.340.tgz)
+
+### Summary
+
+- **Major:** Introduced consent-manager and partner-management updates, addressing use cases and consent templates, and adding purposes to use-case policies.
+- Streamlined partner portal functionality by removing the Composite URL question, enhancing consent template handling within the cluster.
+- CI improvements implemented to enhance verification processes.
+
+### Changes
+
+- [G2P-5719](https://openg2p.atlassian.net/browse/G2P-5719) Commons Services: consent-manager develop.93 (CM unaware of use cases, consent templates), partner-management develop.38 (no purposes on use-case policies), master-data develop.121 ([`add7a5c`](https://github.com/OpenG2P/commons/commit/add7a5c017cc7d7d5e85edd5019c1b115ef936d9))
+- [G2P-5719](https://openg2p.atlassian.net/browse/G2P-5719) Commons Services: remove the partner portal's Composite URL question (CM reads consent templates in-cluster) ([`f89d163`](https://github.com/OpenG2P/commons/commit/f89d16384fd093f0fc24b97345e0dc6101d6fc08))
+- ci: verify ([`88e6340`](https://github.com/OpenG2P/commons/commit/88e6340e7e0cdb96b175771fd44f9680a24eda80))
+
 <a id="v-0-0-0-develop-337"></a>
 
 ## commons — develop 0.0.0-develop.337 (2026-11-10)
@@ -951,24 +972,6 @@ _commit `c35d74e` · changes since 0.0.0-develop.301_
 ### Changes
 
 - [G2P-5770](https://openg2p.atlassian.net/browse/G2P-5770) Update WebSub configuration in values.yaml ([`43582b8`](https://github.com/OpenG2P/commons/commit/43582b8166665c1ee45ee828bf05fd1e30874f36))
-
-<a id="v-0-0-0-develop-301"></a>
-
-## commons — develop 0.0.0-develop.301 (2026-10-08)
-
-_commit `3e8b9cb` · changes since 0.0.0-develop.299_
-<!-- build:0.0.0-develop.301 revision:3e8b9cb94935a1781d547097f5561010683626e4 ts:1791432158 -->
-
-**Charts:** [openg2p-commons-base 0.0.0-develop.301](https://openg2p.github.io/openg2p-helm/openg2p-commons-base-0.0.0-develop.301.tgz) · [openg2p-commons-services 0.0.0-develop.301](https://openg2p.github.io/openg2p-helm/openg2p-commons-services-0.0.0-develop.301.tgz)
-
-### Summary
-
-- Dependency updates: pinned IAM staff portal API image to a specific version, removing the moving "develop" tag, and performed a general IAM version bump.
-
-### Changes
-
-- [G2P-5719](https://openg2p.atlassian.net/browse/G2P-5719) commons-services: IAM staff portal API image follows the IAM chart's pinned version (drop the moving "develop" tag override) ([`3e8b9cb`](https://github.com/OpenG2P/commons/commit/3e8b9cb94935a1781d547097f5561010683626e4))
-- IAM bumped up. ([`9b770d1`](https://github.com/OpenG2P/commons/commit/9b770d13bcae298910080b06439911bac7d6ceb8))
 
 ---
 
