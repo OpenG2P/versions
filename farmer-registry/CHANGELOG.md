@@ -6,6 +6,7 @@ _Published automatically._
 
 | Version | Date | Type | Notes |
 | --- | --- | --- | --- |
+| [`1.2.1-rc.345`](#v-1-2-1-rc-345) | 2026-11-17 | release candidate |  |
 | [`1.2.1-rc.342`](#v-1-2-1-rc-342) | 2026-11-11 | release candidate |  |
 | [`0.0.0-develop.283`](#v-0-0-0-develop-283) | 2026-11-07 | develop |  |
 | [`1.2.1-rc.326`](#v-1-2-1-rc-326) | 2026-11-04 | release candidate |  |
@@ -23,7 +24,6 @@ _Published automatically._
 | [`0.0.0-develop.273`](#v-0-0-0-develop-273) | 2026-10-07 | develop |  |
 | [`0.0.0-develop.272`](#v-0-0-0-develop-272) | 2026-10-07 | develop |  |
 | [`1.2.1-rc.182`](#v-1-2-1-rc-182) | 2026-10-06 | release candidate |  |
-| [`1.2.1-rc.180`](#v-1-2-1-rc-180) | 2026-10-05 | release candidate |  |
 | [`0.0.0-develop.271`](#v-0-0-0-develop-271) | 2026-10-05 | develop |  |
 | [`0.0.0-develop.221`](#v-0-0-0-develop-221) | 2026-10-03 | develop |  |
 | [`0.0.0-develop.218`](#v-0-0-0-develop-218) | 2026-10-02 | develop |  |
@@ -209,6 +209,28 @@ _commit `7055a71` · first release_
 - Initial commit ([`6e3cf83`](https://github.com/OpenG2P/farmer-registry/commit/6e3cf838809c5522a8b0cda15b87f726683ec175))
 
 # Release candidates
+
+<a id="v-1-2-1-rc-345"></a>
+
+## farmer-registry 1.2.1-rc.345 — 2026-11-17
+
+_commit `293ec96` · changes since 1.2.1-rc.342_
+<!-- build:1.2.1-rc.345 revision:293ec96d20ee5f27206ba689911ebce2342f6498 ts:1794907449 -->
+
+**Chart:** [openg2p-farmer-registry 1.2.1-rc.345](https://openg2p.github.io/openg2p-helm/openg2p-farmer-registry-1.2.1-rc.345.tgz)
+
+### Summary
+
+- **Major:** Data migration updates across multiple SQL files for the G2P intake form and registration schemas, ensuring alignment with new data structures.
+- Bug fixes: Resolved issues with duplicate data creation during change request submissions and allowed disability details to be added even when marked as "No".
+- Code cleanup: Removed obsolete validation service and associated tests, streamlining the codebase.
+- New functionality: Introduced a disability status synchronization service and corresponding tests to enhance data handling capabilities.
+- Testing improvements: Added new tests for the disability status synchronization service to ensure reliability.
+
+### Changes
+
+- [G2P-5942](https://openg2p.atlassian.net/browse/G2P-5942) Disability Details Can Be Added Even When Disability Is Selected as "No" in Change Request ([`3344633`](https://github.com/OpenG2P/farmer-registry/commit/3344633db5e1a778188c8bd64c6fb5a39e6b595b))
+- [G2P-5904](https://openg2p.atlassian.net/browse/G2P-5904) Duplicate Data Created in All Sections When Submitting a Change Request ([`f06838c`](https://github.com/OpenG2P/farmer-registry/commit/f06838cb07c625ca3b4435370bb2a1761f85317d))
 
 <a id="v-1-2-1-rc-342"></a>
 
@@ -472,19 +494,6 @@ _commit `94a6152` · changes since 1.2.1-rc.180_
 ### Changes
 
 - Bump version of RP to 1.2.2-rc.536 in Dockerfiles and Chart.yaml ([`1f0d126`](https://github.com/OpenG2P/farmer-registry/commit/1f0d12691d840db2da3c19d24c115cc556613e5f))
-
-<a id="v-1-2-1-rc-180"></a>
-
-## farmer-registry 1.2.1-rc.180 — 2026-10-05
-
-_commit `37670a7` · changes since 1.2.1-rc.179_
-<!-- build:1.2.1-rc.180 revision:37670a713aebcb2b9d4da9f050be91fd538c76ad ts:1791181700 -->
-
-**Chart:** [openg2p-farmer-registry 1.2.1-rc.180](https://openg2p.github.io/openg2p-helm/openg2p-farmer-registry-1.2.1-rc.180.tgz)
-
-### Changes
-
-- Bump version of RP to 1.2.2-rc.534 ([`37670a7`](https://github.com/OpenG2P/farmer-registry/commit/37670a713aebcb2b9d4da9f050be91fd538c76ad))
 
 # Develop builds
 
