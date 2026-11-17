@@ -7,6 +7,7 @@ _Published automatically._
 | Version | Date | Type | Notes |
 | --- | --- | --- | --- |
 | [`1.1.4`](#v-1-1-4) | 2026-11-17 | release |  |
+| [`1.1.4-rc.112`](#v-1-1-4-rc-112) | 2026-11-17 | release candidate |  |
 | [`0.0.0-develop.124`](#v-0-0-0-develop-124) | 2026-11-17 | develop |  |
 | [`1.1.4-rc.110`](#v-1-1-4-rc-110) | 2026-11-11 | release candidate |  |
 | [`0.0.0-develop.121`](#v-0-0-0-develop-121) | 2026-11-11 | develop |  |
@@ -270,6 +271,19 @@ same commit and *promoted* (retagged), not rebuilt. No code changed between them
 - [G2P-5538](https://openg2p.atlassian.net/browse/G2P-5538) Add initial seed data for G2P attributes and values ([`a10123b`](https://github.com/OpenG2P/master-data-service/commit/a10123ba53ecf75d4cc2e8663b19d217851fd135))
 
 # Release candidates
+
+<a id="v-1-1-4-rc-112"></a>
+
+## master-data-service 1.1.4-rc.112 — 2026-11-17
+
+_commit `c2a644d` · changes since 1.1.4-rc.110_
+<!-- build:1.1.4-rc.112 revision:c2a644d53f6b71c5a7b71cb7d0cd4041b04f1fd2 ts:1794910925 -->
+
+**Chart:** [openg2p-master-data 1.1.4-rc.112](https://openg2p.github.io/openg2p-helm/openg2p-master-data-1.1.4-rc.112.tgz)
+
+### Changes
+
+- Update dependencies and image tags to latest versions in build-publish workflow, Dockerfile, and Helm chart values.yaml ([`e6e89b3`](https://github.com/OpenG2P/master-data-service/commit/e6e89b3b8c1fa3817baa282bb293ae0640df6d98))
 
 <a id="v-1-1-4-rc-110"></a>
 
