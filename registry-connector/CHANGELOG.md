@@ -6,11 +6,25 @@ _Published automatically._
 
 | Version | Date | Type | Notes |
 | --- | --- | --- | --- |
+| [`1.0.0-rc.12`](#v-1-0-0-rc-12) | 2026-11-17 | release candidate |  |
 | [`1.0.0-rc.11`](#v-1-0-0-rc-11) | 2026-11-17 | release candidate |  |
 | [`0.0.0-develop.11`](#v-0-0-0-develop-11) | 2026-10-28 | develop |  |
 | [`0.0.0-develop.9`](#v-0-0-0-develop-9) | 2026-10-21 | develop |  |
 
 # Release candidates
+
+<a id="v-1-0-0-rc-12"></a>
+
+## registry-connector 1.0.0-rc.12 — 2026-11-17
+
+_commit `0ec945f` · changes since 1.0.0-rc.11_
+<!-- build:1.0.0-rc.12 revision:0ec945fe701550fcf2008975a051d886e8cded6d ts:1794912107 -->
+
+**Chart:** [registry-connector 1.0.0-rc.12](https://openg2p.github.io/openg2p-helm/registry-connector-1.0.0-rc.12.tgz)
+
+### Changes
+
+- Change image tags to version 1.0.0 ([`0ec945f`](https://github.com/OpenG2P/registry-connector/commit/0ec945fe701550fcf2008975a051d886e8cded6d))
 
 <a id="v-1-0-0-rc-11"></a>
 
