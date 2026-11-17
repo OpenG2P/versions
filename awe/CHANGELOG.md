@@ -6,6 +6,7 @@ _Published automatically._
 
 | Version | Date | Type | Notes |
 | --- | --- | --- | --- |
+| [`1.2.4`](#v-1-2-4) | 2026-11-17 | release |  |
 | [`1.2.4-rc.88`](#v-1-2-4-rc-88) | 2026-11-17 | release candidate |  |
 | [`1.3.0-rc.104`](#v-1-3-0-rc-104) | 2026-11-17 | release candidate |  |
 | [`0.0.0-develop.104`](#v-0-0-0-develop-104) | 2026-11-17 | develop |  |
@@ -29,6 +30,35 @@ _Published automatically._
 | [`1.1.0`](#v-1-1-0) | 2026-07-17 | release |  |
 
 # Releases
+
+<a id="v-1-2-4"></a>
+
+## awe 1.2.4 — 2026-11-17
+
+<!-- build:1.2.4 revision:06e7abd4ac03f77510b801b808fcdb6fd31ed15e ts:1794911818 -->
+
+_commit `06e7abd` · changes since release 1.2.3_
+
+**Same artifact as [`1.2.4-rc.88`](#v-1-2-4-rc-88)** — built from the
+same commit and *promoted* (retagged), not rebuilt. No code changed between them.
+
+**Chart:** [openg2p-awe 1.2.4](https://openg2p.github.io/openg2p-helm/openg2p-awe-1.2.4.tgz)
+
+### Release notes
+
+## What's Changed
+* Update image tags for AWE and AWE UI to version 1.2.4 by @mkumar-02 in https://github.com/OpenG2P/awe/pull/41
+
+
+**Full Changelog**: https://github.com/OpenG2P/awe/compare/1.2.3...1.2.4
+
+### Summary
+
+- Dependency updates: AWE and AWE UI images upgraded to version 1.2.4.
+
+### Changes
+
+- Update image tags for AWE and AWE UI to version 1.2.4 ([`211933b`](https://github.com/OpenG2P/awe/commit/211933b9fda07698e20cb11060ad67c0237dd766))
 
 <a id="v-1-2-3"></a>
 
