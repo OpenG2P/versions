@@ -6,8 +6,24 @@ _Published automatically._
 
 | Version | Date | Type | Notes |
 | --- | --- | --- | --- |
+| [`1.0.0-rc.11`](#v-1-0-0-rc-11) | 2026-11-17 | release candidate |  |
 | [`0.0.0-develop.11`](#v-0-0-0-develop-11) | 2026-10-28 | develop |  |
 | [`0.0.0-develop.9`](#v-0-0-0-develop-9) | 2026-10-21 | develop |  |
+
+# Release candidates
+
+<a id="v-1-0-0-rc-11"></a>
+
+## registry-connector 1.0.0-rc.11 — 2026-11-17
+
+_commit `c535ba0` · changes since 0.0.0-develop.11_
+<!-- build:1.0.0-rc.11 revision:c535ba0c89c7a53ca4ca618b31c3b863bc92b22a ts:1793185899 -->
+
+**Chart:** [registry-connector 1.0.0-rc.11](https://openg2p.github.io/openg2p-helm/registry-connector-1.0.0-rc.11.tgz)
+
+### Changes
+
+_No new commits since 0.0.0-develop.11._
 
 # Develop builds
 
