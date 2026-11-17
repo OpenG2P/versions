@@ -6,6 +6,7 @@ _Published automatically._
 
 | Version | Date | Type | Notes |
 | --- | --- | --- | --- |
+| [`1.2.2-rc.707`](#v-1-2-2-rc-707) | 2026-11-17 | release candidate |  |
 | [`1.2.2-rc.700`](#v-1-2-2-rc-700) | 2026-11-11 | release candidate |  |
 | [`1.2.2-rc.698`](#v-1-2-2-rc-698) | 2026-11-10 | release candidate |  |
 | [`1.2.2-rc.691`](#v-1-2-2-rc-691) | 2026-11-10 | release candidate |  |
@@ -16,7 +17,6 @@ _Published automatically._
 | [`1.2.2-rc.677`](#v-1-2-2-rc-677) | 2026-11-04 | release candidate |  |
 | [`1.2.2-rc.625`](#v-1-2-2-rc-625) | 2026-10-29 | release candidate |  |
 | [`1.2.2-rc.614`](#v-1-2-2-rc-614) | 2026-10-28 | release candidate |  |
-| [`1.2.2-rc.607`](#v-1-2-2-rc-607) | 2026-10-28 | release candidate |  |
 | [`0.0.0-develop.625`](#v-0-0-0-develop-625) | 2026-10-28 | develop |  |
 | [`0.0.0-develop.621`](#v-0-0-0-develop-621) | 2026-10-21 | develop |  |
 | [`0.0.0-develop.615`](#v-0-0-0-develop-615) | 2026-10-12 | develop |  |
@@ -355,6 +355,29 @@ same commit and *promoted* (retagged), not rebuilt. No code changed between them
 
 # Release candidates
 
+<a id="v-1-2-2-rc-707"></a>
+
+## registry-platform 1.2.2-rc.707 — 2026-11-17
+
+_commit `767ba94` · changes since 1.2.2-rc.700_
+<!-- build:1.2.2-rc.707 revision:767ba94f2661537e2f4e7c0f873dfb9bd34544e8 ts:1794906011 -->
+
+**Chart:** [openg2p-registry 1.2.2-rc.707](https://openg2p.github.io/openg2p-helm/openg2p-registry-1.2.2-rc.707.tgz)
+
+### Summary
+
+- Feature enhancements: added financial address and bank branch widgets, improved table functionality with active/inactive toggles and duplicate priority warnings, and enhanced UI widgets with tooltips and better input handling.
+- Refactoring: removed toggleActive operation from TableWidget, streamlined related button logic, and improved data handling in the version history section.
+- API updates: introduced 'rowValues' to standard fields for improved request context handling.
+
+### Changes
+
+- feat(FinancialAddressDetailsWidget): enhance widget to support provider selection and dynamic loading of types feat(dataSource): add 'rowValues' to standard fields for API request context ([`c9155ef`](https://github.com/OpenG2P/registry-platform/commit/c9155ef59e617e7c7055c6e675fc22ab18411baa))
+- refactor(TableWidget): remove toggleActive operation and related button logic ([`0d810c9`](https://github.com/OpenG2P/registry-platform/commit/0d810c9cf094dea3375de212c889634a155c5062))
+- feat(ui-widgets): enhance widget functionality and UI; add tooltips, handle inactive states, and improve input behavior ([`161df97`](https://github.com/OpenG2P/registry-platform/commit/161df9753de82a889132c0377a9e8df9f44d7212))
+- [G2P-5937](https://openg2p.atlassian.net/browse/G2P-5937) Feat(ui-widgets): add financial address and bank branch widgets; enhance table with active/inactive toggle and duplicate priority warnings ([`def0873`](https://github.com/OpenG2P/registry-platform/commit/def08732fd912310373215b50a70580e1a88b477))
+- [G2P-5935](https://openg2p.atlassian.net/browse/G2P-5935) refactor(ui): improve version history section data handling ([`74b9bd1`](https://github.com/OpenG2P/registry-platform/commit/74b9bd15addf85d034d946c05238a6d58de206a0))
+
 <a id="v-1-2-2-rc-700"></a>
 
 ## registry-platform 1.2.2-rc.700 — 2026-11-11
@@ -579,29 +602,6 @@ _commit `ca399ed` · changes since 1.2.2-rc.607_
 - [G2P-5814](https://openg2p.atlassian.net/browse/G2P-5814) fix: disable dashboard carousel arrows at the beginning and end ([`e374c22`](https://github.com/OpenG2P/registry-platform/commit/e374c22910a1fb69ea72fde49273b309662f9bc6))
 - [G2P-5840](https://openg2p.atlassian.net/browse/G2P-5840) feat: support cross-register intake form submission ([`6b602fd`](https://github.com/OpenG2P/registry-platform/commit/6b602fdcd45548f417dcc614f203d0d006632e04))
 - [G2P-5844](https://openg2p.atlassian.net/browse/G2P-5844) feat: render sections conditionally in intake form mode ([`ab32876`](https://github.com/OpenG2P/registry-platform/commit/ab3287602360d7fd6bc564c779eab07ed3ad5788))
-
-<a id="v-1-2-2-rc-607"></a>
-
-## registry-platform 1.2.2-rc.607 — 2026-10-28
-
-_commit `57ba3e7` · changes since 1.2.2-rc.601_
-<!-- build:1.2.2-rc.607 revision:57ba3e7c3268f7629a656450c66cb49ac725147c ts:1793171693 -->
-
-**Chart:** [openg2p-registry 1.2.2-rc.607](https://openg2p.github.io/openg2p-helm/openg2p-registry-1.2.2-rc.607.tgz)
-
-### Summary
-
-- New intake features: added submission validation, enhanced inflight parent link retrieval with search and pagination, and implemented search functionality for register and inflight intake.
-- Data sanitization: introduced sanitization for unapproved parent links during intake ingestion.
-- Codebase updates: significant modifications across 11 files with a total of 1445 insertions and 90 deletions, impacting the API and tests.
-
-### Changes
-
-- [G2P-5821](https://openg2p.atlassian.net/browse/G2P-5821) feat(celery): sanitize unapproved parent links on intake ingest ([`a0b8335`](https://github.com/OpenG2P/registry-platform/commit/a0b833550a730ccb68022594642c7deea55fa7c7))
-- [G2P-5821](https://openg2p.atlassian.net/browse/G2P-5821) feat(intake): add submission validation and parent link readiness ([`c50957a`](https://github.com/OpenG2P/registry-platform/commit/c50957a04b39177ad7e910f29bb938d3468b5f2d))
-- [G2P-5821](https://openg2p.atlassian.net/browse/G2P-5821) feat(intake): implement search in register and inflight intake functionality ([`91fccf7`](https://github.com/OpenG2P/registry-platform/commit/91fccf72a2df6e8d643fcd5066cc46eabcc37ad6))
-- feat(intake): enhance inflight register parents retrieval with search and pagination ([`f26550b`](https://github.com/OpenG2P/registry-platform/commit/f26550b9b4d9b44a837038e4b2a6f4b0121c4078))
-- feat(intake): add inflight register parent lookup ([`6c099f6`](https://github.com/OpenG2P/registry-platform/commit/6c099f69823c3a05fb7559586916ca7a7452307f))
 
 <a id="v-1-2-1-rc-462"></a>
 
