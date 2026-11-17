@@ -6,6 +6,7 @@ _Published automatically._
 
 | Version | Date | Type | Notes |
 | --- | --- | --- | --- |
+| [`0.0.0-develop.124`](#v-0-0-0-develop-124) | 2026-11-17 | develop |  |
 | [`1.1.4-rc.110`](#v-1-1-4-rc-110) | 2026-11-11 | release candidate |  |
 | [`0.0.0-develop.121`](#v-0-0-0-develop-121) | 2026-11-11 | develop |  |
 | [`0.0.0-develop.120`](#v-0-0-0-develop-120) | 2026-11-10 | develop |  |
@@ -44,7 +45,6 @@ _Published automatically._
 | [`0.0.0-develop.69`](#v-0-0-0-develop-69) | 2026-09-01 | develop |  |
 | [`1.1.0-rc.71`](#v-1-1-0-rc-71) | 2026-09-01 | release candidate |  |
 | [`1.1.0-rc.67`](#v-1-1-0-rc-67) | 2026-09-01 | release candidate |  |
-| [`0.0.0-develop.68`](#v-0-0-0-develop-68) | 2026-08-28 | develop |  |
 | [`1.1.0-rc.63`](#v-1-1-0-rc-63) | 2026-08-28 | release candidate |  |
 | [`1.1.0-rc.62`](#v-1-1-0-rc-62) | 2026-08-28 | release candidate |  |
 
@@ -600,6 +600,25 @@ _commit `4ffaad7` · changes since the start (showing the latest 20 commits)_
 
 # Develop builds
 
+<a id="v-0-0-0-develop-124"></a>
+
+## master-data-service — develop 0.0.0-develop.124 (2026-11-17)
+
+_commit `df6384f` · changes since 0.0.0-develop.121_
+<!-- build:0.0.0-develop.124 revision:df6384f8932cd03f1799b72493930c0f6ceb43b7 ts:1794901053 -->
+
+**Chart:** [openg2p-master-data 0.0.0-develop.124](https://openg2p.github.io/openg2p-helm/openg2p-master-data-0.0.0-develop.124.tgz)
+
+### Summary
+
+- Data model enhancement: added attributes field to G2P attribute models and SQL schema for improved data handling.
+- Query improvements: introduced filters for parent value, query, and inactive status in G2P attribute requests.
+
+### Changes
+
+- Add attributes field to G2P attribute models and SQL schema for enhanced data handling ([`1c10642`](https://github.com/OpenG2P/master-data-service/commit/1c10642ad0f8a804e9586e1f6afebabd6d9eae9a))
+- [G2P-5936](https://openg2p.atlassian.net/browse/G2P-5936) Enhance G2P attribute handling: add filters for parent value, query, and inactive status in requests ([`1a11f87`](https://github.com/OpenG2P/master-data-service/commit/1a11f879c3fa807a5994ee43bbeb1510576f0fb1))
+
 <a id="v-0-0-0-develop-121"></a>
 
 ## master-data-service — develop 0.0.0-develop.121 (2026-11-11)
@@ -903,19 +922,6 @@ _commit `9297cb8` · changes since 0.0.0-develop.68_
 ### Changes
 
 - fastapi-common updated to 1.2.0 ([`9297cb8`](https://github.com/OpenG2P/master-data-service/commit/9297cb8a7df5bda7470b29582c16a9275cecf079))
-
-<a id="v-0-0-0-develop-68"></a>
-
-## master-data-service — develop 0.0.0-develop.68 (2026-08-28)
-
-_commit `cfc0c13` · changes since 0.0.0-develop.67_
-<!-- build:0.0.0-develop.68 revision:cfc0c13dfd0dcc3ed058494e24ba953a3abf1094 ts:1787915008 -->
-
-**Chart:** [openg2p-master-data 0.0.0-develop.68](https://openg2p.github.io/openg2p-helm/openg2p-master-data-0.0.0-develop.68.tgz)
-
-### Changes
-
-- [G2P-5605](https://openg2p.atlassian.net/browse/G2P-5605) pin FASTAPI_COMMON_REF to 1.2 in the caller, not just the Dockerfile ([`cfc0c13`](https://github.com/OpenG2P/master-data-service/commit/cfc0c13dfd0dcc3ed058494e24ba953a3abf1094))
 
 ---
 
