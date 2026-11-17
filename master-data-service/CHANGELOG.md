@@ -6,6 +6,7 @@ _Published automatically._
 
 | Version | Date | Type | Notes |
 | --- | --- | --- | --- |
+| [`1.1.4`](#v-1-1-4) | 2026-11-17 | release |  |
 | [`0.0.0-develop.124`](#v-0-0-0-develop-124) | 2026-11-17 | develop |  |
 | [`1.1.4-rc.110`](#v-1-1-4-rc-110) | 2026-11-11 | release candidate |  |
 | [`0.0.0-develop.121`](#v-0-0-0-develop-121) | 2026-11-11 | develop |  |
@@ -49,6 +50,51 @@ _Published automatically._
 | [`1.1.0-rc.62`](#v-1-1-0-rc-62) | 2026-08-28 | release candidate |  |
 
 # Releases
+
+<a id="v-1-1-4"></a>
+
+## master-data-service 1.1.4 — 2026-11-17
+
+<!-- build:1.1.4 revision:c2a644d53f6b71c5a7b71cb7d0cd4041b04f1fd2 ts:1794910925 -->
+
+_commit `c2a644d` · changes since release 1.1.3_
+
+**Same artifact as [`0.0.0-develop.112`](#v-0-0-0-develop-112)** — built from the
+same commit and *promoted* (retagged), not rebuilt. No code changed between them.
+
+**Chart:** [openg2p-master-data 1.1.4](https://openg2p.github.io/openg2p-helm/openg2p-master-data-1.1.4.tgz)
+
+### Release notes
+
+## What's Changed
+* Update masterDataDBSecret and masterDataDBUserPasswordKey because it … by @mkumar-02 in https://github.com/OpenG2P/master-data-service/pull/24
+* Update FASTAPI_COMMON_REF to version 1.2 in Dockerfile by @mkumar-02 in https://github.com/OpenG2P/master-data-service/pull/25
+* Update FASTAPI_COMMON_REF to version 1.2 in build-publish workflow by @mkumar-02 in https://github.com/OpenG2P/master-data-service/pull/27
+* Update layout section in README.md by @natiabebaw12 in https://github.com/OpenG2P/master-data-service/pull/30
+* Fix formatting in README.md by @natiabebaw12 in https://github.com/OpenG2P/master-data-service/pull/31
+* Fix formatting by @natiabebaw12 in https://github.com/OpenG2P/master-data-service/pull/34
+* Update dependencies and image tags to latest versions in build-publis… by @mkumar-02 in https://github.com/OpenG2P/master-data-service/pull/36
+
+## New Contributors
+* @natiabebaw12 made their first contribution in https://github.com/OpenG2P/master-data-service/pull/30
+
+**Full Changelog**: https://github.com/OpenG2P/master-data-service/compare/1.1.3...1.1.4
+
+### Summary
+
+- Dependency updates: upgraded dependencies and image tags in the build-publish workflow, Dockerfile, and Helm chart values.yaml; updated FASTAPI_COMMON_REF to version 1.2 in both the build-publish workflow and Dockerfile.
+- Configuration fixes: corrected formatting issues in uninstall-master-data.sh and README.md.
+- Secret management: updated masterDataDBSecret and masterDataDBUserPasswordKey to resolve conflicts with the master-data client ID secret.
+
+### Changes
+
+- Update dependencies and image tags to latest versions in build-publish workflow, Dockerfile, and Helm chart values.yaml ([`e6e89b3`](https://github.com/OpenG2P/master-data-service/commit/e6e89b3b8c1fa3817baa282bb293ae0640df6d98))
+- Fix formatting in uninstall-master-data.sh command ([`471c978`](https://github.com/OpenG2P/master-data-service/commit/471c978e5f3c1b0b0c9b3b76f142e657543d2f91))
+- Fix formatting in README.md ([`127bf2b`](https://github.com/OpenG2P/master-data-service/commit/127bf2bc4870221486b59cc74e65d6fe081cc6ba))
+- Update layout section in README.md ([`f76e2c1`](https://github.com/OpenG2P/master-data-service/commit/f76e2c13caa9f8e37dceda7b0cfc133156aba5d8))
+- Update FASTAPI_COMMON_REF to version 1.2 in build-publish workflow ([`3184624`](https://github.com/OpenG2P/master-data-service/commit/31846242154c614e789d36e1fd896aaca22bb878))
+- Update FASTAPI_COMMON_REF to version 1.2 in Dockerfile ([`9335519`](https://github.com/OpenG2P/master-data-service/commit/9335519c2658d3c7b8cd45b7b0725398b532ad19))
+- Update masterDataDBSecret and masterDataDBUserPasswordKey because it was conflicting with master-data client ID secret ([`b18763d`](https://github.com/OpenG2P/master-data-service/commit/b18763d6c5cdc0e59ff313f30f3dd06392708af7))
 
 <a id="v-1-1-3"></a>
 
