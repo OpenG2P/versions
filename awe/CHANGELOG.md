@@ -9,6 +9,7 @@ _Published automatically._
 | [`0.0.0-develop.104`](#v-0-0-0-develop-104) | 2026-11-17 | develop |  |
 | [`0.0.0-develop.95`](#v-0-0-0-develop-95) | 2026-11-04 | develop |  |
 | [`0.0.0-develop.92`](#v-0-0-0-develop-92) | 2026-10-05 | develop |  |
+| [`1.2.3`](#v-1-2-3) | 2026-11-17 | release |  |
 | [`1.2.3-rc.86`](#v-1-2-3-rc-86) | 2026-10-05 | release candidate |  |
 | [`0.0.0-develop.90`](#v-0-0-0-develop-90) | 2026-09-03 | develop |  |
 | [`1.2.2`](#v-1-2-2) | 2026-09-02 | release |  |
@@ -26,6 +27,35 @@ _Published automatically._
 | [`1.1.0`](#v-1-1-0) | 2026-07-17 | release |  |
 
 # Releases
+
+<a id="v-1-2-3"></a>
+
+## awe 1.2.3 — 2026-11-17
+
+<!-- build:1.2.3 revision:2cf70b9d2b55cad8a66b616f58a80eeabe4921f7 ts:1791179557 -->
+
+_commit `2cf70b9` · changes since release 1.2.2_
+
+**Same artifact as [`1.2.3-rc.86`](#v-1-2-3-rc-86)** — built from the
+same commit and *promoted* (retagged), not rebuilt. No code changed between them.
+
+**Chart:** [openg2p-awe 1.2.3](https://openg2p.github.io/openg2p-helm/openg2p-awe-1.2.3.tgz)
+
+### Release notes
+
+## What's Changed
+* [G2P-5697](https://openg2p.atlassian.net/browse/G2P-5697) Implement notification system using openg2p-notifcation for AWE events and add helm configs by @tahzeer in https://github.com/OpenG2P/awe/pull/37
+
+
+**Full Changelog**: https://github.com/OpenG2P/awe/compare/1.2.2...1.2.3
+
+### Summary
+
+- Notification system: implemented using openg2p-notification for AWE.
+
+### Changes
+
+- [G2P-5697](https://openg2p.atlassian.net/browse/G2P-5697) Implement notification system using openg2p-notifcation for AWE ([`1bd3ee0`](https://github.com/OpenG2P/awe/commit/1bd3ee09cb3c072c019f75fc1b0ff62884a4d571))
 
 <a id="v-1-2-2"></a>
 
