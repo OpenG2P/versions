@@ -6,6 +6,7 @@ _Published automatically._
 
 | Version | Date | Type | Notes |
 | --- | --- | --- | --- |
+| [`0.0.0-develop.104`](#v-0-0-0-develop-104) | 2026-11-17 | develop |  |
 | [`0.0.0-develop.95`](#v-0-0-0-develop-95) | 2026-11-04 | develop |  |
 | [`0.0.0-develop.92`](#v-0-0-0-develop-92) | 2026-10-05 | develop |  |
 | [`1.2.3-rc.86`](#v-1-2-3-rc-86) | 2026-10-05 | release candidate |  |
@@ -257,6 +258,29 @@ _commit `27c7f19` · changes since 1.1.0_
 - Update version to 1.1.0 in Chart.yaml, pyproject.toml, package.json, and package-lock.json ([`e5a25b4`](https://github.com/OpenG2P/awe/commit/e5a25b441a5d04671b55f035b126c0a0c7ab5632))
 
 # Develop builds
+
+<a id="v-0-0-0-develop-104"></a>
+
+## awe — develop 0.0.0-develop.104 (2026-11-17)
+
+_commit `9ba51e2` · changes since 0.0.0-develop.95_
+<!-- build:0.0.0-develop.104 revision:9ba51e23514b394a9c969c6f704280f2deeee3ec ts:1794900959 -->
+
+**Chart:** [openg2p-awe 0.0.0-develop.104](https://openg2p.github.io/openg2p-helm/openg2p-awe-0.0.0-develop.104.tgz)
+
+### Summary
+
+- **Major:** Implemented a notification system using `openg2p-notification` for AWE, enhancing communication features.
+- Updated dependencies: bumped `keycloak-init` to version 1.2.0 and PostgreSQL image tags to version 1.2.2, adding the `pg_trgm` extension.
+- Auto-generated OpenAPI specification to improve API documentation and integration.
+
+### Changes
+
+- chore: auto-generate OpenAPI spec [skip ci] ([`1bc907a`](https://github.com/OpenG2P/awe/commit/1bc907a8dece8762cc12925bd7bec0bc9f9624bd))
+- [G2P-5697](https://openg2p.atlassian.net/browse/G2P-5697) Implement notification system using openg2p-notifcation for AWE ([`1bd3ee0`](https://github.com/OpenG2P/awe/commit/1bd3ee09cb3c072c019f75fc1b0ff62884a4d571))
+- Update image tags to version 1.2.2 and add PostgreSQL extension 'pg_trgm' ([`844ea35`](https://github.com/OpenG2P/awe/commit/844ea355e21cf94fc09bcc24001d20ec8c515317))
+- Update image tags to version 1.2.1 ([`b76e63a`](https://github.com/OpenG2P/awe/commit/b76e63a471f0aeb690216a5337f47f7783dcc39c))
+- Bump keycloak-init version to 1.2.0 ([`623beec`](https://github.com/OpenG2P/awe/commit/623beec073a3e405066c53e7d2f5c6193a75dad4))
 
 <a id="v-0-0-0-develop-95"></a>
 
