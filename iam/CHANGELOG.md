@@ -6,6 +6,7 @@ _Published automatically._
 
 | Version | Date | Type | Notes |
 | --- | --- | --- | --- |
+| [`0.0.0-develop.150`](#v-0-0-0-develop-150) | 2026-11-17 | develop |  |
 | [`0.0.0-develop.147`](#v-0-0-0-develop-147) | 2026-11-06 | develop |  |
 | [`1.4.4-rc.142`](#v-1-4-4-rc-142) | 2026-11-04 | release candidate |  |
 | [`1.4.4-rc.127`](#v-1-4-4-rc-127) | 2026-10-27 | release candidate |  |
@@ -499,6 +500,19 @@ _commit `f8bccfe` · changes since v1.3.0_
 - [G2P-5313](https://openg2p.atlassian.net/browse/G2P-5313) Improve unit test coverage for core IAM functionality ([`c762c7b`](https://github.com/OpenG2P/iam/commit/c762c7b741a5c9d19bbd30b6875daacbd5d88717))
 
 # Develop builds
+
+<a id="v-0-0-0-develop-150"></a>
+
+## iam — develop 0.0.0-develop.150 (2026-11-17)
+
+_commit `11efc2a` · changes since 0.0.0-develop.147_
+<!-- build:0.0.0-develop.150 revision:11efc2a04227e00a5fdd7620c505d51f3d4529cd ts:1794904582 -->
+
+**Chart:** [openg2p-iam-service 0.0.0-develop.150](https://openg2p.github.io/openg2p-helm/openg2p-iam-service-0.0.0-develop.150.tgz)
+
+### Changes
+
+- fix(values.yaml): update iamStaffUiApplicationUrl to use templated hostname ([`22a6801`](https://github.com/OpenG2P/iam/commit/22a680174771a2f316165ace43bb00e600c59b4a))
 
 <a id="v-0-0-0-develop-147"></a>
 
