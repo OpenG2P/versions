@@ -6,6 +6,7 @@ _Published automatically._
 
 | Version | Date | Type | Notes |
 | --- | --- | --- | --- |
+| [`1.4.4-rc.144`](#v-1-4-4-rc-144) | 2026-11-17 | release candidate |  |
 | [`0.0.0-develop.150`](#v-0-0-0-develop-150) | 2026-11-17 | develop |  |
 | [`0.0.0-develop.147`](#v-0-0-0-develop-147) | 2026-11-06 | develop |  |
 | [`1.4.4-rc.142`](#v-1-4-4-rc-142) | 2026-11-04 | release candidate |  |
@@ -195,6 +196,19 @@ Compared with 1.3.0, this release turns IAM from an auth backend into an operabl
 - [G2P-5313](https://openg2p.atlassian.net/browse/G2P-5313) Improve unit test coverage for core IAM functionality ([`c762c7b`](https://github.com/OpenG2P/iam/commit/c762c7b741a5c9d19bbd30b6875daacbd5d88717))
 
 # Release candidates
+
+<a id="v-1-4-4-rc-144"></a>
+
+## iam 1.4.4-rc.144 — 2026-11-17
+
+_commit `9d40a90` · changes since 1.4.4-rc.142_
+<!-- build:1.4.4-rc.144 revision:9d40a9023baba5dfa9c8d8d0aaaaefe5b9b95e5f ts:1794910587 -->
+
+**Chart:** [openg2p-iam-service 1.4.4-rc.144](https://openg2p.github.io/openg2p-helm/openg2p-iam-service-1.4.4-rc.144.tgz)
+
+### Changes
+
+- Update FASTAPI_COMMON_REF to version 1.3.0 and bump iam API image tags to 1.4.4 in Dockerfiles and workflow configuration. ([`f16de1a`](https://github.com/OpenG2P/iam/commit/f16de1aa5fb342e7a7e5bc3c530f315d3de9b5fc))
 
 <a id="v-1-4-4-rc-142"></a>
 
