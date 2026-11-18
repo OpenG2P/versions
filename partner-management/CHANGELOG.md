@@ -17,6 +17,7 @@ _Published automatically._
 | [`0.0.0-develop.29`](#v-0-0-0-develop-29) | 2026-10-05 | develop |  |
 | [`0.0.0-develop.28`](#v-0-0-0-develop-28) | 2026-10-05 | develop |  |
 | [`0.0.0-develop.27`](#v-0-0-0-develop-27) | 2026-10-05 | develop |  |
+| [`1.0.3`](#v-1-0-3) | 2026-11-18 | release |  |
 | [`1.0.3-rc.33`](#v-1-0-3-rc-33) | 2026-09-04 | release candidate |  |
 | [`1.0.3-rc.30`](#v-1-0-3-rc-30) | 2026-09-04 | release candidate |  |
 | [`1.0.2`](#v-1-0-2) | 2026-09-01 | release |  |
@@ -31,6 +32,41 @@ _Published automatically._
 | [`0.0.0-develop.23`](#v-0-0-0-develop-23) | 2026-08-28 | develop |  |
 
 # Releases
+
+<a id="v-1-0-3"></a>
+
+## partner-management 1.0.3 — 2026-11-18
+
+<!-- build:1.0.3 revision:b5232da650841b7db013f24974c2b392e6a74efc ts:1788517115 -->
+
+_commit `b5232da` · changes since release 1.0.2_
+
+**Same artifact as [`1.0.3-rc.33`](#v-1-0-3-rc-33)** — built from the
+same commit and *promoted* (retagged), not rebuilt. No code changed between them.
+
+**Chart:** [partner-management 1.0.3](https://openg2p.github.io/openg2p-helm/partner-management-1.0.3.tgz)
+
+### Release notes
+
+## What's Changed
+* [G2P-5619](https://openg2p.atlassian.net/browse/G2P-5619) Enhance database connection settings and refactor session management by @tahzeer in https://github.com/OpenG2P/partner-management/pull/8
+* Update Dockerfiles and versioning for partner management APIs by @tahzeer in https://github.com/OpenG2P/partner-management/pull/9
+
+## New Contributors
+* @tahzeer made their first contribution in https://github.com/OpenG2P/partner-management/pull/8
+
+**Full Changelog**: https://github.com/OpenG2P/partner-management/compare/1.0.2...1.0.3
+
+### Summary
+
+- Dependency updates: Bumped FASTAPI_COMMON_REF to version 1.2.1 and updated Dockerfiles for partner management APIs.
+- Database improvements: Enhanced connection settings and refactored session management for better performance and reliability.
+
+### Changes
+
+- Bump FASTAPI_COMMON_REF to version 1.2.1 in Dockerfiles and workflows ([`46bfa9f`](https://github.com/OpenG2P/partner-management/commit/46bfa9f7936f822c6bd7393fb2b823ec2b4782c2))
+- Update Dockerfiles and versioning for partner management APIs ([`e08aaef`](https://github.com/OpenG2P/partner-management/commit/e08aaefc41716d81418163a1121fd8a414c25c12))
+- [G2P-5619](https://openg2p.atlassian.net/browse/G2P-5619) Enhance database connection settings and refactor session management ([`7d58855`](https://github.com/OpenG2P/partner-management/commit/7d58855be1359f07a24ebff488d95144662622c7))
 
 <a id="v-1-0-2"></a>
 
