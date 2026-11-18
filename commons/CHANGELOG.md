@@ -6,6 +6,7 @@ _Published automatically._
 
 | Version | Date | Type | Notes |
 | --- | --- | --- | --- |
+| [`2.3.4`](#v-2-3-4) | 2026-11-18 | release |  |
 | [`2.3.4-rc.262`](#v-2-3-4-rc-262) | 2026-11-18 | release candidate |  |
 | [`2.3.4-rc.260`](#v-2-3-4-rc-260) | 2026-11-18 | release candidate |  |
 | [`2.3.4-rc.257`](#v-2-3-4-rc-257) | 2026-11-18 | release candidate |  |
@@ -50,6 +51,54 @@ _Published automatically._
 | [`2.1.0`](#v-2-1-0) | 2026-07-13 | release |  |
 
 # Releases
+
+<a id="v-2-3-4"></a>
+
+## commons 2.3.4 — 2026-11-18
+
+<!-- build:2.3.4 revision:80c224a1e21e494b9987541180ecbd211755230e ts:1794983741 -->
+
+_commit `80c224a` · changes since release 2.3.3_
+
+**Same artifact as [`2.3.4-rc.262`](#v-2-3-4-rc-262)** — built from the
+same commit and *promoted* (retagged), not rebuilt. No code changed between them.
+
+**Charts:** [openg2p-commons-base 2.3.4](https://openg2p.github.io/openg2p-helm/openg2p-commons-base-2.3.4.tgz) · [openg2p-commons-services 2.3.4](https://openg2p.github.io/openg2p-helm/openg2p-commons-services-2.3.4.tgz)
+
+### Summary
+
+- **Major:** Refactor and integrate Novu: updated API token handling, added email templates, and workflow jobs, along with integration into openg2p-commons-base.
+- Dependency updates: bumped versions for openg2p-iam-service (to 1.4.4-rc.125) and openg2p-master-data (to 1.1.4-rc.110), and updated related Chart.yaml entries.
+- Configuration adjustments: added Garage S3 to the commons base chart and updated keycloak-init configuration for job name overrides.
+- Fixes and cleanups: resolved conflicts in master-data DB secrets, ensured DNS-safe naming for Helm resources, and removed deprecated web configurations.
+
+### Changes
+
+- Update dependency versions in Chart.yaml for openg2p services ([`1772fc8`](https://github.com/OpenG2P/commons/commit/1772fc82973c0aa72c0e682cf95d1e3a95a409b0))
+- Fix end-of-file newlines (pre-commit) ([`a972756`](https://github.com/OpenG2P/commons/commit/a97275685b0b75e623b4fb771a4673642effd504))
+- Add Garage S3 to commons base chart ([`5244e6b`](https://github.com/OpenG2P/commons/commit/5244e6be6b8e625231a07afd2c3378dc09dcdef2))
+- Update Chart.lock to include Novu dependency version 3.19.0 ([`3e824e5`](https://github.com/OpenG2P/commons/commit/3e824e55b8a2c976f3b2f59cc366b38d8dd0e9e3))
+- [G2P-5736](https://openg2p.atlassian.net/browse/G2P-5736) Add email template for novu ([`dfc2aa6`](https://github.com/OpenG2P/commons/commit/dfc2aa6fcabf330959a7f05467a9246fbeaeb20b))
+- [G2P-5725](https://openg2p.atlassian.net/browse/G2P-5725) Add workflow job for Novu ([`66e726d`](https://github.com/OpenG2P/commons/commit/66e726dafbfa27e044698d6ad03d5a21bb0d13f1))
+- [G2P-5706](https://openg2p.atlassian.net/browse/G2P-5706) Refactor Novu API token handling and update virtual service gateway configuration ([`be643eb`](https://github.com/OpenG2P/commons/commit/be643ebc1cd897f074d18ad080c75f8be9bf4271))
+- [G2P-5706](https://openg2p.atlassian.net/browse/G2P-5706) Remove deprecated web configuration from values.yaml in openg2p-commons-base ([`fed1e37`](https://github.com/OpenG2P/commons/commit/fed1e37fd910740b02d9b20c1a3c45d0c4650091))
+- [G2P-5706](https://openg2p.atlassian.net/browse/G2P-5706) Refactor Novu integration in openg2p-commons-base ([`3aa5cbf`](https://github.com/OpenG2P/commons/commit/3aa5cbff87beb179bf42b94456087c4e2a498b78))
+- [G2P-5706](https://openg2p.atlassian.net/browse/G2P-5706) Add Novu integration to openg2p-commons-base ([`4839243`](https://github.com/OpenG2P/commons/commit/4839243e405cc11d16a140bb2ae447456b0aa1c2))
+- Update openg2p-master-data dependency version from 1.1.4-rc.106 to 1.1.4-rc.110 in Chart.yaml ([`67bfec4`](https://github.com/OpenG2P/commons/commit/67bfec43d33291330553dcf6f51030527775d196))
+- Update openg2p-master-data dependency version from 1.1.4-rc.104 to 1.1.4-rc.106 in Chart.yaml ([`fa026f8`](https://github.com/OpenG2P/commons/commit/fa026f80b4b2485e089ac048dd956db7a26fc688))
+- Bump version of openg2p-iam-service from 1.4.4-rc.123 to 1.4.4-rc.125 in Chart.yaml ([`00477e7`](https://github.com/OpenG2P/commons/commit/00477e78a646824d11e57e459a60f859ed759cd2))
+- Bump version of openg2p-iam-service from 1.4.4-rc.121 to 1.4.4-rc.123 in Chart.yaml ([`ad54191`](https://github.com/OpenG2P/commons/commit/ad541913f4e788f128f70c612b292f5adf4d80bc))
+- Just to trigger CI. Otherwise No code change. ([`8c216b9`](https://github.com/OpenG2P/commons/commit/8c216b9baff065df5768f976e619147c9f985f8a))
+- update openg2p-iam-service dependency version from 1.4.3-rc.118 to 1.4.4-rc.121 in Chart.yaml ([`521b536`](https://github.com/OpenG2P/commons/commit/521b536e047b7876b55c6c6191a9e826893c56c2))
+- fix(commons-services): update openg2p-iam-service dependency version from 1.4.2 to 1.4.3-rc.118 in Chart.yaml ([`d4bb88e`](https://github.com/OpenG2P/commons/commit/d4bb88e186c9e3f3789f14c3890b45053f658786))
+- fix(commons-services): update openg2p-master-data dependency version from 1.1.4-rc.102 to 1.1.4-rc.104 in Chart.yaml ([`e903f73`](https://github.com/OpenG2P/commons/commit/e903f73b49034daca429a01936c6ec51a9a3aa8c))
+- fix(commons-services): update openg2p-master-data dependency version from 1.1.4-rc.100 to 1.1.4-rc.102 in Chart.yaml ([`48d1036`](https://github.com/OpenG2P/commons/commit/48d103643e0d134e932e94407ead38c22f32cca6))
+- fix(commons-services): downgrade openg2p-iam-service version from 1.4.3-rc.118 to 1.4.2 in Chart.yaml ([`3a16c52`](https://github.com/OpenG2P/commons/commit/3a16c52a77b0fab965bace9e6beab254317ba83c))
+- chore(commons-services): bump dependency versions for openg2p-master-data, mock-identity-system, and openg2p-iam-service in Chart.yaml ([`155cca3`](https://github.com/OpenG2P/commons/commit/155cca3e07300da12d8a14bde7fa47570bcd0686))
+- feat(commons-services): add keycloak-init configuration to override job name. ([`b25126b`](https://github.com/OpenG2P/commons/commit/b25126b93aa203b2b3fce5e8e35a2353e4621a9e))
+- fix(commons-services): update master-data DB secret and user password key because it was conflicting with master-data keycloak client secret key. ([`eb5811f`](https://github.com/OpenG2P/commons/commit/eb5811fcb60ea7427727e09c32be088ae04108b5))
+- fix(commons-services): use DNS-safe master-data chart alias Rename the openg2p-master-data dependency alias from masterData to master-data so Helm-rendered iam-register resource names (e.g. ConfigMap commons-services-master-data-iam-register-payload) stay lowercase RFC 1123. ([`e260b6a`](https://github.com/OpenG2P/commons/commit/e260b6ac7b6a0ebfd64331485beda92f6ab97cac))
+- Bump versions of openg2p-master-data to 1.1.3 and openg2p-iam-service to 1.4.3 in Chart.yaml ([`67c655b`](https://github.com/OpenG2P/commons/commit/67c655b1e458df9f7618dde1f7f3c8d199df2334))
 
 <a id="v-2-3-3"></a>
 
