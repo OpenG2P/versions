@@ -6,6 +6,7 @@ _Published automatically._
 
 | Version | Date | Type | Notes |
 | --- | --- | --- | --- |
+| [`1.2.2-rc.712`](#v-1-2-2-rc-712) | 2026-11-18 | release candidate |  |
 | [`1.2.2-rc.709`](#v-1-2-2-rc-709) | 2026-11-18 | release candidate |  |
 | [`1.2.2-rc.707`](#v-1-2-2-rc-707) | 2026-11-17 | release candidate |  |
 | [`1.2.2-rc.700`](#v-1-2-2-rc-700) | 2026-11-11 | release candidate |  |
@@ -16,7 +17,6 @@ _Published automatically._
 | [`0.0.0-develop.716`](#v-0-0-0-develop-716) | 2026-11-06 | develop |  |
 | [`1.2.2-rc.681`](#v-1-2-2-rc-681) | 2026-11-04 | release candidate |  |
 | [`1.2.2-rc.677`](#v-1-2-2-rc-677) | 2026-11-04 | release candidate |  |
-| [`1.2.2-rc.625`](#v-1-2-2-rc-625) | 2026-10-29 | release candidate |  |
 | [`0.0.0-develop.625`](#v-0-0-0-develop-625) | 2026-10-28 | develop |  |
 | [`0.0.0-develop.621`](#v-0-0-0-develop-621) | 2026-10-21 | develop |  |
 | [`0.0.0-develop.615`](#v-0-0-0-develop-615) | 2026-10-12 | develop |  |
@@ -355,6 +355,24 @@ same commit and *promoted* (retagged), not rebuilt. No code changed between them
 
 # Release candidates
 
+<a id="v-1-2-2-rc-712"></a>
+
+## registry-platform 1.2.2-rc.712 — 2026-11-18
+
+_commit `0c3c38c` · changes since 1.2.2-rc.709_
+<!-- build:1.2.2-rc.712 revision:0c3c38cbd63cfbb3ccfac8ba75a249dfd0695778 ts:1794985969 -->
+
+**Chart:** [openg2p-registry 1.2.2-rc.712](https://openg2p.github.io/openg2p-helm/openg2p-registry-1.2.2-rc.712.tgz)
+
+### Summary
+
+- New features: added OIDC client ID and secret for the staff portal API, and registered extension tasks for Celery beat and worker roles.
+
+### Changes
+
+- feat(helm): add OIDC client ID and secret for staff portal API ([`c22b460`](https://github.com/OpenG2P/registry-platform/commit/c22b4601e3f64ea063aace93b2913a37b74814e8))
+- feat(celery): register extension tasks for beat and worker roles ([`0a5b9f2`](https://github.com/OpenG2P/registry-platform/commit/0a5b9f2b7fbaa16d030ee3eeb75802ea0c4f6332))
+
 <a id="v-1-2-2-rc-709"></a>
 
 ## registry-platform 1.2.2-rc.709 — 2026-11-18
@@ -564,33 +582,6 @@ _commit `c2c8913` · changes since 1.2.2-rc.625_
 - [G2P-5505](https://openg2p.atlassian.net/browse/G2P-5505) g2p_register_service.get_number_of_versions - Performance Tuning ([`891ce91`](https://github.com/OpenG2P/registry-platform/commit/891ce910aa77b48c2a33336f41117a42238c5401))
 - [G2P-5504](https://openg2p.atlassian.net/browse/G2P-5504) get_tab_records - performance tuning ([`7ac37e6`](https://github.com/OpenG2P/registry-platform/commit/7ac37e6dff725c41adefddd04e42218027b6b37f))
 - [G2P-5498](https://openg2p.atlassian.net/browse/G2P-5498) Add auth_verify_ssl configuration for AWE settings ([`de0657e`](https://github.com/OpenG2P/registry-platform/commit/de0657e85134621e439e0c77efe6c7fb6b716ceb))
-
-<a id="v-1-2-2-rc-625"></a>
-
-## registry-platform 1.2.2-rc.625 — 2026-10-29
-
-_commit `29d2a23` · changes since 1.2.2-rc.614_
-<!-- build:1.2.2-rc.625 revision:29d2a2397ef9fa09308561e15ae9aa444a4fcd7c ts:1793282441 -->
-
-**Chart:** [openg2p-registry 1.2.2-rc.625](https://openg2p.github.io/openg2p-helm/openg2p-registry-1.2.2-rc.625.tgz)
-
-### Summary
-
-- **Major:** New multi-calendar date picker feature with Gregorian storage added to the UI widgets.
-- UI enhancements: fixes for date pattern tokenization and narrowing, including explicit handling for TypeScript compatibility.
-- Dependency updates: synchronized staff-ui to version 1.1.9-dev.17 and updated package-lock files for ui-widgets and staff-ui.
-- Maintenance: re-triggered functional gate to address flaky tests and removed demo changes from the multi-calendar PR.
-
-### Changes
-
-- [G2P-5840](https://openg2p.atlassian.net/browse/G2P-5840) fix(intake-form): hide sections from section-data-options in read and edit ([`1f30a59`](https://github.com/OpenG2P/registry-platform/commit/1f30a59af09af0ff5588fd1c0a9ba5d213303972))
-- chore(ui-widgets): version for npm dev publish, sync staff-ui @1.1.9-dev.17 ([`e87c4d9`](https://github.com/OpenG2P/registry-platform/commit/e87c4d9f8006622d59f234967aa8e7faf6e06e03))
-- fix(ui-widgets): narrow date pattern lit tokens explicitly ([`69a09c3`](https://github.com/OpenG2P/registry-platform/commit/69a09c319df35c2574fb89a9a826c544bd1a0ca9))
-- chore: re-trigger functional gate after flaky household CR poll ([`ddeb006`](https://github.com/OpenG2P/registry-platform/commit/ddeb0061d842095c30e7093402eb4468c81d8b66))
-- fix(ui-widgets): narrow DatePatternToken for tsc ([`95c44f8`](https://github.com/OpenG2P/registry-platform/commit/95c44f805823a56b496af466b124104d038a81e0))
-- fix(ui-widgets): tokenize calendar date pattern parsing ([`6f0021b`](https://github.com/OpenG2P/registry-platform/commit/6f0021bc5c104e8aee87361b4696a439d2f65c4e))
-- chore(ui-widgets): drop example-ui-schema demo changes from multi-calendar PR ([`b6b0a04`](https://github.com/OpenG2P/registry-platform/commit/b6b0a04dec2d79ac8ed16b11de61ec129a9c8a25))
-- feat(ui-widgets): multi-calendar date picker with Gregorian storage ([`8a90c5e`](https://github.com/OpenG2P/registry-platform/commit/8a90c5e6ab1c4567306e3e90ca818b842cd55615))
 
 <a id="v-1-2-1-rc-462"></a>
 
