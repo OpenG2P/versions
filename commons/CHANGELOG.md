@@ -6,6 +6,7 @@ _Published automatically._
 
 | Version | Date | Type | Notes |
 | --- | --- | --- | --- |
+| [`2.3.4-rc.268`](#v-2-3-4-rc-268) | 2026-11-18 | release candidate |  |
 | [`2.3.4-rc.264`](#v-2-3-4-rc-264) | 2026-11-18 | release candidate |  |
 | [`2.3.4`](#v-2-3-4) | 2026-11-18 | release |  |
 | [`2.3.4-rc.262`](#v-2-3-4-rc-262) | 2026-11-18 | release candidate |  |
@@ -36,7 +37,6 @@ _Published automatically._
 | [`0.0.0-develop.305`](#v-0-0-0-develop-305) | 2026-10-08 | develop |  |
 | [`2.3.4-rc.244`](#v-2-3-4-rc-244) | 2026-10-07 | release candidate |  |
 | [`2.3.4-rc.243`](#v-2-3-4-rc-243) | 2026-10-07 | release candidate |  |
-| [`2.3.4-rc.241`](#v-2-3-4-rc-241) | 2026-10-07 | release candidate |  |
 | [`2.3.3`](#v-2-3-3) | 2026-09-03 | release |  |
 | [`2.3.3-rc.227`](#v-2-3-3-rc-227) | 2026-09-03 | release candidate |  |
 | [`2.3.2`](#v-2-3-2) | 2026-09-02 | release |  |
@@ -462,6 +462,25 @@ _commit `44278e8` · first release_
 
 # Release candidates
 
+<a id="v-2-3-4-rc-268"></a>
+
+## commons 2.3.4-rc.268 — 2026-11-18
+
+_commit `5411534` · changes since 2.3.4-rc.264_
+<!-- build:2.3.4-rc.268 revision:541153401111121d3d2d3ef5aa94d05037f123a8 ts:1794996366 -->
+
+**Charts:** [openg2p-commons-base 2.3.4-rc.268](https://openg2p.github.io/openg2p-helm/openg2p-commons-base-2.3.4-rc.268.tgz) · [openg2p-commons-services 2.3.4-rc.268](https://openg2p.github.io/openg2p-helm/openg2p-commons-services-2.3.4-rc.268.tgz)
+
+### Summary
+
+- CI/CD enhancement: updated the build-publish workflow to allow overwriting of existing Helm charts.
+- Feature addition: incorporated Garage options into questions.yaml.
+
+### Changes
+
+- Add Garage options to questions.yaml ([`5480506`](https://github.com/OpenG2P/commons/commit/54805067047db71ccb3fb4077a990ef695fbf845))
+- Update build-publish workflow to allow overwriting of existing Helm charts ([`83a8117`](https://github.com/OpenG2P/commons/commit/83a8117cba561ec6f64cfe5ca848804505269bf9))
+
 <a id="v-2-3-4-rc-264"></a>
 
 ## commons 2.3.4-rc.264 — 2026-11-18
@@ -602,19 +621,6 @@ _commit `8c216b9` · changes since 2.3.4-rc.241_
 
 - Just to trigger CI. Otherwise No code change. ([`8c216b9`](https://github.com/OpenG2P/commons/commit/8c216b9baff065df5768f976e619147c9f985f8a))
 - update openg2p-iam-service dependency version from 1.4.3-rc.118 to 1.4.4-rc.121 in Chart.yaml ([`521b536`](https://github.com/OpenG2P/commons/commit/521b536e047b7876b55c6c6191a9e826893c56c2))
-
-<a id="v-2-3-4-rc-241"></a>
-
-## commons 2.3.4-rc.241 — 2026-10-07
-
-_commit `d4bb88e` · changes since 2.3.4-rc.240_
-<!-- build:2.3.4-rc.241 revision:d4bb88e186c9e3f3789f14c3890b45053f658786 ts:1791372530 -->
-
-**Charts:** [openg2p-commons-base 2.3.4-rc.241](https://openg2p.github.io/openg2p-helm/openg2p-commons-base-2.3.4-rc.241.tgz) · [openg2p-commons-services 2.3.4-rc.241](https://openg2p.github.io/openg2p-helm/openg2p-commons-services-2.3.4-rc.241.tgz)
-
-### Changes
-
-- fix(commons-services): update openg2p-iam-service dependency version from 1.4.2 to 1.4.3-rc.118 in Chart.yaml ([`d4bb88e`](https://github.com/OpenG2P/commons/commit/d4bb88e186c9e3f3789f14c3890b45053f658786))
 
 <a id="v-2-3-3-rc-227"></a>
 
