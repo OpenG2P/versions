@@ -6,6 +6,7 @@ _Published automatically._
 
 | Version | Date | Type | Notes |
 | --- | --- | --- | --- |
+| [`1.2.1-rc.347`](#v-1-2-1-rc-347) | 2026-11-18 | release candidate |  |
 | [`1.2.1-rc.345`](#v-1-2-1-rc-345) | 2026-11-17 | release candidate |  |
 | [`1.2.1-rc.342`](#v-1-2-1-rc-342) | 2026-11-11 | release candidate |  |
 | [`0.0.0-develop.283`](#v-0-0-0-develop-283) | 2026-11-07 | develop |  |
@@ -23,7 +24,6 @@ _Published automatically._
 | [`0.0.0-develop.275`](#v-0-0-0-develop-275) | 2026-10-08 | develop |  |
 | [`0.0.0-develop.273`](#v-0-0-0-develop-273) | 2026-10-07 | develop |  |
 | [`0.0.0-develop.272`](#v-0-0-0-develop-272) | 2026-10-07 | develop |  |
-| [`1.2.1-rc.182`](#v-1-2-1-rc-182) | 2026-10-06 | release candidate |  |
 | [`0.0.0-develop.271`](#v-0-0-0-develop-271) | 2026-10-05 | develop |  |
 | [`0.0.0-develop.221`](#v-0-0-0-develop-221) | 2026-10-03 | develop |  |
 | [`0.0.0-develop.218`](#v-0-0-0-develop-218) | 2026-10-02 | develop |  |
@@ -209,6 +209,19 @@ _commit `7055a71` · first release_
 - Initial commit ([`6e3cf83`](https://github.com/OpenG2P/farmer-registry/commit/6e3cf838809c5522a8b0cda15b87f726683ec175))
 
 # Release candidates
+
+<a id="v-1-2-1-rc-347"></a>
+
+## farmer-registry 1.2.1-rc.347 — 2026-11-18
+
+_commit `6307616` · changes since 1.2.1-rc.345_
+<!-- build:1.2.1-rc.347 revision:6307616d5b06c5de0a5fb73ff9c0c95f6e8f508b ts:1794987822 -->
+
+**Chart:** [openg2p-farmer-registry 1.2.1-rc.347](https://openg2p.github.io/openg2p-helm/openg2p-farmer-registry-1.2.1-rc.347.tgz)
+
+### Changes
+
+- Update Dockerfiles and Helm chart to version 1.2.2. ([`e3a2e38`](https://github.com/OpenG2P/farmer-registry/commit/e3a2e3827bbfd425d3a67c644a4c3e9b465b7d09))
 
 <a id="v-1-2-1-rc-345"></a>
 
@@ -481,19 +494,6 @@ _commit `7d86b26` · changes since 1.2.1-rc.182_
 - [G2P-5791](https://openg2p.atlassian.net/browse/G2P-5791) [G2P-5595](https://openg2p.atlassian.net/browse/G2P-5595) - Update section identifiers in SQL and Python files for farmer crop, input, and livestock details; change crop season from SUMMER to MEHER. ([`3ea84d8`](https://github.com/OpenG2P/farmer-registry/commit/3ea84d831bebf8c1def1c2efd691011aa4cddcb3))
 - [G2P-5776](https://openg2p.atlassian.net/browse/G2P-5776) Enhanced widget for dropdown fields ([`f9de3e5`](https://github.com/OpenG2P/farmer-registry/commit/f9de3e57ad11c88bcb330632cbc9359299413e13))
 - [G2P-5783](https://openg2p.atlassian.net/browse/G2P-5783) [G2P-5778](https://openg2p.atlassian.net/browse/G2P-5778) - relationship to head field make it conditional and Primary Cooperative Member or Cooperative Union Member is now conditional ([`51cf1ec`](https://github.com/OpenG2P/farmer-registry/commit/51cf1ec24850f8a455960927b9cb04ffff2f961d))
-
-<a id="v-1-2-1-rc-182"></a>
-
-## farmer-registry 1.2.1-rc.182 — 2026-10-06
-
-_commit `94a6152` · changes since 1.2.1-rc.180_
-<!-- build:1.2.1-rc.182 revision:94a615273562abc4a3a8269a7baffbda47fe536d ts:1791262209 -->
-
-**Chart:** [openg2p-farmer-registry 1.2.1-rc.182](https://openg2p.github.io/openg2p-helm/openg2p-farmer-registry-1.2.1-rc.182.tgz)
-
-### Changes
-
-- Bump version of RP to 1.2.2-rc.536 in Dockerfiles and Chart.yaml ([`1f0d126`](https://github.com/OpenG2P/farmer-registry/commit/1f0d12691d840db2da3c19d24c115cc556613e5f))
 
 # Develop builds
 
