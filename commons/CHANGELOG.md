@@ -6,6 +6,7 @@ _Published automatically._
 
 | Version | Date | Type | Notes |
 | --- | --- | --- | --- |
+| [`2.3.4-rc.260`](#v-2-3-4-rc-260) | 2026-11-18 | release candidate |  |
 | [`2.3.4-rc.257`](#v-2-3-4-rc-257) | 2026-11-18 | release candidate |  |
 | [`2.3.4-rc.249`](#v-2-3-4-rc-249) | 2026-11-17 | release candidate |  |
 | [`0.0.0-develop.340`](#v-0-0-0-develop-340) | 2026-11-16 | develop |  |
@@ -35,7 +36,6 @@ _Published automatically._
 | [`2.3.4-rc.241`](#v-2-3-4-rc-241) | 2026-10-07 | release candidate |  |
 | [`2.3.4-rc.240`](#v-2-3-4-rc-240) | 2026-10-05 | release candidate |  |
 | [`2.3.4-rc.238`](#v-2-3-4-rc-238) | 2026-10-05 | release candidate |  |
-| [`2.3.4-rc.236`](#v-2-3-4-rc-236) | 2026-10-01 | release candidate |  |
 | [`2.3.3`](#v-2-3-3) | 2026-09-03 | release |  |
 | [`2.3.3-rc.227`](#v-2-3-3-rc-227) | 2026-09-03 | release candidate |  |
 | [`2.3.2`](#v-2-3-2) | 2026-09-02 | release |  |
@@ -413,6 +413,25 @@ _commit `44278e8` · first release_
 
 # Release candidates
 
+<a id="v-2-3-4-rc-260"></a>
+
+## commons 2.3.4-rc.260 — 2026-11-18
+
+_commit `6d15f69` · changes since 2.3.4-rc.257_
+<!-- build:2.3.4-rc.260 revision:6d15f69220b780689ac4a9a52eade7e985e10bc1 ts:1794983554 -->
+
+**Charts:** [openg2p-commons-base 2.3.4-rc.260](https://openg2p.github.io/openg2p-helm/openg2p-commons-base-2.3.4-rc.260.tgz) · [openg2p-commons-services 2.3.4-rc.260](https://openg2p.github.io/openg2p-helm/openg2p-commons-services-2.3.4-rc.260.tgz)
+
+### Summary
+
+- **Major:** Added Garage S3 support to the commons base chart, enhancing cloud storage integration.
+- Code quality: Fixed end-of-file newlines to comply with pre-commit standards.
+
+### Changes
+
+- Fix end-of-file newlines (pre-commit) ([`a972756`](https://github.com/OpenG2P/commons/commit/a97275685b0b75e623b4fb771a4673642effd504))
+- Add Garage S3 to commons base chart ([`5244e6b`](https://github.com/OpenG2P/commons/commit/5244e6be6b8e625231a07afd2c3378dc09dcdef2))
+
 <a id="v-2-3-4-rc-257"></a>
 
 ## commons 2.3.4-rc.257 — 2026-11-18
@@ -547,19 +566,6 @@ _commit `c569bf9` · changes since 2.3.4-rc.236_
 ### Changes
 
 - fix(commons-services): update openg2p-master-data dependency version from 1.1.4-rc.100 to 1.1.4-rc.102 in Chart.yaml ([`48d1036`](https://github.com/OpenG2P/commons/commit/48d103643e0d134e932e94407ead38c22f32cca6))
-
-<a id="v-2-3-4-rc-236"></a>
-
-## commons 2.3.4-rc.236 — 2026-10-01
-
-_commit `7d5deab` · changes since 2.3.4-rc.234_
-<!-- build:2.3.4-rc.236 revision:7d5deab1e3a212ab7f8c5fe9b44f218c5352da8e ts:1790851466 -->
-
-**Charts:** [openg2p-commons-base 2.3.4-rc.236](https://openg2p.github.io/openg2p-helm/openg2p-commons-base-2.3.4-rc.236.tgz) · [openg2p-commons-services 2.3.4-rc.236](https://openg2p.github.io/openg2p-helm/openg2p-commons-services-2.3.4-rc.236.tgz)
-
-### Changes
-
-- fix(commons-services): downgrade openg2p-iam-service version from 1.4.3-rc.118 to 1.4.2 in Chart.yaml ([`3a16c52`](https://github.com/OpenG2P/commons/commit/3a16c52a77b0fab965bace9e6beab254317ba83c))
 
 <a id="v-2-3-3-rc-227"></a>
 
