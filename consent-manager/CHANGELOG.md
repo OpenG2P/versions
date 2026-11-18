@@ -6,6 +6,7 @@ _Published automatically._
 
 | Version | Date | Type | Notes |
 | --- | --- | --- | --- |
+| [`1.0.4-rc.65`](#v-1-0-4-rc-65) | 2026-11-18 | release candidate |  |
 | [`0.0.0-develop.93`](#v-0-0-0-develop-93) | 2026-11-14 | develop |  |
 | [`0.0.0-develop.92`](#v-0-0-0-develop-92) | 2026-11-06 | develop |  |
 | [`0.0.0-develop.91`](#v-0-0-0-develop-91) | 2026-11-05 | develop |  |
@@ -197,6 +198,29 @@ Links
 - [G2P-5335](https://openg2p.atlassian.net/browse/G2P-5335) ci: replace docker-build + helm-publish with central build-publish workflow ([`0a508a6`](https://github.com/OpenG2P/consent-manager/commit/0a508a6e8ecbbb33d5b1d6ad898c28e409c051b1))
 
 # Release candidates
+
+<a id="v-1-0-4-rc-65"></a>
+
+## consent-manager 1.0.4-rc.65 — 2026-11-18
+
+_commit `41f69db` · changes since 0.0.0-develop.57_
+<!-- build:1.0.4-rc.65 revision:41f69dbd9cea55f52de8e2736b9f2ee71408b3dd ts:1794993801 -->
+
+**Chart:** [openg2p-consent-manager 1.0.4-rc.65](https://openg2p.github.io/openg2p-helm/openg2p-consent-manager-1.0.4-rc.65.tgz)
+
+### Summary
+
+- Dependency updates: upgraded `openg2p-fastapi-common` to version 1.3.0, `FASTAPI_COMMON_REF` to 1.2.0, and `keycloak-init` to 1.2.0, with corresponding adjustments in Dockerfile and workflow configurations.
+- Version bump: released version 1.0.3 and updated image tags to reflect this change, alongside a previous update to version 1.0.2. 
+- Refactoring: modified crypto helper initialization in the verification service to utilize `CryptoFactory`.
+
+### Changes
+
+- Update openg2p-fastapi-common dependency to version 1.3.0 and adjust related configurations in Dockerfile and workflow files. Refactor crypto helper initialization in verification service to use CryptoFactory. ([`e355498`](https://github.com/OpenG2P/consent-manager/commit/e3554987ba835f54f6a587d965fd87cb37f302db))
+- Bump version to 1.0.3 and update image tags to 1.0.3 ([`2d9357e`](https://github.com/OpenG2P/consent-manager/commit/2d9357e0e79a22eb0077c938bee491d1bf52a0a3))
+- Update image tags to version 1.0.2 ([`8bce8bc`](https://github.com/OpenG2P/consent-manager/commit/8bce8bc5b544efd2a468c0f801d63273419be706))
+- Update FASTAPI_COMMON_REF to version 1.2.0 ([`c84a6dd`](https://github.com/OpenG2P/consent-manager/commit/c84a6ddeec6dcac06c9ef19ae18aa32ff81971dd))
+- Update keycloak-init version to 1.2.0 ([`167a49e`](https://github.com/OpenG2P/consent-manager/commit/167a49ec5e708856651a8145b73b527ad910f76e))
 
 <a id="v-1-0-3-rc-63"></a>
 
