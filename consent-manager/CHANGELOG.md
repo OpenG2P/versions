@@ -6,6 +6,7 @@ _Published automatically._
 
 | Version | Date | Type | Notes |
 | --- | --- | --- | --- |
+| [`1.0.4`](#v-1-0-4) | 2026-11-18 | release |  |
 | [`1.0.4-rc.65`](#v-1-0-4-rc-65) | 2026-11-18 | release candidate |  |
 | [`0.0.0-develop.93`](#v-0-0-0-develop-93) | 2026-11-14 | develop |  |
 | [`0.0.0-develop.92`](#v-0-0-0-develop-92) | 2026-11-06 | develop |  |
@@ -38,6 +39,36 @@ _Published automatically._
 | [`1.0.0-rc.57`](#v-1-0-0-rc-57) | 2026-09-01 | release candidate |  |
 
 # Releases
+
+<a id="v-1-0-4"></a>
+
+## consent-manager 1.0.4 — 2026-11-18
+
+<!-- build:1.0.4 revision:41f69dbd9cea55f52de8e2736b9f2ee71408b3dd ts:1794993801 -->
+
+_commit `41f69db` · changes since release 1.0.3_
+
+**Same artifact as [`1.0.4-rc.65`](#v-1-0-4-rc-65)** — built from the
+same commit and *promoted* (retagged), not rebuilt. No code changed between them.
+
+**Chart:** [openg2p-consent-manager 1.0.4](https://openg2p.github.io/openg2p-helm/openg2p-consent-manager-1.0.4.tgz)
+
+### Release notes
+
+## What's Changed
+* Update openg2p-fastapi-common dependency to version 1.3.0 and adjust … by @mkumar-02 in https://github.com/OpenG2P/consent-manager/pull/16
+
+
+**Full Changelog**: https://github.com/OpenG2P/consent-manager/compare/1.0.3...1.0.4
+
+### Summary
+
+- Dependency updates: upgraded `openg2p-fastapi-common` to version 1.3.0, with corresponding adjustments in Dockerfile and CI workflow files.
+- Code refactor: modified crypto helper initialization in the verification service to utilize `CryptoFactory`, enhancing modularity and maintainability.
+
+### Changes
+
+- Update openg2p-fastapi-common dependency to version 1.3.0 and adjust related configurations in Dockerfile and workflow files. Refactor crypto helper initialization in verification service to use CryptoFactory. ([`e355498`](https://github.com/OpenG2P/consent-manager/commit/e3554987ba835f54f6a587d965fd87cb37f302db))
 
 <a id="v-1-0-3"></a>
 
