@@ -6,6 +6,7 @@ _Published automatically._
 
 | Version | Date | Type | Notes |
 | --- | --- | --- | --- |
+| [`1.2.2-rc.720`](#v-1-2-2-rc-720) | 2026-11-18 | release candidate |  |
 | [`1.2.2-rc.714`](#v-1-2-2-rc-714) | 2026-11-18 | release candidate |  |
 | [`1.2.2-rc.712`](#v-1-2-2-rc-712) | 2026-11-18 | release candidate |  |
 | [`1.2.2-rc.709`](#v-1-2-2-rc-709) | 2026-11-18 | release candidate |  |
@@ -16,7 +17,6 @@ _Published automatically._
 | [`1.2.2-rc.686`](#v-1-2-2-rc-686) | 2026-11-10 | release candidate |  |
 | [`1.2.2-rc.683`](#v-1-2-2-rc-683) | 2026-11-06 | release candidate |  |
 | [`0.0.0-develop.716`](#v-0-0-0-develop-716) | 2026-11-06 | develop |  |
-| [`1.2.2-rc.681`](#v-1-2-2-rc-681) | 2026-11-04 | release candidate |  |
 | [`0.0.0-develop.625`](#v-0-0-0-develop-625) | 2026-10-28 | develop |  |
 | [`0.0.0-develop.621`](#v-0-0-0-develop-621) | 2026-10-21 | develop |  |
 | [`0.0.0-develop.615`](#v-0-0-0-develop-615) | 2026-10-12 | develop |  |
@@ -355,6 +355,26 @@ same commit and *promoted* (retagged), not rebuilt. No code changed between them
 
 # Release candidates
 
+<a id="v-1-2-2-rc-720"></a>
+
+## registry-platform 1.2.2-rc.720 — 2026-11-18
+
+_commit `60b9b4a` · changes since 1.2.2-rc.714_
+<!-- build:1.2.2-rc.720 revision:60b9b4acdd713928b2059e3ca71a69ad1d4e749c ts:1794986452 -->
+
+**Chart:** [openg2p-registry 1.2.2-rc.720](https://openg2p.github.io/openg2p-helm/openg2p-registry-1.2.2-rc.720.tgz)
+
+### Summary
+
+- Dependency updates: upgraded FASTAPI_COMMON_REF to 1.3.0, IAM_CORE_REF to 1.4.4, NOTIFICATION_REF to 1.0.0, and standardized Helm image tags to 1.2.2 across services. 
+- Enhanced Redis support: switched to "celery[redis]" for both beat and worker components, with clarifications in the Dockerfile regarding Redis and Kombu installation.
+
+### Changes
+
+- No code change. Just to trigger functional-gate workflow ([`db17584`](https://github.com/OpenG2P/registry-platform/commit/db1758450127d7edc9b0269b0c8772b9f31f3a46))
+- Update dependencies in Dockerfiles and Helm charts to latest versions. Bump FASTAPI_COMMON_REF to 1.3.0, IAM_CORE_REF to 1.4.4, and NOTIFICATION_REF to 1.0.0. Update image tags in Helm values to 1.2.2 for consistency across services. ([`ff85d5b`](https://github.com/OpenG2P/registry-platform/commit/ff85d5bac4af7ffe7eec7528d21e6b46e335e3ab))
+- Update dependencies in pyproject.toml to use "celery[redis]" for both beat and worker components, ensuring Redis support is included. Modify Dockerfile comment to clarify the installation of Redis and Kombu packaging. ([`0f2d642`](https://github.com/OpenG2P/registry-platform/commit/0f2d642922e480365222594fc7ccee9b4d461361))
+
 <a id="v-1-2-2-rc-714"></a>
 
 ## registry-platform 1.2.2-rc.714 — 2026-11-18
@@ -513,27 +533,6 @@ _commit `b5498c1` · changes since 1.2.2-rc.681_
 ### Changes
 
 - [G2P-5919](https://openg2p.atlassian.net/browse/G2P-5919) Fix: update draft status filter to use 'PENDING' instead of FINAL ([`eae31b7`](https://github.com/OpenG2P/registry-platform/commit/eae31b7697283597c7bd7f4643730b2d05bcbe98))
-
-<a id="v-1-2-2-rc-681"></a>
-
-## registry-platform 1.2.2-rc.681 — 2026-11-04
-
-_commit `71e1ae4` · changes since 1.2.2-rc.677_
-<!-- build:1.2.2-rc.681 revision:71e1ae43d808b2c5e650a68fbca2a8347fdac9db ts:1793799428 -->
-
-**Chart:** [openg2p-registry 1.2.2-rc.681](https://openg2p.github.io/openg2p-helm/openg2p-registry-1.2.2-rc.681.tgz)
-
-### Summary
-
-- **Major:** Helm configuration changes: default partner signature and consent settings are now off.
-- Core feature enhancement: full record state is now written into register history for improved tracking.
-- Dependency updates: switched to using `celery[redis]` extra to accommodate kombu version requirements.
-
-### Changes
-
-- fix(celery): use celery[redis] extra - kombu&gt;=5.7 imports packaging in the redis transport ([`fe52b3d`](https://github.com/OpenG2P/registry-platform/commit/fe52b3d030b30399099a2d1b11bc838f77273e87))
-- [G2P-5905](https://openg2p.atlassian.net/browse/G2P-5905) feat(core): write full record state into register history ([`ca7e109`](https://github.com/OpenG2P/registry-platform/commit/ca7e109e50e7af8665c3c9228039b329a9c6fce0))
-- chore(helm)!: default partner signature and consent to off ([`043df5c`](https://github.com/OpenG2P/registry-platform/commit/043df5c80c41868c53e5047024c9cf99150c4032))
 
 <a id="v-1-2-1-rc-462"></a>
 
