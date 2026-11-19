@@ -6,6 +6,7 @@ _Published automatically._
 
 | Version | Date | Type | Notes |
 | --- | --- | --- | --- |
+| [`0.0.0-develop.76`](#v-0-0-0-develop-76) | 2026-11-19 | develop |  |
 | [`0.0.0-develop.75`](#v-0-0-0-develop-75) | 2026-11-14 | develop |  |
 | [`0.0.0-develop.73`](#v-0-0-0-develop-73) | 2026-11-06 | develop |  |
 | [`0.0.0-develop.71`](#v-0-0-0-develop-71) | 2026-11-02 | develop |  |
@@ -25,9 +26,21 @@ _Published automatically._
 | [`0.0.0-develop.36`](#v-0-0-0-develop-36) | 2026-10-09 | develop |  |
 | [`0.0.0-develop.30`](#v-0-0-0-develop-30) | 2026-10-07 | develop |  |
 | [`0.0.0-develop.29`](#v-0-0-0-develop-29) | 2026-10-07 | develop |  |
-| [`0.0.0-develop.28`](#v-0-0-0-develop-28) | 2026-10-05 | develop |  |
 
 # Develop builds
+
+<a id="v-0-0-0-develop-76"></a>
+
+## agri-stack — develop 0.0.0-develop.76 (2026-11-19)
+
+_commit `309febe` · changes since 0.0.0-develop.75_
+<!-- build:0.0.0-develop.76 revision:309febe64cac787da21c0e32844927bf253e2788 ts:1795063331 -->
+
+**Chart:** [openg2p-agri-composite 0.0.0-develop.76](https://openg2p.github.io/openg2p-helm/openg2p-agri-composite-0.0.0-develop.76.tgz)
+
+### Changes
+
+- [G2P-5719](https://openg2p.atlassian.net/browse/G2P-5719) Composite: allow_assisted_confirmation from the use-case policy in consent templates and validate limits; tests ([`309febe`](https://github.com/OpenG2P/agri-stack/commit/309febe64cac787da21c0e32844927bf253e2788))
 
 <a id="v-0-0-0-develop-75"></a>
 
@@ -392,19 +405,6 @@ _commit `ba31974` · changes since 0.0.0-develop.28_
 ### Changes
 
 - [G2P-5719](https://openg2p.atlassian.net/browse/G2P-5719) composite: data scope catalogue is read with the signed POST /partner/data_scopes (comments) ([`ba31974`](https://github.com/OpenG2P/agri-stack/commit/ba319741e9cfbf5d131ab4d25bfed271e730d046))
-
-<a id="v-0-0-0-develop-28"></a>
-
-## agri-stack — develop 0.0.0-develop.28 (2026-10-05)
-
-_commit `5aa87ad` · changes since 0.0.0-develop.27_
-<!-- build:0.0.0-develop.28 revision:5aa87ad76c22942468a7761cef0f3be31599bda1 ts:1791172372 -->
-
-**Chart:** [openg2p-agri-composite 0.0.0-develop.28](https://openg2p.github.io/openg2p-helm/openg2p-agri-composite-0.0.0-develop.28.tgz)
-
-### Changes
-
-- [G2P-5719](https://openg2p.atlassian.net/browse/G2P-5719) loan-profile: per-source timeout 10 s with no retry (a slow registry search was retried into a timeout), overall 25 s for farmer then crop sources; chart's embedded use case and engine test updated ([`5aa87ad`](https://github.com/OpenG2P/agri-stack/commit/5aa87ad76c22942468a7761cef0f3be31599bda1))
 
 ---
 
