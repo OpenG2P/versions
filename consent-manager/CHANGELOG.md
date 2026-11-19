@@ -6,6 +6,7 @@ _Published automatically._
 
 | Version | Date | Type | Notes |
 | --- | --- | --- | --- |
+| [`0.0.0-develop.94`](#v-0-0-0-develop-94) | 2026-11-19 | develop |  |
 | [`1.0.4`](#v-1-0-4) | 2026-11-18 | release |  |
 | [`1.0.4-rc.65`](#v-1-0-4-rc-65) | 2026-11-18 | release candidate |  |
 | [`0.0.0-develop.93`](#v-0-0-0-develop-93) | 2026-11-14 | develop |  |
@@ -27,7 +28,6 @@ _Published automatically._
 | [`0.0.0-develop.69`](#v-0-0-0-develop-69) | 2026-10-12 | develop |  |
 | [`0.0.0-develop.68`](#v-0-0-0-develop-68) | 2026-10-12 | develop |  |
 | [`0.0.0-develop.65`](#v-0-0-0-develop-65) | 2026-10-10 | develop |  |
-| [`0.0.0-develop.64`](#v-0-0-0-develop-64) | 2026-10-07 | develop |  |
 | [`1.0.3`](#v-1-0-3) | 2026-09-04 | release |  |
 | [`1.0.3-rc.63`](#v-1-0-3-rc-63) | 2026-09-04 | release candidate |  |
 | [`1.0.2`](#v-1-0-2) | 2026-09-01 | release |  |
@@ -333,6 +333,19 @@ _No new commits since 0.0.0-develop.57._
 
 # Develop builds
 
+<a id="v-0-0-0-develop-94"></a>
+
+## consent-manager — develop 0.0.0-develop.94 (2026-11-19)
+
+_commit `a8ce87f` · changes since 0.0.0-develop.93_
+<!-- build:0.0.0-develop.94 revision:a8ce87fb3dfb4486f952dff5ceffc39833ecb8d6 ts:1795063293 -->
+
+**Chart:** [openg2p-consent-manager 0.0.0-develop.94](https://openg2p.github.io/openg2p-helm/openg2p-consent-manager-0.0.0-develop.94.tgz)
+
+### Changes
+
+- [G2P-5719](https://openg2p.atlassian.net/browse/G2P-5719) Consent scenario 0, assisted confirmation: after the national-ID login one "I agree" makes the consent active at once (no form, no approver); allowed per install and per policy or consent template; statement recorded and in the consent record; partner portal "How the person agrees"; console shows how it was given; chart settings; tests ([`a8ce87f`](https://github.com/OpenG2P/consent-manager/commit/a8ce87fb3dfb4486f952dff5ceffc39833ecb8d6))
+
 <a id="v-0-0-0-develop-93"></a>
 
 ## consent-manager — develop 0.0.0-develop.93 (2026-11-14)
@@ -625,19 +638,6 @@ _commit `1e29e4b` · changes since 0.0.0-develop.64_
 ### Changes
 
 - [G2P-5719](https://openg2p.atlassian.net/browse/G2P-5719) consent scenario 1 (phase 1): partner realm auth, partner-portal API and SPA (requests, signed-form evidence in Garage, submit/cancel, consents and receipts, use-case prefill), staff "Consent verifications" in the console, assurance on consents, /validate by consent_id with receipts and grants; chart partnerPortal/evidence (off by default) + partner keycloak-init; setup-partner-realm.sh; CI builds the portal image ([`1e29e4b`](https://github.com/OpenG2P/consent-manager/commit/1e29e4bebe76417639ae4c9dbb104a39c48cc418))
-
-<a id="v-0-0-0-develop-64"></a>
-
-## consent-manager — develop 0.0.0-develop.64 (2026-10-07)
-
-_commit `8e9ef7b` · changes since 0.0.0-develop.63_
-<!-- build:0.0.0-develop.64 revision:8e9ef7b10a4d66ba968ff38ac9394a936bac1c8e ts:1791353775 -->
-
-**Chart:** [openg2p-consent-manager 0.0.0-develop.64](https://openg2p.github.io/openg2p-helm/openg2p-consent-manager-0.0.0-develop.64.tgz)
-
-### Changes
-
-- [G2P-5719](https://openg2p.atlassian.net/browse/G2P-5719) CM exchange receipts (opt-in, off by default): issue_receipts on /validate signs one consent receipt per controller for configured presenters with the CM signing key; GET /receipts/{jti}/status (revoked with the consent, expired by time); department role accepts receipts from trusted issuers (JWKS cache + unknown-kid refresh, aud/presenter/time, status check, standing policy for the presenter, scopes intersected) and logs receipt jti/issuer; chart values + Rancher "Agri Stack exchange" group; tests ([`8e9ef7b`](https://github.com/OpenG2P/consent-manager/commit/8e9ef7b10a4d66ba968ff38ac9394a936bac1c8e))
 
 ---
 
