@@ -6,6 +6,7 @@ _Published automatically._
 
 | Version | Date | Type | Notes |
 | --- | --- | --- | --- |
+| [`0.0.0-develop.40`](#v-0-0-0-develop-40) | 2026-11-19 | develop |  |
 | [`0.0.0-develop.38`](#v-0-0-0-develop-38) | 2026-11-14 | develop |  |
 | [`0.0.0-develop.37`](#v-0-0-0-develop-37) | 2026-11-10 | develop |  |
 | [`0.0.0-develop.36`](#v-0-0-0-develop-36) | 2026-11-06 | develop |  |
@@ -280,6 +281,25 @@ _commit `bb96ff2` · changes since 0.0.0-develop.24_
 _No new commits since 0.0.0-develop.24._
 
 # Develop builds
+
+<a id="v-0-0-0-develop-40"></a>
+
+## partner-management — develop 0.0.0-develop.40 (2026-11-19)
+
+_commit `6b27013` · changes since 0.0.0-develop.38_
+<!-- build:0.0.0-develop.40 revision:6b270133d40ecb4af26e44f80717db1f72e73691 ts:1795063311 -->
+
+**Chart:** [partner-management 0.0.0-develop.40](https://openg2p.github.io/openg2p-helm/partner-management-0.0.0-develop.40.tgz)
+
+### Summary
+
+- UI updates: Renamed "Requests" to "Approvals", prioritized "Partners" in the navigation, and added a direct "Onboard partner" button on the "Partners" page.
+- Policy enhancement: Introduced `allow_assisted_confirmation` with new schema, column, and tests to support consent collection via assisted confirmation.
+
+### Changes
+
+- [G2P-5719](https://openg2p.atlassian.net/browse/G2P-5719) Policy: allow_assisted_confirmation (scope and use-case policies): column, schema, tests, "May collect consents by assisted confirmation" in the policy form ([`6b27013`](https://github.com/OpenG2P/partner-management/commit/6b270133d40ecb4af26e44f80717db1f72e73691))
+- [G2P-5719](https://openg2p.atlassian.net/browse/G2P-5719) PM UI: Partners first, Requests renamed Approvals, Onboard partner a button on Partners instead of a menu item, home is Partners ([`4209fb8`](https://github.com/OpenG2P/partner-management/commit/4209fb84c4a63f8fcf0160362c07525b88b4f82f))
 
 <a id="v-0-0-0-develop-38"></a>
 
