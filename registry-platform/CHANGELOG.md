@@ -6,6 +6,7 @@ _Published automatically._
 
 | Version | Date | Type | Notes |
 | --- | --- | --- | --- |
+| [`0.0.0-develop.721`](#v-0-0-0-develop-721) | 2026-11-19 | develop |  |
 | [`1.2.2`](#v-1-2-2) | 2026-11-18 | release |  |
 | [`1.2.2-rc.720`](#v-1-2-2-rc-720) | 2026-11-18 | release candidate |  |
 | [`1.2.2-rc.714`](#v-1-2-2-rc-714) | 2026-11-18 | release candidate |  |
@@ -36,7 +37,6 @@ _Published automatically._
 | [`0.0.0-develop.441`](#v-0-0-0-develop-441) | 2026-09-28 | develop |  |
 | [`0.0.0-develop.439`](#v-0-0-0-develop-439) | 2026-09-27 | develop |  |
 | [`0.0.0-develop.438`](#v-0-0-0-develop-438) | 2026-09-27 | develop |  |
-| [`0.0.0-develop.435`](#v-0-0-0-develop-435) | 2026-09-23 | develop | Marking a version at this point before major changes are done on RP\| |
 | [`1.2.1`](#v-1-2-1) | 2026-09-07 | release |  |
 | [`1.2.1-rc.462`](#v-1-2-1-rc-462) | 2026-09-04 | release candidate |  |
 | [`1.2.1-rc.447`](#v-1-2-1-rc-447) | 2026-09-04 | release candidate |  |
@@ -1172,6 +1172,29 @@ _commit `9b41f96` · changes since v1.0.0_
 
 # Develop builds
 
+<a id="v-0-0-0-develop-721"></a>
+
+## registry-platform — develop 0.0.0-develop.721 (2026-11-19)
+
+_commit `761bdaa` · changes since 0.0.0-develop.716_
+<!-- build:0.0.0-develop.721 revision:761bdaa1ba1faff464558c43deba13001cf974d9 ts:1795071083 -->
+
+**Chart:** [openg2p-registry 0.0.0-develop.721](https://openg2p.github.io/openg2p-helm/openg2p-registry-0.0.0-develop.721.tgz)
+
+### Summary
+
+- **Major:** Installation of the notification inbox from its 1.0.0 release, replacing the removed package file.
+- API enhancements: Published the OpenAPI specification for the agent portal API and renamed VC endpoints to align with the staff API's path convention.
+- Dependency updates: Synchronized staff-ui to version 1.1.9-dev.21 and updated package-lock files for ui-widgets and staff-ui.
+- Testing improvements: Adjusted three test files to align with recent changes.
+
+### Changes
+
+- [G2P-4929](https://openg2p.atlassian.net/browse/G2P-4929) Install the notification inbox from its 1.0.0 release, since the old package file was removed ([`0fe78dd`](https://github.com/OpenG2P/registry-platform/commit/0fe78ddad2fdcd9cacdc2cebe79ec1e29cc94219))
+- chore(ui-widgets): version for npm dev publish, sync staff-ui @1.1.9-dev.21 [skip ci] ([`0582d60`](https://github.com/OpenG2P/registry-platform/commit/0582d60ccfb2ab787f5ee33b9ee56df4951a9a41))
+- [G2P-4929](https://openg2p.atlassian.net/browse/G2P-4929) Publish the agent portal API's OpenAPI spec ([`248da3e`](https://github.com/OpenG2P/registry-platform/commit/248da3e6e4d44138c78ea49582452c8b39624b7f))
+- [G2P-4929](https://openg2p.atlassian.net/browse/G2P-4929) Rename agent portal VC endpoints to follow the staff API's path convention ([`3cdb770`](https://github.com/OpenG2P/registry-platform/commit/3cdb770fb63f056631acde48d005c3fa814377ee))
+
 <a id="v-0-0-0-develop-716"></a>
 
 ## registry-platform — develop 0.0.0-develop.716 (2026-11-06)
@@ -1698,28 +1721,6 @@ _commit `fb3ef1a` · changes since 0.0.0-develop.435_
 - [G2P-5719](https://openg2p.atlassian.net/browse/G2P-5719) Move activity DB tests to tests_integration so unit tests run as before ([`fb3ef1a`](https://github.com/OpenG2P/registry-platform/commit/fb3ef1a6ad181f2b574cd497c95afc47de40ed84))
 - [G2P-5719](https://openg2p.atlassian.net/browse/G2P-5719) Add activity registers: append-only ACTIVITY register kind ([`da35988`](https://github.com/OpenG2P/registry-platform/commit/da3598899e3bc43d8344d4f840b706b509391df8))
 - [G2P-4929](https://openg2p.atlassian.net/browse/G2P-4929) Use 'agent' as the demo agent password ([`27f544c`](https://github.com/OpenG2P/registry-platform/commit/27f544ce7e324f5881660e7f7b9439afc11a2570))
-
-<a id="v-0-0-0-develop-435"></a>
-
-## registry-platform — develop 0.0.0-develop.435 (2026-09-23)
-
-> **Note** — Marking a version at this point before major changes are done on RP|
-
-_commit `c145e3a` · changes since 0.0.0-develop.432_
-<!-- build:0.0.0-develop.435 revision:c145e3ab1808e9fe8465e438834aaf9a583eec72 ts:1790124509 -->
-
-**Chart:** [openg2p-registry 0.0.0-develop.435](https://openg2p.github.io/openg2p-helm/openg2p-registry-0.0.0-develop.435.tgz)
-
-### Summary
-
-- New feature: added a mobile wallet card and offer screen to the agent portal, enabling individual transaction codes and scannable QR codes for wallet offers.
-- Ongoing development: introduced a feature for handing over verifiable credentials (VC) to beneficiaries' mobile wallets, currently a work in progress.
-
-### Changes
-
-- [G2P-4929](https://openg2p.atlassian.net/browse/G2P-4929) Add a mobile wallet card and offer screen to the agent portal ([`c145e3a`](https://github.com/OpenG2P/registry-platform/commit/c145e3ab1808e9fe8465e438834aaf9a583eec72))
-- [G2P-4929](https://openg2p.atlassian.net/browse/G2P-4929) Give each wallet offer its own transaction code and a scannable QR ([`f582bf9`](https://github.com/OpenG2P/registry-platform/commit/f582bf9ac9157ee79f49d411d357b5c0c27f2d6c))
-- [G2P-4929](https://openg2p.atlassian.net/browse/G2P-4929) Feature to handover VC to a beneficiaries mobile wallet added. WIP. ([`fa490b1`](https://github.com/OpenG2P/registry-platform/commit/fa490b109eff7c94c57b317965e5a968f6bd7750))
 
 ---
 
