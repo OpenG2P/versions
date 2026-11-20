@@ -6,6 +6,7 @@ _Published automatically._
 
 | Version | Date | Type | Notes |
 | --- | --- | --- | --- |
+| [`0.0.0-develop.45`](#v-0-0-0-develop-45) | 2026-11-20 | develop |  |
 | [`0.0.0-develop.44`](#v-0-0-0-develop-44) | 2026-11-07 | develop |  |
 | [`0.0.0-develop.43`](#v-0-0-0-develop-43) | 2026-10-28 | develop |  |
 | [`0.0.0-develop.41`](#v-0-0-0-develop-41) | 2026-10-21 | develop |  |
@@ -26,6 +27,19 @@ _Published automatically._
 | [`0.0.0-develop.4`](#v-0-0-0-develop-4) | 2026-09-27 | develop |  |
 
 # Develop builds
+
+<a id="v-0-0-0-develop-45"></a>
+
+## crop-sown-registry — develop 0.0.0-develop.45 (2026-11-20)
+
+_commit `320589c` · changes since 0.0.0-develop.44_
+<!-- build:0.0.0-develop.45 revision:320589c5100b894152848cd8a566f01e9d62c81b ts:1795147416 -->
+
+**Chart:** [openg2p-crop-sown-registry 0.0.0-develop.45](https://openg2p.github.io/openg2p-helm/openg2p-crop-sown-registry-0.0.0-develop.45.tgz)
+
+### Changes
+
+- [G2P-4929](https://openg2p.atlassian.net/browse/G2P-4929) Move to registry platform 0.0.0-develop.721 ([`320589c`](https://github.com/OpenG2P/crop-sown-registry/commit/320589c5100b894152848cd8a566f01e9d62c81b))
 
 <a id="v-0-0-0-develop-44"></a>
 
