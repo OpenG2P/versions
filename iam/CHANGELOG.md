@@ -6,6 +6,7 @@ _Published automatically._
 
 | Version | Date | Type | Notes |
 | --- | --- | --- | --- |
+| [`0.0.0-develop.158`](#v-0-0-0-develop-158) | 2026-11-20 | develop |  |
 | [`1.4.4`](#v-1-4-4) | 2026-11-18 | release |  |
 | [`1.4.4-rc.144`](#v-1-4-4-rc-144) | 2026-11-17 | release candidate |  |
 | [`0.0.0-develop.150`](#v-0-0-0-develop-150) | 2026-11-17 | develop |  |
@@ -573,6 +574,32 @@ _commit `f8bccfe` · changes since v1.3.0_
 - [G2P-5313](https://openg2p.atlassian.net/browse/G2P-5313) Improve unit test coverage for core IAM functionality ([`c762c7b`](https://github.com/OpenG2P/iam/commit/c762c7b741a5c9d19bbd30b6875daacbd5d88717))
 
 # Develop builds
+
+<a id="v-0-0-0-develop-158"></a>
+
+## iam — develop 0.0.0-develop.158 (2026-11-20)
+
+_commit `3f1c5bf` · changes since 0.0.0-develop.150_
+<!-- build:0.0.0-develop.158 revision:3f1c5bf2839ce97913fb7cf91cb60a240da725c5 ts:1795161128 -->
+
+**Chart:** [openg2p-iam-service 0.0.0-develop.158](https://openg2p.github.io/openg2p-helm/openg2p-iam-service-0.0.0-develop.158.tgz)
+
+### Summary
+
+- **Major:** Refactor of authentication: removed partner_auth module, updated JWT validation imports, and enhanced OIDC client ID and secret handling.
+- Session management improvements: updated session cookie handling to refresh max age and aligned refresh token TTL with Keycloak configuration.
+- Caching enhancements: improved logic in provider repository to handle None values in the issuer cache. 
+- Updated dependencies: FASTAPI_COMMON_REF upgraded to version 1.3 in portal API Dockerfiles.
+
+### Changes
+
+- update FASTAPI_COMMON_REF to version 1.3 in portal API Dockerfiles ([`74030da`](https://github.com/OpenG2P/iam/commit/74030da55fee6fb715f5dbe566fb6d2f5eb9ce59))
+- [G2P-5956](https://openg2p.atlassian.net/browse/G2P-5956) refactor(auth): remove partner_auth module and update imports for JWT validation ([`1ce19e2`](https://github.com/OpenG2P/iam/commit/1ce19e2411f7f2a8ba4a56f08c0f1d8af9872c19))
+- fix(cookie_helper): update session cookie handling to slide max age on refresh ([`5696f75`](https://github.com/OpenG2P/iam/commit/5696f75347e2e884d4e50a197c711bf701ff7c15))
+- fix(values.yaml): update refresh token TTL to match Keycloak configuration and adjust cookie max age ([`4127cc5`](https://github.com/OpenG2P/iam/commit/4127cc56615103c992f6b24e411fc49a88ca35a5))
+- feat(auth): add OIDC client ID configuration and refactor token client ID retrieval ([`6ccc38f`](https://github.com/OpenG2P/iam/commit/6ccc38f74b1342a30d8aae9f7b0a474808fd904b))
+- fix(provider_repository): improve caching logic and handle None values in issuer cache ([`b3e4125`](https://github.com/OpenG2P/iam/commit/b3e4125e8dfadd08db2bf115dbe7323b0fe51d79))
+- [G2P-5948](https://openg2p.atlassian.net/browse/G2P-5948) Feat(auth): update OIDC client secret handling and remove client_secret from provider payload ([`4bba418`](https://github.com/OpenG2P/iam/commit/4bba418957734122a5bdfa0bedbd89cf2051df4a))
 
 <a id="v-0-0-0-develop-150"></a>
 
