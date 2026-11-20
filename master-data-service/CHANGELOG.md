@@ -6,6 +6,7 @@ _Published automatically._
 
 | Version | Date | Type | Notes |
 | --- | --- | --- | --- |
+| [`0.0.0-develop.127`](#v-0-0-0-develop-127) | 2026-11-20 | develop |  |
 | [`1.1.4`](#v-1-1-4) | 2026-11-17 | release |  |
 | [`1.1.4-rc.112`](#v-1-1-4-rc-112) | 2026-11-17 | release candidate |  |
 | [`0.0.0-develop.124`](#v-0-0-0-develop-124) | 2026-11-17 | develop |  |
@@ -44,7 +45,6 @@ _Published automatically._
 | [`1.1.0`](#v-1-1-0) | 2026-09-01 | release |  |
 | [`1.1.0-rc.73`](#v-1-1-0-rc-73) | 2026-09-01 | release candidate |  |
 | [`1.1.0-rc.72`](#v-1-1-0-rc-72) | 2026-09-01 | release candidate |  |
-| [`0.0.0-develop.69`](#v-0-0-0-develop-69) | 2026-09-01 | develop |  |
 | [`1.1.0-rc.71`](#v-1-1-0-rc-71) | 2026-09-01 | release candidate |  |
 | [`1.1.0-rc.67`](#v-1-1-0-rc-67) | 2026-09-01 | release candidate |  |
 | [`1.1.0-rc.63`](#v-1-1-0-rc-63) | 2026-08-28 | release candidate |  |
@@ -660,6 +660,24 @@ _commit `4ffaad7` · changes since the start (showing the latest 20 commits)_
 
 # Develop builds
 
+<a id="v-0-0-0-develop-127"></a>
+
+## master-data-service — develop 0.0.0-develop.127 (2026-11-20)
+
+_commit `c977e8c` · changes since 0.0.0-develop.124_
+<!-- build:0.0.0-develop.127 revision:c977e8ced817b6c58a3d8a0de01754c213c2007c ts:1795164526 -->
+
+**Chart:** [openg2p-master-data 0.0.0-develop.127](https://openg2p.github.io/openg2p-helm/openg2p-master-data-0.0.0-develop.127.tgz)
+
+### Summary
+
+- Security enhancements: introduced refresh token TTL and cookie settings for masterDataAPI authentication, and added OIDC client ID and secret reference for token refresh in masterDataAPI.
+
+### Changes
+
+- Add refresh token TTL and cookie settings for masterDataAPI authentication ([`12a93e3`](https://github.com/OpenG2P/master-data-service/commit/12a93e31274ea6cdfe298500086d0bb0432edd73))
+- Add staff-portal OIDC client ID and secret reference for token refresh in masterDataAPI ([`8c59bdf`](https://github.com/OpenG2P/master-data-service/commit/8c59bdf2091b9529cab6fa97adf7ab9acc80cb12))
+
 <a id="v-0-0-0-develop-124"></a>
 
 ## master-data-service — develop 0.0.0-develop.124 (2026-11-17)
@@ -969,19 +987,6 @@ _commit `18995c8` · changes since 0.0.0-develop.69_
 - [G2P-5576](https://openg2p.atlassian.net/browse/G2P-5576) Removed obsolete agricultural and social codelists, attributes, and unused schema entries, while updating social codelists with new livelihood values and attributes. ([`980d938`](https://github.com/OpenG2P/master-data-service/commit/980d938095e95d456c645d805082304af27e2681))
 - Refactor attribute and geo schemas to remove unused fields and simplify data models ([`a84cf6b`](https://github.com/OpenG2P/master-data-service/commit/a84cf6ba162bc350fcb66e4ec57ebde3ec2fb657))
 - [G2P-5574](https://openg2p.atlassian.net/browse/G2P-5574) Add component label to master-data-api deployment and service ([`f809fa7`](https://github.com/OpenG2P/master-data-service/commit/f809fa7db597b29e7f52460c9c04912b95b471b2))
-
-<a id="v-0-0-0-develop-69"></a>
-
-## master-data-service — develop 0.0.0-develop.69 (2026-09-01)
-
-_commit `9297cb8` · changes since 0.0.0-develop.68_
-<!-- build:0.0.0-develop.69 revision:9297cb8a7df5bda7470b29582c16a9275cecf079 ts:1788258060 -->
-
-**Chart:** [openg2p-master-data 0.0.0-develop.69](https://openg2p.github.io/openg2p-helm/openg2p-master-data-0.0.0-develop.69.tgz)
-
-### Changes
-
-- fastapi-common updated to 1.2.0 ([`9297cb8`](https://github.com/OpenG2P/master-data-service/commit/9297cb8a7df5bda7470b29582c16a9275cecf079))
 
 ---
 
