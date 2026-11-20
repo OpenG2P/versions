@@ -6,6 +6,7 @@ _Published automatically._
 
 | Version | Date | Type | Notes |
 | --- | --- | --- | --- |
+| [`1.2.3-rc.722`](#v-1-2-3-rc-722) | 2026-11-20 | release candidate |  |
 | [`0.0.0-develop.721`](#v-0-0-0-develop-721) | 2026-11-19 | develop |  |
 | [`1.2.2`](#v-1-2-2) | 2026-11-18 | release |  |
 | [`1.2.2-rc.720`](#v-1-2-2-rc-720) | 2026-11-18 | release candidate |  |
@@ -635,6 +636,19 @@ same commit and *promoted* (retagged), not rebuilt. No code changed between them
 - [G2P-5153](https://openg2p.atlassian.net/browse/G2P-5153) Refactor IAM permission handling and authentication cookie management ([`8a6abe5`](https://github.com/OpenG2P/registry-platform/commit/8a6abe5de479bf2647f89b31fbfa62989114ef3e))
 
 # Release candidates
+
+<a id="v-1-2-3-rc-722"></a>
+
+## registry-platform 1.2.3-rc.722 — 2026-11-20
+
+_commit `6338c0f` · changes since 1.2.2_
+<!-- build:1.2.3-rc.722 revision:6338c0f446e03775f21cc81c5c5f28ca69623a08 ts:1795154654 -->
+
+**Chart:** [openg2p-registry 1.2.3-rc.722](https://openg2p.github.io/openg2p-helm/openg2p-registry-1.2.3-rc.722.tgz)
+
+### Changes
+
+-  Add cookie max age and expiration settings for authentication ([`cdc9de9`](https://github.com/OpenG2P/registry-platform/commit/cdc9de99aa745edb9d9aaeaad7b39592ab4022c0))
 
 <a id="v-1-2-2-rc-720"></a>
 
