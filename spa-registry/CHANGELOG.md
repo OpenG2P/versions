@@ -1,0 +1,57 @@
+# spa-registry
+
+_Published automatically._
+
+**Repository:** [github.com/OpenG2P/spa-registry](https://github.com/OpenG2P/spa-registry) · **Container images:** [Container Registry](https://hub.docker.com/u/openg2p)
+
+| Version | Date | Type | Notes |
+| --- | --- | --- | --- |
+| [`0.0.0-develop.15`](#v-0-0-0-develop-15) | 2026-11-20 | develop |  |
+
+# Develop builds
+
+<a id="v-0-0-0-develop-15"></a>
+
+## spa-registry — develop 0.0.0-develop.15 (2026-11-20)
+
+_commit `35fbdc7` · changes since the start (showing the latest 20 commits)_
+<!-- build:0.0.0-develop.15 revision:35fbdc724b1c5ce926f7ed14e2f9eb5261714607 ts:1795154668 -->
+
+**Chart:** [openg2p-spa-registry 0.0.0-develop.15](https://openg2p.github.io/openg2p-helm/openg2p-spa-registry-0.0.0-develop.15.tgz)
+
+### Summary
+
+- **Major:** Refactor penny drop functionality by replacing PennyDropQueue with PennyDropEnvelopeQueue and PennyDropInstructionQueue, and integrating G2P Bridge for enhanced processing.
+- Account management improvements: Implemented account lookup and validation workflows, and added support for multiple payment providers through ConnectorFactory.
+- Beneficiary enhancements: Introduced new functions for managing beneficiary name changes and added Beneficiary ID functionality with schema updates.
+- Refactor handler management: Transitioned to using HandlerName enum and HandlerFactory for improved handler creation, while removing the outdated registry.py.
+- Financial address validation: Added environment variables for encryption and validation settings, along with an advisory check for IFSC directory.
+- General cleanup: Refactored financial address and beneficiary ID models, removed unused reference data, and added record status translation to domain translations.
+
+### Changes
+
+- Refactor penny drop functionality: replace PennyDropQueue with PennyDropEnvelopeQueue and PennyDropInstructionQueue, update related worker logic for envelope and instruction processing ([`fb63782`](https://github.com/OpenG2P/spa-registry/commit/fb63782705ccbbbd31dcd10e874489f4c3bde47f))
+- Enhance beneficiary name handling: add functions to manage name changes and synchronize address names during persistence ([`cf0fd5f`](https://github.com/OpenG2P/spa-registry/commit/cf0fd5f68369f12a7bbafc2ca603cf795fc7a23a))
+- Add environment variables for financial address encryption and account validation settings ([`6a9ec01`](https://github.com/OpenG2P/spa-registry/commit/6a9ec01b9e33c2d78a198c9137fc5b8b43159fb2))
+- Refactor handler management: replace HANDLERS with HandlerName enum, remove registry.py, and use HandlerFactory for handler creation. ([`10e9db2`](https://github.com/OpenG2P/spa-registry/commit/10e9db273b98f2a956d6ff66a2d62e7f3681ee06))
+- [G2P-5957](https://openg2p.atlassian.net/browse/G2P-5957) Implement penny drop functionality with G2P Bridge integration, add related models and workers ([`fcf3e63`](https://github.com/OpenG2P/spa-registry/commit/fcf3e637a9e38e3fb5326458536fd5e0380d3ce0))
+- Refactor account lookup services to use ConnectorFactory; add support for multiple payment providers in configuration ([`12310ef`](https://github.com/OpenG2P/spa-registry/commit/12310efeccb13ac066983adb06ec060c52b376b4))
+- [G2P-5950](https://openg2p.atlassian.net/browse/G2P-5950) Feat: implement account lookup and validation workflows ([`245d99e`](https://github.com/OpenG2P/spa-registry/commit/245d99e8502eab98cb67c8bd4ae69e463e7133fa))
+- Refactor financial address and beneficiary ID models; remove unused reference data ([`0b63ccd`](https://github.com/OpenG2P/spa-registry/commit/0b63ccd424b68fdc9e068b9d9e9d01b16173d8d4))
+- [G2P-5946](https://openg2p.atlassian.net/browse/G2P-5946) Add Beneficiary ID functionality and related schema updates ([`2255882`](https://github.com/OpenG2P/spa-registry/commit/22558825c7b2a2b498602c07a33667866b050406))
+- Add AccountLookupQueue and PennyDropQueue models ([`012812f`](https://github.com/OpenG2P/spa-registry/commit/012812f35e7dc644896940e1cff46e29d6bb56f1))
+- Add record status translation to domain translations ([`7e63cab`](https://github.com/OpenG2P/spa-registry/commit/7e63cab564c15321ae3a9fe9cb4a50420bec057d))
+- Add advisory check for IFSC directory in financial address validation ([`53c4256`](https://github.com/OpenG2P/spa-registry/commit/53c4256e369cf9fab0b9adb8ac2ff73877ab73ee))
+- [G2P-5938](https://openg2p.atlassian.net/browse/G2P-5938) Build SPA Registry with models, metadata, Helm charts, and Docker configuration ([`9f462cc`](https://github.com/OpenG2P/spa-registry/commit/9f462cce2cadeb8a4015dd234e00d4ac2e651f27))
+- Initial commit ([`3f7ed44`](https://github.com/OpenG2P/spa-registry/commit/3f7ed443f1df10e71e664b31eb969dfb5422e490))
+
+---
+
+> **What's shown here.** This catalogue lists **every stable release**, plus
+> the **latest 20 develop builds** and the **latest 10 release
+> candidates** per release line -- candidates are KEPT after their release
+> ships, as the audit trail of the release run. Older develop builds and
+> release candidates are pruned as they are superseded. Those versions
+> still exist in the container and Helm
+> registries — they are simply not listed here. This page is generated
+> automatically from commit history; do not edit it by hand.

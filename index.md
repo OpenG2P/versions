@@ -34,6 +34,7 @@ See the **[versioning & CI docs](https://docs.openg2p.org/operations/deployment/
 - **[pbms-connectors](./pbms-connectors/CHANGELOG)** · [repository ↗](https://github.com/OpenG2P/pbms-connectors)
 - **[registry-connector](./registry-connector/CHANGELOG)** · [repository ↗](https://github.com/OpenG2P/registry-connector)
 - **[registry-platform](./registry-platform/CHANGELOG)** · [repository ↗](https://github.com/OpenG2P/registry-platform)
+- **[spa-registry](./spa-registry/CHANGELOG)** · [repository ↗](https://github.com/OpenG2P/spa-registry)
 - **[spar](./spar/CHANGELOG)** · [repository ↗](https://github.com/OpenG2P/spar)
 - **[staff-portal](./staff-portal/CHANGELOG)** · [repository ↗](https://github.com/OpenG2P/staff-portal)
 - **[verifiable-credentials](./verifiable-credentials/CHANGELOG)** · [repository ↗](https://github.com/OpenG2P/verifiable-credentials)
