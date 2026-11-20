@@ -6,6 +6,7 @@ _Published automatically._
 
 | Version | Date | Type | Notes |
 | --- | --- | --- | --- |
+| [`0.0.0-develop.284`](#v-0-0-0-develop-284) | 2026-11-20 | develop |  |
 | [`1.2.1`](#v-1-2-1) | 2026-11-18 | release |  |
 | [`1.2.1-rc.347`](#v-1-2-1-rc-347) | 2026-11-18 | release candidate |  |
 | [`1.2.1-rc.345`](#v-1-2-1-rc-345) | 2026-11-17 | release candidate |  |
@@ -36,7 +37,6 @@ _Published automatically._
 | [`0.0.0-develop.205`](#v-0-0-0-develop-205) | 2026-09-02 | develop |  |
 | [`0.0.0-develop.203`](#v-0-0-0-develop-203) | 2026-09-02 | develop |  |
 | [`0.0.0-develop.201`](#v-0-0-0-develop-201) | 2026-09-01 | develop |  |
-| [`0.0.0-develop.198`](#v-0-0-0-develop-198) | 2026-09-01 | develop |  |
 | [`1.3.0`](#v-1-3-0) | 2026-08-06 | release |  |
 | [`1.2.0`](#v-1-2-0) | 2026-07-25 | release |  |
 
@@ -711,6 +711,19 @@ _commit `7d86b26` · changes since 1.2.1-rc.182_
 
 # Develop builds
 
+<a id="v-0-0-0-develop-284"></a>
+
+## farmer-registry — develop 0.0.0-develop.284 (2026-11-20)
+
+_commit `fb7b90b` · changes since 0.0.0-develop.283_
+<!-- build:0.0.0-develop.284 revision:fb7b90bad86bdbd646a686970bbb3d90584059d0 ts:1795147399 -->
+
+**Chart:** [openg2p-farmer-registry 0.0.0-develop.284](https://openg2p.github.io/openg2p-helm/openg2p-farmer-registry-0.0.0-develop.284.tgz)
+
+### Changes
+
+- [G2P-4929](https://openg2p.atlassian.net/browse/G2P-4929) Move to registry platform 0.0.0-develop.721 ([`fb7b90b`](https://github.com/OpenG2P/farmer-registry/commit/fb7b90bad86bdbd646a686970bbb3d90584059d0))
+
 <a id="v-0-0-0-develop-283"></a>
 
 ## farmer-registry — develop 0.0.0-develop.283 (2026-11-07)
@@ -1083,25 +1096,6 @@ _commit `c0f00c4` · changes since 0.0.0-develop.198_
 - Bumped up RP version to 0.0.0-develop.426 ([`c0f00c4`](https://github.com/OpenG2P/farmer-registry/commit/c0f00c4c60bdf61adab8aac05f111fc315e19d50))
 - [G2P-4929](https://openg2p.atlassian.net/browse/G2P-4929) Use Roboto throughout the agent portal and carry the Farmer ID in the QR ([`1d92a57`](https://github.com/OpenG2P/farmer-registry/commit/1d92a57e1089c5e08ed7e94a3caec29968423eb0))
 - [G2P-4929](https://openg2p.atlassian.net/browse/G2P-4929) Show and audit what a credential verification actually checked ([`fb85c12`](https://github.com/OpenG2P/farmer-registry/commit/fb85c12af40542f5688d6868c173f9db2ad31a43))
-
-<a id="v-0-0-0-develop-198"></a>
-
-## farmer-registry — develop 0.0.0-develop.198 (2026-09-01)
-
-_commit `a68e552` · changes since 0.0.0-develop.196_
-<!-- build:0.0.0-develop.198 revision:a68e552aa9bc35a24975f3d57ba7acf196b23fd5 ts:1788224900 -->
-
-**Chart:** [openg2p-farmer-registry 0.0.0-develop.198](https://openg2p.github.io/openg2p-helm/openg2p-farmer-registry-0.0.0-develop.198.tgz)
-
-### Summary
-
-- **Major:** Upgraded RP version to 0.0.0-develop.424, introducing significant changes in the development branch.
-- New feature: Added a credential-verification switch to enhance security and control over user authentication processes.
-
-### Changes
-
-- Bumped up RP version to 0.0.0-develop.424 ([`a68e552`](https://github.com/OpenG2P/farmer-registry/commit/a68e552aa9bc35a24975f3d57ba7acf196b23fd5))
-- [G2P-4929](https://openg2p.atlassian.net/browse/G2P-4929) Add the credential-verification switch ([`1cad544`](https://github.com/OpenG2P/farmer-registry/commit/1cad54408cf651a9d31768e3a1e98a0df2512e59))
 
 ---
 
