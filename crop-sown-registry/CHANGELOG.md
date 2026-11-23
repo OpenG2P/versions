@@ -6,6 +6,7 @@ _Published automatically._
 
 | Version | Date | Type | Notes |
 | --- | --- | --- | --- |
+| [`0.0.0-develop.46`](#v-0-0-0-develop-46) | 2026-11-23 | develop |  |
 | [`0.0.0-develop.45`](#v-0-0-0-develop-45) | 2026-11-20 | develop |  |
 | [`0.0.0-develop.44`](#v-0-0-0-develop-44) | 2026-11-07 | develop |  |
 | [`0.0.0-develop.43`](#v-0-0-0-develop-43) | 2026-10-28 | develop |  |
@@ -27,6 +28,19 @@ _Published automatically._
 | [`0.0.0-develop.4`](#v-0-0-0-develop-4) | 2026-09-27 | develop |  |
 
 # Develop builds
+
+<a id="v-0-0-0-develop-46"></a>
+
+## crop-sown-registry — develop 0.0.0-develop.46 (2026-11-23)
+
+_commit `92de55a` · changes since 0.0.0-develop.45_
+<!-- build:0.0.0-develop.46 revision:92de55a87420f8db00b2531a1479a9a3735a339e ts:1795396331 -->
+
+**Chart:** [openg2p-crop-sown-registry 0.0.0-develop.46](https://openg2p.github.io/openg2p-helm/openg2p-crop-sown-registry-0.0.0-develop.46.tgz)
+
+### Changes
+
+- [G2P-5719](https://openg2p.atlassian.net/browse/G2P-5719) Registry platform 0.0.0-develop.843 (1.2 merged into develop) ([`92de55a`](https://github.com/OpenG2P/crop-sown-registry/commit/92de55a87420f8db00b2531a1479a9a3735a339e))
 
 <a id="v-0-0-0-develop-45"></a>
 
