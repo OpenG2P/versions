@@ -6,6 +6,7 @@ _Published automatically._
 
 | Version | Date | Type | Notes |
 | --- | --- | --- | --- |
+| [`0.0.0-develop.286`](#v-0-0-0-develop-286) | 2026-11-23 | develop |  |
 | [`0.0.0-develop.285`](#v-0-0-0-develop-285) | 2026-11-23 | develop |  |
 | [`0.0.0-develop.284`](#v-0-0-0-develop-284) | 2026-11-20 | develop |  |
 | [`1.2.1`](#v-1-2-1) | 2026-11-18 | release |  |
@@ -36,7 +37,6 @@ _Published automatically._
 | [`0.0.0-develop.207`](#v-0-0-0-develop-207) | 2026-09-12 | develop |  |
 | [`0.0.0-develop.206`](#v-0-0-0-develop-206) | 2026-09-03 | develop | **Intermediate Stable Version**. VC issuance and verification both working fine. Compatible with commons 0.0.0-develop.243. |
 | [`0.0.0-develop.205`](#v-0-0-0-develop-205) | 2026-09-02 | develop |  |
-| [`0.0.0-develop.203`](#v-0-0-0-develop-203) | 2026-09-02 | develop |  |
 | [`1.3.0`](#v-1-3-0) | 2026-08-06 | release |  |
 | [`1.2.0`](#v-1-2-0) | 2026-07-25 | release |  |
 
@@ -711,6 +711,19 @@ _commit `7d86b26` · changes since 1.2.1-rc.182_
 
 # Develop builds
 
+<a id="v-0-0-0-develop-286"></a>
+
+## farmer-registry — develop 0.0.0-develop.286 (2026-11-23)
+
+_commit `9430691` · changes since 0.0.0-develop.285_
+<!-- build:0.0.0-develop.286 revision:9430691f98cd12588d544e2a4278dbc088826998 ts:1795412003 -->
+
+**Chart:** [openg2p-farmer-registry 0.0.0-develop.286](https://openg2p.github.io/openg2p-helm/openg2p-farmer-registry-0.0.0-develop.286.tgz)
+
+### Changes
+
+- [G2P-5719](https://openg2p.atlassian.net/browse/G2P-5719) Registry platform 0.0.0-develop.845 (fastapi-common JWT classes; Partner API and Consent form groups) ([`9430691`](https://github.com/OpenG2P/farmer-registry/commit/9430691f98cd12588d544e2a4278dbc088826998))
+
 <a id="v-0-0-0-develop-285"></a>
 
 ## farmer-registry — develop 0.0.0-develop.285 (2026-11-23)
@@ -1069,25 +1082,6 @@ _commit `ce948e3` · changes since 0.0.0-develop.203_
 
 - Bumped up RP version to 0.0.0-develop.429 ([`ce948e3`](https://github.com/OpenG2P/farmer-registry/commit/ce948e3f695f66ab088fff7d54f7cf7be8e2189e))
 - [G2P-4929](https://openg2p.atlassian.net/browse/G2P-4929) Derive every hostname from baseDomain instead of hardcoding the domain ([`3315fc1`](https://github.com/OpenG2P/farmer-registry/commit/3315fc15b7a96d2435195f87297613b9eea6813b))
-
-<a id="v-0-0-0-develop-203"></a>
-
-## farmer-registry — develop 0.0.0-develop.203 (2026-09-02)
-
-_commit `b0705ee` · changes since 0.0.0-develop.201_
-<!-- build:0.0.0-develop.203 revision:b0705ee67c5fdc8b706267b52c2c52e536b27b44 ts:1788310982 -->
-
-**Chart:** [openg2p-farmer-registry 0.0.0-develop.203](https://openg2p.github.io/openg2p-helm/openg2p-farmer-registry-0.0.0-develop.203.tgz)
-
-### Summary
-
-- **Major:** Dropped the claim-169 Data issuer key, resolving an issue with overwriting Language.
-- Version bump to RP 0.0.0-develop.428.
-
-### Changes
-
-- Bumped up RP version to 0.0.0-develop.428 ([`b0705ee`](https://github.com/OpenG2P/farmer-registry/commit/b0705ee67c5fdc8b706267b52c2c52e536b27b44))
-- [G2P-4929](https://openg2p.atlassian.net/browse/G2P-4929) Drop the claim-169 Data issuer key that overwrote Language ([`c977a89`](https://github.com/OpenG2P/farmer-registry/commit/c977a89db98d36299af770ed4cb3ab3d15d746a8))
 
 ---
 
