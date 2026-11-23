@@ -6,6 +6,7 @@ _Published automatically._
 
 | Version | Date | Type | Notes |
 | --- | --- | --- | --- |
+| [`0.0.0-develop.285`](#v-0-0-0-develop-285) | 2026-11-23 | develop |  |
 | [`0.0.0-develop.284`](#v-0-0-0-develop-284) | 2026-11-20 | develop |  |
 | [`1.2.1`](#v-1-2-1) | 2026-11-18 | release |  |
 | [`1.2.1-rc.347`](#v-1-2-1-rc-347) | 2026-11-18 | release candidate |  |
@@ -36,7 +37,6 @@ _Published automatically._
 | [`0.0.0-develop.206`](#v-0-0-0-develop-206) | 2026-09-03 | develop | **Intermediate Stable Version**. VC issuance and verification both working fine. Compatible with commons 0.0.0-develop.243. |
 | [`0.0.0-develop.205`](#v-0-0-0-develop-205) | 2026-09-02 | develop |  |
 | [`0.0.0-develop.203`](#v-0-0-0-develop-203) | 2026-09-02 | develop |  |
-| [`0.0.0-develop.201`](#v-0-0-0-develop-201) | 2026-09-01 | develop |  |
 | [`1.3.0`](#v-1-3-0) | 2026-08-06 | release |  |
 | [`1.2.0`](#v-1-2-0) | 2026-07-25 | release |  |
 
@@ -711,6 +711,19 @@ _commit `7d86b26` · changes since 1.2.1-rc.182_
 
 # Develop builds
 
+<a id="v-0-0-0-develop-285"></a>
+
+## farmer-registry — develop 0.0.0-develop.285 (2026-11-23)
+
+_commit `12ca43e` · changes since 0.0.0-develop.284_
+<!-- build:0.0.0-develop.285 revision:12ca43ea4d1ebddbdbbd963c37943533aa5b837e ts:1795396318 -->
+
+**Chart:** [openg2p-farmer-registry 0.0.0-develop.285](https://openg2p.github.io/openg2p-helm/openg2p-farmer-registry-0.0.0-develop.285.tgz)
+
+### Changes
+
+- [G2P-5719](https://openg2p.atlassian.net/browse/G2P-5719) Registry platform 0.0.0-develop.843 (1.2 merged into develop) ([`12ca43e`](https://github.com/OpenG2P/farmer-registry/commit/12ca43ea4d1ebddbdbbd963c37943533aa5b837e))
+
 <a id="v-0-0-0-develop-284"></a>
 
 ## farmer-registry — develop 0.0.0-develop.284 (2026-11-20)
@@ -1075,27 +1088,6 @@ _commit `b0705ee` · changes since 0.0.0-develop.201_
 
 - Bumped up RP version to 0.0.0-develop.428 ([`b0705ee`](https://github.com/OpenG2P/farmer-registry/commit/b0705ee67c5fdc8b706267b52c2c52e536b27b44))
 - [G2P-4929](https://openg2p.atlassian.net/browse/G2P-4929) Drop the claim-169 Data issuer key that overwrote Language ([`c977a89`](https://github.com/OpenG2P/farmer-registry/commit/c977a89db98d36299af770ed4cb3ab3d15d746a8))
-
-<a id="v-0-0-0-develop-201"></a>
-
-## farmer-registry — develop 0.0.0-develop.201 (2026-09-01)
-
-_commit `c0f00c4` · changes since 0.0.0-develop.198_
-<!-- build:0.0.0-develop.201 revision:c0f00c4c60bdf61adab8aac05f111fc315e19d50 ts:1788242760 -->
-
-**Chart:** [openg2p-farmer-registry 0.0.0-develop.201](https://openg2p.github.io/openg2p-helm/openg2p-farmer-registry-0.0.0-develop.201.tgz)
-
-### Summary
-
-- User interface updates: implemented Roboto font across the agent portal and included Farmer ID in QR codes.
-- Credential verification enhancements: added visibility and audit capabilities for the checks performed during credential verification.
-- Version bump: updated RP version to 0.0.0-develop.426.
-
-### Changes
-
-- Bumped up RP version to 0.0.0-develop.426 ([`c0f00c4`](https://github.com/OpenG2P/farmer-registry/commit/c0f00c4c60bdf61adab8aac05f111fc315e19d50))
-- [G2P-4929](https://openg2p.atlassian.net/browse/G2P-4929) Use Roboto throughout the agent portal and carry the Farmer ID in the QR ([`1d92a57`](https://github.com/OpenG2P/farmer-registry/commit/1d92a57e1089c5e08ed7e94a3caec29968423eb0))
-- [G2P-4929](https://openg2p.atlassian.net/browse/G2P-4929) Show and audit what a credential verification actually checked ([`fb85c12`](https://github.com/OpenG2P/farmer-registry/commit/fb85c12af40542f5688d6868c173f9db2ad31a43))
 
 ---
 
