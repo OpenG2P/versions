@@ -6,6 +6,7 @@ _Published automatically._
 
 | Version | Date | Type | Notes |
 | --- | --- | --- | --- |
+| [`0.0.0-develop.47`](#v-0-0-0-develop-47) | 2026-11-23 | develop |  |
 | [`0.0.0-develop.46`](#v-0-0-0-develop-46) | 2026-11-23 | develop |  |
 | [`0.0.0-develop.45`](#v-0-0-0-develop-45) | 2026-11-20 | develop |  |
 | [`0.0.0-develop.44`](#v-0-0-0-develop-44) | 2026-11-07 | develop |  |
@@ -25,9 +26,21 @@ _Published automatically._
 | [`0.0.0-develop.9`](#v-0-0-0-develop-9) | 2026-09-28 | develop |  |
 | [`0.0.0-develop.6`](#v-0-0-0-develop-6) | 2026-09-28 | develop |  |
 | [`0.0.0-develop.5`](#v-0-0-0-develop-5) | 2026-09-27 | develop |  |
-| [`0.0.0-develop.4`](#v-0-0-0-develop-4) | 2026-09-27 | develop |  |
 
 # Develop builds
+
+<a id="v-0-0-0-develop-47"></a>
+
+## crop-sown-registry — develop 0.0.0-develop.47 (2026-11-23)
+
+_commit `5e3840c` · changes since 0.0.0-develop.46_
+<!-- build:0.0.0-develop.47 revision:5e3840c962ef064edf89cd35fa07f73fa2b40972 ts:1795412017 -->
+
+**Chart:** [openg2p-crop-sown-registry 0.0.0-develop.47](https://openg2p.github.io/openg2p-helm/openg2p-crop-sown-registry-0.0.0-develop.47.tgz)
+
+### Changes
+
+- [G2P-5719](https://openg2p.atlassian.net/browse/G2P-5719) Registry platform 0.0.0-develop.845 (fastapi-common JWT classes; Partner API and Consent form groups) ([`5e3840c`](https://github.com/OpenG2P/crop-sown-registry/commit/5e3840c962ef064edf89cd35fa07f73fa2b40972))
 
 <a id="v-0-0-0-develop-46"></a>
 
@@ -362,27 +375,6 @@ _commit `e3b9c2f` · changes since 0.0.0-develop.4_
 ### Changes
 
 - [G2P-5719](https://openg2p.atlassian.net/browse/G2P-5719) Read all code lists live from Master Data (ETH pack agriculture domain); drop CS_* lookup data; pin RP 0.0.0-develop.439 ([`e3b9c2f`](https://github.com/OpenG2P/crop-sown-registry/commit/e3b9c2f9b8005ab0846c573ff1975177e4305c82))
-
-<a id="v-0-0-0-develop-4"></a>
-
-## crop-sown-registry — develop 0.0.0-develop.4 (2026-09-27)
-
-_commit `158ae4a` · changes since the start (showing the latest 20 commits)_
-<!-- build:0.0.0-develop.4 revision:158ae4ae07b780e21b1a5fd2d41bed0b9a6346ef ts:1790476942 -->
-
-**Chart:** [openg2p-crop-sown-registry 0.0.0-develop.4](https://openg2p.github.io/openg2p-helm/openg2p-crop-sown-registry-0.0.0-develop.4.tgz)
-
-### Summary
-
-- **Major:** Introduced the Crop Sown Registry, enabling activity registration of crop seasons on the registry platform.
-- Dependency management: pinned Crop Sown Registry to registry-platform version 0.0.0-develop.438 and updated the bump script to prevent generation of Chart.lock and chart tgz files.
-
-### Changes
-
-- [G2P-5719](https://openg2p.atlassian.net/browse/G2P-5719) Stop tracking generated Chart.lock and chart tgz; bump script no longer generates them ([`158ae4a`](https://github.com/OpenG2P/crop-sown-registry/commit/158ae4ae07b780e21b1a5fd2d41bed0b9a6346ef))
-- [G2P-5719](https://openg2p.atlassian.net/browse/G2P-5719) Pin Crop Sown Registry to registry-platform 0.0.0-develop.438; fix bump-rp-version.sh repo refresh ([`589961c`](https://github.com/OpenG2P/crop-sown-registry/commit/589961cb20df2b0cb0972f8ae2db1305971c1488))
-- [G2P-5719](https://openg2p.atlassian.net/browse/G2P-5719) Add Crop Sown Registry: activity register of crop seasons on the registry platform ([`a0340ba`](https://github.com/OpenG2P/crop-sown-registry/commit/a0340ba73fe7adce60273010a54d6e937193cc33))
-- Initial commit ([`69aec11`](https://github.com/OpenG2P/crop-sown-registry/commit/69aec119f90d6158e856092197f5638fa5c52588))
 
 ---
 
