@@ -6,9 +6,31 @@ _Published automatically._
 
 | Version | Date | Type | Notes |
 | --- | --- | --- | --- |
+| [`0.0.0-develop.4`](#v-0-0-0-develop-4) | 2026-11-23 | develop |  |
 | [`0.0.0-develop.2`](#v-0-0-0-develop-2) | 2026-11-23 | develop |  |
 
 # Develop builds
+
+<a id="v-0-0-0-develop-4"></a>
+
+## agents-registry — develop 0.0.0-develop.4 (2026-11-23)
+
+_commit `519423f` · changes since 0.0.0-develop.2_
+<!-- build:0.0.0-develop.4 revision:519423fa2f60e8f15c2b91aecfc7a3b50121f952 ts:1795404144 -->
+
+**Chart:** [openg2p-agents-registry 0.0.0-develop.4](https://openg2p.github.io/openg2p-helm/openg2p-agents-registry-0.0.0-develop.4.tgz)
+
+### Summary
+
+- New feature implementation: integrated VC issuance with the agent-portal-api image, including agent_vc_view and OpenG2PAgentCredential, alongside updated card design.
+- Configuration updates: disabled consent paths and data-scope catalogue for the beneficiary portal, with registry connector defaults adjusted accordingly.
+- Documentation enhancement: updated READMEs to link to the official documentation on docs.openg2p.org.
+- Testing improvements: added new tests to ensure functionality and reliability of the Agents Registry features.
+
+### Changes
+
+- [G2P-5719](https://openg2p.atlassian.net/browse/G2P-5719) Agents Registry: consent paths and data-scope catalogue off, beneficiary portal off, registry connector defaults; VC issuance wired (agent-portal-api image, agent_vc_view, OpenG2PAgentCredential, card design; registrant-authentication flag kept across re-seeds); tests ([`519423f`](https://github.com/OpenG2P/agents-registry/commit/519423fa2f60e8f15c2b91aecfc7a3b50121f952))
+- [G2P-5719](https://openg2p.atlassian.net/browse/G2P-5719) Agents Registry READMEs point to the documentation on docs.openg2p.org ([`425bfb2`](https://github.com/OpenG2P/agents-registry/commit/425bfb289a24cc061bba87cdf9a7cf0c8b3269a8))
 
 <a id="v-0-0-0-develop-2"></a>
 
