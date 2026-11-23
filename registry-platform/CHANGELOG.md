@@ -6,6 +6,7 @@ _Published automatically._
 
 | Version | Date | Type | Notes |
 | --- | --- | --- | --- |
+| [`0.0.0-develop.846`](#v-0-0-0-develop-846) | 2026-11-23 | develop |  |
 | [`0.0.0-develop.845`](#v-0-0-0-develop-845) | 2026-11-23 | develop |  |
 | [`0.0.0-develop.843`](#v-0-0-0-develop-843) | 2026-11-22 | develop |  |
 | [`1.2.3-rc.722`](#v-1-2-3-rc-722) | 2026-11-20 | release candidate |  |
@@ -37,7 +38,6 @@ _Published automatically._
 | [`0.0.0-develop.447`](#v-0-0-0-develop-447) | 2026-10-01 | develop |  |
 | [`0.0.0-develop.446`](#v-0-0-0-develop-446) | 2026-09-30 | develop |  |
 | [`0.0.0-develop.444`](#v-0-0-0-develop-444) | 2026-09-28 | develop |  |
-| [`0.0.0-develop.441`](#v-0-0-0-develop-441) | 2026-09-28 | develop |  |
 | [`1.2.1`](#v-1-2-1) | 2026-09-07 | release |  |
 | [`1.2.1-rc.462`](#v-1-2-1-rc-462) | 2026-09-04 | release candidate |  |
 | [`1.2.1-rc.447`](#v-1-2-1-rc-447) | 2026-09-04 | release candidate |  |
@@ -1186,6 +1186,19 @@ _commit `9b41f96` · changes since v1.0.0_
 
 # Develop builds
 
+<a id="v-0-0-0-develop-846"></a>
+
+## registry-platform — develop 0.0.0-develop.846 (2026-11-23)
+
+_commit `d98957f` · changes since 0.0.0-develop.845_
+<!-- build:0.0.0-develop.846 revision:d98957f32513471b9988dc4d04ede59993d2c817 ts:1795441816 -->
+
+**Chart:** [openg2p-registry 0.0.0-develop.846](https://openg2p.github.io/openg2p-helm/openg2p-registry-0.0.0-develop.846.tgz)
+
+### Changes
+
+- [G2P-5719](https://openg2p.atlassian.net/browse/G2P-5719) API hostnames &lt;release&gt;-&lt;api&gt;-api (staff, partner, bene, agent, idgenerator) from one helper; portals keep plain names; VC bootstrap keeps the eSignet redirect and callback URL current on upgrade ([`d98957f`](https://github.com/OpenG2P/registry-platform/commit/d98957f32513471b9988dc4d04ede59993d2c817))
+
 <a id="v-0-0-0-develop-845"></a>
 
 ## registry-platform — develop 0.0.0-develop.845 (2026-11-23)
@@ -1809,26 +1822,6 @@ _commit `be2c853` · changes since 0.0.0-develop.441_
 
 - [G2P-5719](https://openg2p.atlassian.net/browse/G2P-5719) Activity registers: schema versions, submission ids, local-record subjects (subject/belongs_to), enrichment and aggregates with history, profile Activities tab, Summaries tab, navigation, optional db-seed folders, add missing columns on upgrade, block ACTIVITY in Add Register ([`b770d95`](https://github.com/OpenG2P/registry-platform/commit/b770d95b5879c2a33912c513a0e64163e1f22309))
 - chore(ui-widgets): version for npm next publish, sync staff-portal-ui @1.1.9-dev.7 [skip ci] ([`74c8de4`](https://github.com/OpenG2P/registry-platform/commit/74c8de418097ea27d59c3f457e51aebf32936d5c))
-
-<a id="v-0-0-0-develop-441"></a>
-
-## registry-platform — develop 0.0.0-develop.441 (2026-09-28)
-
-_commit `0a90477` · changes since 0.0.0-develop.439_
-<!-- build:0.0.0-develop.441 revision:0a90477a2386e99a9f5a94cdff0d9a2a94654e6b ts:1790573028 -->
-
-**Chart:** [openg2p-registry 0.0.0-develop.441](https://openg2p.github.io/openg2p-helm/openg2p-registry-0.0.0-develop.441.tgz)
-
-### Summary
-
-- CI improvements: updated the ui-widgets dev publish process to seed prereleases from the highest published version, resolving issues with versioning and publishing errors.
-- Testing enhancements: added a new integration test for activity register guards, ensuring proper functionality and coverage for recent changes.
-- Configuration updates: modified guard activity registers to count activities and contexts as data, alongside fixes to mnemonic and purpose definitions.
-
-### Changes
-
-- [G2P-5719](https://openg2p.atlassian.net/browse/G2P-5719) Guard activity registers in register configuration: count activities and contexts as data; fix mnemonic and purpose ([`0a90477`](https://github.com/OpenG2P/registry-platform/commit/0a90477a2386e99a9f5a94cdff0d9a2a94654e6b))
-- [G2P-5335](https://openg2p.atlassian.net/browse/G2P-5335) ui-widgets dev publish: seed the prerelease from the highest version ever published, not the `next` dist-tag — `next` only moves when this job publishes, so it sat at 1.1.6-dev.3 while dev.4..6 and 1.1.6..1.1.8 were published elsewhere, and the bump recomputed dev.4 and 403'd ([`da90666`](https://github.com/OpenG2P/registry-platform/commit/da90666910d4bbe16e27a3dc54caf08aab3f4351))
 
 ---
 
