@@ -6,6 +6,7 @@ _Published automatically._
 
 | Version | Date | Type | Notes |
 | --- | --- | --- | --- |
+| [`0.0.0-develop.847`](#v-0-0-0-develop-847) | 2026-11-23 | develop |  |
 | [`0.0.0-develop.846`](#v-0-0-0-develop-846) | 2026-11-23 | develop |  |
 | [`0.0.0-develop.845`](#v-0-0-0-develop-845) | 2026-11-23 | develop |  |
 | [`0.0.0-develop.843`](#v-0-0-0-develop-843) | 2026-11-22 | develop |  |
@@ -37,7 +38,6 @@ _Published automatically._
 | [`0.0.0-develop.448`](#v-0-0-0-develop-448) | 2026-10-01 | develop |  |
 | [`0.0.0-develop.447`](#v-0-0-0-develop-447) | 2026-10-01 | develop |  |
 | [`0.0.0-develop.446`](#v-0-0-0-develop-446) | 2026-09-30 | develop |  |
-| [`0.0.0-develop.444`](#v-0-0-0-develop-444) | 2026-09-28 | develop |  |
 | [`1.2.1`](#v-1-2-1) | 2026-09-07 | release |  |
 | [`1.2.1-rc.462`](#v-1-2-1-rc-462) | 2026-09-04 | release candidate |  |
 | [`1.2.1-rc.447`](#v-1-2-1-rc-447) | 2026-09-04 | release candidate |  |
@@ -1186,6 +1186,19 @@ _commit `9b41f96` · changes since v1.0.0_
 
 # Develop builds
 
+<a id="v-0-0-0-develop-847"></a>
+
+## registry-platform — develop 0.0.0-develop.847 (2026-11-23)
+
+_commit `af87de2` · changes since 0.0.0-develop.846_
+<!-- build:0.0.0-develop.847 revision:af87de2ddddbf82cf4c2c85cddebcfe09874fee2 ts:1795442291 -->
+
+**Chart:** [openg2p-registry 0.0.0-develop.847](https://openg2p.github.io/openg2p-helm/openg2p-registry-0.0.0-develop.847.tgz)
+
+### Changes
+
+- [G2P-5719](https://openg2p.atlassian.net/browse/G2P-5719) Audit: source per release for the staff, partner and agent portal APIs; staff API skips the portal's per-page configuration, theme and language loads (audit_skip_paths) ([`af87de2`](https://github.com/OpenG2P/registry-platform/commit/af87de2ddddbf82cf4c2c85cddebcfe09874fee2))
+
 <a id="v-0-0-0-develop-846"></a>
 
 ## registry-platform — develop 0.0.0-develop.846 (2026-11-23)
@@ -1803,25 +1816,6 @@ _commit `dfaaed2` · changes since 0.0.0-develop.444_
 
 - [G2P-5719](https://openg2p.atlassian.net/browse/G2P-5719) Activity geography and sharing: geo_dimensions (named Master Data levels) snapshotted on activities and projections from the payload, subject record or context; indicators by geo:&lt;level&gt;; aggregates carry levels; DCI returns context state (e.g. …:CropSeason) and aggregates, shaped by register hooks; staff UI region/zone/woreda picker and location display ([`dfaaed2`](https://github.com/OpenG2P/registry-platform/commit/dfaaed23d63de1d3571cc0678e4340afed829df5))
 - [G2P-5719](https://openg2p.atlassian.net/browse/G2P-5719) Activity registers in the Registers card: counted with their contexts, offered as "(Activity)" in the register dropdown; drop the separate home card and header button ([`82e07be`](https://github.com/OpenG2P/registry-platform/commit/82e07bec7c723483adecaa7394359e6bc8eab1b2))
-
-<a id="v-0-0-0-develop-444"></a>
-
-## registry-platform — develop 0.0.0-develop.444 (2026-09-28)
-
-_commit `be2c853` · changes since 0.0.0-develop.441_
-<!-- build:0.0.0-develop.444 revision:be2c853c83d44f1364a35065c9318a7b9e07ec46 ts:1790594963 -->
-
-**Chart:** [openg2p-registry 0.0.0-develop.444](https://openg2p.github.io/openg2p-helm/openg2p-registry-0.0.0-develop.444.tgz)
-
-### Summary
-
-- **Major:** Activity registers enhancement: introduced schema versions, submission IDs, local-record subjects, and enriched aggregates with history; added Activities and Summaries tabs, improved navigation, and included optional database seed folders.
-- UI updates: synchronized staff-portal-ui to version 1.1.9-dev.7 in preparation for npm next publish.
-
-### Changes
-
-- [G2P-5719](https://openg2p.atlassian.net/browse/G2P-5719) Activity registers: schema versions, submission ids, local-record subjects (subject/belongs_to), enrichment and aggregates with history, profile Activities tab, Summaries tab, navigation, optional db-seed folders, add missing columns on upgrade, block ACTIVITY in Add Register ([`b770d95`](https://github.com/OpenG2P/registry-platform/commit/b770d95b5879c2a33912c513a0e64163e1f22309))
-- chore(ui-widgets): version for npm next publish, sync staff-portal-ui @1.1.9-dev.7 [skip ci] ([`74c8de4`](https://github.com/OpenG2P/registry-platform/commit/74c8de418097ea27d59c3f457e51aebf32936d5c))
 
 ---
 
