@@ -10,6 +10,7 @@ See the **[versioning & CI docs](https://docs.openg2p.org/operations/deployment/
 
 ### Services
 
+- **[agents-registry](./agents-registry/CHANGELOG)** · [repository ↗](https://github.com/OpenG2P/agents-registry)
 - **[agri-stack](./agri-stack/CHANGELOG)** · [repository ↗](https://github.com/OpenG2P/agri-stack)
 - **[audit-manager](./audit-manager/CHANGELOG)** · [repository ↗](https://github.com/OpenG2P/audit-manager)
 - **[awe](./awe/CHANGELOG)** · [repository ↗](https://github.com/OpenG2P/awe)

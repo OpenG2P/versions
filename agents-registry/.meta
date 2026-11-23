@@ -1,0 +1,4 @@
+name=agents-registry
+kind=service
+repo=https://github.com/OpenG2P/agents-registry
+images=https://hub.docker.com/u/openg2p
