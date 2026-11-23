@@ -6,6 +6,7 @@ _Published automatically._
 
 | Version | Date | Type | Notes |
 | --- | --- | --- | --- |
+| [`0.0.0-develop.845`](#v-0-0-0-develop-845) | 2026-11-23 | develop |  |
 | [`0.0.0-develop.843`](#v-0-0-0-develop-843) | 2026-11-22 | develop |  |
 | [`1.2.3-rc.722`](#v-1-2-3-rc-722) | 2026-11-20 | release candidate |  |
 | [`0.0.0-develop.721`](#v-0-0-0-develop-721) | 2026-11-19 | develop |  |
@@ -37,7 +38,6 @@ _Published automatically._
 | [`0.0.0-develop.446`](#v-0-0-0-develop-446) | 2026-09-30 | develop |  |
 | [`0.0.0-develop.444`](#v-0-0-0-develop-444) | 2026-09-28 | develop |  |
 | [`0.0.0-develop.441`](#v-0-0-0-develop-441) | 2026-09-28 | develop |  |
-| [`0.0.0-develop.439`](#v-0-0-0-develop-439) | 2026-09-27 | develop |  |
 | [`1.2.1`](#v-1-2-1) | 2026-09-07 | release |  |
 | [`1.2.1-rc.462`](#v-1-2-1-rc-462) | 2026-09-04 | release candidate |  |
 | [`1.2.1-rc.447`](#v-1-2-1-rc-447) | 2026-09-04 | release candidate |  |
@@ -1186,6 +1186,26 @@ _commit `9b41f96` · changes since v1.0.0_
 
 # Develop builds
 
+<a id="v-0-0-0-develop-845"></a>
+
+## registry-platform — develop 0.0.0-develop.845 (2026-11-23)
+
+_commit `1686bbf` · changes since 0.0.0-develop.843_
+<!-- build:0.0.0-develop.845 revision:1686bbfa8c1fcbbe7303ec67e78790cd6d69766e ts:1795410067 -->
+
+**Chart:** [openg2p-registry 0.0.0-develop.845](https://openg2p.github.io/openg2p-helm/openg2p-registry-0.0.0-develop.845.tgz)
+
+### Summary
+
+- **Major:** Enhanced Partner API: introduced separate groups for signature checks and data scope catalog, along with enforced consent management and a dedicated Consent Manager URL.
+- Dependency updates: synchronized `staff-ui` to version 1.1.9-dev.22 and updated related package-lock files for `ui-widgets` and `staff-ui`.
+- Minor UI adjustments: made changes across 5 files with a net addition of 22 lines and removal of 14 lines.
+
+### Changes
+
+- [G2P-5719](https://openg2p.atlassian.net/browse/G2P-5719) Rancher form: Partner API (signature check, data scope catalogue) and Consent (enforce consent, Consent Manager URL) as separate groups ([`1686bbf`](https://github.com/OpenG2P/registry-platform/commit/1686bbfa8c1fcbbe7303ec67e78790cd6d69766e))
+- chore(ui-widgets): version for npm dev publish, sync staff-ui @1.1.9-dev.22 [skip ci] ([`8f8f52f`](https://github.com/OpenG2P/registry-platform/commit/8f8f52f4aae56b7662fe4b133f06b59b5015971c))
+
 <a id="v-0-0-0-develop-843"></a>
 
 ## registry-platform — develop 0.0.0-develop.843 (2026-11-22)
@@ -1809,19 +1829,6 @@ _commit `0a90477` · changes since 0.0.0-develop.439_
 
 - [G2P-5719](https://openg2p.atlassian.net/browse/G2P-5719) Guard activity registers in register configuration: count activities and contexts as data; fix mnemonic and purpose ([`0a90477`](https://github.com/OpenG2P/registry-platform/commit/0a90477a2386e99a9f5a94cdff0d9a2a94654e6b))
 - [G2P-5335](https://openg2p.atlassian.net/browse/G2P-5335) ui-widgets dev publish: seed the prerelease from the highest version ever published, not the `next` dist-tag — `next` only moves when this job publishes, so it sat at 1.1.6-dev.3 while dev.4..6 and 1.1.6..1.1.8 were published elsewhere, and the bump recomputed dev.4 and 403'd ([`da90666`](https://github.com/OpenG2P/registry-platform/commit/da90666910d4bbe16e27a3dc54caf08aab3f4351))
-
-<a id="v-0-0-0-develop-439"></a>
-
-## registry-platform — develop 0.0.0-develop.439 (2026-09-27)
-
-_commit `df0ab1a` · changes since 0.0.0-develop.438_
-<!-- build:0.0.0-develop.439 revision:df0ab1a3708d23ba75302f770de543b9d9e50fb1 ts:1790523094 -->
-
-**Chart:** [openg2p-registry 0.0.0-develop.439](https://openg2p.github.io/openg2p-helm/openg2p-registry-0.0.0-develop.439.tgz)
-
-### Changes
-
-- [G2P-5335](https://openg2p.atlassian.net/browse/G2P-5335) Port the 1.2 Master Data model to develop: read code lists live from MDS ([G2P-5538](https://openg2p.atlassian.net/browse/G2P-5538)/5457), look partners up in Partner Management instead of MDS's dropped g2p_partners ([G2P-5577](https://openg2p.atlassian.net/browse/G2P-5577)), geo hierarchy rework ([G2P-5369](https://openg2p.atlassian.net/browse/G2P-5369)/5587); repoint the activity-register attribute check at MDS ([`df0ab1a`](https://github.com/OpenG2P/registry-platform/commit/df0ab1a3708d23ba75302f770de543b9d9e50fb1))
 
 ---
 
