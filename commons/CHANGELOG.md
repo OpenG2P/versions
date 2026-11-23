@@ -6,6 +6,7 @@ _Published automatically._
 
 | Version | Date | Type | Notes |
 | --- | --- | --- | --- |
+| [`0.0.0-develop.342`](#v-0-0-0-develop-342) | 2026-11-23 | develop |  |
 | [`2.3.4-rc.268`](#v-2-3-4-rc-268) | 2026-11-18 | release candidate |  |
 | [`2.3.4-rc.264`](#v-2-3-4-rc-264) | 2026-11-18 | release candidate |  |
 | [`2.3.4`](#v-2-3-4) | 2026-11-18 | release |  |
@@ -34,7 +35,6 @@ _Published automatically._
 | [`0.0.0-develop.310`](#v-0-0-0-develop-310) | 2026-10-12 | develop |  |
 | [`0.0.0-develop.309`](#v-0-0-0-develop-309) | 2026-10-10 | develop |  |
 | [`2.3.4-rc.245`](#v-2-3-4-rc-245) | 2026-10-08 | release candidate |  |
-| [`0.0.0-develop.305`](#v-0-0-0-develop-305) | 2026-10-08 | develop |  |
 | [`2.3.4-rc.244`](#v-2-3-4-rc-244) | 2026-10-07 | release candidate |  |
 | [`2.3.4-rc.243`](#v-2-3-4-rc-243) | 2026-10-07 | release candidate |  |
 | [`2.3.3`](#v-2-3-3) | 2026-09-03 | release |  |
@@ -723,6 +723,25 @@ _commit `ffabcdc` · changes since 2.2.1_
 
 # Develop builds
 
+<a id="v-0-0-0-develop-342"></a>
+
+## commons — develop 0.0.0-develop.342 (2026-11-23)
+
+_commit `56935af` · changes since 0.0.0-develop.340_
+<!-- build:0.0.0-develop.342 revision:56935af950cea26b8def15b1ad4cb2804056abd9 ts:1795404214 -->
+
+**Charts:** [openg2p-commons-base 0.0.0-develop.342](https://openg2p.github.io/openg2p-helm/openg2p-commons-base-0.0.0-develop.342.tgz) · [openg2p-commons-services 0.0.0-develop.342](https://openg2p.github.io/openg2p-helm/openg2p-commons-services-0.0.0-develop.342.tgz)
+
+### Summary
+
+- New feature: Agents Registry lists introduced in Commons Services for better management of master data.
+- Enhanced functionality: Consent Manager now includes an option for "Allow Assisted Confirmation (no form)?" to streamline user consent processes.
+
+### Changes
+
+- [G2P-5719](https://openg2p.atlassian.net/browse/G2P-5719) Commons Services: Master Data 0.0.0-develop.128 (Agents Registry lists) ([`56935af`](https://github.com/OpenG2P/commons/commit/56935af950cea26b8def15b1ad4cb2804056abd9))
+- [G2P-5719](https://openg2p.atlassian.net/browse/G2P-5719) Commons Services: Consent Manager question "Allow Assisted Confirmation (no form)?" ([`8b65f6e`](https://github.com/OpenG2P/commons/commit/8b65f6e27fb1135b4db5dea2387c40b81eb65285))
+
 <a id="v-0-0-0-develop-340"></a>
 
 ## commons — develop 0.0.0-develop.340 (2026-11-16)
@@ -1037,19 +1056,6 @@ _commit `ce909ef` · changes since 0.0.0-develop.305_
 - CM bumped up ([`ce909ef`](https://github.com/OpenG2P/commons/commit/ce909eff0f5cdd3d56a0e50901b6ac78360162eb))
 - [G2P-5719](https://openg2p.atlassian.net/browse/G2P-5719) commons-base Garage init: consent-evidence bucket (Consent Manager uploaded consent evidence) ([`3bdfbea`](https://github.com/OpenG2P/commons/commit/3bdfbea2390f89862ed69ba2dbf9f5b64ad16ad0))
 - [G2P-5719](https://openg2p.atlassian.net/browse/G2P-5719) commons-services: PM staff API route on its own host pm-staff-portal.&lt;domain&gt; (it inherited IAM's staff-iam.&lt;domain&gt; via the shared global staffPortalApiHostname, so both routes claimed one host) ([`5fd1538`](https://github.com/OpenG2P/commons/commit/5fd1538b00e9925a08c4862eef5c7e642b607471))
-
-<a id="v-0-0-0-develop-305"></a>
-
-## commons — develop 0.0.0-develop.305 (2026-10-08)
-
-_commit `c35d74e` · changes since 0.0.0-develop.301_
-<!-- build:0.0.0-develop.305 revision:c35d74ea68cac0d40df1af67af2f85860eb7695a ts:1791435038 -->
-
-**Charts:** [openg2p-commons-base 0.0.0-develop.305](https://openg2p.github.io/openg2p-helm/openg2p-commons-base-0.0.0-develop.305.tgz) · [openg2p-commons-services 0.0.0-develop.305](https://openg2p.github.io/openg2p-helm/openg2p-commons-services-0.0.0-develop.305.tgz)
-
-### Changes
-
-- [G2P-5770](https://openg2p.atlassian.net/browse/G2P-5770) Update WebSub configuration in values.yaml ([`43582b8`](https://github.com/OpenG2P/commons/commit/43582b8166665c1ee45ee828bf05fd1e30874f36))
 
 ---
 
