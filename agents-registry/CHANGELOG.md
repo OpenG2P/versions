@@ -6,6 +6,7 @@ _Published automatically._
 
 | Version | Date | Type | Notes |
 | --- | --- | --- | --- |
+| [`0.0.0-develop.8`](#v-0-0-0-develop-8) | 2026-11-24 | develop |  |
 | [`0.0.0-develop.7`](#v-0-0-0-develop-7) | 2026-11-24 | develop |  |
 | [`0.0.0-develop.6`](#v-0-0-0-develop-6) | 2026-11-24 | develop |  |
 | [`0.0.0-develop.5`](#v-0-0-0-develop-5) | 2026-11-23 | develop |  |
@@ -13,6 +14,19 @@ _Published automatically._
 | [`0.0.0-develop.2`](#v-0-0-0-develop-2) | 2026-11-23 | develop |  |
 
 # Develop builds
+
+<a id="v-0-0-0-develop-8"></a>
+
+## agents-registry — develop 0.0.0-develop.8 (2026-11-24)
+
+_commit `a29d2e2` · changes since 0.0.0-develop.7_
+<!-- build:0.0.0-develop.8 revision:a29d2e282a24cdf670db752432ad81e5263dbe4b ts:1795495768 -->
+
+**Chart:** [openg2p-agents-registry 0.0.0-develop.8](https://openg2p.github.io/openg2p-helm/openg2p-agents-registry-0.0.0-develop.8.tgz)
+
+### Changes
+
+- [G2P-5719](https://openg2p.atlassian.net/browse/G2P-5719) RP 0.0.0-develop.849: approval policies and demo staff users only with Load Sample Data; templates always uploaded (loadTemplates removed); Master Data token kept in threads ([`a29d2e2`](https://github.com/OpenG2P/agents-registry/commit/a29d2e282a24cdf670db752432ad81e5263dbe4b))
 
 <a id="v-0-0-0-develop-7"></a>
 
