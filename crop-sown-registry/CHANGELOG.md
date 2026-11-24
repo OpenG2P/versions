@@ -6,6 +6,7 @@ _Published automatically._
 
 | Version | Date | Type | Notes |
 | --- | --- | --- | --- |
+| [`0.0.0-develop.52`](#v-0-0-0-develop-52) | 2026-11-24 | develop |  |
 | [`0.0.0-develop.51`](#v-0-0-0-develop-51) | 2026-11-24 | develop |  |
 | [`0.0.0-develop.50`](#v-0-0-0-develop-50) | 2026-11-24 | develop |  |
 | [`0.0.0-develop.49`](#v-0-0-0-develop-49) | 2026-11-24 | develop |  |
@@ -25,9 +26,21 @@ _Published automatically._
 | [`0.0.0-develop.28`](#v-0-0-0-develop-28) | 2026-10-05 | develop |  |
 | [`0.0.0-develop.24`](#v-0-0-0-develop-24) | 2026-10-03 | develop |  |
 | [`0.0.0-develop.21`](#v-0-0-0-develop-21) | 2026-10-02 | develop |  |
-| [`0.0.0-develop.17`](#v-0-0-0-develop-17) | 2026-10-01 | develop |  |
 
 # Develop builds
+
+<a id="v-0-0-0-develop-52"></a>
+
+## crop-sown-registry — develop 0.0.0-develop.52 (2026-11-24)
+
+_commit `d656c18` · changes since 0.0.0-develop.51_
+<!-- build:0.0.0-develop.52 revision:d656c18bc1baa4aba1519b2067d86d3d7b431148 ts:1795514908 -->
+
+**Chart:** [openg2p-crop-sown-registry 0.0.0-develop.52](https://openg2p.github.io/openg2p-helm/openg2p-crop-sown-registry-0.0.0-develop.52.tgz)
+
+### Changes
+
+- [G2P-5719](https://openg2p.atlassian.net/browse/G2P-5719) Crop Sown Registry theme: green colours and a crop-field illustration; admin's theme choice kept on upgrade; existing installs switched once ([`d656c18`](https://github.com/OpenG2P/crop-sown-registry/commit/d656c18bc1baa4aba1519b2067d86d3d7b431148))
 
 <a id="v-0-0-0-develop-51"></a>
 
@@ -336,31 +349,6 @@ _commit `b580a2e` · changes since 0.0.0-develop.17_
 - [G2P-5719](https://openg2p.atlassian.net/browse/G2P-5719) Link farmer ID to Fayda FAN for consent checks (subject_id_fields); tests ([`34842c0`](https://github.com/OpenG2P/crop-sown-registry/commit/34842c0405bb09a0c668b7f462f2fe5e4038ad1d))
 - [G2P-5719](https://openg2p.atlassian.net/browse/G2P-5719) Farmer season summary final on period lock (is_final in DCI); tests for final summaries and searches across farmers ([`9e65500`](https://github.com/OpenG2P/crop-sown-registry/commit/9e6550049415f556c052d62db01fc99debfe6d37))
 - [G2P-5719](https://openg2p.atlassian.net/browse/G2P-5719) Declare context fields and UI hints; test that a correction can't change the crop season ([`b66b6de`](https://github.com/OpenG2P/crop-sown-registry/commit/b66b6dedafe14d50dbb126bf842a63b43268fa2c))
-
-<a id="v-0-0-0-develop-17"></a>
-
-## crop-sown-registry — develop 0.0.0-develop.17 (2026-10-01)
-
-_commit `93648c6` · changes since 0.0.0-develop.11_
-<!-- build:0.0.0-develop.17 revision:93648c6adce9c604f35ddbf70dc11491447d7aac ts:1790829951 -->
-
-**Chart:** [openg2p-crop-sown-registry 0.0.0-develop.17](https://openg2p.github.io/openg2p-helm/openg2p-crop-sown-registry-0.0.0-develop.17.tgz)
-
-### Summary
-
-- **Major:** Introduced CSR phase 1 features including cluster entity registration with AWE approval, typed participant roles, and crop-change links, along with enhancements to DCI and reporting views.
-- Geography enhancements: Required plot woreda for planning/sowing, new indicators and reporting views by region/zone/woreda, and improved farmer summary with season windows and shared locations.
-- Testing improvements: Added DCI per-farmer queries for season summaries and filtered activities, along with documentation clarifying that developer tools like activity_definitions.py and build_seed_sql.py are not included in production.
-- Helm configuration update: Sample data loading is now off by default, with an option to load sample crop seasons when enabled.
-
-### Changes
-
-- Bumped up RP version to 0.0.0-develop.448 ([`93648c6`](https://github.com/OpenG2P/crop-sown-registry/commit/93648c6adce9c604f35ddbf70dc11491447d7aac))
-- [G2P-5719](https://openg2p.atlassian.net/browse/G2P-5719) test: DCI per-farmer queries (season summary, crop seasons, filtered and latest activities) ([`3bf8283`](https://github.com/OpenG2P/crop-sown-registry/commit/3bf82832b3d8c9078f589396833a2ecca57a4b91))
-- [G2P-5719](https://openg2p.atlassian.net/browse/G2P-5719) helm: sample data off by default; Rancher question to load sample crop seasons (shown when Load Sample Data is on) ([`749f4e7`](https://github.com/OpenG2P/crop-sown-registry/commit/749f4e7d12328ee72a047b3510e3a2173c652952))
-- [G2P-5719](https://openg2p.atlassian.net/browse/G2P-5719) CSR phase 1: Cluster entity register with AWE approval and sample clusters, typed participant roles, entities first (no temporary plot IDs), crop-change link, harvest_verified and replacement links in DCI and reporting view, sample crop seasons from Master Data people, partner correction in smoke test, tests ([`2691049`](https://github.com/OpenG2P/crop-sown-registry/commit/26910499217589065515b43cbf7b58d8ccc6e3c5))
-- [G2P-5719](https://openg2p.atlassian.net/browse/G2P-5719) Geography: plot woreda required when planning/sowing, indicators and reporting views by region/zone/woreda; season windows and shared location in the farmer summary; DCI crop-season and aggregate records on CSR's consent scopes ([`7900fe1`](https://github.com/OpenG2P/crop-sown-registry/commit/7900fe13028d2e77cc431f977f69c4f50b916b64))
-- [G2P-5719](https://openg2p.atlassian.net/browse/G2P-5719) Document that activity_definitions.py/build_seed_sql.py are developer tools; only the generated SQL ships ([`b16381f`](https://github.com/OpenG2P/crop-sown-registry/commit/b16381f4c0de412ff1a8add571a10b1c5fc79c2a))
 
 ---
 
