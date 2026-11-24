@@ -6,6 +6,7 @@ _Published automatically._
 
 | Version | Date | Type | Notes |
 | --- | --- | --- | --- |
+| [`0.0.0-develop.849`](#v-0-0-0-develop-849) | 2026-11-24 | develop |  |
 | [`0.0.0-develop.847`](#v-0-0-0-develop-847) | 2026-11-23 | develop |  |
 | [`0.0.0-develop.846`](#v-0-0-0-develop-846) | 2026-11-23 | develop |  |
 | [`0.0.0-develop.845`](#v-0-0-0-develop-845) | 2026-11-23 | develop |  |
@@ -37,7 +38,6 @@ _Published automatically._
 | [`0.0.0-develop.453`](#v-0-0-0-develop-453) | 2026-10-01 | develop |  |
 | [`0.0.0-develop.448`](#v-0-0-0-develop-448) | 2026-10-01 | develop |  |
 | [`0.0.0-develop.447`](#v-0-0-0-develop-447) | 2026-10-01 | develop |  |
-| [`0.0.0-develop.446`](#v-0-0-0-develop-446) | 2026-09-30 | develop |  |
 | [`1.2.1`](#v-1-2-1) | 2026-09-07 | release |  |
 | [`1.2.1-rc.462`](#v-1-2-1-rc-462) | 2026-09-04 | release candidate |  |
 | [`1.2.1-rc.447`](#v-1-2-1-rc-447) | 2026-09-04 | release candidate |  |
@@ -1186,6 +1186,26 @@ _commit `9b41f96` · changes since v1.0.0_
 
 # Develop builds
 
+<a id="v-0-0-0-develop-849"></a>
+
+## registry-platform — develop 0.0.0-develop.849 (2026-11-24)
+
+_commit `df5770a` · changes since 0.0.0-develop.847_
+<!-- build:0.0.0-develop.849 revision:df5770a8c48d549edc6b294205d8dd429be84de2 ts:1795495336 -->
+
+**Chart:** [openg2p-registry 0.0.0-develop.849](https://openg2p.github.io/openg2p-helm/openg2p-registry-0.0.0-develop.849.tgz)
+
+### Summary
+
+- Data management updates: sample data for approval policies and demo staff users added; templates are now always uploaded during db-seed, eliminating the Load Templates switch.
+- Request handling improvements: change requests are now automatically refused when AWE denies them.
+- Service configuration: Master Data client retains service settings in threads for better consistency.
+
+### Changes
+
+- [G2P-5719](https://openg2p.atlassian.net/browse/G2P-5719) Approval policies and demo staff users are sample data (Load Sample Data); change request refused when AWE refuses it; Master Data client keeps the service's settings in threads ([`df5770a`](https://github.com/OpenG2P/registry-platform/commit/df5770a8c48d549edc6b294205d8dd429be84de2))
+- [G2P-5719](https://openg2p.atlassian.net/browse/G2P-5719) db-seed: templates always uploaded, no Load Templates switch; an image without templates skips the upload ([`e84140b`](https://github.com/OpenG2P/registry-platform/commit/e84140b9dd59b33e6cc18818ee4ebabddc9df0c0))
+
 <a id="v-0-0-0-develop-847"></a>
 
 ## registry-platform — develop 0.0.0-develop.847 (2026-11-23)
@@ -1795,27 +1815,6 @@ _commit `9921c82` · changes since 0.0.0-develop.446_
 ### Changes
 
 - [G2P-5719](https://openg2p.atlassian.net/browse/G2P-5719) Activity register phase 1: typed participants (participant_roles, g2p_activity_participants, search by participant), context replacement link, partner correct_activities endpoint, sample-data task and sample_activities hook, staff UI participants and replaced-by links, tests ([`9921c82`](https://github.com/OpenG2P/registry-platform/commit/9921c8279613a880854556342821e0a1cbaf7bf8))
-
-<a id="v-0-0-0-develop-446"></a>
-
-## registry-platform — develop 0.0.0-develop.446 (2026-09-30)
-
-_commit `dfaaed2` · changes since 0.0.0-develop.444_
-<!-- build:0.0.0-develop.446 revision:dfaaed23d63de1d3571cc0678e4340afed829df5 ts:1790731833 -->
-
-**Chart:** [openg2p-registry 0.0.0-develop.446](https://openg2p.github.io/openg2p-helm/openg2p-registry-0.0.0-develop.446.tgz)
-
-### Summary
-
-- **Major:** Activity geography enhancements: introduced geo_dimensions for activities and projections, enabling context-aware indicators and aggregates; DCI now returns context state and aggregates shaped by register hooks.
-- Activity registers updated: integrated context counting in the Registers card, renamed dropdown options to include "(Activity)", and removed the separate home card and header button for a streamlined UI.
-- New components added: implemented GeoPicker and associated hooks and utilities for improved geographic selection in the staff UI.
-- Codebase adjustments: 36 files modified with significant additions and deletions, including new integration tests for activity geography.
-
-### Changes
-
-- [G2P-5719](https://openg2p.atlassian.net/browse/G2P-5719) Activity geography and sharing: geo_dimensions (named Master Data levels) snapshotted on activities and projections from the payload, subject record or context; indicators by geo:&lt;level&gt;; aggregates carry levels; DCI returns context state (e.g. …:CropSeason) and aggregates, shaped by register hooks; staff UI region/zone/woreda picker and location display ([`dfaaed2`](https://github.com/OpenG2P/registry-platform/commit/dfaaed23d63de1d3571cc0678e4340afed829df5))
-- [G2P-5719](https://openg2p.atlassian.net/browse/G2P-5719) Activity registers in the Registers card: counted with their contexts, offered as "(Activity)" in the register dropdown; drop the separate home card and header button ([`82e07be`](https://github.com/OpenG2P/registry-platform/commit/82e07bec7c723483adecaa7394359e6bc8eab1b2))
 
 ---
 
