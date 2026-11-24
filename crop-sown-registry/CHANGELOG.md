@@ -6,6 +6,7 @@ _Published automatically._
 
 | Version | Date | Type | Notes |
 | --- | --- | --- | --- |
+| [`0.0.0-develop.51`](#v-0-0-0-develop-51) | 2026-11-24 | develop |  |
 | [`0.0.0-develop.50`](#v-0-0-0-develop-50) | 2026-11-24 | develop |  |
 | [`0.0.0-develop.49`](#v-0-0-0-develop-49) | 2026-11-24 | develop |  |
 | [`0.0.0-develop.48`](#v-0-0-0-develop-48) | 2026-11-24 | develop |  |
@@ -25,9 +26,21 @@ _Published automatically._
 | [`0.0.0-develop.24`](#v-0-0-0-develop-24) | 2026-10-03 | develop |  |
 | [`0.0.0-develop.21`](#v-0-0-0-develop-21) | 2026-10-02 | develop |  |
 | [`0.0.0-develop.17`](#v-0-0-0-develop-17) | 2026-10-01 | develop |  |
-| [`0.0.0-develop.11`](#v-0-0-0-develop-11) | 2026-09-29 | develop |  |
 
 # Develop builds
+
+<a id="v-0-0-0-develop-51"></a>
+
+## crop-sown-registry — develop 0.0.0-develop.51 (2026-11-24)
+
+_commit `ec39167` · changes since 0.0.0-develop.50_
+<!-- build:0.0.0-develop.51 revision:ec39167f9b21349e7251da28961f9263b981179a ts:1795500023 -->
+
+**Chart:** [openg2p-crop-sown-registry 0.0.0-develop.51](https://openg2p.github.io/openg2p-helm/openg2p-crop-sown-registry-0.0.0-develop.51.tgz)
+
+### Changes
+
+- [G2P-5719](https://openg2p.atlassian.net/browse/G2P-5719) Cluster ID read-only in the form: section-editable removed from the Cluster section, also on existing installs; tests ([`ec39167`](https://github.com/OpenG2P/crop-sown-registry/commit/ec39167f9b21349e7251da28961f9263b981179a))
 
 <a id="v-0-0-0-develop-50"></a>
 
@@ -348,25 +361,6 @@ _commit `93648c6` · changes since 0.0.0-develop.11_
 - [G2P-5719](https://openg2p.atlassian.net/browse/G2P-5719) CSR phase 1: Cluster entity register with AWE approval and sample clusters, typed participant roles, entities first (no temporary plot IDs), crop-change link, harvest_verified and replacement links in DCI and reporting view, sample crop seasons from Master Data people, partner correction in smoke test, tests ([`2691049`](https://github.com/OpenG2P/crop-sown-registry/commit/26910499217589065515b43cbf7b58d8ccc6e3c5))
 - [G2P-5719](https://openg2p.atlassian.net/browse/G2P-5719) Geography: plot woreda required when planning/sowing, indicators and reporting views by region/zone/woreda; season windows and shared location in the farmer summary; DCI crop-season and aggregate records on CSR's consent scopes ([`7900fe1`](https://github.com/OpenG2P/crop-sown-registry/commit/7900fe13028d2e77cc431f977f69c4f50b916b64))
 - [G2P-5719](https://openg2p.atlassian.net/browse/G2P-5719) Document that activity_definitions.py/build_seed_sql.py are developer tools; only the generated SQL ships ([`b16381f`](https://github.com/OpenG2P/crop-sown-registry/commit/b16381f4c0de412ff1a8add571a10b1c5fc79c2a))
-
-<a id="v-0-0-0-develop-11"></a>
-
-## crop-sown-registry — develop 0.0.0-develop.11 (2026-09-29)
-
-_commit `393f014` · changes since 0.0.0-develop.9_
-<!-- build:0.0.0-develop.11 revision:393f0146b22f583f85ae4849e5a995b6c25e8254 ts:1790646685 -->
-
-**Chart:** [openg2p-crop-sown-registry 0.0.0-develop.11](https://openg2p.github.io/openg2p-helm/openg2p-crop-sown-registry-0.0.0-develop.11.tgz)
-
-### Summary
-
-- **Major:** Introduced uninstall-registry.sh for streamlined removal of the registry, tailored for this release's persistent volumes.
-- Version bump to RP 0.0.0-develop.444, indicating ongoing development and updates.
-
-### Changes
-
-- Bumped up RP version to 0.0.0-develop.444 ([`393f014`](https://github.com/OpenG2P/crop-sown-registry/commit/393f0146b22f583f85ae4849e5a995b6c25e8254))
-- [G2P-5719](https://openg2p.atlassian.net/browse/G2P-5719) Add uninstall-registry.sh (adapted from FR; no Superset step; only this release's PVs) ([`4cfd71a`](https://github.com/OpenG2P/crop-sown-registry/commit/4cfd71ab7ea66cd4e38c3cf59e0aa24ff4aeaa71))
 
 ---
 
