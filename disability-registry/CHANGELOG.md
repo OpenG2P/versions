@@ -6,11 +6,25 @@ _Published automatically._
 
 | Version | Date | Type | Notes |
 | --- | --- | --- | --- |
+| [`0.0.0-develop.15`](#v-0-0-0-develop-15) | 2026-11-24 | develop |  |
 | [`0.0.0-develop.13`](#v-0-0-0-develop-13) | 2026-10-28 | develop |  |
 | [`0.0.0-develop.12`](#v-0-0-0-develop-12) | 2026-10-21 | develop |  |
 | [`0.0.0-develop.10`](#v-0-0-0-develop-10) | 2026-08-28 | develop |  |
 
 # Develop builds
+
+<a id="v-0-0-0-develop-15"></a>
+
+## disability-registry — develop 0.0.0-develop.15 (2026-11-24)
+
+_commit `3d679d0` · changes since 0.0.0-develop.13_
+<!-- build:0.0.0-develop.15 revision:3d679d02d71d196b72284825abb622212c601702 ts:1795504593 -->
+
+**Chart:** [openg2p-disability-registry 0.0.0-develop.15](https://openg2p.github.io/openg2p-helm/openg2p-disability-registry-0.0.0-develop.15.tgz)
+
+### Changes
+
+- Speak the SPDCI Disability Registry standard at the DCI interface ([`b4d9734`](https://github.com/OpenG2P/disability-registry/commit/b4d9734198728b786b713fee8245cf7565f4f4fc))
 
 <a id="v-0-0-0-develop-13"></a>
 
