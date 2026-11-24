@@ -6,6 +6,7 @@ _Published automatically._
 
 | Version | Date | Type | Notes |
 | --- | --- | --- | --- |
+| [`0.0.0-develop.852`](#v-0-0-0-develop-852) | 2026-11-24 | develop |  |
 | [`0.0.0-develop.849`](#v-0-0-0-develop-849) | 2026-11-24 | develop |  |
 | [`0.0.0-develop.847`](#v-0-0-0-develop-847) | 2026-11-23 | develop |  |
 | [`0.0.0-develop.846`](#v-0-0-0-develop-846) | 2026-11-23 | develop |  |
@@ -37,7 +38,6 @@ _Published automatically._
 | [`0.0.0-develop.599`](#v-0-0-0-develop-599) | 2026-10-03 | develop |  |
 | [`0.0.0-develop.453`](#v-0-0-0-develop-453) | 2026-10-01 | develop |  |
 | [`0.0.0-develop.448`](#v-0-0-0-develop-448) | 2026-10-01 | develop |  |
-| [`0.0.0-develop.447`](#v-0-0-0-develop-447) | 2026-10-01 | develop |  |
 | [`1.2.1`](#v-1-2-1) | 2026-09-07 | release |  |
 | [`1.2.1-rc.462`](#v-1-2-1-rc-462) | 2026-09-04 | release candidate |  |
 | [`1.2.1-rc.447`](#v-1-2-1-rc-447) | 2026-09-04 | release candidate |  |
@@ -1186,6 +1186,26 @@ _commit `9b41f96` · changes since v1.0.0_
 
 # Develop builds
 
+<a id="v-0-0-0-develop-852"></a>
+
+## registry-platform — develop 0.0.0-develop.852 (2026-11-24)
+
+_commit `4e348d4` · changes since 0.0.0-develop.849_
+<!-- build:0.0.0-develop.852 revision:4e348d4198f4acc0e3d4f46e737c85594a89dc99 ts:1795515997 -->
+
+**Chart:** [openg2p-registry 0.0.0-develop.852](https://openg2p.github.io/openg2p-helm/openg2p-registry-0.0.0-develop.852.tgz)
+
+### Summary
+
+- UI enhancement: replaced native browser date input with a custom date picker in the ui-widgets component.
+- Dependency updates: synchronized staff-ui to version 1.1.9-dev.23 and updated package-lock files for ui-widgets and staff-ui.
+- Codebase maintenance: made significant changes across 13 files, resulting in 1064 insertions and 177 deletions.
+
+### Changes
+
+- [G2P-5968](https://openg2p.atlassian.net/browse/G2P-5968) feat(ui-widgets): replace native browser date input with custom date picker ([`ee6896e`](https://github.com/OpenG2P/registry-platform/commit/ee6896ea770f09d735085e4ed8e3a4474c2d6bf7))
+- chore(ui-widgets): version for npm dev publish, sync staff-ui @1.1.9-dev.23 [skip ci] ([`0470aa6`](https://github.com/OpenG2P/registry-platform/commit/0470aa62db1f461ea70f4e4e56425795996eb6d0))
+
 <a id="v-0-0-0-develop-849"></a>
 
 ## registry-platform — develop 0.0.0-develop.849 (2026-11-24)
@@ -1802,19 +1822,6 @@ _commit `f0bbc3a` · changes since 0.0.0-develop.447_
 ### Changes
 
 - [G2P-5719](https://openg2p.atlassian.net/browse/G2P-5719) DCI: exact subject queries on activity registers with filters on any plain field (activities, state, aggregates); exact-field register search returns linked records; ISO date-time filters ([`f0bbc3a`](https://github.com/OpenG2P/registry-platform/commit/f0bbc3a9727426ca95eef676cbc2b50be076833a))
-
-<a id="v-0-0-0-develop-447"></a>
-
-## registry-platform — develop 0.0.0-develop.447 (2026-10-01)
-
-_commit `9921c82` · changes since 0.0.0-develop.446_
-<!-- build:0.0.0-develop.447 revision:9921c8279613a880854556342821e0a1cbaf7bf8 ts:1790817685 -->
-
-**Chart:** [openg2p-registry 0.0.0-develop.447](https://openg2p.github.io/openg2p-helm/openg2p-registry-0.0.0-develop.447.tgz)
-
-### Changes
-
-- [G2P-5719](https://openg2p.atlassian.net/browse/G2P-5719) Activity register phase 1: typed participants (participant_roles, g2p_activity_participants, search by participant), context replacement link, partner correct_activities endpoint, sample-data task and sample_activities hook, staff UI participants and replaced-by links, tests ([`9921c82`](https://github.com/OpenG2P/registry-platform/commit/9921c8279613a880854556342821e0a1cbaf7bf8))
 
 ---
 
