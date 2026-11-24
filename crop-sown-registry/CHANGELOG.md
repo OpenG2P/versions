@@ -6,6 +6,7 @@ _Published automatically._
 
 | Version | Date | Type | Notes |
 | --- | --- | --- | --- |
+| [`0.0.0-develop.48`](#v-0-0-0-develop-48) | 2026-11-24 | develop |  |
 | [`0.0.0-develop.47`](#v-0-0-0-develop-47) | 2026-11-23 | develop |  |
 | [`0.0.0-develop.46`](#v-0-0-0-develop-46) | 2026-11-23 | develop |  |
 | [`0.0.0-develop.45`](#v-0-0-0-develop-45) | 2026-11-20 | develop |  |
@@ -25,9 +26,21 @@ _Published automatically._
 | [`0.0.0-develop.11`](#v-0-0-0-develop-11) | 2026-09-29 | develop |  |
 | [`0.0.0-develop.9`](#v-0-0-0-develop-9) | 2026-09-28 | develop |  |
 | [`0.0.0-develop.6`](#v-0-0-0-develop-6) | 2026-09-28 | develop |  |
-| [`0.0.0-develop.5`](#v-0-0-0-develop-5) | 2026-09-27 | develop |  |
 
 # Develop builds
+
+<a id="v-0-0-0-develop-48"></a>
+
+## crop-sown-registry — develop 0.0.0-develop.48 (2026-11-24)
+
+_commit `b3ef0fc` · changes since 0.0.0-develop.47_
+<!-- build:0.0.0-develop.48 revision:b3ef0fc7441f782709dbed974c1d7cbd7f319a9e ts:1795482491 -->
+
+**Chart:** [openg2p-crop-sown-registry 0.0.0-develop.48](https://openg2p.github.io/openg2p-helm/openg2p-crop-sown-registry-0.0.0-develop.48.tgz)
+
+### Changes
+
+- [G2P-5719](https://openg2p.atlassian.net/browse/G2P-5719) RP 0.0.0-develop.847: API hostnames &lt;release&gt;-&lt;api&gt;-api, audit source per release ([`b3ef0fc`](https://github.com/OpenG2P/crop-sown-registry/commit/b3ef0fc7441f782709dbed974c1d7cbd7f319a9e))
 
 <a id="v-0-0-0-develop-47"></a>
 
@@ -362,19 +375,6 @@ _commit `4534b35` · changes since 0.0.0-develop.5_
 ### Changes
 
 - [G2P-5719](https://openg2p.atlassian.net/browse/G2P-5719) Fix Helm form: questions.own.yaml must be a bare list so the inherited registry questions (images etc.) are kept; add ODK URL question ([`4534b35`](https://github.com/OpenG2P/crop-sown-registry/commit/4534b35ce82f69825a43546640bf47ba1606b2cd))
-
-<a id="v-0-0-0-develop-5"></a>
-
-## crop-sown-registry — develop 0.0.0-develop.5 (2026-09-27)
-
-_commit `e3b9c2f` · changes since 0.0.0-develop.4_
-<!-- build:0.0.0-develop.5 revision:e3b9c2f9b8005ab0846c573ff1975177e4305c82 ts:1790525469 -->
-
-**Chart:** [openg2p-crop-sown-registry 0.0.0-develop.5](https://openg2p.github.io/openg2p-helm/openg2p-crop-sown-registry-0.0.0-develop.5.tgz)
-
-### Changes
-
-- [G2P-5719](https://openg2p.atlassian.net/browse/G2P-5719) Read all code lists live from Master Data (ETH pack agriculture domain); drop CS_* lookup data; pin RP 0.0.0-develop.439 ([`e3b9c2f`](https://github.com/OpenG2P/crop-sown-registry/commit/e3b9c2f9b8005ab0846c573ff1975177e4305c82))
 
 ---
 
