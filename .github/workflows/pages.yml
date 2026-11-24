@@ -38,11 +38,8 @@ concurrency:
   cancel-in-progress: false
 
 jobs:
-  build-and-deploy:
+  build:
     runs-on: ubuntu-latest
-    environment:
-      name: github-pages
-      url: ${{ steps.deploy.outputs.page_url }}
     steps:
       - uses: actions/checkout@v4
 
@@ -79,5 +76,16 @@ jobs:
       - uses: actions/upload-pages-artifact@v3
         with:
           path: public
+
+  # A job of its own, as in GitHub's Pages template. Run in the same job right
+  # after the upload, deploy-pages often finds no "github-pages" artifact
+  # (actions/deploy-pages#451), and the site is not published.
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deploy.outputs.page_url }}
+    steps:
       - id: deploy
         uses: actions/deploy-pages@v4
