@@ -6,12 +6,26 @@ _Published automatically._
 
 | Version | Date | Type | Notes |
 | --- | --- | --- | --- |
+| [`0.0.0-develop.7`](#v-0-0-0-develop-7) | 2026-11-24 | develop |  |
 | [`0.0.0-develop.6`](#v-0-0-0-develop-6) | 2026-11-24 | develop |  |
 | [`0.0.0-develop.5`](#v-0-0-0-develop-5) | 2026-11-23 | develop |  |
 | [`0.0.0-develop.4`](#v-0-0-0-develop-4) | 2026-11-23 | develop |  |
 | [`0.0.0-develop.2`](#v-0-0-0-develop-2) | 2026-11-23 | develop |  |
 
 # Develop builds
+
+<a id="v-0-0-0-develop-7"></a>
+
+## agents-registry — develop 0.0.0-develop.7 (2026-11-24)
+
+_commit `6028077` · changes since 0.0.0-develop.6_
+<!-- build:0.0.0-develop.7 revision:6028077f06851eb8079460802152f7a61f792055 ts:1795495399 -->
+
+**Chart:** [openg2p-agents-registry 0.0.0-develop.7](https://openg2p.github.io/openg2p-helm/openg2p-agents-registry-0.0.0-develop.7.tgz)
+
+### Changes
+
+- [G2P-5719](https://openg2p.atlassian.net/browse/G2P-5719) Sample agents only for the country Master Data holds: no fallback without Master Data or for unknown areas; db-seed stops with the reason ([`6028077`](https://github.com/OpenG2P/agents-registry/commit/6028077f06851eb8079460802152f7a61f792055))
 
 <a id="v-0-0-0-develop-6"></a>
 
