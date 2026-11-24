@@ -6,11 +6,25 @@ _Published automatically._
 
 | Version | Date | Type | Notes |
 | --- | --- | --- | --- |
+| [`0.0.0-develop.6`](#v-0-0-0-develop-6) | 2026-11-24 | develop |  |
 | [`0.0.0-develop.5`](#v-0-0-0-develop-5) | 2026-11-23 | develop |  |
 | [`0.0.0-develop.4`](#v-0-0-0-develop-4) | 2026-11-23 | develop |  |
 | [`0.0.0-develop.2`](#v-0-0-0-develop-2) | 2026-11-23 | develop |  |
 
 # Develop builds
+
+<a id="v-0-0-0-develop-6"></a>
+
+## agents-registry — develop 0.0.0-develop.6 (2026-11-24)
+
+_commit `edc1881` · changes since 0.0.0-develop.5_
+<!-- build:0.0.0-develop.6 revision:edc1881f78a8eefab9e7e75795b928cd4f5af699 ts:1795482506 -->
+
+**Chart:** [openg2p-agents-registry 0.0.0-develop.6](https://openg2p.github.io/openg2p-helm/openg2p-agents-registry-0.0.0-develop.6.tgz)
+
+### Changes
+
+- [G2P-5719](https://openg2p.atlassian.net/browse/G2P-5719) RP 0.0.0-develop.847: API hostnames &lt;release&gt;-&lt;api&gt;-api, audit source per release ([`edc1881`](https://github.com/OpenG2P/agents-registry/commit/edc1881f78a8eefab9e7e75795b928cd4f5af699))
 
 <a id="v-0-0-0-develop-5"></a>
 
