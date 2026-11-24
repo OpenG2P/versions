@@ -6,6 +6,7 @@ _Published automatically._
 
 | Version | Date | Type | Notes |
 | --- | --- | --- | --- |
+| [`0.0.0-develop.288`](#v-0-0-0-develop-288) | 2026-11-24 | develop |  |
 | [`0.0.0-develop.286`](#v-0-0-0-develop-286) | 2026-11-23 | develop |  |
 | [`0.0.0-develop.285`](#v-0-0-0-develop-285) | 2026-11-23 | develop |  |
 | [`0.0.0-develop.284`](#v-0-0-0-develop-284) | 2026-11-20 | develop |  |
@@ -36,7 +37,6 @@ _Published automatically._
 | [`0.0.0-develop.209`](#v-0-0-0-develop-209) | 2026-09-23 | develop |  |
 | [`0.0.0-develop.207`](#v-0-0-0-develop-207) | 2026-09-12 | develop |  |
 | [`0.0.0-develop.206`](#v-0-0-0-develop-206) | 2026-09-03 | develop | **Intermediate Stable Version**. VC issuance and verification both working fine. Compatible with commons 0.0.0-develop.243. |
-| [`0.0.0-develop.205`](#v-0-0-0-develop-205) | 2026-09-02 | develop |  |
 | [`1.3.0`](#v-1-3-0) | 2026-08-06 | release |  |
 | [`1.2.0`](#v-1-2-0) | 2026-07-25 | release |  |
 
@@ -711,6 +711,25 @@ _commit `7d86b26` · changes since 1.2.1-rc.182_
 
 # Develop builds
 
+<a id="v-0-0-0-develop-288"></a>
+
+## farmer-registry — develop 0.0.0-develop.288 (2026-11-24)
+
+_commit `fcf6fde` · changes since 0.0.0-develop.286_
+<!-- build:0.0.0-develop.288 revision:fcf6fde8fbc77722594bc022b40df20049e44e24 ts:1795482477 -->
+
+**Chart:** [openg2p-farmer-registry 0.0.0-develop.288](https://openg2p.github.io/openg2p-helm/openg2p-farmer-registry-0.0.0-develop.288.tgz)
+
+### Summary
+
+- API enhancements: Introduced new hostname format for API endpoints, adopting `<release>-<api>-api` structure for improved clarity and organization.
+- Performance improvements: Updated performance tests to utilize the new `-api` hostnames for staff and partner APIs, optimizing test accuracy and relevance.
+
+### Changes
+
+- [G2P-5719](https://openg2p.atlassian.net/browse/G2P-5719) RP 0.0.0-develop.847: API hostnames &lt;release&gt;-&lt;api&gt;-api, audit source per release ([`fcf6fde`](https://github.com/OpenG2P/farmer-registry/commit/fcf6fde8fbc77722594bc022b40df20049e44e24))
+- [G2P-5719](https://openg2p.atlassian.net/browse/G2P-5719) Performance tests: staff and partner API defaults use the -api hostnames ([`5d57967`](https://github.com/OpenG2P/farmer-registry/commit/5d57967820896e5950c2a054765645d7ae1eda78))
+
 <a id="v-0-0-0-develop-286"></a>
 
 ## farmer-registry — develop 0.0.0-develop.286 (2026-11-23)
@@ -1063,25 +1082,6 @@ _commit `fa11515` · changes since 0.0.0-develop.205_
 ### Changes
 
 - Bumped up RP version to 0.0.0-develop.430 ([`fa11515`](https://github.com/OpenG2P/farmer-registry/commit/fa1151506041d30b5a4ca0242e99c19da19b07f7))
-
-<a id="v-0-0-0-develop-205"></a>
-
-## farmer-registry — develop 0.0.0-develop.205 (2026-09-02)
-
-_commit `ce948e3` · changes since 0.0.0-develop.203_
-<!-- build:0.0.0-develop.205 revision:ce948e3f695f66ab088fff7d54f7cf7be8e2189e ts:1788339305 -->
-
-**Chart:** [openg2p-farmer-registry 0.0.0-develop.205](https://openg2p.github.io/openg2p-helm/openg2p-farmer-registry-0.0.0-develop.205.tgz)
-
-### Summary
-
-- Domain management: transitioned to deriving all hostnames from `baseDomain`, eliminating hardcoded domains for improved flexibility.
-- Versioning: updated RP version to 0.0.0-develop.429, reflecting ongoing development progress.
-
-### Changes
-
-- Bumped up RP version to 0.0.0-develop.429 ([`ce948e3`](https://github.com/OpenG2P/farmer-registry/commit/ce948e3f695f66ab088fff7d54f7cf7be8e2189e))
-- [G2P-4929](https://openg2p.atlassian.net/browse/G2P-4929) Derive every hostname from baseDomain instead of hardcoding the domain ([`3315fc1`](https://github.com/OpenG2P/farmer-registry/commit/3315fc15b7a96d2435195f87297613b9eea6813b))
 
 ---
 
