@@ -6,10 +6,26 @@ _Published automatically._
 
 | Version | Date | Type | Notes |
 | --- | --- | --- | --- |
+| [`1.0.0-rc.15`](#v-1-0-0-rc-15) | 2026-11-24 | release candidate |  |
 | [`0.0.0-develop.15`](#v-0-0-0-develop-15) | 2026-11-24 | develop |  |
 | [`0.0.0-develop.13`](#v-0-0-0-develop-13) | 2026-10-28 | develop |  |
 | [`0.0.0-develop.12`](#v-0-0-0-develop-12) | 2026-10-21 | develop |  |
 | [`0.0.0-develop.10`](#v-0-0-0-develop-10) | 2026-08-28 | develop |  |
+
+# Release candidates
+
+<a id="v-1-0-0-rc-15"></a>
+
+## disability-registry 1.0.0-rc.15 — 2026-11-24
+
+_commit `3d679d0` · changes since 0.0.0-develop.15_
+<!-- build:1.0.0-rc.15 revision:3d679d02d71d196b72284825abb622212c601702 ts:1795504593 -->
+
+**Chart:** [openg2p-disability-registry 1.0.0-rc.15](https://openg2p.github.io/openg2p-helm/openg2p-disability-registry-1.0.0-rc.15.tgz)
+
+### Changes
+
+_No new commits since 0.0.0-develop.15._
 
 # Develop builds
 
