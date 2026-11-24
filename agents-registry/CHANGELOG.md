@@ -6,6 +6,7 @@ _Published automatically._
 
 | Version | Date | Type | Notes |
 | --- | --- | --- | --- |
+| [`0.0.0-develop.9`](#v-0-0-0-develop-9) | 2026-11-24 | develop |  |
 | [`0.0.0-develop.8`](#v-0-0-0-develop-8) | 2026-11-24 | develop |  |
 | [`0.0.0-develop.7`](#v-0-0-0-develop-7) | 2026-11-24 | develop |  |
 | [`0.0.0-develop.6`](#v-0-0-0-develop-6) | 2026-11-24 | develop |  |
@@ -14,6 +15,19 @@ _Published automatically._
 | [`0.0.0-develop.2`](#v-0-0-0-develop-2) | 2026-11-23 | develop |  |
 
 # Develop builds
+
+<a id="v-0-0-0-develop-9"></a>
+
+## agents-registry — develop 0.0.0-develop.9 (2026-11-24)
+
+_commit `1f9c227` · changes since 0.0.0-develop.8_
+<!-- build:0.0.0-develop.9 revision:1f9c227e139cc53a62bf876539c23da968d492f0 ts:1795499995 -->
+
+**Chart:** [openg2p-agents-registry 0.0.0-develop.9](https://openg2p.github.io/openg2p-helm/openg2p-agents-registry-0.0.0-develop.9.tgz)
+
+### Changes
+
+- [G2P-5719](https://openg2p.atlassian.net/browse/G2P-5719) Agent ID read-only in the form: no section-editable on a section with a read-only field (it overrode widget-readonly) ([`1f9c227`](https://github.com/OpenG2P/agents-registry/commit/1f9c227e139cc53a62bf876539c23da968d492f0))
 
 <a id="v-0-0-0-develop-8"></a>
 
