@@ -6,6 +6,7 @@ _Published automatically._
 
 | Version | Date | Type | Notes |
 | --- | --- | --- | --- |
+| [`0.0.0-develop.10`](#v-0-0-0-develop-10) | 2026-11-24 | develop |  |
 | [`0.0.0-develop.9`](#v-0-0-0-develop-9) | 2026-11-24 | develop |  |
 | [`0.0.0-develop.8`](#v-0-0-0-develop-8) | 2026-11-24 | develop |  |
 | [`0.0.0-develop.7`](#v-0-0-0-develop-7) | 2026-11-24 | develop |  |
@@ -15,6 +16,19 @@ _Published automatically._
 | [`0.0.0-develop.2`](#v-0-0-0-develop-2) | 2026-11-23 | develop |  |
 
 # Develop builds
+
+<a id="v-0-0-0-develop-10"></a>
+
+## agents-registry — develop 0.0.0-develop.10 (2026-11-24)
+
+_commit `3f82c28` · changes since 0.0.0-develop.9_
+<!-- build:0.0.0-develop.10 revision:3f82c28b4a39c4af6b45a3146f04072ba0b6c8b4 ts:1795514880 -->
+
+**Chart:** [openg2p-agents-registry 0.0.0-develop.10](https://openg2p.github.io/openg2p-helm/openg2p-agents-registry-0.0.0-develop.10.tgz)
+
+### Changes
+
+- [G2P-5719](https://openg2p.atlassian.net/browse/G2P-5719) Agents Registry theme: teal colours and an illustration of agents at work; admin's theme choice kept on upgrade; existing installs switched once ([`3f82c28`](https://github.com/OpenG2P/agents-registry/commit/3f82c28b4a39c4af6b45a3146f04072ba0b6c8b4))
 
 <a id="v-0-0-0-develop-9"></a>
 
