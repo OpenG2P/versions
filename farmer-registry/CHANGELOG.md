@@ -6,6 +6,7 @@ _Published automatically._
 
 | Version | Date | Type | Notes |
 | --- | --- | --- | --- |
+| [`0.0.0-develop.290`](#v-0-0-0-develop-290) | 2026-11-24 | develop |  |
 | [`0.0.0-develop.289`](#v-0-0-0-develop-289) | 2026-11-24 | develop |  |
 | [`0.0.0-develop.288`](#v-0-0-0-develop-288) | 2026-11-24 | develop |  |
 | [`0.0.0-develop.286`](#v-0-0-0-develop-286) | 2026-11-23 | develop |  |
@@ -36,7 +37,6 @@ _Published automatically._
 | [`0.0.0-develop.215`](#v-0-0-0-develop-215) | 2026-10-01 | develop |  |
 | [`0.0.0-develop.211`](#v-0-0-0-develop-211) | 2026-09-27 | develop |  |
 | [`0.0.0-develop.209`](#v-0-0-0-develop-209) | 2026-09-23 | develop |  |
-| [`0.0.0-develop.207`](#v-0-0-0-develop-207) | 2026-09-12 | develop |  |
 | [`1.3.0`](#v-1-3-0) | 2026-08-06 | release |  |
 | [`1.2.0`](#v-1-2-0) | 2026-07-25 | release |  |
 
@@ -711,6 +711,19 @@ _commit `7d86b26` · changes since 1.2.1-rc.182_
 
 # Develop builds
 
+<a id="v-0-0-0-develop-290"></a>
+
+## farmer-registry — develop 0.0.0-develop.290 (2026-11-24)
+
+_commit `4ae2787` · changes since 0.0.0-develop.289_
+<!-- build:0.0.0-develop.290 revision:4ae2787a50ef06ad61db54a06296254edce16a74 ts:1795495768 -->
+
+**Chart:** [openg2p-farmer-registry 0.0.0-develop.290](https://openg2p.github.io/openg2p-helm/openg2p-farmer-registry-0.0.0-develop.290.tgz)
+
+### Changes
+
+- [G2P-5719](https://openg2p.atlassian.net/browse/G2P-5719) RP 0.0.0-develop.849: approval policies and demo staff users only with Load Sample Data; templates always uploaded (loadTemplates removed); Master Data token kept in threads ([`4ae2787`](https://github.com/OpenG2P/farmer-registry/commit/4ae2787a50ef06ad61db54a06296254edce16a74))
+
 <a id="v-0-0-0-develop-289"></a>
 
 ## farmer-registry — develop 0.0.0-develop.289 (2026-11-24)
@@ -1067,19 +1080,6 @@ _commit `84e6d1e` · changes since 0.0.0-develop.207_
 
 - Bumped up RP version to 0.0.0-develop.435 ([`84e6d1e`](https://github.com/OpenG2P/farmer-registry/commit/84e6d1e5eaebda06fe83702a0398f8fb7c06bffc))
 - [G2P-4929](https://openg2p.atlassian.net/browse/G2P-4929) Give each wallet offer its own transaction code and a scannable QR ([`ce9fa75`](https://github.com/OpenG2P/farmer-registry/commit/ce9fa7505c3663166c827463e8d150e78bd4cc0c))
-
-<a id="v-0-0-0-develop-207"></a>
-
-## farmer-registry — develop 0.0.0-develop.207 (2026-09-12)
-
-_commit `8387808` · changes since 0.0.0-develop.206_
-<!-- build:0.0.0-develop.207 revision:8387808ba50182ec6e2ae8389ae55ebdcce36356 ts:1789175674 -->
-
-**Chart:** [openg2p-farmer-registry 0.0.0-develop.207](https://openg2p.github.io/openg2p-helm/openg2p-farmer-registry-0.0.0-develop.207.tgz)
-
-### Changes
-
-- Bumped up RP version to develop 0.0.0-develop.432 ([`8387808`](https://github.com/OpenG2P/farmer-registry/commit/8387808ba50182ec6e2ae8389ae55ebdcce36356))
 
 ---
 
