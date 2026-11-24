@@ -6,6 +6,7 @@ _Published automatically._
 
 | Version | Date | Type | Notes |
 | --- | --- | --- | --- |
+| [`0.0.0-develop.50`](#v-0-0-0-develop-50) | 2026-11-24 | develop |  |
 | [`0.0.0-develop.49`](#v-0-0-0-develop-49) | 2026-11-24 | develop |  |
 | [`0.0.0-develop.48`](#v-0-0-0-develop-48) | 2026-11-24 | develop |  |
 | [`0.0.0-develop.47`](#v-0-0-0-develop-47) | 2026-11-23 | develop |  |
@@ -25,9 +26,21 @@ _Published automatically._
 | [`0.0.0-develop.21`](#v-0-0-0-develop-21) | 2026-10-02 | develop |  |
 | [`0.0.0-develop.17`](#v-0-0-0-develop-17) | 2026-10-01 | develop |  |
 | [`0.0.0-develop.11`](#v-0-0-0-develop-11) | 2026-09-29 | develop |  |
-| [`0.0.0-develop.9`](#v-0-0-0-develop-9) | 2026-09-28 | develop |  |
 
 # Develop builds
+
+<a id="v-0-0-0-develop-50"></a>
+
+## crop-sown-registry — develop 0.0.0-develop.50 (2026-11-24)
+
+_commit `7a32bc1` · changes since 0.0.0-develop.49_
+<!-- build:0.0.0-develop.50 revision:7a32bc19612bb403e90b3ac791ac5366c24b9650 ts:1795495768 -->
+
+**Chart:** [openg2p-crop-sown-registry 0.0.0-develop.50](https://openg2p.github.io/openg2p-helm/openg2p-crop-sown-registry-0.0.0-develop.50.tgz)
+
+### Changes
+
+- [G2P-5719](https://openg2p.atlassian.net/browse/G2P-5719) RP 0.0.0-develop.849: approval policies and demo staff users only with Load Sample Data; templates always uploaded (loadTemplates removed); Master Data token kept in threads ([`7a32bc1`](https://github.com/OpenG2P/crop-sown-registry/commit/7a32bc19612bb403e90b3ac791ac5366c24b9650))
 
 <a id="v-0-0-0-develop-49"></a>
 
@@ -354,27 +367,6 @@ _commit `393f014` · changes since 0.0.0-develop.9_
 
 - Bumped up RP version to 0.0.0-develop.444 ([`393f014`](https://github.com/OpenG2P/crop-sown-registry/commit/393f0146b22f583f85ae4849e5a995b6c25e8254))
 - [G2P-5719](https://openg2p.atlassian.net/browse/G2P-5719) Add uninstall-registry.sh (adapted from FR; no Superset step; only this release's PVs) ([`4cfd71a`](https://github.com/OpenG2P/crop-sown-registry/commit/4cfd71ab7ea66cd4e38c3cf59e0aa24ff4aeaa71))
-
-<a id="v-0-0-0-develop-9"></a>
-
-## crop-sown-registry — develop 0.0.0-develop.9 (2026-09-28)
-
-_commit `525af83` · changes since 0.0.0-develop.6_
-<!-- build:0.0.0-develop.9 revision:525af83ab52079d3e9639a605dd69f6cd96dd4a6 ts:1790616352 -->
-
-**Chart:** [openg2p-crop-sown-registry 0.0.0-develop.9](https://openg2p.github.io/openg2p-helm/openg2p-crop-sown-registry-0.0.0-develop.9.tgz)
-
-### Summary
-
-- Version update: bumped RP version to 0.0.0-develop.441.
-- Testing enhancements: enabled sanity tests to improve reliability.
-- Feature addition: implemented farmer season summary as an activity aggregate.
-
-### Changes
-
-- Bumped up RP version to 0.0.0-develop.441 ([`525af83`](https://github.com/OpenG2P/crop-sown-registry/commit/525af83ab52079d3e9639a605dd69f6cd96dd4a6))
-- Sanity test enabled. ([`63649c4`](https://github.com/OpenG2P/crop-sown-registry/commit/63649c4dfd3a14e4f67a16538edf65d24e59bd4a))
-- [G2P-5719](https://openg2p.atlassian.net/browse/G2P-5719) Farmer season summary as an activity aggregate ([`8b54199`](https://github.com/OpenG2P/crop-sown-registry/commit/8b54199173d4d8d57bdfddc7103f5357075c7290))
 
 ---
 
