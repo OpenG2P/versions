@@ -6,6 +6,7 @@ _Published automatically._
 
 | Version | Date | Type | Notes |
 | --- | --- | --- | --- |
+| [`0.0.0-develop.289`](#v-0-0-0-develop-289) | 2026-11-24 | develop |  |
 | [`0.0.0-develop.288`](#v-0-0-0-develop-288) | 2026-11-24 | develop |  |
 | [`0.0.0-develop.286`](#v-0-0-0-develop-286) | 2026-11-23 | develop |  |
 | [`0.0.0-develop.285`](#v-0-0-0-develop-285) | 2026-11-23 | develop |  |
@@ -36,7 +37,6 @@ _Published automatically._
 | [`0.0.0-develop.211`](#v-0-0-0-develop-211) | 2026-09-27 | develop |  |
 | [`0.0.0-develop.209`](#v-0-0-0-develop-209) | 2026-09-23 | develop |  |
 | [`0.0.0-develop.207`](#v-0-0-0-develop-207) | 2026-09-12 | develop |  |
-| [`0.0.0-develop.206`](#v-0-0-0-develop-206) | 2026-09-03 | develop | **Intermediate Stable Version**. VC issuance and verification both working fine. Compatible with commons 0.0.0-develop.243. |
 | [`1.3.0`](#v-1-3-0) | 2026-08-06 | release |  |
 | [`1.2.0`](#v-1-2-0) | 2026-07-25 | release |  |
 
@@ -711,6 +711,19 @@ _commit `7d86b26` · changes since 1.2.1-rc.182_
 
 # Develop builds
 
+<a id="v-0-0-0-develop-289"></a>
+
+## farmer-registry — develop 0.0.0-develop.289 (2026-11-24)
+
+_commit `9ac487a` · changes since 0.0.0-develop.288_
+<!-- build:0.0.0-develop.289 revision:9ac487a6e57354391de43b3f428f6ab2ff693dfb ts:1795495357 -->
+
+**Chart:** [openg2p-farmer-registry 0.0.0-develop.289](https://openg2p.github.io/openg2p-helm/openg2p-farmer-registry-0.0.0-develop.289.tgz)
+
+### Changes
+
+- [G2P-5719](https://openg2p.atlassian.net/browse/G2P-5719) Sample farmers only from Master Data's sample people and geography: no demography CSV or slug-path fallback; db-seed stops with the reason ([`9ac487a`](https://github.com/OpenG2P/farmer-registry/commit/9ac487a6e57354391de43b3f428f6ab2ff693dfb))
+
 <a id="v-0-0-0-develop-288"></a>
 
 ## farmer-registry — develop 0.0.0-develop.288 (2026-11-24)
@@ -1067,21 +1080,6 @@ _commit `8387808` · changes since 0.0.0-develop.206_
 ### Changes
 
 - Bumped up RP version to develop 0.0.0-develop.432 ([`8387808`](https://github.com/OpenG2P/farmer-registry/commit/8387808ba50182ec6e2ae8389ae55ebdcce36356))
-
-<a id="v-0-0-0-develop-206"></a>
-
-## farmer-registry — develop 0.0.0-develop.206 (2026-09-03)
-
-> **Note** — **Intermediate Stable Version**. VC issuance and verification both working fine. Compatible with commons 0.0.0-develop.243.
-
-_commit `fa11515` · changes since 0.0.0-develop.205_
-<!-- build:0.0.0-develop.206 revision:fa1151506041d30b5a4ca0242e99c19da19b07f7 ts:1788434449 -->
-
-**Chart:** [openg2p-farmer-registry 0.0.0-develop.206](https://openg2p.github.io/openg2p-helm/openg2p-farmer-registry-0.0.0-develop.206.tgz)
-
-### Changes
-
-- Bumped up RP version to 0.0.0-develop.430 ([`fa11515`](https://github.com/OpenG2P/farmer-registry/commit/fa1151506041d30b5a4ca0242e99c19da19b07f7))
 
 ---
 
