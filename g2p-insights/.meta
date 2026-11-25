@@ -1,0 +1,4 @@
+name=g2p-insights
+kind=service
+repo=https://github.com/OpenG2P/g2p-insights
+images=https://hub.docker.com/u/openg2p
