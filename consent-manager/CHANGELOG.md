@@ -6,6 +6,7 @@ _Published automatically._
 
 | Version | Date | Type | Notes |
 | --- | --- | --- | --- |
+| [`0.0.0-develop.95`](#v-0-0-0-develop-95) | 2026-11-26 | develop |  |
 | [`0.0.0-develop.94`](#v-0-0-0-develop-94) | 2026-11-19 | develop |  |
 | [`1.0.4`](#v-1-0-4) | 2026-11-18 | release |  |
 | [`1.0.4-rc.65`](#v-1-0-4-rc-65) | 2026-11-18 | release candidate |  |
@@ -27,7 +28,6 @@ _Published automatically._
 | [`0.0.0-develop.72`](#v-0-0-0-develop-72) | 2026-10-12 | develop |  |
 | [`0.0.0-develop.69`](#v-0-0-0-develop-69) | 2026-10-12 | develop |  |
 | [`0.0.0-develop.68`](#v-0-0-0-develop-68) | 2026-10-12 | develop |  |
-| [`0.0.0-develop.65`](#v-0-0-0-develop-65) | 2026-10-10 | develop |  |
 | [`1.0.3`](#v-1-0-3) | 2026-09-04 | release |  |
 | [`1.0.3-rc.63`](#v-1-0-3-rc-63) | 2026-09-04 | release candidate |  |
 | [`1.0.2`](#v-1-0-2) | 2026-09-01 | release |  |
@@ -333,6 +333,19 @@ _No new commits since 0.0.0-develop.57._
 
 # Develop builds
 
+<a id="v-0-0-0-develop-95"></a>
+
+## consent-manager — develop 0.0.0-develop.95 (2026-11-26)
+
+_commit `f4f1f9d` · changes since 0.0.0-develop.94_
+<!-- build:0.0.0-develop.95 revision:f4f1f9dd3c757d487ab70e3b801f15013694a5df ts:1795680815 -->
+
+**Chart:** [openg2p-consent-manager 0.0.0-develop.95](https://openg2p.github.io/openg2p-helm/openg2p-consent-manager-0.0.0-develop.95.tgz)
+
+### Changes
+
+- [G2P-5719](https://openg2p.atlassian.net/browse/G2P-5719) Consent scenario 0: the signed form is uploaded (required) and kept with the consent, not checked; no Consent Approver; consent record carries it with no verification; partner portal shows the upload before "Record the agreement"; console, chart text, tests ([`f4f1f9d`](https://github.com/OpenG2P/consent-manager/commit/f4f1f9dd3c757d487ab70e3b801f15013694a5df))
+
 <a id="v-0-0-0-develop-94"></a>
 
 ## consent-manager — develop 0.0.0-develop.94 (2026-11-19)
@@ -625,19 +638,6 @@ _commit `1545ade` · changes since 0.0.0-develop.65_
 - [G2P-5719](https://openg2p.atlassian.net/browse/G2P-5719) partner's copy of a consent: "Download consent record" (GET …/partner-portal/consents/{id}/record) — a ZIP with the unchanged receipt, the uploaded evidence, a CM-signed statement (same key/JWKS) tying them together by SHA-256 with the national-ID authentication and the verification time, a printable summary and how to check it; refused if stored evidence no longer matches its SHA-256; chart partnerPortal.consentRecordJwksUrl; tests ([`1545ade`](https://github.com/OpenG2P/consent-manager/commit/1545ade028282582e821d8afffc02750845fa5ce))
 - [G2P-5719](https://openg2p.atlassian.net/browse/G2P-5719) consent scenario 1 phase 2: the subject's national-ID login (eSignet) in the partner portal — authorization code + PKCE, private_key_jwt, single-use state in Postgres, ID token and signed userinfo checked (signature, iss, aud, exp, nonce, sub), individual_id matched to the request's subject; mandatory when on (submit and approve need it, with the signed form and staff check); assurance records it; portal "Authenticate with national ID" (popup + polling), console shows it on verification; chart partnerPortal.subjectAuth (off by default) with a Job that keeps the client key in a Secret and registers the client in eSignet; tests ([`0115010`](https://github.com/OpenG2P/consent-manager/commit/01150107ef56e4f723cf45fd0567bb6d1d062b85))
 - [G2P-5719](https://openg2p.atlassian.net/browse/G2P-5719) CM approvals inbox when AWE approvals are off: empty list with awe_enabled false instead of AWE's 404 (AWE need not be installed); console Approvals page says approvals are off; test ([`7d49c45`](https://github.com/OpenG2P/consent-manager/commit/7d49c45910738fdb5a5cb8b9e87a172f78589c84))
-
-<a id="v-0-0-0-develop-65"></a>
-
-## consent-manager — develop 0.0.0-develop.65 (2026-10-10)
-
-_commit `1e29e4b` · changes since 0.0.0-develop.64_
-<!-- build:0.0.0-develop.65 revision:1e29e4bebe76417639ae4c9dbb104a39c48cc418 ts:1791548826 -->
-
-**Chart:** [openg2p-consent-manager 0.0.0-develop.65](https://openg2p.github.io/openg2p-helm/openg2p-consent-manager-0.0.0-develop.65.tgz)
-
-### Changes
-
-- [G2P-5719](https://openg2p.atlassian.net/browse/G2P-5719) consent scenario 1 (phase 1): partner realm auth, partner-portal API and SPA (requests, signed-form evidence in Garage, submit/cancel, consents and receipts, use-case prefill), staff "Consent verifications" in the console, assurance on consents, /validate by consent_id with receipts and grants; chart partnerPortal/evidence (off by default) + partner keycloak-init; setup-partner-realm.sh; CI builds the portal image ([`1e29e4b`](https://github.com/OpenG2P/consent-manager/commit/1e29e4bebe76417639ae4c9dbb104a39c48cc418))
 
 ---
 
