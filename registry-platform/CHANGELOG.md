@@ -6,6 +6,7 @@ _Published automatically._
 
 | Version | Date | Type | Notes |
 | --- | --- | --- | --- |
+| [`0.0.0-develop.856`](#v-0-0-0-develop-856) | 2026-11-26 | develop |  |
 | [`0.0.0-develop.852`](#v-0-0-0-develop-852) | 2026-11-24 | develop |  |
 | [`0.0.0-develop.849`](#v-0-0-0-develop-849) | 2026-11-24 | develop |  |
 | [`0.0.0-develop.847`](#v-0-0-0-develop-847) | 2026-11-23 | develop |  |
@@ -37,7 +38,6 @@ _Published automatically._
 | [`0.0.0-develop.604`](#v-0-0-0-develop-604) | 2026-10-05 | develop |  |
 | [`0.0.0-develop.599`](#v-0-0-0-develop-599) | 2026-10-03 | develop |  |
 | [`0.0.0-develop.453`](#v-0-0-0-develop-453) | 2026-10-01 | develop |  |
-| [`0.0.0-develop.448`](#v-0-0-0-develop-448) | 2026-10-01 | develop |  |
 | [`1.2.1`](#v-1-2-1) | 2026-09-07 | release |  |
 | [`1.2.1-rc.462`](#v-1-2-1-rc-462) | 2026-09-04 | release candidate |  |
 | [`1.2.1-rc.447`](#v-1-2-1-rc-447) | 2026-09-04 | release candidate |  |
@@ -1186,6 +1186,27 @@ _commit `9b41f96` · changes since v1.0.0_
 
 # Develop builds
 
+<a id="v-0-0-0-develop-856"></a>
+
+## registry-platform — develop 0.0.0-develop.856 (2026-11-26)
+
+_commit `fdabb92` · changes since 0.0.0-develop.852_
+<!-- build:0.0.0-develop.856 revision:fdabb921096dc878bf0b2fd06d5b52a9560567dd ts:1795657039 -->
+
+**Chart:** [openg2p-registry 0.0.0-develop.856](https://openg2p.github.io/openg2p-helm/openg2p-registry-0.0.0-develop.856.tgz)
+
+### Summary
+
+- **Major:** Superset dashboards integration revamped, allowing multiple installations to share a single Superset instance with improved import handling and connection naming conventions.
+- Updates to the Rancher form clarify that AWE for Approvals only uses sample data, removing misleading references to policy seeding.
+- Development dependencies updated, including a new version of staff-ui (1.1.9-dev.24) for npm.
+
+### Changes
+
+- [G2P-5719](https://openg2p.atlassian.net/browse/G2P-5719) Superset dashboards import in the platform chart (dashboards.*): bundle rewritten per release (UUIDs, connection name, "&lt;release&gt; · " title prefix) so several installs share one Superset; earlier imports moved over in place; dashboards-bundle-from-export.py; uninstall defaults the Superset connection to the release name ([`fdabb92`](https://github.com/OpenG2P/registry-platform/commit/fdabb921096dc878bf0b2fd06d5b52a9560567dd))
+- [G2P-5719](https://openg2p.atlassian.net/browse/G2P-5719) Rancher form: Use AWE for Approvals no longer says it seeds policies and approvers (sample data only) ([`6dc1808`](https://github.com/OpenG2P/registry-platform/commit/6dc1808c9007ed9e290d9461dcf170d0cc90f833))
+- chore(ui-widgets): version for npm dev publish, sync staff-ui @1.1.9-dev.24 [skip ci] ([`cbf7043`](https://github.com/OpenG2P/registry-platform/commit/cbf7043717967b0d29080e46d8c3818fd3655915))
+
 <a id="v-0-0-0-develop-852"></a>
 
 ## registry-platform — develop 0.0.0-develop.852 (2026-11-24)
@@ -1809,19 +1830,6 @@ _commit `cc9fced` · changes since 0.0.0-develop.448_
 - [G2P-5719](https://openg2p.atlassian.net/browse/G2P-5719) Final aggregates on period lock (is_final; late changes revert to provisional until relocked); DCI aggregate search across subjects for allow-listed partners, with is_final filter ([`fcceac6`](https://github.com/OpenG2P/registry-platform/commit/fcceac693c31fd219fb122f5f2ea90f641938715))
 - [G2P-5719](https://openg2p.atlassian.net/browse/G2P-5719) Activity UI holds no register-specific fields: context_fields (locked in corrections, enforced on supersede) and ui_hints (summary fields, context columns, batch carry fields, search hints) from the domain service ([`a8a09e4`](https://github.com/OpenG2P/registry-platform/commit/a8a09e4e647029509517b9e47f79e01efc881c0d))
 - [G2P-5719](https://openg2p.atlassian.net/browse/G2P-5719) Fix record view and intake forms: don't await the synchronous data-policy condition builders (SYS-ERR-001 on get_subject_record) ([`c08eb7c`](https://github.com/OpenG2P/registry-platform/commit/c08eb7c8be7cae10dadaefcbaa68d7b134bd152c))
-
-<a id="v-0-0-0-develop-448"></a>
-
-## registry-platform — develop 0.0.0-develop.448 (2026-10-01)
-
-_commit `f0bbc3a` · changes since 0.0.0-develop.447_
-<!-- build:0.0.0-develop.448 revision:f0bbc3a9727426ca95eef676cbc2b50be076833a ts:1790819467 -->
-
-**Chart:** [openg2p-registry 0.0.0-develop.448](https://openg2p.github.io/openg2p-helm/openg2p-registry-0.0.0-develop.448.tgz)
-
-### Changes
-
-- [G2P-5719](https://openg2p.atlassian.net/browse/G2P-5719) DCI: exact subject queries on activity registers with filters on any plain field (activities, state, aggregates); exact-field register search returns linked records; ISO date-time filters ([`f0bbc3a`](https://github.com/OpenG2P/registry-platform/commit/f0bbc3a9727426ca95eef676cbc2b50be076833a))
 
 ---
 
