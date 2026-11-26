@@ -6,6 +6,7 @@ _Published automatically._
 
 | Version | Date | Type | Notes |
 | --- | --- | --- | --- |
+| [`0.0.0-develop.293`](#v-0-0-0-develop-293) | 2026-11-26 | develop |  |
 | [`0.0.0-develop.290`](#v-0-0-0-develop-290) | 2026-11-24 | develop |  |
 | [`0.0.0-develop.289`](#v-0-0-0-develop-289) | 2026-11-24 | develop |  |
 | [`0.0.0-develop.288`](#v-0-0-0-develop-288) | 2026-11-24 | develop |  |
@@ -36,7 +37,6 @@ _Published automatically._
 | [`0.0.0-develop.218`](#v-0-0-0-develop-218) | 2026-10-02 | develop |  |
 | [`0.0.0-develop.215`](#v-0-0-0-develop-215) | 2026-10-01 | develop |  |
 | [`0.0.0-develop.211`](#v-0-0-0-develop-211) | 2026-09-27 | develop |  |
-| [`0.0.0-develop.209`](#v-0-0-0-develop-209) | 2026-09-23 | develop |  |
 | [`1.3.0`](#v-1-3-0) | 2026-08-06 | release |  |
 | [`1.2.0`](#v-1-2-0) | 2026-07-25 | release |  |
 
@@ -711,6 +711,27 @@ _commit `7d86b26` · changes since 1.2.1-rc.182_
 
 # Develop builds
 
+<a id="v-0-0-0-develop-293"></a>
+
+## farmer-registry — develop 0.0.0-develop.293 (2026-11-26)
+
+_commit `34d0665` · changes since 0.0.0-develop.290_
+<!-- build:0.0.0-develop.293 revision:34d06659cb5e0171776e2e2e6264d006f7809237 ts:1795680692 -->
+
+**Chart:** [openg2p-farmer-registry 0.0.0-develop.293](https://openg2p.github.io/openg2p-helm/openg2p-farmer-registry-0.0.0-develop.293.tgz)
+
+### Summary
+
+- **Major:** Migration to Registry platform 0.0.0-develop.856, introducing significant updates to the underlying architecture.
+- UI enhancements: Integration of staff and agent portal UIs as wrappers on the new registry platform, with updated images in CI and chart configurations.
+- Dashboard management: Streamlined dashboard imports via the platform chart's Job, with removal of the previous dashboards Job and Superset Secret, and defaulting Superset connection to the release name.
+
+### Changes
+
+- [G2P-5719](https://openg2p.atlassian.net/browse/G2P-5719) Registry platform 0.0.0-develop.856 ([`34d0665`](https://github.com/OpenG2P/farmer-registry/commit/34d06659cb5e0171776e2e2e6264d006f7809237))
+- [G2P-5719](https://openg2p.atlassian.net/browse/G2P-5719) Staff and agent portal UIs built in this repo: ui/staff-ui (from 1.2) and ui/agent-ui wrappers on registry-platform develop with overrides/; images in CI and the chart ([`5b4458d`](https://github.com/OpenG2P/farmer-registry/commit/5b4458dd465b62f0e696c84d0ffcb4934bb16ab5))
+- [G2P-5719](https://openg2p.atlassian.net/browse/G2P-5719) Dashboards imported by the platform chart's Job (registry.dashboards): FR ships only its bundle ConfigMap; own dashboards Job and Superset Secret removed; uninstall defaults the Superset connection to the release name ([`0f5d3c5`](https://github.com/OpenG2P/farmer-registry/commit/0f5d3c544f37afd50be4d620a65bb7fea6914076))
+
 <a id="v-0-0-0-develop-290"></a>
 
 ## farmer-registry — develop 0.0.0-develop.290 (2026-11-24)
@@ -1061,25 +1082,6 @@ _commit `336e09b` · changes since 0.0.0-develop.209_
 
 - Bumped up RP verison to 0.0.0-develop.439 ([`336e09b`](https://github.com/OpenG2P/farmer-registry/commit/336e09be2b136bc9f46f04a43c5d47bf95d88642))
 - [G2P-5335](https://openg2p.atlassian.net/browse/G2P-5335) Read code lists live from Master Data 1.1: switch the 12 coded dropdowns to MDS attributes, drop lookup-data, align gender/income/education/disability codes with MDS across enums, DCI template, sample and bulk data, search filter, translations and perf generators ([`43a8198`](https://github.com/OpenG2P/farmer-registry/commit/43a819885cc7fcf9b914b369c6b3680c28d079e3))
-
-<a id="v-0-0-0-develop-209"></a>
-
-## farmer-registry — develop 0.0.0-develop.209 (2026-09-23)
-
-_commit `84e6d1e` · changes since 0.0.0-develop.207_
-<!-- build:0.0.0-develop.209 revision:84e6d1e5eaebda06fe83702a0398f8fb7c06bffc ts:1790150578 -->
-
-**Chart:** [openg2p-farmer-registry 0.0.0-develop.209](https://openg2p.github.io/openg2p-helm/openg2p-farmer-registry-0.0.0-develop.209.tgz)
-
-### Summary
-
-- Feature enhancement: Each wallet offer now includes a unique transaction code and a scannable QR code for improved user interaction.
-- Version update: The RP version has been incremented to 0.0.0-develop.435, reflecting ongoing development progress.
-
-### Changes
-
-- Bumped up RP version to 0.0.0-develop.435 ([`84e6d1e`](https://github.com/OpenG2P/farmer-registry/commit/84e6d1e5eaebda06fe83702a0398f8fb7c06bffc))
-- [G2P-4929](https://openg2p.atlassian.net/browse/G2P-4929) Give each wallet offer its own transaction code and a scannable QR ([`ce9fa75`](https://github.com/OpenG2P/farmer-registry/commit/ce9fa7505c3663166c827463e8d150e78bd4cc0c))
 
 ---
 
