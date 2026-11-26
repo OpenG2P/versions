@@ -6,6 +6,7 @@ _Published automatically._
 
 | Version | Date | Type | Notes |
 | --- | --- | --- | --- |
+| [`0.0.0-develop.54`](#v-0-0-0-develop-54) | 2026-11-26 | develop |  |
 | [`0.0.0-develop.52`](#v-0-0-0-develop-52) | 2026-11-24 | develop |  |
 | [`0.0.0-develop.51`](#v-0-0-0-develop-51) | 2026-11-24 | develop |  |
 | [`0.0.0-develop.50`](#v-0-0-0-develop-50) | 2026-11-24 | develop |  |
@@ -25,9 +26,28 @@ _Published automatically._
 | [`0.0.0-develop.31`](#v-0-0-0-develop-31) | 2026-10-07 | develop |  |
 | [`0.0.0-develop.28`](#v-0-0-0-develop-28) | 2026-10-05 | develop |  |
 | [`0.0.0-develop.24`](#v-0-0-0-develop-24) | 2026-10-03 | develop |  |
-| [`0.0.0-develop.21`](#v-0-0-0-develop-21) | 2026-10-02 | develop |  |
 
 # Develop builds
+
+<a id="v-0-0-0-develop-54"></a>
+
+## crop-sown-registry — develop 0.0.0-develop.54 (2026-11-26)
+
+_commit `dcaa791` · changes since 0.0.0-develop.52_
+<!-- build:0.0.0-develop.54 revision:dcaa7915cf5526372a8bfc9673643fb8eaf38cca ts:1795680721 -->
+
+**Chart:** [openg2p-crop-sown-registry 0.0.0-develop.54](https://openg2p.github.io/openg2p-helm/openg2p-crop-sown-registry-0.0.0-develop.54.tgz)
+
+### Summary
+
+- **Major:** Introduction of the registry platform version 0.0.0-develop.856, establishing a foundational backend for the application.
+- UI enhancements: Development of staff and agent portal UIs as wrappers around the registry platform, incorporating custom overrides and image support in CI.
+- CI improvements: Updates to the CI pipeline to accommodate new UI components and ensure seamless integration with the registry platform.
+
+### Changes
+
+- [G2P-5719](https://openg2p.atlassian.net/browse/G2P-5719) Registry platform 0.0.0-develop.856 ([`dcaa791`](https://github.com/OpenG2P/crop-sown-registry/commit/dcaa7915cf5526372a8bfc9673643fb8eaf38cca))
+- [G2P-5719](https://openg2p.atlassian.net/browse/G2P-5719) Staff and agent portal UIs built in this repo: ui/staff-ui (from 1.2) and ui/agent-ui wrappers on registry-platform develop with overrides/; images in CI and the chart ([`cb11d98`](https://github.com/OpenG2P/crop-sown-registry/commit/cb11d98d39c982a813ebc11aeb39ea8b092cff60))
 
 <a id="v-0-0-0-develop-52"></a>
 
@@ -327,28 +347,6 @@ _commit `62a27de` · changes since 0.0.0-develop.21_
 - Bumped up RP version to 0.0.0-develop.599 ([`62a27de`](https://github.com/OpenG2P/crop-sown-registry/commit/62a27deb357268a7098a3e542c9a7518f0f12a91))
 - [G2P-5719](https://openg2p.atlassian.net/browse/G2P-5719) Registries never touch MDS's database: drop loadGeoData/syncGeoWidgets, sample loader reads MDS via its API (mds_client), Cluster geo widget relabelled Location ([`66565a9`](https://github.com/OpenG2P/crop-sown-registry/commit/66565a96e9b77249aea7c5d51c9b7dc7e0ca9cc6))
 - [G2P-5719](https://openg2p.atlassian.net/browse/G2P-5719) Sample crop seasons read MDS sample people through the catalogue client (db mode kept); tests in api and db modes ([`3d10caf`](https://github.com/OpenG2P/crop-sown-registry/commit/3d10caf654e409f70e29a2bfecceb5cbecb07b44))
-
-<a id="v-0-0-0-develop-21"></a>
-
-## crop-sown-registry — develop 0.0.0-develop.21 (2026-10-02)
-
-_commit `b580a2e` · changes since 0.0.0-develop.17_
-<!-- build:0.0.0-develop.21 revision:b580a2e01771b4e00a1c1066fae4389eb233d630 ts:1790900560 -->
-
-**Chart:** [openg2p-crop-sown-registry 0.0.0-develop.21](https://openg2p.github.io/openg2p-helm/openg2p-crop-sown-registry-0.0.0-develop.21.tgz)
-
-### Summary
-
-- New feature: Linked farmer ID to Fayda FAN for consent checks and implemented final summaries for farmer season data, including period locking and validation tests.
-- Data integrity: Introduced context fields and UI hints to prevent corrections from altering crop season data, with associated tests to ensure compliance.
-- Version update: Bumped RP version to 0.0.0-develop.453.
-
-### Changes
-
-- Bumped up RP version to 0.0.0-develop.453. ([`b580a2e`](https://github.com/OpenG2P/crop-sown-registry/commit/b580a2e01771b4e00a1c1066fae4389eb233d630))
-- [G2P-5719](https://openg2p.atlassian.net/browse/G2P-5719) Link farmer ID to Fayda FAN for consent checks (subject_id_fields); tests ([`34842c0`](https://github.com/OpenG2P/crop-sown-registry/commit/34842c0405bb09a0c668b7f462f2fe5e4038ad1d))
-- [G2P-5719](https://openg2p.atlassian.net/browse/G2P-5719) Farmer season summary final on period lock (is_final in DCI); tests for final summaries and searches across farmers ([`9e65500`](https://github.com/OpenG2P/crop-sown-registry/commit/9e6550049415f556c052d62db01fc99debfe6d37))
-- [G2P-5719](https://openg2p.atlassian.net/browse/G2P-5719) Declare context fields and UI hints; test that a correction can't change the crop season ([`b66b6de`](https://github.com/OpenG2P/crop-sown-registry/commit/b66b6dedafe14d50dbb126bf842a63b43268fa2c))
 
 ---
 
