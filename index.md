@@ -25,6 +25,7 @@ See the **[versioning & CI docs](https://docs.openg2p.org/operations/deployment/
 - **[id-generator](./id-generator/CHANGELOG)** · [repository ↗](https://github.com/OpenG2P/id-generator)
 - **[keycloak-init](./keycloak-init/CHANGELOG)** · [repository ↗](https://github.com/OpenG2P/keycloak-init)
 - **[keycloak-themes](./keycloak-themes/CHANGELOG)** · [repository ↗](https://github.com/OpenG2P/keycloak-themes)
+- **[live-stock-registry](./live-stock-registry/CHANGELOG)** · [repository ↗](https://github.com/OpenG2P/live-stock-registry)
 - **[master-data-service](./master-data-service/CHANGELOG)** · [repository ↗](https://github.com/OpenG2P/master-data-service)
 - **[mock-id-system](./mock-id-system/CHANGELOG)** · [repository ↗](https://github.com/OpenG2P/mock-id-system)
 - **[mowsa-nsr](./mowsa-nsr/CHANGELOG)** · [repository ↗](https://github.com/OpenG2P/mowsa-nsr)

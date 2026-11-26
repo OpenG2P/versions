@@ -1,0 +1,4 @@
+name=live-stock-registry
+kind=service
+repo=https://github.com/OpenG2P/live-stock-registry
+images=https://hub.docker.com/u/openg2p
