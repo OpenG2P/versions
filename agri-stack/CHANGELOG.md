@@ -6,6 +6,7 @@ _Published automatically._
 
 | Version | Date | Type | Notes |
 | --- | --- | --- | --- |
+| [`0.0.0-develop.78`](#v-0-0-0-develop-78) | 2026-11-26 | develop |  |
 | [`0.0.0-develop.76`](#v-0-0-0-develop-76) | 2026-11-19 | develop |  |
 | [`0.0.0-develop.75`](#v-0-0-0-develop-75) | 2026-11-14 | develop |  |
 | [`0.0.0-develop.73`](#v-0-0-0-develop-73) | 2026-11-06 | develop |  |
@@ -25,9 +26,27 @@ _Published automatically._
 | [`0.0.0-develop.39`](#v-0-0-0-develop-39) | 2026-10-09 | develop |  |
 | [`0.0.0-develop.36`](#v-0-0-0-develop-36) | 2026-10-09 | develop |  |
 | [`0.0.0-develop.30`](#v-0-0-0-develop-30) | 2026-10-07 | develop |  |
-| [`0.0.0-develop.29`](#v-0-0-0-develop-29) | 2026-10-07 | develop |  |
 
 # Develop builds
+
+<a id="v-0-0-0-develop-78"></a>
+
+## agri-stack — develop 0.0.0-develop.78 (2026-11-26)
+
+_commit `fc69972` · changes since 0.0.0-develop.76_
+<!-- build:0.0.0-develop.78 revision:fc699720e8c9a2564ac1d3fae786d72ebdc06de0 ts:1795687290 -->
+
+**Chart:** [openg2p-agri-composite 0.0.0-develop.78](https://openg2p.github.io/openg2p-helm/openg2p-agri-composite-0.0.0-develop.78.tgz)
+
+### Summary
+
+- New feature: integration of the Livestock Registry into loan profiles, allowing optional inclusion of animal details (species, breed, sex, birth date) via farmer ID; includes updates to the Rancher form and endpoint values.
+- Testing enhancements: added composite tests for the FR partner URL in the new hostname form, improving test coverage and reliability.
+
+### Changes
+
+- [G2P-5719](https://openg2p.atlassian.net/browse/G2P-5719) loan-profile 1.1.0: the farmer's animals from the Livestock Registry, as an optional source by the owner's farmer ID (species, breed, sex, birth date); livestock-registry endpoint in values and the Rancher form; install test config lists the Livestock Registry in dept1; tests ([`fc69972`](https://github.com/OpenG2P/agri-stack/commit/fc699720e8c9a2564ac1d3fae786d72ebdc06de0))
+- [G2P-5719](https://openg2p.atlassian.net/browse/G2P-5719) Composite test: FR partner URL in the new hostname form ([`58ae81e`](https://github.com/OpenG2P/agri-stack/commit/58ae81e666bf728b442605eb56abc26a557fcd60))
 
 <a id="v-0-0-0-develop-76"></a>
 
@@ -392,19 +411,6 @@ _commit `77a4a19` · changes since 0.0.0-develop.29_
 ### Changes
 
 - [G2P-5719](https://openg2p.atlassian.net/browse/G2P-5719) composite: consent exchange mode (opt-in, default passthrough) — validate the partner consent at the exchange CM with issue_receipts and send each registry its own receipt; chart consent.mode/exchangeCmUrl with Rancher "Agri Stack exchange" group; tests ([`77a4a19`](https://github.com/OpenG2P/agri-stack/commit/77a4a19561de07005610ce97381ed3db5f9553ce))
-
-<a id="v-0-0-0-develop-29"></a>
-
-## agri-stack — develop 0.0.0-develop.29 (2026-10-07)
-
-_commit `ba31974` · changes since 0.0.0-develop.28_
-<!-- build:0.0.0-develop.29 revision:ba319741e9cfbf5d131ab4d25bfed271e730d046 ts:1791336410 -->
-
-**Chart:** [openg2p-agri-composite 0.0.0-develop.29](https://openg2p.github.io/openg2p-helm/openg2p-agri-composite-0.0.0-develop.29.tgz)
-
-### Changes
-
-- [G2P-5719](https://openg2p.atlassian.net/browse/G2P-5719) composite: data scope catalogue is read with the signed POST /partner/data_scopes (comments) ([`ba31974`](https://github.com/OpenG2P/agri-stack/commit/ba319741e9cfbf5d131ab4d25bfed271e730d046))
 
 ---
 
