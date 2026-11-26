@@ -6,6 +6,7 @@ _Published automatically._
 
 | Version | Date | Type | Notes |
 | --- | --- | --- | --- |
+| [`0.0.0-develop.294`](#v-0-0-0-develop-294) | 2026-11-26 | develop |  |
 | [`0.0.0-develop.293`](#v-0-0-0-develop-293) | 2026-11-26 | develop |  |
 | [`0.0.0-develop.290`](#v-0-0-0-develop-290) | 2026-11-24 | develop |  |
 | [`0.0.0-develop.289`](#v-0-0-0-develop-289) | 2026-11-24 | develop |  |
@@ -36,7 +37,6 @@ _Published automatically._
 | [`0.0.0-develop.221`](#v-0-0-0-develop-221) | 2026-10-03 | develop |  |
 | [`0.0.0-develop.218`](#v-0-0-0-develop-218) | 2026-10-02 | develop |  |
 | [`0.0.0-develop.215`](#v-0-0-0-develop-215) | 2026-10-01 | develop |  |
-| [`0.0.0-develop.211`](#v-0-0-0-develop-211) | 2026-09-27 | develop |  |
 | [`1.3.0`](#v-1-3-0) | 2026-08-06 | release |  |
 | [`1.2.0`](#v-1-2-0) | 2026-07-25 | release |  |
 
@@ -711,6 +711,19 @@ _commit `7d86b26` · changes since 1.2.1-rc.182_
 
 # Develop builds
 
+<a id="v-0-0-0-develop-294"></a>
+
+## farmer-registry — develop 0.0.0-develop.294 (2026-11-26)
+
+_commit `134edc2` · changes since 0.0.0-develop.293_
+<!-- build:0.0.0-develop.294 revision:134edc2868753695ef706c01de50655250c2f35e ts:1795692275 -->
+
+**Chart:** [openg2p-farmer-registry 0.0.0-develop.294](https://openg2p.github.io/openg2p-helm/openg2p-farmer-registry-0.0.0-develop.294.tgz)
+
+### Changes
+
+- [G2P-5719](https://openg2p.atlassian.net/browse/G2P-5719) Sample herds from the pack's sample animals (openg2p-data samples/animals.json, the Livestock Registry's), with Master Data codes; livestocks.json fixture removed; bulk livestock type and breed as codes; db-seed fetches openg2p-data at build; herd test in checks ([`134edc2`](https://github.com/OpenG2P/farmer-registry/commit/134edc2868753695ef706c01de50655250c2f35e))
+
 <a id="v-0-0-0-develop-293"></a>
 
 ## farmer-registry — develop 0.0.0-develop.293 (2026-11-26)
@@ -1062,26 +1075,6 @@ _commit `060e2e5` · changes since 0.0.0-develop.211_
 - [G2P-5719](https://openg2p.atlassian.net/browse/G2P-5719) DCI: farmer record carries FARMER_ID alongside the Fayda UIN ([`12476c1`](https://github.com/OpenG2P/farmer-registry/commit/12476c1f1b016287e390e33a174a26399bf56962))
 - [G2P-5335](https://openg2p.atlassian.net/browse/G2P-5335) FR chart: sample data, sample images and bulk demo data default OFF; add "Generate bulk demo data" and "Bulk demo farmers" to the Rancher form (Analytics), separate from reporting views, which install either way ([`d9b5b11`](https://github.com/OpenG2P/farmer-registry/commit/d9b5b11bedc46017492cc83c430a5dbb489837d3))
 - [G2P-5719](https://openg2p.atlassian.net/browse/G2P-5719) CSR phase 1: Cluster entity register with AWE approval and sample clusters, typed participant roles, entities first (no temporary plot IDs), crop-change link, harvest_verified and replacement links in DCI and reporting view, sample crop seasons from Master Data people, partner correction in smoke test, tests ([`93eef0a`](https://github.com/OpenG2P/farmer-registry/commit/93eef0acda07eb5b6525c9f07653c27abe0dca7f))
-
-<a id="v-0-0-0-develop-211"></a>
-
-## farmer-registry — develop 0.0.0-develop.211 (2026-09-27)
-
-_commit `336e09b` · changes since 0.0.0-develop.209_
-<!-- build:0.0.0-develop.211 revision:336e09be2b136bc9f46f04a43c5d47bf95d88642 ts:1790524042 -->
-
-**Chart:** [openg2p-farmer-registry 0.0.0-develop.211](https://openg2p.github.io/openg2p-helm/openg2p-farmer-registry-0.0.0-develop.211.tgz)
-
-### Summary
-
-- **Major:** Transition to Master Data 1.1 for live code lists, replacing 12 coded dropdowns with MDS attributes and aligning gender, income, education, and disability codes across various components including enums and templates.
-- Code cleanup: Removed lookup-data and streamlined sample and bulk data handling, enhancing search filters and translations.
-- Version bump: Updated RP version to 0.0.0-develop.439.
-
-### Changes
-
-- Bumped up RP verison to 0.0.0-develop.439 ([`336e09b`](https://github.com/OpenG2P/farmer-registry/commit/336e09be2b136bc9f46f04a43c5d47bf95d88642))
-- [G2P-5335](https://openg2p.atlassian.net/browse/G2P-5335) Read code lists live from Master Data 1.1: switch the 12 coded dropdowns to MDS attributes, drop lookup-data, align gender/income/education/disability codes with MDS across enums, DCI template, sample and bulk data, search filter, translations and perf generators ([`43a8198`](https://github.com/OpenG2P/farmer-registry/commit/43a819885cc7fcf9b914b369c6b3680c28d079e3))
 
 ---
 
