@@ -6,9 +6,23 @@ _Published automatically._
 
 | Version | Date | Type | Notes |
 | --- | --- | --- | --- |
+| [`0.0.0-develop.24`](#v-0-0-0-develop-24) | 2026-11-26 | develop |  |
 | [`0.0.0-develop.23`](#v-0-0-0-develop-23) | 2026-11-25 | develop |  |
 
 # Develop builds
+
+<a id="v-0-0-0-develop-24"></a>
+
+## g2p-insights — develop 0.0.0-develop.24 (2026-11-26)
+
+_commit `25a5ef9` · changes since 0.0.0-develop.23_
+<!-- build:0.0.0-develop.24 revision:25a5ef9257f5f46e2c70d56b6e746b4693369ce6 ts:1795657155 -->
+
+**Chart:** [openg2p-insights 0.0.0-develop.24](https://openg2p.github.io/openg2p-helm/openg2p-insights-0.0.0-develop.24.tgz)
+
+### Changes
+
+- [G2P-5719](https://openg2p.atlassian.net/browse/G2P-5719) Rancher form: Superset service-account Secret named for registry.dashboards as well ([`25a5ef9`](https://github.com/OpenG2P/g2p-insights/commit/25a5ef9257f5f46e2c70d56b6e746b4693369ce6))
 
 <a id="v-0-0-0-develop-23"></a>
 
