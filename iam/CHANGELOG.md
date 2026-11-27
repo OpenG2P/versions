@@ -6,6 +6,7 @@ _Published automatically._
 
 | Version | Date | Type | Notes |
 | --- | --- | --- | --- |
+| [`0.0.0-develop.159`](#v-0-0-0-develop-159) | 2026-11-27 | develop |  |
 | [`1.5.0-rc.158`](#v-1-5-0-rc-158) | 2026-11-20 | release candidate |  |
 | [`0.0.0-develop.158`](#v-0-0-0-develop-158) | 2026-11-20 | develop |  |
 | [`1.4.4`](#v-1-4-4) | 2026-11-18 | release |  |
@@ -588,6 +589,19 @@ _commit `f8bccfe` · changes since v1.3.0_
 - [G2P-5313](https://openg2p.atlassian.net/browse/G2P-5313) Improve unit test coverage for core IAM functionality ([`c762c7b`](https://github.com/OpenG2P/iam/commit/c762c7b741a5c9d19bbd30b6875daacbd5d88717))
 
 # Develop builds
+
+<a id="v-0-0-0-develop-159"></a>
+
+## iam — develop 0.0.0-develop.159 (2026-11-27)
+
+_commit `ab6a1f8` · changes since 0.0.0-develop.158_
+<!-- build:0.0.0-develop.159 revision:ab6a1f801880534ef1c706edea858bc24b02a9da ts:1795763026 -->
+
+**Chart:** [openg2p-iam-service 0.0.0-develop.159](https://openg2p.github.io/openg2p-helm/openg2p-iam-service-0.0.0-develop.159.tgz)
+
+### Changes
+
+- Just to trigger a build ([`ab6a1f8`](https://github.com/OpenG2P/iam/commit/ab6a1f801880534ef1c706edea858bc24b02a9da))
 
 <a id="v-0-0-0-develop-158"></a>
 
