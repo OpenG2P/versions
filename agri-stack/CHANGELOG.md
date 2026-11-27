@@ -6,6 +6,7 @@ _Published automatically._
 
 | Version | Date | Type | Notes |
 | --- | --- | --- | --- |
+| [`0.0.0-develop.80`](#v-0-0-0-develop-80) | 2026-11-27 | develop |  |
 | [`0.0.0-develop.78`](#v-0-0-0-develop-78) | 2026-11-26 | develop |  |
 | [`0.0.0-develop.76`](#v-0-0-0-develop-76) | 2026-11-19 | develop |  |
 | [`0.0.0-develop.75`](#v-0-0-0-develop-75) | 2026-11-14 | develop |  |
@@ -25,9 +26,28 @@ _Published automatically._
 | [`0.0.0-develop.42`](#v-0-0-0-develop-42) | 2026-10-09 | develop |  |
 | [`0.0.0-develop.39`](#v-0-0-0-develop-39) | 2026-10-09 | develop |  |
 | [`0.0.0-develop.36`](#v-0-0-0-develop-36) | 2026-10-09 | develop |  |
-| [`0.0.0-develop.30`](#v-0-0-0-develop-30) | 2026-10-07 | develop |  |
 
 # Develop builds
+
+<a id="v-0-0-0-develop-80"></a>
+
+## agri-stack — develop 0.0.0-develop.80 (2026-11-27)
+
+_commit `6c37e30` · changes since 0.0.0-develop.78_
+<!-- build:0.0.0-develop.80 revision:6c37e30eb210bea66af315b385a3b5f8c2d62de6 ts:1795745061 -->
+
+**Chart:** [openg2p-agri-composite 0.0.0-develop.80](https://openg2p.github.io/openg2p-helm/openg2p-agri-composite-0.0.0-develop.80.tgz)
+
+### Summary
+
+- **Major:** Updated composite release name and uninstall script defaults, enhancing deployment consistency.
+- Improved console UI with a valid BACKEND_URL example for better configuration guidance.
+- Fixed questions.yaml to ensure valid YAML format, enabling proper reading by Rancher.
+
+### Changes
+
+- [G2P-5719](https://openg2p.atlassian.net/browse/G2P-5719) Composite release name composite: uninstall script default, console UI BACKEND_URL example ([`6c37e30`](https://github.com/OpenG2P/agri-stack/commit/6c37e30eb210bea66af315b385a3b5f8c2d62de6))
+- [G2P-5719](https://openg2p.atlassian.net/browse/G2P-5719) Composite chart: questions.yaml valid YAML again (CORS description quoted), so Rancher can read the form ([`0c0d26c`](https://github.com/OpenG2P/agri-stack/commit/0c0d26c99cb88b06d90fce65bbad08964f0a8c01))
 
 <a id="v-0-0-0-develop-78"></a>
 
@@ -398,19 +418,6 @@ _commit `126cd27` · changes since 0.0.0-develop.30_
 - [G2P-5719](https://openg2p.atlassian.net/browse/G2P-5719) composite: partner_test.py — public APIs only; defaults to sample farmer FR-0007 (FAN 946053125409, openg2p-data ETH-IND-0007); PM admin API at pm-staff-portal.&lt;domain&gt;; CM AWE wait only when CM's AWE approval is on ([`c5bc3cf`](https://github.com/OpenG2P/agri-stack/commit/c5bc3cf5e696e2592334846608d1fe6d408d9b75))
 - [G2P-5719](https://openg2p.atlassian.net/browse/G2P-5719) composite e2e: registries in other namespaces (--fr-namespace/--csr-namespace) — set up each registry's own PM/CM (exchange: composite key + agri-composite binding; passthrough: both keys + partner binding), check receipt trust, read each registry's DB in its namespace ([`272209a`](https://github.com/OpenG2P/agri-stack/commit/272209a211f6067ca6d5a10125aa46408a2cc1e7))
 - [G2P-5719](https://openg2p.atlassian.net/browse/G2P-5719) Agri Exchange install bundle (deploy/agri-exchange): helmfile installing commons, commons-services and agri-composite in order into one namespace with pinned chart versions; exchange overrides (Novu/Kafka UI off, slim commons-services with WebSub/AWE off, CM exchange role with the operator's signing key Secret, composite consent mode exchange and registry URLs) templated from a small operator values.yaml; README with helmfile and Rancher steps ([`4950eca`](https://github.com/OpenG2P/agri-stack/commit/4950eca75bd255aac7ab77134f80fb6b51ffb6f9))
-
-<a id="v-0-0-0-develop-30"></a>
-
-## agri-stack — develop 0.0.0-develop.30 (2026-10-07)
-
-_commit `77a4a19` · changes since 0.0.0-develop.29_
-<!-- build:0.0.0-develop.30 revision:77a4a19561de07005610ce97381ed3db5f9553ce ts:1791353814 -->
-
-**Chart:** [openg2p-agri-composite 0.0.0-develop.30](https://openg2p.github.io/openg2p-helm/openg2p-agri-composite-0.0.0-develop.30.tgz)
-
-### Changes
-
-- [G2P-5719](https://openg2p.atlassian.net/browse/G2P-5719) composite: consent exchange mode (opt-in, default passthrough) — validate the partner consent at the exchange CM with issue_receipts and send each registry its own receipt; chart consent.mode/exchangeCmUrl with Rancher "Agri Stack exchange" group; tests ([`77a4a19`](https://github.com/OpenG2P/agri-stack/commit/77a4a19561de07005610ce97381ed3db5f9553ce))
 
 ---
 
