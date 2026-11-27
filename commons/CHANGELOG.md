@@ -6,6 +6,7 @@ _Published automatically._
 
 | Version | Date | Type | Notes |
 | --- | --- | --- | --- |
+| [`0.0.0-develop.344`](#v-0-0-0-develop-344) | 2026-11-27 | develop |  |
 | [`0.0.0-develop.342`](#v-0-0-0-develop-342) | 2026-11-23 | develop |  |
 | [`2.3.4-rc.268`](#v-2-3-4-rc-268) | 2026-11-18 | release candidate |  |
 | [`2.3.4-rc.264`](#v-2-3-4-rc-264) | 2026-11-18 | release candidate |  |
@@ -33,7 +34,6 @@ _Published automatically._
 | [`0.0.0-develop.312`](#v-0-0-0-develop-312) | 2026-10-13 | develop |  |
 | [`0.0.0-develop.311`](#v-0-0-0-develop-311) | 2026-10-12 | develop |  |
 | [`0.0.0-develop.310`](#v-0-0-0-develop-310) | 2026-10-12 | develop |  |
-| [`0.0.0-develop.309`](#v-0-0-0-develop-309) | 2026-10-10 | develop |  |
 | [`2.3.4-rc.245`](#v-2-3-4-rc-245) | 2026-10-08 | release candidate |  |
 | [`2.3.4-rc.244`](#v-2-3-4-rc-244) | 2026-10-07 | release candidate |  |
 | [`2.3.4-rc.243`](#v-2-3-4-rc-243) | 2026-10-07 | release candidate |  |
@@ -723,6 +723,25 @@ _commit `ffabcdc` · changes since 2.2.1_
 
 # Develop builds
 
+<a id="v-0-0-0-develop-344"></a>
+
+## commons — develop 0.0.0-develop.344 (2026-11-27)
+
+_commit `c3fcf2b` · changes since 0.0.0-develop.342_
+<!-- build:0.0.0-develop.344 revision:c3fcf2b1491d3fda80527f2a1d8ff22a2a2355eb ts:1795762090 -->
+
+**Charts:** [openg2p-commons-base 0.0.0-develop.344](https://openg2p.github.io/openg2p-helm/openg2p-commons-base-0.0.0-develop.344.tgz) · [openg2p-commons-services 0.0.0-develop.344](https://openg2p.github.io/openg2p-helm/openg2p-commons-services-0.0.0-develop.344.tgz)
+
+### Summary
+
+- New features: added consent templates and a use-case catalogue to the consent-manager and partner-management components.
+- Dependency updates: all versions have been bumped to their latest releases for improved compatibility and performance.
+
+### Changes
+
+- [G2P-5719](https://openg2p.atlassian.net/browse/G2P-5719) Commons Services: consent-manager develop.96, partner-management develop.41 (consent templates and the use-case catalogue from http://composite-api) ([`c3fcf2b`](https://github.com/OpenG2P/commons/commit/c3fcf2b1491d3fda80527f2a1d8ff22a2a2355eb))
+- Bumped up all versions. ([`70528ae`](https://github.com/OpenG2P/commons/commit/70528ae3b363ac83e7bcf428e4409770b64613f6))
+
 <a id="v-0-0-0-develop-342"></a>
 
 ## commons — develop 0.0.0-develop.342 (2026-11-23)
@@ -1035,27 +1054,6 @@ _commit `ccf7372` · changes since 0.0.0-develop.309_
 ### Changes
 
 - [G2P-5719](https://openg2p.atlassian.net/browse/G2P-5719) commons-services Rancher form: "Install Artifactory?" (it has its own switch, on by default, and serves eSignet, mock identity and Keymanager, so it stayed on when they were off); "Install Mock Identity System?" always shown (hidden behind eSignet it stayed on by default when eSignet was off) ([`ccf7372`](https://github.com/OpenG2P/commons/commit/ccf73726e46915c58a68f4a823dd0f53274feae9))
-
-<a id="v-0-0-0-develop-309"></a>
-
-## commons — develop 0.0.0-develop.309 (2026-10-10)
-
-_commit `ce909ef` · changes since 0.0.0-develop.305_
-<!-- build:0.0.0-develop.309 revision:ce909eff0f5cdd3d56a0e50901b6ac78360162eb ts:1791591367 -->
-
-**Charts:** [openg2p-commons-base 0.0.0-develop.309](https://openg2p.github.io/openg2p-helm/openg2p-commons-base-0.0.0-develop.309.tgz) · [openg2p-commons-services 0.0.0-develop.309](https://openg2p.github.io/openg2p-helm/openg2p-commons-services-0.0.0-develop.309.tgz)
-
-### Summary
-
-- **Major:** [G2P-5719](https://openg2p.atlassian.net/browse/G2P-5719) introduces a new consent-evidence bucket in the Consent Manager for uploading consent evidence, enhancing data handling capabilities.
-- API restructuring: PM staff API route has been separated to its own host (pm-staff-portal.<domain>), resolving conflicts with the inherited IAM's staff-iam.<domain> route.
-- Dependency updates: CM version has been bumped, ensuring the latest features and fixes are integrated.
-
-### Changes
-
-- CM bumped up ([`ce909ef`](https://github.com/OpenG2P/commons/commit/ce909eff0f5cdd3d56a0e50901b6ac78360162eb))
-- [G2P-5719](https://openg2p.atlassian.net/browse/G2P-5719) commons-base Garage init: consent-evidence bucket (Consent Manager uploaded consent evidence) ([`3bdfbea`](https://github.com/OpenG2P/commons/commit/3bdfbea2390f89862ed69ba2dbf9f5b64ad16ad0))
-- [G2P-5719](https://openg2p.atlassian.net/browse/G2P-5719) commons-services: PM staff API route on its own host pm-staff-portal.&lt;domain&gt; (it inherited IAM's staff-iam.&lt;domain&gt; via the shared global staffPortalApiHostname, so both routes claimed one host) ([`5fd1538`](https://github.com/OpenG2P/commons/commit/5fd1538b00e9925a08c4862eef5c7e642b607471))
 
 ---
 
