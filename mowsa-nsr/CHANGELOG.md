@@ -6,6 +6,7 @@ _Published automatically._
 
 | Version | Date | Type | Notes |
 | --- | --- | --- | --- |
+| [`1.2.1-rc.346`](#v-1-2-1-rc-346) | 2026-11-27 | release candidate |  |
 | [`1.2.1-rc.343`](#v-1-2-1-rc-343) | 2026-11-05 | release candidate |  |
 | [`1.2.1-rc.342`](#v-1-2-1-rc-342) | 2026-11-05 | release candidate |  |
 | [`1.2.1-rc.340`](#v-1-2-1-rc-340) | 2026-11-04 | release candidate |  |
@@ -15,7 +16,6 @@ _Published automatically._
 | [`1.2.1-rc.332`](#v-1-2-1-rc-332) | 2026-10-07 | release candidate |  |
 | [`1.2.1-rc.329`](#v-1-2-1-rc-329) | 2026-09-25 | release candidate |  |
 | [`1.2.1-rc.327`](#v-1-2-1-rc-327) | 2026-09-25 | release candidate |  |
-| [`1.2.1-rc.325`](#v-1-2-1-rc-325) | 2026-09-25 | release candidate |  |
 | [`1.2.0`](#v-1-2-0) | 2026-09-04 | release |  |
 | [`1.2.0-rc.304`](#v-1-2-0-rc-304) | 2026-09-03 | release candidate |  |
 | [`1.2.0-rc.303`](#v-1-2-0-rc-303) | 2026-09-03 | release candidate |  |
@@ -161,6 +161,24 @@ _AI summary unavailable — re-run the workflow with `changelog_regenerate=1.2.0
 
 # Release candidates
 
+<a id="v-1-2-1-rc-346"></a>
+
+## mowsa-nsr 1.2.1-rc.346 — 2026-11-27
+
+_commit `f93d8f4` · changes since 1.2.1-rc.343_
+<!-- build:1.2.1-rc.346 revision:f93d8f43ec994221102668857da9076771a011eb ts:1795768099 -->
+
+**Chart:** [mowsa-nsr 1.2.1-rc.346](https://openg2p.github.io/openg2p-helm/mowsa-nsr-1.2.1-rc.346.tgz)
+
+### Summary
+
+_AI summary unavailable — re-run the workflow with `changelog_regenerate=1.2.1-rc.346` to generate it._
+
+### Changes
+
+- Update RP_VERSION to 1.2.3-rc.722 in Dockerfiles and Chart.yaml for all services to align with the latest registry version. Enhance household and individual templates with additional document handling and educational status mappings. ([`7b55679`](https://github.com/OpenG2P/mowsa-nsr/commit/7b55679912ec9d9801ad8d732eac17dd4f6278b0))
+- [G2P-5924](https://openg2p.atlassian.net/browse/G2P-5924) Missing translation errors appearing in the browser console and correct load sample data ([`3cceccd`](https://github.com/OpenG2P/mowsa-nsr/commit/3cceccd7dd8646d4205f11d9f2e3ac2e2e662917))
+
 <a id="v-1-2-1-rc-343"></a>
 
 ## mowsa-nsr 1.2.1-rc.343 — 2026-11-05
@@ -287,19 +305,6 @@ _commit `a4a1808` · changes since 1.2.1-rc.325_
 ### Changes
 
 - Add greenlet dependency to pyproject.toml for improved concurrency support. ([`acdf518`](https://github.com/OpenG2P/mowsa-nsr/commit/acdf5187d44c199ef55544ef412c73faacf83e72))
-
-<a id="v-1-2-1-rc-325"></a>
-
-## mowsa-nsr 1.2.1-rc.325 — 2026-09-25
-
-_commit `b496ab9` · changes since 1.2.1-rc.323_
-<!-- build:1.2.1-rc.325 revision:b496ab9db59c0f2675f5896b31dcb83bfaff1204 ts:1790342397 -->
-
-**Chart:** [mowsa-nsr 1.2.1-rc.325](https://openg2p.github.io/openg2p-helm/mowsa-nsr-1.2.1-rc.325.tgz)
-
-### Changes
-
-- Update RP_VERSION to 1.2.2-rc.509 in Dockerfiles and Chart.yaml for all services to align with the latest registry version. ([`2e6505c`](https://github.com/OpenG2P/mowsa-nsr/commit/2e6505c64d3c1d672a1b1ac66b7f794b538c1377))
 
 <a id="v-1-2-0-rc-304"></a>
 
