@@ -6,6 +6,7 @@ _Published automatically._
 
 | Version | Date | Type | Notes |
 | --- | --- | --- | --- |
+| [`0.0.0-develop.345`](#v-0-0-0-develop-345) | 2026-11-27 | develop |  |
 | [`0.0.0-develop.344`](#v-0-0-0-develop-344) | 2026-11-27 | develop |  |
 | [`0.0.0-develop.342`](#v-0-0-0-develop-342) | 2026-11-23 | develop |  |
 | [`2.3.4-rc.268`](#v-2-3-4-rc-268) | 2026-11-18 | release candidate |  |
@@ -33,7 +34,6 @@ _Published automatically._
 | [`0.0.0-develop.314`](#v-0-0-0-develop-314) | 2026-10-13 | develop |  |
 | [`0.0.0-develop.312`](#v-0-0-0-develop-312) | 2026-10-13 | develop |  |
 | [`0.0.0-develop.311`](#v-0-0-0-develop-311) | 2026-10-12 | develop |  |
-| [`0.0.0-develop.310`](#v-0-0-0-develop-310) | 2026-10-12 | develop |  |
 | [`2.3.4-rc.245`](#v-2-3-4-rc-245) | 2026-10-08 | release candidate |  |
 | [`2.3.4-rc.244`](#v-2-3-4-rc-244) | 2026-10-07 | release candidate |  |
 | [`2.3.4-rc.243`](#v-2-3-4-rc-243) | 2026-10-07 | release candidate |  |
@@ -723,6 +723,19 @@ _commit `ffabcdc` · changes since 2.2.1_
 
 # Develop builds
 
+<a id="v-0-0-0-develop-345"></a>
+
+## commons — develop 0.0.0-develop.345 (2026-11-27)
+
+_commit `90de1df` · changes since 0.0.0-develop.344_
+<!-- build:0.0.0-develop.345 revision:90de1df73d5985fefe783afb12e18b80177b340d ts:1795769208 -->
+
+**Charts:** [openg2p-commons-base 0.0.0-develop.345](https://openg2p.github.io/openg2p-helm/openg2p-commons-base-0.0.0-develop.345.tgz) · [openg2p-commons-services 0.0.0-develop.345](https://openg2p.github.io/openg2p-helm/openg2p-commons-services-0.0.0-develop.345.tgz)
+
+### Changes
+
+- [G2P-5719](https://openg2p.atlassian.net/browse/G2P-5719) Commons Services: IAM develop.159 (built against fastapi-common develop with JWTValidationHelper) ([`90de1df`](https://github.com/OpenG2P/commons/commit/90de1df73d5985fefe783afb12e18b80177b340d))
+
 <a id="v-0-0-0-develop-344"></a>
 
 ## commons — develop 0.0.0-develop.344 (2026-11-27)
@@ -1041,19 +1054,6 @@ _commit `d4aa778` · changes since 0.0.0-develop.310_
 ### Changes
 
 - Bumped up CM, IAM ([`d4aa778`](https://github.com/OpenG2P/commons/commit/d4aa7786878ae957c6c82eb3370f26d5abd34e86))
-
-<a id="v-0-0-0-develop-310"></a>
-
-## commons — develop 0.0.0-develop.310 (2026-10-12)
-
-_commit `ccf7372` · changes since 0.0.0-develop.309_
-<!-- build:0.0.0-develop.310 revision:ccf73726e46915c58a68f4a823dd0f53274feae9 ts:1791769769 -->
-
-**Charts:** [openg2p-commons-base 0.0.0-develop.310](https://openg2p.github.io/openg2p-helm/openg2p-commons-base-0.0.0-develop.310.tgz) · [openg2p-commons-services 0.0.0-develop.310](https://openg2p.github.io/openg2p-helm/openg2p-commons-services-0.0.0-develop.310.tgz)
-
-### Changes
-
-- [G2P-5719](https://openg2p.atlassian.net/browse/G2P-5719) commons-services Rancher form: "Install Artifactory?" (it has its own switch, on by default, and serves eSignet, mock identity and Keymanager, so it stayed on when they were off); "Install Mock Identity System?" always shown (hidden behind eSignet it stayed on by default when eSignet was off) ([`ccf7372`](https://github.com/OpenG2P/commons/commit/ccf73726e46915c58a68f4a823dd0f53274feae9))
 
 ---
 
