@@ -6,6 +6,7 @@ _Published automatically._
 
 | Version | Date | Type | Notes |
 | --- | --- | --- | --- |
+| [`0.0.0-develop.41`](#v-0-0-0-develop-41) | 2026-11-27 | develop |  |
 | [`0.0.0-develop.40`](#v-0-0-0-develop-40) | 2026-11-19 | develop |  |
 | [`0.0.0-develop.38`](#v-0-0-0-develop-38) | 2026-11-14 | develop |  |
 | [`0.0.0-develop.37`](#v-0-0-0-develop-37) | 2026-11-10 | develop |  |
@@ -281,6 +282,19 @@ _commit `bb96ff2` · changes since 0.0.0-develop.24_
 _No new commits since 0.0.0-develop.24._
 
 # Develop builds
+
+<a id="v-0-0-0-develop-41"></a>
+
+## partner-management — develop 0.0.0-develop.41 (2026-11-27)
+
+_commit `b92fad3` · changes since 0.0.0-develop.40_
+<!-- build:0.0.0-develop.41 revision:b92fad309ab0c84b36a708605c5e3ef23849db92 ts:1795745029 -->
+
+**Chart:** [partner-management 0.0.0-develop.41](https://openg2p.github.io/openg2p-helm/partner-management-0.0.0-develop.41.tgz)
+
+### Changes
+
+- [G2P-5719](https://openg2p.atlassian.net/browse/G2P-5719) Use-case catalogue source example: http://composite-api (the Composite's release is now composite) ([`b92fad3`](https://github.com/OpenG2P/partner-management/commit/b92fad309ab0c84b36a708605c5e3ef23849db92))
 
 <a id="v-0-0-0-develop-40"></a>
 
