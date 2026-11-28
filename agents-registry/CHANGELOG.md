@@ -6,6 +6,7 @@ _Published automatically._
 
 | Version | Date | Type | Notes |
 | --- | --- | --- | --- |
+| [`0.0.0-develop.13`](#v-0-0-0-develop-13) | 2026-11-28 | develop |  |
 | [`0.0.0-develop.12`](#v-0-0-0-develop-12) | 2026-11-26 | develop |  |
 | [`0.0.0-develop.10`](#v-0-0-0-develop-10) | 2026-11-24 | develop |  |
 | [`0.0.0-develop.9`](#v-0-0-0-develop-9) | 2026-11-24 | develop |  |
@@ -17,6 +18,19 @@ _Published automatically._
 | [`0.0.0-develop.2`](#v-0-0-0-develop-2) | 2026-11-23 | develop |  |
 
 # Develop builds
+
+<a id="v-0-0-0-develop-13"></a>
+
+## agents-registry — develop 0.0.0-develop.13 (2026-11-28)
+
+_commit `a4f88aa` · changes since 0.0.0-develop.12_
+<!-- build:0.0.0-develop.13 revision:a4f88aa1973c5092803a3c3bdc399096abbe41d5 ts:1795831269 -->
+
+**Chart:** [openg2p-agents-registry 0.0.0-develop.13](https://openg2p.github.io/openg2p-helm/openg2p-agents-registry-0.0.0-develop.13.tgz)
+
+### Changes
+
+- [G2P-5719](https://openg2p.atlassian.net/browse/G2P-5719) Registry platform develop.858 (DCI search at /dci/registry/sync/search again; consent subject fields per register) ([`a4f88aa`](https://github.com/OpenG2P/agents-registry/commit/a4f88aa1973c5092803a3c3bdc399096abbe41d5))
 
 <a id="v-0-0-0-develop-12"></a>
 
