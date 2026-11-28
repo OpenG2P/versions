@@ -6,6 +6,7 @@ _Published automatically._
 
 | Version | Date | Type | Notes |
 | --- | --- | --- | --- |
+| [`0.0.0-develop.295`](#v-0-0-0-develop-295) | 2026-11-28 | develop |  |
 | [`0.0.0-develop.294`](#v-0-0-0-develop-294) | 2026-11-26 | develop |  |
 | [`0.0.0-develop.293`](#v-0-0-0-develop-293) | 2026-11-26 | develop |  |
 | [`0.0.0-develop.290`](#v-0-0-0-develop-290) | 2026-11-24 | develop |  |
@@ -36,7 +37,6 @@ _Published automatically._
 | [`0.0.0-develop.271`](#v-0-0-0-develop-271) | 2026-10-05 | develop |  |
 | [`0.0.0-develop.221`](#v-0-0-0-develop-221) | 2026-10-03 | develop |  |
 | [`0.0.0-develop.218`](#v-0-0-0-develop-218) | 2026-10-02 | develop |  |
-| [`0.0.0-develop.215`](#v-0-0-0-develop-215) | 2026-10-01 | develop |  |
 | [`1.3.0`](#v-1-3-0) | 2026-08-06 | release |  |
 | [`1.2.0`](#v-1-2-0) | 2026-07-25 | release |  |
 
@@ -711,6 +711,19 @@ _commit `7d86b26` · changes since 1.2.1-rc.182_
 
 # Develop builds
 
+<a id="v-0-0-0-develop-295"></a>
+
+## farmer-registry — develop 0.0.0-develop.295 (2026-11-28)
+
+_commit `8a4a7b4` · changes since 0.0.0-develop.294_
+<!-- build:0.0.0-develop.295 revision:8a4a7b4a214b815f6419fa33c1244d539ddc016a ts:1795831250 -->
+
+**Chart:** [openg2p-farmer-registry 0.0.0-develop.295](https://openg2p.github.io/openg2p-helm/openg2p-farmer-registry-0.0.0-develop.295.tgz)
+
+### Changes
+
+- [G2P-5719](https://openg2p.atlassian.net/browse/G2P-5719) Registry platform develop.858 (DCI search at /dci/registry/sync/search again; consent subject fields per register) ([`8a4a7b4`](https://github.com/OpenG2P/farmer-registry/commit/8a4a7b4a214b815f6419fa33c1244d539ddc016a))
+
 <a id="v-0-0-0-develop-294"></a>
 
 ## farmer-registry — develop 0.0.0-develop.294 (2026-11-26)
@@ -1052,29 +1065,6 @@ _commit `ed73955` · changes since 0.0.0-develop.215_
 - Bumped up RP version to 0.0.0-develop.453 ([`ed73955`](https://github.com/OpenG2P/farmer-registry/commit/ed73955e7f6e0706bdcbcbd819d169935f032161))
 - [G2P-5719](https://openg2p.atlassian.net/browse/G2P-5719) Sanity overlay: use the platform's neutral names (RECORD_*, record_seeded, cfg.register_id, sanity.registerId); ([`8eeb6c5`](https://github.com/OpenG2P/farmer-registry/commit/8eeb6c59ace1748f0830806b28987c276d6fa3c1))
 - [G2P-5719](https://openg2p.atlassian.net/browse/G2P-5719) Replace Crops tab with declared main crops on the farmer (CROP_COMMODITY multi-select); retire crop register metadata on upgrade; main-crop sample data, DCI, reporting and dashboards ([`ee93733`](https://github.com/OpenG2P/farmer-registry/commit/ee93733bcc0b5e39b75eda1e8b5bd36209ff0191))
-
-<a id="v-0-0-0-develop-215"></a>
-
-## farmer-registry — develop 0.0.0-develop.215 (2026-10-01)
-
-_commit `060e2e5` · changes since 0.0.0-develop.211_
-<!-- build:0.0.0-develop.215 revision:060e2e5590efac9a4d69f560e5b2a22ca4a19c52 ts:1790829884 -->
-
-**Chart:** [openg2p-farmer-registry 0.0.0-develop.215](https://openg2p.github.io/openg2p-helm/openg2p-farmer-registry-0.0.0-develop.215.tgz)
-
-### Summary
-
-- **Major:** Introduced FARMER_ID in farmer records for enhanced identification alongside Fayda UIN.
-- New features: Added "Generate bulk demo data" and "Bulk demo farmers" options in the Rancher form, with sample data and images set to default OFF.
-- Enhanced DCI functionality: Implemented Cluster entity registration with AWE approval, typed participant roles, and integrated crop-change links, along with sample crop seasons.
-- Testing improvements: Updated smoke tests to include partner corrections and added comprehensive tests for new features.
-
-### Changes
-
-- Bumped up RP version to 0.0.0-develop.448 ([`060e2e5`](https://github.com/OpenG2P/farmer-registry/commit/060e2e5590efac9a4d69f560e5b2a22ca4a19c52))
-- [G2P-5719](https://openg2p.atlassian.net/browse/G2P-5719) DCI: farmer record carries FARMER_ID alongside the Fayda UIN ([`12476c1`](https://github.com/OpenG2P/farmer-registry/commit/12476c1f1b016287e390e33a174a26399bf56962))
-- [G2P-5335](https://openg2p.atlassian.net/browse/G2P-5335) FR chart: sample data, sample images and bulk demo data default OFF; add "Generate bulk demo data" and "Bulk demo farmers" to the Rancher form (Analytics), separate from reporting views, which install either way ([`d9b5b11`](https://github.com/OpenG2P/farmer-registry/commit/d9b5b11bedc46017492cc83c430a5dbb489837d3))
-- [G2P-5719](https://openg2p.atlassian.net/browse/G2P-5719) CSR phase 1: Cluster entity register with AWE approval and sample clusters, typed participant roles, entities first (no temporary plot IDs), crop-change link, harvest_verified and replacement links in DCI and reporting view, sample crop seasons from Master Data people, partner correction in smoke test, tests ([`93eef0a`](https://github.com/OpenG2P/farmer-registry/commit/93eef0acda07eb5b6525c9f07653c27abe0dca7f))
 
 ---
 
