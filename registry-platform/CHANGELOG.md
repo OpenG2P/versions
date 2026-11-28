@@ -6,6 +6,7 @@ _Published automatically._
 
 | Version | Date | Type | Notes |
 | --- | --- | --- | --- |
+| [`0.0.0-develop.858`](#v-0-0-0-develop-858) | 2026-11-28 | develop |  |
 | [`0.0.0-develop.856`](#v-0-0-0-develop-856) | 2026-11-26 | develop |  |
 | [`0.0.0-develop.852`](#v-0-0-0-develop-852) | 2026-11-24 | develop |  |
 | [`0.0.0-develop.849`](#v-0-0-0-develop-849) | 2026-11-24 | develop |  |
@@ -37,7 +38,6 @@ _Published automatically._
 | [`0.0.0-develop.605`](#v-0-0-0-develop-605) | 2026-10-05 | develop |  |
 | [`0.0.0-develop.604`](#v-0-0-0-develop-604) | 2026-10-05 | develop |  |
 | [`0.0.0-develop.599`](#v-0-0-0-develop-599) | 2026-10-03 | develop |  |
-| [`0.0.0-develop.453`](#v-0-0-0-develop-453) | 2026-10-01 | develop |  |
 | [`1.2.1`](#v-1-2-1) | 2026-09-07 | release |  |
 | [`1.2.1-rc.462`](#v-1-2-1-rc-462) | 2026-09-04 | release candidate |  |
 | [`1.2.1-rc.447`](#v-1-2-1-rc-447) | 2026-09-04 | release candidate |  |
@@ -1186,6 +1186,26 @@ _commit `9b41f96` · changes since v1.0.0_
 
 # Develop builds
 
+<a id="v-0-0-0-develop-858"></a>
+
+## registry-platform — develop 0.0.0-develop.858 (2026-11-28)
+
+_commit `87ebfe2` · changes since 0.0.0-develop.856_
+<!-- build:0.0.0-develop.858 revision:87ebfe272b2f70394becdf087cbed1e80b4f35ff ts:1795830315 -->
+
+**Chart:** [openg2p-registry 0.0.0-develop.858](https://openg2p.github.io/openg2p-helm/openg2p-registry-0.0.0-develop.858.tgz)
+
+### Summary
+
+- API updates: Restored DCI search functionality at `/dci/registry/sync/search` and `/dci/registry/async/search`, including tests for full paths and consent subject fields.
+- Dependency management: Updated `staff-ui` to version 1.1.9-dev.25 and synchronized `ui-widgets` dependencies, modifying package-lock files accordingly.
+- Testing enhancements: Added new test file for DCI routes to improve coverage and reliability.
+
+### Changes
+
+- [G2P-5719](https://openg2p.atlassian.net/browse/G2P-5719) DCI search back at /dci/registry/sync/search and /dci/registry/async/search (the 1.2 merge doubled "registry"); test for the full paths; consent subject fields per register (dci_consent_subject_fields) ([`87ebfe2`](https://github.com/OpenG2P/registry-platform/commit/87ebfe272b2f70394becdf087cbed1e80b4f35ff))
+- chore(ui-widgets): version for npm dev publish, sync staff-ui @1.1.9-dev.25 [skip ci] ([`2e00083`](https://github.com/OpenG2P/registry-platform/commit/2e000835dfc8460b123b348ea07c8aeb27574358))
+
 <a id="v-0-0-0-develop-856"></a>
 
 ## registry-platform — develop 0.0.0-develop.856 (2026-11-26)
@@ -1805,31 +1825,6 @@ _commit `a8c4996` · changes since 0.0.0-develop.453_
 - Reapply "[G2P-5222](https://openg2p.atlassian.net/browse/G2P-5222) Repoint Partner Management to commons-services and align PM-seed auth to the g2p-bridge pmSeedClientId pattern." ([`ff1f9c8`](https://github.com/OpenG2P/registry-platform/commit/ff1f9c8fe8e61e5717cf65e2f1363f8f51df7da0))
 - Reapply "[G2P-5222](https://openg2p.atlassian.net/browse/G2P-5222) Consent and partner management related." ([`e378ecb`](https://github.com/OpenG2P/registry-platform/commit/e378ecbac8108749766d0ae0fc5fed197e517a4e))
 - Reapply "[G2P-5222](https://openg2p.atlassian.net/browse/G2P-5222) Enhancements for consent management, partner management and WJS support." ([`eabfb80`](https://github.com/OpenG2P/registry-platform/commit/eabfb8096865dca361b8a4f48d8d9d4551bc86d1))
-
-<a id="v-0-0-0-develop-453"></a>
-
-## registry-platform — develop 0.0.0-develop.453 (2026-10-01)
-
-_commit `cc9fced` · changes since 0.0.0-develop.448_
-<!-- build:0.0.0-develop.453 revision:cc9fced3e767771e81799491e6e2a7947c404637 ts:1790871499 -->
-
-**Chart:** [openg2p-registry 0.0.0-develop.453](https://openg2p.github.io/openg2p-helm/openg2p-registry-0.0.0-develop.453.tgz)
-
-### Summary
-
-- **Major:** Registry-neutral naming conventions introduced, with deprecated aliases maintained for backward compatibility; includes updates to core test fixtures and documentation.
-- Consent management enhancements: enforcement of consent per registry and subject, with data_controller sent to CM and logging for on_behalf_of actions.
-- Data integrity improvements: final aggregates now locked by period, with late changes reverting to provisional status; DCI aggregate search enhanced for allow-listed partners.
-- UI updates: activity interface now excludes register-specific fields, ensuring consistency across context fields and UI hints.
-- Bug fixes: resolved issues with record view and intake forms by addressing synchronous data-policy condition builders.
-
-### Changes
-
-- [G2P-5719](https://openg2p.atlassian.net/browse/G2P-5719) Registry-neutral naming: sanity RECORD_*/record_seeded/register_id (old names kept as deprecated aliases), chart sanity.registerId (farmerRegisterId still honoured), neutral sanity defaults, core test fixtures TestPerson/TestParcel, generic docs; sanity consent for the registry's own data controller ([`cc9fced`](https://github.com/OpenG2P/registry-platform/commit/cc9fced3e767771e81799491e6e2a7947c404637))
-- [G2P-5719](https://openg2p.atlassian.net/browse/G2P-5719) Consent per registry and subject enforcement: send data_controller to CM, consent subject must be the person searched (records, or linked via subject_id_fields), log on_behalf_of; chart consentDataController ([`6ae86aa`](https://github.com/OpenG2P/registry-platform/commit/6ae86aa282097416b9ae869a1dc33d2b78b21952))
-- [G2P-5719](https://openg2p.atlassian.net/browse/G2P-5719) Final aggregates on period lock (is_final; late changes revert to provisional until relocked); DCI aggregate search across subjects for allow-listed partners, with is_final filter ([`fcceac6`](https://github.com/OpenG2P/registry-platform/commit/fcceac693c31fd219fb122f5f2ea90f641938715))
-- [G2P-5719](https://openg2p.atlassian.net/browse/G2P-5719) Activity UI holds no register-specific fields: context_fields (locked in corrections, enforced on supersede) and ui_hints (summary fields, context columns, batch carry fields, search hints) from the domain service ([`a8a09e4`](https://github.com/OpenG2P/registry-platform/commit/a8a09e4e647029509517b9e47f79e01efc881c0d))
-- [G2P-5719](https://openg2p.atlassian.net/browse/G2P-5719) Fix record view and intake forms: don't await the synchronous data-policy condition builders (SYS-ERR-001 on get_subject_record) ([`c08eb7c`](https://github.com/OpenG2P/registry-platform/commit/c08eb7c8be7cae10dadaefcbaa68d7b134bd152c))
 
 ---
 
