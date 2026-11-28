@@ -6,10 +6,24 @@ _Published automatically._
 
 | Version | Date | Type | Notes |
 | --- | --- | --- | --- |
+| [`0.0.0-develop.5`](#v-0-0-0-develop-5) | 2026-11-28 | develop |  |
 | [`0.0.0-develop.4`](#v-0-0-0-develop-4) | 2026-11-26 | develop |  |
 | [`0.0.0-develop.2`](#v-0-0-0-develop-2) | 2026-11-26 | develop |  |
 
 # Develop builds
+
+<a id="v-0-0-0-develop-5"></a>
+
+## live-stock-registry — develop 0.0.0-develop.5 (2026-11-28)
+
+_commit `77f787a` · changes since 0.0.0-develop.4_
+<!-- build:0.0.0-develop.5 revision:77f787a3b26ecfe3ff7e10d3e9498e1c620bfb46 ts:1795831275 -->
+
+**Chart:** [openg2p-livestock-registry 0.0.0-develop.5](https://openg2p.github.io/openg2p-helm/openg2p-livestock-registry-0.0.0-develop.5.tgz)
+
+### Changes
+
+- [G2P-5719](https://openg2p.atlassian.net/browse/G2P-5719) Registry platform develop.858 (DCI search at /dci/registry/sync/search again; consent subject fields per register) ([`77f787a`](https://github.com/OpenG2P/live-stock-registry/commit/77f787a3b26ecfe3ff7e10d3e9498e1c620bfb46))
 
 <a id="v-0-0-0-develop-4"></a>
 
