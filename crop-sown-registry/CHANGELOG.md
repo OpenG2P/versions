@@ -6,6 +6,7 @@ _Published automatically._
 
 | Version | Date | Type | Notes |
 | --- | --- | --- | --- |
+| [`0.0.0-develop.55`](#v-0-0-0-develop-55) | 2026-11-28 | develop |  |
 | [`0.0.0-develop.54`](#v-0-0-0-develop-54) | 2026-11-26 | develop |  |
 | [`0.0.0-develop.52`](#v-0-0-0-develop-52) | 2026-11-24 | develop |  |
 | [`0.0.0-develop.51`](#v-0-0-0-develop-51) | 2026-11-24 | develop |  |
@@ -25,9 +26,21 @@ _Published automatically._
 | [`0.0.0-develop.32`](#v-0-0-0-develop-32) | 2026-10-07 | develop |  |
 | [`0.0.0-develop.31`](#v-0-0-0-develop-31) | 2026-10-07 | develop |  |
 | [`0.0.0-develop.28`](#v-0-0-0-develop-28) | 2026-10-05 | develop |  |
-| [`0.0.0-develop.24`](#v-0-0-0-develop-24) | 2026-10-03 | develop |  |
 
 # Develop builds
+
+<a id="v-0-0-0-develop-55"></a>
+
+## crop-sown-registry — develop 0.0.0-develop.55 (2026-11-28)
+
+_commit `4e3f3fe` · changes since 0.0.0-develop.54_
+<!-- build:0.0.0-develop.55 revision:4e3f3fe4f40c06123ffa6ecb153124f8ac760296 ts:1795831259 -->
+
+**Chart:** [openg2p-crop-sown-registry 0.0.0-develop.55](https://openg2p.github.io/openg2p-helm/openg2p-crop-sown-registry-0.0.0-develop.55.tgz)
+
+### Changes
+
+- [G2P-5719](https://openg2p.atlassian.net/browse/G2P-5719) Registry platform develop.858 (DCI search at /dci/registry/sync/search again; consent subject fields per register) ([`4e3f3fe`](https://github.com/OpenG2P/crop-sown-registry/commit/4e3f3fe4f40c06123ffa6ecb153124f8ac760296))
 
 <a id="v-0-0-0-develop-54"></a>
 
@@ -326,27 +339,6 @@ _commit `623272c` · changes since 0.0.0-develop.24_
 - [G2P-5719](https://openg2p.atlassian.net/browse/G2P-5719) Data scopes: catalogue for CropSown (crop_season, measures, farmer_reference, location, activity over activity/context/aggregate fields) and Cluster (section scopes relabelled, cluster_profile); DCI state/summary groups render null when not consented, is_final null not false; activity details no longer repeat farmer/location keys; tests ([`a1ca372`](https://github.com/OpenG2P/crop-sown-registry/commit/a1ca372af8f99a7972a7b85d87fe7c3f196d6da9))
 - [G2P-5719](https://openg2p.atlassian.net/browse/G2P-5719) Cluster register: functional ID from the ID generator (pool "cluster", CL- prefix), programme code moved to new searchable programme_cluster_code; chart enables idgenerator; zz-upgrades for existing installs; sample clusters with generated-style IDs, crop-season samples map clusters by woreda; missing sample sources (Master Data people, sample clusters) now raise instead of loading nothing; "Load sample crop seasons" question notes install failure; tests ([`f8b4d05`](https://github.com/OpenG2P/crop-sown-registry/commit/f8b4d05b7e1b8360eee74f90a68a87b90c2247dd))
 - [G2P-5719](https://openg2p.atlassian.net/browse/G2P-5719) Helm: point the object store at the in-cluster commons Garage (global.minioHost commons-garage:3900, minioSecure false) ([`24d8060`](https://github.com/OpenG2P/crop-sown-registry/commit/24d8060fd8d160432edaf1b19b1be3db496437bf))
-
-<a id="v-0-0-0-develop-24"></a>
-
-## crop-sown-registry — develop 0.0.0-develop.24 (2026-10-03)
-
-_commit `62a27de` · changes since 0.0.0-develop.21_
-<!-- build:0.0.0-develop.24 revision:62a27deb357268a7098a3e542c9a7518f0f12a91 ts:1791021757 -->
-
-**Chart:** [openg2p-crop-sown-registry 0.0.0-develop.24](https://openg2p.github.io/openg2p-helm/openg2p-crop-sown-registry-0.0.0-develop.24.tgz)
-
-### Summary
-
-- **Major:** Transitioned from direct database access to API-based interactions for MDS, dropping loadGeoData/syncGeoWidgets and relabeling the Cluster geo widget to Location.
-- Updated sample crop seasons to read MDS sample people via the catalogue client, maintaining support for both API and database modes in tests.
-- Bumped RP version to 0.0.0-develop.599.
-
-### Changes
-
-- Bumped up RP version to 0.0.0-develop.599 ([`62a27de`](https://github.com/OpenG2P/crop-sown-registry/commit/62a27deb357268a7098a3e542c9a7518f0f12a91))
-- [G2P-5719](https://openg2p.atlassian.net/browse/G2P-5719) Registries never touch MDS's database: drop loadGeoData/syncGeoWidgets, sample loader reads MDS via its API (mds_client), Cluster geo widget relabelled Location ([`66565a9`](https://github.com/OpenG2P/crop-sown-registry/commit/66565a96e9b77249aea7c5d51c9b7dc7e0ca9cc6))
-- [G2P-5719](https://openg2p.atlassian.net/browse/G2P-5719) Sample crop seasons read MDS sample people through the catalogue client (db mode kept); tests in api and db modes ([`3d10caf`](https://github.com/OpenG2P/crop-sown-registry/commit/3d10caf654e409f70e29a2bfecceb5cbecb07b44))
 
 ---
 
